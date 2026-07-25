@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -n \"var\\(--\\\\|#[0-9A-Fa-f]\\\\{3,6\\\\}\\\\|rgba\\(\" css/style.css)",
+      "Bash(python \"C:\\\\Users\\\\mrudu\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-mrudu-OneDrive-Desktop-equity-fin-academy-website\\\\967f58f2-b375-4459-8515-e81f58ca7632\\\\scratchpad\\\\check_headings.py\")",
+      "Bash(python -c ' *)",
+      "Bash(python \"C:\\\\Users\\\\mrudu\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-mrudu-OneDrive-Desktop-equity-fin-academy-website\\\\967f58f2-b375-4459-8515-e81f58ca7632\\\\scratchpad\\\\minify_css.py\")",
+      "Bash(git --version)",
+      "Bash(git config *)",
+      "Bash(gh --version)",
+      "Bash(gh auth *)"
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+# Apache hosting config — compression + cache headers for Lighthouse
+# "Use efficient cache lifetimes" and "Enable text compression" audits
+# only pass when served by a real web server with these enabled; a bare
+# `python -m http.server` (used for local dev/testing) ignores this file
+# entirely, so those two specific audits will only reflect real values
+# once this site is deployed behind Apache (or an equivalent host that
+# honors .htaccess, e.g. most shared hosting).
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/xml text/plain
+  AddOutputFilterByType DEFLATE application/javascript application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 30 days"
+  ExpiresByType application/javascript "access plus 30 days"
+  ExpiresByType image/svg+xml "access plus 30 days"
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(css|js|svg)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+# Note: style.css and main.js are cached for 30 days rather than
+# "forever" because this site has no build step that fingerprints
+# filenames (e.g. style.abc123.css). If you edit either file after
+# deploying, returning visitors won't see the change until their
+# cached copy expires — shorten the duration above, or start
+# versioning the filename/query string on each deploy, if you'll be
+# iterating on the site often.

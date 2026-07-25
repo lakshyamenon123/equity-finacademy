@@ -1,0 +1,13 @@
+# Netlify / Cloudflare Pages cache headers (compression is automatic on
+# both, so no separate config needed for that). Ignored by other hosts —
+# harmless to leave in place. See the note in .htaccess about why this
+# uses 30 days rather than a "forever" cache: no fingerprinted filenames.
+
+/css/*.css
+  Cache-Control: public, max-age=2592000
+
+/js/*.js
+  Cache-Control: public, max-age=2592000
+
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate

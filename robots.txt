@@ -1,0 +1,5 @@
+# TODO before publishing: replace the sitemap domain below with your real live domain
+User-agent: *
+Allow: /
+
+Sitemap: https://www.equityfinacademy.com/sitemap.xml
