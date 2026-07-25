@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- TODO before publishing: replace https://www.equityfinacademy.com/ below with your real live domain -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.equityfinacademy.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.equityfinacademy.com/about</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.equityfinacademy.com/why-choose-us</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.equityfinacademy.com/courses</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.equityfinacademy.com/pricing</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.equityfinacademy.com/forex-academy-in-dubai</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.equityfinacademy.com/blog</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.equityfinacademy.com/blog-candlestick-patterns</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.equityfinacademy.com/blog-market-structure</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.equityfinacademy.com/blog-risk-management</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.equityfinacademy.com/blog-common-mistakes</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.equityfinacademy.com/blog-smart-money-concepts</loc><changefreq>yearly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.equityfinacademy.com/success-stories</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.equityfinacademy.com/faq</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.equityfinacademy.com/contact</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+</urlset>

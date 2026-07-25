@@ -1,0 +1,26 @@
+# Netlify / Cloudflare Pages headers (compression is automatic on both,
+# so no separate config needed for that). Ignored by other hosts —
+# harmless to leave in place.
+
+# Next.js static export fingerprints everything under _next/static/ with
+# a build-hash path, so it's safe to cache for a year as immutable.
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# main.js has no fingerprinted filename (no build step renames it), so a
+# shorter cache is used — edit it after deploy and returning visitors
+# will still pick it up within 30 days.
+/main.js
+  Cache-Control: public, max-age=2592000
+
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Baseline security headers on every response.
+/*
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Cross-Origin-Opener-Policy: same-origin
+  Permissions-Policy: geolocation=(), camera=(), microphone=()
