@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Link from "next/link";
 
 export const metadata = {
   title: "Forex Trading Courses Dubai — Basic to Advanced Institutional Strategies | Equity Fin Academy",
@@ -93,7 +94,7 @@ export default function CoursesPage() {
         <section className="tight bg-glow" style={{ borderBottom: "1px solid var(--border)" }}>
           <div className="container">
             <nav className="breadcrumb" aria-label="Breadcrumb">
-              <a href="/">Home</a>
+              <Link href="/">Home</Link>
               <span className="sep">/</span>
               <span className="current">Forex Courses</span>
             </nav>
@@ -103,7 +104,7 @@ export default function CoursesPage() {
             </h1>
             <p style={{ maxWidth: "60ch", marginTop: 18 }}>
               Start at whichever level matches your experience. Both tracks are taught live, with practical sessions
-              run through a regulated broker. New to trading? Read our <a href="/blog">forex education blog</a>{" "}
+              run through a regulated broker. New to trading? Read our <Link href="/blog">forex education blog</Link>{" "}
               first.
             </p>
           </div>
@@ -154,9 +155,9 @@ export default function CoursesPage() {
                   ))}
                 </ul>
                 <div className="cta-row">
-                  <a href="/contact?course=basic-intermediate" className="btn btn-outline btn-block">
+                  <Link href="/contact?course=basic-intermediate" className="btn btn-outline btn-block">
                     Enquire About This Course
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -176,16 +177,16 @@ export default function CoursesPage() {
                   ))}
                 </ul>
                 <div className="cta-row">
-                  <a href="/contact?course=advanced-institutional" className="btn btn-primary btn-block">
+                  <Link href="/contact?course=advanced-institutional" className="btn btn-primary btn-block">
                     Enquire About This Course
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
             <p className="text-center" style={{ marginTop: 28 }}>
-              <a href="/pricing" className="btn btn-outline">
+              <Link href="/pricing" className="btn btn-outline">
                 View Pricing &amp; What&apos;s Included
-              </a>
+              </Link>
             </p>
           </div>
         </section>
@@ -247,15 +248,15 @@ export default function CoursesPage() {
                   Is broker access included in the course fee?<span className="plus">+</span>
                 </summary>
                 <p>
-                  Practical sessions are run through Star Trader, an SCA-regulated broker. See <a href="/pricing">Pricing</a>{" "}
+                  Practical sessions are run through Star Trader, an SCA-regulated broker. See <Link href="/pricing">Pricing</Link>{" "}
                   or call us for current enrolment and account details.
                 </p>
               </details>
             </div>
             <p style={{ marginTop: 24 }}>
-              <a href="/faq" className="btn btn-outline">
+              <Link href="/faq" className="btn btn-outline">
                 See All 30+ FAQs
-              </a>
+              </Link>
             </p>
           </div>
         </section>

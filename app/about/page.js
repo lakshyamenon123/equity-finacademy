@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Link from "next/link";
 
 export const metadata = {
   title: "About Us — Gopi Chandran, Founder | Equity Fin Academy Dubai",
@@ -34,7 +35,7 @@ export default function AboutPage() {
         <section className="tight bg-glow" style={{ borderBottom: "1px solid var(--border)" }}>
           <div className="container">
             <nav className="breadcrumb" aria-label="Breadcrumb">
-              <a href="/">Home</a>
+              <Link href="/">Home</Link>
               <span className="sep">/</span>
               <span className="current">About Us</span>
             </nav>
@@ -60,7 +61,7 @@ export default function AboutPage() {
                 Equity Fin Academy exists because Gopi wanted to teach forex the way it&apos;s actually traded on a
                 desk — order flow, liquidity and risk as one connected structure — rather than a shallow,
                 multi-market curriculum stretched thin across everything at once. If you want the short version of
-                why that matters, see <a href="/why-choose-us">Why Choose Us</a>.
+                why that matters, see <Link href="/why-choose-us">Why Choose Us</Link>.
               </p>
 
               <ul className="credential-list">
@@ -186,9 +187,9 @@ export default function AboutPage() {
                 <h2>See what the curriculum actually covers.</h2>
                 <p>Two tracks, from candlestick fundamentals to institutional order flow — compare them side by side.</p>
               </div>
-              <a href="/courses" className="btn btn-primary">
+              <Link href="/courses" className="btn btn-primary">
                 View Courses
-              </a>
+              </Link>
             </div>
           </div>
         </section>

@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Link from "next/link";
 
 export const metadata = {
   title: "Forex Trading FAQ — 35+ Answers for Beginners | Equity Fin Academy Dubai",
@@ -122,7 +123,7 @@ export default function FaqPage() {
         <section className="tight bg-glow" style={{ borderBottom: "1px solid var(--border)" }}>
           <div className="container">
             <nav className="breadcrumb" aria-label="Breadcrumb">
-              <a href="/">Home</a>
+              <Link href="/">Home</Link>
               <span className="sep">/</span>
               <span className="current">FAQ</span>
             </nav>
@@ -131,7 +132,7 @@ export default function FaqPage() {
               Forex trading FAQ.
             </h1>
             <p style={{ maxWidth: "60ch", marginTop: 18 }}>
-              35+ straight answers, organised by topic. Can&apos;t find yours? <a href="/contact">Ask us directly</a>.
+              35+ straight answers, organised by topic. Can&apos;t find yours? <Link href="/contact">Ask us directly</Link>.
             </p>
           </div>
         </section>
@@ -155,7 +156,7 @@ export default function FaqPage() {
                   </summary>
                   <p>
                     Start with the vocabulary — currency pairs, pips, lots, leverage — then learn to read candlestick
-                    charts, then market structure, then risk management, in that order. Our <a href="/blog">blog</a>{" "}
+                    charts, then market structure, then risk management, in that order. Our <Link href="/blog">blog</Link>{" "}
                     covers each of these step by step, and the Basic to Intermediate course builds on it with live
                     instruction.
                   </p>
@@ -226,7 +227,7 @@ export default function FaqPage() {
                     Can I learn Forex trading for free?<span className="plus">+</span>
                   </summary>
                   <p>
-                    Yes, to a point. Our free <a href="/blog">blog</a> can teach the fundamentals. Structured, live
+                    Yes, to a point. Our free <Link href="/blog">blog</Link> can teach the fundamentals. Structured, live
                     instruction with feedback typically accelerates progress beyond what free content alone can
                     offer.
                   </p>
@@ -282,7 +283,7 @@ export default function FaqPage() {
                   <p>
                     An instructor with a background inside institutional trading desks, practical sessions on an
                     SCA-regulated broker, a single-market forex focus taught in depth, and an honest approach with no
-                    guaranteed-profit promises. See <a href="/why-choose-us">Why Choose Us</a> for the full
+                    guaranteed-profit promises. See <Link href="/why-choose-us">Why Choose Us</Link> for the full
                     comparison.
                   </p>
                 </details>
@@ -293,7 +294,7 @@ export default function FaqPage() {
                   <p>
                     Gopi Chandran, founder and lead instructor — MBA in Finance, full-time forex trader since 2016,
                     with a background inside institutional trading desks. Read his full profile on the{" "}
-                    <a href="/about">About Us</a> page.
+                    <Link href="/about">About Us</Link> page.
                   </p>
                 </details>
                 <details>
@@ -302,7 +303,7 @@ export default function FaqPage() {
                   </summary>
                   <p>
                     M Floor, Arzoo Building, Al Qusais, Dubai, United Arab Emirates. See the{" "}
-                    <a href="/contact">Contact page</a> for the map and directions.
+                    <Link href="/contact">Contact page</Link> for the map and directions.
                   </p>
                 </details>
               </div>
@@ -318,7 +319,7 @@ export default function FaqPage() {
                   <p>
                     Two tracks: Basic to Intermediate (fundamentals, candlesticks, market structure) and Advanced
                     Institutional Strategies (order flow, market profile, SMC, risk psychology). See the full
-                    curriculum on the <a href="/courses">Courses</a> page.
+                    curriculum on the <Link href="/courses">Courses</Link> page.
                   </p>
                 </details>
                 <details>
@@ -347,7 +348,7 @@ export default function FaqPage() {
                   <p>
                     Fundamental analysis, market structure, order flow analysis, institutional tools, market profile
                     analysis, volume with SMC, Fibonacci retracement, risk and psychology management, bot trading
-                    concepts, and lifetime WhatsApp support. Full list on the <a href="/courses">Courses</a> page.
+                    concepts, and lifetime WhatsApp support. Full list on the <Link href="/courses">Courses</Link> page.
                   </p>
                 </details>
                 <details>
@@ -365,7 +366,7 @@ export default function FaqPage() {
                   </summary>
                   <p>
                     Fees vary by cohort, so we don&apos;t publish a number that could go stale. See what&apos;s
-                    included in each track on our <a href="/pricing">Pricing</a> page, then call or message us for
+                    included in each track on our <Link href="/pricing">Pricing</Link> page, then call or message us for
                     current fees.
                   </p>
                 </details>
@@ -419,7 +420,7 @@ export default function FaqPage() {
                   <p>
                     A chart formation made up of one or more candlesticks (each showing open, high, low and close
                     price) used to read short-term price action and sentiment. See our{" "}
-                    <a href="/blog-candlestick-patterns">candlestick guide</a> for more.
+                    <Link href="/blog-candlestick-patterns">candlestick guide</Link> for more.
                   </p>
                 </details>
                 <details>
@@ -429,7 +430,7 @@ export default function FaqPage() {
                   <p>
                     The pattern formed by a market&apos;s swing highs and lows, used to judge whether price is
                     trending, ranging, or potentially reversing. Read our full explainer on{" "}
-                    <a href="/blog-market-structure">market structure</a>.
+                    <Link href="/blog-market-structure">market structure</Link>.
                   </p>
                 </details>
                 <details>
@@ -439,7 +440,7 @@ export default function FaqPage() {
                   <p>
                     A framework for analysing price based on liquidity, imbalance and order placement, aiming to read
                     where larger market participants may be positioned. See our full{" "}
-                    <a href="/blog-smart-money-concepts">SMC explainer</a>.
+                    <Link href="/blog-smart-money-concepts">SMC explainer</Link>.
                   </p>
                 </details>
                 <details>
@@ -519,9 +520,9 @@ export default function FaqPage() {
                 <h2>Still have a question?</h2>
                 <p>Call, WhatsApp, or send a message — we typically respond the same day.</p>
               </div>
-              <a href="/contact" className="btn btn-primary">
+              <Link href="/contact" className="btn btn-primary">
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
         </section>

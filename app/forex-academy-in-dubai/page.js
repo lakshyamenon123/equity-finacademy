@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Link from "next/link";
 
 export const metadata = {
   title: "Forex Academy in Dubai — Forex Classes for Beginners | Equity Fin Academy",
@@ -100,9 +101,9 @@ export default function ForexAcademyDubaiPage() {
                   <a href="tel:+971567188995" className="btn btn-outline">
                     Call +971 56 718 8995
                   </a>
-                  <a href="/contact" className="btn btn-primary">
+                  <Link href="/contact" className="btn btn-primary">
                     Book a Seat
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -234,9 +235,9 @@ export default function ForexAcademyDubaiPage() {
               </div>
             </div>
             <p className="text-center" style={{ marginTop: 28 }}>
-              <a href="/courses" className="btn btn-primary">
+              <Link href="/courses" className="btn btn-primary">
                 Compare Both Course Tracks
-              </a>
+              </Link>
             </p>
           </div>
         </section>
@@ -285,9 +286,9 @@ export default function ForexAcademyDubaiPage() {
               </p>
             </div>
             <p>
-              <a href="/why-choose-us" className="btn btn-outline">
+              <Link href="/why-choose-us" className="btn btn-outline">
                 See Our Full Why Choose Us Comparison
-              </a>
+              </Link>
             </p>
           </div>
         </section>
@@ -307,24 +308,24 @@ export default function ForexAcademyDubaiPage() {
         <section className="tight soft">
           <div className="container">
             <div className="teaser-row">
-              <a href="/blog" className="teaser reveal">
+              <Link href="/blog" className="teaser reveal">
                 <span className="eyebrow mt-0">NEW TO FOREX?</span>
                 <h3>Read the blog</h3>
                 <p>Key terms, candlestick reading and market structure, explained in plain language.</p>
                 <span className="arrow">Start learning →</span>
-              </a>
-              <a href="/courses" className="teaser reveal">
+              </Link>
+              <Link href="/courses" className="teaser reveal">
                 <span className="eyebrow mt-0">CURRICULUM</span>
                 <h3>Compare the two course tracks</h3>
                 <p>From candlestick fundamentals to institutional order flow, bot strategy and lifetime WhatsApp support.</p>
                 <span className="arrow">View courses →</span>
-              </a>
-              <a href="/contact" className="teaser reveal">
+              </Link>
+              <Link href="/contact" className="teaser reveal">
                 <span className="eyebrow mt-0">VISIT OR CALL</span>
                 <h3>Book a seat in Al Qusais</h3>
                 <p>Speak with the team, ask about upcoming cohorts, and find out which track fits your experience.</p>
                 <span className="arrow">Get in touch →</span>
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -360,14 +361,14 @@ export default function ForexAcademyDubaiPage() {
                 </summary>
                 <p>
                   Learn the vocabulary and chart reading first, then market structure, then risk management — in that
-                  order. See our <a href="/blog">blog</a> for the full walkthrough.
+                  order. See our <Link href="/blog">blog</Link> for the full walkthrough.
                 </p>
               </details>
             </div>
             <p style={{ marginTop: 24 }}>
-              <a href="/faq" className="btn btn-outline">
+              <Link href="/faq" className="btn btn-outline">
                 See All 35+ FAQs
-              </a>
+              </Link>
             </p>
           </div>
         </section>
@@ -396,9 +397,9 @@ export default function ForexAcademyDubaiPage() {
                 <a href="tel:+971567188995" className="btn btn-primary">
                   Call +971 56 718 8995
                 </a>
-                <a href="/contact" className="btn btn-outline">
+                <Link href="/contact" className="btn btn-outline">
                   Contact Us
-                </a>
+                </Link>
               </div>
             </div>
           </div>

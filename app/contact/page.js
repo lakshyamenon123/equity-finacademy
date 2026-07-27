@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Link from "next/link";
 
 export const metadata = {
   title: "Contact Us — Equity Fin Academy, Al Qusais, Dubai",
@@ -34,7 +35,7 @@ export default function ContactPage() {
         <section className="tight bg-glow" style={{ borderBottom: "1px solid var(--border)" }}>
           <div className="container">
             <nav className="breadcrumb" aria-label="Breadcrumb">
-              <a href="/">Home</a>
+              <Link href="/">Home</Link>
               <span className="sep">/</span>
               <span className="current">Contact Us</span>
             </nav>
@@ -53,7 +54,7 @@ export default function ContactPage() {
               <p>
                 We&apos;d rather point you to our real, unfiltered Google reviews than write testimonials for you.
                 Ratings and reviews shown there are collected and moderated by Google, not by us. See more on our{" "}
-                <a href="/success-stories">Reviews page</a>.
+                <Link href="/success-stories">Reviews page</Link>.
               </p>
               <a
                 href="https://www.google.com/maps/search/?api=1&query=Equity+Fin+Academy+Al+Qusais+Dubai"
@@ -89,7 +90,7 @@ export default function ContactPage() {
               <div className="info-row">
                 <span className="tag">PRICING</span>
                 <span className="val">
-                  See <a href="/pricing">what&apos;s included</a> in each track, then call for current fees.
+                  See <Link href="/pricing">what&apos;s included</Link> in each track, then call for current fees.
                 </span>
               </div>
 
@@ -139,9 +140,9 @@ export default function ContactPage() {
               </details>
             </div>
             <p style={{ marginTop: 24 }}>
-              <a href="/faq" className="btn btn-outline">
+              <Link href="/faq" className="btn btn-outline">
                 See All 30+ FAQs
-              </a>
+              </Link>
             </p>
           </div>
         </section>

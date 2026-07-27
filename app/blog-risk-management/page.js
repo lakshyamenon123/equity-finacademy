@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Link from "next/link";
 
 export const metadata = {
   title: "Forex Risk Management: How Much Should You Risk Per Trade? | Equity Fin Academy",
@@ -44,9 +45,9 @@ export default function BlogRiskManagementPage() {
         <section className="tight">
           <div className="container">
             <nav className="breadcrumb" aria-label="Breadcrumb">
-              <a href="/">Home</a>
+              <Link href="/">Home</Link>
               <span className="sep">/</span>
-              <a href="/blog">Blog</a>
+              <Link href="/blog">Blog</Link>
               <span className="sep">/</span>
               <span className="current">Risk Management</span>
             </nav>
@@ -114,9 +115,9 @@ export default function BlogRiskManagementPage() {
 
               <div className="blog-cta">
                 <p>Risk management is taught as core curriculum in both of our course tracks.</p>
-                <a href="/courses" className="btn btn-primary">
+                <Link href="/courses" className="btn btn-primary">
                   See Our Forex Courses
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -129,7 +130,7 @@ export default function BlogRiskManagementPage() {
               <h2>More from the blog</h2>
             </div>
             <div className="blog-grid">
-              <a href="/blog-common-mistakes" className="blog-card reveal">
+              <Link href="/blog-common-mistakes" className="blog-card reveal">
                 <div className="blog-card-thumb">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
                     <circle cx="12" cy="12" r="9" />
@@ -141,8 +142,8 @@ export default function BlogRiskManagementPage() {
                   <h3>7 Common Mistakes Beginner Forex Traders Make</h3>
                   <p>The patterns that quietly drain new trading accounts.</p>
                 </div>
-              </a>
-              <a href="/blog-market-structure" className="blog-card reveal">
+              </Link>
+              <Link href="/blog-market-structure" className="blog-card reveal">
                 <div className="blog-card-thumb">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
                     <path d="M3 17l5-6 4 3 8-10" />
@@ -153,7 +154,7 @@ export default function BlogRiskManagementPage() {
                   <h3>What Is Market Structure in Forex Trading?</h3>
                   <p>Swing highs, swing lows, and how to tell a trend from a range.</p>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </section>

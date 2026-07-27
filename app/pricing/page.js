@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Link from "next/link";
 
 export const metadata = {
   title: "Pricing — Forex Course Fees | Equity Fin Academy Dubai",
@@ -39,7 +40,7 @@ export default function PricingPage() {
         <section className="tight bg-glow" style={{ borderBottom: "1px solid var(--border)" }}>
           <div className="container">
             <nav className="breadcrumb" aria-label="Breadcrumb">
-              <a href="/">Home</a>
+              <Link href="/">Home</Link>
               <span className="sep">/</span>
               <span className="current">Pricing</span>
             </nav>
@@ -71,9 +72,9 @@ export default function PricingPage() {
                   <li><Check />Practical sessions on Star Trader (SCA-regulated)</li>
                   <li><Check />Candlestick, market structure &amp; smart money fundamentals</li>
                 </ul>
-                <a href="/contact?course=basic-intermediate" className="btn btn-outline btn-block">
+                <Link href="/contact?course=basic-intermediate" className="btn btn-outline btn-block">
                   Enquire About Pricing
-                </a>
+                </Link>
               </div>
 
               <div className="pricing-card featured reveal">
@@ -87,9 +88,9 @@ export default function PricingPage() {
                   <li><Check />Order flow, market profile, SMC &amp; risk psychology</li>
                   <li><Check />Lifetime support via WhatsApp</li>
                 </ul>
-                <a href="/contact?course=advanced-institutional" className="btn btn-primary btn-block">
+                <Link href="/contact?course=advanced-institutional" className="btn btn-primary btn-block">
                   Enquire About Pricing
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Link from "next/link";
 
 export const metadata = {
   title: "Student Reviews — Equity Fin Academy Dubai",
@@ -33,7 +34,7 @@ export default function SuccessStoriesPage() {
         <section className="tight bg-glow" style={{ borderBottom: "1px solid var(--border)" }}>
           <div className="container">
             <nav className="breadcrumb" aria-label="Breadcrumb">
-              <a href="/">Home</a>
+              <Link href="/">Home</Link>
               <span className="sep">/</span>
               <span className="current">Reviews</span>
             </nav>
@@ -78,7 +79,7 @@ export default function SuccessStoriesPage() {
                 Rather than publish generic success quotes, we&apos;re building this section out with real,
                 permissioned stories from students who complete a course and choose to share their experience —
                 including the honest parts. If you&apos;re a past or current student who&apos;d like to share your
-                story, <a href="/contact">get in touch</a>.
+                story, <Link href="/contact">get in touch</Link>.
               </p>
             </div>
             <div className="grid-4">
@@ -123,9 +124,9 @@ export default function SuccessStoriesPage() {
                 <h2>See the curriculum these students studied.</h2>
                 <p>Compare the two course tracks and find the one that fits your experience.</p>
               </div>
-              <a href="/courses" className="btn btn-primary">
+              <Link href="/courses" className="btn btn-primary">
                 View Courses
-              </a>
+              </Link>
             </div>
           </div>
         </section>

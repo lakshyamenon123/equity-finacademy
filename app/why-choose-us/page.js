@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Link from "next/link";
 
 export const metadata = {
   title: "Why Choose Equity Fin Academy — Forex Education Dubai",
@@ -88,7 +89,7 @@ export default function WhyChooseUsPage() {
         <section className="tight bg-glow" style={{ borderBottom: "1px solid var(--border)" }}>
           <div className="container">
             <nav className="breadcrumb" aria-label="Breadcrumb">
-              <a href="/">Home</a>
+              <Link href="/">Home</Link>
               <span className="sep">/</span>
               <span className="current">Why Choose Us</span>
             </nav>
@@ -198,12 +199,12 @@ export default function WhyChooseUsPage() {
                 <p>Compare the two course tracks, or call us to talk through which one fits your experience.</p>
               </div>
               <div className="cta-row">
-                <a href="/courses" className="btn btn-primary">
+                <Link href="/courses" className="btn btn-primary">
                   View Courses
-                </a>
-                <a href="/contact" className="btn btn-outline">
+                </Link>
+                <Link href="/contact" className="btn btn-outline">
                   Contact Us
-                </a>
+                </Link>
               </div>
             </div>
           </div>

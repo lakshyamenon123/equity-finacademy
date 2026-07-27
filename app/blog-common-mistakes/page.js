@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Link from "next/link";
 
 export const metadata = {
   title: "7 Common Mistakes Beginner Forex Traders Make | Equity Fin Academy",
@@ -44,9 +45,9 @@ export default function BlogCommonMistakesPage() {
         <section className="tight">
           <div className="container">
             <nav className="breadcrumb" aria-label="Breadcrumb">
-              <a href="/">Home</a>
+              <Link href="/">Home</Link>
               <span className="sep">/</span>
-              <a href="/blog">Blog</a>
+              <Link href="/blog">Blog</Link>
               <span className="sep">/</span>
               <span className="current">Common Mistakes</span>
             </nav>
@@ -60,7 +61,7 @@ export default function BlogCommonMistakesPage() {
 
               <h2>1. Risking too much on a single trade</h2>
               <p>
-                Without a clear rule limiting risk per trade (see our guide on <a href="/blog-risk-management">forex risk management</a>),
+                Without a clear rule limiting risk per trade (see our guide on <Link href="/blog-risk-management">forex risk management</Link>),
                 it&apos;s easy to size positions based on conviction rather than a calculation — and a single bad
                 trade can undo weeks of progress.
               </p>
@@ -93,9 +94,9 @@ export default function BlogCommonMistakesPage() {
 
               <div className="blog-cta">
                 <p>Our Basic to Intermediate course is built specifically to avoid these mistakes from day one.</p>
-                <a href="/courses" className="btn btn-primary">
+                <Link href="/courses" className="btn btn-primary">
                   See Our Forex Courses
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -108,7 +109,7 @@ export default function BlogCommonMistakesPage() {
               <h2>More from the blog</h2>
             </div>
             <div className="blog-grid">
-              <a href="/blog-risk-management" className="blog-card reveal">
+              <Link href="/blog-risk-management" className="blog-card reveal">
                 <div className="blog-card-thumb">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
                     <path d="M12 2l8 4v6c0 5-3.4 8.4-8 10-4.6-1.6-8-5-8-10V6l8-4z" />
@@ -119,8 +120,8 @@ export default function BlogCommonMistakesPage() {
                   <h3>Forex Risk Management: How Much Should You Risk Per Trade?</h3>
                   <p>Position sizing, stop-losses, and why this matters more than entries.</p>
                 </div>
-              </a>
-              <a href="/blog-candlestick-patterns" className="blog-card reveal">
+              </Link>
+              <Link href="/blog-candlestick-patterns" className="blog-card reveal">
                 <div className="blog-card-thumb">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
                     <path d="M6 4v4M6 8h0v8M6 16v4M12 2v3M12 5h0v11M12 16v6M18 6v2M18 8h0v9M18 17v3" />
@@ -131,7 +132,7 @@ export default function BlogCommonMistakesPage() {
                   <h3>How to Read Candlestick Patterns: A Beginner&apos;s Guide</h3>
                   <p>What each candle tells you, and the patterns worth actually learning first.</p>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </section>

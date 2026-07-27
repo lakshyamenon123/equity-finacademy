@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Link from "next/link";
 
 export const metadata = {
   title: "What Is Market Structure in Forex Trading? | Equity Fin Academy",
@@ -44,9 +45,9 @@ export default function BlogMarketStructurePage() {
         <section className="tight">
           <div className="container">
             <nav className="breadcrumb" aria-label="Breadcrumb">
-              <a href="/">Home</a>
+              <Link href="/">Home</Link>
               <span className="sep">/</span>
-              <a href="/blog">Blog</a>
+              <Link href="/blog">Blog</Link>
               <span className="sep">/</span>
               <span className="current">Market Structure</span>
             </nav>
@@ -98,7 +99,7 @@ export default function BlogMarketStructurePage() {
                 Once you understand basic structure, more advanced frameworks like smart money concepts (SMC) and
                 order flow analysis build directly on top of it — adding layers like liquidity zones and imbalance to
                 the same swing-high/swing-low map you&apos;re already reading. If you haven&apos;t already,
-                it&apos;s worth reading <a href="/blog-candlestick-patterns">how to read candlestick patterns</a>{" "}
+                it&apos;s worth reading <Link href="/blog-candlestick-patterns">how to read candlestick patterns</Link>{" "}
                 first, since individual candles are the building blocks that form these swing points.
               </p>
 
@@ -111,9 +112,9 @@ export default function BlogMarketStructurePage() {
 
               <div className="blog-cta">
                 <p>Structure is taught from lesson one in our Basic to Intermediate course.</p>
-                <a href="/courses" className="btn btn-primary">
+                <Link href="/courses" className="btn btn-primary">
                   See Our Forex Courses
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -126,7 +127,7 @@ export default function BlogMarketStructurePage() {
               <h2>More from the blog</h2>
             </div>
             <div className="blog-grid">
-              <a href="/blog-smart-money-concepts" className="blog-card reveal">
+              <Link href="/blog-smart-money-concepts" className="blog-card reveal">
                 <div className="blog-card-thumb">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
                     <path d="M4 18l5-6 4 3 7-9" />
@@ -138,8 +139,8 @@ export default function BlogMarketStructurePage() {
                   <h3>Smart Money Concepts (SMC) Explained for Beginners</h3>
                   <p>Liquidity, imbalance and order blocks, in plain language.</p>
                 </div>
-              </a>
-              <a href="/blog-risk-management" className="blog-card reveal">
+              </Link>
+              <Link href="/blog-risk-management" className="blog-card reveal">
                 <div className="blog-card-thumb">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
                     <path d="M12 2l8 4v6c0 5-3.4 8.4-8 10-4.6-1.6-8-5-8-10V6l8-4z" />
@@ -150,7 +151,7 @@ export default function BlogMarketStructurePage() {
                   <h3>Forex Risk Management: How Much Should You Risk Per Trade?</h3>
                   <p>Position sizing, stop-losses, and why this matters more than entries.</p>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </section>

@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Link from "next/link";
 
 export const metadata = {
   title: "Forex Trading Blog — Education Articles | Equity Fin Academy Dubai",
@@ -86,7 +87,7 @@ export default function BlogIndexPage() {
         <section className="tight bg-glow" style={{ borderBottom: "1px solid var(--border)" }}>
           <div className="container">
             <nav className="breadcrumb" aria-label="Breadcrumb">
-              <a href="/">Home</a>
+              <Link href="/">Home</Link>
               <span className="sep">/</span>
               <span className="current">Blog</span>
             </nav>
@@ -133,9 +134,9 @@ export default function BlogIndexPage() {
                 <h2>Want this taught live, not just read?</h2>
                 <p>Our courses cover every one of these topics in depth, with practical sessions on a regulated broker.</p>
               </div>
-              <a href="/courses" className="btn btn-primary">
+              <Link href="/courses" className="btn btn-primary">
                 View Courses
-              </a>
+              </Link>
             </div>
           </div>
         </section>

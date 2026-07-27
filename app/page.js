@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Link from "next/link";
 
 export const metadata = {
   title: "Equity Fin Academy — Forex Trading Course & Academy in Dubai",
@@ -50,8 +51,7 @@ export default function HomePage() {
           <div className="container">
             <div className="hero-top">
               <div className="hero-copy">
-                <span className="eyebrow">AL QUSAIS · DUBAI · FOREX TRADING ACADEMY</span>
-                <h1 className="hero-display">
+                <h1 className="hero-display" style={{ marginTop: 6 }}>
                   Learn to read the{" "}
                   <span className="inline-pill">
                     <span className="dot-live"></span>forex
@@ -68,9 +68,9 @@ export default function HomePage() {
                   <a href="tel:+971567188995" className="btn btn-outline">
                     Call +971 56 718 8995
                   </a>
-                  <a href="/contact" className="btn btn-primary">
+                  <Link href="/contact" className="btn btn-primary">
                     Book a Seat
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -315,7 +315,7 @@ export default function HomePage() {
               <p>Free educational resources for anyone wondering how to start learning forex trading — no sign-up required.</p>
             </div>
             <div className="grid-4" style={{ gridTemplateColumns: "1fr 1fr" }}>
-              <a href="/blog" className="card reveal">
+              <Link href="/blog" className="card reveal">
                 <div className="icon-badge">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
                     <path d="M4 19.5A2.5 2.5 0 016.5 17H20M4 19.5A2.5 2.5 0 006.5 22H20V2H6.5A2.5 2.5 0 004 4.5v15z" />
@@ -323,8 +323,8 @@ export default function HomePage() {
                 </div>
                 <h3>Blog</h3>
                 <p>Articles on candlesticks, market structure, risk and beginner mistakes.</p>
-              </a>
-              <a href="/faq" className="card reveal">
+              </Link>
+              <Link href="/faq" className="card reveal">
                 <div className="icon-badge">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
                     <circle cx="12" cy="12" r="9" />
@@ -333,7 +333,7 @@ export default function HomePage() {
                 </div>
                 <h3>FAQ</h3>
                 <p>30+ answers to common questions about learning forex trading.</p>
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -341,24 +341,24 @@ export default function HomePage() {
         <section className="tight">
           <div className="container">
             <div className="teaser-row">
-              <a href="/about" className="teaser reveal">
+              <Link href="/about" className="teaser reveal">
                 <span className="eyebrow mt-0">THE FOUNDER</span>
                 <h3>Meet Gopi Chandran</h3>
                 <p>MBA in Finance and a full-time forex trader since 2016, now teaching the same market-structure approach he trades with.</p>
                 <span className="arrow">Read the full profile →</span>
-              </a>
-              <a href="/courses" className="teaser reveal">
+              </Link>
+              <Link href="/courses" className="teaser reveal">
                 <span className="eyebrow mt-0">CURRICULUM</span>
                 <h3>Compare the two course tracks</h3>
                 <p>From candlestick fundamentals to institutional order flow, bot strategy and lifetime WhatsApp support.</p>
                 <span className="arrow">View courses →</span>
-              </a>
-              <a href="/contact" className="teaser reveal">
+              </Link>
+              <Link href="/contact" className="teaser reveal">
                 <span className="eyebrow mt-0">VISIT OR CALL</span>
                 <h3>Book a seat in Al Qusais</h3>
                 <p>Speak with the team, ask about upcoming cohorts, and find out which track fits your experience.</p>
                 <span className="arrow">Get in touch →</span>
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -376,7 +376,7 @@ export default function HomePage() {
                 </summary>
                 <p>
                   Start with the fundamentals — currency pairs, candlestick patterns and market structure — before
-                  risking any capital. Our <a href="/blog">blog</a> walks through this step by step, and the Basic
+                  risking any capital. Our <Link href="/blog">blog</Link> walks through this step by step, and the Basic
                   to Intermediate course builds on it with live instruction.
                 </p>
               </details>
@@ -400,9 +400,9 @@ export default function HomePage() {
               </details>
             </div>
             <p style={{ marginTop: 24 }}>
-              <a href="/faq" className="btn btn-outline">
+              <Link href="/faq" className="btn btn-outline">
                 See All 30+ FAQs
-              </a>
+              </Link>
             </p>
           </div>
         </section>
