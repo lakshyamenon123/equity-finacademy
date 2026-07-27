@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata = {
   title: "About Us — Gopi Chandran, Founder | Equity Fin Academy Dubai",
@@ -49,7 +50,15 @@ export default function AboutPage() {
         <section>
           <div className="container founder-grid">
             <div className="founder-card reveal">
-              <div className="founder-mark">GC</div>
+              <div className="founder-mark">
+                <Image
+                  src="/mentor.jpg"
+                  alt="Gopi Chandran, Founder & Lead Instructor at Equity Fin Academy"
+                  fill
+                  sizes="(max-width: 860px) 100vw, 40vw"
+                  style={{ objectFit: "cover", objectPosition: "center top" }}
+                />
+              </div>
               <span className="role">FOUNDER &amp; LEAD INSTRUCTOR</span>
               <h2>Gopi Chandran</h2>
               <p>MBA in Finance. Full-time forex trader since 2016, trading major and minor currency pairs across live market structure.</p>
