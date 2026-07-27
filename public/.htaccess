@@ -35,11 +35,3 @@
   Header always set Cross-Origin-Opener-Policy "same-origin"
   Header always set Permissions-Policy "geolocation=(), camera=(), microphone=()"
 </IfModule>
-
-# Note: style.css and main.js are cached for 30 days rather than
-# "forever" because this site has no build step that fingerprints
-# filenames (e.g. style.abc123.css). If you edit either file after
-# deploying, returning visitors won't see the change until their
-# cached copy expires — shorten the duration above, or start
-# versioning the filename/query string on each deploy, if you'll be
-# iterating on the site often.

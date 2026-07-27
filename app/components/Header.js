@@ -1,3 +1,7 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 function current(active, key) {
@@ -6,9 +10,15 @@ function current(active, key) {
 
 export default function Header({ active }) {
   const bookHref = active === "contact" ? "#enquiry" : "/contact";
+  const [navOpen, setNavOpen] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setNavOpen(false);
+  }, [pathname]);
 
   return (
-    <header className="site-header">
+    <header className={`site-header${navOpen ? " nav-open" : ""}`}>
       <div className="container nav">
         <Link href="/" className="brand">
           <strong>EQUITY</strong> FIN ACADEMY
@@ -74,7 +84,12 @@ export default function Header({ active }) {
           <Link href={bookHref} className="btn btn-primary">
             Book a Seat
           </Link>
-          <button className="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <button
+            className="nav-toggle"
+            aria-label="Toggle menu"
+            aria-expanded={navOpen}
+            onClick={() => setNavOpen((open) => !open)}
+          >
             <svg className="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
               <path d="M3 6h18M3 12h18M3 18h18" />
             </svg>
@@ -84,7 +99,7 @@ export default function Header({ active }) {
           </button>
         </div>
 
-        <nav className="nav-mobile" aria-label="Mobile">
+        <nav className="nav-mobile" aria-label="Mobile" onClick={() => setNavOpen(false)}>
           <Link href="/" aria-current={current(active, "home")}>
             Home
           </Link>

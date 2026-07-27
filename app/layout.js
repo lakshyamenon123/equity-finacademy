@@ -1,5 +1,5 @@
-import Script from "next/script";
 import { Spectral, IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
+import PageEffects from "./components/PageEffects";
 import "./globals.css";
 
 const spectral = Spectral({
@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${spectral.variable} ${ibmPlexSans.variable} ${ibmPlexMono.variable}`}>
       <body>
         {children}
-        <Script src="/main.js" strategy="afterInteractive" />
+        <PageEffects />
       </body>
     </html>
   );

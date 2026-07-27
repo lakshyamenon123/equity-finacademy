@@ -7,12 +7,6 @@
 /_next/static/*
   Cache-Control: public, max-age=31536000, immutable
 
-# main.js has no fingerprinted filename (no build step renames it), so a
-# shorter cache is used — edit it after deploy and returning visitors
-# will still pick it up within 30 days.
-/main.js
-  Cache-Control: public, max-age=2592000
-
 /*.html
   Cache-Control: public, max-age=0, must-revalidate
 
