@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Footer({ disclaimer }) {
+export default function Footer() {
   return (
     <footer className="site-footer">
       <div className="container">
@@ -60,17 +60,6 @@ export default function Footer({ disclaimer }) {
           </div>
         </div>
 
-        <div className="disclaimer">
-          <strong>Risk disclaimer:</strong>{" "}
-          {disclaimer || (
-            <>
-              Trading forex carries a significant risk of loss and is not suitable for every investor. Past
-              educational outcomes and student results do not guarantee future performance. Always trade through a
-              regulated broker and only risk capital you can afford to lose. Equity Fin Academy provides education,
-              not personalised financial advice.
-            </>
-          )}
-        </div>
         <div className="copyright">© {new Date().getFullYear()} Equity Fin Academy, Al Qusais, Dubai. All rights reserved.</div>
       </div>
     </footer>

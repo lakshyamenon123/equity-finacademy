@@ -33,9 +33,6 @@ const breadcrumbSchema = {
   ],
 };
 
-const blogDisclaimer =
-  "This article is educational and does not constitute trading signals or financial advice. Trading forex carries a significant risk of loss. Always trade through a regulated broker and only risk capital you can afford to lose.";
-
 export default function BlogCandlestickPatternsPage() {
   return (
     <>
@@ -160,7 +157,7 @@ export default function BlogCandlestickPatternsPage() {
         </section>
       </main>
 
-      <Footer disclaimer={blogDisclaimer} />
+      <Footer />
     </>
   );
 }
