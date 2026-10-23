@@ -26,6 +26,9 @@ const ibmPlexMono = IBM_Plex_Mono({
 
 export const metadata = {
   metadataBase: new URL("https://www.equityfinacademy.com"),
+  verification: {
+    google: "2DiCnjwxlOpUQjMaIER4c2JANeTQNJa_KEKovvVrvDg",
+  },
   openGraph: {
     siteName: "Equity Fin Academy",
     locale: "en_AE",
