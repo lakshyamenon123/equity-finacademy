@@ -7,6 +7,7 @@ import {
   streamReply,
   WHATSAPP_FALLBACK_REPLY,
 } from "../../lib/assistant";
+import { WHATSAPP_URL } from "../../lib/whatsapp";
 
 export const maxDuration = 30;
 export const runtime = "nodejs";
@@ -20,13 +21,13 @@ export async function POST(request) {
   try {
     const ip = (request.headers.get("x-forwarded-for") || "local").split(",")[0].trim() || "local";
     if (!allowChatRequest(ip)) {
-      return jsonFallback("You have sent several messages in a short time. Continue this conversation on WhatsApp.", 429);
+      return jsonFallback(`You have sent several messages in a short time. Message us on WhatsApp: ${WHATSAPP_URL}`, 429);
     }
 
     const body = await request.json().catch(() => null);
     const rawLatest = Array.isArray(body?.messages) ? body.messages[body.messages.length - 1]?.content : "";
     if (String(rawLatest || "").trim().length > MAX_MESSAGE_LENGTH) {
-      return jsonFallback(`Please keep your message under ${MAX_MESSAGE_LENGTH} characters, or continue on WhatsApp.`);
+      return jsonFallback(`Please keep your message under ${MAX_MESSAGE_LENGTH} characters, or message us on WhatsApp: ${WHATSAPP_URL}`);
     }
 
     const messages = sanitizeMessages(body?.messages);
