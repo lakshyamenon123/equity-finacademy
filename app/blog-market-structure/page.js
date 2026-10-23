@@ -11,7 +11,7 @@ export const metadata = {
     title: "What Is Market Structure in Forex Trading?",
     description: "Swing highs, swing lows, and how to tell a trend from a range — the foundation of reading any forex chart.",
     type: "article",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Al Qusais, Dubai" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Dubai, UAE" }],
   },
   alternates: { canonical: "https://www.equityfinacademy.com/blog-market-structure" },
 };
@@ -101,8 +101,8 @@ export default function BlogMarketStructurePage() {
 
               <h2>How structure connects to smart money concepts</h2>
               <p>
-                Once you understand basic structure, more advanced frameworks like smart money concepts (SMC) and
-                order flow analysis build directly on top of it — adding layers like liquidity zones and imbalance to
+                Once you understand basic structure, more advanced frameworks like smart money concepts (SMC)
+                build directly on top of it — adding layers like liquidity zones and imbalance to
                 the same swing-high/swing-low map you&apos;re already reading. If you haven&apos;t already,
                 it&apos;s worth reading <Link href="/blog-candlestick-patterns">how to read candlestick patterns</Link>{" "}
                 first, since individual candles are the building blocks that form these swing points.

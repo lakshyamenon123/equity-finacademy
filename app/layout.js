@@ -40,7 +40,7 @@ export const metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Equity Fin Academy — forex training in Al Qusais, Dubai",
+        alt: "Equity Fin Academy — forex training in Dubai, UAE",
       },
     ],
   },

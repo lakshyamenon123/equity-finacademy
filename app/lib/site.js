@@ -10,11 +10,11 @@
  * No Facebook URL was given, so the Facebook icon is removed rather than linked to "#".
  *
  * TODO(owner): A logo file for Organization.logo. public/mentor.jpg is a portrait, not a logo.
- * TODO(owner): Confirm the map pin. Coordinates below are the published location of
- * Arzoo Building, Al Qusais 2 — the building named on the contact page — not a surveyed M Floor point.
+ * TODO(owner): Confirm the map pin. Coordinates below are the building pin used on the map,
+ * not a surveyed floor point. The street address stays in structured data only.
  * TODO(owner): datePublished for articles that existed before 23 Oct 2026. Those posts
  * do not record a date, so Article schema omits it.
- * TODO(owner): Say whether a paid online or remote cohort exists. These pages do not claim one.
+ * Online study is offered across the UAE as well as in-person classes in Dubai. Fees are quoted on enquiry.
  * TODO(owner): An exact Google review total, if reviewCount should be added. 30 is a floor, not a total.
  * TODO(owner): A Facebook profile URL, if one exists.
  */
@@ -26,7 +26,7 @@ export const SITE = {
   telephoneDisplay: "+971 56 718 8995",
   telephoneTel: "+971567188995",
   description:
-    "Forex trading education academy in Al Qusais, Dubai, offering group cohorts and private one-to-one lessons, including live trading sessions, from beginner fundamentals to advanced institutional strategies.",
+    "Forex academy in Dubai, UAE. Private one-to-one lessons and group classes with live trading sessions, in person and online across the UAE. Open 24/7.",
   address: {
     streetAddress: "M Floor, Arzoo Building",
     addressLocality: "Al Qusais",
@@ -57,7 +57,7 @@ export const OG_IMAGE = {
   url: "/og-image.png",
   width: 1200,
   height: 630,
-  alt: "Equity Fin Academy — forex training in Al Qusais, Dubai",
+  alt: "Equity Fin Academy — forex training in Dubai, UAE",
 };
 
 export function absoluteUrl(path) {

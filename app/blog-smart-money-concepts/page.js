@@ -10,7 +10,7 @@ export const metadata = {
     title: "Smart Money Concepts (SMC) Explained for Beginners",
     description: "Liquidity, imbalance and order blocks, in plain language.",
     type: "article",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Al Qusais, Dubai" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Dubai, UAE" }],
   },
   alternates: { canonical: "https://www.equityfinacademy.com/blog-smart-money-concepts" },
 };
@@ -89,8 +89,8 @@ export default function BlogSmartMoneyConceptsPage() {
               <p>
                 Every one of these concepts is defined relative to market structure — you can&apos;t identify a
                 liquidity sweep without first knowing where the relevant swing high or low is. This is why our{" "}
-                <Link href="/courses">Advanced Institutional Strategies course</Link> only introduces SMC after market
-                structure and order flow fundamentals are already solid. Learning SMC terminology without that
+                <Link href="/courses">Advanced Institutional Strategies course</Link> only introduces SMC after
+                market-structure fundamentals are already solid. Learning SMC terminology without that
                 foundation tends to produce pattern-matching without real understanding.
               </p>
 
@@ -103,7 +103,7 @@ export default function BlogSmartMoneyConceptsPage() {
               </p>
 
               <div className="blog-cta">
-                <p>SMC, order flow and market profile are covered in depth in our advanced track.</p>
+                <p>SMC and market profile are covered in depth in our advanced track.</p>
                 <Link href="/courses" className="btn btn-primary">
                   See Our Forex Courses
                 </Link>

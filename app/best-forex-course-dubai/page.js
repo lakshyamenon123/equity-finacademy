@@ -14,7 +14,7 @@ const path = "/best-forex-course-dubai";
 export const metadata = pageMetadata({
   title: "Best Forex Course in Dubai: How to Choose | Equity Fin Academy",
   description:
-    "A practical guide to choosing a forex course in Dubai. Equity Fin Academy in Al Qusais is rated 5.0 on Google from 30+ reviews and has trained 2,000+ students — here is what to check before you enrol anywhere.",
+    "A practical guide to choosing a forex course in Dubai. Equity Fin Academy in Dubai is rated 5.0 on Google from 30+ reviews and has trained 2,000+ students — here is what to check before you enrol anywhere.",
   keywords:
     "best forex course in Dubai, best forex training Dubai, forex course comparison UAE, forex academy reviews Dubai, how to choose a forex course Dubai",
   path,
@@ -65,7 +65,7 @@ export default function BestForexCourseDubaiPage() {
             </h1>
             <p className="hero-sub" style={{ marginTop: 18, maxWidth: "62ch" }}>
               “Best” is a fit question. This page is the checklist we would want you to use on any academy in Dubai,
-              including ours. Equity Fin Academy is rated 5.0 on Google from 30+ reviews and has trained 2,000+ students from Al Qusais.
+              including ours. Equity Fin Academy is rated 5.0 on Google from 30+ reviews and has trained 2,000+ students.
             </p>
           </div>
         </section>
@@ -111,7 +111,7 @@ export default function BestForexCourseDubaiPage() {
               <li>
                 <strong>Who teaches, by name?</strong> You should be able to read a real background.{" "}
                 <Link href="/about">Gopi Chandran</Link> is the founder and lead instructor: MBA in Finance, full-time
-                forex trader since 2016, with a background inside institutional trading desks.
+                founder of Equity Fin Academy, with a background inside institutional trading desks.
               </li>
               <li>
                 <strong>Is the curriculum sequenced?</strong> Vocabulary, candles, market structure and risk should come
@@ -123,7 +123,7 @@ export default function BestForexCourseDubaiPage() {
                 not the same thing as the academy being a licensed advisory firm — we teach; we do not manage your money.
               </li>
               <li>
-                <strong>Can you visit?</strong> Classes are live and in person at M Floor, Arzoo Building, Al Qusais,
+                <strong>Can you visit?</strong> Classes are live and in person in Dubai, UAE,
                 Dubai. The academy is open 24/7. Calling ahead means someone can walk you through the tracks, including private one-to-one lessons and live trading sessions.
               </li>
               <li>
@@ -168,7 +168,7 @@ export default function BestForexCourseDubaiPage() {
               </div>
               <div className="card reveal">
                 <div className="num">04</div>
-                <h3>One classroom, Al Qusais</h3>
+                <h3>One classroom, in Dubai</h3>
                 <p>There is no second campus. Abu Dhabi and Sharjah students attend the same Dubai address, or start with the free lessons.</p>
               </div>
             </div>
@@ -204,7 +204,7 @@ export default function BestForexCourseDubaiPage() {
             </div>
             <p style={{ marginTop: 28 }}>
               <Link href="/contact" className="btn btn-primary">
-                Book a Seat in Al Qusais
+                Book a Seat in Dubai
               </Link>
             </p>
           </div>

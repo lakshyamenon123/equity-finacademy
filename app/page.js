@@ -12,9 +12,9 @@ import { VIDEOS } from "./lib/videos";
 export const metadata = pageMetadata({
   title: "Equity Fin Academy — Forex Trading Course & Academy in Dubai",
   description:
-    "Forex trading course in Al Qusais, Dubai: live group classes and private one-to-one lessons, including live trading sessions, from candlesticks and market structure to order flow. Open 24/7. Rated 5.0 on Google from 30+ reviews.",
+    "Learn forex in Dubai, UAE, or online across the UAE. Private one-to-one lessons and group classes with live trading sessions. Open 24/7. Rated 5.0 on Google from 30+ reviews. 2,000+ students trained.",
   keywords:
-    "forex trading course Dubai, forex trading academy Al Qusais, learn forex trading UAE, how to start forex trading, forex trading for beginners, smart money concepts course, market structure trading, candlestick pattern course, institutional trading strategies, SCA regulated broker training, technical analysis course Dubai, order flow trading course, risk management trading course, forex mentor Dubai, best forex course in Dubai, group forex training classes Dubai, private forex training Dubai, one to one forex classes Dubai, forex classes near me Dubai",
+    "forex trading course Dubai, learn forex trading UAE, how to start forex trading, forex trading for beginners, smart money concepts course, market structure trading, candlestick pattern course, institutional trading strategies, SCA regulated broker training, technical analysis course Dubai, risk management trading course, forex mentor Dubai, best forex course in Dubai, group forex training classes Dubai, private forex training Dubai, one to one forex classes Dubai, forex classes near me Dubai",
   path: "/",
 });
 
@@ -29,12 +29,11 @@ export default function HomePage() {
         <section className="hero hero-premium">
           <div className="container hero-layout">
             <div className="hero-copy">
-              <span className="eyebrow">Al Qusais, Dubai · Open 24/7</span>
-              <h1 className="hero-display">Forex training in Dubai, taught live.</h1>
+              <span className="eyebrow">Dubai, UAE · Open 24/7</span>
+              <h1 className="hero-display">Learn Forex the Right Way with the UAE&apos;s 5-Star Rated Trading Academy</h1>
               <p className="hero-sub">
-                Group cohorts and private one-to-one lessons at M Floor, Arzoo Building, with live trading sessions.
-                Order flow, market structure and risk — not a signal service. Founded by Gopi Chandran, a full-time
-                forex trader since 2016.
+                Private one-to-one lessons and group classes with live trading sessions, trusted by 2,000+ students.
+                Learn in Dubai or online across the UAE.
               </p>
               <div className="trust-row">
                 <a className="trust-badge" href={SITE.mapsUrl} target="_blank" rel="noopener noreferrer">
@@ -58,7 +57,7 @@ export default function HomePage() {
             </div>
 
             <aside className="hero-panel" aria-label="Training formats">
-              <p className="hero-panel-kicker">Train in Al Qusais</p>
+              <p className="hero-panel-kicker">Dubai, UAE</p>
               <ul className="hero-panel-list">
                 <li>
                   <span>Private one-to-one</span>
@@ -111,8 +110,8 @@ export default function HomePage() {
               <span className="label">Students Trained</span>
             </div>
             <div className="stat-block reveal">
-              <span className="value" data-counter="10" data-suffix="+">10+</span>
-              <span className="label">Years Full-Time Trading</span>
+              <span className="value" data-counter="200" data-suffix="+">200+</span>
+              <span className="label">YouTube reviews</span>
             </div>
             <div className="stat-block reveal">
               <span className="value" data-counter="2" data-suffix="">2</span>
@@ -187,7 +186,7 @@ export default function HomePage() {
                 <div className="num">03</div>
                 <h3>One market, mastered deeply</h3>
                 <p>
-                  We teach forex exclusively — structure, order flow and risk — rather than spreading a shallow
+                  We teach forex exclusively — market structure and risk — rather than spreading a shallow
                   curriculum across every asset class.
                 </p>
               </div>
@@ -221,7 +220,7 @@ export default function HomePage() {
                   <path d="M4 18l5-6 4 3 7-9" />
                   <path d="M20 6h-4v4" />
                 </svg>
-                Market Structure &amp; Order Flow
+                Market Structure
               </div>
               <div className="market-chip">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
@@ -249,7 +248,7 @@ export default function HomePage() {
               <div className="process-step reveal">
                 <div className="step-num">02</div>
                 <h3>Choose your track</h3>
-                <p>Basic to Intermediate for fundamentals, or Advanced Institutional Strategies if you&apos;re ready for order flow.</p>
+                <p>Basic to Intermediate for fundamentals, or Advanced Institutional Strategies if you already know the basics.</p>
               </div>
               <div className="process-step reveal">
                 <div className="step-num">03</div>
@@ -314,18 +313,18 @@ export default function HomePage() {
               <Link href="/about" className="teaser reveal">
                 <span className="eyebrow mt-0">THE FOUNDER</span>
                 <h3>Meet Gopi Chandran</h3>
-                <p>MBA in Finance and a full-time forex trader since 2016, now teaching the same market-structure approach he trades with.</p>
+                <p>Founder of Equity Fin Academy and Equity Global, teaching private lessons, group classes, and live trading sessions.</p>
                 <span className="arrow">Read the full profile →</span>
               </Link>
               <Link href="/courses" className="teaser reveal">
                 <span className="eyebrow mt-0">CURRICULUM</span>
                 <h3>Compare the two course tracks</h3>
-                <p>From candlestick fundamentals to institutional order flow, bot strategy and lifetime WhatsApp support.</p>
+                <p>From candlestick fundamentals to the advanced track, including bot strategy and lifetime WhatsApp support.</p>
                 <span className="arrow">View courses →</span>
               </Link>
               <Link href="/contact" className="teaser reveal">
                 <span className="eyebrow mt-0">VISIT OR CALL</span>
-                <h3>Book a seat in Al Qusais</h3>
+                <h3>Book a seat in Dubai</h3>
                 <p>Speak with the team, ask about upcoming cohorts, and find out which track fits your experience.</p>
                 <span className="arrow">Get in touch →</span>
               </Link>
@@ -338,8 +337,7 @@ export default function HomePage() {
             <span className="eyebrow">HOW CLASSES RUN</span>
             <h2>Group classes, private lessons, and live trading sessions.</h2>
             <p>
-              Paid training is taught live at M Floor, Arzoo Building — the place to come if you want forex classes
-              near you in Dubai. You can join a group cohort on a shared syllabus, or book a private one-to-one lesson.
+              Training is taught in person in Dubai, UAE, and online across the UAE. You can join a group class on a shared syllabus, or book a private one-to-one lesson.
               Both include live trading sessions and training. The academy is open 24/7. It is rated 5.0 on Google from
               30+ reviews, and the Equity Global channel has 200+ YouTube reviews and comments. Formats are spelled out
               on <Link href="/private-group-forex-training-dubai">private one-to-one and group classes</Link>, and the
@@ -405,7 +403,6 @@ export default function HomePage() {
               <span className="topic-chip">Smart Money Concepts</span>
               <span className="topic-chip">Market Structure Trading</span>
               <span className="topic-chip">Candlestick Pattern Course</span>
-              <span className="topic-chip">Order Flow Analysis</span>
               <span className="topic-chip">SCA Regulated Broker Training</span>
               <span className="topic-chip">Institutional Trading Strategies</span>
               <span className="topic-chip">Risk Management for Traders</span>
@@ -419,7 +416,7 @@ export default function HomePage() {
               <div>
                 <h2>Ask about the next class.</h2>
                 <p>
-                  The academy is open 24/7 in Al Qusais. Call, WhatsApp, or send an enquiry. The fee for a group cohort
+                  The academy is open 24/7 in Dubai, UAE. Call, WhatsApp, or send an enquiry. The fee for a group class
                   or a private lesson is quoted when you ask.
                 </p>
               </div>

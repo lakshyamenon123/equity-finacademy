@@ -11,9 +11,9 @@ import { VIDEOS } from "../lib/videos";
 const path = "/forex-course-sharjah";
 
 export const metadata = pageMetadata({
-  title: "Forex Course in Sharjah — Classes in Al Qusais, Dubai | Equity Fin Academy",
+  title: "Forex Course in Sharjah — Classes in Dubai, UAE | Equity Fin Academy",
   description:
-    "Forex training for Sharjah students at Equity Fin Academy. Live classes are in Al Qusais, on Dubai's side of the Sharjah border — curriculum, who should come, and how to enquire.",
+    "Forex training for Sharjah students at Equity Fin Academy. Live classes are in Dubai, on Dubai's side of the Sharjah border — curriculum, who should come, and how to enquire.",
   keywords:
     "forex course Sharjah, forex training Sharjah, forex classes near Sharjah, learn forex Al Nahda, forex academy near Sharjah Dubai",
   path,
@@ -22,11 +22,11 @@ export const metadata = pageMetadata({
 const pageFaq = [
   {
     q: "Do you have a forex classroom in Sharjah?",
-    text: "No. Classes are at M Floor, Arzoo Building, Al Qusais, Dubai. Al Qusais is on Dubai's northern edge, beside Sharjah, which is why many Sharjah students use this campus rather than crossing the whole of Dubai.",
+    text: "No. In-person classes are in Dubai, UAE, a short trip from Sharjah. You can also learn online across the UAE.",
   },
   {
     q: "Which course should a Sharjah beginner take?",
-    text: "Basic to Intermediate, unless you already understand forex fundamentals and market structure. The advanced track assumes that base and adds order flow, market profile and risk psychology.",
+    text: "Basic to Intermediate, unless you already understand forex fundamentals and market structure. The advanced track assumes that base and adds market profile and risk psychology.",
   },
   {
     q: "Can I visit without an appointment?",
@@ -54,14 +54,12 @@ export default function ForexCourseSharjahPage() {
               <span className="sep">/</span>
               <span className="current">Forex Course in Sharjah</span>
             </nav>
-            <span className="eyebrow">SHARJAH STUDENTS · AL QUSAIS CLASSROOM</span>
+            <span className="eyebrow">SHARJAH STUDENTS · DUBAI, UAE</span>
             <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,3.1rem)", maxWidth: "18ch" }}>
               Forex training a short trip from Sharjah.
             </h1>
             <p className="hero-sub" style={{ marginTop: 18, maxWidth: "64ch" }}>
-              Equity Fin Academy teaches in Al Qusais, Dubai — on the Dubai side of the Sharjah border, not inside
-              Sharjah itself. If you live in Sharjah, this is the campus you would actually attend, and this page
-              explains the course without pretending there is a second branch.
+              Equity Fin Academy teaches in person in Dubai, UAE, a short trip from Sharjah, and online across the UAE. There is no second campus in Sharjah.
             </p>
             <div className="cta-row" style={{ marginTop: 28 }}>
               <a href="tel:+971567188995" className="btn btn-outline">
@@ -76,12 +74,10 @@ export default function ForexCourseSharjahPage() {
 
         <section>
           <div className="container prose-block">
-            <h2>Why Al Qusais comes up in Sharjah searches</h2>
+            <h2>Why Dubai comes up in Sharjah searches</h2>
             <p>
-              Al Qusais 2, where Arzoo Building stands, is in northern Dubai, next to neighbourhoods people in Sharjah
-              already cross for work, the metro and everyday errands. We will not invent a door-to-door minute count.
-              The useful fact is the address: M Floor, Arzoo Building, Al Qusais, Dubai. The map is on the{" "}
-              <Link href="/contact">contact page</Link>. Abu Dhabi is a longer drive; that situation is described on
+              In-person classes are in Dubai, UAE, close enough that many Sharjah students make the trip. We will not invent a door-to-door minute count.
+              Directions are on the map on the <Link href="/contact">contact page</Link>. You can also learn online across the UAE. Abu Dhabi is a longer drive; that situation is described on
               the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>.
             </p>
 
@@ -90,7 +86,7 @@ export default function ForexCourseSharjahPage() {
               A live forex curriculum, not a webinar replay. Beginners take Basic to Intermediate: how pairs are quoted,
               how to read a candle, how swing highs and lows define structure, where imbalance shows up, and how risk
               sits inside that picture. Traders who already have that base can take Advanced Institutional Strategies,
-              which adds order flow, market profile, volume with smart money concepts, Fibonacci, psychology, and bot
+              which adds market profile, volume with smart money concepts, Fibonacci, psychology, and bot
               trading concepts, plus lifetime WhatsApp access to the instructor after the course.
             </p>
             <p>
@@ -110,11 +106,10 @@ export default function ForexCourseSharjahPage() {
               <li>Read <Link href="/blog-forex-course-dubai-beginners">what a beginner course in Dubai includes</Link> so the level is obvious before you arrive.</li>
               <li>Skim <Link href="/courses">the full topic list</Link>. If a provider will not show the syllabus, that is its own answer.</li>
               <li>Bring a question about your experience, not a request for a signal. The first conversation is which track fits.</li>
-              <li>If you cannot attend in person, use the <Link href="/online-forex-course-uae">online study notes</Link>. We do not advertise a separate paid remote course.</li>
+              <li>If you cannot attend in person, learn online across the UAE. The <Link href="/online-forex-course-uae">online study page</Link> explains how that works.</li>
             </ul>
             <p>
-              The founder is <Link href="/about">Gopi Chandran</Link>, an MBA in Finance and a full-time forex trader
-              since 2016. Call or WhatsApp <a href="tel:+971567188995">+971 56 718 8995</a> for the next cohort. Fees
+              The founder is <Link href="/about">Gopi Chandran</Link>. Call or WhatsApp <a href="tel:+971567188995">+971 56 718 8995</a> for the next class. Fees
               change, so they are quoted when you enquire — <Link href="/pricing">see what is included</Link> first.
             </p>
           </div>

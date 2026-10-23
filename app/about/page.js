@@ -9,9 +9,9 @@ import { breadcrumbSchema, personSchema } from "../lib/schema";
 export const metadata = pageMetadata({
   title: "About Us — Gopi Chandran, Founder | Equity Fin Academy Dubai",
   description:
-    "Gopi Chandran, founder of Equity Fin Academy: MBA in Finance, full-time forex trader since 2016. Built the Equity Global YouTube channel and trained 2,000+ students in Dubai.",
+    "Gopi Chandran is the founder of Equity Fin Academy in Dubai, UAE. He built the Equity Global YouTube channel and has trained 2,000+ students.",
   keywords:
-    "Gopi Chandran trader Dubai, Equity Global YouTube, forex trading mentor Dubai, forex trading instructor UAE, trading academy founder Dubai, market structure mentor, forex trader since 2016, about equity fin academy",
+    "Gopi Chandran trader Dubai, Equity Global YouTube, forex trading mentor Dubai, forex trading instructor UAE, trading academy founder Dubai, about equity fin academy",
   path: "/about",
 });
 
@@ -56,22 +56,21 @@ export default function AboutPage() {
               </div>
               <span className="role">FOUNDER &amp; LEAD INSTRUCTOR</span>
               <h2>Gopi Chandran</h2>
-              <p>MBA in Finance. Full-time forex trader since 2016, trading major and minor currency pairs across live market structure.</p>
+              <p>Founder of Equity Fin Academy and the Equity Global YouTube channel. More than 2,000 students trained.</p>
             </div>
 
             <div className="reveal">
               <h2 style={{ fontSize: "1.6rem" }}>A single-market focus, taught in plain language</h2>
               <p style={{ maxWidth: "62ch" }}>
-                Equity Fin Academy exists because Gopi wanted to teach forex the way it&apos;s actually traded on a
-                desk — order flow, liquidity and risk as one connected structure — rather than a shallow,
-                multi-market curriculum stretched thin across everything at once. If you want the short version of
-                why that matters, see <Link href="/why-choose-us">Why Choose Us</Link>.
+                Equity Fin Academy teaches forex in person in Dubai, UAE, and online across the UAE. Lessons are
+                private one-to-one or in a group, with live trading sessions. If you want the short version of why
+                students choose the academy, see <Link href="/why-choose-us">Why Choose Us</Link>.
               </p>
 
               <ul className="credential-list">
                 <li>
-                  <span className="tag">2016 —</span>
-                  <span>Began trading forex full-time, after formal training in finance.</span>
+                  <span className="tag">FOUNDER</span>
+                  <span>Gopi Chandran founded Equity Fin Academy and leads the lessons.</span>
                 </li>
                 <li>
                   <span className="tag">EDUCATION</span>
@@ -86,7 +85,7 @@ export default function AboutPage() {
                 </li>
                 <li>
                   <span className="tag">FOCUS</span>
-                  <span>One market, taught in depth — forex structure, order flow and risk management as a single connected discipline.</span>
+                  <span>One market, taught in depth — forex, with live trading sessions and a clear focus on risk.</span>
                 </li>
               </ul>
             </div>
@@ -100,8 +99,8 @@ export default function AboutPage() {
               <span className="label">Students Trained</span>
             </div>
             <div className="stat-block reveal">
-              <span className="value" data-counter="10" data-suffix="+">10+</span>
-              <span className="label">Years Full-Time Trading</span>
+              <span className="value" data-counter="200" data-suffix="+">200+</span>
+              <span className="label">YouTube reviews</span>
             </div>
             <div className="stat-block reveal">
               <span className="value" data-counter="2" data-suffix="">2</span>
@@ -109,7 +108,7 @@ export default function AboutPage() {
             </div>
             <div className="stat-block reveal">
               <span className="value" data-counter="1" data-suffix="">1</span>
-              <span className="label">Market. Fully Mastered.</span>
+              <span className="label">Market, taught in depth</span>
             </div>
           </div>
         </div>
@@ -127,9 +126,9 @@ export default function AboutPage() {
                 <p>Formal grounding in financial theory, before moving into full-time trading.</p>
               </div>
               <div className="timeline-item">
-                <span className="tag">2016 — Onward</span>
-                <h3>Full-time forex trader</h3>
-                <p>Began trading forex full-time, developing a market-structure approach built around order flow and risk.</p>
+                <span className="tag">TRADING</span>
+                <h3>Forex, taught live</h3>
+                <p>Private one-to-one lessons, group classes, and live trading sessions, in Dubai and online across the UAE.</p>
               </div>
               <div className="timeline-item">
                 <span className="tag">Equity Global</span>
@@ -139,7 +138,7 @@ export default function AboutPage() {
               <div className="timeline-item">
                 <span className="tag">Equity Fin Academy</span>
                 <h3>Academy founded</h3>
-                <p>Formalised live mentorship and structured course tracks in Al Qusais, Dubai.</p>
+                <p>Live mentorship and two structured course tracks, in Dubai, UAE, and online across the UAE.</p>
               </div>
             </div>
           </div>
@@ -155,7 +154,7 @@ export default function AboutPage() {
               <div className="card reveal">
                 <div className="num">01</div>
                 <h3>Structure over indicators</h3>
-                <p>Market structure, order flow and liquidity are taught before any indicator — because indicators describe price, structure explains it.</p>
+                <p>Market structure is taught before indicators, because indicators describe price and structure explains it.</p>
               </div>
               <div className="card reveal">
                 <div className="num">02</div>
@@ -189,7 +188,7 @@ export default function AboutPage() {
             <div className="cta-banner reveal">
               <div>
                 <h2>See what the curriculum actually covers.</h2>
-                <p>Two tracks, from candlestick fundamentals to institutional order flow — compare them side by side.</p>
+                <p>Two tracks, from candlestick fundamentals to the advanced syllabus. Compare them side by side.</p>
               </div>
               <Link href="/courses" className="btn btn-primary">
                 View Courses

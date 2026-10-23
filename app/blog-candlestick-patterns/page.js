@@ -11,7 +11,7 @@ export const metadata = {
     title: "How to Read Candlestick Patterns: A Beginner's Guide",
     description: "What each candle represents, and the patterns worth learning first as a beginner forex trader.",
     type: "article",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Al Qusais, Dubai" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Dubai, UAE" }],
   },
   alternates: { canonical: "https://www.equityfinacademy.com/blog-candlestick-patterns" },
 };

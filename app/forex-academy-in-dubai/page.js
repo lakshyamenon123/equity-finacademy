@@ -7,14 +7,14 @@ import { VIDEOS } from "../lib/videos";
 export const metadata = {
   title: "Forex Academy in Dubai — Forex Classes for Beginners | Equity Fin Academy",
   description:
-    "Searching for a forex academy in Dubai? Equity Fin Academy offers forex trading classes for beginners and advanced traders in Al Qusais — structured courses, an SCA-regulated broker, and an instructor with institutional trading experience. Learn forex in Dubai, taught properly.",
+    "Searching for a forex academy in Dubai? Equity Fin Academy offers forex trading classes for beginners and advanced traders in Dubai — structured courses, an SCA-regulated broker, and an instructor with institutional trading experience. Learn forex in Dubai, taught properly.",
   keywords:
     "best forex academy in dubai, forex academy in dubai, forex trading in dubai, forex classes in dubai, forex classes near me Dubai, forex for beginners, learn forex, forex course dubai, forex training dubai, forex school dubai, group forex training classes Dubai",
   openGraph: {
     title: "Forex Academy in Dubai — Forex Classes for Beginners | Equity Fin Academy",
     description: "Forex trading classes in Dubai for beginners and advanced traders — structured courses, a regulated broker, and an instructor with institutional experience.",
     type: "website",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Al Qusais, Dubai" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Dubai, UAE" }],
   },
   alternates: { canonical: "https://www.equityfinacademy.com/forex-academy-in-dubai" },
 };
@@ -72,7 +72,7 @@ const whyDubai = [
   {
     icon: <path d="M4 21V10l8-6 8 6v11M9 21v-6h6v6" />,
     title: "An in-person option, not just a screen",
-    body: "Most forex education is purely online. Equity Fin Academy runs live, in-person classes in Al Qusais — direct feedback, real accountability, no muted webinar chat.",
+    body: "Most forex education is purely online. Equity Fin Academy runs live, in-person classes in Dubai — direct feedback, real accountability, no muted webinar chat.",
   },
 ];
 
@@ -96,7 +96,7 @@ export default function ForexAcademyDubaiPage() {
                   in Dubai, from complete beginner onward.
                 </h1>
                 <p className="hero-sub" style={{ marginTop: 22 }}>
-                  Equity Fin Academy is a forex academy in Al Qusais, Dubai, running structured forex classes for
+                  Equity Fin Academy is a forex academy in Dubai, UAE, running structured forex classes for
                   beginners and advanced traders alike. If you&apos;re comparing forex training in Dubai, here&apos;s
                   exactly what we teach, who teaches it, and how it works.
                 </p>
@@ -154,7 +154,7 @@ export default function ForexAcademyDubaiPage() {
             <div className="hero-stats-row">
               <div className="stat-card-light reveal">
                 <div className="head"><span>Location</span><span>(01)</span></div>
-                <div className="value">Al Qusais, Dubai</div>
+                <div className="value">Dubai, UAE</div>
               </div>
               <div className="stat-card-light reveal">
                 <div className="head"><span>Format</span><span>(02)</span></div>
@@ -177,8 +177,8 @@ export default function ForexAcademyDubaiPage() {
               <span className="label">Students Trained</span>
             </div>
             <div className="stat-block reveal">
-              <span className="value" data-counter="10" data-suffix="+">10+</span>
-              <span className="label">Years Full-Time Trading</span>
+              <span className="value" data-counter="200" data-suffix="+">200+</span>
+              <span className="label">YouTube reviews</span>
             </div>
             <div className="stat-block reveal">
               <span className="value" data-counter="2" data-suffix="">2</span>
@@ -186,7 +186,7 @@ export default function ForexAcademyDubaiPage() {
             </div>
             <div className="stat-block reveal">
               <span className="value" data-counter="1" data-suffix="">1</span>
-              <span className="label">Location: Al Qusais, Dubai</span>
+              <span className="label">Location: Dubai, UAE</span>
             </div>
           </div>
         </div>
@@ -229,7 +229,7 @@ export default function ForexAcademyDubaiPage() {
               <div className="process-step reveal">
                 <div className="step-num">02</div>
                 <h3>Already trading?</h3>
-                <p>Advanced Institutional Strategies goes straight into order flow, market profile and institutional tools.</p>
+                <p>Advanced Institutional Strategies goes further into market profile and institutional tools.</p>
               </div>
               <div className="process-step reveal">
                 <div className="step-num">03</div>
@@ -263,7 +263,7 @@ export default function ForexAcademyDubaiPage() {
                   <path d="M4 18l5-6 4 3 7-9" />
                   <path d="M20 6h-4v4" />
                 </svg>
-                Market Structure &amp; Order Flow
+                Market Structure
               </div>
               <div className="market-chip">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
@@ -320,12 +320,12 @@ export default function ForexAcademyDubaiPage() {
               <Link href="/courses" className="teaser reveal">
                 <span className="eyebrow mt-0">CURRICULUM</span>
                 <h3>Compare the two course tracks</h3>
-                <p>From candlestick fundamentals to institutional order flow, bot strategy and lifetime WhatsApp support.</p>
+                <p>From candlestick fundamentals to the advanced syllabus, bot strategy and lifetime WhatsApp support.</p>
                 <span className="arrow">View courses →</span>
               </Link>
               <Link href="/contact" className="teaser reveal">
                 <span className="eyebrow mt-0">VISIT OR CALL</span>
-                <h3>Book a seat in Al Qusais</h3>
+                <h3>Book a seat in Dubai</h3>
                 <p>Speak with the team, ask about upcoming cohorts, and find out which track fits your experience.</p>
                 <span className="arrow">Get in touch →</span>
               </Link>
@@ -337,7 +337,7 @@ export default function ForexAcademyDubaiPage() {
           <div className="container prose-block">
             <h2>Forex classes near you in Dubai</h2>
             <p>
-              The classroom is M Floor, Arzoo Building, Al Qusais, and the academy is open 24/7. Classes run as group
+              Classes are held in Dubai, UAE, and online across the UAE. The academy is open 24/7. Classes run as group
               cohorts, and private one-to-one lessons are available as well, including live trading sessions and
               training. <Link href="/private-group-forex-training-dubai">Private and group forex training</Link>{" "}
               compares the two. The syllabus is on <Link href="/courses">Courses</Link>.
@@ -364,7 +364,7 @@ export default function ForexAcademyDubaiPage() {
                 <summary>
                   Can I learn forex trading in Dubai in person, not just online?<span className="plus">+</span>
                 </summary>
-                <p>Yes. Equity Fin Academy runs live, in-person classes at M Floor, Arzoo Building, Al Qusais, Dubai — most forex education online-only, so this is a genuine point of difference.</p>
+                <p>Yes. Equity Fin Academy runs live, in-person classes in Dubai, UAE, and you can also learn online across the UAE.</p>
               </details>
               <details>
                 <summary>

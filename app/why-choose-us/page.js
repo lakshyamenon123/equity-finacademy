@@ -13,7 +13,7 @@ export const metadata = {
     description:
       "An institutional-background instructor, SCA-regulated broker access, and a single-market forex curriculum — see what makes Equity Fin Academy different.",
     type: "website",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Al Qusais, Dubai" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Dubai, UAE" }],
   },
   alternates: { canonical: "https://www.equityfinacademy.com/why-choose-us" },
 };
@@ -46,7 +46,7 @@ const differentiators = [
       </>
     ),
     title: "One market, taught in depth",
-    body: "We teach forex exclusively. That focus means more class time on structure, order flow and risk — not a shallow tour of five different markets.",
+    body: "We teach forex exclusively. That focus means more class time on structure and risk — not a shallow tour of five different markets.",
   },
   {
     icon: <path d="M17 21v-2a4 4 0 00-4-4H7a4 4 0 00-4 4v2M12 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />,
@@ -75,8 +75,8 @@ const differentiators = [
         <circle cx="12" cy="11" r="2.5" />
       </>
     ),
-    title: "A physical academy in Al Qusais",
-    body: "Learn in person at M Floor, Arzoo Building, Al Qusais, Dubai — not just through a screen with no accountability.",
+    title: "In Dubai, and online across the UAE",
+    body: "Learn in person in Dubai, UAE, or online across the UAE.",
   },
 ];
 

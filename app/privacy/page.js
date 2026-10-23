@@ -6,7 +6,7 @@ import { pageMetadata } from "../lib/seo";
 import { breadcrumbSchema } from "../lib/schema";
 
 export const metadata = pageMetadata({
-  title: "Privacy — Equity Fin Academy, Al Qusais, Dubai",
+  title: "Privacy — Equity Fin Academy, Dubai, UAE",
   description:
     "How Equity Fin Academy uses a name and UAE mobile number from the site chat and enquiry form. The number is used only to contact you about courses.",
   path: "/privacy",
