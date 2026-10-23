@@ -2,12 +2,9 @@
 
 import { useEffect, useRef, useState } from "react";
 import { flushSync } from "react-dom";
-import Link from "next/link";
-import LeadForm from "./LeadForm";
 import { draftFromMessages } from "../lib/leadCapture";
 import { OPEN_CHAT_EVENT } from "../lib/openChat";
-import { hasPhoneAttempt, findUaeMobile } from "../lib/phone";
-import { COURSE_WHATSAPP_TEXT, SLOW_CHAT_REPLY, STARTRADER_LIVE_URL, whatsappHref } from "../lib/whatsapp";
+import { COURSE_WHATSAPP_TEXT, SLOW_CHAT_REPLY, WHATSAPP_URL, whatsappHref } from "../lib/whatsapp";
 
 const GREETING =
   "👋 Hi! Welcome to Equity Fin Academy. Looking to learn forex? I can help you choose private one-to-one or group classes. May I know your name?";
@@ -21,42 +18,43 @@ const DISMISS_KEY = "efa-chat-dismissed";
 
 const WHATSAPP_LINK = whatsappHref(COURSE_WHATSAPP_TEXT);
 
-function ChatText({ text, whatsapp }) {
-  const parts = String(text || "").split(STARTRADER_LIVE_URL);
-  return (
-    <>
-      {parts.map((part, index) => (
-        <span key={index}>
-          {part}
-          {index < parts.length - 1 ? (
-            <a className="broker-chat-btn" href={STARTRADER_LIVE_URL} target="_blank" rel="noopener noreferrer">
-              Open a StarTrader live account
-            </a>
-          ) : null}
-        </span>
-      ))}
-      {whatsapp ? (
-        <a className="assist-wa-inline" href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
-          WhatsApp us
-        </a>
-      ) : null}
-    </>
-  );
+function linkify(text) {
+  const value = String(text || "");
+  const pattern = /https?:\/\/[^\s<>"']+/g;
+  const nodes = [];
+  let last = 0;
+  let key = 0;
+  for (const match of value.matchAll(pattern)) {
+    const raw = match[0];
+    const href = raw.replace(/[),.;!?]+$/g, "");
+    const start = match.index || 0;
+    if (start > last) nodes.push(value.slice(last, start));
+    nodes.push(
+      <a key={key} href={href} target="_blank" rel="noopener noreferrer">
+        {href}
+      </a>
+    );
+    key += 1;
+    const end = start + raw.length;
+    if (href.length < raw.length) nodes.push(raw.slice(href.length));
+    last = end;
+  }
+  if (last < value.length) nodes.push(value.slice(last));
+  return nodes;
 }
 
 export default function EnquiryWidget() {
   const [open, setOpen] = useState(false);
-  const [tab, setTab] = useState("chat");
   const [messages, setMessages] = useState([STARTER]);
   const [draft, setDraft] = useState("");
   const [pending, setPending] = useState(false);
   const [typing, setTyping] = useState(false);
   const [greet, setGreet] = useState(false);
   const [nudged, setNudged] = useState(false);
-  const [leadNote, setLeadNote] = useState("");
   const logRef = useRef(null);
   const savedPhone = useRef("");
   const engaged = useRef(false);
+  const leadWarned = useRef(false);
 
   useEffect(() => {
     let dismissed = false;
@@ -92,7 +90,6 @@ export default function EnquiryWidget() {
     flushSync(() => {
       setGreet(false);
       setNudged(false);
-      setTab("chat");
       setOpen(true);
     });
     document.getElementById("assist-draft")?.focus();
@@ -139,13 +136,12 @@ export default function EnquiryWidget() {
 
   useEffect(() => {
     if (logRef.current) logRef.current.scrollTop = logRef.current.scrollHeight;
-  }, [messages, open, typing, leadNote]);
+  }, [messages, open, typing]);
 
   async function onAsk(event) {
     event.preventDefault();
     const content = draft.trim();
     if (!content || pending) return;
-    const history = messages.filter((item) => item !== STARTER);
     const next = [...messages, { role: "user", content }];
     setMessages(next);
     setDraft("");
@@ -159,7 +155,7 @@ export default function EnquiryWidget() {
       closed = true;
       setTyping(false);
       setPending(false);
-      setMessages((current) => [...current, { role: "assistant", content: SLOW_CHAT_REPLY, whatsapp: true }]);
+      setMessages((current) => [...current, { role: "assistant", content: SLOW_CHAT_REPLY }]);
     };
     const slowTimer = setTimeout(showSlowReply, 26_000);
     try {
@@ -167,7 +163,7 @@ export default function EnquiryWidget() {
         method: "POST",
         headers: { "content-type": "application/json" },
         body: JSON.stringify({
-          messages: [...history, { role: "user", content }].map(({ role, content: text }) => ({ role, content: text })),
+          messages: next.map(({ role, content: text }) => ({ role, content: text })),
         }),
       });
       if (closed) return;
@@ -177,14 +173,7 @@ export default function EnquiryWidget() {
         closed = true;
         clearTimeout(slowTimer);
         setTyping(false);
-        setMessages((current) => [
-          ...current,
-          {
-            role: "assistant",
-            content: data.reply || SLOW_CHAT_REPLY,
-            whatsapp: true,
-          },
-        ]);
+        setMessages((current) => [...current, { role: "assistant", content: data.reply || SLOW_CHAT_REPLY }]);
         return;
       }
 
@@ -218,8 +207,7 @@ export default function EnquiryWidget() {
             closed = true;
             clearTimeout(slowTimer);
             setTyping(false);
-            const reply = payload.reply || SLOW_CHAT_REPLY;
-            setMessages((current) => [...current, { role: "assistant", content: reply, whatsapp: true }]);
+            setMessages((current) => [...current, { role: "assistant", content: payload.reply || SLOW_CHAT_REPLY }]);
           }
         }
       }
@@ -229,7 +217,7 @@ export default function EnquiryWidget() {
         closed = true;
         clearTimeout(slowTimer);
         setTyping(false);
-        setMessages((current) => [...current, { role: "assistant", content: SLOW_CHAT_REPLY, whatsapp: true }]);
+        setMessages((current) => [...current, { role: "assistant", content: SLOW_CHAT_REPLY }]);
       }
     } finally {
       clearTimeout(slowTimer);
@@ -239,105 +227,85 @@ export default function EnquiryWidget() {
   }
 
   function captureLead(nextMessages) {
-    const latest = nextMessages[nextMessages.length - 1]?.content || "";
-    const draft = draftFromMessages(nextMessages, window.location.pathname);
-    if (!draft) {
-      if (hasPhoneAttempt(latest) && !findUaeMobile(latest)) {
-        setLeadNote("Please send a UAE mobile as +971 followed by 9 digits, or a number starting with 05.");
-      }
-      return;
-    }
-    if (savedPhone.current === draft.phone) return;
+    const draftLead = draftFromMessages(nextMessages, window.location.pathname);
+    if (!draftLead || savedPhone.current === draftLead.phone) return;
     fetch("/api/lead", {
       method: "POST",
       headers: { "content-type": "application/json" },
-      body: JSON.stringify(draft),
+      body: JSON.stringify(draftLead),
     })
       .then((response) => response.json().then((data) => ({ response, data })).catch(() => ({ response, data: {} })))
       .then(({ response, data }) => {
         if (data.ok) {
-          savedPhone.current = draft.phone;
-          setLeadNote("Thanks. We'll only use your number to contact you about courses.");
+          savedPhone.current = draftLead.phone;
           return;
         }
-        if (response.status === 400) {
-          setLeadNote(data.error || "Please send your name and a UAE mobile number.");
-          return;
-        }
-        setLeadNote("That number is not stored on the site yet. You can send it on WhatsApp as well.");
+        if (response.status === 400 || leadWarned.current) return;
+        leadWarned.current = true;
+        setMessages((current) => [
+          ...current,
+          {
+            role: "assistant",
+            content: `I couldn't store that number on the site. You can message us on WhatsApp: ${WHATSAPP_URL}`,
+          },
+        ]);
       })
       .catch(() => {
-        setLeadNote("That number is not stored on the site yet. You can send it on WhatsApp as well.");
+        if (leadWarned.current) return;
+        leadWarned.current = true;
+        setMessages((current) => [
+          ...current,
+          {
+            role: "assistant",
+            content: `I couldn't store that number on the site. You can message us on WhatsApp: ${WHATSAPP_URL}`,
+          },
+        ]);
       });
   }
 
   return (
     <div className="assist-dock">
       {open ? (
-        <section className="assist-panel" aria-label="Academy assistant">
+        <section className="assist-panel" aria-label="Academy chat">
           <header className="assist-head">
             <div>
               <p className="assist-kicker">Equity Fin Academy</p>
-              <h2>Ask or enquire</h2>
+              <h2>Chat</h2>
             </div>
-            <button type="button" className="assist-close" onClick={toggleChat} aria-label="Close assistant">
+            <button type="button" className="assist-close" onClick={toggleChat} aria-label="Close chat">
               ×
             </button>
           </header>
-          <div className="assist-tabs" role="tablist">
-            <button type="button" role="tab" aria-selected={tab === "chat"} onClick={() => setTab("chat")}>
-              Chat
-            </button>
-            <button type="button" role="tab" aria-selected={tab === "lead"} onClick={() => setTab("lead")}>
-              Enquire
-            </button>
-          </div>
-          {tab === "chat" ? (
-            <div className="assist-chat">
-              <div className="assist-log" ref={logRef}>
-                {messages.map((message, index) => (
-                  <p key={`${message.role}-${index}`} className={message.role === "user" ? "assist-user" : "assist-bot"}>
-                    <ChatText text={message.content} whatsapp={message.whatsapp} />
-                  </p>
-                ))}
-                {typing ? (
-                  <p className="assist-bot assist-typing" aria-live="polite" aria-label="Assistant is typing">
-                    <span />
-                    <span />
-                    <span />
-                  </p>
-                ) : null}
-              </div>
-              <p className="assist-privacy">
-                We'll only use your number to contact you about courses. <Link href="/privacy">Privacy</Link>
+          <div className="assist-log" ref={logRef}>
+            {messages.map((message, index) => (
+              <p key={`${message.role}-${index}`} className={message.role === "user" ? "assist-user" : "assist-bot"}>
+                {linkify(message.content)}
               </p>
-              {leadNote ? <p className="assist-privacy">{leadNote}</p> : null}
-              <p className="assist-risk">Trading involves risk. You can lose money.</p>
-              <a className="broker-chat-btn" href={STARTRADER_LIVE_URL} target="_blank" rel="noopener noreferrer">
-                Open a StarTrader live account
-              </a>
-              <a className="assist-wa-inline" href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
-                WhatsApp
-              </a>
-              <form onSubmit={onAsk} className="assist-compose">
-                <label className="sr-only" htmlFor="assist-draft">
-                  Your question
-                </label>
-                <input
-                  id="assist-draft"
-                  value={draft}
-                  maxLength={500}
-                  onChange={(event) => setDraft(event.target.value)}
-                  placeholder="Ask about the courses"
-                />
-                <button className="btn btn-primary" type="submit" disabled={pending}>
-                  {pending ? "…" : "Send"}
-                </button>
-              </form>
-            </div>
-          ) : (
-            <LeadForm compact id="dock-lead-form" />
-          )}
+            ))}
+            {typing ? (
+              <p className="assist-bot assist-typing" aria-live="polite" aria-label="Assistant is typing">
+                <span />
+                <span />
+                <span />
+              </p>
+            ) : null}
+          </div>
+          <form onSubmit={onAsk} className="assist-compose">
+            <label className="sr-only" htmlFor="assist-draft">
+              Message
+            </label>
+            <input
+              id="assist-draft"
+              value={draft}
+              maxLength={500}
+              onChange={(event) => setDraft(event.target.value)}
+              placeholder="Type a message"
+              autoComplete="off"
+            />
+            <button className="btn btn-primary" type="submit" disabled={pending || !draft.trim()}>
+              Send
+            </button>
+          </form>
         </section>
       ) : null}
       {greet && !open ? (
@@ -358,6 +326,7 @@ export default function EnquiryWidget() {
           type="button"
           className={nudged ? "assist-open assist-nudge" : "assist-open"}
           aria-expanded={open}
+          aria-label={open ? "Close chat" : "Open chat"}
           onClick={toggleChat}
         >
           {open ? "Close" : "Chat"}
