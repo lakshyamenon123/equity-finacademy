@@ -1,17 +1,23 @@
 import { SITE } from "./site";
-import { STARTRADER_LIVE_URL } from "./whatsapp";
+import { SLOW_CHAT_REPLY, STARTRADER_LIVE_URL } from "./whatsapp";
 
-export const DEFAULT_GEMINI_MODEL = "gemini-3.8-flash";
+export const DEFAULT_GEMINI_MODEL = "gemini-3.5-flash-lite";
 export const DEFAULT_OPENAI_MODEL = "gpt-4o-mini";
 export const MAX_MESSAGE_LENGTH = 500;
+export const FIRST_TOKEN_MS = 10_000;
+export const CHAT_BUDGET_MS = 25_000;
 const GEMINI_API = "https://generativelanguage.googleapis.com/v1beta";
-const OPENAI_TIMEOUT_MS = 45_000;
-const GEMINI_TIMEOUT_MS = 250_000;
+const MAX_MODELS = 3;
+const LIST_TIMEOUT_MS = 4_000;
 
-let resolvedGeminiModel = "";
+export const FAST_GEMINI_MODELS = ["gemini-3.5-flash-lite", "gemini-3.1-flash-lite", "gemini-3.8-flash"];
+
+let cachedFastModels = null;
 
 export const WHATSAPP_FALLBACK_REPLY =
   "The on-site assistant is not connected right now. Message us on WhatsApp at +971 56 718 8995 and we can help you book. Fees are quoted when you enquire. Trading involves risk.";
+
+export const SLOW_FALLBACK_REPLY = SLOW_CHAT_REPLY;
 
 const SYSTEM = `You are the enquiry assistant for Equity Fin Academy in Dubai, UAE. Answer in warm, clear English.
 
@@ -99,85 +105,119 @@ function versionParts(name) {
   return match[1].split(".").map((part) => Number(part) || 0);
 }
 
-export function pickNewestFlashModel(models, exclude = "") {
+function byNewest(left, right) {
+  const a = versionParts(left);
+  const b = versionParts(right);
+  const length = Math.max(a.length, b.length);
+  for (let index = 0; index < length; index += 1) {
+    const diff = (b[index] || 0) - (a[index] || 0);
+    if (diff) return diff;
+  }
+  return right.localeCompare(left);
+}
+
+export function pickFastModels(models, exclude = [], limit = MAX_MODELS) {
   const skipped = new Set(
     (Array.isArray(exclude) ? exclude : [exclude]).map((item) => normalizeModelId(item)).filter(Boolean)
   );
-  const names = [];
+  skipped.add("gemini-2.0-flash");
+  const lite = [];
+  const flash = [];
   for (const model of models || []) {
     const name = normalizeModelId(model?.name);
     const methods = model?.supportedGenerationMethods || model?.supportedActions || [];
-    if (!name || skipped.has(name) || !name.endsWith("-flash")) continue;
-    if (!methods.includes("generateContent")) continue;
-    names.push(name);
+    if (!name || skipped.has(name) || !methods.includes("generateContent")) continue;
+    if (name.endsWith("-flash-lite")) lite.push(name);
+    else if (name.endsWith("-flash")) flash.push(name);
   }
-  names.sort((left, right) => {
-    const a = versionParts(left);
-    const b = versionParts(right);
-    const length = Math.max(a.length, b.length);
-    for (let index = 0; index < length; index += 1) {
-      const diff = (b[index] || 0) - (a[index] || 0);
-      if (diff) return diff;
+  lite.sort(byNewest);
+  flash.sort(byNewest);
+  const pinned = normalizeModelId(process.env.GEMINI_MODEL);
+  const ranked = [...lite, ...flash];
+  if (pinned && pinned.endsWith("-flash-lite") && !skipped.has(pinned)) {
+    return [pinned, ...ranked.filter((name) => name !== pinned)].slice(0, limit);
+  }
+  return ranked.slice(0, limit);
+}
+
+async function streamOpenAI(messages, onToken, timeoutMs) {
+  const controller = new AbortController();
+  let timer = setTimeout(() => controller.abort(), timeoutMs);
+  let sawToken = false;
+  try {
+    const response = await fetch("https://api.openai.com/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+        authorization: `Bearer ${trimmedEnv("OPENAI_API_KEY")}`,
+      },
+      body: JSON.stringify({
+        model: process.env.OPENAI_MODEL || DEFAULT_OPENAI_MODEL,
+        temperature: 0.4,
+        max_tokens: 400,
+        stream: true,
+        messages: [{ role: "system", content: SYSTEM }, ...messages],
+      }),
+      signal: controller.signal,
+    });
+    if (!response.ok || !response.body) {
+      const text = await response.text().catch(() => "");
+      throw upstreamError("openai", response.status, text);
     }
-    return right.localeCompare(left);
-  });
-  return names[0] || "";
-}
-
-async function streamOpenAI(messages, onToken) {
-  const response = await fetch("https://api.openai.com/v1/chat/completions", {
-    method: "POST",
-    headers: {
-      "content-type": "application/json",
-      authorization: `Bearer ${trimmedEnv("OPENAI_API_KEY")}`,
-    },
-    body: JSON.stringify({
-      model: process.env.OPENAI_MODEL || DEFAULT_OPENAI_MODEL,
-      temperature: 0.4,
-      max_tokens: 400,
-      stream: true,
-      messages: [{ role: "system", content: SYSTEM }, ...messages],
-    }),
-    signal: AbortSignal.timeout(OPENAI_TIMEOUT_MS),
-  });
-  if (!response.ok || !response.body) {
-    const text = await response.text().catch(() => "");
-    throw upstreamError("openai", response.status, text);
+    await readSse(response.body, (data) => {
+      if (data === "[DONE]") return;
+      const json = JSON.parse(data);
+      const token = json.choices?.[0]?.delta?.content;
+      if (!token) return;
+      if (!sawToken) {
+        sawToken = true;
+        clearTimeout(timer);
+        timer = setTimeout(() => controller.abort(), 12_000);
+      }
+      onToken(token);
+    });
+    if (!sawToken) throw upstreamError("openai", 504, "openai returned no text");
+  } catch (error) {
+    if (error.status) throw error;
+    throw upstreamError("openai", 504, `${error?.name || ""} ${error?.message || error}`);
+  } finally {
+    clearTimeout(timer);
   }
-  await readSse(response.body, (data) => {
-    if (data === "[DONE]") return;
-    const json = JSON.parse(data);
-    const token = json.choices?.[0]?.delta?.content;
-    if (token) onToken(token);
-  });
 }
 
-async function listFlashModel(exclude) {
+async function listGeminiModels(timeoutMs) {
   const headers = { "x-goog-api-key": trimmedEnv("GEMINI_API_KEY") };
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
   let pageToken = "";
   const models = [];
-  for (let page = 0; page < 10; page += 1) {
-    const query = new URLSearchParams({ pageSize: "100" });
-    if (pageToken) query.set("pageToken", pageToken);
-    const response = await fetch(`${GEMINI_API}/models?${query}`, {
-      headers,
-      signal: AbortSignal.timeout(15_000),
-    });
-    if (!response.ok) {
-      const text = await response.text().catch(() => "");
-      throw upstreamError("gemini-list", response.status, text);
+  try {
+    for (let page = 0; page < 3; page += 1) {
+      const query = new URLSearchParams({ pageSize: "100" });
+      if (pageToken) query.set("pageToken", pageToken);
+      const response = await fetch(`${GEMINI_API}/models?${query}`, { headers, signal: controller.signal });
+      if (!response.ok) {
+        const text = await response.text().catch(() => "");
+        throw upstreamError("gemini-list", response.status, text);
+      }
+      const json = await response.json();
+      models.push(...(json.models || []));
+      pageToken = json.nextPageToken || "";
+      if (!pageToken) break;
     }
-    const json = await response.json();
-    models.push(...(json.models || []));
-    pageToken = json.nextPageToken || "";
-    if (!pageToken) break;
+    return models;
+  } catch (error) {
+    if (error.status) throw error;
+    throw upstreamError("gemini-list", 504, `${error?.name || ""} ${error?.message || error}`);
+  } finally {
+    clearTimeout(timer);
   }
-  return pickNewestFlashModel(models, exclude);
 }
 
-function geminiRequestBody(model, messages, withThinking) {
-  const generationConfig = { temperature: 0.4, maxOutputTokens: 1024 };
-  if (withThinking) generationConfig.thinkingConfig = { thinkingLevel: "low" };
+function geminiRequestBody(model, messages) {
+  const generationConfig = { maxOutputTokens: 512 };
+  if (model.endsWith("-flash-lite")) generationConfig.thinkingConfig = { thinkingLevel: "minimal" };
+  else if (/^gemini-[34]/.test(model)) generationConfig.thinkingConfig = { thinkingLevel: "low" };
   return {
     systemInstruction: { parts: [{ text: SYSTEM }] },
     contents: messages.map((message) => ({
@@ -188,88 +228,79 @@ function geminiRequestBody(model, messages, withThinking) {
   };
 }
 
-async function streamGeminiOnce(model, messages, onToken, timeoutMs = GEMINI_TIMEOUT_MS) {
-  const supportsThinking = /^gemini-[34]/.test(model);
-  for (let attempt = 0; attempt < (supportsThinking ? 2 : 1); attempt += 1) {
-    let response;
-    try {
-      response = await fetch(`${GEMINI_API}/models/${encodeURIComponent(model)}:streamGenerateContent?alt=sse`, {
-        method: "POST",
-        headers: {
-          "content-type": "application/json",
-          "x-goog-api-key": trimmedEnv("GEMINI_API_KEY"),
-        },
-        body: JSON.stringify(geminiRequestBody(model, messages, supportsThinking && attempt === 0)),
-        signal: AbortSignal.timeout(timeoutMs),
-      });
-    } catch (error) {
-      throw upstreamError("gemini", 504, `${model} ${error?.name || ""} ${error?.message || error}`);
+async function streamGeminiOnce(model, messages, onToken, timeoutMs) {
+  const controller = new AbortController();
+  let timer = setTimeout(() => controller.abort(), timeoutMs);
+  let sawToken = false;
+  try {
+    const response = await fetch(`${GEMINI_API}/models/${encodeURIComponent(model)}:streamGenerateContent?alt=sse`, {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+        "x-goog-api-key": trimmedEnv("GEMINI_API_KEY"),
+      },
+      body: JSON.stringify(geminiRequestBody(model, messages)),
+      signal: controller.signal,
+    });
+    if (!response.ok || !response.body) {
+      const text = await response.text().catch(() => "");
+      throw upstreamError("gemini", response.status, text);
     }
-    if (response.ok && response.body) {
-      await readSse(response.body, (data) => {
-        const json = JSON.parse(data);
-        const token = (json.candidates?.[0]?.content?.parts || [])
-          .filter((part) => part.text && !part.thought)
-          .map((part) => part.text)
-          .join("");
-        if (token) onToken(token);
-      });
-      return;
-    }
-    const text = await response.text().catch(() => "");
-    const error = upstreamError("gemini", response.status, text);
-    if (attempt === 0 && supportsThinking && response.status === 400) {
-      console.error(`[chat] gemini thinking config rejected by ${model}: ${error.body || "no body"}`);
-      continue;
-    }
-    throw error;
-  }
-}
-
-function wait(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
-function retryableStatus(status) {
-  return status === 429 || status === 500 || status === 503;
-}
-
-async function streamGemini(messages, onToken) {
-  const configured = normalizeModelId(process.env.GEMINI_MODEL) || DEFAULT_GEMINI_MODEL;
-  const skipped = [];
-  let model = resolvedGeminiModel || configured;
-  if (!resolvedGeminiModel && model === "gemini-2.0-flash") {
-    console.error("[chat] gemini-2.0-flash is retired; listing models");
-    skipped.push(model);
-    model = (await listFlashModel(skipped)) || DEFAULT_GEMINI_MODEL;
-  }
-
-  let lastError = null;
-  for (let modelTry = 0; modelTry < 3 && model; modelTry += 1) {
-    for (let attempt = 0; attempt < 3; attempt += 1) {
-      try {
-        await streamGeminiOnce(model, messages, onToken);
-        resolvedGeminiModel = model;
-        return;
-      } catch (error) {
-        lastError = error;
-        console.error(`[chat] gemini model ${model} failed ${error.status || ""}: ${error.body || "no body"}`);
-        if (retryableStatus(error.status) && attempt < 2) {
-          await wait(1000 * (attempt + 1));
-          continue;
-        }
-        if (error.status !== 404 && !retryableStatus(error.status)) throw error;
-        skipped.push(model);
-        if (resolvedGeminiModel === model) resolvedGeminiModel = "";
-        break;
+    await readSse(response.body, (data) => {
+      const json = JSON.parse(data);
+      const token = (json.candidates?.[0]?.content?.parts || [])
+        .filter((part) => part.text && !part.thought)
+        .map((part) => part.text)
+        .join("");
+      if (!token) return;
+      if (!sawToken) {
+        sawToken = true;
+        clearTimeout(timer);
+        timer = setTimeout(() => controller.abort(), 12_000);
       }
-    }
-    const replacement = await listFlashModel(skipped);
-    if (!replacement || skipped.includes(replacement)) break;
-    console.error(`[chat] gemini retrying with ${replacement}`);
-    model = replacement;
+      onToken(token);
+    });
+    if (!sawToken) throw upstreamError("gemini", 504, `${model} returned no text`);
+  } catch (error) {
+    if (sawToken) return;
+    if (error.status) throw error;
+    throw upstreamError("gemini", 504, `${model} ${error?.name || ""} ${error?.message || error}`);
+  } finally {
+    clearTimeout(timer);
   }
-  throw lastError || upstreamError("gemini", 503, "no flash model could generate a reply");
+}
+
+async function chooseFastModels(deadline) {
+  if (cachedFastModels?.length) return cachedFastModels;
+  const listBudget = Math.min(LIST_TIMEOUT_MS, Math.max(1_500, deadline - Date.now() - FIRST_TOKEN_MS));
+  try {
+    const ranked = pickFastModels(await listGeminiModels(listBudget));
+    if (ranked.length) {
+      cachedFastModels = ranked;
+      return ranked;
+    }
+  } catch (error) {
+    console.error(`[chat] gemini list failed ${error.status || ""}: ${error.body || error.message || error}`);
+  }
+  return pickFastModels(FAST_GEMINI_MODELS.map((name) => ({ name, supportedGenerationMethods: ["generateContent"] })));
+}
+
+async function streamGemini(messages, onToken, deadline) {
+  const models = await chooseFastModels(deadline);
+  let lastError = null;
+  for (const model of models) {
+    const remaining = deadline - Date.now();
+    if (remaining < 2_000) break;
+    try {
+      await streamGeminiOnce(model, messages, onToken, Math.min(FIRST_TOKEN_MS, remaining));
+      cachedFastModels = [model, ...models.filter((item) => item !== model)].slice(0, MAX_MODELS);
+      return;
+    } catch (error) {
+      lastError = error;
+      console.error(`[chat] gemini model ${model} failed ${error.status || ""}: ${error.body || "no body"}`);
+    }
+  }
+  throw lastError || upstreamError("gemini", 504, "no flash model answered in time");
 }
 
 async function readSse(body, onData) {
@@ -293,17 +324,24 @@ async function readSse(body, onData) {
 }
 
 export async function streamReply(messages, onToken) {
+  const deadline = Date.now() + CHAT_BUDGET_MS;
+  let wrote = false;
+  const deliver = (token) => {
+    wrote = true;
+    onToken(token);
+  };
   if (trimmedEnv("OPENAI_API_KEY")) {
     try {
-      await streamOpenAI(messages, onToken);
+      await streamOpenAI(messages, deliver, Math.min(FIRST_TOKEN_MS, Math.max(1_000, deadline - Date.now())));
       return;
     } catch (error) {
+      if (wrote) return;
       console.error(`[chat] openai failed ${error.status || ""}: ${error.body || error.message || error}`);
       if (!trimmedEnv("GEMINI_API_KEY")) throw error;
     }
   }
-  if (trimmedEnv("GEMINI_API_KEY")) {
-    await streamGemini(messages, onToken);
+  if (trimmedEnv("GEMINI_API_KEY") && deadline - Date.now() > 2_000) {
+    await streamGemini(messages, deliver, deadline);
     return;
   }
   throw new Error("no-provider");

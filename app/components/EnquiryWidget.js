@@ -5,7 +5,7 @@ import Link from "next/link";
 import LeadForm from "./LeadForm";
 import { draftFromMessages } from "../lib/leadCapture";
 import { hasPhoneAttempt, findUaeMobile } from "../lib/phone";
-import { COURSE_WHATSAPP_TEXT, STARTRADER_LIVE_URL, whatsappHref } from "../lib/whatsapp";
+import { COURSE_WHATSAPP_TEXT, SLOW_CHAT_REPLY, STARTRADER_LIVE_URL, whatsappHref } from "../lib/whatsapp";
 
 const STARTER = {
   role: "assistant",
@@ -15,7 +15,7 @@ const STARTER = {
 
 const WHATSAPP_LINK = whatsappHref(COURSE_WHATSAPP_TEXT);
 
-function ChatText({ text }) {
+function ChatText({ text, whatsapp }) {
   const parts = String(text || "").split(STARTRADER_LIVE_URL);
   return (
     <>
@@ -29,6 +29,11 @@ function ChatText({ text }) {
           ) : null}
         </span>
       ))}
+      {whatsapp ? (
+        <a className="assist-wa-inline" href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
+          WhatsApp us
+        </a>
+      ) : null}
     </>
   );
 }
@@ -39,13 +44,14 @@ export default function EnquiryWidget() {
   const [messages, setMessages] = useState([STARTER]);
   const [draft, setDraft] = useState("");
   const [pending, setPending] = useState(false);
+  const [typing, setTyping] = useState(false);
   const [leadNote, setLeadNote] = useState("");
   const logRef = useRef(null);
   const savedPhone = useRef("");
 
   useEffect(() => {
     if (logRef.current) logRef.current.scrollTop = logRef.current.scrollHeight;
-  }, [messages, open]);
+  }, [messages, open, typing, leadNote]);
 
   async function onAsk(event) {
     event.preventDefault();
@@ -56,7 +62,18 @@ export default function EnquiryWidget() {
     setMessages(next);
     setDraft("");
     setPending(true);
+    setTyping(true);
     captureLead(next);
+    let closed = false;
+    let acc = "";
+    const showSlowReply = () => {
+      if (closed || acc) return;
+      closed = true;
+      setTyping(false);
+      setPending(false);
+      setMessages((current) => [...current, { role: "assistant", content: SLOW_CHAT_REPLY, whatsapp: true }]);
+    };
+    const slowTimer = setTimeout(showSlowReply, 26_000);
     try {
       const response = await fetch("/api/chat", {
         method: "POST",
@@ -65,59 +82,70 @@ export default function EnquiryWidget() {
           messages: [...history, { role: "user", content }].map(({ role, content: text }) => ({ role, content: text })),
         }),
       });
+      if (closed) return;
       const type = response.headers.get("content-type") || "";
       if (!type.includes("text/event-stream")) {
         const data = await response.json().catch(() => ({}));
+        closed = true;
+        clearTimeout(slowTimer);
+        setTyping(false);
         setMessages((current) => [
           ...current,
           {
             role: "assistant",
-            content: data.reply || "Message us on WhatsApp and we can help you book a seat.",
+            content: data.reply || SLOW_CHAT_REPLY,
+            whatsapp: true,
           },
         ]);
         return;
       }
 
-      setMessages((current) => [...current, { role: "assistant", content: "" }]);
       const reader = response.body.getReader();
       const decoder = new TextDecoder();
       let buffer = "";
-      let acc = "";
-      while (true) {
+      while (!closed) {
         const { done, value } = await reader.read();
-        if (done) break;
+        if (done || closed) break;
         buffer += decoder.decode(value, { stream: true });
         const chunks = buffer.split("\n\n");
         buffer = chunks.pop() || "";
         for (const chunk of chunks) {
+          if (closed) break;
           const line = chunk.split("\n").find((item) => item.startsWith("data:"));
           if (!line) continue;
           const payload = JSON.parse(line.slice(5).trim());
           if (payload.token) {
+            clearTimeout(slowTimer);
+            setTyping(false);
             acc += payload.token;
             const snapshot = acc;
             setMessages((current) => {
               const copy = current.slice();
-              copy[copy.length - 1] = { role: "assistant", content: snapshot };
+              if (copy[copy.length - 1]?.live) copy[copy.length - 1] = { role: "assistant", content: snapshot, live: true };
+              else copy.push({ role: "assistant", content: snapshot, live: true });
               return copy;
             });
           }
-          if (payload.fallback) {
-            const reply = payload.reply || "Message us on WhatsApp and we can help you book a seat.";
-            setMessages((current) => {
-              const copy = current.slice();
-              copy[copy.length - 1] = { role: "assistant", content: reply };
-              return copy;
-            });
+          if (payload.fallback && !acc) {
+            closed = true;
+            clearTimeout(slowTimer);
+            setTyping(false);
+            const reply = payload.reply || SLOW_CHAT_REPLY;
+            setMessages((current) => [...current, { role: "assistant", content: reply, whatsapp: true }]);
           }
         }
       }
+      if (!closed && !acc) showSlowReply();
     } catch {
-      setMessages((current) => [
-        ...current,
-        { role: "assistant", content: "The assistant could not be reached. Message us on WhatsApp and we can help you book." },
-      ]);
+      if (!closed && !acc) {
+        closed = true;
+        clearTimeout(slowTimer);
+        setTyping(false);
+        setMessages((current) => [...current, { role: "assistant", content: SLOW_CHAT_REPLY, whatsapp: true }]);
+      }
     } finally {
+      clearTimeout(slowTimer);
+      setTyping(false);
       setPending(false);
     }
   }
@@ -181,9 +209,16 @@ export default function EnquiryWidget() {
               <div className="assist-log" ref={logRef}>
                 {messages.map((message, index) => (
                   <p key={`${message.role}-${index}`} className={message.role === "user" ? "assist-user" : "assist-bot"}>
-                    <ChatText text={message.content} />
+                    <ChatText text={message.content} whatsapp={message.whatsapp} />
                   </p>
                 ))}
+                {typing ? (
+                  <p className="assist-bot assist-typing" aria-live="polite" aria-label="Assistant is typing">
+                    <span />
+                    <span />
+                    <span />
+                  </p>
+                ) : null}
               </div>
               <p className="assist-privacy">
                 We'll only use your number to contact you about courses. <Link href="/privacy">Privacy</Link>
