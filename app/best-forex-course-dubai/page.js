@@ -4,6 +4,7 @@ import JsonLd from "../components/JsonLd";
 import RelatedTraining from "../components/RelatedTraining";
 import YouTubeSection from "../components/YouTubeSection";
 import Link from "next/link";
+import OpenChatLink from "../components/OpenChatLink";
 import { pageMetadata } from "../lib/seo";
 import { breadcrumbSchema, faqPageSchema } from "../lib/schema";
 import { SITE } from "../lib/site";
@@ -203,9 +204,7 @@ export default function BestForexCourseDubaiPage() {
               ))}
             </div>
             <p style={{ marginTop: 28 }}>
-              <Link href="/contact" className="btn btn-primary">
-                Book a Seat in Dubai
-              </Link>
+              <OpenChatLink className="btn btn-primary">Book a Seat in Dubai</OpenChatLink>
             </p>
           </div>
         </section>

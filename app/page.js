@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import JsonLd from "./components/JsonLd";
 import YouTubeSection from "./components/YouTubeSection";
 import Link from "next/link";
+import OpenChatLink from "./components/OpenChatLink";
 import { pageMetadata } from "./lib/seo";
 import { faqPageSchema, organizationSchema } from "./lib/schema";
 import { homeFaq } from "./lib/homeFaq";
@@ -50,9 +51,7 @@ export default function HomePage() {
                 <a href="tel:+971567188995" className="btn btn-ghost">
                   Call +971 56 718 8995
                 </a>
-                <Link href="/contact" className="btn btn-ghost">
-                  Enquire
-                </Link>
+                <OpenChatLink className="btn btn-ghost">Enquire</OpenChatLink>
               </div>
             </div>
 
@@ -322,12 +321,12 @@ export default function HomePage() {
                 <p>From candlestick fundamentals to the advanced track, including bot strategy and lifetime WhatsApp support.</p>
                 <span className="arrow">View courses →</span>
               </Link>
-              <Link href="/contact" className="teaser reveal">
+              <OpenChatLink className="teaser reveal">
                 <span className="eyebrow mt-0">VISIT OR CALL</span>
                 <h3>Book a seat in Dubai</h3>
                 <p>Speak with the team, ask about upcoming cohorts, and find out which track fits your experience.</p>
                 <span className="arrow">Get in touch →</span>
-              </Link>
+              </OpenChatLink>
             </div>
           </div>
         </section>
@@ -427,9 +426,7 @@ export default function HomePage() {
                 <a href="tel:+971567188995" className="btn btn-ghost">
                   Call
                 </a>
-                <Link href="/contact" className="btn btn-ghost">
-                  Enquire
-                </Link>
+                <OpenChatLink className="btn btn-ghost">Enquire</OpenChatLink>
               </div>
             </div>
           </div>

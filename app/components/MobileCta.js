@@ -1,4 +1,4 @@
-import Link from "next/link";
+import OpenChatLink from "./OpenChatLink";
 
 const whatsapp = "https://wa.me/971567188995";
 
@@ -11,9 +11,7 @@ export default function MobileCta() {
       <a href="tel:+971567188995" className="btn btn-outline">
         Call
       </a>
-      <Link href="/contact" className="btn btn-outline">
-        Enquire
-      </Link>
+      <OpenChatLink className="btn btn-outline">Enquire</OpenChatLink>
     </div>
   );
 }

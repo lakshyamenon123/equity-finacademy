@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import JsonLd from "../components/JsonLd";
 import RichText from "../components/RichText";
 import Link from "next/link";
+import OpenChatLink from "../components/OpenChatLink";
 import { pageMetadata } from "../lib/seo";
 import { breadcrumbSchema, faqPageSchema } from "../lib/schema";
 import { faqCategories, faqCount, faqItems } from "../lib/faqContent";
@@ -40,7 +41,7 @@ export default function FaqPage() {
               Forex trading FAQ.
             </h1>
             <p style={{ maxWidth: "60ch", marginTop: 18 }}>
-              {faqCount} straight answers, organised by topic. Can&apos;t find yours? <Link href="/contact">Ask us directly</Link>.
+              {faqCount} straight answers, organised by topic. Can&apos;t find yours? <OpenChatLink className="text-link">Ask us directly</OpenChatLink>.
             </p>
           </div>
         </section>
@@ -83,9 +84,7 @@ export default function FaqPage() {
                 <h2>Still have a question?</h2>
                 <p>Call, WhatsApp, or send a message — we typically respond the same day.</p>
               </div>
-              <Link href="/contact" className="btn btn-primary">
-                Contact Us
-              </Link>
+              <OpenChatLink className="btn btn-primary">Contact Us</OpenChatLink>
             </div>
           </div>
         </section>
