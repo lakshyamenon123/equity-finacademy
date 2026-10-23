@@ -11,6 +11,7 @@ export const metadata = {
     title: "Pricing — Forex Course Fees | Equity Fin Academy Dubai",
     description: "What's included in each course track. Call or message us for current fees.",
     type: "website",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Al Qusais, Dubai" }],
   },
   alternates: { canonical: "https://www.equityfinacademy.com/pricing" },
 };

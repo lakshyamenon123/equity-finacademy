@@ -12,6 +12,7 @@ export const metadata = {
     title: "Contact Us — Equity Fin Academy, Al Qusais, Dubai",
     description: "Visit us at M Floor, Arzoo Building, Al Qusais, Dubai, or call +971 56 718 8995 to enquire about our forex trading courses.",
     type: "website",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Al Qusais, Dubai" }],
   },
   alternates: { canonical: "https://www.equityfinacademy.com/contact" },
 };

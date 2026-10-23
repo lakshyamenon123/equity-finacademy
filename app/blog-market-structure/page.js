@@ -11,16 +11,21 @@ export const metadata = {
     title: "What Is Market Structure in Forex Trading?",
     description: "Swing highs, swing lows, and how to tell a trend from a range — the foundation of reading any forex chart.",
     type: "article",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Al Qusais, Dubai" }],
   },
   alternates: { canonical: "https://www.equityfinacademy.com/blog-market-structure" },
 };
 
 const postSchema = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
+  "@type": "Article",
   headline: "What Is Market Structure in Forex Trading?",
-  author: { "@type": "Person", name: "Gopi Chandran" },
-  publisher: { "@type": "EducationalOrganization", name: "Equity Fin Academy" },
+  author: { "@type": "Person", "@id": "https://www.equityfinacademy.com/#gopi", name: "Gopi Chandran", url: "https://www.equityfinacademy.com/about" },
+  publisher: { "@type": "EducationalOrganization", "@id": "https://www.equityfinacademy.com/#organization", name: "Equity Fin Academy", url: "https://www.equityfinacademy.com/" },
+  mainEntityOfPage: "https://www.equityfinacademy.com/blog-market-structure",
+  image: ["https://www.equityfinacademy.com/og-image.png"],
+  inLanguage: "en",
+  // TODO(owner): add datePublished. This article did not record one, so it is omitted.
   description: "Swing highs, swing lows, and how to tell a trend from a range.",
 };
 

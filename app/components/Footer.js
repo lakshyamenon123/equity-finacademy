@@ -11,6 +11,7 @@ export default function Footer() {
             </Link>
             <p>Premium forex trading education, based in Al Qusais, Dubai.</p>
             <div className="social-row" style={{ marginTop: 16 }}>
+              {/* TODO(owner): replace Facebook and Instagram href="#" with the real profile URLs. */}
               <a href="#" aria-label="Facebook">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
                   <path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H9v3h2v6h3v-6h2.5l.5-3H14V9c0-.3.2-.5.5-.5H14z" />
@@ -23,7 +24,12 @@ export default function Footer() {
                   <circle cx="16.6" cy="7.4" r="0.6" fill="currentColor" stroke="none" />
                 </svg>
               </a>
-              <a href="#" aria-label="YouTube">
+              <a
+                href="https://www.youtube.com/channel/UCTjkKXSStHPPA64qCCSPTOg"
+                aria-label="Equity Global on YouTube"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
                   <rect x="3" y="6" width="18" height="12" rx="3" />
                   <path d="M10.5 9.5l5 2.5-5 2.5z" fill="currentColor" stroke="none" />
@@ -41,10 +47,17 @@ export default function Footer() {
               <Link href="/courses">Forex Courses</Link>
               <Link href="/pricing">Pricing</Link>
               <Link href="/forex-academy-in-dubai">Forex in Dubai</Link>
+              <Link href="/private-group-forex-training-dubai">Private vs Group Classes</Link>
+              <Link href="/best-forex-course-dubai">Best Forex Course in Dubai</Link>
+              <Link href="/forex-course-abu-dhabi">Forex Course in Abu Dhabi</Link>
+              <Link href="/forex-course-sharjah">Forex Course in Sharjah</Link>
+              <Link href="/online-forex-course-uae">Online Forex Course UAE</Link>
             </div>
             <div className="footer-col">
               <h3>Learn</h3>
               <Link href="/blog">Blog</Link>
+              <Link href="/blog-choose-forex-academy-uae">Choose a Forex Academy</Link>
+              <Link href="/blog-forex-course-dubai-beginners">Beginner Course Guide</Link>
               <Link href="/faq">FAQ</Link>
             </div>
             <div className="footer-col">

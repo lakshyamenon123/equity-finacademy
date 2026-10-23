@@ -11,6 +11,7 @@ export const metadata = {
     title: "Forex Trading Blog | Equity Fin Academy Dubai",
     description: "Educational articles on candlestick patterns, market structure, risk management and smart money concepts.",
     type: "website",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Al Qusais, Dubai" }],
   },
   alternates: { canonical: "https://www.equityfinacademy.com/blog" },
 };
@@ -25,6 +26,22 @@ const breadcrumbSchema = {
 };
 
 const posts = [
+  {
+    href: "/blog-choose-forex-academy-uae",
+    icon: <path d="M12 3l2.2 4.6L19 8.2l-3.5 3.4.8 4.9L12 14.8 7.7 16.5l.8-4.9L5 8.2l4.8-.6L12 3z" />,
+    cat: "Choosing a School",
+    title: "How to Choose a Forex Training Academy in the UAE",
+    desc: "The checks that matter before you pay any forex academy, including this one.",
+    time: "8 min read",
+  },
+  {
+    href: "/blog-forex-course-dubai-beginners",
+    icon: <path d="M4 19V5m0 14h16M8 15V9m4 6V7m4 8v-4" />,
+    cat: "Beginners",
+    title: "Forex Course in Dubai for Beginners: What to Expect",
+    desc: "The Basic to Intermediate group class in Al Qusais, topic by topic.",
+    time: "8 min read",
+  },
   {
     href: "/blog-candlestick-patterns",
     icon: <path d="M6 4v4M6 8h0v8M6 16v4M12 2v3M12 5h0v11M12 16v6M18 6v2M18 8h0v9M18 17v3" />,
