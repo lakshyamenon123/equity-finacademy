@@ -7,11 +7,15 @@ import { draftFromMessages } from "../lib/leadCapture";
 import { hasPhoneAttempt, findUaeMobile } from "../lib/phone";
 import { COURSE_WHATSAPP_TEXT, SLOW_CHAT_REPLY, STARTRADER_LIVE_URL, whatsappHref } from "../lib/whatsapp";
 
+const GREETING =
+  "👋 Hi! Welcome to Equity Fin Academy. Looking to learn forex? I can help you choose private one-to-one or group classes. May I know your name?";
+
 const STARTER = {
   role: "assistant",
-  content:
-    "Hello. I can help with private one-to-one lessons, group classes, or live trading in Dubai, or online across the UAE. May I have your name and a UAE mobile number (+971 or 05)? We'll only use your number to contact you about courses. Trading involves risk.",
+  content: GREETING,
 };
+
+const DISMISS_KEY = "efa-chat-dismissed";
 
 const WHATSAPP_LINK = whatsappHref(COURSE_WHATSAPP_TEXT);
 
@@ -45,9 +49,64 @@ export default function EnquiryWidget() {
   const [draft, setDraft] = useState("");
   const [pending, setPending] = useState(false);
   const [typing, setTyping] = useState(false);
+  const [greet, setGreet] = useState(false);
+  const [nudged, setNudged] = useState(false);
   const [leadNote, setLeadNote] = useState("");
   const logRef = useRef(null);
   const savedPhone = useRef("");
+  const engaged = useRef(false);
+
+  useEffect(() => {
+    let dismissed = false;
+    try {
+      dismissed = sessionStorage.getItem(DISMISS_KEY) === "1";
+    } catch {
+      dismissed = false;
+    }
+    if (dismissed) return undefined;
+    const timer = window.setTimeout(() => {
+      if (engaged.current) return;
+      const mobile = window.matchMedia("(max-width: 860px)").matches;
+      setNudged(true);
+      if (mobile) setGreet(true);
+      else setOpen(true);
+    }, 4000);
+    return () => window.clearTimeout(timer);
+  }, []);
+
+  function rememberDismiss() {
+    engaged.current = true;
+    setGreet(false);
+    setNudged(false);
+    try {
+      sessionStorage.setItem(DISMISS_KEY, "1");
+    } catch {
+      /* private browsing can block storage */
+    }
+  }
+
+  function dismissGreeting() {
+    rememberDismiss();
+  }
+
+  function openGreeting() {
+    engaged.current = true;
+    setGreet(false);
+    setNudged(false);
+    setOpen(true);
+  }
+
+  function toggleChat() {
+    engaged.current = true;
+    setGreet(false);
+    if (open) {
+      setOpen(false);
+      rememberDismiss();
+      return;
+    }
+    setNudged(false);
+    setOpen(true);
+  }
 
   useEffect(() => {
     if (logRef.current) logRef.current.scrollTop = logRef.current.scrollHeight;
@@ -192,7 +251,7 @@ export default function EnquiryWidget() {
               <p className="assist-kicker">Equity Fin Academy</p>
               <h2>Ask or enquire</h2>
             </div>
-            <button type="button" className="assist-close" onClick={() => setOpen(false)} aria-label="Close assistant">
+            <button type="button" className="assist-close" onClick={toggleChat} aria-label="Close assistant">
               ×
             </button>
           </header>
@@ -252,12 +311,28 @@ export default function EnquiryWidget() {
           )}
         </section>
       ) : null}
+      {greet && !open ? (
+        <div className="assist-greet" role="status">
+          <button type="button" className="assist-greet-close" onClick={dismissGreeting} aria-label="Close greeting">
+            ×
+          </button>
+          <button type="button" className="assist-greet-open" onClick={openGreeting}>
+            {GREETING}
+          </button>
+        </div>
+      ) : null}
       <div className="assist-actions">
         <a className="assist-wa" href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp the academy">
           WhatsApp
         </a>
-        <button type="button" className="assist-open" aria-expanded={open} onClick={() => setOpen((value) => !value)}>
+        <button
+          type="button"
+          className={nudged ? "assist-open assist-nudge" : "assist-open"}
+          aria-expanded={open}
+          onClick={toggleChat}
+        >
           {open ? "Close" : "Chat"}
+          {nudged && !open ? <span className="assist-badge" aria-hidden="true" /> : null}
         </button>
       </div>
     </div>
