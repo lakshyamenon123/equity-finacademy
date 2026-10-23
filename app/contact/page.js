@@ -6,12 +6,12 @@ import Link from "next/link";
 export const metadata = {
   title: "Contact Us — Equity Fin Academy, Dubai, UAE",
   description:
-    "Visit Equity Fin Academy's forex trading academy in Dubai, UAE, or call +971 56 718 8995. Read real student reviews on Google Maps, or enquire about our forex trading courses.",
+    "Visit Equity Fin Academy's forex trading academy in Dubai, UAE, or call +971 55 904 7030. Read real student reviews on Google Maps, or enquire about our forex trading courses.",
   keywords:
     "forex trading academy Al Qusais, forex course near me Dubai, Equity Fin Academy contact, trading academy phone number Dubai, book forex course Dubai, forex classes Al Qusais Dubai",
   openGraph: {
     title: "Contact Us — Equity Fin Academy, Dubai, UAE",
-    description: "Visit us in Dubai, UAE, or call +971 56 718 8995 to enquire about our forex trading courses.",
+    description: "Visit us in Dubai, UAE, or call +971 55 904 7030 to enquire about our forex trading courses.",
     type: "website",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Dubai, UAE" }],
   },
@@ -82,7 +82,7 @@ export default function ContactPage() {
               <div className="info-row">
                 <span className="tag">PHONE</span>
                 <span className="val">
-                  <a href="tel:+971567188995">+971 56 718 8995</a>
+                  <a href="tel:+971559047030">+971 55 904 7030</a>
                 </span>
               </div>
               <div className="info-row">
@@ -96,7 +96,7 @@ export default function ContactPage() {
                 </span>
               </div>
 
-              <a href="tel:+971567188995" className="btn btn-primary btn-block">
+              <a href="tel:+971559047030" className="btn btn-primary btn-block">
                 Call to Enquire
               </a>
               <LeadForm id="contact-lead-form" />
@@ -131,7 +131,7 @@ export default function ContactPage() {
                   How quickly do you respond to enquiries?<span className="plus">+</span>
                 </summary>
                 <p>
-                  Call or WhatsApp <a href="tel:+971567188995">+971 56 718 8995</a> and we typically respond to
+                  Call or WhatsApp <a href="tel:+971559047030">+971 55 904 7030</a> and we typically respond to
                   course enquiries the same day.
                 </p>
               </details>

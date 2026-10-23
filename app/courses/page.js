@@ -57,11 +57,11 @@ export default function CoursesPage() {
               <Link href="/blog">forex education blog</Link> first.
             </p>
             <div className="cta-row">
-              <a href="https://wa.me/971567188995" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/971559047030" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
                 WhatsApp
               </a>
-              <a href="tel:+971567188995" className="btn btn-outline">
-                Call +971 56 718 8995
+              <a href="tel:+971559047030" className="btn btn-outline">
+                Call +971 55 904 7030
               </a>
               <OpenChatLink className="btn btn-outline">Enquire</OpenChatLink>
             </div>

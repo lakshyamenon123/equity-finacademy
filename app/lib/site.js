@@ -22,9 +22,9 @@
 export const SITE = {
   name: "Equity Fin Academy",
   url: "https://www.equityfinacademy.com",
-  telephone: "+971-56-718-8995",
-  telephoneDisplay: "+971 56 718 8995",
-  telephoneTel: "+971567188995",
+  telephone: "+971-55-904-7030",
+  telephoneDisplay: "+971 55 904 7030",
+  telephoneTel: "+971559047030",
   description:
     "Forex academy in Dubai, UAE. Private one-to-one lessons and group classes with live trading sessions, in person and online across the UAE. Open 24/7.",
   address: {

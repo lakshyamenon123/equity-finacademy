@@ -63,8 +63,8 @@ export default function ForexCourseSharjahPage() {
               Equity Fin Academy teaches in person in Dubai, UAE, a short trip from Sharjah, and online across the UAE. There is no second campus in Sharjah.
             </p>
             <div className="cta-row" style={{ marginTop: 28 }}>
-              <a href="tel:+971567188995" className="btn btn-outline">
-                Call +971 56 718 8995
+              <a href="tel:+971559047030" className="btn btn-outline">
+                Call +971 55 904 7030
               </a>
               <OpenChatLink className="btn btn-primary">Book a Seat</OpenChatLink>
             </div>
@@ -108,7 +108,7 @@ export default function ForexCourseSharjahPage() {
               <li>If you cannot attend in person, learn online across the UAE. The <Link href="/online-forex-course-uae">online study page</Link> explains how that works.</li>
             </ul>
             <p>
-              The founder is <Link href="/about">Gopi Chandran</Link>. Call or WhatsApp <a href="tel:+971567188995">+971 56 718 8995</a> for the next class. Fees
+              The founder is <Link href="/about">Gopi Chandran</Link>. Call or WhatsApp <a href="tel:+971559047030">+971 55 904 7030</a> for the next class. Fees
               change, so they are quoted when you enquire — <Link href="/pricing">see what is included</Link> first.
             </p>
           </div>

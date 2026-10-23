@@ -158,7 +158,7 @@ export default function BeginnersCoursePost() {
               </p>
               <p>
                 To ask about the next beginner cohort, <Link href="/contact">contact the academy</Link> or call{" "}
-                <a href="tel:+971567188995">+971 56 718 8995</a>.
+                <a href="tel:+971559047030">+971 55 904 7030</a>.
               </p>
             </div>
           </div>

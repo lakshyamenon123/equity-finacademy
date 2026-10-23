@@ -15,7 +15,7 @@ export const FAST_GEMINI_MODELS = ["gemini-3.5-flash-lite", "gemini-3.1-flash-li
 let cachedFastModels = null;
 
 export const WHATSAPP_FALLBACK_REPLY =
-  "The on-site assistant is not connected right now. Message us on WhatsApp at +971 56 718 8995 and we can help you book. Fees are quoted when you enquire. Trading involves risk.";
+  "The on-site assistant is not connected right now. Message us on WhatsApp at +971 55 904 7030 and we can help you book. Fees are quoted when you enquire. Trading involves risk.";
 
 export const SLOW_FALLBACK_REPLY = SLOW_CHAT_REPLY;
 
