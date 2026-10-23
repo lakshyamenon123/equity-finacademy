@@ -100,12 +100,14 @@ function versionParts(name) {
 }
 
 export function pickNewestFlashModel(models, exclude = "") {
-  const skipped = normalizeModelId(exclude);
+  const skipped = new Set(
+    (Array.isArray(exclude) ? exclude : [exclude]).map((item) => normalizeModelId(item)).filter(Boolean)
+  );
   const names = [];
   for (const model of models || []) {
     const name = normalizeModelId(model?.name);
     const methods = model?.supportedGenerationMethods || model?.supportedActions || [];
-    if (!name || name === skipped || !name.endsWith("-flash")) continue;
+    if (!name || skipped.has(name) || !name.endsWith("-flash")) continue;
     if (!methods.includes("generateContent")) continue;
     names.push(name);
   }
@@ -224,28 +226,50 @@ async function streamGeminiOnce(model, messages, onToken, timeoutMs = GEMINI_TIM
   }
 }
 
+function wait(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+function retryableStatus(status) {
+  return status === 429 || status === 500 || status === 503;
+}
+
 async function streamGemini(messages, onToken) {
   const configured = normalizeModelId(process.env.GEMINI_MODEL) || DEFAULT_GEMINI_MODEL;
-  let primary = resolvedGeminiModel || configured;
-  if (!resolvedGeminiModel && primary === "gemini-2.0-flash") {
+  const skipped = [];
+  let model = resolvedGeminiModel || configured;
+  if (!resolvedGeminiModel && model === "gemini-2.0-flash") {
     console.error("[chat] gemini-2.0-flash is retired; listing models");
-    primary = (await listFlashModel(primary)) || DEFAULT_GEMINI_MODEL;
+    skipped.push(model);
+    model = (await listFlashModel(skipped)) || DEFAULT_GEMINI_MODEL;
   }
-  try {
-    await streamGeminiOnce(primary, messages, onToken);
-    resolvedGeminiModel = primary;
-    return;
-  } catch (error) {
-    const stalled = error.status === 404 || error.status === 504;
-    if (!stalled) throw error;
-    console.error(`[chat] gemini model ${primary} failed ${error.status}: ${error.body || "no body"}`);
-    if (resolvedGeminiModel === primary) resolvedGeminiModel = "";
-    const replacement = await listFlashModel(primary);
-    if (!replacement || replacement === primary) throw error;
+
+  let lastError = null;
+  for (let modelTry = 0; modelTry < 3 && model; modelTry += 1) {
+    for (let attempt = 0; attempt < 3; attempt += 1) {
+      try {
+        await streamGeminiOnce(model, messages, onToken);
+        resolvedGeminiModel = model;
+        return;
+      } catch (error) {
+        lastError = error;
+        console.error(`[chat] gemini model ${model} failed ${error.status || ""}: ${error.body || "no body"}`);
+        if (retryableStatus(error.status) && attempt < 2) {
+          await wait(1000 * (attempt + 1));
+          continue;
+        }
+        if (error.status !== 404 && !retryableStatus(error.status)) throw error;
+        skipped.push(model);
+        if (resolvedGeminiModel === model) resolvedGeminiModel = "";
+        break;
+      }
+    }
+    const replacement = await listFlashModel(skipped);
+    if (!replacement || skipped.includes(replacement)) break;
     console.error(`[chat] gemini retrying with ${replacement}`);
-    await streamGeminiOnce(replacement, messages, onToken);
-    resolvedGeminiModel = replacement;
+    model = replacement;
   }
+  throw lastError || upstreamError("gemini", 503, "no flash model could generate a reply");
 }
 
 async function readSse(body, onData) {
