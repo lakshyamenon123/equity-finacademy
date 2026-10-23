@@ -1,29 +1,50 @@
-import { storeLead } from "../../lib/assistant";
+import { allowLeadRequest, leadsAuthorized, listLeads, saveLead, sinceMillis, storageKind } from "../../lib/leadsStore";
 
-function clip(value, max) {
-  return String(value || "")
-    .replace(/\s+/g, " ")
-    .trim()
-    .slice(0, max);
-}
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
 
 export async function POST(request) {
   try {
-    const body = await request.json().catch(() => ({}));
-    const lead = {
-      name: clip(body.name, 80),
-      phone: clip(body.phone, 40),
-      interest: clip(body.interest, 80),
-      message: clip(body.message, 1000),
-      page: clip(body.page, 200),
-      createdAt: new Date().toISOString(),
-    };
-    if (!lead.name || !lead.phone) {
-      return Response.json({ ok: false, error: "Name and phone are required." }, { status: 400 });
+    const ip = (request.headers.get("x-forwarded-for") || "local").split(",")[0].trim() || "local";
+    if (!allowLeadRequest(ip)) {
+      return Response.json(
+        { ok: false, fallback: "whatsapp", error: "Please wait a moment, or continue on WhatsApp." },
+        { status: 429 }
+      );
     }
-    const result = await storeLead(lead);
-    return Response.json(result);
+    const body = await request.json().catch(() => ({}));
+    const { status, ...payload } = await saveLead({
+      name: body.name,
+      phone: body.phone,
+      interest: body.interest,
+      summary: body.message || body.summary,
+      page: body.page,
+    });
+    return Response.json(payload, { status: status || 200 });
   } catch {
-    return Response.json({ ok: false, fallback: "whatsapp" });
+    return Response.json({ ok: false, fallback: "whatsapp", error: "The enquiry could not be stored. Continue on WhatsApp." });
+  }
+}
+
+export async function GET(request) {
+  try {
+    if (!leadsAuthorized(request)) {
+      return Response.json({ ok: false, error: "Unauthorized." }, { status: 401 });
+    }
+    const since = sinceMillis(new URL(request.url).searchParams.get("since"));
+    if (since == null) {
+      return Response.json({ ok: false, error: "since must be an ISO date." }, { status: 400 });
+    }
+    const kind = storageKind();
+    if (kind !== "redis" && kind !== "postgres") {
+      return Response.json(
+        { ok: false, error: "Durable lead storage is not configured. Connect Upstash Redis or Vercel Postgres." },
+        { status: 503 }
+      );
+    }
+    const leads = await listLeads(since);
+    return Response.json({ ok: true, leads }, { headers: { "cache-control": "no-store" } });
+  } catch {
+    return Response.json({ ok: false, error: "Leads could not be read." }, { status: 502 });
   }
 }

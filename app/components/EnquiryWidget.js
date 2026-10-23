@@ -1,13 +1,16 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import LeadForm from "./LeadForm";
+import { draftFromMessages } from "../lib/leadCapture";
+import { hasPhoneAttempt, findUaeMobile } from "../lib/phone";
 import { COURSE_WHATSAPP_TEXT, STARTRADER_LIVE_URL, whatsappHref } from "../lib/whatsapp";
 
 const STARTER = {
   role: "assistant",
   content:
-    "Ask about private one-to-one lessons, group classes, or live trading in Al Qusais. I can help you enrol, and you can book a seat on WhatsApp. Trading involves risk.",
+    "Hello. I can help with private one-to-one lessons, group classes, or live trading in Al Qusais. May I have your name and a UAE mobile number (+971 or 05)? We'll only use your number to contact you about courses. Trading involves risk.",
 };
 
 const WHATSAPP_LINK = whatsappHref(COURSE_WHATSAPP_TEXT);
@@ -36,7 +39,9 @@ export default function EnquiryWidget() {
   const [messages, setMessages] = useState([STARTER]);
   const [draft, setDraft] = useState("");
   const [pending, setPending] = useState(false);
+  const [leadNote, setLeadNote] = useState("");
   const logRef = useRef(null);
+  const savedPhone = useRef("");
 
   useEffect(() => {
     if (logRef.current) logRef.current.scrollTop = logRef.current.scrollHeight;
@@ -51,6 +56,7 @@ export default function EnquiryWidget() {
     setMessages(next);
     setDraft("");
     setPending(true);
+    captureLead(next);
     try {
       const response = await fetch("/api/chat", {
         method: "POST",
@@ -116,6 +122,39 @@ export default function EnquiryWidget() {
     }
   }
 
+  function captureLead(nextMessages) {
+    const latest = nextMessages[nextMessages.length - 1]?.content || "";
+    const draft = draftFromMessages(nextMessages, window.location.pathname);
+    if (!draft) {
+      if (hasPhoneAttempt(latest) && !findUaeMobile(latest)) {
+        setLeadNote("Please send a UAE mobile as +971 followed by 9 digits, or a number starting with 05.");
+      }
+      return;
+    }
+    if (savedPhone.current === draft.phone) return;
+    fetch("/api/lead", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(draft),
+    })
+      .then((response) => response.json().then((data) => ({ response, data })).catch(() => ({ response, data: {} })))
+      .then(({ response, data }) => {
+        if (data.ok) {
+          savedPhone.current = draft.phone;
+          setLeadNote("Thanks. We'll only use your number to contact you about courses.");
+          return;
+        }
+        if (response.status === 400) {
+          setLeadNote(data.error || "Please send your name and a UAE mobile number.");
+          return;
+        }
+        setLeadNote("That number is not stored on the site yet. You can send it on WhatsApp as well.");
+      })
+      .catch(() => {
+        setLeadNote("That number is not stored on the site yet. You can send it on WhatsApp as well.");
+      });
+  }
+
   return (
     <div className="assist-dock">
       {open ? (
@@ -146,6 +185,10 @@ export default function EnquiryWidget() {
                   </p>
                 ))}
               </div>
+              <p className="assist-privacy">
+                We'll only use your number to contact you about courses. <Link href="/privacy">Privacy</Link>
+              </p>
+              {leadNote ? <p className="assist-privacy">{leadNote}</p> : null}
               <p className="assist-risk">Trading involves risk. You can lose money.</p>
               <a className="broker-chat-btn" href={STARTRADER_LIVE_URL} target="_blank" rel="noopener noreferrer">
                 Open a StarTrader live account

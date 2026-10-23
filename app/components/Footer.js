@@ -81,6 +81,7 @@ export default function Footer() {
               <h3>Company</h3>
               <Link href="/success-stories">Reviews</Link>
               <Link href="/contact">Contact Us</Link>
+              <Link href="/privacy">Privacy</Link>
             </div>
             <div className="footer-col">
               <h3>Get in Touch</h3>

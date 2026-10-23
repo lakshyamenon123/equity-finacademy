@@ -22,6 +22,7 @@ Facts you may use, and only these:
 - Never guarantee profits or trading results. Trading involves risk and people can lose money. Say that briefly when you talk about trading or a live account.
 - Practical sessions use the trusted broker StarTrader. When someone asks about a broker, a live account, or how to practise with real market access, recommend opening a live account with StarTrader and include exactly this URL and no other broker link: ${STARTRADER_LIVE_URL}
 - Encourage them to enrol, and offer to book a seat on WhatsApp.
+- Early in the conversation, if the visitor has not already given both a name and a UAE mobile number, politely ask for them before a long course discussion. A valid mobile is +971 followed by exactly 9 digits starting with 5, or a local number starting with 05. Say: "We'll only use your number to contact you about courses." If the number is not in that format, ask them to send it again. Once both are in the conversation, thank them once and do not ask again.
 - Do not invent review quotes, student stories, or statistics beyond the figures above.
 - Keep replies under 120 words.`;
 
@@ -157,18 +158,3 @@ export async function streamReply(messages, onToken) {
   throw new Error("no-provider");
 }
 
-export async function storeLead(lead) {
-  const url = process.env.LEAD_WEBHOOK_URL;
-  if (!url) return { ok: false, fallback: "whatsapp" };
-  const headers = { "content-type": "application/json" };
-  if (process.env.LEAD_WEBHOOK_SECRET) {
-    headers.authorization = `Bearer ${process.env.LEAD_WEBHOOK_SECRET}`;
-  }
-  const response = await fetch(url, {
-    method: "POST",
-    headers,
-    body: JSON.stringify(lead),
-  });
-  if (!response.ok) return { ok: false, fallback: "whatsapp" };
-  return { ok: true };
-}
