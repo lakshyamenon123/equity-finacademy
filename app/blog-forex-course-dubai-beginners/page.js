@@ -80,10 +80,10 @@ export default function BeginnersCoursePost() {
               <h2>Before the first class</h2>
               <p>
                 Enrolment is a conversation, not a checkout. Call or message, say what you have and have not done, and
-                we place you on a track. Classes are group cohorts in Al Qusais, not a private one-to-one product
-                listed on the site. If you were searching for personal coaching, read{" "}
-                <Link href="/private-group-forex-training-dubai">how group classes differ from private lessons</Link>{" "}
-                before you assume we sell both.
+                we place you on a track. Classes are group cohorts in Al Qusais, and private one-to-one lessons are
+                available too, including live trading sessions and training. Read{" "}
+                <Link href="/private-group-forex-training-dubai">private and group forex training</Link>{" "}
+                before you book, so the format matches what you want.
               </p>
               <p>
                 There is no weekly timetable published here, because dates move with the cohort. Ask for the next dates
@@ -135,7 +135,7 @@ export default function BeginnersCoursePost() {
                 <li>No guaranteed profit, no signals service, no “daily income” claim. Most new traders lose money. We will say that in the room.</li>
                 <li>No lifetime WhatsApp line on the beginner track. That support is part of Advanced Institutional Strategies, after the course, for questions.</li>
                 <li>No second campus. If you want forex classes near you in Dubai, the address is M Floor, Arzoo Building, Al Qusais. The <Link href="/forex-academy-in-dubai">Dubai academy page</Link> is the location overview.</li>
-                <li>No private hourly booking published on this website. The class you can join is the group.</li>
+                <li>A private one-to-one lesson is available, with live trading sessions. It is a separate booking from the group cohort, and the fee is quoted when you enquire.</li>
               </ul>
               <p>
                 Common ways beginners damage an account — oversizing, revenge trades, strategy-hopping — are written up
@@ -152,7 +152,8 @@ export default function BeginnersCoursePost() {
               </p>
               <p>
                 The instructor is <Link href="/about">Gopi Chandran</Link>. More than 2,000 students have been trained
-                through that channel and live mentorship. The Google rating is 5.0 — check it on Google, not as a quote
+                through that channel and live mentorship. The academy is rated 5.0 on Google from 30+ reviews, and the
+                Equity Global channel has 200+ YouTube reviews and comments — check Google yourself rather than a quote
                 reconstructed here. If you are still comparing schools, use{" "}
                 <Link href="/blog-choose-forex-academy-uae">how to choose a forex academy in the UAE</Link> on us and on
                 everyone else.

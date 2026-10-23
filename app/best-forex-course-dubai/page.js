@@ -14,7 +14,7 @@ const path = "/best-forex-course-dubai";
 export const metadata = pageMetadata({
   title: "Best Forex Course in Dubai: How to Choose | Equity Fin Academy",
   description:
-    "A practical guide to choosing a forex course in Dubai. Equity Fin Academy in Al Qusais is rated 5.0 on Google and has trained 2,000+ students — here is what to check before you enrol anywhere.",
+    "A practical guide to choosing a forex course in Dubai. Equity Fin Academy in Al Qusais is rated 5.0 on Google from 30+ reviews and has trained 2,000+ students — here is what to check before you enrol anywhere.",
   keywords:
     "best forex course in Dubai, best forex training Dubai, forex course comparison UAE, forex academy reviews Dubai, how to choose a forex course Dubai",
   path,
@@ -27,7 +27,7 @@ const guideFaq = [
   },
   {
     q: "Is Equity Fin Academy rated 5.0 on Google?",
-    text: "Yes. The public Google rating for Equity Fin Academy is 5.0. Read the reviews on Google Maps. This site does not reprint them and does not state a review count.",
+    text: "Yes. Equity Fin Academy is rated 5.0 on Google from 30+ reviews. Read them on Google Maps. This site does not reprint the quotes. The Equity Global channel also has 200+ YouTube reviews and comments.",
   },
   {
     q: "How many students has Equity Fin Academy trained?",
@@ -65,7 +65,7 @@ export default function BestForexCourseDubaiPage() {
             </h1>
             <p className="hero-sub" style={{ marginTop: 18, maxWidth: "62ch" }}>
               “Best” is a fit question. This page is the checklist we would want you to use on any academy in Dubai,
-              including ours. Equity Fin Academy is rated 5.0 on Google and has trained 2,000+ students from Al Qusais.
+              including ours. Equity Fin Academy is rated 5.0 on Google from 30+ reviews and has trained 2,000+ students from Al Qusais.
             </p>
           </div>
         </section>
@@ -75,7 +75,7 @@ export default function BestForexCourseDubaiPage() {
             <div className="stats-grid" style={{ padding: 0 }}>
               <div className="stat-block">
                 <span className="value">5.0</span>
-                <span className="label">Rated 5.0 on Google</span>
+                <span className="label">5.0 on Google from 30+ reviews</span>
               </div>
               <div className="stat-block">
                 <span className="value">2000+</span>
@@ -91,9 +91,9 @@ export default function BestForexCourseDubaiPage() {
               </div>
             </div>
             <p style={{ marginTop: 18, maxWidth: "68ch" }}>
-              The 5.0 figure is the public Google rating. We do not publish a review count here — open the listing and
-              read the reviews yourself. Student numbers are people trained through the Equity Global channel and live
-              mentorship, not a claim about trading profits.
+              That rating is 5.0 on Google from 30+ reviews. Open the listing and read them yourself — we do not
+              reprint the quotes. The Equity Global channel has 200+ YouTube reviews and comments. Student numbers are
+              people trained through that channel and live mentorship, not a claim about trading profits.
             </p>
             <p>
               <a href={SITE.mapsUrl} className="btn btn-outline" target="_blank" rel="noopener noreferrer">
@@ -124,7 +124,7 @@ export default function BestForexCourseDubaiPage() {
               </li>
               <li>
                 <strong>Can you visit?</strong> Classes are live and in person at M Floor, Arzoo Building, Al Qusais,
-                Dubai. Walk-ins are welcome Sunday to Friday; calling ahead means someone can walk you through the tracks.
+                Dubai. The academy is open 24/7. Calling ahead means someone can walk you through the tracks, including private one-to-one lessons and live trading sessions.
               </li>
               <li>
                 <strong>Where are the reviews?</strong> Prefer a third-party listing you can open yourself. Ours is on
@@ -153,8 +153,8 @@ export default function BestForexCourseDubaiPage() {
             <div className="grid-4">
               <div className="card reveal">
                 <div className="num">01</div>
-                <h3>Rated 5.0 on Google</h3>
-                <p>The public star rating. Open Google Maps for the reviews. We do not quote them on this website.</p>
+                <h3>5.0 on Google from 30+ reviews</h3>
+                <p>The public star rating, from 30+ Google reviews. Open Google Maps and read them. We do not quote them on this website.</p>
               </div>
               <div className="card reveal">
                 <div className="num">02</div>

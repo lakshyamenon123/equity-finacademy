@@ -47,11 +47,15 @@ export function organizationSchema() {
       longitude: SITE.geo.longitude,
     },
     hasMap: SITE.mapsUrl,
-    // Days are published (Sunday–Friday walk-ins). Clock times are not — see site.js TODO.
-    openingHoursSpecification: SITE.walkInDays.map((day) => ({
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: day,
-    })),
+    // Open 24/7. reviewCount is omitted: 30+ is a lower bound, not an exact total.
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: SITE.openDays,
+        opens: SITE.opens,
+        closes: SITE.closes,
+      },
+    ],
     sameAs: SITE.sameAs,
     aggregateRating: {
       "@type": "AggregateRating",
@@ -136,13 +140,14 @@ export function faqPageSchema(items) {
   };
 }
 
-function courseEntry({ name, description, hash, topics }) {
+function courseEntry({ id, name, description, url, topics, offerName, category, instanceName, offerDescription }) {
   return {
     "@context": "https://schema.org",
     "@type": "Course",
+    "@id": id,
     name,
     description,
-    url: `${absoluteUrl("/courses")}#${hash}`,
+    url,
     provider: {
       "@type": "EducationalOrganization",
       "@id": `${SITE.url}/#organization`,
@@ -151,43 +156,71 @@ function courseEntry({ name, description, hash, topics }) {
       sameAs: SITE.sameAs,
     },
     teaches: topics,
-    // Group cohorts are the published class format. Private one-to-one is not a listed product,
-    // so there is no 1:1 Offer. TODO(owner): add a separate offer only if you actually sell private lessons.
-    // TODO(owner): add price and priceCurrency when a public fee exists. Omitted so it is not invented.
+    // No price or priceCurrency: fees are quoted on enquiry and are not published.
     offers: {
       "@type": "Offer",
-      name: "Group cohort in Al Qusais",
-      category: "Group forex training class",
-      url: `${absoluteUrl("/courses")}#${hash}`,
+      name: offerName,
+      category,
+      url,
       availability: "https://schema.org/LimitedAvailability",
-      description:
-        "Live group class at M Floor, Arzoo Building, Al Qusais, Dubai. The fee is quoted when you enquire because it varies by cohort and is not published on the site.",
+      description: offerDescription,
     },
     hasCourseInstance: {
       "@type": "CourseInstance",
-      name: "Group cohort",
+      name: instanceName,
       courseMode: "https://schema.org/Onsite",
       location: place,
     },
   };
 }
 
+const groupOfferDescription =
+  "Live group class with live trading sessions and training at M Floor, Arzoo Building, Al Qusais, Dubai. The fee is quoted when you enquire because it varies by cohort and is not published on the site.";
+
+export function privateCourseSchema() {
+  const url = absoluteUrl("/private-group-forex-training-dubai");
+  return courseEntry({
+    id: `${url}#private-course`,
+    name: "Private One-to-One Forex Lessons",
+    description:
+      "Private one-to-one forex lessons in Al Qusais, Dubai, with live trading sessions and training. The fee is quoted when you enquire and is not published.",
+    url,
+    topics: ["Private one-to-one forex lessons", "Live trading sessions", "Forex training"],
+    offerName: "Private one-to-one lesson",
+    category: "Private one-to-one forex training",
+    instanceName: "Private one-to-one lesson",
+    offerDescription:
+      "Private one-to-one forex lesson with live trading sessions and training at M Floor, Arzoo Building, Al Qusais, Dubai. No price is published; the fee is quoted when you enquire.",
+  });
+}
+
 export function courseSchemas() {
   return [
     courseEntry({
+      id: `${absoluteUrl("/courses")}#basic-to-intermediate`,
       name: "Basic to Intermediate Forex Course",
       description:
-        "Forex fundamentals, candlestick patterns, market structure and smart money concepts for traders starting from scratch. Taught live in Al Qusais, Dubai.",
-      hash: "basic-to-intermediate",
+        "Forex fundamentals, candlestick patterns, market structure and smart money concepts for traders starting from scratch. Taught live in Al Qusais, Dubai, as a group cohort with live trading sessions.",
+      url: `${absoluteUrl("/courses")}#basic-to-intermediate`,
       topics: basicTopics,
+      offerName: "Group cohort in Al Qusais",
+      category: "Group forex training class",
+      instanceName: "Group cohort",
+      offerDescription: groupOfferDescription,
     }),
     courseEntry({
+      id: `${absoluteUrl("/courses")}#advanced-institutional`,
       name: "Advanced Institutional Strategies Forex Course",
       description:
-        "Order flow analysis, market profile, volume with SMC, Fibonacci retracement and risk psychology management for experienced forex traders. Taught live in Al Qusais, Dubai.",
-      hash: "advanced-institutional",
+        "Order flow analysis, market profile, volume with SMC, Fibonacci retracement and risk psychology management for experienced forex traders. Taught live in Al Qusais, Dubai, as a group cohort with live trading sessions.",
+      url: `${absoluteUrl("/courses")}#advanced-institutional`,
       topics: advancedTopics,
+      offerName: "Group cohort in Al Qusais",
+      category: "Group forex training class",
+      instanceName: "Group cohort",
+      offerDescription: groupOfferDescription,
     }),
+    privateCourseSchema(),
   ];
 }
 

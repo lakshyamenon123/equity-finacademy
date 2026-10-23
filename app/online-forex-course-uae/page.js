@@ -113,7 +113,7 @@ export default function OnlineForexCourseUaePage() {
               <li>The instructor is named, with a background you can read. Ours is <Link href="/about">Gopi Chandran</Link>.</li>
               <li>The syllabus is a sequence, not “20 hours of signals”.</li>
               <li>Practice, if any, is on a regulated broker. Our classroom uses Star Trader, regulated by the SCA. A video course that tells you to deposit with an unnamed offshore firm is a distribution channel, not a school.</li>
-              <li>Reviews live on a third party. Equity Fin Academy is rated 5.0 on Google. We do not reprint quotes, and we do not state a review count on this page.</li>
+              <li>Reviews live on a third party. Equity Fin Academy is rated 5.0 on Google from 30+ reviews. We do not reprint the quotes. The Equity Global channel has 200+ YouTube reviews and comments.</li>
               <li>Nobody guarantees profit. More than 2,000 students trained means people taught, through YouTube and live mentorship. It does not mean 2,000 profitable traders.</li>
             </ul>
             <p>

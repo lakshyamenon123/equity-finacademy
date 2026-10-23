@@ -11,9 +11,9 @@ import { VIDEOS } from "./lib/videos";
 export const metadata = pageMetadata({
   title: "Equity Fin Academy — Forex Trading Course & Academy in Dubai",
   description:
-    "Forex trading course in Al Qusais, Dubai: live group classes for beginners and experienced traders, covering candlesticks, market structure and order flow, with practical sessions on an SCA-regulated broker. Looking for forex classes near you in Dubai? The classroom is in Al Qusais.",
+    "Forex trading course in Al Qusais, Dubai: live group classes and private one-to-one lessons, including live trading sessions, from candlesticks and market structure to order flow. Open 24/7. Rated 5.0 on Google from 30+ reviews.",
   keywords:
-    "forex trading course Dubai, forex trading academy Al Qusais, learn forex trading UAE, how to start forex trading, forex trading for beginners, smart money concepts course, market structure trading, candlestick pattern course, institutional trading strategies, SCA regulated broker training, technical analysis course Dubai, order flow trading course, risk management trading course, forex mentor Dubai, best forex course in Dubai, group forex training classes Dubai, forex classes near me Dubai",
+    "forex trading course Dubai, forex trading academy Al Qusais, learn forex trading UAE, how to start forex trading, forex trading for beginners, smart money concepts course, market structure trading, candlestick pattern course, institutional trading strategies, SCA regulated broker training, technical analysis course Dubai, order flow trading course, risk management trading course, forex mentor Dubai, best forex course in Dubai, group forex training classes Dubai, private forex training Dubai, one to one forex classes Dubai, forex classes near me Dubai",
   path: "/",
 });
 
@@ -40,7 +40,9 @@ export default function HomePage() {
                   Founded by a full-time trader with a background inside institutional trading desks, Equity Fin
                   Academy teaches order flow, market structure and risk management as one connected discipline — not
                   a shortcut, not a signal service. Whether you&apos;re wondering how to start learning forex or
-                  ready for institutional strategies, there&apos;s a track built for you.
+                  ready for institutional strategies, there&apos;s a track built for you. Training is live in Al
+                  Qusais: group cohorts or private one-to-one lessons, with live trading sessions. The academy is open
+                  24/7 and rated 5.0 on Google from 30+ reviews.
                 </p>
                 <div className="cta-row">
                   <a href="tel:+971567188995" className="btn btn-outline">
@@ -344,12 +346,13 @@ export default function HomePage() {
         <section className="tight">
           <div className="container prose-block">
             <span className="eyebrow">HOW CLASSES RUN</span>
-            <h2>Group forex classes in Al Qusais.</h2>
+            <h2>Group classes, private lessons, and live trading sessions.</h2>
             <p>
-              Paid training is a live cohort at M Floor, Arzoo Building — the place to come if you want forex classes
-              near you in Dubai. It is group training on a shared syllabus, not a private one-to-one lesson listed on
-              this site. Self-paced videos stay on YouTube. The difference is spelled out on{" "}
-              <Link href="/private-group-forex-training-dubai">private coaching versus group classes</Link>, and the
+              Paid training is taught live at M Floor, Arzoo Building — the place to come if you want forex classes
+              near you in Dubai. You can join a group cohort on a shared syllabus, or book a private one-to-one lesson.
+              Both include live trading sessions and training. The academy is open 24/7. It is rated 5.0 on Google from
+              30+ reviews, and the Equity Global channel has 200+ YouTube reviews and comments. Formats are spelled out
+              on <Link href="/private-group-forex-training-dubai">private one-to-one and group classes</Link>, and the
               tracks are on <Link href="/courses">Courses</Link>.
             </p>
           </div>
@@ -406,7 +409,7 @@ export default function HomePage() {
             <div className="topics-row reveal">
               <Link href="/forex-academy-in-dubai" className="topic-chip">Forex Academy in Dubai</Link>
               <Link href="/best-forex-course-dubai" className="topic-chip">Best Forex Course in Dubai</Link>
-              <Link href="/private-group-forex-training-dubai" className="topic-chip">Group Classes in Al Qusais</Link>
+              <Link href="/private-group-forex-training-dubai" className="topic-chip">Private and Group Classes</Link>
               <Link href="/blog-forex-course-dubai-beginners" className="topic-chip">Beginner Course: What to Expect</Link>
               <span className="topic-chip">Forex Trading for Beginners</span>
               <span className="topic-chip">Smart Money Concepts</span>

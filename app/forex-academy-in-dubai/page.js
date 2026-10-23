@@ -337,10 +337,10 @@ export default function ForexAcademyDubaiPage() {
           <div className="container prose-block">
             <h2>Forex classes near you in Dubai</h2>
             <p>
-              The classroom is M Floor, Arzoo Building, Al Qusais. Classes run as group cohorts. If you were comparing
-              that with private one-to-one coaching, read{" "}
-              <Link href="/private-group-forex-training-dubai">how the two formats differ</Link> — a private lesson is
-              not a product listed on this site. The syllabus is on <Link href="/courses">Courses</Link>.
+              The classroom is M Floor, Arzoo Building, Al Qusais, and the academy is open 24/7. Classes run as group
+              cohorts, and private one-to-one lessons are available as well, including live trading sessions and
+              training. <Link href="/private-group-forex-training-dubai">Private and group forex training</Link>{" "}
+              compares the two. The syllabus is on <Link href="/courses">Courses</Link>.
             </p>
           </div>
         </section>

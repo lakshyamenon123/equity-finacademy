@@ -5,37 +5,37 @@ import RelatedTraining from "../components/RelatedTraining";
 import YouTubeSection from "../components/YouTubeSection";
 import Link from "next/link";
 import { pageMetadata } from "../lib/seo";
-import { breadcrumbSchema, faqPageSchema } from "../lib/schema";
+import { breadcrumbSchema, faqPageSchema, privateCourseSchema } from "../lib/schema";
 import { SITE } from "../lib/site";
 import { VIDEOS } from "../lib/videos";
 
 const path = "/private-group-forex-training-dubai";
 
 export const metadata = pageMetadata({
-  title: "Private vs Group Forex Training in Dubai | Equity Fin Academy",
+  title: "Private and Group Forex Training in Dubai | Equity Fin Academy",
   description:
-    "Private forex training and one-to-one forex classes are a different format from group forex training. Equity Fin Academy runs live cohort classes in Al Qusais, Dubai. Personal coaching is not a separate product listed here.",
+    "Private one-to-one forex lessons and group forex classes in Al Qusais, Dubai, including live trading sessions and training. Open 24/7. Rated 5.0 on Google from 30+ reviews. Fees quoted on enquiry.",
   keywords:
-    "private forex training Dubai, one to one forex classes Dubai, personal forex coaching UAE, group forex training classes Dubai, forex classes near me Dubai, forex cohort Al Qusais",
+    "private forex training Dubai, one to one forex classes Dubai, personal forex coaching UAE, group forex training classes Dubai, live trading sessions Dubai, forex classes near me Dubai, forex cohort Al Qusais",
   path,
 });
 
 const pageFaq = [
   {
     q: "Do you offer private one-to-one forex classes in Dubai?",
-    text: "A private one-to-one forex class is not a product listed on this website. What is published is live group training in cohorts at M Floor, Arzoo Building, Al Qusais, plus self-paced lessons on the Equity Global channel. Call if you want to ask whether anything else is available. Do not assume a private seat exists.",
+    text: "Yes. Equity Fin Academy offers private one-to-one forex lessons at M Floor, Arzoo Building, Al Qusais, Dubai, including live trading sessions and training. The fee is quoted when you enquire and is not published on this site.",
   },
   {
-    q: "Are the forex classes in Dubai taught as a group?",
-    text: "Yes. The paid tracks are live, in person, and priced by cohort. That is group forex training: a shared syllabus, with the instructor in the room, at the Al Qusais academy.",
+    q: "Are the forex classes in Dubai also taught as a group?",
+    text: "Yes. The Basic to Intermediate and Advanced Institutional Strategies tracks run as live group cohorts in Al Qusais, with live trading sessions and training on a shared syllabus. You can choose a group seat or a private one-to-one lesson.",
   },
   {
     q: "Where are forex classes near me if I am in Dubai?",
-    text: "Equity Fin Academy is at M Floor, Arzoo Building, Al Qusais, Dubai. That is the only classroom. Walk-ins are welcome Sunday to Friday. Calling ahead means someone can walk you through the tracks.",
+    text: "Equity Fin Academy is at M Floor, Arzoo Building, Al Qusais, Dubai. That is the only classroom. The academy is open 24/7. Calling ahead means someone can walk you through the tracks and the private option.",
   },
   {
     q: "Is personal forex coaching the same as the WhatsApp support?",
-    text: "No. Lifetime WhatsApp access to the instructor is included on the Advanced Institutional Strategies track after the course, for questions. It is not a booked one-to-one coaching hour, and it is not part of the Basic to Intermediate track.",
+    text: "No. A private one-to-one lesson is a booked session with live trading. Lifetime WhatsApp access to the instructor is included on the Advanced Institutional Strategies track after the course, for questions. It is not a booked one-to-one hour, and it is not part of the Basic to Intermediate track.",
   },
 ];
 
@@ -49,6 +49,7 @@ export default function PrivateGroupForexTrainingPage() {
         ])}
       />
       <JsonLd data={faqPageSchema(pageFaq)} />
+      <JsonLd data={privateCourseSchema()} />
       <Header active="private-group" />
 
       <main>
@@ -61,12 +62,12 @@ export default function PrivateGroupForexTrainingPage() {
             </nav>
             <span className="eyebrow">CLASS FORMAT · AL QUSAIS, DUBAI</span>
             <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,3.1rem)", maxWidth: "16ch" }}>
-              Group classes in Dubai, and how they differ from private coaching.
+              Private one-to-one lessons and group forex classes in Dubai.
             </h1>
             <p className="hero-sub" style={{ marginTop: 18, maxWidth: "66ch" }}>
-              Searches for private forex training in Dubai, one-to-one forex classes, and personal forex coaching in
-              the UAE are looking for a different room from group forex training. This page says which of those Equity
-              Fin Academy actually runs.
+              Equity Fin Academy offers both. Private forex training, one-to-one forex classes, and personal forex
+              coaching in the UAE are a booked lesson with the instructor. Group forex training is the shared cohort.
+              Both include live trading sessions and training at the Al Qusais classroom.
             </p>
           </div>
         </section>
@@ -75,53 +76,57 @@ export default function PrivateGroupForexTrainingPage() {
           <div className="container prose-block">
             <h2>What is on the timetable</h2>
             <p>
-              The paid courses are live group classes at M Floor, Arzoo Building, Al Qusais, Dubai. Fees are quoted by
-              cohort because they change, which is why <Link href="/pricing">pricing</Link> lists what is included and
-              not a number. You pick Basic to Intermediate or Advanced Institutional Strategies, then attend with the
-              other people on that cohort. Practical sessions use Star Trader, an SCA-regulated broker.
+              Paid training is live, in person, at M Floor, Arzoo Building, Al Qusais, Dubai. You can join a group
+              cohort on Basic to Intermediate or Advanced Institutional Strategies, or book a private one-to-one
+              lesson. Live trading sessions and training are part of both formats. Fees are quoted when you enquire,
+              which is why <Link href="/pricing">pricing</Link> lists what a track includes and not a number. Practical
+              sessions use Star Trader, an SCA-regulated broker.
             </p>
             <p>
-              Alongside that, the Equity Global channel and the <Link href="/blog">blog</Link> are self-paced. The
-              about page describes a live mentorship programme that has trained more than 2,000 students together with
-              that channel. Mentorship here means teaching over time. It is not a page you can book as a private hourly
-              coach.
+              The academy is open 24/7. Calling ahead still helps: someone can match you to a track and say whether
+              the next seat is a group cohort or a private lesson. There is no published weekly timetable, because
+              dates move.
+            </p>
+            <p>
+              Alongside the classroom, the Equity Global channel and the <Link href="/blog">blog</Link> are self-paced.
+              The about page describes a live mentorship programme that has trained more than 2,000 students together
+              with that channel. The channel has 200+ YouTube reviews and comments. Mentorship and the free videos are
+              not a substitute for a booked private hour.
             </p>
             <p>
               If you searched “forex classes near me” from inside Dubai, the pin is Al Qusais — northern Dubai, beside
               Sharjah, not a campus in every district. The map is on the <Link href="/contact">contact page</Link>.
-              Google’s public rating for the academy is 5.0. Read those reviews on{" "}
+              The academy is rated 5.0 on Google from 30+ reviews. Read them on{" "}
               <a href={SITE.mapsUrl} target="_blank" rel="noopener noreferrer">
                 Google Maps
               </a>
-              . We do not reprint them, and we do not state a review count.
+              . We do not reprint the quotes.
             </p>
 
-            <h2>Private one-to-one, stated as it is</h2>
+            <h2>Private one-to-one lessons</h2>
             <p>
-              A one-to-one forex class means the instructor’s hour is yours: your chart, your questions, your pace.
-              People look for that when they already have a method and want it corrected, or when they will not ask
-              questions in a group. Personal forex coaching in the UAE is usually sold that way, often at a higher fee
-              per hour than a shared class. That price relationship is how the market works in general. It is not a
-              quote for a lesson we have listed.
+              A one-to-one forex class means the instructor’s hour is yours: your chart, your questions, your pace,
+              with live trading sessions in the room. People book it when they already have a method and want it
+              corrected, or when they will not ask questions in a group. The fee is quoted on enquiry. It is not
+              printed here, and this page does not invent an hourly rate.
             </p>
             <p>
-              Equity Fin Academy does not publish a private lesson, a one-to-one timetable, or a personal-coaching fee.
-              Please do not read this page as an offer of one. If you specifically need a private seat, call{" "}
-              <a href="tel:+971567188995">+971 56 718 8995</a> and ask what is actually available. Until that
-              conversation, the format you can enrol in is the group cohort.
+              To book a private lesson, call <a href="tel:+971567188995">+971 56 718 8995</a> or use the{" "}
+              <Link href="/contact">contact form</Link> and say you want one-to-one. Ask the fee and the next
+              available session. The instructor is <Link href="/about">Gopi Chandran</Link>.
             </p>
             <p>
-              WhatsApp access is narrower still. Students on Advanced Institutional Strategies keep lifetime access to
-              the instructor for questions after the course. Beginners on the first track do not get that line item.
-              Messages are not a substitute for either a group class or a private session.
+              WhatsApp access is separate. Students on Advanced Institutional Strategies keep lifetime access to the
+              instructor for questions after the course. Beginners on the first track do not get that line item.
+              Messages are not a substitute for a group class or a private session.
             </p>
 
             <h2>When the group class is the right room</h2>
             <ul className="guide-list">
               <li>You are new, and you want the topics in order: pairs, candles, structure, then risk. That sequence is the Basic to Intermediate track on the <Link href="/courses">courses page</Link>.</li>
               <li>You want other people hearing the same explanation, so a question you would not have asked still gets answered.</li>
-              <li>You can come to Al Qusais. Walk-ins are welcome Sunday to Friday. Calling first means someone is free to match you to a track.</li>
-              <li>You do not need a guarantee. Forex can lose money. The academy does not promise profits, in a group or otherwise.</li>
+              <li>You can come to Al Qusais. The academy is open 24/7. Calling first means someone is free to match you to a track or a private lesson.</li>
+              <li>You do not need a guarantee. Forex can lose money. The academy does not promise profits, in a group or in a private lesson.</li>
             </ul>
             <p>
               Traders who already know structure use the advanced cohort: order flow, market profile, volume with smart
@@ -131,12 +136,11 @@ export default function PrivateGroupForexTrainingPage() {
               is the checklist if you are still comparing schools.
             </p>
 
-            <h2>How to enquire without guessing the format</h2>
+            <h2>How to enquire</h2>
             <p>
-              Say whether you want the next group cohort, and which track matches your experience. Ask the fee for that
-              cohort. Ask the dates. If you also want to know about one-to-one, ask it as a separate question and accept
-              a no. The instructor is <Link href="/about">Gopi Chandran</Link>. The classroom does not move to Abu Dhabi
-              or Sharjah — those pages explain the same Al Qusais address for{" "}
+              Say whether you want the next group cohort or a private one-to-one lesson, and which track matches your
+              experience. Ask the fee. Ask the dates. Both formats include live trading sessions and training. The
+              classroom does not move to Abu Dhabi or Sharjah — those pages explain the same Al Qusais address for{" "}
               <Link href="/forex-course-abu-dhabi">Abu Dhabi</Link> and <Link href="/forex-course-sharjah">Sharjah</Link> students.
             </p>
           </div>
@@ -144,8 +148,8 @@ export default function PrivateGroupForexTrainingPage() {
 
         <YouTubeSection
           videos={[VIDEOS.howToStart]}
-          title="A public lesson, not a private session"
-          intro="This Equity Global recording is a free introduction, in Malayalam. It is self-paced video, not one-to-one coaching and not the live group class."
+          title="A public lesson from Equity Global"
+          intro="This Equity Global recording is a free introduction, in Malayalam. It is self-paced video. The live group class and the private one-to-one lesson, including live trading sessions, happen at the academy."
         />
 
         <section className="tight">
@@ -163,7 +167,7 @@ export default function PrivateGroupForexTrainingPage() {
             </div>
             <p style={{ marginTop: 28 }}>
               <Link href="/contact" className="btn btn-primary">
-                Enquire About a Group Cohort
+                Enquire About Private or Group Training
               </Link>
             </p>
           </div>

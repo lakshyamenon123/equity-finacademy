@@ -96,10 +96,10 @@ export default function ChooseAcademyPost() {
               <p>
                 A Dubai forex class you cannot visit is a webinar with a local keyword. Equity Fin Academy is at M
                 Floor, Arzoo Building, Al Qusais. If you searched for forex classes near you, that is the only pin —
-                northern Dubai, beside Sharjah, not a branch in every emirate. Walk-ins are welcome Sunday to Friday.
-                Calling ahead means someone can show you the tracks. Group cohorts are the published format. Private
-                one-to-one lessons are not listed; the difference is explained on{" "}
-                <Link href="/private-group-forex-training-dubai">private coaching versus group classes</Link>.
+                northern Dubai, beside Sharjah, not a branch in every emirate. The academy is open 24/7.
+                Calling ahead means someone can show you the tracks. Group cohorts and private one-to-one lessons are
+                both available, including live trading sessions; the difference is explained on{" "}
+                <Link href="/private-group-forex-training-dubai">private and group forex training</Link>.
               </p>
               <p>
                 Students coming from further away should read the{" "}
@@ -111,9 +111,10 @@ export default function ChooseAcademyPost() {
 
               <h2>5. Reviews live somewhere you do not control</h2>
               <p>
-                Testimonials on a school’s own site are easy to write. Equity Fin Academy’s public Google rating is
-                5.0. Open it yourself — the <Link href="/success-stories">reviews page</Link> links to Google Maps for
-                that reason, and this article will not invent a review count or paste quotes. More than 2,000 students
+                Testimonials on a school’s own site are easy to write. Equity Fin Academy is rated 5.0 on Google from
+                30+ reviews. Open them yourself — the <Link href="/success-stories">reviews page</Link> links to Google
+                Maps for that reason, and this article will not paste quotes. The Equity Global channel has 200+
+                YouTube reviews and comments. More than 2,000 students
                 have been trained through the Equity Global channel and live mentorship. That number is reach. It is
                 not a statement that 2,000 people make a living from forex. Most new traders lose money. Anyone who
                 skips that sentence is selling you something else.

@@ -122,7 +122,7 @@ export default function ContactPage() {
                 <summary>
                   Do I need an appointment to visit?<span className="plus">+</span>
                 </summary>
-                <p>Walk-ins are welcome Sunday to Friday, but calling ahead means someone can walk you through the forex course tracks in person.</p>
+                <p>The academy is open 24/7. Calling ahead means someone can walk you through the forex course tracks, including private one-to-one lessons, in person.</p>
               </details>
               <details>
                 <summary>

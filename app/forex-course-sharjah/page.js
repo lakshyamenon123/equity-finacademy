@@ -30,7 +30,7 @@ const pageFaq = [
   },
   {
     q: "Can I visit without an appointment?",
-    text: "Walk-ins are welcome Sunday to Friday. Calling ahead means someone is free to walk you through the tracks in person.",
+    text: "The academy is open 24/7. Calling ahead means someone is free to walk you through the tracks, including private one-to-one lessons, in person.",
   },
 ];
 
@@ -100,7 +100,7 @@ export default function ForexCourseSharjahPage() {
             </p>
             <p>
               More than 2,000 students have been trained through the Equity Global channel and live mentorship. The
-              Google rating is 5.0. Both figures are published so you can check them — the rating on Google itself, the
+              academy is rated 5.0 on Google from 30+ reviews. Both figures are published so you can check them — the rating on Google itself, the
               student number as teaching reach, not as a statement about anyone&apos;s trading account. The{" "}
               <Link href="/best-forex-course-dubai">Dubai course guide</Link> shows the other checks worth making.
             </p>

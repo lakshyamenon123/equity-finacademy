@@ -57,7 +57,8 @@ export default function SuccessStoriesPage() {
               <p>
                 Testimonials that a business writes about itself are easy to write and impossible to verify.
                 We&apos;d rather send you to Google, where reviews are posted directly by students, moderated by
-                Google (not by us), and can&apos;t be edited or removed by Equity Fin Academy.
+                Google (not by us), and can&apos;t be edited or removed by Equity Fin Academy. Equity Fin Academy is
+                rated 5.0 on Google from 30+ reviews. The Equity Global channel has 200+ YouTube reviews and comments.
               </p>
               <a
                 href="https://www.google.com/maps/search/?api=1&query=Equity+Fin+Academy+Al+Qusais+Dubai"

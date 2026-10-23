@@ -11,13 +11,12 @@ export default function Footer() {
             </Link>
             <p>Premium forex trading education, based in Al Qusais, Dubai.</p>
             <div className="social-row" style={{ marginTop: 16 }}>
-              {/* TODO(owner): replace Facebook and Instagram href="#" with the real profile URLs. */}
-              <a href="#" aria-label="Facebook">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
-                  <path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H9v3h2v6h3v-6h2.5l.5-3H14V9c0-.3.2-.5.5-.5H14z" />
-                </svg>
-              </a>
-              <a href="#" aria-label="Instagram">
+              <a
+                href="https://www.instagram.com/equity_global/"
+                aria-label="Equity Global on Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
                   <rect x="4" y="4" width="16" height="16" rx="4" />
                   <circle cx="12" cy="12" r="3.4" />
