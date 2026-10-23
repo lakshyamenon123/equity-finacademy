@@ -106,9 +106,13 @@ a.topic-chip:hover{background:var(--bg);border-color:var(--green)}
 .lead-status{margin:0;color:var(--text-muted);font-size:.92rem}
 .assist-dock{position:fixed;right:18px;bottom:18px;z-index:180;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
 .assist-actions{display:flex;gap:8px}
-.assist-wa,.assist-open{border:0;border-radius:999px;padding:14px 18px;font-family:var(--font-mono);font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;box-shadow:var(--shadow)}
-.assist-wa{background:#fff;color:var(--green-deep);border:1px solid var(--border)}
+.assist-wa,.assist-open,.assist-wa-inline{border:0;border-radius:999px;padding:14px 18px;font-family:var(--font-mono);font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;box-shadow:var(--shadow);text-align:center}
+.assist-wa,.assist-wa-inline{background:#25D366;color:#08331c}
+.assist-wa-inline{display:flex;justify-content:center;margin:8px 0;text-decoration:none}
 .assist-open{background:var(--green-deep);color:#fff}
+.assist-risk,.assist-privacy{margin:8px 0 0;font-size:.78rem;color:var(--text-faint)}
+.assist-privacy a{color:inherit}
+.broker-chat-btn{display:inline-flex;margin:8px 0;padding:10px 14px;border-radius:999px;background:var(--green-deep);color:#fff;font-family:var(--font-mono);font-size:.72rem;letter-spacing:.04em;text-transform:uppercase;text-decoration:none}
 .assist-panel{width:min(380px,calc(100vw - 24px));max-height:min(70vh,560px);overflow:auto;background:#fff;border:1px solid var(--border);border-radius:22px;box-shadow:var(--shadow-lg);padding:16px}
 .assist-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
 .assist-head h2{font-size:1.35rem;margin:0}
@@ -127,5 +131,5 @@ a.topic-chip:hover{background:var(--bg);border-color:var(--green)}
 .lead-form-compact{margin-top:0}
 @media (max-width:860px){
   .assist-dock{bottom:86px;right:12px}
-  .assist-wa{display:none}
+  .assist-panel{max-height:min(52vh,420px)}
 }

@@ -1,0 +1,255 @@
+import { timingSafeEqual } from "crypto";
+import { findUaeMobile } from "./phone";
+import { cleanVisitorName, chatSummary } from "./leadCapture";
+
+const REDIS_KEY = "efa:leads";
+const leadHits = new Map();
+
+export function dubaiTimestamp(date = new Date()) {
+  const parts = new Intl.DateTimeFormat("en-GB", {
+    timeZone: "Asia/Dubai",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+    hourCycle: "h23",
+  }).formatToParts(date);
+  const get = (type) => parts.find((part) => part.type === type)?.value || "00";
+  return `${get("year")}-${get("month")}-${get("day")}T${get("hour")}:${get("minute")}:${get("second")}+04:00`;
+}
+
+export function redisConfig() {
+  const url = process.env.UPSTASH_REDIS_REST_URL || process.env.KV_REST_API_URL || "";
+  const token = process.env.UPSTASH_REDIS_REST_TOKEN || process.env.KV_REST_API_TOKEN || "";
+  if (!url || !token) return null;
+  return { url, token };
+}
+
+export function postgresUrl() {
+  return process.env.POSTGRES_URL || process.env.POSTGRES_URL_NON_POOLING || process.env.DATABASE_URL || "";
+}
+
+export function storageKind() {
+  if (redisConfig()) return "redis";
+  if (postgresUrl()) return "postgres";
+  if (process.env.LEAD_WEBHOOK_URL) return "webhook";
+  return "";
+}
+
+export function allowLeadRequest(ip) {
+  const now = Date.now();
+  const recent = (leadHits.get(ip) || []).filter((time) => now - time < 60_000);
+  if (recent.length >= 8) {
+    leadHits.set(ip, recent);
+    return false;
+  }
+  recent.push(now);
+  leadHits.set(ip, recent);
+  if (leadHits.size > 500) leadHits.delete(leadHits.keys().next().value);
+  return true;
+}
+
+function clip(value, max) {
+  return String(value || "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, max);
+}
+
+function cleanPage(value) {
+  const page = clip(value, 200);
+  if (!page.startsWith("/") || page.startsWith("//")) return "/";
+  return page.split("?")[0];
+}
+
+export function prepareLead(input) {
+  const name = cleanVisitorName(input?.name);
+  const phone = findUaeMobile(input?.phone);
+  if (!name) return { error: "Please send your name." };
+  if (!phone) return { error: "Please send a UAE mobile as +971 followed by 9 digits, or a number starting with 05." };
+  return {
+    lead: {
+      id: crypto.randomUUID(),
+      name,
+      phone,
+      interest: clip(input?.interest, 80) || "Course enquiry",
+      summary: chatSummary(input?.summary || input?.message || ""),
+      page: cleanPage(input?.page),
+      createdAt: dubaiTimestamp(),
+    },
+  };
+}
+
+async function redisCommand(command) {
+  const config = redisConfig();
+  const response = await fetch(config.url, {
+    method: "POST",
+    headers: {
+      authorization: `Bearer ${config.token}`,
+      "content-type": "application/json",
+    },
+    body: JSON.stringify(command),
+  });
+  const data = await response.json().catch(() => ({}));
+  if (!response.ok || data.error) throw new Error("redis");
+  return data.result;
+}
+
+async function recentRedisLeads(minScore) {
+  const rows = await redisCommand(["ZRANGEBYSCORE", REDIS_KEY, String(minScore), "+inf"]);
+  if (!Array.isArray(rows)) return [];
+  return rows
+    .map((row) => {
+      try {
+        return JSON.parse(row);
+      } catch {
+        return null;
+      }
+    })
+    .filter(Boolean);
+}
+
+let postgresReady = null;
+
+async function postgresSql() {
+  const { neon } = await import("@neondatabase/serverless");
+  const sql = neon(postgresUrl());
+  if (!postgresReady) {
+    postgresReady = sql`
+      CREATE TABLE IF NOT EXISTS leads (
+        id text PRIMARY KEY,
+        name text NOT NULL,
+        phone text NOT NULL,
+        interest text,
+        summary text,
+        page text,
+        created_at timestamptz NOT NULL
+      )
+    `.catch((error) => {
+      postgresReady = null;
+      throw error;
+    });
+  }
+  await postgresReady;
+  return sql;
+}
+
+async function postWebhook(lead) {
+  const url = process.env.LEAD_WEBHOOK_URL;
+  if (!url) return false;
+  const headers = { "content-type": "application/json" };
+  if (process.env.LEAD_WEBHOOK_SECRET) headers.authorization = `Bearer ${process.env.LEAD_WEBHOOK_SECRET}`;
+  const response = await fetch(url, { method: "POST", headers, body: JSON.stringify(lead) });
+  return response.ok;
+}
+
+export async function saveLead(input) {
+  const prepared = prepareLead(input);
+  if (prepared.error) return { ok: false, error: prepared.error, status: 400 };
+  const lead = prepared.lead;
+  const kind = storageKind();
+  if (!kind) return { ok: false, fallback: "whatsapp", error: "Lead storage is not configured." };
+
+  try {
+    if (kind === "redis") {
+      const since = Date.now() - 12 * 60 * 60 * 1000;
+      const recent = await recentRedisLeads(since);
+      if (recent.some((item) => item.phone === lead.phone && item.name === lead.name)) {
+        return { ok: true, duplicate: true, storage: "redis" };
+      }
+      await redisCommand(["ZADD", REDIS_KEY, String(Date.parse(lead.createdAt)), JSON.stringify(lead)]);
+      return { ok: true, storage: "redis" };
+    }
+
+    if (kind === "postgres") {
+      const sql = await postgresSql();
+      const existing = await sql`
+        SELECT id FROM leads
+        WHERE phone = ${lead.phone} AND name = ${lead.name} AND created_at > NOW() - INTERVAL '12 hours'
+        LIMIT 1
+      `;
+      if (existing.length) return { ok: true, duplicate: true, storage: "postgres" };
+      await sql`
+        INSERT INTO leads (id, name, phone, interest, summary, page, created_at)
+        VALUES (${lead.id}, ${lead.name}, ${lead.phone}, ${lead.interest}, ${lead.summary}, ${lead.page}, ${lead.createdAt})
+      `;
+      return { ok: true, storage: "postgres" };
+    }
+
+    const ok = await postWebhook(lead);
+    if (!ok) return { ok: false, fallback: "whatsapp", error: "Lead storage is not configured." };
+    return { ok: true, storage: "webhook" };
+  } catch {
+    return { ok: false, fallback: "whatsapp", error: "The enquiry could not be stored. Continue on WhatsApp." };
+  }
+}
+
+export function leadsAuthorized(request) {
+  const expected = process.env.LEADS_TOKEN || "";
+  const header = request.headers.get("authorization") || "";
+  const provided = header.toLowerCase().startsWith("bearer ")
+    ? header.slice(7).trim()
+    : request.headers.get("x-leads-token") || "";
+  if (!expected || !provided) return false;
+  const left = Buffer.from(provided);
+  const right = Buffer.from(expected);
+  if (left.length !== right.length) return false;
+  return timingSafeEqual(left, right);
+}
+
+export function sinceMillis(value) {
+  if (!value) {
+    const day = `${dubaiTimestamp().slice(0, 10)}T00:00:00+04:00`;
+    return Date.parse(day);
+  }
+  const ms = Date.parse(value);
+  if (!Number.isFinite(ms)) return null;
+  return ms;
+}
+
+export async function listLeads(sinceMs) {
+  const kind = storageKind();
+  if (kind === "redis") {
+    const leads = await recentRedisLeads(sinceMs);
+    return leads
+      .filter((lead) => Date.parse(lead.createdAt) >= sinceMs)
+      .sort((a, b) => Date.parse(a.createdAt) - Date.parse(b.createdAt))
+      .slice(0, 500)
+      .map(publicLead);
+  }
+  if (kind === "postgres") {
+    const sql = await postgresSql();
+    const since = new Date(sinceMs).toISOString();
+    const result = await sql`
+      SELECT id, name, phone, interest, summary, page, created_at
+      FROM leads
+      WHERE created_at >= ${since}
+      ORDER BY created_at ASC
+      LIMIT 500
+    `;
+    return result.map((row) =>
+      publicLead({
+        name: row.name,
+        phone: row.phone,
+        interest: row.interest,
+        summary: row.summary,
+        page: row.page,
+        createdAt: dubaiTimestamp(new Date(row.created_at)),
+      })
+    );
+  }
+  return null;
+}
+
+function publicLead(lead) {
+  return {
+    name: lead.name,
+    phone: lead.phone,
+    interest: lead.interest || "",
+    summary: lead.summary || "",
+    page: lead.page || "/",
+    createdAt: lead.createdAt,
+  };
+}

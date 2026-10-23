@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { findUaeMobile } from "../lib/phone";
 import { enquiryText, whatsappHref } from "../lib/whatsapp";
 
 const INTERESTS = ["Private one-to-one", "Group cohort", "Live trading sessions", "Not sure yet"];
@@ -19,9 +20,15 @@ export default function LeadForm({ compact = false, id = "lead-form" }) {
     setPending(true);
     setStatus("");
     setFallbackHref("");
+    const phoneValue = findUaeMobile(phone);
+    if (!phoneValue) {
+      setStatus("Please send a UAE mobile as +971 followed by 9 digits, or a number starting with 05.");
+      setPending(false);
+      return;
+    }
     const payload = {
       name,
-      phone,
+      phone: phoneValue,
       interest,
       message,
       page: typeof window !== "undefined" ? window.location.pathname : "",
@@ -68,7 +75,7 @@ export default function LeadForm({ compact = false, id = "lead-form" }) {
           autoComplete="tel"
           required
           maxLength={40}
-          placeholder="+971 …"
+          placeholder="+971 or 05…"
           value={phone}
           onChange={(event) => setPhone(event.target.value)}
         />
