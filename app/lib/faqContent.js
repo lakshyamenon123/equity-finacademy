@@ -100,7 +100,7 @@ export const faqCategories = [
       {
         q: "Who teaches at Equity Fin Academy?",
         parts: [
-          "Gopi Chandran, founder and lead instructor — MBA in Finance, full-time forex trader since 2016, with a background inside institutional trading desks. Read his full profile on the ",
+          "Gopi Chandran, founder and lead instructor of Equity Fin Academy. Read his full profile on the ",
           link("/about", "About Us"),
           " page.",
         ],
@@ -108,7 +108,7 @@ export const faqCategories = [
       {
         q: "Where is Equity Fin Academy located?",
         parts: [
-          "M Floor, Arzoo Building, Al Qusais, Dubai, United Arab Emirates. See the ",
+          "Dubai, UAE. See the ",
           link("/contact", "Contact page"),
           " for the map and directions.",
         ],
@@ -122,7 +122,7 @@ export const faqCategories = [
       {
         q: "What forex courses does Equity Fin Academy offer?",
         parts: [
-          "Two tracks: Basic to Intermediate (fundamentals, candlesticks, market structure) and Advanced Institutional Strategies (order flow, market profile, SMC, risk psychology). See the full curriculum on the ",
+          "Two tracks: Basic to Intermediate (fundamentals, candlesticks, market structure) and Advanced Institutional Strategies (market profile, SMC, risk psychology). See the full curriculum on the ",
           link("/courses", "Courses"),
           " page.",
         ],
@@ -130,7 +130,7 @@ export const faqCategories = [
       {
         q: "Which course should I start with?",
         parts: [
-          "If you're new to trading, start with Basic to Intermediate. If you already understand fundamentals and structure, Advanced Institutional Strategies goes straight into order flow and institutional tools.",
+          "If you're new to trading, start with Basic to Intermediate. If you already understand fundamentals and structure, Advanced Institutional Strategies goes straight into institutional tools.",
         ],
       },
       {
@@ -142,7 +142,7 @@ export const faqCategories = [
       {
         q: "What is included in the Advanced Institutional Strategies course?",
         parts: [
-          "Fundamental analysis, market structure, order flow analysis, institutional tools, market profile analysis, volume with SMC, Fibonacci retracement, risk and psychology management, bot trading concepts, and lifetime WhatsApp support. Full list on the ",
+          "Fundamental analysis, market structure, institutional tools, market profile analysis, volume with SMC, Fibonacci retracement, risk and psychology management, bot trading concepts, and lifetime WhatsApp support. Full list on the ",
           link("/courses", "Courses"),
           " page.",
         ],

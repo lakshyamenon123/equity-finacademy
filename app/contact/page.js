@@ -4,16 +4,16 @@ import LeadForm from "../components/LeadForm";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Contact Us — Equity Fin Academy, Al Qusais, Dubai",
+  title: "Contact Us — Equity Fin Academy, Dubai, UAE",
   description:
-    "Visit Equity Fin Academy's forex trading academy at M Floor, Arzoo Building, Al Qusais, Dubai, or call +971 56 718 8995. Read real student reviews on Google Maps, or enquire about our forex trading courses.",
+    "Visit Equity Fin Academy's forex trading academy in Dubai, UAE, or call +971 56 718 8995. Read real student reviews on Google Maps, or enquire about our forex trading courses.",
   keywords:
     "forex trading academy Al Qusais, forex course near me Dubai, Equity Fin Academy contact, trading academy phone number Dubai, book forex course Dubai, forex classes Al Qusais Dubai",
   openGraph: {
-    title: "Contact Us — Equity Fin Academy, Al Qusais, Dubai",
-    description: "Visit us at M Floor, Arzoo Building, Al Qusais, Dubai, or call +971 56 718 8995 to enquire about our forex trading courses.",
+    title: "Contact Us — Equity Fin Academy, Dubai, UAE",
+    description: "Visit us in Dubai, UAE, or call +971 56 718 8995 to enquire about our forex trading courses.",
     type: "website",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Al Qusais, Dubai" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Dubai, UAE" }],
   },
   alternates: { canonical: "https://www.equityfinacademy.com/contact" },
 };
@@ -43,7 +43,7 @@ export default function ContactPage() {
             </nav>
             <span className="eyebrow">CONTACT</span>
             <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,2.8rem)", maxWidth: "20ch" }}>
-              Visit our forex trading academy in Al Qusais, or send an enquiry.
+              Visit our forex trading academy in Dubai, or send an enquiry.
             </h1>
           </div>
         </section>
@@ -77,7 +77,7 @@ export default function ContactPage() {
 
               <div className="info-row">
                 <span className="tag">ADDRESS</span>
-                <span className="val">M Floor, Arzoo Building, Al Qusais, Dubai, United Arab Emirates</span>
+                <span className="val">Dubai, UAE</span>
               </div>
               <div className="info-row">
                 <span className="tag">PHONE</span>
@@ -105,7 +105,7 @@ export default function ContactPage() {
             <div className="map-frame reveal">
               <iframe
                 src="https://www.google.com/maps?q=M+Floor,+Arzoo+Building,+Al+Qusais,+Dubai,+UAE&output=embed"
-                title="Map showing M Floor, Arzoo Building, Al Qusais, Dubai"
+                title="Map showing Dubai, UAE"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
@@ -139,7 +139,7 @@ export default function ContactPage() {
                 <summary>
                   Where exactly is the academy located?<span className="plus">+</span>
                 </summary>
-                <p>Equity Fin Academy is at M Floor, Arzoo Building, Al Qusais, Dubai — see the map above for directions.</p>
+                <p>Equity Fin Academy is in Dubai, UAE — see the map above for directions.</p>
               </details>
             </div>
             <p style={{ marginTop: 24 }}>
@@ -153,7 +153,7 @@ export default function ContactPage() {
         <section className="tight">
           <div className="container">
             <div className="topics-row reveal">
-              <span className="topic-chip">Forex Trading Academy Al Qusais</span>
+              <span className="topic-chip">Forex Trading Academy in Dubai</span>
               <span className="topic-chip">Forex Classes Dubai</span>
               <span className="topic-chip">Learn Forex Near Me</span>
               <span className="topic-chip">Book a Forex Course Dubai</span>

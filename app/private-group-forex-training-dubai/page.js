@@ -14,7 +14,7 @@ const path = "/private-group-forex-training-dubai";
 export const metadata = pageMetadata({
   title: "Private and Group Forex Training in Dubai | Equity Fin Academy",
   description:
-    "Private one-to-one forex lessons and group forex classes in Al Qusais, Dubai, including live trading sessions and training. Open 24/7. Rated 5.0 on Google from 30+ reviews. Fees quoted on enquiry.",
+    "Private one-to-one forex lessons and group forex classes in Dubai, UAE, including live trading sessions and training. Open 24/7. Rated 5.0 on Google from 30+ reviews. Fees quoted on enquiry.",
   keywords:
     "private forex training Dubai, one to one forex classes Dubai, personal forex coaching UAE, group forex training classes Dubai, live trading sessions Dubai, forex classes near me Dubai, forex cohort Al Qusais",
   path,
@@ -23,15 +23,15 @@ export const metadata = pageMetadata({
 const pageFaq = [
   {
     q: "Do you offer private one-to-one forex classes in Dubai?",
-    text: "Yes. Equity Fin Academy offers private one-to-one forex lessons at M Floor, Arzoo Building, Al Qusais, Dubai, including live trading sessions and training. The fee is quoted when you enquire and is not published on this site.",
+    text: "Yes. Equity Fin Academy offers private one-to-one forex lessons in Dubai, UAE, including live trading sessions and training. The fee is quoted when you enquire and is not published on this site.",
   },
   {
     q: "Are the forex classes in Dubai also taught as a group?",
-    text: "Yes. The Basic to Intermediate and Advanced Institutional Strategies tracks run as live group cohorts in Al Qusais, with live trading sessions and training on a shared syllabus. You can choose a group seat or a private one-to-one lesson.",
+    text: "Yes. The Basic to Intermediate and Advanced Institutional Strategies tracks run as live group cohorts in Dubai, with live trading sessions and training on a shared syllabus. You can choose a group seat or a private one-to-one lesson.",
   },
   {
     q: "Where are forex classes near me if I am in Dubai?",
-    text: "Equity Fin Academy is at M Floor, Arzoo Building, Al Qusais, Dubai. That is the only classroom. The academy is open 24/7. Calling ahead means someone can walk you through the tracks and the private option.",
+    text: "Equity Fin Academy is in Dubai, UAE. That is the only classroom. The academy is open 24/7. Calling ahead means someone can walk you through the tracks and the private option.",
   },
   {
     q: "Is personal forex coaching the same as the WhatsApp support?",
@@ -67,7 +67,7 @@ export default function PrivateGroupForexTrainingPage() {
             <p className="hero-sub" style={{ marginTop: 18, maxWidth: "66ch" }}>
               Equity Fin Academy offers both. Private forex training, one-to-one forex classes, and personal forex
               coaching in the UAE are a booked lesson with the instructor. Group forex training is the shared cohort.
-              Both include live trading sessions and training at the Al Qusais classroom.
+              Both include live trading sessions and training at the Dubai classroom.
             </p>
           </div>
         </section>
@@ -76,7 +76,7 @@ export default function PrivateGroupForexTrainingPage() {
           <div className="container prose-block">
             <h2>What is on the timetable</h2>
             <p>
-              Paid training is live, in person, at M Floor, Arzoo Building, Al Qusais, Dubai. You can join a group
+              Training is in person in Dubai, UAE, and online across the UAE. You can join a group
               cohort on Basic to Intermediate or Advanced Institutional Strategies, or book a private one-to-one
               lesson. Live trading sessions and training are part of both formats. Fees are quoted when you enquire,
               which is why <Link href="/pricing">pricing</Link> lists what a track includes and not a number. Practical
@@ -94,8 +94,7 @@ export default function PrivateGroupForexTrainingPage() {
               not a substitute for a booked private hour.
             </p>
             <p>
-              If you searched “forex classes near me” from inside Dubai, the pin is Al Qusais — northern Dubai, beside
-              Sharjah, not a campus in every district. The map is on the <Link href="/contact">contact page</Link>.
+              If you searched “forex classes near me” in Dubai, classes are in Dubai, UAE, and online across the UAE. The map is on the <Link href="/contact">contact page</Link>.
               The academy is rated 5.0 on Google from 30+ reviews. Read them on{" "}
               <a href={SITE.mapsUrl} target="_blank" rel="noopener noreferrer">
                 Google Maps
@@ -125,11 +124,11 @@ export default function PrivateGroupForexTrainingPage() {
             <ul className="guide-list">
               <li>You are new, and you want the topics in order: pairs, candles, structure, then risk. That sequence is the Basic to Intermediate track on the <Link href="/courses">courses page</Link>.</li>
               <li>You want other people hearing the same explanation, so a question you would not have asked still gets answered.</li>
-              <li>You can come to Al Qusais. The academy is open 24/7. Calling first means someone is free to match you to a track or a private lesson.</li>
+              <li>You can come to Dubai. The academy is open 24/7. Calling first means someone is free to match you to a track or a private lesson.</li>
               <li>You do not need a guarantee. Forex can lose money. The academy does not promise profits, in a group or in a private lesson.</li>
             </ul>
             <p>
-              Traders who already know structure use the advanced cohort: order flow, market profile, volume with smart
+              Traders who already know structure use the advanced cohort: market profile, volume with smart
               money concepts, Fibonacci, psychology, and bot-trading concepts.{" "}
               <Link href="/blog-forex-course-dubai-beginners">What beginners should expect</Link> describes the first
               track in more detail. <Link href="/blog-choose-forex-academy-uae">How to choose an academy in the UAE</Link>{" "}
@@ -140,7 +139,7 @@ export default function PrivateGroupForexTrainingPage() {
             <p>
               Say whether you want the next group cohort or a private one-to-one lesson, and which track matches your
               experience. Ask the fee. Ask the dates. Both formats include live trading sessions and training. The
-              classroom does not move to Abu Dhabi or Sharjah — those pages explain the same Al Qusais address for{" "}
+              classroom does not move to Abu Dhabi or Sharjah. Those pages explain the same Dubai classes, and online study across the UAE, for{" "}
               <Link href="/forex-course-abu-dhabi">Abu Dhabi</Link> and <Link href="/forex-course-sharjah">Sharjah</Link> students.
             </p>
           </div>

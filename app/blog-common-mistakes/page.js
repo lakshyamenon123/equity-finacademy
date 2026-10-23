@@ -11,7 +11,7 @@ export const metadata = {
     title: "7 Common Mistakes Beginner Forex Traders Make",
     description: "The patterns that quietly drain new trading accounts, and how to avoid them.",
     type: "article",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Al Qusais, Dubai" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Dubai, UAE" }],
   },
   alternates: { canonical: "https://www.equityfinacademy.com/blog-common-mistakes" },
 };

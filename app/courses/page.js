@@ -11,9 +11,9 @@ import { VIDEOS } from "../lib/videos";
 export const metadata = pageMetadata({
   title: "Forex Trading Courses Dubai — Group and Private Lessons | Equity Fin Academy",
   description:
-    "Forex courses in Al Qusais, Dubai: Basic to Intermediate and Advanced Institutional Strategies as live group classes, plus private one-to-one lessons with live trading sessions. Open 24/7. Fees quoted on enquiry.",
+    "Forex courses in Dubai, UAE: Basic to Intermediate and Advanced Institutional Strategies as live group classes, plus private one-to-one lessons with live trading sessions. Open 24/7. Fees quoted on enquiry.",
   keywords:
-    "forex course Dubai, learn forex trading UAE, forex trading classes Dubai, group forex training classes Dubai, private forex training Dubai, one to one forex classes Dubai, live trading sessions Dubai, smart money concepts course, order flow analysis course, market profile trading, Fibonacci retracement course, bot trading strategies forex, risk management course Dubai, institutional forex strategies course, candlestick pattern course Dubai, best forex course for beginners",
+    "forex course Dubai, learn forex trading UAE, forex trading classes Dubai, group forex training classes Dubai, private forex training Dubai, one to one forex classes Dubai, live trading sessions Dubai, smart money concepts course, market profile trading, Fibonacci retracement course, bot trading strategies forex, risk management course Dubai, institutional forex strategies course, candlestick pattern course Dubai, best forex course for beginners",
   path: "/courses",
 });
 
@@ -48,7 +48,7 @@ export default function CoursesPage() {
               Two tracks. One market. Forex, taught in depth.
             </h1>
             <p style={{ maxWidth: "66ch", marginTop: 18 }}>
-              Start at whichever level matches your experience. Both tracks run as live group cohorts in Al Qusais,
+              Start at whichever level matches your experience. Both tracks run as live group classes in Dubai, UAE, and online across the UAE,
               with live trading sessions on a regulated broker. Private one-to-one lessons are also available, with
               the same live trading sessions and training — see{" "}
               <Link href="/private-group-forex-training-dubai">private and group forex training</Link>. The academy is
@@ -125,7 +125,7 @@ export default function CoursesPage() {
                 <h3>Advanced Institutional Strategies</h3>
                 <p className="desc">
                   For traders who already understand the basics and want the frameworks used on institutional desks
-                  — order flow, market profile and risk discipline.
+                  — market profile and risk discipline.
                 </p>
                 <ul className="course-list">
                   {advancedTopics.map((item) => (
@@ -155,8 +155,7 @@ export default function CoursesPage() {
             <span className="eyebrow">PRIVATE ONE-TO-ONE</span>
             <h2>Private lessons and live trading sessions.</h2>
             <p>
-              Alongside the two group tracks, Equity Fin Academy offers private one-to-one forex lessons at M Floor,
-              Arzoo Building, Al Qusais. A private lesson is your chart and your questions with the instructor, and it
+              Alongside the two group tracks, Equity Fin Academy offers private one-to-one forex lessons in Dubai, UAE, and online across the UAE. A private lesson is your chart and your questions with the instructor, and it
               includes live trading sessions and training. Group cohorts include live trading sessions as well. The fee
               for either format is quoted when you enquire — it is not printed here. Lifetime WhatsApp access stays on
               the Advanced track only and is not a booked one-to-one hour.{" "}
@@ -200,7 +199,7 @@ export default function CoursesPage() {
                 <p>
                   If you&apos;re new to trading, start with Basic to Intermediate — it covers forex fundamentals,
                   candlestick patterns and market structure. If you already understand these, Advanced Institutional
-                  Strategies goes straight into order flow and institutional tools.
+                  Strategies goes straight into institutional tools.
                 </p>
               </details>
               <details>
@@ -223,7 +222,7 @@ export default function CoursesPage() {
                   Do you offer private one-to-one lessons?<span className="plus">+</span>
                 </summary>
                 <p>
-                  Yes. Private one-to-one forex lessons are available in Al Qusais, including live trading sessions and
+                  Yes. Private one-to-one forex lessons are available in Dubai, including live trading sessions and
                   training. Group cohorts are available too. Call for the current fee — it is not listed on this page.
                 </p>
               </details>
@@ -253,7 +252,6 @@ export default function CoursesPage() {
               <span className="topic-chip">Forex Course Dubai</span>
               <span className="topic-chip">Learn Forex Trading UAE</span>
               <span className="topic-chip">Forex Classes for Beginners</span>
-              <span className="topic-chip">Order Flow Analysis</span>
               <span className="topic-chip">Market Profile Trading</span>
               <span className="topic-chip">Fibonacci Retracement</span>
               <span className="topic-chip">Bot Trading Strategies</span>

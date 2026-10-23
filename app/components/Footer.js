@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer-cta">
           <div>
-            <p className="footer-cta-kicker">Al Qusais, Dubai · Open 24/7</p>
+            <p className="footer-cta-kicker">Dubai, UAE · Open 24/7</p>
             <p className="footer-cta-title">Talk to the academy about a group cohort or a private lesson.</p>
           </div>
           <div className="cta-row">
@@ -27,7 +27,7 @@ export default function Footer() {
             <Link href="/" className="brand">
               <strong>EQUITY</strong> FIN ACADEMY
             </Link>
-            <p>Forex training in Al Qusais, Dubai. Live group classes, private one-to-one lessons, and live trading sessions.</p>
+            <p>Forex training in Dubai, UAE, and online across the UAE. Group classes, private one-to-one lessons, and live trading sessions.</p>
             <div className="social-row" style={{ marginTop: 16 }}>
               <a
                 href="https://www.instagram.com/equity_global/"
@@ -85,13 +85,13 @@ export default function Footer() {
             </div>
             <div className="footer-col">
               <h3>Get in Touch</h3>
-              <span>M Floor, Arzoo Building, Al Qusais, Dubai</span>
+              <span>Dubai, UAE</span>
               <a href="tel:+971567188995">+971 56 718 8995</a>
             </div>
           </div>
         </div>
 
-        <div className="copyright">© {new Date().getFullYear()} Equity Fin Academy, Al Qusais, Dubai. All rights reserved.</div>
+        <div className="copyright">© {new Date().getFullYear()} Equity Fin Academy, Dubai, UAE. All rights reserved.</div>
       </div>
     </footer>
   );

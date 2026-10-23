@@ -68,14 +68,13 @@ export default function ChooseAcademyPost() {
               <h2>1. The instructor has a name and a past you can read</h2>
               <p>
                 If the page says “our team of experts” and never names the person in the room, you cannot judge the
-                teaching. <Link href="/about">Gopi Chandran</Link> is the founder and lead instructor here: MBA in
-                Finance, full-time forex trader since 2016, with a background inside institutional trading desks. That
-                is the biography. It is not a claim that every student will trade like a desk.
+                teaching. <Link href="/about">Gopi Chandran</Link> is the founder and lead instructor. That
+                is the biography. It is not a promise about any student's results.
               </p>
 
               <h2>2. The curriculum is a sequence, not a folder of videos</h2>
               <p>
-                Beginners need vocabulary, candlesticks, market structure and risk before anyone mentions order flow.
+                Beginners need vocabulary, candlesticks, market structure and risk before anyone reaches the advanced track.
                 A school that opens with “secret setups” is skipping the part that keeps people solvent. Our two tracks
                 are written out on the <Link href="/courses">courses page</Link>. Basic to Intermediate is the
                 beginner sequence. Advanced Institutional Strategies assumes you already have it.{" "}
@@ -94,10 +93,8 @@ export default function ChooseAcademyPost() {
 
               <h2>4. You can find the room</h2>
               <p>
-                A Dubai forex class you cannot visit is a webinar with a local keyword. Equity Fin Academy is at M
-                Floor, Arzoo Building, Al Qusais. If you searched for forex classes near you, that is the only pin —
-                northern Dubai, beside Sharjah, not a branch in every emirate. The academy is open 24/7.
-                Calling ahead means someone can show you the tracks. Group cohorts and private one-to-one lessons are
+                Equity Fin Academy teaches in person in Dubai, UAE, and online across the UAE. The academy is open 24/7.
+                Calling ahead means someone can show you the tracks. Group classes and private one-to-one lessons are
                 both available, including live trading sessions; the difference is explained on{" "}
                 <Link href="/private-group-forex-training-dubai">private and group forex training</Link>.
               </p>
@@ -105,8 +102,7 @@ export default function ChooseAcademyPost() {
                 Students coming from further away should read the{" "}
                 <Link href="/forex-course-abu-dhabi">Abu Dhabi</Link> and{" "}
                 <Link href="/forex-course-sharjah">Sharjah</Link> notes rather than assume a local campus. If you need
-                something fully remote, the <Link href="/online-forex-course-uae">online study page</Link> is explicit:
-                the free path is video and articles. A paid remote cohort is not published.
+                something fully remote, the <Link href="/online-forex-course-uae">online study page</Link> explains learning online across the UAE.
               </p>
 
               <h2>5. Reviews live somewhere you do not control</h2>
@@ -123,7 +119,7 @@ export default function ChooseAcademyPost() {
               <h2>6. The fee is explainable, even if it is not printed</h2>
               <p>
                 We do not publish a price, because it moves with the cohort. That is only acceptable if you can see what
-                the fee buys. <Link href="/pricing">Pricing</Link> lists the inclusions: live instruction in Al Qusais,
+                the fee buys. <Link href="/pricing">Pricing</Link> lists the inclusions: live instruction in Dubai,
                 the syllabus, practical sessions on Star Trader, and — on the advanced track only — lifetime WhatsApp
                 access for questions. Broker-account funding is separate. Ask the current number when you{" "}
                 <Link href="/contact">enquire</Link>. A school that will not say what is included, or that takes payment
@@ -158,7 +154,7 @@ export default function ChooseAcademyPost() {
             <div className="cta-banner reveal">
               <div>
                 <h2>See the syllabus before you enquire.</h2>
-                <p>Two tracks, topic by topic, taught as group classes in Al Qusais.</p>
+                <p>Two tracks, topic by topic, taught as group classes in Dubai.</p>
               </div>
               <Link href="/courses" className="btn btn-primary">
                 View Courses

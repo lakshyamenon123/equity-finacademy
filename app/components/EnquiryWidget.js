@@ -10,7 +10,7 @@ import { COURSE_WHATSAPP_TEXT, STARTRADER_LIVE_URL, whatsappHref } from "../lib/
 const STARTER = {
   role: "assistant",
   content:
-    "Hello. I can help with private one-to-one lessons, group classes, or live trading in Al Qusais. May I have your name and a UAE mobile number (+971 or 05)? We'll only use your number to contact you about courses. Trading involves risk.",
+    "Hello. I can help with private one-to-one lessons, group classes, or live trading in Dubai, or online across the UAE. May I have your name and a UAE mobile number (+971 or 05)? We'll only use your number to contact you about courses. Trading involves risk.",
 };
 
 const WHATSAPP_LINK = whatsappHref(COURSE_WHATSAPP_TEXT);

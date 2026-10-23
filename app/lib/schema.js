@@ -85,7 +85,7 @@ export function personSchema() {
     url: `${SITE.url}/about`,
     image: `${SITE.url}/mentor.jpg`,
     description:
-      "MBA in Finance and full-time forex trader since 2016. Founder of Equity Fin Academy in Al Qusais, Dubai, and of the Equity Global YouTube channel.",
+      "Founder of Equity Fin Academy in Dubai, UAE, and of the Equity Global YouTube channel.",
     worksFor: {
       "@type": "EducationalOrganization",
       "@id": `${SITE.url}/#organization`,
@@ -93,7 +93,7 @@ export function personSchema() {
       url: `${SITE.url}/`,
     },
     sameAs: SITE.sameAs,
-    knowsAbout: ["Forex trading", "Market structure", "Order flow", "Risk management"],
+    knowsAbout: ["Forex trading", "Market structure", "Risk management"],
   };
 }
 
@@ -175,7 +175,7 @@ function courseEntry({ id, name, description, url, topics, offerName, category, 
 }
 
 const groupOfferDescription =
-  "Live group class with live trading sessions and training at M Floor, Arzoo Building, Al Qusais, Dubai. The fee is quoted when you enquire because it varies by cohort and is not published on the site.";
+  "Live group class with live trading sessions and training in Dubai, UAE, and online across the UAE. The fee is quoted when you enquire because it varies by cohort and is not published on the site.";
 
 export function privateCourseSchema() {
   const url = absoluteUrl("/private-group-forex-training-dubai");
@@ -183,14 +183,14 @@ export function privateCourseSchema() {
     id: `${url}#private-course`,
     name: "Private One-to-One Forex Lessons",
     description:
-      "Private one-to-one forex lessons in Al Qusais, Dubai, with live trading sessions and training. The fee is quoted when you enquire and is not published.",
+      "Private one-to-one forex lessons in Dubai, UAE, and online across the UAE, with live trading sessions and training. The fee is quoted when you enquire and is not published.",
     url,
     topics: ["Private one-to-one forex lessons", "Live trading sessions", "Forex training"],
     offerName: "Private one-to-one lesson",
     category: "Private one-to-one forex training",
     instanceName: "Private one-to-one lesson",
     offerDescription:
-      "Private one-to-one forex lesson with live trading sessions and training at M Floor, Arzoo Building, Al Qusais, Dubai. No price is published; the fee is quoted when you enquire.",
+      "Private one-to-one forex lesson with live trading sessions and training in Dubai, UAE, and online across the UAE. No price is published; the fee is quoted when you enquire.",
   });
 }
 
@@ -200,10 +200,10 @@ export function courseSchemas() {
       id: `${absoluteUrl("/courses")}#basic-to-intermediate`,
       name: "Basic to Intermediate Forex Course",
       description:
-        "Forex fundamentals, candlestick patterns, market structure and smart money concepts for traders starting from scratch. Taught live in Al Qusais, Dubai, as a group cohort with live trading sessions.",
+        "Forex fundamentals, candlestick patterns, market structure and smart money concepts for traders starting from scratch. Taught in Dubai, UAE, and online across the UAE, as a group class with live trading sessions.",
       url: `${absoluteUrl("/courses")}#basic-to-intermediate`,
       topics: basicTopics,
-      offerName: "Group cohort in Al Qusais",
+      offerName: "Group class in Dubai",
       category: "Group forex training class",
       instanceName: "Group cohort",
       offerDescription: groupOfferDescription,
@@ -212,10 +212,10 @@ export function courseSchemas() {
       id: `${absoluteUrl("/courses")}#advanced-institutional`,
       name: "Advanced Institutional Strategies Forex Course",
       description:
-        "Order flow analysis, market profile, volume with SMC, Fibonacci retracement and risk psychology management for experienced forex traders. Taught live in Al Qusais, Dubai, as a group cohort with live trading sessions.",
+        "Market profile, volume with smart money concepts, Fibonacci retracement and risk psychology for experienced forex traders. Taught in Dubai, UAE, and online across the UAE, as a group class with live trading sessions.",
       url: `${absoluteUrl("/courses")}#advanced-institutional`,
       topics: advancedTopics,
-      offerName: "Group cohort in Al Qusais",
+      offerName: "Group class in Dubai",
       category: "Group forex training class",
       instanceName: "Group cohort",
       offerDescription: groupOfferDescription,

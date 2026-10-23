@@ -13,7 +13,6 @@ export const advancedTopics = [
   "Basics of Forex",
   "Fundamental Analysis",
   "Market Structure",
-  "Order Flow Analysis",
   "Tools Used by Institutions",
   "Market Profile Analysis",
   "Volume Method with SMC",

@@ -11,9 +11,9 @@ import { VIDEOS } from "../lib/videos";
 const path = "/forex-course-abu-dhabi";
 
 export const metadata = pageMetadata({
-  title: "Forex Course in Abu Dhabi — Classes in Al Qusais, Dubai | Equity Fin Academy",
+  title: "Forex Course in Abu Dhabi — Classes in Dubai, UAE | Equity Fin Academy",
   description:
-    "Looking for a forex course in Abu Dhabi? Equity Fin Academy teaches live in Al Qusais, Dubai — what Abu Dhabi students study, how the trip works, and how to start from the free lessons first.",
+    "Looking for a forex course in Abu Dhabi? Equity Fin Academy teaches live in Dubai, UAE — what Abu Dhabi students study, how the trip works, and how to start from the free lessons first.",
   keywords:
     "forex course Abu Dhabi, forex training Abu Dhabi, forex classes for Abu Dhabi residents, learn forex trading Abu Dhabi, forex academy near Abu Dhabi",
   path,
@@ -22,7 +22,7 @@ export const metadata = pageMetadata({
 const pageFaq = [
   {
     q: "Is there an Equity Fin Academy campus in Abu Dhabi?",
-    text: "No. Live classes are at M Floor, Arzoo Building, Al Qusais, Dubai. Abu Dhabi students attend that classroom. We do not list an Abu Dhabi address because there isn't one.",
+    text: "No. In-person classes are in Dubai, UAE. You can also learn online across the UAE. There is no Abu Dhabi classroom.",
   },
   {
     q: "What will I study if I travel from Abu Dhabi?",
@@ -56,12 +56,11 @@ export default function ForexCourseAbuDhabiPage() {
             </nav>
             <span className="eyebrow">ABU DHABI STUDENTS · CLASSROOM IN DUBAI</span>
             <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,3.1rem)", maxWidth: "18ch" }}>
-              A forex course Abu Dhabi residents can attend in Al Qusais.
+              A forex course Abu Dhabi residents can attend in Dubai.
             </h1>
             <p className="hero-sub" style={{ marginTop: 18, maxWidth: "64ch" }}>
-              Equity Fin Academy does not run a classroom in Abu Dhabi. The course is taught live at M Floor, Arzoo
-              Building, Al Qusais, Dubai. This page is for people comparing forex training from Abu Dhabi: what the
-              trip is for, what you will actually learn, and what you can study before you drive.
+              Equity Fin Academy does not run a classroom in Abu Dhabi. Classes are in person in Dubai, UAE, and online across the UAE. This page is for people comparing forex training from Abu Dhabi: what the
+              trip is for, what you will actually learn, and what you can study before you travel.
             </p>
             <div className="cta-row" style={{ marginTop: 28 }}>
               <a href="tel:+971567188995" className="btn btn-outline">
@@ -79,15 +78,14 @@ export default function ForexCourseAbuDhabiPage() {
             <span className="eyebrow">LOCATION, STATED PLAINLY</span>
             <h2>There is one classroom. It is in Dubai, not Abu Dhabi.</h2>
             <p>
-              Al Qusais sits on Dubai&apos;s northern side. From Abu Dhabi city, the drive up the E11 toward northern
-              Dubai is commonly on the order of an hour and a half to two hours, depending on where you start and on
-              traffic. That is geography, not a promise about your commute. If a weekly trip is unrealistic, start with
+              From Abu Dhabi, the drive to Dubai is commonly on the order of an hour and a half to two hours, depending on where you start and on
+              traffic. That is geography, not a promise about your commute. If a weekly trip is unrealistic, learn online across the UAE, or start with
               the free material and only come when a cohort conversation is worth it. The academy is open 24/7. Calling
               ahead is the useful step: a booked visit means someone can walk you through both tracks and private
               one-to-one lessons.
             </p>
             <p>
-              Sharjah residents are closer to this address. If that is you, the{" "}
+              Sharjah residents are closer to Dubai. If that is you, the{" "}
               <Link href="/forex-course-sharjah">Sharjah forex course page</Link> is the more relevant note. The full
               Dubai overview is on <Link href="/forex-academy-in-dubai">forex academy in Dubai</Link>.
             </p>

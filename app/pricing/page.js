@@ -5,13 +5,13 @@ import Link from "next/link";
 export const metadata = {
   title: "Pricing — Forex Course Fees | Equity Fin Academy Dubai",
   description:
-    "What's included in each Equity Fin Academy forex course track in Al Qusais, Dubai. Call or message us for current course fees and enrolment details.",
+    "What's included in each Equity Fin Academy forex course track in Dubai, UAE. Call or message us for current course fees and enrolment details.",
   keywords: "forex course price Dubai, forex trading course cost, Equity Fin Academy fees, how much does a forex course cost",
   openGraph: {
     title: "Pricing — Forex Course Fees | Equity Fin Academy Dubai",
     description: "What's included in each course track. Call or message us for current fees.",
     type: "website",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Al Qusais, Dubai" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Dubai, UAE" }],
   },
   alternates: { canonical: "https://www.equityfinacademy.com/pricing" },
 };
@@ -71,7 +71,7 @@ export default function PricingPage() {
                 <div className="price-note">Call for current pricing</div>
                 <ul>
                   <li><Check />Full Basic to Intermediate curriculum</li>
-                  <li><Check />Live instruction in Al Qusais, Dubai</li>
+                  <li><Check />Live instruction in Dubai, UAE</li>
                   <li><Check />Practical sessions on Star Trader (SCA-regulated)</li>
                   <li><Check />Candlestick, market structure &amp; smart money fundamentals</li>
                 </ul>
@@ -86,9 +86,9 @@ export default function PricingPage() {
                 <div className="price-note">Call for current pricing</div>
                 <ul>
                   <li><Check />Full Advanced Institutional Strategies curriculum</li>
-                  <li><Check />Live instruction in Al Qusais, Dubai</li>
+                  <li><Check />Live instruction in Dubai, UAE</li>
                   <li><Check />Practical sessions on Star Trader (SCA-regulated)</li>
-                  <li><Check />Order flow, market profile, SMC &amp; risk psychology</li>
+                  <li><Check />Market profile, SMC &amp; risk psychology</li>
                   <li><Check />Lifetime support via WhatsApp</li>
                 </ul>
                 <Link href="/contact?course=advanced-institutional" className="btn btn-primary btn-block">

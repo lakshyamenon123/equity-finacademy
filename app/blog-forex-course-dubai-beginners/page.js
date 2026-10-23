@@ -13,7 +13,7 @@ const headline = "Forex Course in Dubai for Beginners: What to Expect";
 export const metadata = pageMetadata({
   title: `${headline} | Equity Fin Academy`,
   description:
-    "What a beginner forex course in Dubai includes at Equity Fin Academy: the Basic to Intermediate group class in Al Qusais, the topics in order, and what is not promised.",
+    "What a beginner forex course in Dubai includes at Equity Fin Academy: the Basic to Intermediate group class in Dubai, the topics in order, and what is not promised.",
   keywords:
     "forex course Dubai for beginners, forex classes for beginners Dubai, what to expect forex course, group forex training classes Dubai, forex classes near me Dubai",
   path,
@@ -23,7 +23,7 @@ export const metadata = pageMetadata({
 const postSchema = articleSchema({
   headline,
   description:
-    "What beginners actually study in the Al Qusais classroom, how a cohort runs, and which promises are not part of the course.",
+    "What beginners actually study in the Dubai classroom, how a cohort runs, and which promises are not part of the course.",
   path,
   datePublished: "2026-10-23",
 });
@@ -59,15 +59,13 @@ export default function BeginnersCoursePost() {
 
               <p>
                 A beginner forex course should feel slower than the ads. You are learning a market that can lose money,
-                in a specific room, with a specific list of topics. This is that list for Equity Fin Academy in Al
-                Qusais — what happens before you enrol, what the Basic to Intermediate class covers, and what we will
+                with a specific list of topics. This is that list for Equity Fin Academy in Dubai, UAE — what happens before you enrol, what the Basic to Intermediate class covers, and what we will
                 not pretend is included.
               </p>
 
               <h2>Who the first track is for</h2>
               <p>
-                Basic to Intermediate assumes no trading experience. If you already read market structure and you want
-                order flow, you are looking at Advanced Institutional Strategies instead. The split is on the{" "}
+                Basic to Intermediate assumes no trading experience. If you already read market structure, look at Advanced Institutional Strategies instead. The split is on the{" "}
                 <Link href="/courses">courses page</Link>. Starting on the advanced track to “save time” usually means
                 sitting through vocabulary you do not have yet, which wastes the cohort rather than shortening it.
               </p>
@@ -80,7 +78,7 @@ export default function BeginnersCoursePost() {
               <h2>Before the first class</h2>
               <p>
                 Enrolment is a conversation, not a checkout. Call or message, say what you have and have not done, and
-                we place you on a track. Classes are group cohorts in Al Qusais, and private one-to-one lessons are
+                we place you on a track. Classes are group cohorts in Dubai, and private one-to-one lessons are
                 available too, including live trading sessions and training. Read{" "}
                 <Link href="/private-group-forex-training-dubai">private and group forex training</Link>{" "}
                 before you book, so the format matches what you want.
@@ -132,9 +130,9 @@ export default function BeginnersCoursePost() {
 
               <h2>What beginners should not expect</h2>
               <ul>
-                <li>No guaranteed profit, no signals service, no “daily income” claim. Most new traders lose money. We will say that in the room.</li>
+                <li>No guaranteed profit, and no “daily income” claim. Most new traders lose money. We will say that in class.</li>
                 <li>No lifetime WhatsApp line on the beginner track. That support is part of Advanced Institutional Strategies, after the course, for questions.</li>
-                <li>No second campus. If you want forex classes near you in Dubai, the address is M Floor, Arzoo Building, Al Qusais. The <Link href="/forex-academy-in-dubai">Dubai academy page</Link> is the location overview.</li>
+                <li>No second campus. Classes are in person in Dubai, UAE, and online across the UAE. The <Link href="/forex-academy-in-dubai">Dubai academy page</Link> is the location overview.</li>
                 <li>A private one-to-one lesson is available, with live trading sessions. It is a separate booking from the group cohort, and the fee is quoted when you enquire.</li>
               </ul>
               <p>

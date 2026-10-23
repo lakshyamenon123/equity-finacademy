@@ -11,7 +11,7 @@ export const metadata = {
     title: "Student Reviews — Equity Fin Academy Dubai",
     description: "Real, unfiltered student reviews on Google — not curated testimonials.",
     type: "website",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Al Qusais, Dubai" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Dubai, UAE" }],
   },
   alternates: { canonical: "https://www.equityfinacademy.com/success-stories" },
 };
