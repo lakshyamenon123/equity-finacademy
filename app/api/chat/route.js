@@ -7,7 +7,7 @@ import {
   WHATSAPP_FALLBACK_REPLY,
 } from "../../lib/assistant";
 
-export const maxDuration = 120;
+export const maxDuration = 300;
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
@@ -37,6 +37,7 @@ export async function POST(request) {
       return jsonFallback(WHATSAPP_FALLBACK_REPLY);
     }
 
+    const debug = request.headers.get("x-chat-debug") === "1";
     const encoder = new TextEncoder();
     const stream = new ReadableStream({
       async start(controller) {
@@ -50,8 +51,13 @@ export async function POST(request) {
           if (!wrote) send({ fallback: "whatsapp", reply: WHATSAPP_FALLBACK_REPLY });
           else send({ done: true });
         } catch (error) {
-          console.error(`[chat] upstream ${error?.status || ""}: ${error?.body || error?.message || error}`);
-          send({ fallback: "whatsapp", reply: WHATSAPP_FALLBACK_REPLY });
+          const detail = `${error?.status || ""} ${error?.body || error?.message || error}`.slice(0, 300);
+          console.error(`[chat] upstream ${detail}`);
+          send({
+            fallback: "whatsapp",
+            reply: WHATSAPP_FALLBACK_REPLY,
+            ...(debug ? { detail } : {}),
+          });
         } finally {
           controller.close();
         }
