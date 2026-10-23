@@ -4,6 +4,10 @@ import { STARTRADER_LIVE_URL } from "./whatsapp";
 export const DEFAULT_GEMINI_MODEL = "gemini-3.8-flash";
 export const DEFAULT_OPENAI_MODEL = "gpt-4o-mini";
 export const MAX_MESSAGE_LENGTH = 500;
+const GEMINI_API = "https://generativelanguage.googleapis.com/v1beta";
+const UPSTREAM_TIMEOUT_MS = 60_000;
+
+let resolvedGeminiModel = "";
 
 export const WHATSAPP_FALLBACK_REPLY =
   "The on-site assistant is not connected right now. Message us on WhatsApp at +971 56 718 8995 and we can help you book. Fees are quoted when you enquire. Trading involves risk.";
@@ -71,6 +75,48 @@ export function chatProvider() {
   return null;
 }
 
+function upstreamError(source, status, body) {
+  const error = new Error(source);
+  error.status = status || 0;
+  error.body = String(body || "").replace(/\s+/g, " ").trim().slice(0, 400);
+  return error;
+}
+
+function normalizeModelId(value) {
+  return String(value || "")
+    .trim()
+    .replace(/^models\//, "");
+}
+
+function versionParts(name) {
+  const match = String(name).match(/(\d+(?:\.\d+)*)/);
+  if (!match) return [0];
+  return match[1].split(".").map((part) => Number(part) || 0);
+}
+
+export function pickNewestFlashModel(models, exclude = "") {
+  const skipped = normalizeModelId(exclude);
+  const names = [];
+  for (const model of models || []) {
+    const name = normalizeModelId(model?.name);
+    const methods = model?.supportedGenerationMethods || model?.supportedActions || [];
+    if (!name || name === skipped || !name.endsWith("-flash")) continue;
+    if (!methods.includes("generateContent")) continue;
+    names.push(name);
+  }
+  names.sort((left, right) => {
+    const a = versionParts(left);
+    const b = versionParts(right);
+    const length = Math.max(a.length, b.length);
+    for (let index = 0; index < length; index += 1) {
+      const diff = (b[index] || 0) - (a[index] || 0);
+      if (diff) return diff;
+    }
+    return right.localeCompare(left);
+  });
+  return names[0] || "";
+}
+
 async function streamOpenAI(messages, onToken) {
   const response = await fetch("https://api.openai.com/v1/chat/completions", {
     method: "POST",
@@ -85,8 +131,12 @@ async function streamOpenAI(messages, onToken) {
       stream: true,
       messages: [{ role: "system", content: SYSTEM }, ...messages],
     }),
+    signal: AbortSignal.timeout(UPSTREAM_TIMEOUT_MS),
   });
-  if (!response.ok || !response.body) throw new Error("openai");
+  if (!response.ok || !response.body) {
+    const text = await response.text().catch(() => "");
+    throw upstreamError("openai", response.status, text);
+  }
   await readSse(response.body, (data) => {
     if (data === "[DONE]") return;
     const json = JSON.parse(data);
@@ -95,10 +145,32 @@ async function streamOpenAI(messages, onToken) {
   });
 }
 
-async function streamGemini(messages, onToken) {
-  const model = process.env.GEMINI_MODEL || DEFAULT_GEMINI_MODEL;
+async function listFlashModel(exclude) {
+  const headers = { "x-goog-api-key": process.env.GEMINI_API_KEY };
+  let pageToken = "";
+  const models = [];
+  for (let page = 0; page < 10; page += 1) {
+    const query = new URLSearchParams({ pageSize: "100" });
+    if (pageToken) query.set("pageToken", pageToken);
+    const response = await fetch(`${GEMINI_API}/models?${query}`, {
+      headers,
+      signal: AbortSignal.timeout(15_000),
+    });
+    if (!response.ok) {
+      const text = await response.text().catch(() => "");
+      throw upstreamError("gemini-list", response.status, text);
+    }
+    const json = await response.json();
+    models.push(...(json.models || []));
+    pageToken = json.nextPageToken || "";
+    if (!pageToken) break;
+  }
+  return pickNewestFlashModel(models, exclude);
+}
+
+async function streamGeminiOnce(model, messages, onToken) {
   const response = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:streamGenerateContent?alt=sse`,
+    `${GEMINI_API}/models/${encodeURIComponent(model)}:streamGenerateContent?alt=sse`,
     {
       method: "POST",
       headers: {
@@ -113,14 +185,36 @@ async function streamGemini(messages, onToken) {
         })),
         generationConfig: { temperature: 0.4, maxOutputTokens: 400 },
       }),
+      signal: AbortSignal.timeout(UPSTREAM_TIMEOUT_MS),
     }
   );
-  if (!response.ok || !response.body) throw new Error("gemini");
+  if (!response.ok || !response.body) {
+    const text = await response.text().catch(() => "");
+    throw upstreamError("gemini", response.status, text);
+  }
   await readSse(response.body, (data) => {
     const json = JSON.parse(data);
     const token = (json.candidates?.[0]?.content?.parts || []).map((part) => part.text || "").join("");
     if (token) onToken(token);
   });
+}
+
+async function streamGemini(messages, onToken) {
+  const configured = normalizeModelId(process.env.GEMINI_MODEL) || DEFAULT_GEMINI_MODEL;
+  const primary = resolvedGeminiModel || configured;
+  try {
+    await streamGeminiOnce(primary, messages, onToken);
+    return;
+  } catch (error) {
+    if (error.status !== 404) throw error;
+    console.error(`[chat] gemini model ${primary} returned 404: ${error.body || "no body"}`);
+    if (resolvedGeminiModel) resolvedGeminiModel = "";
+    const replacement = await listFlashModel(primary);
+    if (!replacement) throw error;
+    console.error(`[chat] gemini retrying with ${replacement}`);
+    await streamGeminiOnce(replacement, messages, onToken);
+    resolvedGeminiModel = replacement;
+  }
 }
 
 async function readSse(body, onData) {
@@ -149,6 +243,7 @@ export async function streamReply(messages, onToken) {
       await streamOpenAI(messages, onToken);
       return;
     } catch (error) {
+      console.error(`[chat] openai failed ${error.status || ""}: ${error.body || error.message || error}`);
       if (!process.env.GEMINI_API_KEY) throw error;
     }
   }

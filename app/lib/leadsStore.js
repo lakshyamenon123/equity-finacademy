@@ -1,4 +1,4 @@
-import { timingSafeEqual } from "crypto";
+import { createHash, timingSafeEqual } from "crypto";
 import { findUaeMobile } from "./phone";
 import { cleanVisitorName, chatSummary } from "./leadCapture";
 
@@ -186,16 +186,18 @@ export async function saveLead(input) {
   }
 }
 
+function cleanToken(value) {
+  return String(value ?? "").trim();
+}
+
 export function leadsAuthorized(request) {
-  const expected = process.env.LEADS_TOKEN || "";
+  const expected = cleanToken(process.env.LEADS_TOKEN);
   const header = request.headers.get("authorization") || "";
-  const provided = header.toLowerCase().startsWith("bearer ")
-    ? header.slice(7).trim()
-    : request.headers.get("x-leads-token") || "";
+  const match = header.match(/^\s*bearer\s+([\s\S]+)$/i);
+  const provided = cleanToken(match ? match[1] : request.headers.get("x-leads-token") || "");
   if (!expected || !provided) return false;
-  const left = Buffer.from(provided);
-  const right = Buffer.from(expected);
-  if (left.length !== right.length) return false;
+  const left = createHash("sha256").update(expected).digest();
+  const right = createHash("sha256").update(provided).digest();
   return timingSafeEqual(left, right);
 }
 

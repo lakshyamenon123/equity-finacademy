@@ -7,6 +7,10 @@ import {
   WHATSAPP_FALLBACK_REPLY,
 } from "../../lib/assistant";
 
+export const maxDuration = 60;
+export const runtime = "nodejs";
+export const dynamic = "force-dynamic";
+
 function jsonFallback(reply, status = 200) {
   return Response.json({ ok: false, fallback: "whatsapp", reply }, { status });
 }
@@ -45,7 +49,8 @@ export async function POST(request) {
           });
           if (!wrote) send({ fallback: "whatsapp", reply: WHATSAPP_FALLBACK_REPLY });
           else send({ done: true });
-        } catch {
+        } catch (error) {
+          console.error(`[chat] upstream ${error?.status || ""}: ${error?.body || error?.message || error}`);
           send({ fallback: "whatsapp", reply: WHATSAPP_FALLBACK_REPLY });
         } finally {
           controller.close();
@@ -59,7 +64,8 @@ export async function POST(request) {
         "cache-control": "no-cache, no-transform",
       },
     });
-  } catch {
+  } catch (error) {
+    console.error(`[chat] request failed: ${error?.message || error}`);
     return jsonFallback(WHATSAPP_FALLBACK_REPLY);
   }
 }
