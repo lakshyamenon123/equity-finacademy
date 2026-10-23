@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import YouTubeSection from "../components/YouTubeSection";
 import Link from "next/link";
+import OpenChatLink from "../components/OpenChatLink";
 import { VIDEOS } from "../lib/videos";
 
 export const metadata = {
@@ -104,9 +105,7 @@ export default function ForexAcademyDubaiPage() {
                   <a href="tel:+971567188995" className="btn btn-outline">
                     Call +971 56 718 8995
                   </a>
-                  <Link href="/contact" className="btn btn-primary">
-                    Book a Seat
-                  </Link>
+                  <OpenChatLink className="btn btn-primary">Book a Seat</OpenChatLink>
                 </div>
               </div>
 
@@ -323,12 +322,12 @@ export default function ForexAcademyDubaiPage() {
                 <p>From candlestick fundamentals to the advanced syllabus, bot strategy and lifetime WhatsApp support.</p>
                 <span className="arrow">View courses →</span>
               </Link>
-              <Link href="/contact" className="teaser reveal">
+              <OpenChatLink className="teaser reveal">
                 <span className="eyebrow mt-0">VISIT OR CALL</span>
                 <h3>Book a seat in Dubai</h3>
                 <p>Speak with the team, ask about upcoming cohorts, and find out which track fits your experience.</p>
                 <span className="arrow">Get in touch →</span>
-              </Link>
+              </OpenChatLink>
             </div>
           </div>
         </section>
@@ -414,9 +413,7 @@ export default function ForexAcademyDubaiPage() {
                 <a href="tel:+971567188995" className="btn btn-primary">
                   Call +971 56 718 8995
                 </a>
-                <Link href="/contact" className="btn btn-outline">
-                  Contact Us
-                </Link>
+                <OpenChatLink className="btn btn-outline">Contact Us</OpenChatLink>
               </div>
             </div>
           </div>

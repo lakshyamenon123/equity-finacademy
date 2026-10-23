@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import JsonLd from "../components/JsonLd";
 import YouTubeSection from "../components/YouTubeSection";
 import Link from "next/link";
+import OpenChatLink from "../components/OpenChatLink";
 import { advancedTopics, basicTopics } from "../lib/curriculum";
 import { pageMetadata } from "../lib/seo";
 import { breadcrumbSchema, courseSchemas } from "../lib/schema";
@@ -62,9 +63,7 @@ export default function CoursesPage() {
               <a href="tel:+971567188995" className="btn btn-outline">
                 Call +971 56 718 8995
               </a>
-              <Link href="/contact" className="btn btn-outline">
-                Enquire
-              </Link>
+              <OpenChatLink className="btn btn-outline">Enquire</OpenChatLink>
             </div>
           </div>
         </section>
@@ -114,9 +113,7 @@ export default function CoursesPage() {
                   ))}
                 </ul>
                 <div className="cta-row">
-                  <Link href="/contact?course=basic-intermediate" className="btn btn-outline btn-block">
-                    Enquire About This Course
-                  </Link>
+                  <OpenChatLink className="btn btn-outline btn-block">Enquire About This Course</OpenChatLink>
                 </div>
               </div>
 
@@ -136,9 +133,7 @@ export default function CoursesPage() {
                   ))}
                 </ul>
                 <div className="cta-row">
-                  <Link href="/contact?course=advanced-institutional" className="btn btn-primary btn-block">
-                    Enquire About This Course
-                  </Link>
+                  <OpenChatLink className="btn btn-primary btn-block">Enquire About This Course</OpenChatLink>
                 </div>
               </div>
             </div>

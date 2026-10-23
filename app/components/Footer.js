@@ -1,4 +1,5 @@
 import Link from "next/link";
+import OpenChatLink from "./OpenChatLink";
 
 export default function Footer() {
   return (
@@ -16,9 +17,7 @@ export default function Footer() {
             <a href="tel:+971567188995" className="btn btn-ghost">
               +971 56 718 8995
             </a>
-            <Link href="/contact" className="btn btn-ghost">
-              Enquire
-            </Link>
+            <OpenChatLink className="btn btn-ghost">Enquire</OpenChatLink>
           </div>
         </div>
 

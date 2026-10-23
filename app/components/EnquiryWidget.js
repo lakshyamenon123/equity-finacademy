@@ -1,9 +1,11 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { flushSync } from "react-dom";
 import Link from "next/link";
 import LeadForm from "./LeadForm";
 import { draftFromMessages } from "../lib/leadCapture";
+import { OPEN_CHAT_EVENT } from "../lib/openChat";
 import { hasPhoneAttempt, findUaeMobile } from "../lib/phone";
 import { COURSE_WHATSAPP_TEXT, SLOW_CHAT_REPLY, STARTRADER_LIVE_URL, whatsappHref } from "../lib/whatsapp";
 
@@ -85,27 +87,54 @@ export default function EnquiryWidget() {
     }
   }
 
+  function openChatPanel() {
+    engaged.current = true;
+    flushSync(() => {
+      setGreet(false);
+      setNudged(false);
+      setTab("chat");
+      setOpen(true);
+    });
+    document.getElementById("assist-draft")?.focus();
+  }
+
+  useEffect(() => {
+    function open() {
+      openChatPanel();
+    }
+    function onClick(event) {
+      const target = event.target;
+      if (!(target instanceof Element)) return;
+      const link = target.closest("a[data-open-chat], a[href='#chat'], a[href='#enquiry']");
+      if (!link) return;
+      event.preventDefault();
+      open();
+    }
+    window.openChat = open;
+    window.addEventListener(OPEN_CHAT_EVENT, open);
+    document.addEventListener("click", onClick, true);
+    return () => {
+      window.removeEventListener(OPEN_CHAT_EVENT, open);
+      document.removeEventListener("click", onClick, true);
+      if (window.openChat === open) delete window.openChat;
+    };
+  }, []);
+
   function dismissGreeting() {
     rememberDismiss();
   }
 
   function openGreeting() {
-    engaged.current = true;
-    setGreet(false);
-    setNudged(false);
-    setOpen(true);
+    openChatPanel();
   }
 
   function toggleChat() {
-    engaged.current = true;
-    setGreet(false);
     if (open) {
       setOpen(false);
       rememberDismiss();
       return;
     }
-    setNudged(false);
-    setOpen(true);
+    openChatPanel();
   }
 
   useEffect(() => {

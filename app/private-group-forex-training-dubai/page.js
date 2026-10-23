@@ -4,6 +4,7 @@ import JsonLd from "../components/JsonLd";
 import RelatedTraining from "../components/RelatedTraining";
 import YouTubeSection from "../components/YouTubeSection";
 import Link from "next/link";
+import OpenChatLink from "../components/OpenChatLink";
 import { pageMetadata } from "../lib/seo";
 import { breadcrumbSchema, faqPageSchema, privateCourseSchema } from "../lib/schema";
 import { SITE } from "../lib/site";
@@ -165,9 +166,7 @@ export default function PrivateGroupForexTrainingPage() {
               ))}
             </div>
             <p style={{ marginTop: 28 }}>
-              <Link href="/contact" className="btn btn-primary">
-                Enquire About Private or Group Training
-              </Link>
+              <OpenChatLink className="btn btn-primary">Enquire About Private or Group Training</OpenChatLink>
             </p>
           </div>
         </section>

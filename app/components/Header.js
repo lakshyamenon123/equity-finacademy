@@ -3,13 +3,13 @@
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import OpenChatLink from "./OpenChatLink";
 
 function current(active, key) {
   return active === key ? "page" : undefined;
 }
 
 export default function Header({ active }) {
-  const bookHref = active === "contact" ? "#enquiry" : "/contact";
   const [navOpen, setNavOpen] = useState(false);
   const pathname = usePathname();
 
@@ -96,9 +96,7 @@ export default function Header({ active }) {
           <a href="tel:+971567188995" className="btn btn-outline">
             Call
           </a>
-          <Link href={bookHref} className="btn btn-primary">
-            Book a Seat
-          </Link>
+          <OpenChatLink className="btn btn-primary">Book a Seat</OpenChatLink>
           <button
             className="nav-toggle"
             aria-label="Toggle menu"
@@ -167,9 +165,7 @@ export default function Header({ active }) {
             <a href="tel:+971567188995" className="btn btn-outline">
               Call +971 56 718 8995
             </a>
-            <Link href={bookHref} className="btn btn-primary">
-              Book a Seat
-            </Link>
+            <OpenChatLink className="btn btn-primary">Book a Seat</OpenChatLink>
           </div>
         </nav>
       </div>

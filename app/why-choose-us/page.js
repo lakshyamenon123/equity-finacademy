@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Link from "next/link";
+import OpenChatLink from "../components/OpenChatLink";
 
 export const metadata = {
   title: "Why Choose Equity Fin Academy — Forex Education Dubai",
@@ -203,9 +204,7 @@ export default function WhyChooseUsPage() {
                 <Link href="/courses" className="btn btn-primary">
                   View Courses
                 </Link>
-                <Link href="/contact" className="btn btn-outline">
-                  Contact Us
-                </Link>
+                <OpenChatLink className="btn btn-outline">Contact Us</OpenChatLink>
               </div>
             </div>
           </div>

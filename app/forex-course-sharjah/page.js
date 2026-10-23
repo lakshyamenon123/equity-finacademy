@@ -4,6 +4,7 @@ import JsonLd from "../components/JsonLd";
 import RelatedTraining from "../components/RelatedTraining";
 import YouTubeSection from "../components/YouTubeSection";
 import Link from "next/link";
+import OpenChatLink from "../components/OpenChatLink";
 import { pageMetadata } from "../lib/seo";
 import { breadcrumbSchema, faqPageSchema } from "../lib/schema";
 import { VIDEOS } from "../lib/videos";
@@ -65,9 +66,7 @@ export default function ForexCourseSharjahPage() {
               <a href="tel:+971567188995" className="btn btn-outline">
                 Call +971 56 718 8995
               </a>
-              <Link href="/contact" className="btn btn-primary">
-                Book a Seat
-              </Link>
+              <OpenChatLink className="btn btn-primary">Book a Seat</OpenChatLink>
             </div>
           </div>
         </section>

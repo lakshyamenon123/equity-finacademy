@@ -145,3 +145,4 @@ a.topic-chip:hover{background:var(--bg);border-color:var(--green)}
   .assist-dock{bottom:86px;right:12px}
   .assist-panel{max-height:min(52vh,420px)}
 }
+.text-link{color:var(--green-dark);text-decoration:underline;text-underline-offset:3px}
