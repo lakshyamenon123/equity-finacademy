@@ -5,8 +5,8 @@ export const DEFAULT_GEMINI_MODEL = "gemini-3.8-flash";
 export const DEFAULT_OPENAI_MODEL = "gpt-4o-mini";
 export const MAX_MESSAGE_LENGTH = 500;
 const GEMINI_API = "https://generativelanguage.googleapis.com/v1beta";
-const OPENAI_TIMEOUT_MS = 60_000;
-const GEMINI_TIMEOUT_MS = 110_000;
+const OPENAI_TIMEOUT_MS = 45_000;
+const GEMINI_TIMEOUT_MS = 250_000;
 
 let resolvedGeminiModel = "";
 
@@ -70,9 +70,13 @@ export function sanitizeMessages(input) {
     .filter(Boolean);
 }
 
+function trimmedEnv(name) {
+  return String(process.env[name] || "").trim();
+}
+
 export function chatProvider() {
-  if (process.env.OPENAI_API_KEY) return "openai";
-  if (process.env.GEMINI_API_KEY) return "gemini";
+  if (trimmedEnv("OPENAI_API_KEY")) return "openai";
+  if (trimmedEnv("GEMINI_API_KEY")) return "gemini";
   return null;
 }
 
@@ -123,7 +127,7 @@ async function streamOpenAI(messages, onToken) {
     method: "POST",
     headers: {
       "content-type": "application/json",
-      authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+      authorization: `Bearer ${trimmedEnv("OPENAI_API_KEY")}`,
     },
     body: JSON.stringify({
       model: process.env.OPENAI_MODEL || DEFAULT_OPENAI_MODEL,
@@ -147,7 +151,7 @@ async function streamOpenAI(messages, onToken) {
 }
 
 async function listFlashModel(exclude) {
-  const headers = { "x-goog-api-key": process.env.GEMINI_API_KEY };
+  const headers = { "x-goog-api-key": trimmedEnv("GEMINI_API_KEY") };
   let pageToken = "";
   const models = [];
   for (let page = 0; page < 10; page += 1) {
@@ -182,7 +186,7 @@ function geminiRequestBody(model, messages, withThinking) {
   };
 }
 
-async function streamGeminiOnce(model, messages, onToken) {
+async function streamGeminiOnce(model, messages, onToken, timeoutMs = GEMINI_TIMEOUT_MS) {
   const supportsThinking = /^gemini-[34]/.test(model);
   for (let attempt = 0; attempt < (supportsThinking ? 2 : 1); attempt += 1) {
     let response;
@@ -191,10 +195,10 @@ async function streamGeminiOnce(model, messages, onToken) {
         method: "POST",
         headers: {
           "content-type": "application/json",
-          "x-goog-api-key": process.env.GEMINI_API_KEY,
+          "x-goog-api-key": trimmedEnv("GEMINI_API_KEY"),
         },
         body: JSON.stringify(geminiRequestBody(model, messages, supportsThinking && attempt === 0)),
-        signal: AbortSignal.timeout(GEMINI_TIMEOUT_MS),
+        signal: AbortSignal.timeout(timeoutMs),
       });
     } catch (error) {
       throw upstreamError("gemini", 504, `${model} ${error?.name || ""} ${error?.message || error}`);
@@ -222,16 +226,22 @@ async function streamGeminiOnce(model, messages, onToken) {
 
 async function streamGemini(messages, onToken) {
   const configured = normalizeModelId(process.env.GEMINI_MODEL) || DEFAULT_GEMINI_MODEL;
-  const primary = resolvedGeminiModel || configured;
+  let primary = resolvedGeminiModel || configured;
+  if (!resolvedGeminiModel && primary === "gemini-2.0-flash") {
+    console.error("[chat] gemini-2.0-flash is retired; listing models");
+    primary = (await listFlashModel(primary)) || DEFAULT_GEMINI_MODEL;
+  }
   try {
     await streamGeminiOnce(primary, messages, onToken);
+    resolvedGeminiModel = primary;
     return;
   } catch (error) {
-    if (error.status !== 404) throw error;
-    console.error(`[chat] gemini model ${primary} returned 404: ${error.body || "no body"}`);
-    if (resolvedGeminiModel) resolvedGeminiModel = "";
+    const stalled = error.status === 404 || error.status === 504;
+    if (!stalled) throw error;
+    console.error(`[chat] gemini model ${primary} failed ${error.status}: ${error.body || "no body"}`);
+    if (resolvedGeminiModel === primary) resolvedGeminiModel = "";
     const replacement = await listFlashModel(primary);
-    if (!replacement) throw error;
+    if (!replacement || replacement === primary) throw error;
     console.error(`[chat] gemini retrying with ${replacement}`);
     await streamGeminiOnce(replacement, messages, onToken);
     resolvedGeminiModel = replacement;
@@ -259,16 +269,16 @@ async function readSse(body, onData) {
 }
 
 export async function streamReply(messages, onToken) {
-  if (process.env.OPENAI_API_KEY) {
+  if (trimmedEnv("OPENAI_API_KEY")) {
     try {
       await streamOpenAI(messages, onToken);
       return;
     } catch (error) {
       console.error(`[chat] openai failed ${error.status || ""}: ${error.body || error.message || error}`);
-      if (!process.env.GEMINI_API_KEY) throw error;
+      if (!trimmedEnv("GEMINI_API_KEY")) throw error;
     }
   }
-  if (process.env.GEMINI_API_KEY) {
+  if (trimmedEnv("GEMINI_API_KEY")) {
     await streamGemini(messages, onToken);
     return;
   }
