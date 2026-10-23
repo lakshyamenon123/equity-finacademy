@@ -15,7 +15,7 @@ Copy `.env.example` to `.env.local` for local development. Set the same variable
 - `OPENAI_API_KEY` — streamed replies from OpenAI. If this and `GEMINI_API_KEY` are both missing, the widget shows a WhatsApp message instead of an error.
 - `OPENAI_MODEL` — optional. Defaults to `gpt-4o-mini`.
 - `GEMINI_API_KEY` — optional. Used only when `OPENAI_API_KEY` is not set.
-- `GEMINI_MODEL` — optional. Defaults to `gemini-3.8-flash`. If the chosen model answers 404, chat calls ListModels and retries the newest `*-flash` model that supports `generateContent`. The route allows 60 seconds and still streams the reply.
+- `GEMINI_MODEL` — optional. Defaults to `gemini-3.8-flash`. If the chosen model answers 404, chat calls ListModels and retries the newest `*-flash` model that supports `generateContent`. The route allows 120 seconds and still streams the reply. Gemini 3 and 4 flash models are asked to use a low thinking level so the answer is not spent on reasoning.
 
 The assistant only uses published academy facts. It does not invent course prices or promise trading profits. When a live broker account comes up, it recommends StarTrader with the academy’s affiliate link, shown as a button in the chat.
 

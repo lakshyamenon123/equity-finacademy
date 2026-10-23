@@ -5,7 +5,8 @@ export const DEFAULT_GEMINI_MODEL = "gemini-3.8-flash";
 export const DEFAULT_OPENAI_MODEL = "gpt-4o-mini";
 export const MAX_MESSAGE_LENGTH = 500;
 const GEMINI_API = "https://generativelanguage.googleapis.com/v1beta";
-const UPSTREAM_TIMEOUT_MS = 60_000;
+const OPENAI_TIMEOUT_MS = 60_000;
+const GEMINI_TIMEOUT_MS = 110_000;
 
 let resolvedGeminiModel = "";
 
@@ -131,7 +132,7 @@ async function streamOpenAI(messages, onToken) {
       stream: true,
       messages: [{ role: "system", content: SYSTEM }, ...messages],
     }),
-    signal: AbortSignal.timeout(UPSTREAM_TIMEOUT_MS),
+    signal: AbortSignal.timeout(OPENAI_TIMEOUT_MS),
   });
   if (!response.ok || !response.body) {
     const text = await response.text().catch(() => "");
@@ -168,35 +169,55 @@ async function listFlashModel(exclude) {
   return pickNewestFlashModel(models, exclude);
 }
 
+function geminiRequestBody(model, messages, withThinking) {
+  const generationConfig = { temperature: 0.4, maxOutputTokens: 1024 };
+  if (withThinking) generationConfig.thinkingConfig = { thinkingLevel: "low" };
+  return {
+    systemInstruction: { parts: [{ text: SYSTEM }] },
+    contents: messages.map((message) => ({
+      role: message.role === "assistant" ? "model" : "user",
+      parts: [{ text: message.content }],
+    })),
+    generationConfig,
+  };
+}
+
 async function streamGeminiOnce(model, messages, onToken) {
-  const response = await fetch(
-    `${GEMINI_API}/models/${encodeURIComponent(model)}:streamGenerateContent?alt=sse`,
-    {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-        "x-goog-api-key": process.env.GEMINI_API_KEY,
-      },
-      body: JSON.stringify({
-        systemInstruction: { parts: [{ text: SYSTEM }] },
-        contents: messages.map((message) => ({
-          role: message.role === "assistant" ? "model" : "user",
-          parts: [{ text: message.content }],
-        })),
-        generationConfig: { temperature: 0.4, maxOutputTokens: 400 },
-      }),
-      signal: AbortSignal.timeout(UPSTREAM_TIMEOUT_MS),
+  const supportsThinking = /^gemini-[34]/.test(model);
+  for (let attempt = 0; attempt < (supportsThinking ? 2 : 1); attempt += 1) {
+    let response;
+    try {
+      response = await fetch(`${GEMINI_API}/models/${encodeURIComponent(model)}:streamGenerateContent?alt=sse`, {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+          "x-goog-api-key": process.env.GEMINI_API_KEY,
+        },
+        body: JSON.stringify(geminiRequestBody(model, messages, supportsThinking && attempt === 0)),
+        signal: AbortSignal.timeout(GEMINI_TIMEOUT_MS),
+      });
+    } catch (error) {
+      throw upstreamError("gemini", 504, `${model} ${error?.name || ""} ${error?.message || error}`);
     }
-  );
-  if (!response.ok || !response.body) {
+    if (response.ok && response.body) {
+      await readSse(response.body, (data) => {
+        const json = JSON.parse(data);
+        const token = (json.candidates?.[0]?.content?.parts || [])
+          .filter((part) => part.text && !part.thought)
+          .map((part) => part.text)
+          .join("");
+        if (token) onToken(token);
+      });
+      return;
+    }
     const text = await response.text().catch(() => "");
-    throw upstreamError("gemini", response.status, text);
+    const error = upstreamError("gemini", response.status, text);
+    if (attempt === 0 && supportsThinking && response.status === 400) {
+      console.error(`[chat] gemini thinking config rejected by ${model}: ${error.body || "no body"}`);
+      continue;
+    }
+    throw error;
   }
-  await readSse(response.body, (data) => {
-    const json = JSON.parse(data);
-    const token = (json.candidates?.[0]?.content?.parts || []).map((part) => part.text || "").join("");
-    if (token) onToken(token);
-  });
 }
 
 async function streamGemini(messages, onToken) {

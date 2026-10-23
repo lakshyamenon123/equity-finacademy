@@ -7,7 +7,7 @@ import {
   WHATSAPP_FALLBACK_REPLY,
 } from "../../lib/assistant";
 
-export const maxDuration = 60;
+export const maxDuration = 120;
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
