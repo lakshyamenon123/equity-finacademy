@@ -82,8 +82,9 @@ export default function ForexCourseAbuDhabiPage() {
               Al Qusais sits on Dubai&apos;s northern side. From Abu Dhabi city, the drive up the E11 toward northern
               Dubai is commonly on the order of an hour and a half to two hours, depending on where you start and on
               traffic. That is geography, not a promise about your commute. If a weekly trip is unrealistic, start with
-              the free material and only come when a cohort conversation is worth it. Calling ahead is the useful step:
-              walk-ins are welcome Sunday to Friday, but a booked visit means someone can walk you through both tracks.
+              the free material and only come when a cohort conversation is worth it. The academy is open 24/7. Calling
+              ahead is the useful step: a booked visit means someone can walk you through both tracks and private
+              one-to-one lessons.
             </p>
             <p>
               Sharjah residents are closer to this address. If that is you, the{" "}
@@ -121,9 +122,10 @@ export default function ForexCourseAbuDhabiPage() {
             <p>
               Fees are not printed, because they move with the cohort. <Link href="/pricing">Pricing</Link> lists what
               each track includes. Call <a href="tel:+971567188995">+971 56 718 8995</a> for the current number and the
-              next dates. The instructor is <Link href="/about">Gopi Chandran</Link>. The public Google rating is 5.0,
-              and more than 2,000 students have been trained through Equity Global and live mentorship — read the
-              reviews on Google rather than a testimonial we wrote. A comparison checklist is on the{" "}
+              next dates. Private one-to-one lessons, with live trading sessions, are available as well as the group
+              cohorts. The instructor is <Link href="/about">Gopi Chandran</Link>. The academy is rated 5.0 on Google
+              from 30+ reviews, and more than 2,000 students have been trained through Equity Global and live
+              mentorship — read the reviews on Google rather than a testimonial we wrote. A comparison checklist is on the{" "}
               <Link href="/best-forex-course-dubai">best forex course in Dubai</Link> guide.
             </p>
           </div>

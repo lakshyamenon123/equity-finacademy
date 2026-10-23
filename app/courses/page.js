@@ -9,11 +9,11 @@ import { breadcrumbSchema, courseSchemas } from "../lib/schema";
 import { VIDEOS } from "../lib/videos";
 
 export const metadata = pageMetadata({
-  title: "Forex Trading Courses Dubai — Group Classes, Basic to Advanced | Equity Fin Academy",
+  title: "Forex Trading Courses Dubai — Group and Private Lessons | Equity Fin Academy",
   description:
-    "Two forex course tracks taught as live group classes in Al Qusais, Dubai: Basic to Intermediate, and Advanced Institutional Strategies. Private one-to-one lessons are not a separate product listed here.",
+    "Forex courses in Al Qusais, Dubai: Basic to Intermediate and Advanced Institutional Strategies as live group classes, plus private one-to-one lessons with live trading sessions. Open 24/7. Fees quoted on enquiry.",
   keywords:
-    "forex course Dubai, learn forex trading UAE, forex trading classes Dubai, group forex training classes Dubai, smart money concepts course, order flow analysis course, market profile trading, Fibonacci retracement course, bot trading strategies forex, risk management course Dubai, institutional forex strategies course, candlestick pattern course Dubai, best forex course for beginners",
+    "forex course Dubai, learn forex trading UAE, forex trading classes Dubai, group forex training classes Dubai, private forex training Dubai, one to one forex classes Dubai, live trading sessions Dubai, smart money concepts course, order flow analysis course, market profile trading, Fibonacci retracement course, bot trading strategies forex, risk management course Dubai, institutional forex strategies course, candlestick pattern course Dubai, best forex course for beginners",
   path: "/courses",
 });
 
@@ -47,11 +47,12 @@ export default function CoursesPage() {
             <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,3rem)", maxWidth: "20ch" }}>
               Two tracks. One market. Forex, taught in depth.
             </h1>
-            <p style={{ maxWidth: "60ch", marginTop: 18 }}>
-              Start at whichever level matches your experience. Both tracks are live group cohorts in Al Qusais, with
-              practical sessions on a regulated broker. A private one-to-one class is not listed — see{" "}
-              <Link href="/private-group-forex-training-dubai">private coaching versus group classes</Link> if that is
-              the format you were searching for. New to trading? Read the{" "}
+            <p style={{ maxWidth: "66ch", marginTop: 18 }}>
+              Start at whichever level matches your experience. Both tracks run as live group cohorts in Al Qusais,
+              with live trading sessions on a regulated broker. Private one-to-one lessons are also available, with
+              the same live trading sessions and training — see{" "}
+              <Link href="/private-group-forex-training-dubai">private and group forex training</Link>. The academy is
+              open 24/7 and rated 5.0 on Google from 30+ reviews. New to trading? Read the{" "}
               <Link href="/blog">forex education blog</Link> first.
             </p>
           </div>
@@ -138,6 +139,22 @@ export default function CoursesPage() {
           </div>
         </section>
 
+        <section className="tight" id="private-one-to-one">
+          <div className="container prose-block">
+            <span className="eyebrow">PRIVATE ONE-TO-ONE</span>
+            <h2>Private lessons and live trading sessions.</h2>
+            <p>
+              Alongside the two group tracks, Equity Fin Academy offers private one-to-one forex lessons at M Floor,
+              Arzoo Building, Al Qusais. A private lesson is your chart and your questions with the instructor, and it
+              includes live trading sessions and training. Group cohorts include live trading sessions as well. The fee
+              for either format is quoted when you enquire — it is not printed here. Lifetime WhatsApp access stays on
+              the Advanced track only and is not a booked one-to-one hour.{" "}
+              <Link href="/private-group-forex-training-dubai">Private and group forex training</Link> compares the two
+              rooms.
+            </p>
+          </div>
+        </section>
+
         <section className="tight broker-section soft">
           <div className="container">
             <div className="section-head reveal">
@@ -189,6 +206,15 @@ export default function CoursesPage() {
                   What is &quot;Lifetime Support via WhatsApp&quot;?<span className="plus">+</span>
                 </summary>
                 <p>Students on the Advanced Institutional Strategies track get ongoing access to the instructor via WhatsApp for questions after the course ends.</p>
+              </details>
+              <details>
+                <summary>
+                  Do you offer private one-to-one lessons?<span className="plus">+</span>
+                </summary>
+                <p>
+                  Yes. Private one-to-one forex lessons are available in Al Qusais, including live trading sessions and
+                  training. Group cohorts are available too. Call for the current fee — it is not listed on this page.
+                </p>
               </details>
               <details>
                 <summary>
