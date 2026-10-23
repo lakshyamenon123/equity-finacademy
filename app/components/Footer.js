@@ -4,12 +4,30 @@ export default function Footer() {
   return (
     <footer className="site-footer">
       <div className="container">
+        <div className="footer-cta">
+          <div>
+            <p className="footer-cta-kicker">Al Qusais, Dubai · Open 24/7</p>
+            <p className="footer-cta-title">Talk to the academy about a group cohort or a private lesson.</p>
+          </div>
+          <div className="cta-row">
+            <a href="https://wa.me/971567188995" className="btn btn-light" target="_blank" rel="noopener noreferrer">
+              WhatsApp
+            </a>
+            <a href="tel:+971567188995" className="btn btn-ghost">
+              +971 56 718 8995
+            </a>
+            <Link href="/contact" className="btn btn-ghost">
+              Enquire
+            </Link>
+          </div>
+        </div>
+
         <div className="footer-top">
           <div className="footer-brand">
             <Link href="/" className="brand">
               <strong>EQUITY</strong> FIN ACADEMY
             </Link>
-            <p>Premium forex trading education, based in Al Qusais, Dubai.</p>
+            <p>Forex training in Al Qusais, Dubai. Live group classes, private one-to-one lessons, and live trading sessions.</p>
             <div className="social-row" style={{ marginTop: 16 }}>
               <a
                 href="https://www.instagram.com/equity_global/"

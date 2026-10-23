@@ -1,4 +1,6 @@
 import { Spectral, IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
+import EnquiryWidget from "./components/EnquiryWidget";
+import MobileCta from "./components/MobileCta";
 import PageEffects from "./components/PageEffects";
 import "./globals.css";
 
@@ -52,6 +54,8 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${spectral.variable} ${ibmPlexSans.variable} ${ibmPlexMono.variable}`}>
       <body>
         {children}
+        <EnquiryWidget />
+        <MobileCta />
         <PageEffects />
       </body>
     </html>

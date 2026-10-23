@@ -6,6 +6,7 @@ import Link from "next/link";
 import { pageMetadata } from "./lib/seo";
 import { faqPageSchema, organizationSchema } from "./lib/schema";
 import { homeFaq } from "./lib/homeFaq";
+import { SITE } from "./lib/site";
 import { VIDEOS } from "./lib/videos";
 
 export const metadata = pageMetadata({
@@ -25,101 +26,60 @@ export default function HomePage() {
       <Header active="home" />
 
       <main>
-        <section className="hero bg-glow">
-          <div className="container">
-            <div className="hero-top">
-              <div className="hero-copy">
-                <h1 className="hero-display" style={{ marginTop: 6 }}>
-                  Learn to read the{" "}
-                  <span className="inline-pill">
-                    <span className="dot-live"></span>forex
-                  </span>{" "}
-                  market the way institutions do.
-                </h1>
-                <p className="hero-sub" style={{ marginTop: 22 }}>
-                  Founded by a full-time trader with a background inside institutional trading desks, Equity Fin
-                  Academy teaches order flow, market structure and risk management as one connected discipline — not
-                  a shortcut, not a signal service. Whether you&apos;re wondering how to start learning forex or
-                  ready for institutional strategies, there&apos;s a track built for you. Training is live in Al
-                  Qusais: group cohorts or private one-to-one lessons, with live trading sessions. The academy is open
-                  24/7 and rated 5.0 on Google from 30+ reviews.
-                </p>
-                <div className="cta-row">
-                  <a href="tel:+971567188995" className="btn btn-outline">
-                    Call +971 56 718 8995
-                  </a>
-                  <Link href="/contact" className="btn btn-primary">
-                    Book a Seat
-                  </Link>
-                </div>
+        <section className="hero hero-premium">
+          <div className="container hero-layout">
+            <div className="hero-copy">
+              <span className="eyebrow">Al Qusais, Dubai · Open 24/7</span>
+              <h1 className="hero-display">Forex training in Dubai, taught live.</h1>
+              <p className="hero-sub">
+                Group cohorts and private one-to-one lessons at M Floor, Arzoo Building, with live trading sessions.
+                Order flow, market structure and risk — not a signal service. Founded by Gopi Chandran, a full-time
+                forex trader since 2016.
+              </p>
+              <div className="trust-row">
+                <a className="trust-badge" href={SITE.mapsUrl} target="_blank" rel="noopener noreferrer">
+                  <strong>5.0</strong> on Google from 30+ reviews
+                </a>
+                <span className="trust-badge">
+                  <strong>2,000+</strong> students trained
+                </span>
               </div>
-
-              <div className="hero-graphic" aria-hidden="true">
-                <svg viewBox="0 0 260 220" xmlns="http://www.w3.org/2000/svg">
-                  <defs>
-                    <linearGradient id="ribbonGrad" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0%" stopColor="#0B5C38" />
-                      <stop offset="45%" stopColor="#0E7C4A" />
-                      <stop offset="100%" stopColor="#BDEBD1" />
-                    </linearGradient>
-                    <linearGradient id="ribbonHighlight" x1="0" y1="0" x2="1" y2="0">
-                      <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.9" />
-                      <stop offset="100%" stopColor="#FFFFFF" stopOpacity="0" />
-                    </linearGradient>
-                  </defs>
-                  <ellipse cx="130" cy="196" rx="85" ry="12" fill="#0A3D26" opacity="0.16" style={{ filter: "blur(8px)" }} />
-                  <g className="ribbon-path">
-                    <path
-                      d="M28 150 C 28 92, 92 92, 100 132 C 108 172, 168 172, 178 112 C 186 66, 228 56, 236 30"
-                      fill="none"
-                      stroke="url(#ribbonGrad)"
-                      strokeWidth="24"
-                      strokeLinecap="round"
-                    />
-                    <path
-                      d="M28 150 C 28 92, 92 92, 100 132 C 108 172, 168 172, 178 112 C 186 66, 228 56, 236 30"
-                      fill="none"
-                      stroke="url(#ribbonHighlight)"
-                      strokeWidth="7"
-                      strokeLinecap="round"
-                      transform="translate(-4,-6)"
-                    />
-                  </g>
-                </svg>
-                <div className="stat-dial">
-                  <span className="big" data-counter="2000" data-suffix="+">
-                    2000+
-                  </span>
-                  <span className="cap">Students Trained</span>
-                </div>
+              <div className="cta-row">
+                <a href="https://wa.me/971567188995" className="btn btn-light" target="_blank" rel="noopener noreferrer">
+                  WhatsApp
+                </a>
+                <a href="tel:+971567188995" className="btn btn-ghost">
+                  Call +971 56 718 8995
+                </a>
+                <Link href="/contact" className="btn btn-ghost">
+                  Enquire
+                </Link>
               </div>
             </div>
-          </div>
 
-          <div className="container hero-stats-wrap">
-            <div className="hero-stats-row">
-              <div className="stat-card-light reveal">
-                <div className="head">
-                  <span>Track</span>
-                  <span>(01)</span>
-                </div>
-                <div className="value">Basic → Intermediate</div>
-              </div>
-              <div className="stat-card-light reveal">
-                <div className="head">
-                  <span>Track</span>
-                  <span>(02)</span>
-                </div>
-                <div className="value">Advanced Institutional</div>
-              </div>
-              <div className="stat-card-light accent reveal">
-                <div className="head">
-                  <span>Broker Access</span>
-                  <span>(03)</span>
-                </div>
-                <div className="value">SCA-Regulated</div>
-              </div>
-            </div>
+            <aside className="hero-panel" aria-label="Training formats">
+              <p className="hero-panel-kicker">Train in Al Qusais</p>
+              <ul className="hero-panel-list">
+                <li>
+                  <span>Private one-to-one</span>
+                  <strong>Your chart, your pace</strong>
+                </li>
+                <li>
+                  <span>Group cohorts</span>
+                  <strong>Two forex tracks</strong>
+                </li>
+                <li>
+                  <span>Live trading sessions</span>
+                  <strong>On an SCA-regulated broker</strong>
+                </li>
+              </ul>
+              <p className="hero-panel-note">
+                <span className="big" data-counter="2000" data-suffix="+">
+                  2000+
+                </span>
+                students trained through Equity Global and live mentorship.
+              </p>
+            </aside>
           </div>
         </section>
 
@@ -144,7 +104,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="stats-strip">
+        <div className="stats-strip stats-premium">
           <div className="container stats-grid">
             <div className="stat-block reveal">
               <span className="value" data-counter="2000" data-suffix="+">2000+</span>
@@ -164,6 +124,36 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+
+        <section className="tight">
+          <div className="container">
+            <div className="section-head reveal">
+              <span className="eyebrow">HOW YOU CAN TRAIN</span>
+              <h2>Private lessons, group classes, and live trading sessions.</h2>
+              <p>Choose a format, then ask for the current fee. Prices are quoted when you enquire.</p>
+            </div>
+            <div className="format-grid">
+              <article className="format-card reveal">
+                <span className="num">01</span>
+                <h3>Private one-to-one</h3>
+                <p>A booked lesson with the instructor: your questions, your chart, and live trading sessions.</p>
+                <Link href="/private-group-forex-training-dubai">Private training in Dubai →</Link>
+              </article>
+              <article className="format-card reveal">
+                <span className="num">02</span>
+                <h3>Group cohorts</h3>
+                <p>Basic to Intermediate, or Advanced Institutional Strategies, taught live with a shared syllabus.</p>
+                <Link href="/courses">View the two tracks →</Link>
+              </article>
+              <article className="format-card reveal">
+                <span className="num">03</span>
+                <h3>Live trading sessions</h3>
+                <p>Practical sessions on Star Trader, an SCA-regulated broker, in both private and group classes.</p>
+                <Link href="/courses#live-trading">How practical sessions work →</Link>
+              </article>
+            </div>
+          </div>
+        </section>
 
         <section>
           <div className="container">
@@ -419,6 +409,31 @@ export default function HomePage() {
               <span className="topic-chip">SCA Regulated Broker Training</span>
               <span className="topic-chip">Institutional Trading Strategies</span>
               <span className="topic-chip">Risk Management for Traders</span>
+            </div>
+          </div>
+        </section>
+
+        <section className="tight">
+          <div className="container">
+            <div className="cta-banner reveal">
+              <div>
+                <h2>Ask about the next class.</h2>
+                <p>
+                  The academy is open 24/7 in Al Qusais. Call, WhatsApp, or send an enquiry. The fee for a group cohort
+                  or a private lesson is quoted when you ask.
+                </p>
+              </div>
+              <div className="cta-row">
+                <a href="https://wa.me/971567188995" className="btn btn-light" target="_blank" rel="noopener noreferrer">
+                  WhatsApp
+                </a>
+                <a href="tel:+971567188995" className="btn btn-ghost">
+                  Call
+                </a>
+                <Link href="/contact" className="btn btn-ghost">
+                  Enquire
+                </Link>
+              </div>
             </div>
           </div>
         </section>
