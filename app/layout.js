@@ -26,6 +26,22 @@ const ibmPlexMono = IBM_Plex_Mono({
 
 export const metadata = {
   metadataBase: new URL("https://www.equityfinacademy.com"),
+  openGraph: {
+    siteName: "Equity Fin Academy",
+    locale: "en_AE",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Equity Fin Academy — forex training in Al Qusais, Dubai",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({ children }) {

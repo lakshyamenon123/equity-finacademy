@@ -13,6 +13,7 @@ export const metadata = {
     description:
       "An institutional-background instructor, SCA-regulated broker access, and a single-market forex curriculum — see what makes Equity Fin Academy different.",
     type: "website",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Al Qusais, Dubai" }],
   },
   alternates: { canonical: "https://www.equityfinacademy.com/why-choose-us" },
 };

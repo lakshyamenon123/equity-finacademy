@@ -1,49 +1,27 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import JsonLd from "./components/JsonLd";
+import YouTubeSection from "./components/YouTubeSection";
 import Link from "next/link";
+import { pageMetadata } from "./lib/seo";
+import { faqPageSchema, organizationSchema } from "./lib/schema";
+import { homeFaq } from "./lib/homeFaq";
+import { VIDEOS } from "./lib/videos";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Equity Fin Academy — Forex Trading Course & Academy in Dubai",
   description:
-    "Equity Fin Academy is a Dubai-based forex trading course in Al Qusais teaching beginners and experienced traders how to learn forex trading step by step — candlestick patterns, market structure, smart money concepts and institutional order flow, with practical sessions on an SCA-regulated broker.",
+    "Forex trading course in Al Qusais, Dubai: live group classes for beginners and experienced traders, covering candlesticks, market structure and order flow, with practical sessions on an SCA-regulated broker. Looking for forex classes near you in Dubai? The classroom is in Al Qusais.",
   keywords:
-    "forex trading course Dubai, forex trading academy Al Qusais, learn forex trading UAE, how to start forex trading, forex trading for beginners, smart money concepts course, market structure trading, candlestick pattern course, institutional trading strategies, SCA regulated broker training, technical analysis course Dubai, order flow trading course, risk management trading course, forex mentor Dubai, best forex course in Dubai",
-  openGraph: {
-    title: "Equity Fin Academy — Forex Trading Course & Academy in Dubai",
-    description:
-      "Premium forex trading education in Al Qusais, Dubai. One structured curriculum, SCA-regulated broker access, 2,000+ students trained.",
-    type: "website",
-  },
-  alternates: {
-    canonical: "https://www.equityfinacademy.com/",
-  },
-};
-
-const organizationSchema = {
-  "@context": "https://schema.org",
-  "@type": "EducationalOrganization",
-  name: "Equity Fin Academy",
-  description:
-    "Forex trading education academy in Al Qusais, Dubai, offering structured courses from beginner fundamentals to advanced institutional strategies.",
-  url: "https://www.equityfinacademy.com/",
-  telephone: "+971-56-718-8995",
-  priceRange: "$$",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "M Floor, Arzoo Building",
-    addressLocality: "Al Qusais",
-    addressRegion: "Dubai",
-    addressCountry: "AE",
-  },
-};
+    "forex trading course Dubai, forex trading academy Al Qusais, learn forex trading UAE, how to start forex trading, forex trading for beginners, smart money concepts course, market structure trading, candlestick pattern course, institutional trading strategies, SCA regulated broker training, technical analysis course Dubai, order flow trading course, risk management trading course, forex mentor Dubai, best forex course in Dubai, group forex training classes Dubai, forex classes near me Dubai",
+  path: "/",
+});
 
 export default function HomePage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-      />
+      <JsonLd data={organizationSchema()} />
+      <JsonLd data={faqPageSchema(homeFaq)} />
       <Header active="home" />
 
       <main>
@@ -108,7 +86,7 @@ export default function HomePage() {
                 </svg>
                 <div className="stat-dial">
                   <span className="big" data-counter="2000" data-suffix="+">
-                    0+
+                    2000+
                   </span>
                   <span className="cap">Students Trained</span>
                 </div>
@@ -167,19 +145,19 @@ export default function HomePage() {
         <div className="stats-strip">
           <div className="container stats-grid">
             <div className="stat-block reveal">
-              <span className="value" data-counter="2000" data-suffix="+">0+</span>
+              <span className="value" data-counter="2000" data-suffix="+">2000+</span>
               <span className="label">Students Trained</span>
             </div>
             <div className="stat-block reveal">
-              <span className="value" data-counter="10" data-suffix="+">0+</span>
+              <span className="value" data-counter="10" data-suffix="+">10+</span>
               <span className="label">Years Full-Time Trading</span>
             </div>
             <div className="stat-block reveal">
-              <span className="value" data-counter="2" data-suffix="">0</span>
+              <span className="value" data-counter="2" data-suffix="">2</span>
               <span className="label">Course Tracks</span>
             </div>
             <div className="stat-block reveal">
-              <span className="value" data-counter="1" data-suffix="">0</span>
+              <span className="value" data-counter="1" data-suffix="">1</span>
               <span className="label">Market. Fully Mastered.</span>
             </div>
           </div>
@@ -363,6 +341,22 @@ export default function HomePage() {
           </div>
         </section>
 
+        <section className="tight">
+          <div className="container prose-block">
+            <span className="eyebrow">HOW CLASSES RUN</span>
+            <h2>Group forex classes in Al Qusais.</h2>
+            <p>
+              Paid training is a live cohort at M Floor, Arzoo Building — the place to come if you want forex classes
+              near you in Dubai. It is group training on a shared syllabus, not a private one-to-one lesson listed on
+              this site. Self-paced videos stay on YouTube. The difference is spelled out on{" "}
+              <Link href="/private-group-forex-training-dubai">private coaching versus group classes</Link>, and the
+              tracks are on <Link href="/courses">Courses</Link>.
+            </p>
+          </div>
+        </section>
+
+        <YouTubeSection videos={[VIDEOS.howToStart, VIDEOS.whatIsForex, VIDEOS.metatrader]} />
+
         <section className="tight soft">
           <div className="container">
             <div className="section-head reveal">
@@ -410,9 +404,10 @@ export default function HomePage() {
         <section className="tight">
           <div className="container">
             <div className="topics-row reveal">
-              <span className="topic-chip">Forex Trading Course Dubai</span>
-              <span className="topic-chip">Forex Academy Al Qusais</span>
-              <span className="topic-chip">How to Start Forex Trading</span>
+              <Link href="/forex-academy-in-dubai" className="topic-chip">Forex Academy in Dubai</Link>
+              <Link href="/best-forex-course-dubai" className="topic-chip">Best Forex Course in Dubai</Link>
+              <Link href="/private-group-forex-training-dubai" className="topic-chip">Group Classes in Al Qusais</Link>
+              <Link href="/blog-forex-course-dubai-beginners" className="topic-chip">Beginner Course: What to Expect</Link>
               <span className="topic-chip">Forex Trading for Beginners</span>
               <span className="topic-chip">Smart Money Concepts</span>
               <span className="topic-chip">Market Structure Trading</span>

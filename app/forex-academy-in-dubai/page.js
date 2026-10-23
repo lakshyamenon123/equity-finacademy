@@ -1,17 +1,20 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import YouTubeSection from "../components/YouTubeSection";
 import Link from "next/link";
+import { VIDEOS } from "../lib/videos";
 
 export const metadata = {
   title: "Forex Academy in Dubai — Forex Classes for Beginners | Equity Fin Academy",
   description:
     "Searching for a forex academy in Dubai? Equity Fin Academy offers forex trading classes for beginners and advanced traders in Al Qusais — structured courses, an SCA-regulated broker, and an instructor with institutional trading experience. Learn forex in Dubai, taught properly.",
   keywords:
-    "best forex academy in dubai, forex academy in dubai, forex trading in dubai, forex classes in dubai, forex for beginners, learn forex, forex course dubai, forex training dubai, forex school dubai",
+    "best forex academy in dubai, forex academy in dubai, forex trading in dubai, forex classes in dubai, forex classes near me Dubai, forex for beginners, learn forex, forex course dubai, forex training dubai, forex school dubai, group forex training classes Dubai",
   openGraph: {
     title: "Forex Academy in Dubai — Forex Classes for Beginners | Equity Fin Academy",
     description: "Forex trading classes in Dubai for beginners and advanced traders — structured courses, a regulated broker, and an instructor with institutional experience.",
     type: "website",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Al Qusais, Dubai" }],
   },
   alternates: { canonical: "https://www.equityfinacademy.com/forex-academy-in-dubai" },
 };
@@ -140,7 +143,7 @@ export default function ForexAcademyDubaiPage() {
                   </g>
                 </svg>
                 <div className="stat-dial">
-                  <span className="big" data-counter="2000" data-suffix="+">0+</span>
+                  <span className="big" data-counter="2000" data-suffix="+">2000+</span>
                   <span className="cap">Students Trained</span>
                 </div>
               </div>
@@ -170,19 +173,19 @@ export default function ForexAcademyDubaiPage() {
         <div className="stats-strip">
           <div className="container stats-grid">
             <div className="stat-block reveal">
-              <span className="value" data-counter="2000" data-suffix="+">0+</span>
+              <span className="value" data-counter="2000" data-suffix="+">2000+</span>
               <span className="label">Students Trained</span>
             </div>
             <div className="stat-block reveal">
-              <span className="value" data-counter="10" data-suffix="+">0+</span>
+              <span className="value" data-counter="10" data-suffix="+">10+</span>
               <span className="label">Years Full-Time Trading</span>
             </div>
             <div className="stat-block reveal">
-              <span className="value" data-counter="2" data-suffix="">0</span>
+              <span className="value" data-counter="2" data-suffix="">2</span>
               <span className="label">Course Tracks</span>
             </div>
             <div className="stat-block reveal">
-              <span className="value" data-counter="1" data-suffix="">0</span>
+              <span className="value" data-counter="1" data-suffix="">1</span>
               <span className="label">Location: Al Qusais, Dubai</span>
             </div>
           </div>
@@ -329,6 +332,20 @@ export default function ForexAcademyDubaiPage() {
             </div>
           </div>
         </section>
+
+        <section className="tight">
+          <div className="container prose-block">
+            <h2>Forex classes near you in Dubai</h2>
+            <p>
+              The classroom is M Floor, Arzoo Building, Al Qusais. Classes run as group cohorts. If you were comparing
+              that with private one-to-one coaching, read{" "}
+              <Link href="/private-group-forex-training-dubai">how the two formats differ</Link> — a private lesson is
+              not a product listed on this site. The syllabus is on <Link href="/courses">Courses</Link>.
+            </p>
+          </div>
+        </section>
+
+        <YouTubeSection videos={[VIDEOS.howToStart, VIDEOS.whatIsForex]} title="Lessons from the Equity Global channel" />
 
         <section className="tight">
           <div className="container">

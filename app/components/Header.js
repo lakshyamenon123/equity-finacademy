@@ -58,6 +58,21 @@ export default function Header({ active }) {
               <Link href="/pricing" aria-current={current(active, "pricing")}>
                 Pricing
               </Link>
+              <Link href="/private-group-forex-training-dubai" aria-current={current(active, "private-group")}>
+                Private vs Group Classes
+              </Link>
+              <Link href="/best-forex-course-dubai" aria-current={current(active, "best-dubai")}>
+                Best Forex Course in Dubai
+              </Link>
+              <Link href="/forex-course-abu-dhabi" aria-current={current(active, "abu-dhabi")}>
+                Forex Course in Abu Dhabi
+              </Link>
+              <Link href="/forex-course-sharjah" aria-current={current(active, "sharjah")}>
+                Forex Course in Sharjah
+              </Link>
+              <Link href="/online-forex-course-uae" aria-current={current(active, "online-uae")}>
+                Online Forex Course UAE
+              </Link>
             </div>
           </div>
           <Link href="/forex-academy-in-dubai" aria-current={current(active, "forex-dubai")}>
@@ -116,6 +131,21 @@ export default function Header({ active }) {
           </Link>
           <Link href="/pricing" aria-current={current(active, "pricing")}>
             Pricing
+          </Link>
+          <Link href="/private-group-forex-training-dubai" aria-current={current(active, "private-group")}>
+            Private vs Group Classes
+          </Link>
+          <Link href="/best-forex-course-dubai" aria-current={current(active, "best-dubai")}>
+            Best Forex Course in Dubai
+          </Link>
+          <Link href="/forex-course-abu-dhabi" aria-current={current(active, "abu-dhabi")}>
+            Forex Course in Abu Dhabi
+          </Link>
+          <Link href="/forex-course-sharjah" aria-current={current(active, "sharjah")}>
+            Forex Course in Sharjah
+          </Link>
+          <Link href="/online-forex-course-uae" aria-current={current(active, "online-uae")}>
+            Online Forex Course UAE
           </Link>
           <Link href="/forex-academy-in-dubai" aria-current={current(active, "forex-dubai")}>
             Forex in Dubai

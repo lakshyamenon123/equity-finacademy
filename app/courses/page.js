@@ -1,56 +1,21 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import JsonLd from "../components/JsonLd";
+import YouTubeSection from "../components/YouTubeSection";
 import Link from "next/link";
+import { advancedTopics, basicTopics } from "../lib/curriculum";
+import { pageMetadata } from "../lib/seo";
+import { breadcrumbSchema, courseSchemas } from "../lib/schema";
+import { VIDEOS } from "../lib/videos";
 
-export const metadata = {
-  title: "Forex Trading Courses Dubai — Basic to Advanced Institutional Strategies | Equity Fin Academy",
+export const metadata = pageMetadata({
+  title: "Forex Trading Courses Dubai — Group Classes, Basic to Advanced | Equity Fin Academy",
   description:
-    "Two structured forex trading course tracks in Al Qusais, Dubai: Basic to Intermediate forex fundamentals, and Advanced Institutional Strategies covering order flow, SMC, market profile and risk management.",
+    "Two forex course tracks taught as live group classes in Al Qusais, Dubai: Basic to Intermediate, and Advanced Institutional Strategies. Private one-to-one lessons are not a separate product listed here.",
   keywords:
-    "forex course Dubai, learn forex trading UAE, forex trading classes Dubai, smart money concepts course, order flow analysis course, market profile trading, Fibonacci retracement course, bot trading strategies forex, risk management course Dubai, institutional forex strategies course, candlestick pattern course Dubai, best forex course for beginners",
-  openGraph: {
-    title: "Forex Trading Courses Dubai — Basic to Advanced Institutional Strategies",
-    description: "Basic to Intermediate and Advanced Institutional Strategies forex courses in Al Qusais, Dubai, with practical sessions on an SCA-regulated broker.",
-    type: "website",
-  },
-  alternates: { canonical: "https://www.equityfinacademy.com/courses" },
-};
-
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "/" },
-    { "@type": "ListItem", position: 2, name: "Forex Courses", item: "/courses" },
-  ],
-};
-
-const courseSchema = [
-  {
-    "@context": "https://schema.org",
-    "@type": "Course",
-    name: "Basic to Intermediate Forex Course",
-    description: "Forex fundamentals, candlestick patterns, market structure and smart money concepts for traders starting from scratch.",
-    provider: { "@type": "EducationalOrganization", name: "Equity Fin Academy", sameAs: "/" },
-    hasCourseInstance: {
-      "@type": "CourseInstance",
-      courseMode: "In Person",
-      location: { "@type": "Place", name: "Equity Fin Academy", address: "M Floor, Arzoo Building, Al Qusais, Dubai, UAE" },
-    },
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "Course",
-    name: "Advanced Institutional Strategies Forex Course",
-    description: "Order flow analysis, market profile, volume with SMC, Fibonacci retracement and risk psychology management for experienced forex traders.",
-    provider: { "@type": "EducationalOrganization", name: "Equity Fin Academy", sameAs: "/" },
-    hasCourseInstance: {
-      "@type": "CourseInstance",
-      courseMode: "In Person",
-      location: { "@type": "Place", name: "Equity Fin Academy", address: "M Floor, Arzoo Building, Al Qusais, Dubai, UAE" },
-    },
-  },
-];
+    "forex course Dubai, learn forex trading UAE, forex trading classes Dubai, group forex training classes Dubai, smart money concepts course, order flow analysis course, market profile trading, Fibonacci retracement course, bot trading strategies forex, risk management course Dubai, institutional forex strategies course, candlestick pattern course Dubai, best forex course for beginners",
+  path: "/courses",
+});
 
 const Check = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -58,36 +23,16 @@ const Check = () => (
   </svg>
 );
 
-const track1 = [
-  "Basics of Forex",
-  "Candlestick Patterns",
-  "HA Pattern Strategy",
-  "Market Structure",
-  "Orders Placed by Smart Money",
-  "Imbalance in the Market",
-  "Best Indicators in the Market",
-  "G.C. Strategy for the Market",
-];
-
-const track2 = [
-  "Basics of Forex",
-  "Fundamental Analysis",
-  "Market Structure",
-  "Order Flow Analysis",
-  "Tools Used by Institutions",
-  "Market Profile Analysis",
-  "Volume Method with SMC",
-  "Fibonacci Retracement Tool",
-  "Risk and Psychology Management",
-  "Bot Trading Strategies and Concepts",
-  "Lifetime Support via WhatsApp",
-];
-
 export default function CoursesPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }} />
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "Forex Courses", path: "/courses" },
+        ])}
+      />
+      <JsonLd data={courseSchemas()} />
       <Header active="courses" />
 
       <main>
@@ -103,9 +48,11 @@ export default function CoursesPage() {
               Two tracks. One market. Forex, taught in depth.
             </h1>
             <p style={{ maxWidth: "60ch", marginTop: 18 }}>
-              Start at whichever level matches your experience. Both tracks are taught live, with practical sessions
-              run through a regulated broker. New to trading? Read our <Link href="/blog">forex education blog</Link>{" "}
-              first.
+              Start at whichever level matches your experience. Both tracks are live group cohorts in Al Qusais, with
+              practical sessions on a regulated broker. A private one-to-one class is not listed — see{" "}
+              <Link href="/private-group-forex-training-dubai">private coaching versus group classes</Link> if that is
+              the format you were searching for. New to trading? Read the{" "}
+              <Link href="/blog">forex education blog</Link> first.
             </p>
           </div>
         </section>
@@ -139,7 +86,7 @@ export default function CoursesPage() {
         <section>
           <div className="container">
             <div className="course-grid">
-              <div className="course-card reveal">
+              <div className="course-card reveal" id="basic-to-intermediate">
                 <span className="level">TRACK 01</span>
                 <h3>Basic to Intermediate Course</h3>
                 <p className="desc">
@@ -147,7 +94,7 @@ export default function CoursesPage() {
                   recognise where smart money is positioned.
                 </p>
                 <ul className="course-list">
-                  {track1.map((item) => (
+                  {basicTopics.map((item) => (
                     <li key={item}>
                       <Check />
                       {item}
@@ -161,7 +108,7 @@ export default function CoursesPage() {
                 </div>
               </div>
 
-              <div className="course-card featured reveal">
+              <div className="course-card featured reveal" id="advanced-institutional">
                 <span className="level">TRACK 02</span>
                 <h3>Advanced Institutional Strategies</h3>
                 <p className="desc">
@@ -169,7 +116,7 @@ export default function CoursesPage() {
                   — order flow, market profile and risk discipline.
                 </p>
                 <ul className="course-list">
-                  {track2.map((item) => (
+                  {advancedTopics.map((item) => (
                     <li key={item}>
                       <Check />
                       {item}
@@ -260,6 +207,8 @@ export default function CoursesPage() {
             </p>
           </div>
         </section>
+
+        <YouTubeSection videos={[VIDEOS.howToStart, VIDEOS.whatIsForex, VIDEOS.metatrader]} />
 
         <section className="tight">
           <div className="container">

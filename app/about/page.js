@@ -1,35 +1,30 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import JsonLd from "../components/JsonLd";
 import Link from "next/link";
 import Image from "next/image";
+import { pageMetadata } from "../lib/seo";
+import { breadcrumbSchema, personSchema } from "../lib/schema";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "About Us — Gopi Chandran, Founder | Equity Fin Academy Dubai",
   description:
     "Gopi Chandran, founder of Equity Fin Academy: MBA in Finance, full-time forex trader since 2016. Built the Equity Global YouTube channel and trained 2,000+ students in Dubai.",
   keywords:
     "Gopi Chandran trader Dubai, Equity Global YouTube, forex trading mentor Dubai, forex trading instructor UAE, trading academy founder Dubai, market structure mentor, forex trader since 2016, about equity fin academy",
-  openGraph: {
-    title: "About Us — Gopi Chandran, Founder | Equity Fin Academy Dubai",
-    description: "MBA in Finance, full-time forex trader since 2016 — now training traders in Dubai through Equity Fin Academy.",
-    type: "website",
-  },
-  alternates: { canonical: "https://www.equityfinacademy.com/about" },
-};
-
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "/" },
-    { "@type": "ListItem", position: 2, name: "About Us", item: "/about" },
-  ],
-};
+  path: "/about",
+});
 
 export default function AboutPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "About Us", path: "/about" },
+        ])}
+      />
+      <JsonLd data={personSchema()} />
       <Header active="about" />
 
       <main>
@@ -101,19 +96,19 @@ export default function AboutPage() {
         <div className="stats-strip">
           <div className="container stats-grid">
             <div className="stat-block reveal">
-              <span className="value" data-counter="2000" data-suffix="+">0+</span>
+              <span className="value" data-counter="2000" data-suffix="+">2000+</span>
               <span className="label">Students Trained</span>
             </div>
             <div className="stat-block reveal">
-              <span className="value" data-counter="10" data-suffix="+">0+</span>
+              <span className="value" data-counter="10" data-suffix="+">10+</span>
               <span className="label">Years Full-Time Trading</span>
             </div>
             <div className="stat-block reveal">
-              <span className="value" data-counter="2" data-suffix="">0</span>
+              <span className="value" data-counter="2" data-suffix="">2</span>
               <span className="label">Course Tracks</span>
             </div>
             <div className="stat-block reveal">
-              <span className="value" data-counter="1" data-suffix="">0</span>
+              <span className="value" data-counter="1" data-suffix="">1</span>
               <span className="label">Market. Fully Mastered.</span>
             </div>
           </div>
