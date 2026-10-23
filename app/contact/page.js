@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import LeadForm from "../components/LeadForm";
 import Link from "next/link";
 
 export const metadata = {
@@ -98,6 +99,7 @@ export default function ContactPage() {
               <a href="tel:+971567188995" className="btn btn-primary btn-block">
                 Call to Enquire
               </a>
+              <LeadForm id="contact-lead-form" />
             </div>
 
             <div className="map-frame reveal">

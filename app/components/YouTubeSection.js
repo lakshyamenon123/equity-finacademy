@@ -12,7 +12,7 @@ export default function YouTubeSection({
 }) {
   const columns = videos.length >= 3 ? "video-grid" : `video-grid video-grid-${videos.length}`;
   return (
-    <section className="tight soft" id={id}>
+    <section className="tight video-band" id={id}>
       <JsonLd data={videoObjectGraph(videos)} />
       <div className="container">
         <div className="section-head reveal">

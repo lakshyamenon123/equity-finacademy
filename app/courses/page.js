@@ -36,7 +36,7 @@ export default function CoursesPage() {
       <Header active="courses" />
 
       <main>
-        <section className="tight bg-glow" style={{ borderBottom: "1px solid var(--border)" }}>
+        <section className="tight page-intro">
           <div className="container">
             <nav className="breadcrumb" aria-label="Breadcrumb">
               <Link href="/">Home</Link>
@@ -55,6 +55,17 @@ export default function CoursesPage() {
               open 24/7 and rated 5.0 on Google from 30+ reviews. New to trading? Read the{" "}
               <Link href="/blog">forex education blog</Link> first.
             </p>
+            <div className="cta-row">
+              <a href="https://wa.me/971567188995" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                WhatsApp
+              </a>
+              <a href="tel:+971567188995" className="btn btn-outline">
+                Call +971 56 718 8995
+              </a>
+              <Link href="/contact" className="btn btn-outline">
+                Enquire
+              </Link>
+            </div>
           </div>
         </section>
 
@@ -155,7 +166,7 @@ export default function CoursesPage() {
           </div>
         </section>
 
-        <section className="tight broker-section soft">
+        <section className="tight broker-section soft" id="live-trading">
           <div className="container">
             <div className="section-head reveal">
               <span className="eyebrow">PRACTICAL SESSIONS</span>
