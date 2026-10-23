@@ -45,11 +45,11 @@ export default function HomePage() {
                 </span>
               </div>
               <div className="cta-row">
-                <a href="https://wa.me/971567188995" className="btn btn-light" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/971559047030" className="btn btn-light" target="_blank" rel="noopener noreferrer">
                   WhatsApp
                 </a>
-                <a href="tel:+971567188995" className="btn btn-ghost">
-                  Call +971 56 718 8995
+                <a href="tel:+971559047030" className="btn btn-ghost">
+                  Call +971 55 904 7030
                 </a>
                 <OpenChatLink className="btn btn-ghost">Enquire</OpenChatLink>
               </div>
@@ -420,10 +420,10 @@ export default function HomePage() {
                 </p>
               </div>
               <div className="cta-row">
-                <a href="https://wa.me/971567188995" className="btn btn-light" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/971559047030" className="btn btn-light" target="_blank" rel="noopener noreferrer">
                   WhatsApp
                 </a>
-                <a href="tel:+971567188995" className="btn btn-ghost">
+                <a href="tel:+971559047030" className="btn btn-ghost">
                   Call
                 </a>
                 <OpenChatLink className="btn btn-ghost">Enquire</OpenChatLink>

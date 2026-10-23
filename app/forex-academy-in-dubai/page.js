@@ -102,8 +102,8 @@ export default function ForexAcademyDubaiPage() {
                   exactly what we teach, who teaches it, and how it works.
                 </p>
                 <div className="cta-row">
-                  <a href="tel:+971567188995" className="btn btn-outline">
-                    Call +971 56 718 8995
+                  <a href="tel:+971559047030" className="btn btn-outline">
+                    Call +971 55 904 7030
                   </a>
                   <OpenChatLink className="btn btn-primary">Book a Seat</OpenChatLink>
                 </div>
@@ -410,8 +410,8 @@ export default function ForexAcademyDubaiPage() {
                 <p>Call, WhatsApp, or send an enquiry — we typically respond the same day.</p>
               </div>
               <div className="cta-row">
-                <a href="tel:+971567188995" className="btn btn-primary">
-                  Call +971 56 718 8995
+                <a href="tel:+971559047030" className="btn btn-primary">
+                  Call +971 55 904 7030
                 </a>
                 <OpenChatLink className="btn btn-outline">Contact Us</OpenChatLink>
               </div>

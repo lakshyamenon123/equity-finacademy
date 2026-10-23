@@ -111,7 +111,7 @@ export default function PrivateGroupForexTrainingPage() {
               printed here, and this page does not invent an hourly rate.
             </p>
             <p>
-              To book a private lesson, call <a href="tel:+971567188995">+971 56 718 8995</a> or use the{" "}
+              To book a private lesson, call <a href="tel:+971559047030">+971 55 904 7030</a> or use the{" "}
               <Link href="/contact">contact form</Link> and say you want one-to-one. Ask the fee and the next
               available session. The instructor is <Link href="/about">Gopi Chandran</Link>.
             </p>

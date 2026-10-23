@@ -1,6 +1,6 @@
 import OpenChatLink from "./OpenChatLink";
 
-const whatsapp = "https://wa.me/971567188995";
+const whatsapp = "https://wa.me/971559047030";
 
 export default function MobileCta() {
   return (
@@ -8,7 +8,7 @@ export default function MobileCta() {
       <a href={whatsapp} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
         WhatsApp
       </a>
-      <a href="tel:+971567188995" className="btn btn-outline">
+      <a href="tel:+971559047030" className="btn btn-outline">
         Call
       </a>
       <OpenChatLink className="btn btn-outline">Enquire</OpenChatLink>

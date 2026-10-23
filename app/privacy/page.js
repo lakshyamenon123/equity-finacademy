@@ -49,7 +49,7 @@ export default function PrivacyPage() {
               Vercel Web Analytics counts visits to the site. That count does not include your name or phone number.
             </p>
             <p>
-              To ask for an enquiry to be deleted, WhatsApp or call <a href="tel:+971567188995">+971 56 718 8995</a>, or write from the <Link href="/contact">contact page</Link>.
+              To ask for an enquiry to be deleted, WhatsApp or call <a href="tel:+971559047030">+971 55 904 7030</a>, or write from the <Link href="/contact">contact page</Link>.
             </p>
           </div>
         </section>

@@ -64,8 +64,8 @@ export default function ForexCourseAbuDhabiPage() {
               trip is for, what you will actually learn, and what you can study before you travel.
             </p>
             <div className="cta-row" style={{ marginTop: 28 }}>
-              <a href="tel:+971567188995" className="btn btn-outline">
-                Call +971 56 718 8995
+              <a href="tel:+971559047030" className="btn btn-outline">
+                Call +971 55 904 7030
               </a>
               <OpenChatLink className="btn btn-primary">Book a Seat</OpenChatLink>
             </div>
@@ -118,7 +118,7 @@ export default function ForexCourseAbuDhabiPage() {
             </ul>
             <p>
               Fees are not printed, because they move with the cohort. <Link href="/pricing">Pricing</Link> lists what
-              each track includes. Call <a href="tel:+971567188995">+971 56 718 8995</a> for the current number and the
+              each track includes. Call <a href="tel:+971559047030">+971 55 904 7030</a> for the current number and the
               next dates. Private one-to-one lessons, with live trading sessions, are available as well as the group
               cohorts. The instructor is <Link href="/about">Gopi Chandran</Link>. The academy is rated 5.0 on Google
               from 30+ reviews, and more than 2,000 students have been trained through Equity Global and live

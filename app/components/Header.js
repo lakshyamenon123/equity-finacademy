@@ -93,7 +93,7 @@ export default function Header({ active }) {
         </nav>
 
         <div className="nav-actions">
-          <a href="tel:+971567188995" className="btn btn-outline">
+          <a href="tel:+971559047030" className="btn btn-outline">
             Call
           </a>
           <OpenChatLink className="btn btn-primary">Book a Seat</OpenChatLink>
@@ -162,8 +162,8 @@ export default function Header({ active }) {
             Contact
           </Link>
           <div className="cta-row">
-            <a href="tel:+971567188995" className="btn btn-outline">
-              Call +971 56 718 8995
+            <a href="tel:+971559047030" className="btn btn-outline">
+              Call +971 55 904 7030
             </a>
             <OpenChatLink className="btn btn-primary">Book a Seat</OpenChatLink>
           </div>

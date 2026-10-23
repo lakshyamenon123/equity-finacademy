@@ -11,11 +11,11 @@ export default function Footer() {
             <p className="footer-cta-title">Talk to the academy about a group cohort or a private lesson.</p>
           </div>
           <div className="cta-row">
-            <a href="https://wa.me/971567188995" className="btn btn-light" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/971559047030" className="btn btn-light" target="_blank" rel="noopener noreferrer">
               WhatsApp
             </a>
-            <a href="tel:+971567188995" className="btn btn-ghost">
-              +971 56 718 8995
+            <a href="tel:+971559047030" className="btn btn-ghost">
+              +971 55 904 7030
             </a>
             <OpenChatLink className="btn btn-ghost">Enquire</OpenChatLink>
           </div>
@@ -85,7 +85,7 @@ export default function Footer() {
             <div className="footer-col">
               <h3>Get in Touch</h3>
               <span>Dubai, UAE</span>
-              <a href="tel:+971567188995">+971 56 718 8995</a>
+              <a href="tel:+971559047030">+971 55 904 7030</a>
             </div>
           </div>
         </div>

@@ -70,7 +70,7 @@ export default function OnlineForexCourseUaePage() {
             <h2>What “online” means here</h2>
             <p>
               You can study online across the UAE, or join a class in person in Dubai. Fees are quoted when you enquire and are not listed on this page. Free lessons stay on the Equity Global channel and on this site. Call{" "}
-              <a href="tel:+971567188995">+971 56 718 8995</a> and we will tell you which format is running.
+              <a href="tel:+971559047030">+971 55 904 7030</a> and we will tell you which format is running.
             </p>
             <p>
               People in <Link href="/forex-course-sharjah">Sharjah</Link> are close to the classroom. People in{" "}

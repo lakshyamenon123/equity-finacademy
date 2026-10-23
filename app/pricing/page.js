@@ -138,8 +138,8 @@ export default function PricingPage() {
                 <h2>Get current pricing for your track.</h2>
                 <p>Call, WhatsApp, or send an enquiry — we typically respond the same day.</p>
               </div>
-              <a href="tel:+971567188995" className="btn btn-primary">
-                Call +971 56 718 8995
+              <a href="tel:+971559047030" className="btn btn-primary">
+                Call +971 55 904 7030
               </a>
             </div>
           </div>
