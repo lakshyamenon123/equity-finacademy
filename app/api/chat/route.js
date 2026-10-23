@@ -3,11 +3,12 @@ import {
   chatProvider,
   MAX_MESSAGE_LENGTH,
   sanitizeMessages,
+  SLOW_FALLBACK_REPLY,
   streamReply,
   WHATSAPP_FALLBACK_REPLY,
 } from "../../lib/assistant";
 
-export const maxDuration = 300;
+export const maxDuration = 30;
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
@@ -42,22 +43,26 @@ export async function POST(request) {
     const stream = new ReadableStream({
       async start(controller) {
         const send = (payload) => controller.enqueue(encoder.encode(`data: ${JSON.stringify(payload)}\n\n`));
+        let wrote = false;
         try {
-          let wrote = false;
+          send({ typing: true });
           await streamReply(messages, (token) => {
             wrote = true;
             send({ token });
           });
-          if (!wrote) send({ fallback: "whatsapp", reply: WHATSAPP_FALLBACK_REPLY });
+          if (!wrote) send({ fallback: "whatsapp", reply: SLOW_FALLBACK_REPLY });
           else send({ done: true });
         } catch (error) {
           const detail = `${error?.status || ""} ${error?.body || error?.message || error}`.slice(0, 300);
           console.error(`[chat] upstream ${detail}`);
-          send({
-            fallback: "whatsapp",
-            reply: WHATSAPP_FALLBACK_REPLY,
-            ...(debug ? { detail } : {}),
-          });
+          if (wrote) send({ done: true });
+          else {
+            send({
+              fallback: "whatsapp",
+              reply: SLOW_FALLBACK_REPLY,
+              ...(debug ? { detail } : {}),
+            });
+          }
         } finally {
           controller.close();
         }
