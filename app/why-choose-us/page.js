@@ -6,13 +6,13 @@ import OpenChatLink from "../components/OpenChatLink";
 export const metadata = {
   title: "Why Choose Equity Fin Academy — Forex Education Dubai",
   description:
-    "What makes Equity Fin Academy unique: an institutional-background instructor, an SCA-regulated broker for practical sessions, a single-market forex curriculum, and an honest, no-hype approach to trading education in Dubai.",
+    "An institutional-background instructor, SCA-regulated practice sessions, and a forex curriculum taught in Dubai without profit promises.",
   keywords:
     "why choose equity fin academy, best forex academy Dubai, trusted forex course UAE, honest forex education, forex mentor with experience, regulated forex training Dubai",
   openGraph: {
     title: "Why Choose Equity Fin Academy — Forex Education Dubai",
     description:
-      "An institutional-background instructor, SCA-regulated broker access, and a single-market forex curriculum — see what makes Equity Fin Academy different.",
+      "An institutional-background instructor, SCA-regulated practice sessions, and a forex curriculum taught in Dubai without profit promises.",
     type: "website",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Dubai, UAE" }],
   },
@@ -23,8 +23,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "/" },
-    { "@type": "ListItem", position: 2, name: "Why Choose Us", item: "/why-choose-us" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.equityfinacademy.com" },
+    { "@type": "ListItem", position: 2, name: "Why Choose Us", item: "https://www.equityfinacademy.com/why-choose-us" },
   ],
 };
 

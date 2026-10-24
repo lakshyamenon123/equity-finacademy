@@ -33,9 +33,9 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "/" },
-    { "@type": "ListItem", position: 2, name: "Blog", item: "/blog" },
-    { "@type": "ListItem", position: 3, name: "Market Structure", item: "/blog-market-structure" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.equityfinacademy.com" },
+    { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.equityfinacademy.com/blog" },
+    { "@type": "ListItem", position: 3, name: "Market Structure", item: "https://www.equityfinacademy.com/blog-market-structure" },
   ],
 };
 

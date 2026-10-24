@@ -14,7 +14,7 @@ const headline = "How to Choose a Forex Training Academy in the UAE";
 export const metadata = pageMetadata({
   title: `${headline} | Equity Fin Academy`,
   description:
-    "A practical way to compare forex training academies in the UAE: named instructor, sequenced curriculum, regulated practice broker, real reviews, and no profit promise — including what Equity Fin Academy publishes about itself.",
+    "How to compare a forex training academy in the UAE: a named instructor, a real syllabus, a regulated broker, and reviews you can open yourself.",
   keywords:
     "how to choose a forex training academy UAE, forex academy Dubai checklist, best forex course Dubai, forex classes near me Dubai, group forex training classes Dubai",
   path,
@@ -96,7 +96,9 @@ export default function ChooseAcademyPost() {
                 Equity Fin Academy teaches in person in Dubai, UAE, and online across the UAE. The academy is open 24/7.
                 Calling ahead means someone can show you the tracks. Group classes and private one-to-one lessons are
                 both available, including live trading sessions; the difference is explained on{" "}
-                <Link href="/private-group-forex-training-dubai">private and group forex training</Link>.
+                <Link href="/private-group-forex-training-dubai">private and group forex training</Link>. Who each
+                format suits is in{" "}
+                <Link href="/blog-private-vs-group-forex-classes-dubai">private versus group forex classes in Dubai</Link>.
               </p>
               <p>
                 Students coming from further away should read the{" "}
