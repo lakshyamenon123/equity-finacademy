@@ -10,7 +10,7 @@ import { breadcrumbSchema, courseSchemas } from "../lib/schema";
 import { VIDEOS } from "../lib/videos";
 
 export const metadata = pageMetadata({
-  title: "Forex Trading Courses Dubai — Group and Private Lessons | Equity Fin Academy",
+  title: "Forex Course Dubai: Group and Private | Equity Fin Academy",
   description:
     "Learn forex in Dubai with live group classes and private one-to-one lessons. Basic to Intermediate covers charts and market structure. Advanced Institutional Strategies covers market profile, smart money concepts, and live trading sessions. Open 24/7. Ask for the current fee.",
   keywords:
@@ -53,7 +53,8 @@ export default function CoursesPage() {
               with live trading sessions on a regulated broker. Private one-to-one lessons are also available, with
               the same live trading sessions and training — see{" "}
               <Link href="/private-group-forex-training-dubai">private and group forex training</Link>. The academy is
-              open 24/7 and rated 5.0 on Google from 30+ reviews. New to trading? Read the{" "}
+              open 24/7 and rated 5.0 on Google from 30+ reviews. New to trading? Read{" "}
+              <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link> or the{" "}
               <Link href="/blog">forex education blog</Link> first.
             </p>
             <div className="cta-row">

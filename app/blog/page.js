@@ -3,13 +3,14 @@ import Footer from "../components/Footer";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Forex Trading Blog — Education Articles | Equity Fin Academy Dubai",
+  title: "Forex Trading Blog | Equity Fin Academy Dubai",
   description:
-    "Educational forex trading articles from Equity Fin Academy: candlestick patterns, market structure, risk management, smart money concepts and common beginner mistakes.",
+    "Forex articles from Equity Fin Academy in Dubai: private and group classes, starting on MT5, candlesticks, market structure, and risk.",
   keywords: "forex trading blog, forex education articles, learn forex trading online, forex trading tips for beginners",
   openGraph: {
     title: "Forex Trading Blog | Equity Fin Academy Dubai",
-    description: "Educational articles on candlestick patterns, market structure, risk management and smart money concepts.",
+    description:
+      "Forex articles from Equity Fin Academy in Dubai: private and group classes, starting on MT5, candlesticks, market structure, and risk.",
     type: "website",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Dubai, UAE" }],
   },
@@ -20,12 +21,40 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "/" },
-    { "@type": "ListItem", position: 2, name: "Blog", item: "/blog" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.equityfinacademy.com" },
+    { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.equityfinacademy.com/blog" },
   ],
 };
 
 const posts = [
+  {
+    href: "/blog-private-vs-group-forex-classes-dubai",
+    icon: (
+      <>
+        <circle cx="8" cy="8" r="2" />
+        <circle cx="16" cy="8" r="2" />
+        <path d="M4.5 18c.6-2.4 2.1-3.5 3.5-3.5S11 15.6 11.5 18" />
+        <path d="M12.5 18c.6-2.4 2.1-3.5 3.5-3.5s3 1.1 3.5 3.5" />
+      </>
+    ),
+    cat: "Class Format",
+    title: "Private vs Group Forex Classes in Dubai",
+    desc: "Who a one-to-one lesson suits, and who should start in the group cohort.",
+    time: "6 min read",
+  },
+  {
+    href: "/blog-start-forex-trading-uae-mt5",
+    icon: (
+      <>
+        <rect x="3" y="4" width="18" height="14" rx="2" />
+        <path d="M7 15l3-4 2.5 2.5L16 9" />
+      </>
+    ),
+    cat: "Getting Started",
+    title: "How to Start Forex Trading in the UAE with MT5",
+    desc: "What to learn first, then how to install MetaTrader 5 and open an account.",
+    time: "6 min read",
+  },
   {
     href: "/blog-choose-forex-academy-uae",
     icon: <path d="M12 3l2.2 4.6L19 8.2l-3.5 3.4.8 4.9L12 14.8 7.7 16.5l.8-4.9L5 8.2l4.8-.6L12 3z" />,

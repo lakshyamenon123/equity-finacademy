@@ -11,9 +11,9 @@ import { SITE } from "./lib/site";
 import { VIDEOS } from "./lib/videos";
 
 export const metadata = pageMetadata({
-  title: "Equity Fin Academy — Forex Trading Course & Academy in Dubai",
+  title: "Forex Training Academy UAE | Equity Fin Academy",
   description:
-    "Learn forex in Dubai, UAE, or online across the UAE. Private one-to-one lessons and group classes with live trading sessions. Open 24/7. Rated 5.0 on Google from 30+ reviews. 2,000+ students trained.",
+    "Forex course in Dubai with private one-to-one lessons and group classes, plus live trading. Rated 5.0 from 30+ Google reviews. 2,000+ students trained.",
   keywords:
     "forex trading course Dubai, learn forex trading UAE, how to start forex trading, forex trading for beginners, smart money concepts course, market structure trading, candlestick pattern course, institutional trading strategies, SCA regulated broker training, technical analysis course Dubai, risk management trading course, forex mentor Dubai, best forex course in Dubai, group forex training classes Dubai, private forex training Dubai, one to one forex classes Dubai, forex classes near me Dubai",
   path: "/",
@@ -398,13 +398,13 @@ export default function HomePage() {
               <Link href="/best-forex-course-dubai" className="topic-chip">Best Forex Course in Dubai</Link>
               <Link href="/private-group-forex-training-dubai" className="topic-chip">Private and Group Classes</Link>
               <Link href="/blog-forex-course-dubai-beginners" className="topic-chip">Beginner Course: What to Expect</Link>
-              <span className="topic-chip">Forex Trading for Beginners</span>
-              <span className="topic-chip">Smart Money Concepts</span>
-              <span className="topic-chip">Market Structure Trading</span>
-              <span className="topic-chip">Candlestick Pattern Course</span>
-              <span className="topic-chip">SCA Regulated Broker Training</span>
-              <span className="topic-chip">Institutional Trading Strategies</span>
-              <span className="topic-chip">Risk Management for Traders</span>
+              <Link href="/blog-private-vs-group-forex-classes-dubai" className="topic-chip">Private vs Group Classes</Link>
+              <Link href="/blog-start-forex-trading-uae-mt5" className="topic-chip">Start Forex with MT5</Link>
+              <Link href="/blog-smart-money-concepts" className="topic-chip">Smart Money Concepts</Link>
+              <Link href="/blog-market-structure" className="topic-chip">Market Structure</Link>
+              <Link href="/blog-candlestick-patterns" className="topic-chip">Candlestick Patterns</Link>
+              <Link href="/blog-risk-management" className="topic-chip">Risk Management</Link>
+              <Link href="/courses" className="topic-chip">Forex Course Tracks</Link>
             </div>
           </div>
         </section>

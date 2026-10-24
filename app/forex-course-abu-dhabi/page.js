@@ -14,7 +14,7 @@ const path = "/forex-course-abu-dhabi";
 export const metadata = pageMetadata({
   title: "Forex Course in Abu Dhabi — Classes in Dubai, UAE | Equity Fin Academy",
   description:
-    "Looking for a forex course in Abu Dhabi? Equity Fin Academy teaches live in Dubai, UAE — what Abu Dhabi students study, how the trip works, and how to start from the free lessons first.",
+    "A forex course for Abu Dhabi students, taught live in Dubai, UAE. What you study, how the trip works, and where to start with the free lessons.",
   keywords:
     "forex course Abu Dhabi, forex training Abu Dhabi, forex classes for Abu Dhabi residents, learn forex trading Abu Dhabi, forex academy near Abu Dhabi",
   path,
