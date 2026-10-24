@@ -142,7 +142,9 @@ export default function BlogIndexPage() {
               Articles on trading forex properly.
             </h1>
             <p style={{ maxWidth: "60ch", marginTop: 18 }}>
-              No signals, no hype — just plain-language explanations of the concepts that actually matter.
+              Plain-language explanations of the concepts that matter. The live classes are the{" "}
+              <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link> page and the{" "}
+              <Link href="/forex-training-academy-uae">forex training academy UAE</Link> page.
             </p>
           </div>
         </section>

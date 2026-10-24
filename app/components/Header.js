@@ -73,6 +73,12 @@ export default function Header({ active }) {
               <Link href="/online-forex-course-uae" aria-current={current(active, "online-uae")}>
                 Online Forex Course UAE
               </Link>
+              <Link href="/forex-training-academy-dubai" aria-current={current(active, "academy-dubai")}>
+                Forex training academy Dubai
+              </Link>
+              <Link href="/forex-training-academy-uae" aria-current={current(active, "academy-uae")}>
+                Forex training academy UAE
+              </Link>
             </div>
           </div>
           <Link href="/forex-academy-in-dubai" aria-current={current(active, "forex-dubai")}>
@@ -144,6 +150,12 @@ export default function Header({ active }) {
           </Link>
           <Link href="/online-forex-course-uae" aria-current={current(active, "online-uae")}>
             Online Forex Course UAE
+          </Link>
+          <Link href="/forex-training-academy-dubai" aria-current={current(active, "academy-dubai")}>
+            Forex training academy Dubai
+          </Link>
+          <Link href="/forex-training-academy-uae" aria-current={current(active, "academy-uae")}>
+            Forex training academy UAE
           </Link>
           <Link href="/forex-academy-in-dubai" aria-current={current(active, "forex-dubai")}>
             Forex in Dubai

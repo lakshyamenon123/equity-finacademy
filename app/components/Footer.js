@@ -83,6 +83,8 @@ export default function Footer() {
               <Link href="/courses">Forex Courses</Link>
               <Link href="/pricing">Pricing</Link>
               <Link href="/forex-academy-in-dubai">Forex in Dubai</Link>
+              <Link href="/forex-training-academy-dubai">Forex training academy Dubai</Link>
+              <Link href="/forex-training-academy-uae">Forex training academy UAE</Link>
               <Link href="/private-group-forex-training-dubai">Private vs Group Classes</Link>
               <Link href="/best-forex-course-dubai">Best Forex Course in Dubai</Link>
               <Link href="/forex-course-abu-dhabi">Forex Course in Abu Dhabi</Link>

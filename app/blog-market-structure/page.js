@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
 
 export const metadata = {
@@ -115,6 +116,7 @@ export default function BlogMarketStructurePage() {
                 structure and risk management are taught together, never in isolation.
               </p>
 
+              <AcademyLinks lead="Structure is taught live at the" />
               <div className="blog-cta">
                 <p>Structure is taught from lesson one in our Basic to Intermediate course.</p>
                 <Link href="/courses" className="btn btn-primary">

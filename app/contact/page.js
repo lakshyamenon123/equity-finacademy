@@ -104,7 +104,7 @@ export default function ContactPage() {
 
             <div className="map-frame reveal">
               <iframe
-                src="https://www.google.com/maps?q=M+Floor,+Arzoo+Building,+Al+Qusais,+Dubai,+UAE&output=embed"
+                src="https://www.google.com/maps?q=Equity+Fin+Academy+Dubai+UAE&output=embed"
                 title="Map showing Dubai, UAE"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

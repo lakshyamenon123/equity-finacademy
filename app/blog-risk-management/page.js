@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
 
 export const metadata = {
@@ -118,6 +119,7 @@ export default function BlogRiskManagementPage() {
                 bolted onto strategy lessons.&quot; — Gopi Chandran, Founder, Equity Fin Academy
               </blockquote>
 
+              <AcademyLinks lead="Risk is part of the live syllabus at the" />
               <div className="blog-cta">
                 <p>Risk management is taught as core curriculum in both of our course tracks.</p>
                 <Link href="/courses" className="btn btn-primary">

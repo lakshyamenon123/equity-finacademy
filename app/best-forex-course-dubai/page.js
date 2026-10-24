@@ -116,7 +116,7 @@ export default function BestForexCourseDubaiPage() {
               </li>
               <li>
                 <strong>Is the curriculum sequenced?</strong> Vocabulary, candles, market structure and risk should come
-                before order-flow tactics. Our two tracks are listed in full on the <Link href="/courses">courses page</Link>.
+                before the advanced topics. Our two tracks are listed in full on the <Link href="/courses">courses page</Link>.
               </li>
               <li>
                 <strong>Where do you practise?</strong> Practical sessions at Equity Fin Academy run through Star Trader,

@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
 
 export const metadata = {
@@ -116,6 +117,7 @@ export default function BlogCandlestickPatternsPage() {
                 <Link href="/blog-market-structure">What Is Market Structure in Forex Trading?</Link> next.
               </p>
 
+              <AcademyLinks lead="When you want candles taught on a live chart, book the" />
               <div className="blog-cta">
                 <p>Want to see this applied to live charts, not just static examples?</p>
                 <Link href="/courses" className="btn btn-primary">

@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
 
 export const metadata = {
@@ -97,6 +98,7 @@ export default function BlogCommonMistakesPage() {
                 introducing strategy.
               </p>
 
+              <AcademyLinks lead="If you want these mistakes corrected in class, start with the" />
               <div className="blog-cta">
                 <p>Our Basic to Intermediate course is built specifically to avoid these mistakes from day one.</p>
                 <Link href="/courses" className="btn btn-primary">

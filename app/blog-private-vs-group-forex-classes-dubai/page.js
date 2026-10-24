@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import JsonLd from "../components/JsonLd";
 import YouTubeSection from "../components/YouTubeSection";
+import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
@@ -165,8 +166,9 @@ export default function PrivateVsGroupPost() {
               <p>
                 Equity Fin Academy is rated 5.0 on Google from 30+ reviews. The Equity Global channel has 200+ YouTube
                 reviews and comments. More than 2,000 students have been trained through that channel and live
-                mentorship. Open the reviews yourself rather than taking a quote from this page.
+                mentorship.                 Open the reviews yourself rather than taking a quote from this page.
               </p>
+              <AcademyLinks lead="Book either format through the" />
             </div>
           </div>
         </section>
