@@ -103,6 +103,7 @@ export default function Footer() {
               <Link href="/success-stories">Reviews</Link>
               <Link href="/contact">Contact Us</Link>
               <Link href="/privacy">Privacy</Link>
+              <Link href="/terms">Terms</Link>
             </div>
             <div className="footer-col">
               <h3>Get in Touch</h3>
