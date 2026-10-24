@@ -7,7 +7,7 @@ import OpenChatLink from "../components/OpenChatLink";
 import { advancedTopics, basicTopics } from "../lib/curriculum";
 import { pageMetadata } from "../lib/seo";
 import { breadcrumbSchema, courseSchemas } from "../lib/schema";
-import { VIDEOS } from "../lib/videos";
+import { ENGLISH_VIDEO_INTRO, ENGLISH_VIDEOS, EQUITY_GLOBAL_ENGLISH, VIDEOS } from "../lib/videos";
 
 export const metadata = pageMetadata({
   title: "Forex Course Dubai: Group and Private | Equity Fin Academy",
@@ -241,6 +241,15 @@ export default function CoursesPage() {
         </section>
 
         <YouTubeSection videos={[VIDEOS.howToStart, VIDEOS.whatIsForex, VIDEOS.metatrader]} />
+        <YouTubeSection
+          videos={ENGLISH_VIDEOS}
+          eyebrow="ENGLISH LESSONS"
+          title="Watch an English lesson before you enrol"
+          intro={ENGLISH_VIDEO_INTRO}
+          id="equity-global-english-videos"
+          channel={EQUITY_GLOBAL_ENGLISH}
+          moreLabel="More lessons on the Equity Global English channel"
+        />
 
         <section className="tight">
           <div className="container">

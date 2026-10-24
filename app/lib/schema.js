@@ -224,7 +224,7 @@ export function courseSchemas() {
   ];
 }
 
-export function videoObjectGraph(videos) {
+export function videoObjectGraph(videos, channel = EQUITY_GLOBAL) {
   return {
     "@context": "https://schema.org",
     "@graph": videos.map((video) => ({
@@ -237,8 +237,8 @@ export function videoObjectGraph(videos) {
       contentUrl: `https://www.youtube.com/watch?v=${video.id}`,
       publisher: {
         "@type": "Organization",
-        name: EQUITY_GLOBAL.name,
-        url: EQUITY_GLOBAL.url,
+        name: channel.name,
+        url: channel.url,
       },
     })),
   };

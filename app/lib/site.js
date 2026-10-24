@@ -44,6 +44,7 @@ export const SITE = {
   instagram: "https://www.instagram.com/equity_global/",
   sameAs: [
     "https://www.youtube.com/channel/UCTjkKXSStHPPA64qCCSPTOg",
+    "https://www.youtube.com/@equityglobalenglish9299",
     "https://www.instagram.com/equity_global/",
   ],
   studentsTrained: 2000,

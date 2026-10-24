@@ -9,11 +9,13 @@ export default function YouTubeSection({
   title = "Watch a lesson before you enrol",
   intro = VIDEO_INTRO,
   id = "equity-global-videos",
+  channel = EQUITY_GLOBAL,
+  moreLabel = "More lessons on the Equity Global YouTube channel",
 }) {
   const columns = videos.length >= 3 ? "video-grid" : `video-grid video-grid-${videos.length}`;
   return (
     <section className="tight video-band" id={id}>
-      <JsonLd data={videoObjectGraph(videos)} />
+      <JsonLd data={videoObjectGraph(videos, channel)} />
       <div className="container">
         <div className="section-head reveal">
           <span className="eyebrow">{eyebrow}</span>
@@ -30,8 +32,8 @@ export default function YouTubeSection({
           ))}
         </div>
         <p className="yt-channel-link">
-          <a href={EQUITY_GLOBAL.url} target="_blank" rel="noopener noreferrer">
-            More lessons on the Equity Global YouTube channel
+          <a href={channel.url} target="_blank" rel="noopener noreferrer">
+            {moreLabel}
           </a>
         </p>
       </div>
