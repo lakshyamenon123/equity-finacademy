@@ -1,6 +1,8 @@
 import Link from "next/link";
 
 const LINKS = [
+  { href: "/forex-training-academy-dubai", label: "Forex training academy Dubai" },
+  { href: "/forex-training-academy-uae", label: "Forex training academy UAE" },
   { href: "/forex-academy-in-dubai", label: "Forex academy in Dubai" },
   { href: "/best-forex-course-dubai", label: "Best forex course in Dubai" },
   { href: "/forex-course-abu-dhabi", label: "Forex course in Abu Dhabi" },

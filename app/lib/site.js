@@ -10,8 +10,8 @@
  * No Facebook URL was given, so the Facebook icon is removed rather than linked to "#".
  *
  * TODO(owner): A logo file for Organization.logo. public/mentor.jpg is a portrait, not a logo.
- * TODO(owner): Confirm the map pin. Coordinates below are the building pin used on the map,
- * not a surveyed floor point. The street address stays in structured data only.
+ * TODO(owner): Confirm the map pin. Coordinates below are the pin used on the map.
+ * The public address is Dubai, UAE. Do not publish a floor or a building name.
  * TODO(owner): datePublished for articles that existed before 23 Oct 2026. Those posts
  * do not record a date, so Article schema omits it.
  * Online study is offered across the UAE as well as in-person classes in Dubai. Fees are quoted on enquiry.
@@ -26,9 +26,8 @@ export const SITE = {
   telephoneDisplay: "+971 55 904 7030",
   telephoneTel: "+971559047030",
   description:
-    "Forex academy in Dubai, UAE. Private one-to-one lessons and group classes with live trading sessions, in person and online across the UAE. Open 24/7.",
+    "Forex training academy in Dubai and the UAE. Private one-to-one lessons and group classes with live trading sessions, in person in Dubai and online across the UAE. Open 24/7.",
   address: {
-    streetAddress: "M Floor, Arzoo Building",
     addressLocality: "Al Qusais",
     addressRegion: "Dubai",
     addressCountry: "AE",

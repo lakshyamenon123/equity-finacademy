@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import JsonLd from "../components/JsonLd";
 import YouTubeSection from "../components/YouTubeSection";
+import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
@@ -161,6 +162,7 @@ export default function BeginnersCoursePost() {
                 To ask about the next beginner cohort, <Link href="/contact">contact the academy</Link> or call{" "}
                 <a href="tel:+971559047030">+971 55 904 7030</a>.
               </p>
+              <AcademyLinks lead="The enrolment pages are the" />
             </div>
           </div>
         </section>

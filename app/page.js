@@ -11,9 +11,9 @@ import { SITE } from "./lib/site";
 import { VIDEOS } from "./lib/videos";
 
 export const metadata = pageMetadata({
-  title: "Forex Training Academy UAE | Equity Fin Academy",
+  title: "Forex Training Academy in Dubai & UAE | Equity Fin Academy",
   description:
-    "Forex course in Dubai with private one-to-one lessons and group classes, plus live trading. Rated 5.0 from 30+ Google reviews. 2,000+ students trained.",
+    "Forex Training Academy in Dubai & UAE. Private one-to-one lessons, group classes, and live trading. Rated 5.0 from 30+ Google reviews. 2,000+ students.",
   keywords:
     "forex trading course Dubai, learn forex trading UAE, how to start forex trading, forex trading for beginners, smart money concepts course, market structure trading, candlestick pattern course, institutional trading strategies, SCA regulated broker training, technical analysis course Dubai, risk management trading course, forex mentor Dubai, best forex course in Dubai, group forex training classes Dubai, private forex training Dubai, one to one forex classes Dubai, forex classes near me Dubai",
   path: "/",
@@ -31,10 +31,9 @@ export default function HomePage() {
           <div className="container hero-layout">
             <div className="hero-copy">
               <span className="eyebrow">Dubai, UAE · Open 24/7</span>
-              <h1 className="hero-display">Learn Forex the Right Way with the UAE&apos;s 5-Star Rated Trading Academy</h1>
+              <h1 className="hero-display">Forex Training Academy in Dubai</h1>
               <p className="hero-sub">
-                Private one-to-one lessons and group classes with live trading sessions, trusted by 2,000+ students.
-                Learn in Dubai or online across the UAE.
+                Equity Fin Academy is a Forex Training Academy in Dubai &amp; UAE. Take private one-to-one lessons or join a group class, in the room in Dubai or online from any emirate, with live trading sessions either way. More than 2,000 students have trained here. The academy is open 24/7 and rated 5.0 on Google from 30+ reviews, with 200+ YouTube reviews and comments on the Equity Global channels.
               </p>
               <div className="trust-row">
                 <a className="trust-badge" href={SITE.mapsUrl} target="_blank" rel="noopener noreferrer">
@@ -338,8 +337,10 @@ export default function HomePage() {
             <p>
               Training is taught in person in Dubai, UAE, and online across the UAE. You can join a group class on a shared syllabus, or book a private one-to-one lesson.
               Both include live trading sessions and training. The academy is open 24/7. It is rated 5.0 on Google from
-              30+ reviews, and the Equity Global channel has 200+ YouTube reviews and comments. Formats are spelled out
-              on <Link href="/private-group-forex-training-dubai">private one-to-one and group classes</Link>, and the
+              30+ reviews, and the Equity Global channel has 200+ YouTube reviews and comments. Read the{" "}
+              <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link> page for the in-person offer, or the{" "}
+              <Link href="/forex-training-academy-uae">forex training academy UAE</Link> page if you will study from another emirate.
+              Formats are spelled out on <Link href="/private-group-forex-training-dubai">private one-to-one and group classes</Link>, and the
               tracks are on <Link href="/courses">Courses</Link>.
             </p>
           </div>
@@ -394,6 +395,9 @@ export default function HomePage() {
         <section className="tight">
           <div className="container">
             <div className="topics-row reveal">
+              <Link href="/forex-training-academy-dubai" className="topic-chip">forex academy Dubai</Link>
+              <Link href="/forex-training-academy-dubai" className="topic-chip">forex training Dubai</Link>
+              <Link href="/forex-training-academy-uae" className="topic-chip">forex course UAE</Link>
               <Link href="/forex-academy-in-dubai" className="topic-chip">Forex Academy in Dubai</Link>
               <Link href="/best-forex-course-dubai" className="topic-chip">Best Forex Course in Dubai</Link>
               <Link href="/private-group-forex-training-dubai" className="topic-chip">Private and Group Classes</Link>

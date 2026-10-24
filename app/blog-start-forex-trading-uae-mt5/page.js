@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import JsonLd from "../components/JsonLd";
 import YouTubeSection from "../components/YouTubeSection";
+import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
@@ -162,8 +163,9 @@ export default function StartForexMt5Post() {
               <p>
                 Equity Fin Academy is rated 5.0 on Google from 30+ reviews. The Equity Global channel has 200+ YouTube
                 reviews and comments. More than 2,000 students have been trained through that channel and live
-                mentorship. Those figures are reach and a public rating. They are not a promise about your trades.
+                mentorship.                 Those figures are reach and a public rating. They are not a promise about your trades.
               </p>
+              <AcademyLinks lead="When the platform is installed, the class itself is the" />
             </div>
           </div>
         </section>

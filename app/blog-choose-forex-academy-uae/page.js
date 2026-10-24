@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import JsonLd from "../components/JsonLd";
 import YouTubeSection from "../components/YouTubeSection";
+import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
@@ -145,6 +146,11 @@ export default function ChooseAcademyPost() {
           </div>
         </section>
 
+        <section className="tight">
+          <div className="container prose-block">
+            <AcademyLinks lead="After the checklist, the live offer is the" />
+          </div>
+        </section>
         <YouTubeSection
           videos={[VIDEOS.howToStart, VIDEOS.whatIsForex]}
           title="Judge the explanations, not the thumbnail"

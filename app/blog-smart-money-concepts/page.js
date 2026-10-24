@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
 
 export const metadata = {
@@ -102,6 +103,7 @@ export default function BlogSmartMoneyConceptsPage() {
                 that includes risk management and requires practice to apply consistently.
               </p>
 
+              <AcademyLinks lead="Market profile and smart money concepts are taught on the advanced track at the" />
               <div className="blog-cta">
                 <p>SMC and market profile are covered in depth in our advanced track.</p>
                 <Link href="/courses" className="btn btn-primary">

@@ -4,11 +4,21 @@ import { SITE, absoluteUrl } from "./site";
 
 const postalAddress = {
   "@type": "PostalAddress",
-  streetAddress: SITE.address.streetAddress,
   addressLocality: SITE.address.addressLocality,
   addressRegion: SITE.address.addressRegion,
   addressCountry: SITE.address.addressCountry,
 };
+
+const areaServed = [
+  { "@type": "City", name: "Dubai" },
+  { "@type": "City", name: "Abu Dhabi" },
+  { "@type": "City", name: "Sharjah" },
+  { "@type": "City", name: "Ajman" },
+  { "@type": "City", name: "Ras Al Khaimah" },
+  { "@type": "City", name: "Fujairah" },
+  { "@type": "City", name: "Umm Al Quwain" },
+  { "@type": "Country", name: "United Arab Emirates" },
+];
 
 const place = {
   "@type": "Place",
@@ -68,10 +78,7 @@ export function organizationSchema() {
       name: "Gopi Chandran",
       url: `${SITE.url}/about`,
     },
-    areaServed: [
-      { "@type": "City", name: "Dubai" },
-      { "@type": "Country", name: "United Arab Emirates" },
-    ],
+    areaServed,
   };
 }
 

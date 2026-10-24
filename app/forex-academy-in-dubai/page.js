@@ -102,6 +102,11 @@ export default function ForexAcademyDubaiPage() {
                   beginners and advanced traders alike. If you&apos;re comparing forex training in Dubai, here&apos;s
                   exactly what we teach, who teaches it, and how it works.
                 </p>
+                <p className="hero-sub" style={{ marginTop: 14 }}>
+                  This page is the city overview. The training offer, with private lessons and group classes, is the{" "}
+                  <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link> page. Students outside Dubai should use the{" "}
+                  <Link href="/forex-training-academy-uae">forex training academy UAE</Link> page. Each URL keeps its own canonical.
+                </p>
                 <div className="cta-row">
                   <a href="tel:+971559047030" className="btn btn-outline">
                     Call +971 55 904 7030
