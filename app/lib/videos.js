@@ -34,7 +34,7 @@ export const VIDEOS = {
 };
 
 export const VIDEO_INTRO =
-  "Free lessons from the Equity Global YouTube channel, run by Gopi Chandran. These recordings are in Malayalam. They are a preview of how topics are taught, not a substitute for lessons in Dubai, UAE, or online across the UAE.";
+  "Free lessons from Gopi Chandran’s YouTube channels. English recordings are shown first. Malayalam recordings from the Equity Global channel are on the Malayalam tab. They are a preview of how topics are taught, not a substitute for lessons in Dubai, UAE, or online across the UAE.";
 
 export const EQUITY_GLOBAL_ENGLISH = {
   name: "Equity Global English",

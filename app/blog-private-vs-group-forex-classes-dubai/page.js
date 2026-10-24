@@ -174,7 +174,7 @@ export default function PrivateVsGroupPost() {
         <YouTubeSection
           videos={[VIDEOS.howToStart]}
           title="Hear a beginner explanation, then book the live room"
-          intro="This Equity Global recording is in Malayalam. It is a free introduction to how a topic is explained. The private lesson and the group class are live, in Dubai or online across the UAE."
+          intro="English lessons are listed first. The Malayalam tab has a free Equity Global introduction to how a topic is explained. The private lesson and the group class are live, in Dubai or online across the UAE."
         />
 
         <section className="tight">

@@ -148,7 +148,7 @@ export default function ChooseAcademyPost() {
         <YouTubeSection
           videos={[VIDEOS.howToStart, VIDEOS.whatIsForex]}
           title="Judge the explanations, not the thumbnail"
-          intro="Two Equity Global introductions, in Malayalam. Clarity is part of the checklist. These are free recordings, not the live cohort."
+          intro="English lessons are listed first. The Malayalam tab has two Equity Global introductions. Clarity is part of the checklist. These are free recordings, not the live cohort."
         />
 
         <section className="tight">

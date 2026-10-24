@@ -1,5 +1,6 @@
 import Link from "next/link";
 import OpenChatLink from "./OpenChatLink";
+import { EQUITY_GLOBAL, EQUITY_GLOBAL_ENGLISH } from "../lib/videos";
 
 export default function Footer() {
   return (
@@ -41,8 +42,19 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://www.youtube.com/channel/UCTjkKXSStHPPA64qCCSPTOg"
-                aria-label="Equity Global on YouTube"
+                href={EQUITY_GLOBAL_ENGLISH.url}
+                aria-label="Equity Global English on YouTube"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
+                  <rect x="3" y="6" width="18" height="12" rx="3" />
+                  <path d="M10.5 9.5l5 2.5-5 2.5z" fill="currentColor" stroke="none" />
+                </svg>
+              </a>
+              <a
+                href={EQUITY_GLOBAL.url}
+                aria-label="Equity Global on YouTube, Malayalam"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -52,6 +64,14 @@ export default function Footer() {
                 </svg>
               </a>
             </div>
+            <p className="footer-yt">
+              <a href={EQUITY_GLOBAL_ENGLISH.url} target="_blank" rel="noopener noreferrer">
+                YouTube · English
+              </a>
+              <a href={EQUITY_GLOBAL.url} target="_blank" rel="noopener noreferrer">
+                YouTube · Malayalam
+              </a>
+            </p>
           </div>
 
           <div className="footer-links">

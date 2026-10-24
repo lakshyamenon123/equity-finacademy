@@ -187,7 +187,7 @@ export default function BestForexCourseDubaiPage() {
         <YouTubeSection
           videos={[VIDEOS.howToStart, VIDEOS.whatIsForex]}
           title="Hear the teaching before you compare fees"
-          intro="Two introductory recordings from the Equity Global channel. They are in Malayalam. Use them to judge whether the explanations are clear, then compare that with the live syllabus."
+          intro="English lessons are listed first. The Malayalam tab has two introductory recordings from the Equity Global channel. Use them to judge whether the explanations are clear, then compare that with the live syllabus."
         />
 
         <section className="tight">

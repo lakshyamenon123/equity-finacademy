@@ -8,7 +8,7 @@ import { pageMetadata } from "./lib/seo";
 import { faqPageSchema, organizationSchema } from "./lib/schema";
 import { homeFaq } from "./lib/homeFaq";
 import { SITE } from "./lib/site";
-import { ENGLISH_VIDEO_INTRO, ENGLISH_VIDEOS, EQUITY_GLOBAL_ENGLISH, VIDEOS } from "./lib/videos";
+import { VIDEOS } from "./lib/videos";
 
 export const metadata = pageMetadata({
   title: "Forex Training Academy UAE | Equity Fin Academy",
@@ -346,15 +346,6 @@ export default function HomePage() {
         </section>
 
         <YouTubeSection videos={[VIDEOS.howToStart, VIDEOS.whatIsForex, VIDEOS.metatrader]} />
-        <YouTubeSection
-          videos={ENGLISH_VIDEOS}
-          eyebrow="ENGLISH LESSONS"
-          title="Watch an English lesson before you enrol"
-          intro={ENGLISH_VIDEO_INTRO}
-          id="equity-global-english-videos"
-          channel={EQUITY_GLOBAL_ENGLISH}
-          moreLabel="More lessons on the Equity Global English channel"
-        />
 
         <section className="tight soft">
           <div className="container">
