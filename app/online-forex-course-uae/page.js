@@ -11,9 +11,9 @@ import { VIDEOS } from "../lib/videos";
 const path = "/online-forex-course-uae";
 
 export const metadata = pageMetadata({
-  title: "Online Forex Course in the UAE — What to Use and What We Teach | Equity Fin Academy",
+  title: "Online Forex Course in the UAE | Equity Fin Academy",
   description:
-    "Learn forex online across the UAE with Equity Fin Academy, or in person in Dubai. Private lessons, group classes, and live trading sessions. Fees are quoted when you enquire.",
+    "Learn forex online across the UAE, or in person in Dubai. Private lessons, group classes, and live trading sessions. Fees quoted on enquiry.",
   keywords:
     "online forex course UAE, forex course online Dubai, learn forex trading online UAE, self paced forex course, Equity Global YouTube, forex classes remote UAE",
   path,
@@ -82,6 +82,10 @@ export default function OnlineForexCourseUaePage() {
             <ol className="guide-list">
               <li>
                 Read <Link href="/blog-forex-course-dubai-beginners">what a beginner course covers</Link> so you know the destination.
+              </li>
+              <li>
+                When you are ready for the platform, follow{" "}
+                <Link href="/blog-start-forex-trading-uae-mt5">how to start forex trading in the UAE with MT5</Link>.
               </li>
               <li>
                 Read <Link href="/blog-candlestick-patterns">how to read candlesticks</Link>, then{" "}

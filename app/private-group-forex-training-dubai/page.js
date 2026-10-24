@@ -13,9 +13,9 @@ import { VIDEOS } from "../lib/videos";
 const path = "/private-group-forex-training-dubai";
 
 export const metadata = pageMetadata({
-  title: "Private and Group Forex Training in Dubai | Equity Fin Academy",
+  title: "Private & Group Forex Training Dubai | Equity Fin Academy",
   description:
-    "Private one-to-one forex lessons and group forex classes in Dubai, UAE, including live trading sessions and training. Open 24/7. Rated 5.0 on Google from 30+ reviews. Fees quoted on enquiry.",
+    "Private one-to-one forex training in Dubai, and group classes on a shared syllabus. Personal coaching across the UAE, with live trading. Fees on enquiry.",
   keywords:
     "private forex training Dubai, one to one forex classes Dubai, personal forex coaching UAE, group forex training classes Dubai, live trading sessions Dubai, forex classes near me Dubai, forex cohort Al Qusais",
   path,
@@ -132,7 +132,10 @@ export default function PrivateGroupForexTrainingPage() {
               Traders who already know structure use the advanced cohort: market profile, volume with smart
               money concepts, Fibonacci, psychology, and bot-trading concepts.{" "}
               <Link href="/blog-forex-course-dubai-beginners">What beginners should expect</Link> describes the first
-              track in more detail. <Link href="/blog-choose-forex-academy-uae">How to choose an academy in the UAE</Link>{" "}
+              track in more detail.{" "}
+              <Link href="/blog-private-vs-group-forex-classes-dubai">Private coaching versus a group class</Link>{" "}
+              is the longer look at which format suits a working week, a first course, or a chart you already trade.{" "}
+              <Link href="/blog-choose-forex-academy-uae">How to choose an academy in the UAE</Link>{" "}
               is the checklist if you are still comparing schools.
             </p>
 

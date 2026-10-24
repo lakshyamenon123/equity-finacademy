@@ -21,9 +21,8 @@ export default function YouTubeFacade({ video }) {
 
   return (
     <button type="button" className="yt-facade" onClick={() => setActive(true)}>
-      <img src={thumb} alt="" width="480" height="270" />
+      <img src={thumb} alt={`Play video: ${video.title}`} width="480" height="270" />
       <span className="yt-play" aria-hidden="true" />
-      <span className="sr-only">Play video: {video.title}</span>
     </button>
   );
 }

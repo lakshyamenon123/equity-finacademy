@@ -89,8 +89,9 @@ export default function BeginnersCoursePost() {
                 number is quoted to you.
               </p>
               <p>
-                If you want a head start, read <Link href="/blog-candlestick-patterns">candlestick patterns</Link> and{" "}
-                <Link href="/blog-risk-management">how much to risk per trade</Link>. The class will still teach them.
+                If you want a head start, read <Link href="/blog-candlestick-patterns">candlestick patterns</Link>,{" "}
+                <Link href="/blog-risk-management">how much to risk per trade</Link>, and{" "}
+                <Link href="/blog-start-forex-trading-uae-mt5">how to start on MetaTrader 5</Link>. The class will still teach them.
                 Arriving with the words already familiar means your questions can be about your own chart.
               </p>
 

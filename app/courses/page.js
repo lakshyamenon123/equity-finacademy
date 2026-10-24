@@ -10,9 +10,9 @@ import { breadcrumbSchema, courseSchemas } from "../lib/schema";
 import { VIDEOS } from "../lib/videos";
 
 export const metadata = pageMetadata({
-  title: "Forex Trading Courses Dubai — Group and Private Lessons | Equity Fin Academy",
+  title: "Forex Course Dubai: Group and Private | Equity Fin Academy",
   description:
-    "Forex courses in Dubai, UAE: Basic to Intermediate and Advanced Institutional Strategies as live group classes, plus private one-to-one lessons with live trading sessions. Open 24/7. Fees quoted on enquiry.",
+    "Forex course in Dubai: group classes and private one-to-one lessons with live trading, in person or online across the UAE. Fees quoted on enquiry.",
   keywords:
     "forex course Dubai, learn forex trading UAE, forex trading classes Dubai, group forex training classes Dubai, private forex training Dubai, one to one forex classes Dubai, live trading sessions Dubai, smart money concepts course, market profile trading, Fibonacci retracement course, bot trading strategies forex, risk management course Dubai, institutional forex strategies course, candlestick pattern course Dubai, best forex course for beginners",
   path: "/courses",
@@ -53,7 +53,8 @@ export default function CoursesPage() {
               with live trading sessions on a regulated broker. Private one-to-one lessons are also available, with
               the same live trading sessions and training — see{" "}
               <Link href="/private-group-forex-training-dubai">private and group forex training</Link>. The academy is
-              open 24/7 and rated 5.0 on Google from 30+ reviews. New to trading? Read the{" "}
+              open 24/7 and rated 5.0 on Google from 30+ reviews. New to trading? Read{" "}
+              <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link> or the{" "}
               <Link href="/blog">forex education blog</Link> first.
             </p>
             <div className="cta-row">

@@ -10,6 +10,8 @@ const LINKS = [
   { href: "/private-group-forex-training-dubai", label: "Private vs group classes" },
   { href: "/blog-choose-forex-academy-uae", label: "How to choose an academy" },
   { href: "/blog-forex-course-dubai-beginners", label: "Beginners: what to expect" },
+  { href: "/blog-private-vs-group-forex-classes-dubai", label: "Which class format fits" },
+  { href: "/blog-start-forex-trading-uae-mt5", label: "Start forex with MT5" },
 ];
 
 export default function RelatedTraining({ current }) {

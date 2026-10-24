@@ -9,8 +9,8 @@ import { breadcrumbSchema, faqPageSchema } from "../lib/schema";
 import { faqCategories, faqCount, faqItems } from "../lib/faqContent";
 
 export const metadata = pageMetadata({
-  title: `Forex Trading FAQ — ${faqCount} Answers for Beginners | Equity Fin Academy Dubai`,
-  description: `Answers to ${faqCount} common questions about learning forex trading: how to start, how long it takes, is it hard, forex basics explained, and everything about Equity Fin Academy's courses.`,
+  title: "Forex Trading FAQ | Equity Fin Academy Dubai",
+  description: `Answers to ${faqCount} questions on learning forex in Dubai: how to start, how long it takes, and how the academy's courses work.`,
   keywords:
     "forex trading FAQ, how do I start forex learning, is forex trading hard, how long does it take to learn forex, forex trading for beginners questions, is equity fin academy good for beginners",
   path: "/faq",

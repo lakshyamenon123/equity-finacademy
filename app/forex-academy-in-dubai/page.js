@@ -6,14 +6,15 @@ import OpenChatLink from "../components/OpenChatLink";
 import { VIDEOS } from "../lib/videos";
 
 export const metadata = {
-  title: "Forex Academy in Dubai — Forex Classes for Beginners | Equity Fin Academy",
+  title: "Forex Academy in Dubai | Equity Fin Academy",
   description:
-    "Searching for a forex academy in Dubai? Equity Fin Academy offers forex trading classes for beginners and advanced traders in Dubai — structured courses, an SCA-regulated broker, and an instructor with institutional trading experience. Learn forex in Dubai, taught properly.",
+    "Forex academy in Dubai for beginners and advanced traders. Structured classes, an SCA-regulated broker, and live training in Dubai, UAE.",
   keywords:
     "best forex academy in dubai, forex academy in dubai, forex trading in dubai, forex classes in dubai, forex classes near me Dubai, forex for beginners, learn forex, forex course dubai, forex training dubai, forex school dubai, group forex training classes Dubai",
   openGraph: {
-    title: "Forex Academy in Dubai — Forex Classes for Beginners | Equity Fin Academy",
-    description: "Forex trading classes in Dubai for beginners and advanced traders — structured courses, a regulated broker, and an instructor with institutional experience.",
+    title: "Forex Academy in Dubai | Equity Fin Academy",
+    description:
+      "Forex academy in Dubai for beginners and advanced traders. Structured classes, an SCA-regulated broker, and live training in Dubai, UAE.",
     type: "website",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Dubai, UAE" }],
   },
@@ -24,8 +25,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "/" },
-    { "@type": "ListItem", position: 2, name: "Forex Academy in Dubai", item: "/forex-academy-in-dubai" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.equityfinacademy.com" },
+    { "@type": "ListItem", position: 2, name: "Forex Academy in Dubai", item: "https://www.equityfinacademy.com/forex-academy-in-dubai" },
   ],
 };
 
