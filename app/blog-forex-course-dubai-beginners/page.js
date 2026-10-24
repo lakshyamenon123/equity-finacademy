@@ -147,7 +147,7 @@ export default function BeginnersCoursePost() {
                 You leave with a way to read structure and a way to size risk. You do not leave with a finished trading
                 career. The useful next step is a journal: what you saw, what you did, whether the risk was decided
                 before the entry. Some students later take the advanced track. Some keep using the free Equity Global
-                lessons. The channel recordings linked below are in Malayalam; the articles on this site are in English.
+                lessons. English recordings are listed first below, and Malayalam recordings are on the Malayalam tab. The articles on this site are in English.
               </p>
               <p>
                 The instructor is <Link href="/about">Gopi Chandran</Link>. More than 2,000 students have been trained
@@ -168,7 +168,7 @@ export default function BeginnersCoursePost() {
         <YouTubeSection
           videos={[VIDEOS.whatIsForex, VIDEOS.metatrader]}
           title="Watch the introductions before your first class"
-          intro="What forex trading is, and a MetaTrader 5 walkthrough, both from Equity Global and both in Malayalam. They are optional preparation, not the cohort."
+          intro="English lessons are listed first. The Malayalam tab has a forex introduction and a MetaTrader 5 walkthrough from Equity Global. They are optional preparation, not the cohort."
         />
       </main>
 

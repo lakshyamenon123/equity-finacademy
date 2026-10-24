@@ -26,7 +26,7 @@ const pageFaq = [
   },
   {
     q: "Are the YouTube lessons in English?",
-    text: "The Equity Global recordings linked on this page are in Malayalam. The written lessons on this website are in English.",
+    text: "Yes. The English tab shows lessons from Equity Global English. The Malayalam tab shows recordings from the Equity Global channel. The written lessons on this website are in English.",
   },
   {
     q: "Can an online course replace live practice?",
@@ -93,7 +93,7 @@ export default function OnlineForexCourseUaePage() {
                 <Link href="/blog-risk-management">how much to risk</Link>.
               </li>
               <li>
-                Watch the Equity Global introductions below. They are in Malayalam. The articles are in English, so you can pair them.
+                Watch the lessons below. English recordings are listed first, and Malayalam recordings are on the Malayalam tab. The articles are in English, so you can pair them.
               </li>
               <li>
                 Only then look at <Link href="/blog-smart-money-concepts">smart money concepts</Link>. SMC without structure is a pile of labels.
@@ -125,7 +125,7 @@ export default function OnlineForexCourseUaePage() {
         <YouTubeSection
           videos={[VIDEOS.whatIsForex, VIDEOS.howToStart, VIDEOS.metatrader]}
           title="The self-paced lessons we actually publish"
-          intro="These three Equity Global videos are the public introductions: what forex is, how to start, and a MetaTrader 5 walkthrough. All three are in Malayalam. Play them here without loading YouTube until you press play."
+          intro="English lessons are listed first. The Malayalam tab has the public Equity Global introductions: what forex is, how to start, and a MetaTrader 5 walkthrough. Press play to load a video."
         />
 
         <section className="tight">

@@ -171,7 +171,7 @@ export default function StartForexMt5Post() {
         <YouTubeSection
           videos={[VIDEOS.whatIsForex, VIDEOS.metatrader]}
           title="Watch the platform before you open a ticket"
-          intro="Both recordings are from the Equity Global channel, and both are in Malayalam. One introduces forex. The other is a MetaTrader 5 tutorial for the same platform this article describes. They are preparation, not the live class."
+          intro="English lessons are listed first. The Malayalam tab has an Equity Global forex introduction and a MetaTrader 5 tutorial for the platform this article describes. They are preparation, not the live class."
         />
 
         <section className="tight">

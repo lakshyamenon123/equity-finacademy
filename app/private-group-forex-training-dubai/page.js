@@ -152,7 +152,7 @@ export default function PrivateGroupForexTrainingPage() {
         <YouTubeSection
           videos={[VIDEOS.howToStart]}
           title="A public lesson from Equity Global"
-          intro="This Equity Global recording is a free introduction, in Malayalam. It is self-paced video. The live group class and the private one-to-one lesson, including live trading sessions, happen at the academy."
+          intro="English lessons are listed first. The Malayalam tab has a free Equity Global introduction. It is self-paced video. The live group class and the private one-to-one lesson, including live trading sessions, happen at the academy."
         />
 
         <section className="tight">
