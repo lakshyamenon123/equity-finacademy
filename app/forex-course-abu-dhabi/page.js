@@ -98,8 +98,8 @@ export default function ForexCourseAbuDhabiPage() {
               <Link href="/blog-forex-course-dubai-beginners">what beginners should expect</Link>.
             </p>
             <p>
-              If you already read structure, Advanced Institutional Strategies moves into fundamental analysis, order
-              flow, market profile, volume with smart money concepts, Fibonacci, risk and psychology, and bot-trading
+              If you already read structure, Advanced Institutional Strategies moves into fundamental analysis,
+              market profile, volume with smart money concepts, Fibonacci, risk and psychology, and bot-trading
               concepts. Lifetime WhatsApp access to the instructor is part of that advanced track, not something we
               attach to every beginner seat.
             </p>

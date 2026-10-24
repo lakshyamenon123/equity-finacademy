@@ -86,6 +86,14 @@ export default function ContactPage() {
                 </span>
               </div>
               <div className="info-row">
+                <span className="tag">WHATSAPP</span>
+                <span className="val">
+                  <a href="https://wa.me/971559047030" target="_blank" rel="noopener noreferrer">
+                    +971 55 904 7030
+                  </a>
+                </span>
+              </div>
+              <div className="info-row">
                 <span className="tag">ENQUIRE</span>
                 <span className="val">Call or WhatsApp us directly — we respond to course enquiries same day.</span>
               </div>
@@ -104,7 +112,7 @@ export default function ContactPage() {
 
             <div className="map-frame reveal">
               <iframe
-                src="https://www.google.com/maps?q=M+Floor,+Arzoo+Building,+Al+Qusais,+Dubai,+UAE&output=embed"
+                src="https://www.google.com/maps?q=Equity+Fin+Academy+Dubai+UAE&output=embed"
                 title="Map showing Dubai, UAE"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

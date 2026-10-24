@@ -39,7 +39,7 @@ Facts you may use, and only these:
 - Phone and WhatsApp: ${SITE.telephoneDisplay}. WhatsApp link: ${WHATSAPP_URL}
 - Two course tracks: Basic to Intermediate, and Advanced Institutional Strategies. Fees are not on the site. Never invent a price, a discount, or a payment plan.
 - Never guarantee profits or trading results. Do not add a risk disclaimer when you mention a live account or trading.
-- Do not say "since 2016", "order flow", or "not a signal service".
+- Do not mention a founding year. Do not name topics that are not on the published course list. Do not describe the academy by saying what kind of product it is not.
 - Do not invent review quotes, student stories, or statistics beyond the figures above.
 
 Conversation:
