@@ -12,7 +12,7 @@ import { VIDEOS } from "../lib/videos";
 export const metadata = pageMetadata({
   title: "Forex Trading Courses Dubai — Group and Private Lessons | Equity Fin Academy",
   description:
-    "Forex courses in Dubai, UAE: Basic to Intermediate and Advanced Institutional Strategies as live group classes, plus private one-to-one lessons with live trading sessions. Open 24/7. Fees quoted on enquiry.",
+    "Learn forex in Dubai with live group classes and private one-to-one lessons. Basic to Intermediate covers charts and market structure. Advanced Institutional Strategies covers market profile, smart money concepts, and live trading sessions. Open 24/7. Ask for the current fee.",
   keywords:
     "forex course Dubai, learn forex trading UAE, forex trading classes Dubai, group forex training classes Dubai, private forex training Dubai, one to one forex classes Dubai, live trading sessions Dubai, smart money concepts course, market profile trading, Fibonacci retracement course, bot trading strategies forex, risk management course Dubai, institutional forex strategies course, candlestick pattern course Dubai, best forex course for beginners",
   path: "/courses",

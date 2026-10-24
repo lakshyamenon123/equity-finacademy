@@ -81,11 +81,15 @@ export default function Footer() {
               <Link href="/success-stories">Reviews</Link>
               <Link href="/contact">Contact Us</Link>
               <Link href="/privacy">Privacy</Link>
+              <Link href="/terms">Terms</Link>
             </div>
             <div className="footer-col">
               <h3>Get in Touch</h3>
               <span>Dubai, UAE</span>
               <a href="tel:+971559047030">+971 55 904 7030</a>
+              <a href="https://wa.me/971559047030" target="_blank" rel="noopener noreferrer">
+                WhatsApp +971 55 904 7030
+              </a>
             </div>
           </div>
         </div>

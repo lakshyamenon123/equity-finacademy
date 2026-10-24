@@ -4,7 +4,6 @@ import { SITE, absoluteUrl } from "./site";
 
 const postalAddress = {
   "@type": "PostalAddress",
-  streetAddress: SITE.address.streetAddress,
   addressLocality: SITE.address.addressLocality,
   addressRegion: SITE.address.addressRegion,
   addressCountry: SITE.address.addressCountry,
