@@ -54,7 +54,8 @@ export default function PricingPage() {
               Course fees vary by cohort and enrolment timing, so we don&apos;t publish a number that goes stale.
               Here&apos;s exactly what each track includes — call or message us for current pricing. Private
               one-to-one lessons, including live trading sessions, are available too. That fee is also quoted when you
-              enquire and is not listed here.
+              enquire and is not listed here. What changes a 2026 quote, track by track, is written on the{" "}
+              <Link href="/forex-course-fees-dubai">forex course fees in Dubai</Link> page. That page does not add a price either.
             </p>
           </div>
         </section>

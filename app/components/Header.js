@@ -79,6 +79,21 @@ export default function Header({ active }) {
               <Link href="/forex-training-academy-uae" aria-current={current(active, "academy-uae")}>
                 Forex training academy UAE
               </Link>
+              <Link href="/stock-market-course-dubai" aria-current={current(active, "stock-dubai")}>
+                Stock Market Course Dubai
+              </Link>
+              <Link href="/forex-course-fees-dubai" aria-current={current(active, "fees-dubai")}>
+                Forex Course Fees
+              </Link>
+              <Link href="/forex-mentorship-dubai" aria-current={current(active, "mentorship-dubai")}>
+                Forex Mentorship Dubai
+              </Link>
+              <Link href="/smc-ict-trading-course-dubai" aria-current={current(active, "smc-dubai")}>
+                SMC and ICT Course
+              </Link>
+              <Link href="/weekend-forex-classes-dubai" aria-current={current(active, "weekend-dubai")}>
+                Weekend Forex Classes
+              </Link>
             </div>
           </div>
           <Link href="/forex-academy-in-dubai" aria-current={current(active, "forex-dubai")}>
@@ -156,6 +171,21 @@ export default function Header({ active }) {
           </Link>
           <Link href="/forex-training-academy-uae" aria-current={current(active, "academy-uae")}>
             Forex training academy UAE
+          </Link>
+          <Link href="/stock-market-course-dubai" aria-current={current(active, "stock-dubai")}>
+            Stock Market Course Dubai
+          </Link>
+          <Link href="/forex-course-fees-dubai" aria-current={current(active, "fees-dubai")}>
+            Forex Course Fees
+          </Link>
+          <Link href="/forex-mentorship-dubai" aria-current={current(active, "mentorship-dubai")}>
+            Forex Mentorship Dubai
+          </Link>
+          <Link href="/smc-ict-trading-course-dubai" aria-current={current(active, "smc-dubai")}>
+            SMC and ICT Course
+          </Link>
+          <Link href="/weekend-forex-classes-dubai" aria-current={current(active, "weekend-dubai")}>
+            Weekend Forex Classes
           </Link>
           <Link href="/forex-academy-in-dubai" aria-current={current(active, "forex-dubai")}>
             Forex in Dubai

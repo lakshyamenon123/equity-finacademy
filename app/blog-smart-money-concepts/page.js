@@ -104,10 +104,15 @@ export default function BlogSmartMoneyConceptsPage() {
               </p>
 
               <AcademyLinks lead="Market profile and smart money concepts are taught on the advanced track at the" />
+              <p>
+                The live class, in Dubai and online across the UAE, is the{" "}
+                <Link href="/smc-ict-trading-course-dubai">SMC and ICT trading course in Dubai</Link>. It places these
+                ideas on the two published tracks and links back here for the definitions.
+              </p>
               <div className="blog-cta">
                 <p>SMC and market profile are covered in depth in our advanced track.</p>
-                <Link href="/courses" className="btn btn-primary">
-                  See Our Forex Courses
+                <Link href="/smc-ict-trading-course-dubai" className="btn btn-primary">
+                  SMC and ICT Course in Dubai
                 </Link>
               </div>
             </div>

@@ -53,7 +53,9 @@ export default function CoursesPage() {
               with live trading sessions on a regulated broker. Private one-to-one lessons are also available, with
               the same live trading sessions and training — see{" "}
               <Link href="/private-group-forex-training-dubai">private and group forex training</Link>. The academy is
-              open 24/7 and rated 5.0 on Google from 30+ reviews. New to trading? Read{" "}
+              open 24/7 and rated 5.0 on Google from 30+ reviews. The same MetaTrader 5 work covers gold, indices, and stocks alongside forex on the{" "}
+              <Link href="/stock-market-course-dubai">stock market course</Link> page. Smart money concepts are on the{" "}
+              <Link href="/smc-ict-trading-course-dubai">SMC and ICT course</Link> page. New to trading? Read{" "}
               <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link> or the{" "}
               <Link href="/blog">forex education blog</Link> first.
             </p>

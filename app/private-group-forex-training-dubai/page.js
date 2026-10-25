@@ -118,7 +118,9 @@ export default function PrivateGroupForexTrainingPage() {
             <p>
               WhatsApp access is separate. Students on Advanced Institutional Strategies keep lifetime access to the
               instructor for questions after the course. Beginners on the first track do not get that line item.
-              Messages are not a substitute for a group class or a private session.
+              Messages are not a substitute for a group class or a private session. Coaching as a relationship, including
+              that WhatsApp line and who the trading coach is, is written separately on{" "}
+              <Link href="/forex-mentorship-dubai">forex mentorship in Dubai</Link> so this page can stay about the two rooms.
             </p>
 
             <h2>When the group class is the right room</h2>

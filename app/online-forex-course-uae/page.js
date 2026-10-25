@@ -73,6 +73,10 @@ export default function OnlineForexCourseUaePage() {
               <a href="tel:+971559047030">+971 55 904 7030</a> and we will tell you which format is running.
             </p>
             <p>
+              If your only free time is Saturday or Sunday, say so when you enquire. The academy is open 24/7, and weekend seats are arranged rather than printed on a calendar. Details are on{" "}
+              <Link href="/weekend-forex-classes-dubai">weekend forex classes in Dubai</Link>, including online study across the UAE.
+            </p>
+            <p>
               People in <Link href="/forex-course-sharjah">Sharjah</Link> are close to the classroom. People in{" "}
               <Link href="/forex-course-abu-dhabi">Abu Dhabi</Link> are a longer drive. Both still use the same course. The national offer is the{" "}
               <Link href="/forex-training-academy-uae">forex training academy UAE</Link> page, which is the forex course UAE students book when they want a live seat rather than a reading list.

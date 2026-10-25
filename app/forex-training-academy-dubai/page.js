@@ -48,6 +48,10 @@ const pageFaq = [
     q: "How do I ask about the next Dubai cohort?",
     text: "WhatsApp +971 55 904 7030 or use the chat on this site. The academy is in Dubai, UAE, and is open 24/7. Ask for the next dates and the current fee.",
   },
+  {
+    q: "Is Equity Fin Academy a forex institute in Dubai?",
+    text: "Yes. It is a forex institute in Dubai with a named instructor, two published tracks, private one-to-one lessons, group classes, and live trading sessions, in person and online across the UAE. Fees are quoted when you enquire. The fees page explains what changes a quote, and the FAQ collects the shorter answers.",
+  },
 ];
 
 export default function ForexTrainingAcademyDubaiPage() {
@@ -162,6 +166,22 @@ export default function ForexTrainingAcademyDubaiPage() {
             <p>
               The academy teaches forex. It does not run a second subject, and it does not take responsibility for a trade you place after class. Risk is part of the curriculum because it is part of the activity. Read{" "}
               <Link href="/blog-risk-management">how much to risk</Link> if you want that idea before you enquire.
+            </p>
+
+            <h2>A forex institute in Dubai</h2>
+            <p>
+              Searchers typing forex institute Dubai are usually looking for a school with a named teacher, a syllabus they can read, and a room where a chart gets corrected. Equity Fin Academy is that forex institute: Gopi Chandran teaches, the two tracks are published, and live trading sessions run in Dubai and online across the UAE. It is not a second campus and not a second brand. It is this academy, described as an institute rather than as a topic list.
+            </p>
+            <p>
+              The city context stays on the <Link href="/forex-academy-in-dubai">forex academy in Dubai</Link> page. Students outside the city use the{" "}
+              <Link href="/forex-training-academy-uae">UAE training page</Link>. People who want the fee explained before they ask for a number should read{" "}
+              <Link href="/forex-course-fees-dubai">forex course fees in Dubai (2026)</Link> and the included-items list on <Link href="/pricing">pricing</Link>. Shorter answers sit on the <Link href="/faq">FAQ</Link>. No dirham figure is printed on any of those pages. The quote comes back when you message.
+            </p>
+            <p>
+              The institute teaches the same chart work on MetaTrader 5 whether the symbol is a forex pair, gold, an index, or a stock the broker lists. That symbol page is the{" "}
+              <Link href="/stock-market-course-dubai">stock market course in Dubai</Link>. Weekend hours, for people whose job owns the weekday, are on{" "}
+              <Link href="/weekend-forex-classes-dubai">weekend forex classes</Link>. Coaching, as distinct from the private-versus-group choice, is{" "}
+              <Link href="/forex-mentorship-dubai">forex mentorship in Dubai</Link>.
             </p>
 
             <h2>English lessons you can play before you book</h2>

@@ -15,7 +15,7 @@ export const metadata = pageMetadata({
   description:
     "Forex Training Academy in Dubai & UAE. Private one-to-one lessons, group classes, and live trading. Rated 5.0 from 30+ Google reviews. 2,000+ students.",
   keywords:
-    "forex trading course Dubai, learn forex trading UAE, how to start forex trading, forex trading for beginners, smart money concepts course, market structure trading, candlestick pattern course, institutional trading strategies, SCA regulated broker training, technical analysis course Dubai, risk management trading course, forex mentor Dubai, best forex course in Dubai, group forex training classes Dubai, private forex training Dubai, one to one forex classes Dubai, forex classes near me Dubai",
+    "forex trading course Dubai, learn forex trading UAE, how to start forex trading, forex trading for beginners, smart money concepts course, market structure trading, candlestick pattern course, institutional trading strategies, SCA regulated broker training, technical analysis course Dubai, risk management trading course, forex mentor Dubai, best forex course in Dubai, group forex training classes Dubai, private forex training Dubai, one to one forex classes Dubai, forex classes near me Dubai, stock market course dubai, forex course fees dubai, forex mentorship dubai, weekend forex classes dubai, forex institute dubai",
   path: "/",
 });
 
@@ -186,10 +186,10 @@ export default function HomePage() {
               </div>
               <div className="card reveal">
                 <div className="num">03</div>
-                <h3>One market, mastered deeply</h3>
+                <h3>Structure, taught on the chart you trade</h3>
                 <p>
-                  We teach forex exclusively — market structure and risk — rather than spreading a shallow
-                  curriculum across every asset class.
+                  The syllabus is market structure, taught in depth. On MetaTrader 5 that work covers forex, and gold, indices, and stocks alongside it.{" "}
+                  <Link href="/stock-market-course-dubai">Stock market course in Dubai</Link>.
                 </p>
               </div>
               <div className="card reveal">
@@ -340,12 +340,14 @@ export default function HomePage() {
             <h2>Group classes, private lessons, and live trading sessions.</h2>
             <p>
               Training is taught in person in Dubai, UAE, and online across the UAE. You can join a group class on a shared syllabus, or book a private one-to-one lesson.
-              Both include live trading sessions and training. The academy is open 24/7. It is rated 5.0 on Google from
+              Both include live trading sessions and training. The academy is open 24/7, including weekends. It is rated 5.0 on Google from
               30+ reviews, and the Equity Global channel has 200+ YouTube reviews and comments. Read the{" "}
               <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link> page for the in-person offer, or the{" "}
               <Link href="/forex-training-academy-uae">forex training academy UAE</Link> page if you will study from another emirate.
-              Formats are spelled out on <Link href="/private-group-forex-training-dubai">private one-to-one and group classes</Link>, and the
-              tracks are on <Link href="/courses">Courses</Link>.
+              Formats are spelled out on <Link href="/private-group-forex-training-dubai">private one-to-one and group classes</Link>, coaching is on{" "}
+              <Link href="/forex-mentorship-dubai">forex mentorship in Dubai</Link>, and the
+              tracks are on <Link href="/courses">Courses</Link>. Fees are explained, without a printed price, on{" "}
+              <Link href="/forex-course-fees-dubai">forex course fees in Dubai</Link>.
             </p>
           </div>
         </section>
@@ -383,8 +385,11 @@ export default function HomePage() {
                   Do you teach anything besides forex?<span className="plus">+</span>
                 </summary>
                 <p>
-                  No. Equity Fin Academy teaches forex exclusively — one connected market-structure framework, taught
-                  in depth, rather than a shallow overview spread across multiple asset classes.
+                  The published syllabus is the two forex tracks, from candlesticks through smart money concepts.
+                  Practical sessions use MetaTrader 5, so the same chart work also covers gold, indices, and stocks the
+                  broker lists, alongside forex. The{" "}
+                  <Link href="/stock-market-course-dubai">stock market course in Dubai</Link> explains that. Say which
+                  symbol you want marked when you enquire.
                 </p>
               </details>
             </div>
@@ -413,6 +418,11 @@ export default function HomePage() {
               <Link href="/blog-candlestick-patterns" className="topic-chip">Candlestick Patterns</Link>
               <Link href="/blog-risk-management" className="topic-chip">Risk Management</Link>
               <Link href="/courses" className="topic-chip">Forex Course Tracks</Link>
+              <Link href="/stock-market-course-dubai" className="topic-chip">Stock Market Course Dubai</Link>
+              <Link href="/forex-course-fees-dubai" className="topic-chip">Forex Course Fees Dubai</Link>
+              <Link href="/forex-mentorship-dubai" className="topic-chip">Forex Mentorship Dubai</Link>
+              <Link href="/smc-ict-trading-course-dubai" className="topic-chip">SMC and ICT Course</Link>
+              <Link href="/weekend-forex-classes-dubai" className="topic-chip">Weekend Forex Classes</Link>
             </div>
           </div>
         </section>
