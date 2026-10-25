@@ -14,6 +14,8 @@ const LINKS = [
   { href: "/blog-forex-course-dubai-beginners", label: "Beginners: what to expect" },
   { href: "/blog-private-vs-group-forex-classes-dubai", label: "Which class format fits" },
   { href: "/blog-start-forex-trading-uae-mt5", label: "Start forex with MT5" },
+  { href: "/blog-forex-market-hours-dubai", label: "Forex market hours in Dubai" },
+  { href: "/blog-support-and-resistance-forex", label: "Support and resistance" },
 ];
 
 export default function RelatedTraining({ current }) {

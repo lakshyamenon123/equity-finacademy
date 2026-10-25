@@ -22,6 +22,10 @@ export const metadata = pageMetadata({
 export default function HomePage() {
   return (
     <>
+      <head>
+        <link rel="canonical" href={`${SITE.url}/`} />
+        <meta property="og:url" content={`${SITE.url}/`} />
+      </head>
       <JsonLd data={organizationSchema()} />
       <JsonLd data={faqPageSchema(homeFaq)} />
       <Header active="home" />
@@ -289,7 +293,7 @@ export default function HomePage() {
                   </svg>
                 </div>
                 <h3>Blog</h3>
-                <p>Articles on candlesticks, market structure, risk and beginner mistakes.</p>
+                <p>Articles on candlesticks, market structure, UAE session times, and risk.</p>
               </Link>
               <Link href="/faq" className="card reveal">
                 <div className="icon-badge">

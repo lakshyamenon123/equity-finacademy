@@ -5,6 +5,7 @@ import { ENGLISH_VIDEOS, EQUITY_GLOBAL, EQUITY_GLOBAL_ENGLISH, VIDEO_INTRO } fro
 
 export default function YouTubeSection({
   videos,
+  englishVideos = ENGLISH_VIDEOS,
   eyebrow = "FREE LESSONS",
   title = "Watch a lesson before you enrol",
   intro = VIDEO_INTRO,
@@ -12,7 +13,7 @@ export default function YouTubeSection({
 }) {
   return (
     <section className="tight video-band" id={id}>
-      <JsonLd data={videoObjectGraph(ENGLISH_VIDEOS, EQUITY_GLOBAL_ENGLISH)} />
+      <JsonLd data={videoObjectGraph(englishVideos, EQUITY_GLOBAL_ENGLISH)} />
       <JsonLd data={videoObjectGraph(videos, EQUITY_GLOBAL)} />
       <div className="container">
         <div className="section-head reveal">
@@ -20,7 +21,7 @@ export default function YouTubeSection({
           <h2>{title}</h2>
           {intro ? <p>{intro}</p> : null}
         </div>
-        <VideoLanguageTabs englishVideos={ENGLISH_VIDEOS} malayalamVideos={videos} />
+        <VideoLanguageTabs englishVideos={englishVideos} malayalamVideos={videos} />
       </div>
     </section>
   );
