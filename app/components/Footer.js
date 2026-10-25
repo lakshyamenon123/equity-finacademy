@@ -90,6 +90,11 @@ export default function Footer() {
               <Link href="/forex-course-abu-dhabi">Forex Course in Abu Dhabi</Link>
               <Link href="/forex-course-sharjah">Forex Course in Sharjah</Link>
               <Link href="/online-forex-course-uae">Online Forex Course UAE</Link>
+              <Link href="/stock-market-course-dubai">Stock Market Course Dubai</Link>
+              <Link href="/forex-course-fees-dubai">Forex Course Fees Dubai</Link>
+              <Link href="/forex-mentorship-dubai">Forex Mentorship Dubai</Link>
+              <Link href="/smc-ict-trading-course-dubai">SMC and ICT Course</Link>
+              <Link href="/weekend-forex-classes-dubai">Weekend Forex Classes</Link>
             </div>
             <div className="footer-col">
               <h3>Learn</h3>

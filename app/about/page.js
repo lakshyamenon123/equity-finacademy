@@ -85,7 +85,7 @@ export default function AboutPage() {
                 </li>
                 <li>
                   <span className="tag">FOCUS</span>
-                  <span>One market, taught in depth — forex, with live trading sessions and a clear focus on risk.</span>
+                  <span>Forex taught in depth, with the same chart reading applied on MetaTrader 5 to gold, indices, and stocks when that is the symbol in front of you.</span>
                 </li>
               </ul>
             </div>
@@ -108,7 +108,7 @@ export default function AboutPage() {
             </div>
             <div className="stat-block reveal">
               <span className="value" data-counter="1" data-suffix="">1</span>
-              <span className="label">Market, taught in depth</span>
+              <span className="label">Classroom, in Dubai</span>
             </div>
           </div>
         </div>
@@ -164,7 +164,7 @@ export default function AboutPage() {
               <div className="card reveal">
                 <div className="num">03</div>
                 <h3>Depth over breadth</h3>
-                <p>One market, mastered properly, beats a shallow overview of many. Every lesson goes deeper into forex, not wider into other assets.</p>
+                <p>The lesson goes deep on how a chart is read. Forex is the core syllabus. On MetaTrader 5 the same reading is applied to gold, indices, and stocks when that is the symbol in front of you.</p>
               </div>
             </div>
           </div>

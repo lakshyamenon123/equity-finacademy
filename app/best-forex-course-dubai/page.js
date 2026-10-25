@@ -88,7 +88,7 @@ export default function BestForexCourseDubaiPage() {
               </div>
               <div className="stat-block">
                 <span className="value">1</span>
-                <span className="label">Market: Forex</span>
+                <span className="label">Classroom in Dubai</span>
               </div>
             </div>
             <p style={{ marginTop: 18, maxWidth: "68ch" }}>

@@ -158,7 +158,9 @@ export const faqCategories = [
         parts: [
           "Fees vary by cohort, so we don't publish a number that could go stale. See what's included in each track on our ",
           link("/pricing", "Pricing"),
-          " page, then call or message us for current fees.",
+          " page. What changes a 2026 quote is explained on ",
+          link("/forex-course-fees-dubai", "forex course fees in Dubai"),
+          ". Call or message us for the current fee.",
         ],
       },
     ],

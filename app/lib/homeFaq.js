@@ -9,6 +9,6 @@ export const homeFaq = [
   },
   {
     q: "Do you teach anything besides forex?",
-    text: "No. Equity Fin Academy teaches forex exclusively — one connected market-structure framework, taught in depth, rather than a shallow overview spread across multiple asset classes.",
+    text: "The published syllabus is the two forex tracks, from candlesticks through smart money concepts. Practical sessions use MetaTrader 5, so the same chart work also covers gold, indices, and stocks the broker lists, alongside forex. Say which symbol you want marked when you enquire. The stock market course in Dubai page explains that.",
   },
 ];
