@@ -20,7 +20,7 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.equityfinacademy.com" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.equityfinacademy.com/" },
     { "@type": "ListItem", position: 2, name: "Reviews", item: "https://www.equityfinacademy.com/success-stories" },
   ],
 };

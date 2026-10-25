@@ -104,7 +104,9 @@ export default function PrivateVsGroupPost() {
                 There is no published weekly timetable, because dates move. The academy is open 24/7 in Dubai, UAE.
                 That matters if you work a full week and cannot sit in a classroom at a fixed morning hour. When you
                 enquire, name the times you can actually attend, including an evening or a weekend, and ask whether
-                the next opening is a private hour or a group seat.
+                the next opening is a private hour or a group seat. If the hour you care about is the London and New
+                York overlap, convert it to UAE time first. The tables are in{" "}
+                <Link href="/blog-forex-market-hours-dubai">forex market hours in Dubai</Link>.
               </p>
               <p>
                 A private lesson is the easier format to place around a shift, because the hour is yours. A group

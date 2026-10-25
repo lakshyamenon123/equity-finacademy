@@ -34,7 +34,7 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.equityfinacademy.com" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.equityfinacademy.com/" },
     { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.equityfinacademy.com/blog" },
     { "@type": "ListItem", position: 3, name: "Candlestick Patterns", item: "https://www.equityfinacademy.com/blog-candlestick-patterns" },
   ],

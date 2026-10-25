@@ -67,11 +67,6 @@ export function organizationSchema() {
       },
     ],
     sameAs: SITE.sameAs,
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: SITE.googleRating,
-      bestRating: "5",
-    },
     founder: {
       "@type": "Person",
       "@id": `${SITE.url}/#gopi`,
@@ -104,14 +99,18 @@ export function personSchema() {
   };
 }
 
-export function articleSchema({ headline, description, path, datePublished }) {
+export function articleSchema({ headline, description, path, datePublished, dateModified, type = "Article" }) {
+  const pageUrl = absoluteUrl(path);
   const article = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": type,
     headline,
     description,
     inLanguage: "en",
-    mainEntityOfPage: absoluteUrl(path),
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": pageUrl,
+    },
     image: [`${SITE.url}/og-image.png`],
     author: {
       "@type": "Person",
@@ -128,6 +127,7 @@ export function articleSchema({ headline, description, path, datePublished }) {
   };
   if (datePublished) {
     article.datePublished = datePublished;
+    article.dateModified = dateModified || datePublished;
   }
   return article;
 }
@@ -175,7 +175,7 @@ function courseEntry({ id, name, description, url, topics, offerName, category, 
     hasCourseInstance: {
       "@type": "CourseInstance",
       name: instanceName,
-      courseMode: "https://schema.org/Onsite",
+      courseMode: ["https://schema.org/Onsite", "https://schema.org/Online"],
       location: place,
     },
   };

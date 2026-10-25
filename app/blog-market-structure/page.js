@@ -34,7 +34,7 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.equityfinacademy.com" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.equityfinacademy.com/" },
     { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.equityfinacademy.com/blog" },
     { "@type": "ListItem", position: 3, name: "Market Structure", item: "https://www.equityfinacademy.com/blog-market-structure" },
   ],
@@ -75,7 +75,9 @@ export default function BlogMarketStructurePage() {
                 A <strong>swing high</strong> is a peak where price reverses downward after rising. A{" "}
                 <strong>swing low</strong> is a trough where price reverses upward after falling. Mapping out a
                 sequence of these points is the first step to reading structure — everything else builds on
-                identifying them correctly.
+                identifying them correctly. Those same points are where support and resistance usually sit. The{" "}
+                <Link href="/blog-support-and-resistance-forex">support and resistance guide</Link> is the next step
+                once the swings are visible.
               </p>
 
               <h2>Trend vs. range</h2>

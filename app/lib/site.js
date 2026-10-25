@@ -3,9 +3,9 @@
  * reviews at 5.0, 200+ YouTube reviews/comments, open 24/7, Instagram
  * equity_global, and private one-to-one lessons plus live trading sessions.
  *
- * aggregateRating omits reviewCount. Schema.org reviewCount is an exact total.
- * "30+" is a lower bound, so the floor is stated in visible copy and the count
- * is left off. There is no YouTube star rating, so the 200+ figure is copy only.
+ * aggregateRating is not emitted. Google requires an exact reviewCount or
+ * ratingCount, and "30+" is a lower bound, not a total. The 5.0 rating stays in
+ * visible copy. There is no YouTube star rating, so the 200+ figure is copy only.
  *
  * No Facebook URL was given, so the Facebook icon is removed rather than linked to "#".
  *
@@ -14,6 +14,10 @@
  * The public address is Dubai, UAE. Do not publish a floor or a building name.
  * TODO(owner): datePublished for articles that existed before 23 Oct 2026. Those posts
  * do not record a date, so Article schema omits it.
+ *
+ * Homepage URL: the apex host redirects to https://www.equityfinacademy.com/ and the
+ * Search Console property uses that trailing slash. Inner pages stay without one,
+ * because Next.js redirects /page/ to /page. absoluteUrl("/") is the single homepage URL.
  * Online study is offered across the UAE as well as in-person classes in Dubai. Fees are quoted on enquiry.
  * TODO(owner): An exact Google review total, if reviewCount should be added. 30 is a floor, not a total.
  * TODO(owner): A Facebook profile URL, if one exists.
@@ -61,6 +65,7 @@ export const OG_IMAGE = {
 };
 
 export function absoluteUrl(path) {
-  if (!path || path === "/") return SITE.url;
-  return `${SITE.url}${path.startsWith("/") ? path : `/${path}`}`;
+  if (!path || path === "/") return `${SITE.url}/`;
+  const normalized = path.startsWith("/") ? path : `/${path}`;
+  return `${SITE.url}${normalized.replace(/\/+$/, "")}`;
 }

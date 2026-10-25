@@ -5,13 +5,14 @@ import Link from "next/link";
 export const metadata = {
   title: "Forex Trading Blog | Equity Fin Academy Dubai",
   description:
-    "Forex articles from Equity Fin Academy in Dubai: private and group classes, starting on MT5, candlesticks, market structure, and risk.",
-  keywords: "forex trading blog, forex education articles, learn forex trading online, forex trading tips for beginners",
+    "Forex articles from Equity Fin Academy in Dubai: market hours in UAE time, support and resistance, private and group classes, MT5, and risk.",
+  keywords: "forex trading blog, forex education articles, forex market hours Dubai, support and resistance forex, learn forex trading online",
   openGraph: {
     title: "Forex Trading Blog | Equity Fin Academy Dubai",
     description:
-      "Forex articles from Equity Fin Academy in Dubai: private and group classes, starting on MT5, candlesticks, market structure, and risk.",
+      "Forex articles from Equity Fin Academy in Dubai: market hours in UAE time, support and resistance, private and group classes, MT5, and risk.",
     type: "website",
+    url: "https://www.equityfinacademy.com/blog",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Dubai, UAE" }],
   },
   alternates: { canonical: "https://www.equityfinacademy.com/blog" },
@@ -21,12 +22,38 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.equityfinacademy.com" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.equityfinacademy.com/" },
     { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.equityfinacademy.com/blog" },
   ],
 };
 
 const posts = [
+  {
+    href: "/blog-forex-market-hours-dubai",
+    icon: (
+      <>
+        <circle cx="12" cy="12" r="8" />
+        <path d="M12 8v4l3 2" />
+      </>
+    ),
+    cat: "Market Hours",
+    title: "Forex Market Hours in Dubai: London and New York in UAE Time",
+    desc: "Gulf Standard Time for the London and New York sessions, and why the clock shifts twice a year.",
+    time: "7 min read",
+  },
+  {
+    href: "/blog-support-and-resistance-forex",
+    icon: (
+      <>
+        <path d="M4 7h16M4 17h16" />
+        <path d="M7 17V10m5 7V7m5 10v-5" />
+      </>
+    ),
+    cat: "Chart Reading",
+    title: "Support and Resistance in Forex: A Beginner's Guide",
+    desc: "How to mark the areas where price has stalled, and how a Dubai class uses them.",
+    time: "8 min read",
+  },
   {
     href: "/blog-private-vs-group-forex-classes-dubai",
     icon: (
@@ -142,7 +169,7 @@ export default function BlogIndexPage() {
               Articles on trading forex properly.
             </h1>
             <p style={{ maxWidth: "60ch", marginTop: 18 }}>
-              Plain-language explanations of the concepts that matter. The live classes are the{" "}
+              Plain-language explanations of the concepts that matter, from session times in the UAE to the areas where price has stalled. The live classes are the{" "}
               <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link> page and the{" "}
               <Link href="/forex-training-academy-uae">forex training academy UAE</Link> page.
             </p>
