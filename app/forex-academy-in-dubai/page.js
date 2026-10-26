@@ -4,24 +4,17 @@ import RelatedTraining from "../components/RelatedTraining";
 import YouTubeSection from "../components/YouTubeSection";
 import Link from "next/link";
 import OpenChatLink from "../components/OpenChatLink";
+import { pageMetadata } from "../lib/seo";
 import { VIDEOS } from "../lib/videos";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Forex Academy in Dubai | Equity Fin Academy",
   description:
-    "Forex academy in Dubai for beginners and advanced traders. Structured classes, an SCA-regulated broker, and live training in Dubai, UAE.",
+    "Forex academy in Dubai for beginners and advanced traders. Structured classes on Gulf Standard Time, an SCA-regulated broker, and live training in Dubai and online across the UAE.",
   keywords:
-    "best forex academy in dubai, forex academy in dubai, forex trading in dubai, forex classes in dubai, forex classes near me Dubai, forex for beginners, learn forex, forex course dubai, forex training dubai, forex school dubai, group forex training classes Dubai",
-  openGraph: {
-    title: "Forex Academy in Dubai | Equity Fin Academy",
-    description:
-      "Forex academy in Dubai for beginners and advanced traders. Structured classes, an SCA-regulated broker, and live training in Dubai, UAE.",
-    type: "website",
-    url: "https://www.equityfinacademy.com/forex-academy-in-dubai",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Dubai, UAE" }],
-  },
-  alternates: { canonical: "https://www.equityfinacademy.com/forex-academy-in-dubai" },
-};
+    "best forex academy in dubai, forex academy in dubai, forex trading in dubai, forex classes in dubai, forex classes near me Dubai, forex for beginners UAE, learn forex Dubai, forex course dubai, forex training dubai, forex school dubai, group forex training classes Dubai",
+  path: "/forex-academy-in-dubai",
+});
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",

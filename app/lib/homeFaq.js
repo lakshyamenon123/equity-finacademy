@@ -1,7 +1,7 @@
 export const homeFaq = [
   {
     q: "How do I start learning forex trading?",
-    text: "Start with the fundamentals — currency pairs, candlestick patterns and market structure — before risking any capital. Our blog walks through this step by step, and the Basic to Intermediate course builds on it with live instruction.",
+    text: "Start with the fundamentals — currency pairs, candlestick patterns and market structure — before trading live. The blog walks through this in UAE time, and the Basic to Intermediate course builds on it with live instruction in Dubai or online from any emirate. Fees are quoted in AED when you enquire.",
   },
   {
     q: "Is Equity Fin Academy good for beginners?",

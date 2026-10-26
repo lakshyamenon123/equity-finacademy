@@ -24,6 +24,8 @@ export default function HomePage() {
     <>
       <head>
         <link rel="canonical" href={`${SITE.url}/`} />
+        <link rel="alternate" hrefLang="en-AE" href={`${SITE.url}/`} />
+        <link rel="alternate" hrefLang="x-default" href={`${SITE.url}/`} />
         <meta property="og:url" content={`${SITE.url}/`} />
       </head>
       <JsonLd data={organizationSchema()} />

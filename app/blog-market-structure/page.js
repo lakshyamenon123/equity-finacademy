@@ -2,31 +2,29 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
+import { pageMetadata } from "../lib/seo";
 
-export const metadata = {
-  title: "What Is Market Structure in Forex? | Equity Fin Academy",
+const headline = "What Is Market Structure in Forex? A Guide for UAE Traders";
+
+export const metadata = pageMetadata({
+  title: "Market Structure in Forex for UAE Traders | Equity Fin Academy",
   description:
-    "A plain-language explanation of market structure in forex trading: swing highs, swing lows, trends, ranges, and why structure comes before any strategy.",
-  keywords: "what is market structure in forex, market structure trading explained, swing high swing low forex, trend vs range trading, forex market structure for beginners",
-  openGraph: {
-    title: "What Is Market Structure in Forex? | Equity Fin Academy",
-    description: "Swing highs, swing lows, and how to tell a trend from a range — the foundation of reading any forex chart.",
-    type: "article",
-    url: "https://www.equityfinacademy.com/blog-market-structure",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Dubai, UAE" }],
-  },
-  alternates: { canonical: "https://www.equityfinacademy.com/blog-market-structure" },
-};
+    "Market structure for traders in Dubai and across the UAE: swing highs, swing lows, trends, ranges, and why structure comes before any strategy.",
+  keywords:
+    "what is market structure in forex Dubai, market structure trading UAE, swing high swing low forex, trend vs range trading, forex market structure for beginners Dubai",
+  path: "/blog-market-structure",
+  type: "article",
+});
 
 const postSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "What Is Market Structure in Forex Trading?",
+  headline,
   author: { "@type": "Person", "@id": "https://www.equityfinacademy.com/#gopi", name: "Gopi Chandran", url: "https://www.equityfinacademy.com/about" },
   publisher: { "@type": "EducationalOrganization", "@id": "https://www.equityfinacademy.com/#organization", name: "Equity Fin Academy", url: "https://www.equityfinacademy.com/" },
   mainEntityOfPage: "https://www.equityfinacademy.com/blog-market-structure",
   image: ["https://www.equityfinacademy.com/og-image.png"],
-  inLanguage: "en",
+  inLanguage: "en-AE",
   // TODO(owner): add datePublished. This article did not record one, so it is omitted.
   description: "Swing highs, swing lows, and how to tell a trend from a range.",
 };
@@ -61,14 +59,15 @@ export default function BlogMarketStructurePage() {
 
             <div className="blog-article">
               <span className="eyebrow">MARKET STRUCTURE</span>
-              <h1>What Is Market Structure in Forex Trading?</h1>
+              <h1>What Is Market Structure in Forex? A Guide for UAE Traders</h1>
               <div className="meta">By Gopi Chandran · Equity Fin Academy · 7 min read</div>
 
               <p>
                 Market structure is how price organises itself over time — the pattern formed by a market&apos;s
                 swing highs and swing lows. It&apos;s arguably the single most important concept in trading, because
                 it tells you the context that every other tool (candlesticks, indicators, strategies) operates
-                within.
+                within. Traders in the Dubai classroom, and students joining online from Abu Dhabi, Sharjah, and the
+                other emirates, use the same map. The session you are watching still follows Gulf Standard Time.
               </p>
 
               <h2>Swing highs and swing lows</h2>
@@ -146,7 +145,7 @@ export default function BlogMarketStructurePage() {
                 </div>
                 <div className="blog-card-body">
                   <span className="cat">Strategy</span>
-                  <h3>Smart Money Concepts (SMC) Explained for Beginners</h3>
+                  <h3>Smart Money Concepts (SMC) Explained for Beginners in Dubai</h3>
                   <p>Liquidity, imbalance and order blocks, in plain language.</p>
                 </div>
               </Link>
@@ -158,7 +157,7 @@ export default function BlogMarketStructurePage() {
                 </div>
                 <div className="blog-card-body">
                   <span className="cat">Risk Management</span>
-                  <h3>Forex Risk Management: How Much Should You Risk Per Trade?</h3>
+                  <h3>Forex Risk Management in the UAE: How Much to Risk Per Trade</h3>
                   <p>Position sizing, stop-losses, and why this matters more than entries.</p>
                 </div>
               </Link>

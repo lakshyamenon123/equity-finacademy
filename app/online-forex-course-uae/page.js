@@ -21,7 +21,7 @@ export const metadata = pageMetadata({
 
 const pageFaq = [
   {
-    q: "Does Equity Fin Academy sell a paid online forex course?",
+    q: "Does Equity Fin Academy sell a paid online forex course in the UAE?",
     text: "Yes. You can learn online across the UAE, or in person in Dubai. Fees are quoted when you enquire and are not published on this site.",
   },
   {
@@ -60,7 +60,7 @@ export default function OnlineForexCourseUaePage() {
             </h1>
             <p className="hero-sub" style={{ marginTop: 18, maxWidth: "64ch" }}>
               Learn in person in Dubai, UAE, or online across the UAE. Free lessons are also on this site and on the Equity Global channel. This page explains both, then
-              shows how to judge any online forex course before you pay someone else.
+              shows how to judge any online forex course sold into the UAE before you pay someone else.
             </p>
           </div>
         </section>
@@ -108,7 +108,7 @@ export default function OnlineForexCourseUaePage() {
               </li>
             </ol>
 
-            <h2>How to judge someone else&apos;s online forex course</h2>
+            <h2>How to judge someone else&apos;s online forex course in the UAE</h2>
             <p>
               The UAE search results are full of funnels. Use the same tests we publish in{" "}
               <Link href="/blog-choose-forex-academy-uae">how to choose a forex training academy in the UAE</Link>:

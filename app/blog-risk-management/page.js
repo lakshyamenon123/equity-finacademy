@@ -2,33 +2,31 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
+import { pageMetadata } from "../lib/seo";
 
-export const metadata = {
-  title: "How Much to Risk Per Forex Trade | Equity Fin Academy",
+const headline = "Forex Risk Management in the UAE: How Much to Risk Per Trade";
+
+export const metadata = pageMetadata({
+  title: "How Much to Risk Per Forex Trade in AED | Equity Fin Academy",
   description:
-    "Forex risk management for beginners: position sizing, stop-losses, the 1-2% rule, and why risk matters more than the entry.",
-  keywords: "forex risk management, how much to risk per trade forex, position sizing forex, stop loss strategy forex, risk management for beginners",
-  openGraph: {
-    title: "How Much to Risk Per Forex Trade | Equity Fin Academy",
-    description: "Forex risk management for beginners: position sizing, stop-losses, the 1-2% rule, and why risk matters more than the entry.",
-    type: "article",
-    url: "https://www.equityfinacademy.com/blog-risk-management",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Dubai, UAE" }],
-  },
-  alternates: { canonical: "https://www.equityfinacademy.com/blog-risk-management" },
-};
+    "Forex risk management for beginners in the UAE: position sizing in dirhams, stop-losses, the 1–2% rule, and why the amount matters more than the entry.",
+  keywords:
+    "forex risk management UAE, how much to risk per trade forex AED, position sizing Dubai, stop loss strategy forex, risk management for beginners UAE",
+  path: "/blog-risk-management",
+  type: "article",
+});
 
 const postSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Forex Risk Management: How Much Should You Risk Per Trade?",
+  headline,
   author: { "@type": "Person", "@id": "https://www.equityfinacademy.com/#gopi", name: "Gopi Chandran", url: "https://www.equityfinacademy.com/about" },
   publisher: { "@type": "EducationalOrganization", "@id": "https://www.equityfinacademy.com/#organization", name: "Equity Fin Academy", url: "https://www.equityfinacademy.com/" },
   mainEntityOfPage: "https://www.equityfinacademy.com/blog-risk-management",
   image: ["https://www.equityfinacademy.com/og-image.png"],
-  inLanguage: "en",
+  inLanguage: "en-AE",
   // TODO(owner): add datePublished. This article did not record one, so it is omitted.
-  description: "Position sizing, stop-losses, and why risk management matters more than entries.",
+  description: "Position sizing in AED, stop-losses, and why risk management matters more than entries for UAE traders.",
 };
 
 const breadcrumbSchema = {
@@ -61,20 +59,21 @@ export default function BlogRiskManagementPage() {
 
             <div className="blog-article">
               <span className="eyebrow">RISK MANAGEMENT</span>
-              <h1>Forex Risk Management: How Much Should You Risk Per Trade?</h1>
+              <h1>Forex Risk Management in the UAE: How Much to Risk Per Trade</h1>
               <div className="meta">By Gopi Chandran · Equity Fin Academy · 6 min read</div>
 
               <p>
                 Ask most beginner traders what strategy they use, and they&apos;ll have an answer. Ask how they size
                 their positions, and you&apos;ll often get a shrug. That gap is exactly why most new trading accounts
                 don&apos;t survive their first few months — not because the strategy was wrong, but because risk
-                wasn&apos;t managed.
+                wasn&apos;t managed. The worked example below is in UAE dirhams, which is how course fees are quoted
+                in Dubai and how most local accounts are funded.
               </p>
 
               <h2>The 1–2% rule</h2>
               <p>
                 A widely used guideline is to risk no more than 1–2% of total trading capital on any single trade.
-                If you have a $1,000 account, that means risking $10–$20 per trade, not $200. This isn&apos;t about
+                If you have a 5,000 AED account, that means risking 50–100 AED per trade, not 1,000 AED. This isn&apos;t about
                 being timid — it&apos;s about surviving a losing streak, which every trader experiences, without
                 wiping out the account.
               </p>
@@ -84,7 +83,7 @@ export default function BlogRiskManagementPage() {
               <p>
                 Position size should be calculated from three things: your account size, the percentage you&apos;re
                 willing to risk, and the distance (in pips) between your entry and your stop-loss. A wider stop-loss
-                means a smaller position size to keep the dollar risk constant — not the other way around. Deciding
+                means a smaller position size to keep the dirham risk constant — not the other way around. Deciding
                 &quot;I&apos;ll trade one lot&quot; without doing this calculation means your actual risk changes
                 randomly from trade to trade.
               </p>
@@ -147,7 +146,7 @@ export default function BlogRiskManagementPage() {
                 </div>
                 <div className="blog-card-body">
                   <span className="cat">Beginner Mistakes</span>
-                  <h3>7 Common Mistakes Beginner Forex Traders Make</h3>
+                  <h3>7 Common Mistakes Beginner Forex Traders Make in the UAE</h3>
                   <p>The patterns that quietly drain new trading accounts.</p>
                 </div>
               </Link>
@@ -159,7 +158,7 @@ export default function BlogRiskManagementPage() {
                 </div>
                 <div className="blog-card-body">
                   <span className="cat">Market Structure</span>
-                  <h3>What Is Market Structure in Forex Trading?</h3>
+                  <h3>What Is Market Structure in Forex? A Guide for UAE Traders</h3>
                   <p>Swing highs, swing lows, and how to tell a trend from a range.</p>
                 </div>
               </Link>

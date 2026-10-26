@@ -9,15 +9,25 @@ const postalAddress = {
   addressCountry: SITE.address.addressCountry,
 };
 
+const unitedArabEmirates = { "@type": "Country", name: "United Arab Emirates" };
+
+const EMIRATES = [
+  "Dubai",
+  "Abu Dhabi",
+  "Sharjah",
+  "Ajman",
+  "Ras Al Khaimah",
+  "Fujairah",
+  "Umm Al Quwain",
+];
+
 const areaServed = [
-  { "@type": "City", name: "Dubai" },
-  { "@type": "City", name: "Abu Dhabi" },
-  { "@type": "City", name: "Sharjah" },
-  { "@type": "City", name: "Ajman" },
-  { "@type": "City", name: "Ras Al Khaimah" },
-  { "@type": "City", name: "Fujairah" },
-  { "@type": "City", name: "Umm Al Quwain" },
-  { "@type": "Country", name: "United Arab Emirates" },
+  unitedArabEmirates,
+  ...EMIRATES.map((name) => ({
+    "@type": "AdministrativeArea",
+    name,
+    containedInPlace: { "@type": "Country", name: "United Arab Emirates" },
+  })),
 ];
 
 const place = {
@@ -42,12 +52,13 @@ export function breadcrumbSchema(items) {
 export function organizationSchema() {
   return {
     "@context": "https://schema.org",
-    "@type": ["EducationalOrganization", "LocalBusiness"],
+    "@type": ["Organization", "EducationalOrganization", "LocalBusiness"],
     "@id": `${SITE.url}/#organization`,
     name: SITE.name,
     url: absoluteUrl("/"),
     description: SITE.description,
-    telephone: SITE.telephone,
+    telephone: SITE.telephoneTel,
+    currenciesAccepted: "AED",
     image: `${SITE.url}/og-image.png`,
     priceRange: "$$",
     address: postalAddress,
@@ -106,7 +117,7 @@ export function articleSchema({ headline, description, path, datePublished, date
     "@type": type,
     headline,
     description,
-    inLanguage: "en",
+    inLanguage: "en-AE",
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": pageUrl,
@@ -136,6 +147,7 @@ export function faqPageSchema(items) {
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    inLanguage: "en-AE",
     mainEntity: items.map((item) => ({
       "@type": "Question",
       name: item.q,
@@ -155,22 +167,28 @@ function courseEntry({ id, name, description, url, topics, offerName, category, 
     name,
     description,
     url,
+    inLanguage: "en-AE",
+    areaServed,
     provider: {
-      "@type": "EducationalOrganization",
+      "@type": ["Organization", "EducationalOrganization"],
       "@id": `${SITE.url}/#organization`,
       name: SITE.name,
       url: absoluteUrl("/"),
+      telephone: SITE.telephoneTel,
       sameAs: SITE.sameAs,
+      areaServed,
     },
     teaches: topics,
-    // No price or priceCurrency: fees are quoted on enquiry and are not published.
+    // No numeric price: fees are quoted in AED on enquiry and are not published.
     offers: {
       "@type": "Offer",
       name: offerName,
       category,
       url,
+      priceCurrency: "AED",
       availability: "https://schema.org/LimitedAvailability",
       description: offerDescription,
+      areaServed,
     },
     hasCourseInstance: {
       "@type": "CourseInstance",
@@ -182,7 +200,7 @@ function courseEntry({ id, name, description, url, topics, offerName, category, 
 }
 
 const groupOfferDescription =
-  "Live group class with live trading sessions and training in Dubai, UAE, and online across the UAE. The fee is quoted when you enquire because it varies by cohort and is not published on the site.";
+  "Live group class with live trading sessions and training in Dubai, UAE, and online across the UAE. The fee is quoted in AED when you enquire because it varies by cohort and is not published on the site.";
 
 export function privateCourseSchema() {
   const url = absoluteUrl("/private-group-forex-training-dubai");
@@ -190,14 +208,14 @@ export function privateCourseSchema() {
     id: `${url}#private-course`,
     name: "Private One-to-One Forex Lessons",
     description:
-      "Private one-to-one forex lessons in Dubai, UAE, and online across the UAE, with live trading sessions and training. The fee is quoted when you enquire and is not published.",
+      "Private one-to-one forex lessons in Dubai, UAE, and online across the UAE, with live trading sessions and training. The fee is quoted in AED when you enquire and is not published.",
     url,
     topics: ["Private one-to-one forex lessons", "Live trading sessions", "Forex training"],
     offerName: "Private one-to-one lesson",
     category: "Private one-to-one forex training",
     instanceName: "Private one-to-one lesson",
     offerDescription:
-      "Private one-to-one forex lesson with live trading sessions and training in Dubai, UAE, and online across the UAE. No price is published; the fee is quoted when you enquire.",
+      "Private one-to-one forex lesson with live trading sessions and training in Dubai, UAE, and online across the UAE. No price is published; the fee is quoted in AED when you enquire.",
   });
 }
 

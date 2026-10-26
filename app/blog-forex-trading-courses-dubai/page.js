@@ -140,7 +140,7 @@ export default function ForexTradingCoursesDubaiPost() {
                 <Link href="/courses">courses page</Link>. In-person training is the{" "}
                 <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link> page. If you will study from another emirate, use the{" "}
                 <Link href="/forex-training-academy-uae">forex training academy UAE</Link> page and the{" "}
-                <Link href="/online-forex-course-uae">online forex course</Link>. The instructor is <Link href="/about">Gopi Chandran</Link>. More than 2,000 students have been trained through Equity Global and live mentorship. The academy is rated 5.0 on Google from 30+ reviews. Those figures are not a promise about your trades.
+                <Link href="/online-forex-course-uae">online forex course in the UAE</Link>. The instructor is <Link href="/about">Gopi Chandran</Link>. More than 2,000 students have been trained through Equity Global and live mentorship. The academy is rated 5.0 on Google from 30+ reviews. Those figures are not a promise about your trades.
               </p>
               <p>
                 To ask about the next cohort, use the <Link href="/contact">contact page</Link> or call{" "}

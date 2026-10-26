@@ -1,20 +1,15 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Link from "next/link";
+import { pageMetadata } from "../lib/seo";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Student Reviews — Equity Fin Academy Dubai",
   description:
-    "Real, unfiltered student reviews of Equity Fin Academy on Google — not curated testimonials. Read what students say and leave your own review.",
+    "Real, unfiltered student reviews of Equity Fin Academy in Dubai on Google — not curated testimonials. Read what students across the UAE say and leave your own review.",
   keywords: "Equity Fin Academy reviews, forex academy reviews Dubai, forex course reviews UAE, is Equity Fin Academy legit",
-  openGraph: {
-    title: "Student Reviews — Equity Fin Academy Dubai",
-    description: "Real, unfiltered student reviews on Google — not curated testimonials.",
-    type: "website",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Dubai, UAE" }],
-  },
-  alternates: { canonical: "https://www.equityfinacademy.com/success-stories" },
-};
+  path: "/success-stories",
+});
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",

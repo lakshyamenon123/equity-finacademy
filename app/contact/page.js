@@ -3,22 +3,16 @@ import Footer from "../components/Footer";
 import LeadForm from "../components/LeadForm";
 import RelatedTraining from "../components/RelatedTraining";
 import Link from "next/link";
+import { pageMetadata } from "../lib/seo";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Contact Us — Equity Fin Academy, Dubai, UAE",
   description:
-    "Contact Equity Fin Academy in Dubai, UAE, or call +971 55 904 7030 to enquire about forex trading courses.",
+    "Contact Equity Fin Academy in Dubai, UAE, or call +971 55 904 7030. In-person classes in Dubai, online across every emirate. Fees quoted in AED.",
   keywords:
-    "forex trading academy Al Qusais, forex course near me Dubai, Equity Fin Academy contact, trading academy phone number Dubai, book forex course Dubai, forex classes Al Qusais Dubai",
-  openGraph: {
-    title: "Contact Us — Equity Fin Academy, Dubai, UAE",
-    description: "Contact Equity Fin Academy in Dubai, UAE, or call +971 55 904 7030 to enquire about forex trading courses.",
-    type: "website",
-    url: "https://www.equityfinacademy.com/contact",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Dubai, UAE" }],
-  },
-  alternates: { canonical: "https://www.equityfinacademy.com/contact" },
-};
+    "forex trading academy Dubai, forex course near me Dubai, Equity Fin Academy contact, trading academy phone number Dubai, book forex course Dubai, forex classes Dubai UAE",
+  path: "/contact",
+});
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",

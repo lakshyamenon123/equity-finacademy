@@ -108,7 +108,7 @@ export default function OneToOneForexClassesPost() {
               <p>
                 The in-person offer is the <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link> page. The online seat is the{" "}
                 <Link href="/forex-training-academy-uae">forex training academy UAE</Link> page and the{" "}
-                <Link href="/online-forex-course-uae">online forex course</Link>. Formats and what a private hour includes are on{" "}
+                <Link href="/online-forex-course-uae">online forex course in the UAE</Link>. Formats and what a private hour includes are on{" "}
                 <Link href="/private-group-forex-training-dubai">private forex training in Dubai</Link>. Coaching as a longer relationship, including WhatsApp after the advanced track, is a different page:{" "}
                 <Link href="/forex-mentorship-dubai">forex mentorship in Dubai</Link>. Use that word if you mean that, and use &quot;one-to-one lesson&quot; if you mean a booked hour.
               </p>

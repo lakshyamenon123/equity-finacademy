@@ -26,7 +26,7 @@
 export const SITE = {
   name: "Equity Fin Academy",
   url: "https://www.equityfinacademy.com",
-  telephone: "+971-55-904-7030",
+  telephone: "+971559047030",
   telephoneDisplay: "+971 55 904 7030",
   telephoneTel: "+971559047030",
   description:

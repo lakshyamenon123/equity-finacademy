@@ -144,7 +144,7 @@ export default function WeekendForexClassesDubaiPage() {
             <p>
               Join online if you are in Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah, or Umm Al Quwain, or if you are in Dubai and would rather not cross the city on your day off. The instructor, the tracks, and the live sessions are the same. There is no second campus and no second syllabus for the weekend. The national page is{" "}
               <Link href="/forex-training-academy-uae">forex training academy UAE</Link>. The online sequence you can read before you book is{" "}
-              <Link href="/online-forex-course-uae">the online forex course</Link>. City notes for people comparing a drive with a laptop are on{" "}
+              <Link href="/online-forex-course-uae">the online forex course in the UAE</Link>. City notes for people comparing a drive with a laptop are on{" "}
               <Link href="/forex-course-abu-dhabi">Abu Dhabi</Link> and <Link href="/forex-course-sharjah">Sharjah</Link>.
             </p>
             <p>

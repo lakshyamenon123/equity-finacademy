@@ -107,7 +107,7 @@ export default function ForexTrainingAcademyUaePage() {
             </p>
             <p>
               If your question is only &quot;is there a paid online course, and what should I read first&quot;, that answer already lives on the{" "}
-              <Link href="/online-forex-course-uae">online forex course</Link> page, including a study order. This page is the national offer: who the seat is for, what stays the same outside Dubai, and how you book it. Read one, then the other, rather than the same essay with the city name swapped.
+              <Link href="/online-forex-course-uae">online forex course in the UAE</Link> page, including a study order. This page is the national offer: who the seat is for, what stays the same outside Dubai, and how you book it. Read one, then the other, rather than the same essay with the city name swapped.
             </p>
 
             <h2>What stays the same outside Dubai</h2>

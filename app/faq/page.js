@@ -38,7 +38,7 @@ export default function FaqPage() {
             </nav>
             <span className="eyebrow">FREQUENTLY ASKED QUESTIONS</span>
             <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,3rem)", maxWidth: "22ch" }}>
-              Forex trading FAQ.
+              Forex trading FAQ for Dubai and the UAE.
             </h1>
             <p style={{ maxWidth: "60ch", marginTop: 18 }}>
               {faqCount} straight answers, organised by topic. Can&apos;t find yours? <OpenChatLink className="text-link">Ask us directly</OpenChatLink>.

@@ -2,33 +2,32 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
+import { pageMetadata } from "../lib/seo";
 
-export const metadata = {
-  title: "Candlestick Patterns for Beginners | Equity Fin Academy",
+const headline = "How to Read Candlestick Patterns: A Beginner's Guide for Dubai";
+
+export const metadata = pageMetadata({
+  title: "Candlestick Patterns for Beginners in Dubai | Equity Fin Academy",
   description:
-    "Learn how to read forex candlestick patterns as a beginner: what a candle represents, the patterns worth learning first, and how they fit into market structure.",
-  keywords: "how to read candlestick patterns, candlestick patterns for beginners, forex candlestick guide, candlestick chart explained, doji hammer engulfing pattern",
-  openGraph: {
-    title: "Candlestick Patterns for Beginners | Equity Fin Academy",
-    description: "What each candle represents, and the patterns worth learning first as a beginner forex trader.",
-    type: "article",
-    url: "https://www.equityfinacademy.com/blog-candlestick-patterns",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Dubai, UAE" }],
-  },
-  alternates: { canonical: "https://www.equityfinacademy.com/blog-candlestick-patterns" },
-};
+    "Learn how to read forex candlestick patterns in Dubai and across the UAE: what a candle represents, which patterns to learn first, and how Gulf Standard Time frames the session.",
+  keywords:
+    "how to read candlestick patterns Dubai, candlestick patterns for beginners UAE, forex candlestick guide Dubai, candlestick chart explained, doji hammer engulfing pattern",
+  path: "/blog-candlestick-patterns",
+  type: "article",
+});
 
 const postSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "How to Read Candlestick Patterns: A Beginner's Guide",
+  headline,
   author: { "@type": "Person", "@id": "https://www.equityfinacademy.com/#gopi", name: "Gopi Chandran", url: "https://www.equityfinacademy.com/about" },
   publisher: { "@type": "EducationalOrganization", "@id": "https://www.equityfinacademy.com/#organization", name: "Equity Fin Academy", url: "https://www.equityfinacademy.com/" },
   mainEntityOfPage: "https://www.equityfinacademy.com/blog-candlestick-patterns",
   image: ["https://www.equityfinacademy.com/og-image.png"],
-  inLanguage: "en",
+  inLanguage: "en-AE",
   // TODO(owner): add datePublished. This article did not record one, so it is omitted.
-  description: "What a candle represents, and the patterns worth learning first as a beginner forex trader.",
+  description:
+    "What a candle represents for beginners in Dubai and across the UAE, and the patterns worth learning first.",
 };
 
 const breadcrumbSchema = {
@@ -61,13 +60,18 @@ export default function BlogCandlestickPatternsPage() {
 
             <div className="blog-article">
               <span className="eyebrow">CHART READING</span>
-              <h1>How to Read Candlestick Patterns: A Beginner&apos;s Guide</h1>
+              <h1>How to Read Candlestick Patterns: A Beginner&apos;s Guide for Dubai</h1>
               <div className="meta">By Gopi Chandran · Equity Fin Academy · 8 min read</div>
 
               <p>
                 Candlestick charts are the most common way to visualise price movement in forex trading. Before
                 learning any pattern, it helps to understand exactly what a single candle is telling you — because
-                every pattern is really just a sequence of these individual pieces of information.
+                every pattern is really just a sequence of these individual pieces of information. This is the version
+                taught in Dubai, and online for students in Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah, and
+                Umm Al Quwain. When you mark a session, use Gulf Standard Time (UTC+4). The UAE does not change clocks.
+                MetaTrader 5 often stamps candles in the broker&apos;s server time, so check that offset before you
+                call a candle the London open. The session tables are on the{" "}
+                <Link href="/blog-forex-market-hours-dubai">Dubai market-hours page</Link>.
               </p>
 
               <h2>What a single candle shows you</h2>
@@ -115,7 +119,7 @@ export default function BlogCandlestickPatternsPage() {
               <p>
                 Once candlestick reading feels comfortable, the natural next topic is market structure —
                 understanding how these candles combine to form swing highs, swing lows, and trends. Read{" "}
-                <Link href="/blog-market-structure">What Is Market Structure in Forex Trading?</Link> next.
+                <Link href="/blog-market-structure">What Is Market Structure in Forex? A Guide for UAE Traders</Link> next.
               </p>
 
               <AcademyLinks lead="When you want candles taught on a live chart, book the" />
@@ -144,7 +148,7 @@ export default function BlogCandlestickPatternsPage() {
                 </div>
                 <div className="blog-card-body">
                   <span className="cat">Market Structure</span>
-                  <h3>What Is Market Structure in Forex Trading?</h3>
+                  <h3>What Is Market Structure in Forex? A Guide for UAE Traders</h3>
                   <p>Swing highs, swing lows, and how to tell a trend from a range.</p>
                 </div>
               </Link>
@@ -157,7 +161,7 @@ export default function BlogCandlestickPatternsPage() {
                 </div>
                 <div className="blog-card-body">
                   <span className="cat">Strategy</span>
-                  <h3>Smart Money Concepts (SMC) Explained for Beginners</h3>
+                  <h3>Smart Money Concepts (SMC) Explained for Beginners in Dubai</h3>
                   <p>Liquidity, imbalance and order blocks, in plain language.</p>
                 </div>
               </Link>
