@@ -43,10 +43,10 @@ export default function PrivacyPage() {
             </p>
             <p>We&apos;ll only use your number to contact you about courses. These details are not sold.</p>
             <p>
-              The chat can suggest opening a live account with StarTrader. That link is the academy&apos;s affiliate link. The academy does not manage your funds. Trading involves risk.
+              The chat can suggest opening a live account with StarTrader. That link is the academy&apos;s affiliate link. The academy does not manage your funds.
             </p>
             <p>
-              Vercel Web Analytics counts visits to the site. That count does not include your name or phone number.
+              Vercel Web Analytics counts visits, including which country the visit came from. That count does not use a cookie or a consent banner, and it does not include your name or phone number.
             </p>
             <p>
               To ask for an enquiry to be deleted, WhatsApp or call <a href="tel:+971559047030">+971 55 904 7030</a>, or write from the <Link href="/contact">contact page</Link>.

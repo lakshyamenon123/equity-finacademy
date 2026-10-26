@@ -12,7 +12,7 @@ export const faqCategories = [
         parts: [
           "Start with the vocabulary — currency pairs, pips, lots, leverage — then learn to read candlestick charts, then market structure, then risk management, in that order. Our ",
           link("/blog", "blog"),
-          " covers each of these step by step, and the Basic to Intermediate course builds on it with live instruction.",
+          " covers each of these step by step. The Basic to Intermediate course builds on it with live instruction in Dubai, or online from Abu Dhabi, Sharjah, and the other emirates, on Gulf Standard Time.",
         ],
       },
       {
@@ -86,7 +86,7 @@ export const faqCategories = [
       {
         q: "Are online Forex trading classes worth it?",
         parts: [
-          "A structured course from a credible instructor can meaningfully shorten the learning curve. Quality varies enormously across providers — check the instructor's real background and whether the curriculum is genuinely sequenced, not a random pile of videos.",
+          "A structured course from a credible instructor can meaningfully shorten the learning curve, including an online forex course taken from anywhere in the UAE. Quality varies enormously across providers — check the instructor's real background and whether the curriculum is genuinely sequenced, not a random pile of videos. Equity Fin Academy teaches the same two tracks in Dubai and online across the emirates.",
         ],
       },
       {
@@ -156,11 +156,11 @@ export const faqCategories = [
       {
         q: "How much does the course cost?",
         parts: [
-          "Fees vary by cohort, so we don't publish a number that could go stale. See what's included in each track on our ",
+          "Fees vary by cohort and are quoted in AED, so we don't publish a number that could go stale. See what's included in each track on our ",
           link("/pricing", "Pricing"),
           " page. What changes a 2026 quote is explained on ",
           link("/forex-course-fees-dubai", "forex course fees in Dubai"),
-          ". Call or message us for the current fee.",
+          ". Call or message us for the current dirham figure.",
         ],
       },
     ],
@@ -232,7 +232,7 @@ export const faqCategories = [
       {
         q: "Is Forex trading risky?",
         parts: [
-          "Yes. Forex trading carries a significant risk of loss and is not suitable for every investor. Leverage in particular can magnify losses quickly if risk isn't managed properly.",
+          "Leverage can magnify a loss quickly when the position size was never planned. The Dubai courses teach that sizing in dirhams, with a stop, before strategy. Practical sessions use an SCA-regulated broker.",
         ],
       },
       {

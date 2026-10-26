@@ -32,6 +32,10 @@ export const metadata = {
   verification: {
     google: "2DiCnjwxlOpUQjMaIER4c2JANeTQNJa_KEKovvVrvDg",
   },
+  other: {
+    "geo.region": "AE-DU",
+    "geo.placename": "Dubai",
+  },
   openGraph: {
     siteName: "Equity Fin Academy",
     locale: "en_AE",
@@ -52,7 +56,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${spectral.variable} ${ibmPlexSans.variable} ${ibmPlexMono.variable}`}>
+    <html lang="en-AE" className={`${spectral.variable} ${ibmPlexSans.variable} ${ibmPlexMono.variable}`}>
       <head>
         <link rel="preconnect" href="https://i.ytimg.com" />
         <link rel="dns-prefetch" href="https://i.ytimg.com" />

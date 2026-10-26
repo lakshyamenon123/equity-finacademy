@@ -24,7 +24,10 @@ export default function HomePage() {
     <>
       <head>
         <link rel="canonical" href={`${SITE.url}/`} />
+        <link rel="alternate" hrefLang="en-AE" href={`${SITE.url}/`} />
+        <link rel="alternate" hrefLang="x-default" href={`${SITE.url}/`} />
         <meta property="og:url" content={`${SITE.url}/`} />
+        <meta property="og:locale" content="en_AE" />
       </head>
       <JsonLd data={organizationSchema()} />
       <JsonLd data={faqPageSchema(homeFaq)} />

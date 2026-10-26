@@ -2,30 +2,29 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
+import { pageMetadata } from "../lib/seo";
 
-export const metadata = {
-  title: "Smart Money Concepts for Beginners | Equity Fin Academy",
-  description: "Smart money concepts (SMC) explained in plain language: liquidity, imbalance, order blocks, and how SMC builds on basic market structure.",
-  keywords: "smart money concepts explained, what is SMC trading, liquidity forex trading, order block trading, imbalance in forex market, SMC for beginners",
-  openGraph: {
-    title: "Smart Money Concepts for Beginners | Equity Fin Academy",
-    description: "Liquidity, imbalance and order blocks, in plain language.",
-    type: "article",
-    url: "https://www.equityfinacademy.com/blog-smart-money-concepts",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Dubai, UAE" }],
-  },
-  alternates: { canonical: "https://www.equityfinacademy.com/blog-smart-money-concepts" },
-};
+const headline = "Smart Money Concepts (SMC) Explained for Beginners in Dubai";
+
+export const metadata = pageMetadata({
+  title: "Smart Money Concepts for Beginners in Dubai | Equity Fin Academy",
+  description:
+    "Smart money concepts (SMC) for beginners in Dubai and online across the UAE: liquidity, imbalance, order blocks, and how SMC builds on market structure.",
+  keywords:
+    "smart money concepts Dubai, what is SMC trading UAE, liquidity forex trading, order block trading Dubai, imbalance in forex market, SMC for beginners UAE",
+  path: "/blog-smart-money-concepts",
+  type: "article",
+});
 
 const postSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Smart Money Concepts (SMC) Explained for Beginners",
+  headline,
   author: { "@type": "Person", "@id": "https://www.equityfinacademy.com/#gopi", name: "Gopi Chandran", url: "https://www.equityfinacademy.com/about" },
   publisher: { "@type": "EducationalOrganization", "@id": "https://www.equityfinacademy.com/#organization", name: "Equity Fin Academy", url: "https://www.equityfinacademy.com/" },
   mainEntityOfPage: "https://www.equityfinacademy.com/blog-smart-money-concepts",
   image: ["https://www.equityfinacademy.com/og-image.png"],
-  inLanguage: "en",
+  inLanguage: "en-AE",
   // TODO(owner): add datePublished. This article did not record one, so it is omitted.
   description: "Liquidity, imbalance and order blocks, in plain language.",
 };
@@ -60,14 +59,15 @@ export default function BlogSmartMoneyConceptsPage() {
 
             <div className="blog-article">
               <span className="eyebrow">STRATEGY</span>
-              <h1>Smart Money Concepts (SMC) Explained for Beginners</h1>
+              <h1>Smart Money Concepts (SMC) Explained for Beginners in Dubai</h1>
               <div className="meta">By Gopi Chandran · Equity Fin Academy · 9 min read</div>
 
               <p>
                 Smart money concepts (SMC) is a popular framework for analysing forex charts based on the idea of
                 reading where larger market participants — banks, institutions, large funds — may be positioned,
                 using liquidity and price imbalance rather than lagging indicators. It&apos;s an extension of market
-                structure, not a replacement for it.
+                structure, not a replacement for it. The live class is taught in Dubai and online across the UAE,
+                on Gulf Standard Time, after the structure lessons are already in place.
               </p>
 
               <h2>Why &quot;smart money&quot;?</h2>
@@ -135,7 +135,7 @@ export default function BlogSmartMoneyConceptsPage() {
                 </div>
                 <div className="blog-card-body">
                   <span className="cat">Market Structure</span>
-                  <h3>What Is Market Structure in Forex Trading?</h3>
+                  <h3>What Is Market Structure in Forex? A Guide for UAE Traders</h3>
                   <p>Swing highs, swing lows, and how to tell a trend from a range.</p>
                 </div>
               </Link>
@@ -148,7 +148,7 @@ export default function BlogSmartMoneyConceptsPage() {
                 </div>
                 <div className="blog-card-body">
                   <span className="cat">Beginner Mistakes</span>
-                  <h3>7 Common Mistakes Beginner Forex Traders Make</h3>
+                  <h3>7 Common Mistakes Beginner Forex Traders Make in the UAE</h3>
                   <p>The patterns that quietly drain new trading accounts.</p>
                 </div>
               </Link>

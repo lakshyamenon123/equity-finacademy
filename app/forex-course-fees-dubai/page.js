@@ -26,7 +26,7 @@ export const metadata = pageMetadata({
 const pageFaq = [
   {
     q: "What are the forex course fees in Dubai for 2026?",
-    text: "Equity Fin Academy does not publish a dirham figure. Fees change by cohort and by enrolment timing, and a number printed on a page goes stale. WhatsApp +971 55 904 7030, or use the chat, and the current fee is quoted in the reply. The academy is open 24/7.",
+    text: "Equity Fin Academy does not publish a dirham figure. Fees change by cohort and by enrolment timing, and a number printed on a page goes stale. WhatsApp +971 55 904 7030, or use the chat, and the current fee is quoted in AED. The academy is open 24/7.",
   },
   {
     q: "Why is there no price on the website?",
@@ -155,7 +155,7 @@ export default function ForexCourseFeesDubaiPage() {
             <p>
               Online and in-person study use the same instructor and the same two tracks. The fee is quoted when you say which seat you want. Abu Dhabi and Sharjah students are not on a different syllabus. Their pages are{" "}
               <Link href="/forex-course-abu-dhabi">Abu Dhabi</Link> and <Link href="/forex-course-sharjah">Sharjah</Link>. The wider offer is the{" "}
-              <Link href="/online-forex-course-uae">online forex course</Link> and the{" "}
+              <Link href="/online-forex-course-uae">online forex course in the UAE</Link> and the{" "}
               <Link href="/forex-training-academy-uae">UAE training page</Link>.
             </p>
 

@@ -2,20 +2,16 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Link from "next/link";
 import OpenChatLink from "../components/OpenChatLink";
+import { pageMetadata } from "../lib/seo";
 
-export const metadata = {
-  title: "Pricing — Forex Course Fees | Equity Fin Academy Dubai",
+export const metadata = pageMetadata({
+  title: "Pricing — Forex Course Fees in AED | Equity Fin Academy Dubai",
   description:
-    "What's included in each Equity Fin Academy forex course track in Dubai, UAE. Call or message us for current course fees and enrolment details.",
-  keywords: "forex course price Dubai, forex trading course cost, Equity Fin Academy fees, how much does a forex course cost",
-  openGraph: {
-    title: "Pricing — Forex Course Fees | Equity Fin Academy Dubai",
-    description: "What's included in each course track. Call or message us for current fees.",
-    type: "website",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Dubai, UAE" }],
-  },
-  alternates: { canonical: "https://www.equityfinacademy.com/pricing" },
-};
+    "What's included in each Equity Fin Academy forex course track in Dubai, UAE. Fees are quoted in AED. Call or message us for the current figure.",
+  keywords:
+    "forex course price Dubai AED, forex trading course cost UAE, Equity Fin Academy fees, how much does a forex course cost in dirhams",
+  path: "/pricing",
+});
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -51,8 +47,8 @@ export default function PricingPage() {
               What&apos;s included, track by track.
             </h1>
             <p style={{ maxWidth: "60ch", marginTop: 18 }}>
-              Course fees vary by cohort and enrolment timing, so we don&apos;t publish a number that goes stale.
-              Here&apos;s exactly what each track includes — call or message us for current pricing. Private
+              Course fees are quoted in AED. They vary by cohort and enrolment timing, so we don&apos;t publish a number that goes stale.
+              Here&apos;s exactly what each track includes — call or message us for the current dirham figure. Private
               one-to-one lessons, including live trading sessions, are available too. That fee is also quoted when you
               enquire and is not listed here. What changes a 2026 quote, track by track, is written on the{" "}
               <Link href="/forex-course-fees-dubai">forex course fees in Dubai</Link> page. That page does not add a price either.
@@ -70,7 +66,7 @@ export default function PricingPage() {
               <div className="pricing-card reveal">
                 <span className="level">TRACK 01</span>
                 <h3>Basic to Intermediate</h3>
-                <div className="price-note">Call for current pricing</div>
+                <div className="price-note">Quoted in AED</div>
                 <ul>
                   <li><Check />Full Basic to Intermediate curriculum</li>
                   <li><Check />Live instruction in Dubai, UAE</li>
@@ -83,7 +79,7 @@ export default function PricingPage() {
               <div className="pricing-card featured reveal">
                 <span className="level">TRACK 02</span>
                 <h3>Advanced Institutional Strategies</h3>
-                <div className="price-note">Call for current pricing</div>
+                <div className="price-note">Quoted in AED</div>
                 <ul>
                   <li><Check />Full Advanced Institutional Strategies curriculum</li>
                   <li><Check />Live instruction in Dubai, UAE</li>
@@ -108,7 +104,7 @@ export default function PricingPage() {
                 <summary>
                   Why don&apos;t you list a price on the website?<span className="plus">+</span>
                 </summary>
-                <p>Fees can change between cohorts and depend on current enrolment. Rather than publish a number that might be outdated by the time you read it, we quote current pricing directly when you enquire.</p>
+                <p>Fees can change between cohorts and depend on current enrolment. Rather than publish a number that might be outdated by the time you read it, we quote the current fee in AED when you enquire.</p>
               </details>
               <details>
                 <summary>
@@ -126,7 +122,7 @@ export default function PricingPage() {
                 <summary>
                   Is there a difference in price between the two tracks?<span className="plus">+</span>
                 </summary>
-                <p>Yes, the Advanced Institutional Strategies track covers substantially more curriculum and includes lifetime WhatsApp support, which is reflected in its fee. Call for exact current pricing on both.</p>
+                <p>Yes, the Advanced Institutional Strategies track covers substantially more curriculum and includes lifetime WhatsApp support, which is reflected in its fee. Call for the current AED quote on both.</p>
               </details>
             </div>
           </div>

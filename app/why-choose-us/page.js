@@ -2,22 +2,16 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Link from "next/link";
 import OpenChatLink from "../components/OpenChatLink";
+import { pageMetadata } from "../lib/seo";
 
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Why Choose Equity Fin Academy — Forex Education Dubai",
   description:
-    "An institutional-background instructor, SCA-regulated practice sessions, and a forex curriculum taught in Dubai without profit promises.",
+    "An institutional-background instructor, SCA-regulated practice sessions, and a forex curriculum taught in Dubai and online across the UAE. Fees quoted in AED.",
   keywords:
     "why choose equity fin academy, best forex academy Dubai, trusted forex course UAE, honest forex education, forex mentor with experience, regulated forex training Dubai",
-  openGraph: {
-    title: "Why Choose Equity Fin Academy — Forex Education Dubai",
-    description:
-      "An institutional-background instructor, SCA-regulated practice sessions, and a forex curriculum taught in Dubai without profit promises.",
-    type: "website",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Dubai, UAE" }],
-  },
-  alternates: { canonical: "https://www.equityfinacademy.com/why-choose-us" },
-};
+  path: "/why-choose-us",
+});
 
 const breadcrumbSchema = {
   "@context": "https://schema.org",

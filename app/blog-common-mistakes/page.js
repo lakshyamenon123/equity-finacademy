@@ -2,31 +2,29 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
+import { pageMetadata } from "../lib/seo";
 
-export const metadata = {
-  title: "7 Beginner Forex Trading Mistakes | Equity Fin Academy",
+const headline = "7 Common Mistakes Beginner Forex Traders Make in the UAE";
+
+export const metadata = pageMetadata({
+  title: "7 Beginner Forex Mistakes in the UAE | Equity Fin Academy",
   description:
-    "The most common mistakes beginner forex traders make — from overleveraging to revenge trading — and how a structured learning approach avoids them.",
-  keywords: "common forex trading mistakes, beginner forex mistakes, why do forex traders lose money, forex trading pitfalls, mistakes new traders make",
-  openGraph: {
-    title: "7 Beginner Forex Trading Mistakes | Equity Fin Academy",
-    description: "The patterns that quietly drain new trading accounts, and how to avoid them.",
-    type: "article",
-    url: "https://www.equityfinacademy.com/blog-common-mistakes",
-    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Dubai, UAE" }],
-  },
-  alternates: { canonical: "https://www.equityfinacademy.com/blog-common-mistakes" },
-};
+    "The mistakes beginner forex traders in Dubai and the UAE repeat — from overleveraging to an unregulated broker — and how a structured class avoids them.",
+  keywords:
+    "common forex trading mistakes UAE, beginner forex mistakes Dubai, forex trading pitfalls UAE, SCA regulated broker, mistakes new traders make Dubai",
+  path: "/blog-common-mistakes",
+  type: "article",
+});
 
 const postSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "7 Common Mistakes Beginner Forex Traders Make",
+  headline,
   author: { "@type": "Person", "@id": "https://www.equityfinacademy.com/#gopi", name: "Gopi Chandran", url: "https://www.equityfinacademy.com/about" },
   publisher: { "@type": "EducationalOrganization", "@id": "https://www.equityfinacademy.com/#organization", name: "Equity Fin Academy", url: "https://www.equityfinacademy.com/" },
   mainEntityOfPage: "https://www.equityfinacademy.com/blog-common-mistakes",
   image: ["https://www.equityfinacademy.com/og-image.png"],
-  inLanguage: "en",
+  inLanguage: "en-AE",
   // TODO(owner): add datePublished. This article did not record one, so it is omitted.
   description: "The most common mistakes beginner forex traders make, and how to avoid them.",
 };
@@ -61,10 +59,12 @@ export default function BlogCommonMistakesPage() {
 
             <div className="blog-article">
               <span className="eyebrow">BEGINNER MISTAKES</span>
-              <h1>7 Common Mistakes Beginner Forex Traders Make</h1>
+              <h1>7 Common Mistakes Beginner Forex Traders Make in the UAE</h1>
               <div className="meta">By Gopi Chandran · Equity Fin Academy · 7 min read</div>
 
-              <p>Most beginner trading losses aren&apos;t caused by a single bad decision — they&apos;re caused by a handful of repeating patterns. Recognising them in your own trading is the fastest way to stop them.</p>
+              <p>
+                Most beginner trading losses aren&apos;t caused by a single bad decision — they&apos;re caused by a handful of repeating patterns. The list below is the one we see from students in Dubai and from people studying online in Abu Dhabi, Sharjah, and the other emirates. Recognising them in your own trading is the fastest way to stop them.
+              </p>
 
               <h2>1. Risking too much on a single trade</h2>
               <p>
@@ -86,7 +86,9 @@ export default function BlogCommonMistakesPage() {
               <p>Leverage lets you control a larger position than your capital alone allows — but it magnifies losses just as much as gains. Beginners often use far more leverage than their risk tolerance or experience level can handle.</p>
 
               <h2>6. Trading through an unregulated broker</h2>
-              <p>Choosing a platform based purely on marketing, without checking whether it&apos;s regulated by a recognised financial authority, removes a layer of protection that matters — especially early on when you&apos;re least equipped to spot problems.</p>
+              <p>
+                Choosing a platform based purely on marketing, without checking whether it&apos;s regulated by a recognised financial authority, removes a layer of protection that matters — especially early on when you&apos;re least equipped to spot problems. In the UAE, look for Securities and Commodities Authority (SCA) regulation. Practical sessions at Equity Fin Academy use Star Trader, which is SCA-regulated.
+              </p>
 
               <h2>7. Not keeping a trading journal</h2>
               <p>Without a record of what you traded, why, and what happened, the same mistakes repeat invisibly. A journal is what turns experience into actual improvement.</p>
@@ -125,7 +127,7 @@ export default function BlogCommonMistakesPage() {
                 </div>
                 <div className="blog-card-body">
                   <span className="cat">Risk Management</span>
-                  <h3>Forex Risk Management: How Much Should You Risk Per Trade?</h3>
+                  <h3>Forex Risk Management in the UAE: How Much to Risk Per Trade</h3>
                   <p>Position sizing, stop-losses, and why this matters more than entries.</p>
                 </div>
               </Link>
@@ -137,7 +139,7 @@ export default function BlogCommonMistakesPage() {
                 </div>
                 <div className="blog-card-body">
                   <span className="cat">Chart Reading</span>
-                  <h3>How to Read Candlestick Patterns: A Beginner&apos;s Guide</h3>
+                  <h3>How to Read Candlestick Patterns: A Beginner&apos;s Guide for Dubai</h3>
                   <p>What each candle tells you, and the patterns worth actually learning first.</p>
                 </div>
               </Link>

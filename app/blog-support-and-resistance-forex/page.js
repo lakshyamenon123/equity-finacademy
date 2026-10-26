@@ -10,14 +10,14 @@ import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { STARTRADER_LIVE_URL } from "../lib/whatsapp";
 
 const path = "/blog-support-and-resistance-forex";
-const headline = "Support and Resistance in Forex: A Beginner's Guide";
+const headline = "Support and Resistance in Forex: A Beginner's Guide for Dubai";
 const description =
   "How support and resistance form on a forex chart, how they differ from one candle, and where they sit in a Dubai course.";
 
 const mt5English = ENGLISH_VIDEOS.find((video) => video.id === "ssUPlUHnDLo");
 
 export const metadata = pageMetadata({
-  title: "Support and Resistance in Forex | Equity Fin Academy",
+  title: "Support and Resistance in Forex for Dubai | Equity Fin Academy",
   description,
   keywords:
     "support and resistance forex, support and resistance for beginners, forex course Dubai, private forex training Dubai, one to one forex classes, group forex classes Dubai",
@@ -59,7 +59,7 @@ export default function SupportResistancePost() {
 
             <div className="blog-article">
               <span className="eyebrow">CHART READING</span>
-              <h1>Support and Resistance in Forex: A Beginner&apos;s Guide</h1>
+              <h1>Support and Resistance in Forex: A Beginner&apos;s Guide for Dubai</h1>
               <div className="meta">By Gopi Chandran · Equity Fin Academy · 25 Oct 2026 · 8 min read</div>
 
               <p>
