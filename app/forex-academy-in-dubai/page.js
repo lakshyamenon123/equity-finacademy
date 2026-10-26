@@ -290,7 +290,7 @@ export default function ForexAcademyDubaiPage() {
             </div>
             <p>
               <Link href="/why-choose-us" className="btn btn-outline">
-                See Our Full Why Choose Us Comparison
+                Read why students choose the academy
               </Link>
             </p>
           </div>

@@ -165,7 +165,8 @@ export default function HomePage() {
               <h2>A forex trading academy built on desk experience, not upsells.</h2>
               <p>
                 We keep the promise narrow on purpose: understand how price actually moves, and manage risk like a
-                professional. Everything else is noise.
+                professional. Everything else is noise. The enrolment checklist, with both syllabuses written out, is on{" "}
+                <Link href="/why-choose-us">Why Choose Us</Link>.
               </p>
             </div>
 

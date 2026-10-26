@@ -92,9 +92,9 @@ export const faqCategories = [
       {
         q: "What makes Equity Fin Academy unique?",
         parts: [
-          "An instructor with a background inside institutional trading desks, practical sessions on an SCA-regulated broker, a single-market forex focus taught in depth, and an honest approach with no guaranteed-profit promises. See ",
+          "Gopi Chandran teaches both tracks. The syllabuses are published topic by topic, practical sessions run on an SCA-regulated broker, and you can sit in Dubai or join online across the UAE. See ",
           link("/why-choose-us", "Why Choose Us"),
-          " for the full comparison.",
+          " for the enrolment checks.",
         ],
       },
       {

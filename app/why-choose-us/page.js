@@ -1,84 +1,63 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import JsonLd from "../components/JsonLd";
+import RelatedTraining from "../components/RelatedTraining";
 import Link from "next/link";
 import OpenChatLink from "../components/OpenChatLink";
+import { advancedTopics, basicTopics } from "../lib/curriculum";
 import { pageMetadata } from "../lib/seo";
+import { breadcrumbSchema } from "../lib/schema";
+import { SITE } from "../lib/site";
+import { EQUITY_GLOBAL, EQUITY_GLOBAL_ENGLISH } from "../lib/videos";
+import { STARTRADER_LIVE_URL, whatsappHref } from "../lib/whatsapp";
+
+const path = "/why-choose-us";
 
 export const metadata = pageMetadata({
-  title: "Why Choose Equity Fin Academy — Forex Education Dubai",
+  title: "Why Choose Equity Fin Academy in Dubai | Enrolment Checks",
   description:
-    "An institutional-background instructor, SCA-regulated practice sessions, and a forex curriculum taught in Dubai and online across the UAE. Fees quoted in AED.",
+    "Enrolment checks for Equity Fin Academy: Gopi Chandran teaches both forex tracks, the syllabuses are published topic by topic, and seats are in Dubai or online across the UAE. Fees are quoted in AED when you ask.",
   keywords:
-    "why choose equity fin academy, best forex academy Dubai, trusted forex course UAE, honest forex education, forex mentor with experience, regulated forex training Dubai",
-  path: "/why-choose-us",
+    "why choose equity fin academy, equity fin academy enrolment, forex course checklist Dubai, Gopi Chandran forex course, basic to intermediate forex Dubai, advanced institutional strategies Dubai",
+  path,
 });
 
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.equityfinacademy.com/" },
-    { "@type": "ListItem", position: 2, name: "Why Choose Us", item: "https://www.equityfinacademy.com/why-choose-us" },
-  ],
-};
-
-const differentiators = [
+const checks = [
   {
-    icon: <path d="M4 21V10l8-6 8 6v11M9 21v-6h6v6" />,
-    title: "Instructor with real desk experience",
-    body: "Taught by a full-time forex trader with a background inside institutional trading desks — not a self-taught influencer repeating tutorials.",
+    title: "The teacher is named",
+    body: "Gopi Chandran is the founder and the person in the lesson. He holds an MBA in Finance, built the Equity Global channels, and has trained more than 2,000 students. The biography is on the About page. A school that says “our team” and never names the instructor is a different offer.",
   },
   {
-    icon: <path d="M12 2l8 4v6c0 5-3.4 8.4-8 10-4.6-1.6-8-5-8-10V6l8-4z" />,
-    title: "Practice on a regulated broker",
-    body: "Practical sessions run on Star Trader, regulated by the UAE Securities and Commodities Authority (SCA) — not an anonymous demo platform.",
+    title: "Both syllabuses are public",
+    body: "Basic to Intermediate and Advanced Institutional Strategies are written out below, in the order they are taught. Lifetime WhatsApp with the instructor after the course is the last item on the advanced track only. It is not added to the beginner seat.",
   },
   {
-    icon: (
-      <>
-        <circle cx="12" cy="12" r="9" />
-        <path d="M12 7v5l3 3" />
-      </>
-    ),
-    title: "One market, taught in depth",
-    body: "Class time stays on structure and risk. On MetaTrader 5 that same work covers forex, and gold, indices, and stocks when those are the charts you bring.",
+    title: "The room is a choice",
+    body: "Private one-to-one or a group cohort. In person in Dubai, or live online from any emirate. The academy is open 24/7, including Saturday and Sunday, so a weekend seat is a normal booking.",
   },
   {
-    icon: <path d="M17 21v-2a4 4 0 00-4-4H7a4 4 0 00-4 4v2M12 11a4 4 0 100-8 4 4 0 000 8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />,
-    title: "2,000+ students already trained",
-    body: 'Through the "Equity Global" YouTube channel and live mentorship, across self-paced and cohort-based formats.',
+    title: "Practice uses a named broker",
+    body: "Practical sessions use StarTrader, regulated by the UAE Securities and Commodities Authority (SCA), on MetaTrader 5. You open the account yourself. The course fee and the broker balance are separate.",
   },
   {
-    icon: <path d="M21 11.5a8.5 8.5 0 11-8.5-8.5M21 4l-9.5 9.5-3-3" />,
-    title: "No guaranteed-profit promises",
-    body: "We teach process, discipline and risk management. Anyone promising guaranteed returns from forex trading education isn't being straight with you.",
+    title: "Reviews are off this page",
+    body: "The academy is rated 5.0 on Google from 30+ reviews. The Equity Global channels carry 200+ YouTube reviews and comments. The reviews page points at the Google listing. This page does not paste testimonials.",
   },
   {
-    icon: <path d="M3 5h18M3 12h18M3 19h18" />,
-    title: "A structured curriculum, not random clips",
-    body: "Two clearly sequenced tracks — Basic to Intermediate and Advanced Institutional Strategies — instead of an unordered pile of free videos.",
-  },
-  {
-    icon: <path d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.97-4.03 9-9 9-1.6 0-3.1-.42-4.4-1.15L3 21l1.15-4.6A8.96 8.96 0 013 12c0-4.97 4.03-9 9-9s9 4.03 9 9z" />,
-    title: "Real, ongoing support",
-    body: "Advanced track students keep direct WhatsApp access to the instructor after the course ends — not a one-off webinar you never hear from again.",
-  },
-  {
-    icon: (
-      <>
-        <path d="M12 21c-4.4-2-8-5.5-8-10a8 8 0 0116 0c0 4.5-3.6 8-8 10z" />
-        <circle cx="12" cy="11" r="2.5" />
-      </>
-    ),
-    title: "In Dubai, and online across the UAE",
-    body: "Learn in person in Dubai, UAE, or online across the UAE.",
+    title: "The fee is a quote in AED",
+    body: "No dirham figure is printed here. A number left on a page goes stale. Ask by phone, WhatsApp, or the enquiry form. What each track includes, still without a price, is on the pricing and fees pages.",
   },
 ];
 
 export default function WhyChooseUsPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "Why Choose Us", path },
+        ])}
+      />
       <Header active="why-choose-us" />
 
       <main>
@@ -89,13 +68,16 @@ export default function WhyChooseUsPage() {
               <span className="sep">/</span>
               <span className="current">Why Choose Us</span>
             </nav>
-            <span className="eyebrow">WHY CHOOSE US</span>
-            <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,3rem)", maxWidth: "22ch" }}>
-              What makes Equity Fin Academy different.
+            <span className="eyebrow">ENROLMENT CHECKS</span>
+            <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,3rem)", maxWidth: "20ch" }}>
+              Why students choose Equity Fin Academy
             </h1>
-            <p style={{ maxWidth: "60ch", marginTop: 18 }}>
-              There&apos;s no shortage of forex trading education online. Here&apos;s specifically what we do
-              differently, and why it matters if you&apos;re serious about learning to trade.
+            <p className="hero-sub" style={{ marginTop: 18, maxWidth: "66ch" }}>
+              Use this page when you are deciding. The homepage introduces the academy. The{" "}
+              <Link href="/about">About page</Link> is Gopi Chandran&apos;s profile. The article on{" "}
+              <Link href="/blog-choose-forex-academy-uae">how to choose a forex academy in the UAE</Link> is a general
+              list for any school. Here the questions are narrower: what Equity Fin Academy publishes before you pay,
+              which syllabus you would start, and how a Dubai seat differs from an online seat.
             </p>
           </div>
         </section>
@@ -103,20 +85,17 @@ export default function WhyChooseUsPage() {
         <section>
           <div className="container">
             <div className="section-head reveal">
-              <span className="eyebrow">WHAT MAKES US DIFFERENT</span>
-              <h2>Eight things you can actually verify</h2>
+              <span className="eyebrow">BEFORE YOU ENQUIRE</span>
+              <h2>Six checks you can open yourself</h2>
+              <p>Each item is a fact already published on this site, with the page where you can read the longer version.</p>
             </div>
             <div className="grid-4">
-              {differentiators.map((d) => (
-                <div className="card reveal" key={d.title}>
-                  <div className="icon-badge">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-                      {d.icon}
-                    </svg>
-                  </div>
-                  <h3>{d.title}</h3>
-                  <p>{d.body}</p>
-                </div>
+              {checks.map((item, index) => (
+                <article className="card reveal" key={item.title}>
+                  <div className="num">{String(index + 1).padStart(2, "0")}</div>
+                  <h3>{item.title}</h3>
+                  <p>{item.body}</p>
+                </article>
               ))}
             </div>
           </div>
@@ -125,65 +104,105 @@ export default function WhyChooseUsPage() {
         <section className="tight soft">
           <div className="container">
             <div className="section-head reveal">
-              <span className="eyebrow">A HONEST COMPARISON</span>
-              <h2>Equity Fin Academy vs. typical online forex education</h2>
+              <span className="eyebrow">THE TWO TRACKS</span>
+              <h2>The syllabuses, in teaching order</h2>
+              <p>
+                The <Link href="/courses">courses page</Link> is where these lists sit next to the class format. They are
+                repeated here because a public topic list is one of the reasons to choose the academy.
+              </p>
             </div>
-            <div className="grid-4" style={{ gridTemplateColumns: "1fr 1fr" }}>
+            <div className="course-grid">
               <div className="card reveal">
-                <h3 style={{ color: "var(--green)" }}>Equity Fin Academy</h3>
-                <ul className="course-list" style={{ margin: 0 }}>
-                  <li>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M5 13l4 4L19 7" />
-                    </svg>
-                    Instructor with institutional trading-desk background
-                  </li>
-                  <li>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M5 13l4 4L19 7" />
-                    </svg>
-                    Practical sessions on an SCA-regulated broker
-                  </li>
-                  <li>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M5 13l4 4L19 7" />
-                    </svg>
-                    Structured, sequenced curriculum
-                  </li>
-                  <li>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M5 13l4 4L19 7" />
-                    </svg>
-                    Clear, upfront risk disclaimers
-                  </li>
-                  <li>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                      <path d="M5 13l4 4L19 7" />
-                    </svg>
-                    Real address, phone number and reviews
-                  </li>
-                </ul>
+                <h3>Basic to Intermediate</h3>
+                <p>For people who are new to forex, or who want the topics in order before the advanced class.</p>
+                <ol className="guide-list">
+                  {basicTopics.map((topic) => (
+                    <li key={topic}>{topic}</li>
+                  ))}
+                </ol>
               </div>
               <div className="card reveal">
-                <h3 style={{ color: "var(--fall)" }}>Typical &quot;get rich quick&quot; trading content</h3>
-                <ul className="course-list" style={{ margin: 0 }}>
-                  <li style={{ color: "var(--fall)" }}>✕ Anonymous &quot;guru&quot; with no verifiable background</li>
-                  <li style={{ color: "var(--fall)" }}>✕ Unregulated signal groups or demo-only platforms</li>
-                  <li style={{ color: "var(--fall)" }}>✕ Random, unordered free clips</li>
-                  <li style={{ color: "var(--fall)" }}>✕ Promises of guaranteed profits</li>
-                  <li style={{ color: "var(--fall)" }}>✕ No physical presence, hard to hold accountable</li>
-                </ul>
+                <h3>Advanced Institutional Strategies</h3>
+                <p>For people who already have the beginner base. WhatsApp after the course belongs to this track only.</p>
+                <ol className="guide-list">
+                  {advancedTopics.map((topic) => (
+                    <li key={`adv-${topic}`}>{topic}</li>
+                  ))}
+                </ol>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="tight">
-          <div className="container">
-            <blockquote className="pull-quote reveal">
-              <p>&quot;We&apos;d rather you learn slower and correctly than fast and wrong. That&apos;s the whole difference.&quot;</p>
-              <cite>— Gopi Chandran, Founder, Equity Fin Academy</cite>
-            </blockquote>
+        <section>
+          <div className="container prose-block">
+            <h2>Where each check is spelled out</h2>
+            <p>
+              The instructor profile, including the MBA and the move into full-time forex teaching, stays on{" "}
+              <Link href="/about">About Us</Link>. Do not treat the short card above as the biography.
+            </p>
+            <p>
+              Private one-to-one lessons and group cohorts are compared on{" "}
+              <Link href="/private-group-forex-training-dubai">private versus group classes</Link>. A Saturday or Sunday
+              request is described on <Link href="/weekend-forex-classes-dubai">weekend forex classes in Dubai</Link>.
+              The in-person Dubai offer, as a school day rather than a checklist, is the{" "}
+              <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link> page. Students in another
+              emirate should read the <Link href="/forex-training-academy-uae">UAE training page</Link>, then the notes
+              for <Link href="/forex-course-abu-dhabi">Abu Dhabi</Link> or <Link href="/forex-course-sharjah">Sharjah</Link>{" "}
+              if that is where they live. Online study from any emirate is the{" "}
+              <Link href="/online-forex-course-uae">online forex course</Link>.
+            </p>
+            <p>
+              Practical sessions run on{" "}
+              <a href={STARTRADER_LIVE_URL} target="_blank" rel="sponsored noopener noreferrer">
+                StarTrader
+              </a>
+              , an SCA-regulated broker. The link is the academy&apos;s affiliate link. The academy does not open the
+              account for you and does not manage the funds. MetaTrader 5 is the platform. The same chart work covers
+              gold, indices, and stocks when that is the symbol you bring, which is explained on the{" "}
+              <Link href="/stock-market-course-dubai">stock market course in Dubai</Link> page. There is no third
+              syllabus under another name.
+            </p>
+            <p>
+              Google reviews are linked from <Link href="/success-stories">Reviews</Link>. YouTube is split by language:{" "}
+              <a href={EQUITY_GLOBAL_ENGLISH.url} target="_blank" rel="noopener noreferrer">
+                Equity Global English
+              </a>{" "}
+              and the{" "}
+              <a href={EQUITY_GLOBAL.url} target="_blank" rel="noopener noreferrer">
+                Equity Global channel
+              </a>
+              , which is in Malayalam. Watch them to judge whether the explanations are clear. They are a preview, not
+              the live course.
+            </p>
+            <p>
+              Fees are quoted when you enquire. <Link href="/pricing">Pricing</Link> lists what a track includes.{" "}
+              <Link href="/forex-course-fees-dubai">Forex course fees in Dubai</Link> explains why a dirham figure is not
+              printed. Coaching after a syllabus hour, as distinct from the advanced-track WhatsApp line, is{" "}
+              <Link href="/forex-mentorship-dubai">forex mentorship in Dubai</Link>. Say which of those you mean in the
+              first message.
+            </p>
+
+            <h2>What to send when you enquire</h2>
+            <p>
+              Name the track, Basic to Intermediate or Advanced Institutional Strategies. Name the format, private or
+              group. Name the place, the Dubai room or online. Then ask for the fee and the next open time. The academy
+              is open 24/7. Call <a href={`tel:${SITE.telephoneTel}`}>{SITE.telephoneDisplay}</a>, message on{" "}
+              <a href={whatsappHref("Hi, I would like the enrolment checks for a forex seat")} target="_blank" rel="noopener noreferrer">
+                WhatsApp
+              </a>
+              , or use the <Link href="/contact">contact form</Link>. The map for an in-person class is on that contact
+              page. This page does not publish a floor or a building name.
+            </p>
+            <p>
+              Beginners who want the first classes described before they write can read{" "}
+              <Link href="/blog-forex-course-dubai-beginners">what a beginner forex course in Dubai covers</Link>. People
+              comparing a private hour with a cohort can read{" "}
+              <Link href="/blog-private-vs-group-forex-classes-dubai">private versus group classes</Link>. People who
+              want a checklist they could apply to any school, not only this one, should use the{" "}
+              <Link href="/blog-choose-forex-academy-uae">UAE academy article</Link> and then come back here for this
+              academy&apos;s answers.
+            </p>
           </div>
         </section>
 
@@ -191,16 +210,26 @@ export default function WhyChooseUsPage() {
           <div className="container">
             <div className="cta-banner reveal">
               <div>
-                <h2>See if Equity Fin Academy is right for you.</h2>
-                <p>Compare the two course tracks, or call us to talk through which one fits your experience.</p>
+                <h2>Ask for the seat that matches the checklist.</h2>
+                <p>Say the track and the format. The current fee is quoted in AED when you ask.</p>
               </div>
               <div className="cta-row">
                 <Link href="/courses" className="btn btn-primary">
-                  View Courses
+                  View the two tracks
                 </Link>
-                <OpenChatLink className="btn btn-outline">Contact Us</OpenChatLink>
+                <OpenChatLink className="btn btn-outline">Enquire</OpenChatLink>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className="tight soft">
+          <div className="container">
+            <div className="section-head reveal">
+              <span className="eyebrow">RELATED PAGES</span>
+              <h2>Read the page that matches the question</h2>
+            </div>
+            <RelatedTraining current={path} />
           </div>
         </section>
       </main>
