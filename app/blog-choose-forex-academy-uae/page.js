@@ -13,7 +13,7 @@ const path = "/blog-choose-forex-academy-uae";
 const headline = "How to Choose a Forex Training Academy in the UAE";
 
 export const metadata = pageMetadata({
-  title: `${headline} | Equity Fin Academy`,
+  title: "Choose a Forex Academy in the UAE | Equity Fin Academy",
   description:
     "How to compare a forex training academy in the UAE: a named instructor, a real syllabus, a regulated broker, and reviews you can open yourself.",
   keywords:

@@ -12,9 +12,9 @@ import { VIDEOS } from "../lib/videos";
 const path = "/forex-course-sharjah";
 
 export const metadata = pageMetadata({
-  title: "Forex Course in Sharjah — Classes in Dubai, UAE | Equity Fin Academy",
+  title: "Forex Course in Sharjah | Equity Fin Academy",
   description:
-    "Forex training for Sharjah students at Equity Fin Academy. Live classes are in Dubai, on Dubai's side of the Sharjah border — curriculum, who should come, and how to enquire.",
+    "Forex course for Sharjah students at Equity Fin Academy. Live classes are in Dubai, UAE, or online across the UAE. See who should come and how to enquire.",
   keywords:
     "forex course Sharjah, forex training Sharjah, forex classes near Sharjah, learn forex Al Nahda, forex academy near Sharjah Dubai",
   path,

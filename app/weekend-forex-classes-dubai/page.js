@@ -17,7 +17,7 @@ const whatsapp = whatsappHref("Hi, I'd like weekend forex classes in Dubai");
 export const metadata = pageMetadata({
   title: "Weekend Forex Classes in Dubai | Equity Fin Academy",
   description:
-    "Weekend forex classes in Dubai and online across the UAE. The academy is open Saturday and Sunday. No fixed timetable is published. Ask WhatsApp for the next seat.",
+    "Weekend forex classes in Dubai and online across the UAE. Open Saturday and Sunday. No timetable is published. Ask for the next seat.",
   keywords:
     "weekend forex classes Dubai, Saturday forex course Dubai, Sunday forex class UAE, weekend trading course Dubai, part time forex course Dubai, online weekend forex class UAE",
   path,

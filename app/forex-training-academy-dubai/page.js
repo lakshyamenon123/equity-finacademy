@@ -135,7 +135,8 @@ export default function ForexTrainingAcademyDubaiPage() {
               There are two tracks. Basic to Intermediate starts from forex itself: candles, market structure, and the habits that stop a new account being the lesson. Advanced Institutional Strategies is for people who already have that base. It covers market profile, volume with smart money concepts, Fibonacci, risk and psychology, and bot-trading concepts. Lifetime WhatsApp access to the instructor, after the course, is part of the advanced track only. It is not added to the beginner cohort.
             </p>
             <p>
-              Topic lists, without the enrolment story, are on <Link href="/courses">Courses</Link>. Beginners who want the class described hour by hour can read{" "}
+              Topic lists, without the enrolment story, are on the{" "}
+              <Link href="/courses">forex trading courses in Dubai</Link> page. Beginners who want the class described hour by hour can read{" "}
               <Link href="/blog-forex-course-dubai-beginners">what a beginner forex course in Dubai covers</Link>. This page will not repeat that article.
             </p>
 

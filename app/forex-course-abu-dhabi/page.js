@@ -12,7 +12,7 @@ import { VIDEOS } from "../lib/videos";
 const path = "/forex-course-abu-dhabi";
 
 export const metadata = pageMetadata({
-  title: "Forex Course in Abu Dhabi — Classes in Dubai, UAE | Equity Fin Academy",
+  title: "Forex Course in Abu Dhabi | Equity Fin Academy",
   description:
     "A forex course for Abu Dhabi students, taught live in Dubai, UAE. What you study, how the trip works, and where to start with the free lessons.",
   keywords:

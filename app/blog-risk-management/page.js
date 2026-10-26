@@ -4,14 +4,15 @@ import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Forex Risk Management: How Much Should You Risk Per Trade? | Equity Fin Academy",
+  title: "How Much to Risk Per Forex Trade | Equity Fin Academy",
   description:
-    "A practical guide to forex risk management for beginners: position sizing, stop-losses, the 1-2% rule, and why risk management matters more than any entry strategy.",
+    "Forex risk management for beginners: position sizing, stop-losses, the 1-2% rule, and why risk matters more than the entry.",
   keywords: "forex risk management, how much to risk per trade forex, position sizing forex, stop loss strategy forex, risk management for beginners",
   openGraph: {
-    title: "Forex Risk Management: How Much Should You Risk Per Trade?",
-    description: "Position sizing, stop-losses, and why risk management matters more than entries.",
+    title: "How Much to Risk Per Forex Trade | Equity Fin Academy",
+    description: "Forex risk management for beginners: position sizing, stop-losses, the 1-2% rule, and why risk matters more than the entry.",
     type: "article",
+    url: "https://www.equityfinacademy.com/blog-risk-management",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Dubai, UAE" }],
   },
   alternates: { canonical: "https://www.equityfinacademy.com/blog-risk-management" },

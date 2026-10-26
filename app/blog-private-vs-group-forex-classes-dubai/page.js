@@ -13,7 +13,7 @@ const path = "/blog-private-vs-group-forex-classes-dubai";
 const headline = "Private vs Group Forex Classes in Dubai";
 
 export const metadata = pageMetadata({
-  title: `${headline} | Equity Fin Academy`,
+  title: "Private vs Group Forex Classes | Equity Fin Academy",
   description:
     "Private one-to-one forex coaching and group classes in Dubai suit different people. See which format fits your pace, questions, and work week.",
   keywords:

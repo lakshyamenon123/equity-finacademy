@@ -405,7 +405,7 @@ export default function HomePage() {
           <div className="container">
             <div className="topics-row reveal">
               <Link href="/forex-training-academy-dubai" className="topic-chip">forex academy Dubai</Link>
-              <Link href="/forex-training-academy-dubai" className="topic-chip">forex training Dubai</Link>
+              <Link href="/courses" className="topic-chip">forex trading courses in Dubai</Link>
               <Link href="/forex-training-academy-uae" className="topic-chip">forex course UAE</Link>
               <Link href="/forex-academy-in-dubai" className="topic-chip">Forex Academy in Dubai</Link>
               <Link href="/best-forex-course-dubai" className="topic-chip">Best Forex Course in Dubai</Link>
@@ -417,7 +417,8 @@ export default function HomePage() {
               <Link href="/blog-market-structure" className="topic-chip">Market Structure</Link>
               <Link href="/blog-candlestick-patterns" className="topic-chip">Candlestick Patterns</Link>
               <Link href="/blog-risk-management" className="topic-chip">Risk Management</Link>
-              <Link href="/courses" className="topic-chip">Forex Course Tracks</Link>
+              <Link href="/blog-forex-trading-courses-dubai" className="topic-chip">How to read a course syllabus</Link>
+              <Link href="/blog-one-to-one-forex-classes-dubai" className="topic-chip">Prepare for a one-to-one class</Link>
               <Link href="/stock-market-course-dubai" className="topic-chip">Stock Market Course Dubai</Link>
               <Link href="/forex-course-fees-dubai" className="topic-chip">Forex Course Fees Dubai</Link>
               <Link href="/forex-mentorship-dubai" className="topic-chip">Forex Mentorship Dubai</Link>

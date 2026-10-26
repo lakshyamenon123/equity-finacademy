@@ -4,14 +4,15 @@ import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
 
 export const metadata = {
-  title: "How to Read Candlestick Patterns: A Beginner's Guide | Equity Fin Academy",
+  title: "Candlestick Patterns for Beginners | Equity Fin Academy",
   description:
     "Learn how to read forex candlestick patterns as a beginner: what a candle represents, the patterns worth learning first, and how they fit into market structure.",
   keywords: "how to read candlestick patterns, candlestick patterns for beginners, forex candlestick guide, candlestick chart explained, doji hammer engulfing pattern",
   openGraph: {
-    title: "How to Read Candlestick Patterns: A Beginner's Guide",
+    title: "Candlestick Patterns for Beginners | Equity Fin Academy",
     description: "What each candle represents, and the patterns worth learning first as a beginner forex trader.",
     type: "article",
+    url: "https://www.equityfinacademy.com/blog-candlestick-patterns",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Dubai, UAE" }],
   },
   alternates: { canonical: "https://www.equityfinacademy.com/blog-candlestick-patterns" },

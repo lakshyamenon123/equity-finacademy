@@ -12,9 +12,9 @@ const path = "/blog-forex-course-dubai-beginners";
 const headline = "Forex Course in Dubai for Beginners: What to Expect";
 
 export const metadata = pageMetadata({
-  title: `${headline} | Equity Fin Academy`,
+  title: "Forex Course in Dubai for Beginners | Equity Fin Academy",
   description:
-    "What a beginner forex course in Dubai includes at Equity Fin Academy: the Basic to Intermediate group class in Dubai, the topics in order, and what is not promised.",
+    "What a beginner forex course in Dubai includes: the Basic to Intermediate group class, the topics in order, and what is not promised.",
   keywords:
     "forex course Dubai for beginners, forex classes for beginners Dubai, what to expect forex course, group forex training classes Dubai, forex classes near me Dubai",
   path,
