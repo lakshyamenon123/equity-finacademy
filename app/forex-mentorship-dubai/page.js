@@ -15,9 +15,9 @@ const path = "/forex-mentorship-dubai";
 const whatsapp = whatsappHref("Hi, I'm interested in forex mentorship in Dubai");
 
 export const metadata = pageMetadata({
-  title: "Forex Mentorship in Dubai | Trading Coach | Equity Fin Academy",
+  title: "Forex Mentorship in Dubai | Equity Fin Academy",
   description:
-    "Forex mentorship in Dubai with trading coach Gopi Chandran. Private lessons, group classes, and advanced-track WhatsApp. Separate from the private-versus-group page. Fees on enquiry.",
+    "Forex mentorship in Dubai with trading coach Gopi Chandran. Private lessons, group classes, and advanced-track WhatsApp. Fees are quoted when you enquire.",
   keywords:
     "forex mentorship dubai, trading coach dubai, forex coach Dubai, forex mentor UAE, live mentorship Dubai, private forex coach Dubai, Equity Fin Academy mentor",
   path,

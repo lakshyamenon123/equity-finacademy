@@ -4,13 +4,14 @@ import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Smart Money Concepts (SMC) Explained for Beginners | Equity Fin Academy",
+  title: "Smart Money Concepts for Beginners | Equity Fin Academy",
   description: "Smart money concepts (SMC) explained in plain language: liquidity, imbalance, order blocks, and how SMC builds on basic market structure.",
   keywords: "smart money concepts explained, what is SMC trading, liquidity forex trading, order block trading, imbalance in forex market, SMC for beginners",
   openGraph: {
-    title: "Smart Money Concepts (SMC) Explained for Beginners",
+    title: "Smart Money Concepts for Beginners | Equity Fin Academy",
     description: "Liquidity, imbalance and order blocks, in plain language.",
     type: "article",
+    url: "https://www.equityfinacademy.com/blog-smart-money-concepts",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Dubai, UAE" }],
   },
   alternates: { canonical: "https://www.equityfinacademy.com/blog-smart-money-concepts" },

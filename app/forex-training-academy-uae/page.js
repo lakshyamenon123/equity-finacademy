@@ -112,7 +112,9 @@ export default function ForexTrainingAcademyUaePage() {
 
             <h2>What stays the same outside Dubai</h2>
             <p>
-              The group class is still a cohort on a shared syllabus. The private lesson is still your chart and your question. Both still include live trading sessions. Beginners start on Basic to Intermediate: candles, market structure, and the risk habits that belong in week one. The advanced track assumes that base and moves into market profile, volume with smart money concepts, Fibonacci, risk and psychology, and bot-trading concepts.
+              The group class is still a cohort on a shared syllabus. The private lesson is still your chart and your question. Both still include live trading sessions. Beginners start on Basic to Intermediate: candles, market structure, and the risk habits that belong in week one. The advanced track assumes that base and moves into market profile, volume with smart money concepts, Fibonacci, risk and psychology, and bot-trading concepts. The topic lists are on the{" "}
+              <Link href="/courses">forex trading courses in Dubai</Link> page. A way to read any syllabus before you enquire is{" "}
+              <Link href="/blog-forex-trading-courses-dubai">how to read a forex course syllabus</Link>.
             </p>
             <p>
               Lifetime WhatsApp with the instructor, after the course, belongs to the Advanced Institutional Strategies track only. Do not expect it on the beginner seat. Fees are quoted when you enquire. They are not printed here, because a number on a page goes stale and then looks like a promise.

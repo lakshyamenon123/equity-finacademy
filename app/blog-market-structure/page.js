@@ -4,14 +4,15 @@ import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
 
 export const metadata = {
-  title: "What Is Market Structure in Forex Trading? | Equity Fin Academy",
+  title: "What Is Market Structure in Forex? | Equity Fin Academy",
   description:
     "A plain-language explanation of market structure in forex trading: swing highs, swing lows, trends, ranges, and why structure comes before any strategy.",
   keywords: "what is market structure in forex, market structure trading explained, swing high swing low forex, trend vs range trading, forex market structure for beginners",
   openGraph: {
-    title: "What Is Market Structure in Forex Trading?",
+    title: "What Is Market Structure in Forex? | Equity Fin Academy",
     description: "Swing highs, swing lows, and how to tell a trend from a range — the foundation of reading any forex chart.",
     type: "article",
+    url: "https://www.equityfinacademy.com/blog-market-structure",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Dubai, UAE" }],
   },
   alternates: { canonical: "https://www.equityfinacademy.com/blog-market-structure" },

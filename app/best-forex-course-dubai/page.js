@@ -13,7 +13,7 @@ import { VIDEOS } from "../lib/videos";
 const path = "/best-forex-course-dubai";
 
 export const metadata = pageMetadata({
-  title: "Best Forex Course in Dubai: How to Choose | Equity Fin Academy",
+  title: "Best Forex Course in Dubai | Equity Fin Academy",
   description:
     "How to choose a forex course in Dubai. Equity Fin Academy is rated 5.0 on Google from 30+ reviews and has trained 2,000+ students.",
   keywords:

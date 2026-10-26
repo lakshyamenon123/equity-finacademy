@@ -6,17 +6,41 @@ import Link from "next/link";
 import OpenChatLink from "../components/OpenChatLink";
 import { advancedTopics, basicTopics } from "../lib/curriculum";
 import { pageMetadata } from "../lib/seo";
-import { breadcrumbSchema, courseSchemas } from "../lib/schema";
+import RelatedTraining from "../components/RelatedTraining";
+import { breadcrumbSchema, courseSchemas, faqPageSchema } from "../lib/schema";
 import { VIDEOS } from "../lib/videos";
 
 export const metadata = pageMetadata({
-  title: "Forex Course Dubai: Group and Private | Equity Fin Academy",
+  title: "Forex Trading Courses in Dubai | Equity Fin Academy",
   description:
-    "Forex course in Dubai: group classes and private one-to-one lessons with live trading, in person or online across the UAE. Fees quoted on enquiry.",
+    "Forex trading courses in Dubai: live group classes and private one-to-one lessons, in person or online across the UAE. Fees are quoted when you enquire.",
   keywords:
-    "forex course Dubai, learn forex trading UAE, forex trading classes Dubai, group forex training classes Dubai, private forex training Dubai, one to one forex classes Dubai, live trading sessions Dubai, smart money concepts course, market profile trading, Fibonacci retracement course, bot trading strategies forex, risk management course Dubai, institutional forex strategies course, candlestick pattern course Dubai, best forex course for beginners",
+    "forex trading courses in Dubai, forex course Dubai, learn forex trading UAE, forex trading classes Dubai, group forex training classes Dubai, private forex training Dubai, one to one forex classes Dubai, live trading sessions Dubai, smart money concepts course, market profile trading, Fibonacci retracement course, bot trading strategies forex, risk management course Dubai, institutional forex strategies course, candlestick pattern course Dubai, best forex course for beginners",
   path: "/courses",
 });
+
+const courseFaq = [
+  {
+    q: "Which track should I start with?",
+    text: "If you're new to trading, start with Basic to Intermediate — it covers forex fundamentals, candlestick patterns and market structure. If you already understand these, Advanced Institutional Strategies goes straight into institutional tools.",
+  },
+  {
+    q: "Is this course only about forex?",
+    text: "Yes. Both tracks focus on forex, taught as one market-structure framework rather than spread thin across other asset classes. Practical sessions use MetaTrader 5, so the same chart work also covers gold, indices, and stocks the broker lists, alongside forex.",
+  },
+  {
+    q: "What is Lifetime Support via WhatsApp?",
+    text: "Students on the Advanced Institutional Strategies track get ongoing access to the instructor via WhatsApp for questions after the course ends.",
+  },
+  {
+    q: "Do you offer private one-to-one lessons?",
+    text: "Yes. Private one-to-one forex lessons are available in Dubai, including live trading sessions and training. Group cohorts are available too. Call for the current fee — it is not listed on this page.",
+  },
+  {
+    q: "Is broker access included in the course fee?",
+    text: "Practical sessions are run through Star Trader, an SCA-regulated broker. See the pricing page or call for current enrolment and account details.",
+  },
+];
 
 const Check = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -34,6 +58,7 @@ export default function CoursesPage() {
         ])}
       />
       <JsonLd data={courseSchemas()} />
+      <JsonLd data={faqPageSchema(courseFaq)} />
       <Header active="courses" />
 
       <main>
@@ -45,19 +70,19 @@ export default function CoursesPage() {
               <span className="current">Forex Courses</span>
             </nav>
             <span className="eyebrow">CURRICULUM</span>
-            <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,3rem)", maxWidth: "20ch" }}>
-              Two tracks. One market. Forex, taught in depth.
+            <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,3rem)", maxWidth: "18ch" }}>
+              Forex trading courses in Dubai
             </h1>
             <p style={{ maxWidth: "66ch", marginTop: 18 }}>
-              Start at whichever level matches your experience. Both tracks run as live group classes in Dubai, UAE, and online across the UAE,
+              Two tracks, taught live. Start at whichever level matches your experience. Both run as group classes in Dubai, UAE, and online across the UAE,
               with live trading sessions on a regulated broker. Private one-to-one lessons are also available, with
               the same live trading sessions and training — see{" "}
               <Link href="/private-group-forex-training-dubai">private and group forex training</Link>. The academy is
               open 24/7 and rated 5.0 on Google from 30+ reviews. The same MetaTrader 5 work covers gold, indices, and stocks alongside forex on the{" "}
               <Link href="/stock-market-course-dubai">stock market course</Link> page. Smart money concepts are on the{" "}
-              <Link href="/smc-ict-trading-course-dubai">SMC and ICT course</Link> page. New to trading? Read{" "}
-              <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link> or the{" "}
-              <Link href="/blog">forex education blog</Link> first.
+              <Link href="/smc-ict-trading-course-dubai">SMC and ICT course</Link> page. To judge a syllabus before you enquire, read{" "}
+              <Link href="/blog-forex-trading-courses-dubai">how to read a forex course syllabus</Link>. New to the platform? Read{" "}
+              <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>.
             </p>
             <div className="cta-row">
               <a href="https://wa.me/971559047030" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
@@ -205,8 +230,9 @@ export default function CoursesPage() {
                   Is this course only about forex?<span className="plus">+</span>
                 </summary>
                 <p>
-                  Yes. Both tracks focus exclusively on forex, taught as one connected market-structure framework
-                  rather than spread thin across other asset classes.
+                  Yes. Both tracks focus on forex, taught as one market-structure framework rather than spread thin
+                  across other asset classes. Practical sessions use MetaTrader 5, so the same chart work also covers
+                  gold, indices, and stocks the broker lists, alongside forex.
                 </p>
               </details>
               <details>
@@ -246,15 +272,7 @@ export default function CoursesPage() {
 
         <section className="tight">
           <div className="container">
-            <div className="topics-row reveal">
-              <span className="topic-chip">Forex Course Dubai</span>
-              <span className="topic-chip">Learn Forex Trading UAE</span>
-              <span className="topic-chip">Forex Classes for Beginners</span>
-              <span className="topic-chip">Market Profile Trading</span>
-              <span className="topic-chip">Fibonacci Retracement</span>
-              <span className="topic-chip">Bot Trading Strategies</span>
-              <span className="topic-chip">Trading Psychology Course</span>
-            </div>
+            <RelatedTraining current="/courses" />
           </div>
         </section>
       </main>

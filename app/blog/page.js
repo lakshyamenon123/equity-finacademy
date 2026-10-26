@@ -5,12 +5,12 @@ import Link from "next/link";
 export const metadata = {
   title: "Forex Trading Blog | Equity Fin Academy Dubai",
   description:
-    "Forex articles from Equity Fin Academy in Dubai: market hours in UAE time, support and resistance, private and group classes, MT5, and risk.",
+    "Forex articles from Equity Fin Academy in Dubai: course syllabuses, one-to-one class prep, market hours, and risk.",
   keywords: "forex trading blog, forex education articles, forex market hours Dubai, support and resistance forex, learn forex trading online",
   openGraph: {
     title: "Forex Trading Blog | Equity Fin Academy Dubai",
     description:
-      "Forex articles from Equity Fin Academy in Dubai: market hours in UAE time, support and resistance, private and group classes, MT5, and risk.",
+      "Forex articles from Equity Fin Academy in Dubai: course syllabuses, one-to-one class prep, market hours, and risk.",
     type: "website",
     url: "https://www.equityfinacademy.com/blog",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Dubai, UAE" }],
@@ -28,6 +28,32 @@ const breadcrumbSchema = {
 };
 
 const posts = [
+  {
+    href: "/blog-forex-trading-courses-dubai",
+    icon: (
+      <>
+        <path d="M6 3h9l3 3v15H6z" />
+        <path d="M15 3v3h3M8 11h8M8 15h6" />
+      </>
+    ),
+    cat: "Courses",
+    title: "How to Read a Forex Trading Course Syllabus in Dubai",
+    desc: "Topic order, live sessions, and what a fee quote should include before you enrol.",
+    time: "8 min read",
+  },
+  {
+    href: "/blog-one-to-one-forex-classes-dubai",
+    icon: (
+      <>
+        <circle cx="12" cy="8" r="3" />
+        <path d="M6 19c.8-2.6 2.8-4 6-4s5.2 1.4 6 4" />
+      </>
+    ),
+    cat: "Private Lessons",
+    title: "How to Prepare for One-to-One Forex Classes in Dubai",
+    desc: "The chart, the question, and the platform to have ready before a private hour.",
+    time: "7 min read",
+  },
   {
     href: "/blog-forex-market-hours-dubai",
     icon: (

@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import RelatedTraining from "../components/RelatedTraining";
 import YouTubeSection from "../components/YouTubeSection";
 import Link from "next/link";
 import OpenChatLink from "../components/OpenChatLink";
@@ -16,6 +17,7 @@ export const metadata = {
     description:
       "Forex academy in Dubai for beginners and advanced traders. Structured classes, an SCA-regulated broker, and live training in Dubai, UAE.",
     type: "website",
+    url: "https://www.equityfinacademy.com/forex-academy-in-dubai",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Dubai, UAE" }],
   },
   alternates: { canonical: "https://www.equityfinacademy.com/forex-academy-in-dubai" },
@@ -397,14 +399,7 @@ export default function ForexAcademyDubaiPage() {
 
         <section className="tight soft">
           <div className="container">
-            <div className="topics-row reveal">
-              <span className="topic-chip">Best Forex Academy in Dubai</span>
-              <span className="topic-chip">Forex Academy in Dubai</span>
-              <span className="topic-chip">Forex Trading in Dubai</span>
-              <span className="topic-chip">Forex Classes in Dubai</span>
-              <span className="topic-chip">Forex for Beginners</span>
-              <span className="topic-chip">Learn Forex</span>
-            </div>
+            <RelatedTraining current="/forex-academy-in-dubai" />
           </div>
         </section>
 

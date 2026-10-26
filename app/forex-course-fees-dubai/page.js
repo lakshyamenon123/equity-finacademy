@@ -17,7 +17,7 @@ const whatsapp = whatsappHref("Hi, I'd like the current forex course fee in Duba
 export const metadata = pageMetadata({
   title: "Forex Course Fees in Dubai (2026) | Equity Fin Academy",
   description:
-    "Forex course fees in Dubai for 2026: what changes a quote for group classes and private lessons. No price is published. WhatsApp +971 55 904 7030 for the current fee.",
+    "Forex course fees in Dubai for 2026: what changes a quote for group classes and private lessons. No price is published. Ask for the current fee.",
   keywords:
     "forex course fees Dubai, forex course fees in Dubai 2026, forex trading course cost Dubai, forex class price Dubai, private forex lesson fee Dubai, Equity Fin Academy fees",
   path,

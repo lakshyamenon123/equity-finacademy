@@ -4,14 +4,15 @@ import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
 
 export const metadata = {
-  title: "7 Common Mistakes Beginner Forex Traders Make | Equity Fin Academy",
+  title: "7 Beginner Forex Trading Mistakes | Equity Fin Academy",
   description:
     "The most common mistakes beginner forex traders make — from overleveraging to revenge trading — and how a structured learning approach avoids them.",
   keywords: "common forex trading mistakes, beginner forex mistakes, why do forex traders lose money, forex trading pitfalls, mistakes new traders make",
   openGraph: {
-    title: "7 Common Mistakes Beginner Forex Traders Make",
+    title: "7 Beginner Forex Trading Mistakes | Equity Fin Academy",
     description: "The patterns that quietly drain new trading accounts, and how to avoid them.",
     type: "article",
+    url: "https://www.equityfinacademy.com/blog-common-mistakes",
     images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Equity Fin Academy — forex training in Dubai, UAE" }],
   },
   alternates: { canonical: "https://www.equityfinacademy.com/blog-common-mistakes" },

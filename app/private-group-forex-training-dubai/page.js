@@ -136,7 +136,8 @@ export default function PrivateGroupForexTrainingPage() {
               <Link href="/blog-forex-course-dubai-beginners">What beginners should expect</Link> describes the first
               track in more detail.{" "}
               <Link href="/blog-private-vs-group-forex-classes-dubai">Private coaching versus a group class</Link>{" "}
-              is the longer look at which format suits a working week, a first course, or a chart you already trade.{" "}
+              is the longer look at which format suits a working week, a first course, or a chart you already trade. If the private hour is already the choice, read{" "}
+              <Link href="/blog-one-to-one-forex-classes-dubai">how to prepare for a one-to-one class</Link>.{" "}
               <Link href="/blog-choose-forex-academy-uae">How to choose an academy in the UAE</Link>{" "}
               is the checklist if you are still comparing schools.
             </p>
