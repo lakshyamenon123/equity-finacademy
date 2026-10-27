@@ -2,7 +2,9 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
+import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
+import { breadcrumbSchema } from "../lib/schema";
 
 const headline = "Forex Risk Management in the UAE: How Much to Risk Per Trade";
 
@@ -29,21 +31,17 @@ const postSchema = {
   description: "Position sizing in AED, stop-losses, and why risk management matters more than entries for UAE traders.",
 };
 
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.equityfinacademy.com/" },
-    { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.equityfinacademy.com/blog" },
-    { "@type": "ListItem", position: 3, name: "Risk Management", item: "https://www.equityfinacademy.com/blog-risk-management" },
-  ],
-};
-
 export default function BlogRiskManagementPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(postSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "Blog", path: "/blog" },
+          { name: "Risk Management", path: "/blog-risk-management" },
+        ])}
+      />
       <Header active="blog" />
 
       <main>

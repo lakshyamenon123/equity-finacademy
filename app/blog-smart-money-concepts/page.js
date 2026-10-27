@@ -2,12 +2,14 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
+import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
+import { articleSchema, breadcrumbSchema } from "../lib/schema";
 
 const headline = "Smart Money Concepts (SMC) Explained for Beginners in Dubai";
 
 export const metadata = pageMetadata({
-  title: "Smart Money Concepts for Beginners in Dubai | Equity Fin Academy",
+  title: "Smart Money Concepts in Dubai | Equity Fin Academy",
   description:
     "Smart money concepts (SMC) for beginners in Dubai and online across the UAE: liquidity, imbalance, order blocks, and how SMC builds on market structure.",
   keywords:
@@ -16,34 +18,25 @@ export const metadata = pageMetadata({
   type: "article",
 });
 
-const postSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
+const postSchema = articleSchema({
   headline,
-  author: { "@type": "Person", "@id": "https://www.equityfinacademy.com/#gopi", name: "Gopi Chandran", url: "https://www.equityfinacademy.com/about" },
-  publisher: { "@type": "EducationalOrganization", "@id": "https://www.equityfinacademy.com/#organization", name: "Equity Fin Academy", url: "https://www.equityfinacademy.com/" },
-  mainEntityOfPage: "https://www.equityfinacademy.com/blog-smart-money-concepts",
-  image: ["https://www.equityfinacademy.com/og-image.png"],
-  inLanguage: "en-AE",
-  // TODO(owner): add datePublished. This article did not record one, so it is omitted.
-  description: "Liquidity, imbalance and order blocks, in plain language.",
-};
-
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.equityfinacademy.com/" },
-    { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.equityfinacademy.com/blog" },
-    { "@type": "ListItem", position: 3, name: "Smart Money Concepts", item: "https://www.equityfinacademy.com/blog-smart-money-concepts" },
-  ],
-};
+  description:
+    "Liquidity, imbalance, and order blocks for beginners in Dubai, and why each one depends on market structure.",
+  path: "/blog-smart-money-concepts",
+  dateModified: "2026-10-27",
+});
 
 export default function BlogSmartMoneyConceptsPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(postSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <JsonLd data={postSchema} />
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "Blog", path: "/blog" },
+          { name: "Smart Money Concepts", path: "/blog-smart-money-concepts" },
+        ])}
+      />
       <Header active="blog" />
 
       <main>
@@ -102,6 +95,47 @@ export default function BlogSmartMoneyConceptsPage() {
                 behaviour with certainty. It isn&apos;t. It&apos;s a lens for interpreting price behaviour — one of
                 several valid frameworks — not a crystal ball. Like any strategy, it works within a broader plan
                 that includes risk management and requires practice to apply consistently.
+              </p>
+
+              <h2>How to practise the four ideas before a class in Dubai</h2>
+              <p>
+                Pick one pair you already watch, such as EUR/USD, on a one-hour chart. Mark the last two swing highs
+                and the last two swing lows. That is the structure. Then look for one of the four ideas, not all of
+                them at once. A sweep is a wick through one of those swings that closes back inside. An imbalance is
+                a fast move that leaves a gap between candle wicks. An order block is the last opposing candle before
+                that move. If you cannot point at the swing, you do not have a sweep yet.
+              </p>
+              <p>
+                Do this on a demo chart first. A demo ticket will not feel like a live one, which is the point of the{" "}
+                <Link href="/blog-demo-vs-live-mt5-uae">demo versus live account guide</Link>. The install steps, if
+                MetaTrader 5 is not on the machine yet, are in{" "}
+                <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5 in the UAE</Link>. Risk stays in
+                the <Link href="/blog-risk-management">position-sizing article</Link>, because an order block is not a
+                reason to increase size.
+              </p>
+              <p>
+                Dubai and the rest of the UAE share Gulf Standard Time, UTC+4, all year. The London afternoon and the
+                New York open fall in the evening on that clock. If you work days, mark the swings in the morning and
+                review them after work, or book a class at the hour you can keep. The session tables are on the{" "}
+                <Link href="/blog-forex-market-hours-dubai">Dubai market-hours page</Link>. People fitting study
+                around an office job can read{" "}
+                <Link href="/blog-forex-classes-working-professionals-dubai">forex classes for working professionals in Dubai</Link>.
+              </p>
+
+              <h2>What the live class adds</h2>
+              <p>
+                This article names the shapes. It does not watch your chart. In a group cohort or a private lesson,
+                the instructor stops you when the swing you marked is the wrong one. Both formats run in Dubai, UAE,
+                and online across the UAE, with live trading sessions. The fee is quoted in AED when you{" "}
+                <Link href="/contact">enquire</Link>. Private and group seats are compared on{" "}
+                <Link href="/private-group-forex-training-dubai">private and group training</Link>. The topic sits on
+                the advanced track after structure, which is listed on the <Link href="/courses">courses page</Link>.
+              </p>
+              <p>
+                Students in Abu Dhabi use the same clock and the same syllabus. The practical note for that drive, or
+                for studying online instead, is the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>.
+                Read Google reviews on the <Link href="/success-stories">reviews page</Link> rather than a quote
+                written for this article. The instructor is <Link href="/about">Gopi Chandran</Link>.
               </p>
 
               <AcademyLinks lead="Market profile and smart money concepts are taught on the advanced track at the" />

@@ -1,7 +1,10 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import JsonLd from "../components/JsonLd";
 import Link from "next/link";
 import { pageMetadata } from "../lib/seo";
+import { breadcrumbSchema } from "../lib/schema";
+import { absoluteUrl } from "../lib/site";
 
 export const metadata = pageMetadata({
   title: "Forex Trading Blog | Equity Fin Academy Dubai",
@@ -12,16 +15,33 @@ export const metadata = pageMetadata({
   path: "/blog",
 });
 
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.equityfinacademy.com/" },
-    { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.equityfinacademy.com/blog" },
-  ],
-};
-
 const posts = [
+  {
+    href: "/blog-forex-classes-working-professionals-dubai",
+    icon: (
+      <>
+        <circle cx="12" cy="12" r="8" />
+        <path d="M12 8v4l3 2" />
+      </>
+    ),
+    cat: "Working Professionals",
+    title: "Forex Classes for Working Professionals in Dubai",
+    desc: "How to fit an evening or flexible class around a job in Dubai, on Gulf Standard Time.",
+    time: "8 min read",
+  },
+  {
+    href: "/blog-demo-vs-live-mt5-uae",
+    icon: (
+      <>
+        <rect x="3" y="5" width="18" height="14" rx="2" />
+        <path d="M8 12h8M12 9v6" />
+      </>
+    ),
+    cat: "Practice",
+    title: "Demo vs Live: Practising on MT5 before You Trade in the UAE",
+    desc: "What a MetaTrader 5 demo account teaches, what it hides, and when a live account is the next step.",
+    time: "8 min read",
+  },
   {
     href: "/blog-forex-trading-courses-dubai",
     icon: (
@@ -170,10 +190,35 @@ const posts = [
   },
 ];
 
+const blogListingSchema = {
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "@id": `${absoluteUrl("/blog")}#blog`,
+  url: absoluteUrl("/blog"),
+  name: "Forex articles for Dubai and the UAE",
+  description:
+    "Forex articles from Equity Fin Academy in Dubai: class formats, MetaTrader 5 practice, session times, and chart reading.",
+  inLanguage: "en-AE",
+  publisher: { "@id": "https://www.equityfinacademy.com/#organization" },
+  blogPost: posts.map((post) => ({
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.desc,
+    url: absoluteUrl(post.href),
+    mainEntityOfPage: absoluteUrl(post.href),
+  })),
+};
+
 export default function BlogIndexPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "Blog", path: "/blog" },
+        ])}
+      />
+      <JsonLd data={blogListingSchema} />
       <Header active="blog" />
 
       <main>
@@ -188,10 +233,22 @@ export default function BlogIndexPage() {
             <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,3rem)", maxWidth: "20ch" }}>
               Forex articles for Dubai and the UAE.
             </h1>
-            <p style={{ maxWidth: "60ch", marginTop: 18 }}>
+            <p style={{ maxWidth: "66ch", marginTop: 18 }}>
               Plain-language explanations of the concepts that matter, from session times in the UAE to the areas where price has stalled. The live classes are the{" "}
               <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link> page and the{" "}
-              <Link href="/forex-training-academy-uae">forex training academy UAE</Link> page.
+              <Link href="/forex-training-academy-uae">forex training academy UAE</Link> page. The two tracks those pages point at are on <Link href="/courses">Courses</Link>.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <div className="container prose-block">
+            <h2>Start with the question you actually have</h2>
+            <p>
+              If you have a day job in Dubai, read <Link href="/blog-forex-classes-working-professionals-dubai">forex classes for working professionals</Link> before you assume the class has to be at noon. If you are about to fund a broker account, read <Link href="/blog-demo-vs-live-mt5-uae">demo versus live on MT5</Link> first, then <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>. The chart lessons sit underneath both: <Link href="/blog-candlestick-patterns">candlesticks</Link>, <Link href="/blog-market-structure">market structure</Link>, and <Link href="/blog-smart-money-concepts">smart money concepts</Link>.
+            </p>
+            <p>
+              People comparing a classroom in Dubai with a screen at home should use the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> if that is the emirate, or <Link href="/online-forex-course-uae">online study across the UAE</Link>. Reviews stay on Google. The <Link href="/success-stories">reviews page</Link> explains why this site does not paste testimonials. To ask about a seat, use <Link href="/contact">contact</Link> or WhatsApp +971 55 904 7030. Say group or private, and Dubai or online.
             </p>
           </div>
         </section>

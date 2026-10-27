@@ -22,6 +22,11 @@ const LINKS = [
   { href: "/blog-private-vs-group-forex-classes-dubai", label: "Which class format fits" },
   { href: "/blog-start-forex-trading-uae-mt5", label: "Start forex with MT5" },
   { href: "/blog-forex-market-hours-dubai", label: "Forex market hours in Dubai" },
+  { href: "/blog-forex-classes-working-professionals-dubai", label: "Classes for working professionals" },
+  { href: "/blog-demo-vs-live-mt5-uae", label: "Demo vs live on MT5" },
+  { href: "/blog-smart-money-concepts", label: "Smart money concepts" },
+  { href: "/success-stories", label: "Student reviews" },
+  { href: "/contact", label: "Contact the academy" },
   { href: "/blog-support-and-resistance-forex", label: "Support and resistance" },
 ];
 

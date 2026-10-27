@@ -17,7 +17,7 @@ const description =
 const mt5English = ENGLISH_VIDEOS.find((video) => video.id === "ssUPlUHnDLo");
 
 export const metadata = pageMetadata({
-  title: "Support and Resistance in Forex for Dubai | Equity Fin Academy",
+  title: "Support and Resistance in Forex | Equity Fin Academy",
   description,
   keywords:
     "support and resistance forex, support and resistance for beginners, forex course Dubai, private forex training Dubai, one to one forex classes, group forex classes Dubai",

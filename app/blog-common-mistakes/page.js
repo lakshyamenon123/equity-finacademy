@@ -2,7 +2,9 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
+import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
+import { breadcrumbSchema } from "../lib/schema";
 
 const headline = "7 Common Mistakes Beginner Forex Traders Make in the UAE";
 
@@ -29,21 +31,17 @@ const postSchema = {
   description: "The most common mistakes beginner forex traders make, and how to avoid them.",
 };
 
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.equityfinacademy.com/" },
-    { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.equityfinacademy.com/blog" },
-    { "@type": "ListItem", position: 3, name: "Common Mistakes", item: "https://www.equityfinacademy.com/blog-common-mistakes" },
-  ],
-};
-
 export default function BlogCommonMistakesPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(postSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "Blog", path: "/blog" },
+          { name: "Common Mistakes", path: "/blog-common-mistakes" },
+        ])}
+      />
       <Header active="blog" />
 
       <main>

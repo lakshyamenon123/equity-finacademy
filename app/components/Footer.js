@@ -99,6 +99,9 @@ export default function Footer() {
             <div className="footer-col">
               <h3>Learn</h3>
               <Link href="/blog">Blog</Link>
+              <Link href="/blog-forex-classes-working-professionals-dubai">Classes for Professionals</Link>
+              <Link href="/blog-demo-vs-live-mt5-uae">Demo vs Live on MT5</Link>
+              <Link href="/blog-smart-money-concepts">Smart Money Concepts</Link>
               <Link href="/blog-forex-trading-courses-dubai">Forex Course Syllabus</Link>
               <Link href="/blog-one-to-one-forex-classes-dubai">One-to-One Class Prep</Link>
               <Link href="/blog-private-vs-group-forex-classes-dubai">Private vs Group Classes</Link>

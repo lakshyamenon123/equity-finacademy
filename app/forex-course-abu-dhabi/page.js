@@ -14,7 +14,7 @@ const path = "/forex-course-abu-dhabi";
 export const metadata = pageMetadata({
   title: "Forex Course in Abu Dhabi | Equity Fin Academy",
   description:
-    "A forex course for Abu Dhabi students, taught live in Dubai, UAE. What you study, how the trip works, and where to start with the free lessons.",
+    "Forex course for Abu Dhabi students: classes in Dubai or online on Gulf Standard Time. What you study, and how to choose.",
   keywords:
     "forex course Abu Dhabi, forex training Abu Dhabi, forex classes for Abu Dhabi residents, learn forex trading Abu Dhabi, forex academy near Abu Dhabi",
   path,
@@ -106,6 +106,26 @@ export default function ForexCourseAbuDhabiPage() {
               Practical sessions run on Star Trader, regulated by the UAE Securities and Commodities Authority. You are
               learning the platform you would use on a regulated account. The academy teaches. It does not place trades
               for you or guarantee a result.
+            </p>
+
+            <h2>Abu Dhabi is on the same clock as Dubai</h2>
+            <p>
+              The UAE does not split time zones. Abu Dhabi and Dubai both use Gulf Standard Time, UTC+4, all year. A class timed for 7pm is 7pm in both cities. You do not add or subtract an hour because you live in the capital. What changes is the journey, not the session. London and New York hours, converted to that clock, are on the{" "}
+              <Link href="/blog-forex-market-hours-dubai">Dubai market-hours page</Link>.
+            </p>
+            <p>
+              If the drive is the problem, take the same tracks online. The <Link href="/online-forex-course-uae">online forex course</Link> is the same instructor and the same syllabus. If the problem is a weekday job, read{" "}
+              <Link href="/blog-forex-classes-working-professionals-dubai">forex classes for working professionals in Dubai</Link> and <Link href="/weekend-forex-classes-dubai">weekend classes</Link>, then say which hours you can keep. Practise between lessons on a demo account first. The difference between that and a live account is in{" "}
+              <Link href="/blog-demo-vs-live-mt5-uae">demo versus live on MT5</Link>.
+            </p>
+
+            <h2>What to send if you are writing from Abu Dhabi</h2>
+            <p>
+              Tell the academy you are in Abu Dhabi, whether you want to drive to Dubai or study online, and whether you want a group seat or a private lesson. Name the track: Basic to Intermediate, or Advanced Institutional Strategies if you already read structure. Ask for the fee in AED and the next time that fits. WhatsApp is{" "}
+              <a href="https://wa.me/971559047030" target="_blank" rel="noopener noreferrer">+971 55 904 7030</a>. The form is on the <Link href="/contact">contact page</Link>.
+            </p>
+            <p>
+              The written version of the advanced topic most people ask about is <Link href="/blog-smart-money-concepts">smart money concepts</Link>. It is an explanation, not the class. Reviews of the academy are on Google, linked from the <Link href="/success-stories">reviews page</Link>. This page does not add quotes. The Dubai school, written as the in-person offer, is the <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link> page. The wider UAE page is <Link href="/forex-training-academy-uae">forex training academy UAE</Link>.
             </p>
 
             <h2>How to decide if the drive is worth it</h2>

@@ -40,12 +40,21 @@ export function breadcrumbSchema(items) {
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: items.map((item, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
-      name: item.name,
-      item: absoluteUrl(item.path),
-    })),
+    itemListElement: items.map((item, index) => {
+      const url = absoluteUrl(item.path);
+      // Google reads item.id. A string URL is easy to miss; @id must be absolute.
+      return {
+        "@type": "ListItem",
+        position: index + 1,
+        name: item.name,
+        item: {
+          "@type": "WebPage",
+          "@id": url,
+          url,
+          name: item.name,
+        },
+      };
+    }),
   };
 }
 
@@ -136,10 +145,8 @@ export function articleSchema({ headline, description, path, datePublished, date
       url: absoluteUrl("/"),
     },
   };
-  if (datePublished) {
-    article.datePublished = datePublished;
-    article.dateModified = dateModified || datePublished;
-  }
+  if (datePublished) article.datePublished = datePublished;
+  if (dateModified || datePublished) article.dateModified = dateModified || datePublished;
   return article;
 }
 

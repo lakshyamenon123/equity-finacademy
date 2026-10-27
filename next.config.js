@@ -19,12 +19,41 @@ const nextConfig = {
   skipTrailingSlashRedirect: true,
   images: { unoptimized: true },
   async redirects() {
-    // permanent: true is a 308. Old marketing URLs from Search Console.
-    return [
-      { source: "/home", destination: "/", permanent: true },
-      { source: "/about-us", destination: "/about", permanent: true },
-      { source: "/:path+/", destination: "/:path+", permanent: true },
+    // permanent: true is a 308. List the legacy URL before its trailing-slash
+    // twin so each request is one hop, then strip any other trailing slash.
+    const pairs = [
+      ["/home", "/"],
+      ["/index.html", "/"],
+      ["/index.htm", "/"],
+      ["/index.php", "/"],
+      ["/default.html", "/"],
+      ["/about-us", "/about"],
+      ["/aboutus", "/about"],
+      ["/about.html", "/about"],
+      ["/about.php", "/about"],
+      ["/contact-us", "/contact"],
+      ["/contactus", "/contact"],
+      ["/contact.html", "/contact"],
+      ["/contact.php", "/contact"],
+      ["/courses.html", "/courses"],
+      ["/courses.php", "/courses"],
+      ["/pricing.html", "/pricing"],
+      ["/why-choose-us.html", "/why-choose-us"],
+      ["/forex-academy-in-dubai.html", "/forex-academy-in-dubai"],
+      ["/success-stories.html", "/success-stories"],
+      ["/faq.html", "/faq"],
+      ["/blog.html", "/blog"],
+      ["/resources.html", "/blog"],
+      ["/beginners-guide.html", "/blog-forex-course-dubai-beginners"],
+      ["/trading-strategies.html", "/courses"],
+      ["/terms.html", "/terms"],
+      ["/privacy.html", "/privacy"],
     ];
+    const legacy = pairs.flatMap(([source, destination]) => [
+      { source, destination, permanent: true },
+      { source: `${source}/`, destination, permanent: true },
+    ]);
+    return [...legacy, { source: "/:path+/", destination: "/:path+", permanent: true }];
   },
   async headers() {
     return [

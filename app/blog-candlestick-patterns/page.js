@@ -2,14 +2,16 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
+import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
+import { breadcrumbSchema } from "../lib/schema";
 
 const headline = "How to Read Candlestick Patterns: A Beginner's Guide for Dubai";
 
 export const metadata = pageMetadata({
-  title: "Candlestick Patterns for Beginners in Dubai | Equity Fin Academy",
+  title: "Candlestick Patterns in Dubai | Equity Fin Academy",
   description:
-    "Learn how to read forex candlestick patterns in Dubai and across the UAE: what a candle represents, which patterns to learn first, and how Gulf Standard Time frames the session.",
+    "How to read forex candlestick patterns in Dubai and the UAE: what one candle shows, and which patterns to learn first.",
   keywords:
     "how to read candlestick patterns Dubai, candlestick patterns for beginners UAE, forex candlestick guide Dubai, candlestick chart explained, doji hammer engulfing pattern",
   path: "/blog-candlestick-patterns",
@@ -30,21 +32,17 @@ const postSchema = {
     "What a candle represents for beginners in Dubai and across the UAE, and the patterns worth learning first.",
 };
 
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.equityfinacademy.com/" },
-    { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.equityfinacademy.com/blog" },
-    { "@type": "ListItem", position: 3, name: "Candlestick Patterns", item: "https://www.equityfinacademy.com/blog-candlestick-patterns" },
-  ],
-};
-
 export default function BlogCandlestickPatternsPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(postSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "Blog", path: "/blog" },
+          { name: "Candlestick Patterns", path: "/blog-candlestick-patterns" },
+        ])}
+      />
       <Header active="blog" />
 
       <main>

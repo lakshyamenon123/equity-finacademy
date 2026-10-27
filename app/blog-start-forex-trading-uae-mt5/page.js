@@ -78,7 +78,9 @@ export default function StartForexMt5Post() {
               <p>
                 The live version of that sequence is the Basic to Intermediate track on the{" "}
                 <Link href="/courses">courses page</Link>. The articles are the written form. They are not a
-                replacement for someone watching your chart.
+                replacement for someone watching your chart. If the platform is already installed and you are deciding
+                between a demo balance and a funded one, read{" "}
+                <Link href="/blog-demo-vs-live-mt5-uae">demo versus live on MT5</Link> before you deposit.
               </p>
 
               <h2>You need a platform and a broker</h2>

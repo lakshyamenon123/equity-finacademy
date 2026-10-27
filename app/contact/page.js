@@ -1,9 +1,13 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import JsonLd from "../components/JsonLd";
 import LeadForm from "../components/LeadForm";
 import RelatedTraining from "../components/RelatedTraining";
 import Link from "next/link";
 import { pageMetadata } from "../lib/seo";
+import { breadcrumbSchema, faqPageSchema } from "../lib/schema";
+import { absoluteUrl, SITE } from "../lib/site";
+import { whatsappHref } from "../lib/whatsapp";
 
 export const metadata = pageMetadata({
   title: "Contact Us — Equity Fin Academy, Dubai, UAE",
@@ -14,19 +18,49 @@ export const metadata = pageMetadata({
   path: "/contact",
 });
 
-const breadcrumbSchema = {
+const contactFaq = [
+  {
+    q: "Do I need an appointment to visit?",
+    text: "The academy is open 24/7. Calling ahead means someone can walk you through the forex course tracks, including private one-to-one lessons, in person in Dubai.",
+  },
+  {
+    q: "How quickly do you respond to enquiries?",
+    text: "Call or WhatsApp +971 55 904 7030. Course enquiries are usually answered the same day. Say whether you want a group seat or a private lesson, and whether you will be in Dubai or online.",
+  },
+  {
+    q: "Where is the academy?",
+    text: "Equity Fin Academy teaches in person in Dubai, UAE, and online across the UAE. The map on this page shows Dubai, UAE. Ask on WhatsApp if you are coming in person and you need directions.",
+  },
+  {
+    q: "I live in Abu Dhabi or Sharjah. Do I have to visit Dubai?",
+    text: "Online classes cover every emirate on Gulf Standard Time, so a visit to Dubai is a choice. Abu Dhabi students can read the Abu Dhabi course page, and Sharjah students the Sharjah page, then enquire with the emirate in the first message.",
+  },
+];
+
+const contactSchema = {
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.equityfinacademy.com/" },
-    { "@type": "ListItem", position: 2, name: "Contact Us", item: "https://www.equityfinacademy.com/contact" },
-  ],
+  "@type": "ContactPage",
+  "@id": `${absoluteUrl("/contact")}#contact`,
+  url: absoluteUrl("/contact"),
+  name: "Contact Equity Fin Academy",
+  description: "Contact the forex training academy in Dubai, UAE, by phone or WhatsApp.",
+  inLanguage: "en-AE",
+  mainEntity: {
+    "@id": `${SITE.url}/#organization`,
+  },
 };
 
 export default function ContactPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "Contact Us", path: "/contact" },
+        ])}
+      />
+      <JsonLd data={contactSchema} />
+      <JsonLd data={faqPageSchema(contactFaq)} />
       <Header active="contact" />
 
       <main>
@@ -82,6 +116,14 @@ export default function ContactPage() {
                 </span>
               </div>
               <div className="info-row">
+                <span className="tag">WHATSAPP</span>
+                <span className="val">
+                  <a href={whatsappHref("Hi, I would like to enquire about forex classes in Dubai")} target="_blank" rel="noopener noreferrer">
+                    {SITE.telephoneDisplay}
+                  </a>
+                </span>
+              </div>
+              <div className="info-row">
                 <span className="tag">ENQUIRE</span>
                 <span className="val">Call or WhatsApp us directly — we respond to course enquiries same day.</span>
               </div>
@@ -116,32 +158,38 @@ export default function ContactPage() {
               <h2>Frequently asked questions</h2>
             </div>
             <div className="faq-list reveal">
-              <details>
-                <summary>
-                  Do I need an appointment to visit?<span className="plus">+</span>
-                </summary>
-                <p>The academy is open 24/7. Calling ahead means someone can walk you through the forex course tracks, including private one-to-one lessons, in person.</p>
-              </details>
-              <details>
-                <summary>
-                  How quickly do you respond to enquiries?<span className="plus">+</span>
-                </summary>
-                <p>
-                  Call or WhatsApp <a href="tel:+971559047030">+971 55 904 7030</a> and we typically respond to
-                  course enquiries the same day.
-                </p>
-              </details>
-              <details>
-                <summary>
-                  Where exactly is the academy located?<span className="plus">+</span>
-                </summary>
-                <p>Equity Fin Academy is in Dubai, UAE — see the map above for directions.</p>
-              </details>
+              {contactFaq.map((item) => (
+                <details key={item.q}>
+                  <summary>
+                    {item.q}
+                    <span className="plus">+</span>
+                  </summary>
+                  <p>{item.text}</p>
+                </details>
+              ))}
             </div>
             <p style={{ marginTop: 24 }}>
               <Link href="/faq" className="btn btn-outline">
                 See All 30+ FAQs
               </Link>
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <div className="container prose-block">
+            <h2>What to put in the first message</h2>
+            <p>
+              A useful enquiry is short. Name the track, Basic to Intermediate or Advanced Institutional Strategies. Name the format, a group class or a private one-to-one lesson. Name the place, the room in Dubai or online. If you work days, say the hours you can keep. Fees are quoted in AED in the reply. They are not printed on the <Link href="/courses">courses page</Link> or the <Link href="/forex-course-fees-dubai">fees page</Link>.
+            </p>
+            <p>
+              The academy is a forex training academy in Dubai and online across the UAE. It is open 24/7 and rated 5.0 on Google from 30+ reviews. More than 2,000 students have trained through Equity Global and live classes. Read those reviews on the <Link href="/success-stories">reviews page</Link>, not as quotes pasted here. If you want the syllabus before you write, start with the <Link href="/blog">blog</Link> and the <Link href="/blog-smart-money-concepts">smart money concepts article</Link>.
+            </p>
+            <p>
+              Abu Dhabi residents use the same Gulf Standard Time as Dubai. The <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> explains the drive and the online seat. Sharjah is on the <Link href="/forex-course-sharjah">Sharjah page</Link>. Weekend hours are described on <Link href="/weekend-forex-classes-dubai">weekend forex classes</Link>. Evening study for people with a day job is in <Link href="/blog-forex-classes-working-professionals-dubai">forex classes for working professionals</Link>.
+            </p>
+            <p>
+              WhatsApp is the fastest path: <a href="https://wa.me/971559047030" target="_blank" rel="noopener noreferrer">wa.me/971559047030</a>. You can also call <a href="tel:+971559047030">{SITE.telephoneDisplay}</a> or use the form above. The chat button on this site opens the same enquiry.
             </p>
           </div>
         </section>

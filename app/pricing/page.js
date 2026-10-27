@@ -2,25 +2,18 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Link from "next/link";
 import OpenChatLink from "../components/OpenChatLink";
+import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
+import { breadcrumbSchema } from "../lib/schema";
 
 export const metadata = pageMetadata({
-  title: "Pricing — Forex Course Fees in AED | Equity Fin Academy Dubai",
+  title: "Forex Course Fees in AED | Equity Fin Academy Dubai",
   description:
     "What's included in each Equity Fin Academy forex course track in Dubai, UAE. Fees are quoted in AED. Call or message us for the current figure.",
   keywords:
     "forex course price Dubai AED, forex trading course cost UAE, Equity Fin Academy fees, how much does a forex course cost in dirhams",
   path: "/pricing",
 });
-
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.equityfinacademy.com/" },
-    { "@type": "ListItem", position: 2, name: "Pricing", item: "https://www.equityfinacademy.com/pricing" },
-  ],
-};
 
 const Check = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -31,7 +24,12 @@ const Check = () => (
 export default function PricingPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "Pricing", path: "/pricing" },
+        ])}
+      />
       <Header active="pricing" />
 
       <main>

@@ -350,7 +350,13 @@ export default function HomePage() {
               Formats are spelled out on <Link href="/private-group-forex-training-dubai">private one-to-one and group classes</Link>, coaching is on{" "}
               <Link href="/forex-mentorship-dubai">forex mentorship in Dubai</Link>, and the
               tracks are on <Link href="/courses">Courses</Link>. Fees are explained, without a printed price, on{" "}
-              <Link href="/forex-course-fees-dubai">forex course fees in Dubai</Link>.
+              <Link href="/forex-course-fees-dubai">forex course fees in Dubai</Link>. Students in Abu Dhabi should read the{" "}
+              <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> before they decide between the drive and an online seat.
+              Google reviews are linked from <Link href="/success-stories">Reviews</Link>. To ask about a seat, use the{" "}
+              <Link href="/contact">contact page</Link>. The <Link href="/blog">blog</Link> includes{" "}
+              <Link href="/blog-smart-money-concepts">smart money concepts</Link>,{" "}
+              <Link href="/blog-forex-classes-working-professionals-dubai">classes for working professionals</Link>, and{" "}
+              <Link href="/blog-demo-vs-live-mt5-uae">demo versus live accounts on MT5</Link>.
             </p>
           </div>
         </section>

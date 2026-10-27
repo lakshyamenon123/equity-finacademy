@@ -1,29 +1,43 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Link from "next/link";
+import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
+import { breadcrumbSchema, faqPageSchema } from "../lib/schema";
 
 export const metadata = pageMetadata({
   title: "Student Reviews — Equity Fin Academy Dubai",
   description:
-    "Real, unfiltered student reviews of Equity Fin Academy in Dubai on Google — not curated testimonials. Read what students across the UAE say and leave your own review.",
+    "Read Equity Fin Academy's Google reviews from Dubai, UAE. Rated 5.0 from 30+ reviews. This page does not publish written testimonials.",
   keywords: "Equity Fin Academy reviews, forex academy reviews Dubai, forex course reviews UAE, is Equity Fin Academy legit",
   path: "/success-stories",
 });
 
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.equityfinacademy.com/" },
-    { "@type": "ListItem", position: 2, name: "Reviews", item: "https://www.equityfinacademy.com/success-stories" },
-  ],
-};
+const reviewFaq = [
+  {
+    q: "Where can I read reviews of Equity Fin Academy?",
+    text: "On Google. Equity Fin Academy is rated 5.0 from 30+ reviews. The academy does not reprint those reviews on this page, because a quote copied onto a school website is no longer the review Google holds.",
+  },
+  {
+    q: "Does 5.0 from 30+ reviews mean every student profits?",
+    text: "The figure is a public Google rating and a lower bound on the number of reviews. It is not a count of trading results, and the academy does not promise a return.",
+  },
+  {
+    q: "Can I share a story here?",
+    text: "Yes, if you studied at the academy and you want the story published in your name. Use the contact page. The academy will not write the quote for you, and it will not publish a line that promises profits.",
+  },
+];
 
 export default function SuccessStoriesPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "Reviews", path: "/success-stories" },
+        ])}
+      />
+      <JsonLd data={faqPageSchema(reviewFaq)} />
       <Header active="reviews" />
 
       <main>
@@ -63,6 +77,52 @@ export default function SuccessStoriesPage() {
               >
                 Read Reviews on Google Maps ↗
               </a>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div className="container prose-block">
+            <h2>How to read the Google listing</h2>
+            <p>
+              Equity Fin Academy is rated 5.0 on Google from 30+ reviews. Thirty is a lower bound, not a final total, so this page does not print a review count as if it were exact. The Equity Global channels carry 200+ YouTube reviews and comments. That figure is comments and reviews on YouTube. It is not a star rating, and it is not a trading result.
+            </p>
+            <p>
+              A useful review names what the person studied: a group cohort or a private lesson, in Dubai or online. It does not need to claim a profit. If a review promises that every student makes money, treat that line with the same caution you would give any trading advert. The academy will not add that kind of sentence here.
+            </p>
+            <p>
+              The instructor those students are writing about is <Link href="/about">Gopi Chandran</Link>. The two tracks they sat are on the <Link href="/courses">courses page</Link>. Students coming from Abu Dhabi can read the <Link href="/forex-course-abu-dhabi">Abu Dhabi course note</Link> before they compare the Google comments with the trip. The written lessons, which are separate from reviews, start on the <Link href="/blog">blog</Link>, including <Link href="/blog-smart-money-concepts">smart money concepts</Link>.
+            </p>
+
+            <h2>What a published story on this site would include</h2>
+            <p>
+              This page stays empty of quotes until a student asks for one to be published. A story that belongs here has the student&apos;s name, permission to use it, and a description of the class they actually attended. It can mention a group seat or a private hour, Dubai or online. It should not invent a balance, a win rate, or a timeline to consistency.
+            </p>
+            <p>
+              If that is you, <Link href="/contact">write via the contact page</Link> or WhatsApp <a href="https://wa.me/971559047030" target="_blank" rel="noopener noreferrer">+971 55 904 7030</a>. Say which track you took. The academy will not draft the paragraph and send it back for you to approve as if you wrote it.
+            </p>
+            <p>
+              People comparing schools can also use <Link href="/why-choose-us">the enrolment checks</Link> and <Link href="/blog-choose-forex-academy-uae">how to choose a forex academy in the UAE</Link>. Those pages describe the class. This page is the route to third-party feedback.
+            </p>
+          </div>
+        </section>
+
+        <section className="tight">
+          <div className="container">
+            <div className="section-head reveal">
+              <span className="eyebrow">QUESTIONS</span>
+              <h2>About reviews and stories</h2>
+            </div>
+            <div className="faq-list">
+              {reviewFaq.map((item) => (
+                <details key={item.q}>
+                  <summary>
+                    {item.q}
+                    <span className="plus">+</span>
+                  </summary>
+                  <p>{item.text}</p>
+                </details>
+              ))}
             </div>
           </div>
         </section>

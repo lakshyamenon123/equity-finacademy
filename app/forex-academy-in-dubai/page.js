@@ -4,26 +4,19 @@ import RelatedTraining from "../components/RelatedTraining";
 import YouTubeSection from "../components/YouTubeSection";
 import Link from "next/link";
 import OpenChatLink from "../components/OpenChatLink";
+import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
+import { breadcrumbSchema } from "../lib/schema";
 import { VIDEOS } from "../lib/videos";
 
 export const metadata = pageMetadata({
   title: "Forex Academy in Dubai | Equity Fin Academy",
   description:
-    "Forex academy in Dubai for beginners and advanced traders. Structured classes on Gulf Standard Time, an SCA-regulated broker, and live training in Dubai and online across the UAE.",
+    "Forex academy in Dubai for beginners and advanced traders. Live classes on Gulf Standard Time, in Dubai and online across the UAE.",
   keywords:
     "best forex academy in dubai, forex academy in dubai, forex trading in dubai, forex classes in dubai, forex classes near me Dubai, forex for beginners UAE, learn forex Dubai, forex course dubai, forex training dubai, forex school dubai, group forex training classes Dubai",
   path: "/forex-academy-in-dubai",
 });
-
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.equityfinacademy.com/" },
-    { "@type": "ListItem", position: 2, name: "Forex Academy in Dubai", item: "https://www.equityfinacademy.com/forex-academy-in-dubai" },
-  ],
-};
 
 const pairs = ["EUR/USD", "GBP/USD", "XAU/USD", "USD/JPY", "AUD/USD", "USD/CHF", "USD/CAD", "NZD/USD"];
 
@@ -76,7 +69,12 @@ const whyDubai = [
 export default function ForexAcademyDubaiPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "Forex Academy in Dubai", path: "/forex-academy-in-dubai" },
+        ])}
+      />
       <Header active="forex-dubai" />
 
       <main>

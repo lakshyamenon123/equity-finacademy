@@ -2,12 +2,14 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
+import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
+import { breadcrumbSchema } from "../lib/schema";
 
 const headline = "What Is Market Structure in Forex? A Guide for UAE Traders";
 
 export const metadata = pageMetadata({
-  title: "Market Structure in Forex for UAE Traders | Equity Fin Academy",
+  title: "Market Structure for UAE Traders | Equity Fin Academy",
   description:
     "Market structure for traders in Dubai and across the UAE: swing highs, swing lows, trends, ranges, and why structure comes before any strategy.",
   keywords:
@@ -29,21 +31,17 @@ const postSchema = {
   description: "Swing highs, swing lows, and how to tell a trend from a range.",
 };
 
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.equityfinacademy.com/" },
-    { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.equityfinacademy.com/blog" },
-    { "@type": "ListItem", position: 3, name: "Market Structure", item: "https://www.equityfinacademy.com/blog-market-structure" },
-  ],
-};
-
 export default function BlogMarketStructurePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(postSchema) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "Blog", path: "/blog" },
+          { name: "Market Structure", path: "/blog-market-structure" },
+        ])}
+      />
       <Header active="blog" />
 
       <main>

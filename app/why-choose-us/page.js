@@ -16,7 +16,7 @@ const path = "/why-choose-us";
 export const metadata = pageMetadata({
   title: "Why Choose Equity Fin Academy in Dubai | Enrolment Checks",
   description:
-    "Enrolment checks for Equity Fin Academy: Gopi Chandran teaches both forex tracks, the syllabuses are published topic by topic, and seats are in Dubai or online across the UAE. Fees are quoted in AED when you ask.",
+    "Six enrolment checks for Equity Fin Academy in Dubai: named teacher, published syllabuses, Dubai or online. Fees quoted in AED.",
   keywords:
     "why choose equity fin academy, equity fin academy enrolment, forex course checklist Dubai, Gopi Chandran forex course, basic to intermediate forex Dubai, advanced institutional strategies Dubai",
   path,
@@ -186,7 +186,10 @@ export default function WhyChooseUsPage() {
             <h2>What to send when you enquire</h2>
             <p>
               Name the track, Basic to Intermediate or Advanced Institutional Strategies. Name the format, private or
-              group. Name the place, the Dubai room or online. Then ask for the fee and the next open time. The academy
+              group. Name the place, the Dubai room or online. Then ask for the fee and the next open time. A complete
+              first message is concrete: “Basic to Intermediate, private lesson, online from Abu Dhabi, after 7pm Gulf
+              Standard Time. Please quote the fee in AED.” Swap the track, the room, and the emirate for your own. The
+              reply is the next open time and the quote. The academy does not need a broker password. The academy
               is open 24/7. Call <a href={`tel:${SITE.telephoneTel}`}>{SITE.telephoneDisplay}</a>, message on{" "}
               <a href={whatsappHref("Hi, I would like the enrolment checks for a forex seat")} target="_blank" rel="noopener noreferrer">
                 WhatsApp
