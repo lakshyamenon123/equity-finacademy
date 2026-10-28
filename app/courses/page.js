@@ -9,13 +9,14 @@ import { pageMetadata } from "../lib/seo";
 import RelatedTraining from "../components/RelatedTraining";
 import { breadcrumbSchema, courseSchemas, faqPageSchema } from "../lib/schema";
 import { VIDEOS } from "../lib/videos";
+import { STARTRADER_LIVE_URL } from "../lib/whatsapp";
 
 export const metadata = pageMetadata({
   title: "Forex Trading Courses in Dubai | Equity Fin Academy",
   description:
-    "Forex trading courses in Dubai: live group classes and private one-to-one lessons, in person or online across the UAE. Fees are quoted when you enquire.",
+    "Forex trading courses in Dubai and forex education across the UAE. Two live tracks, group classes, and private lessons. Fees quoted in AED when you enquire.",
   keywords:
-    "forex trading courses in Dubai, forex course Dubai, learn forex trading UAE, forex trading classes Dubai, group forex training classes Dubai, private forex training Dubai, one to one forex classes Dubai, live trading sessions Dubai, smart money concepts course, market profile trading, Fibonacci retracement course, bot trading strategies forex, risk management course Dubai, institutional forex strategies course, candlestick pattern course Dubai, best forex course for beginners",
+    "forex trading courses in Dubai, forex course Dubai, forex education UAE, trading classes in Dubai, private forex classes Dubai, group forex classes Dubai",
   path: "/courses",
 });
 
@@ -281,6 +282,21 @@ export default function CoursesPage() {
             </p>
             <p>
               Abu Dhabi students use the same two tracks. The drive, and the online alternative, are on the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>. Google reviews stay on Google. The <Link href="/success-stories">reviews page</Link> says how to read them, and it does not invent quotes. The in-person school page is <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link>. Study from another emirate is <Link href="/forex-training-academy-uae">forex training academy UAE</Link>.
+            </p>
+
+            <h2>Who should start on which track</h2>
+            <p>
+              Basic to Intermediate is the forex education most people in the UAE need first. You can be new to charts. You do not need a broker account on day one. The hour is spent on how pairs are quoted, how a candle is read, and how swing highs and lows describe structure. Smart money ideas appear on this track only after that base, as orders and imbalance, not as a separate product.
+            </p>
+            <p>
+              Advanced Institutional Strategies assumes you can already point at a swing. It adds fundamental analysis, market profile, volume with smart money concepts, Fibonacci, risk and psychology, and bot-trading concepts. Lifetime WhatsApp with the instructor after the course belongs to this track only. If the swing is still unclear, booking the advanced track to save time usually means paying to hear the beginner lessons inside an advanced hour.
+            </p>
+            <p>
+              A group class follows that shared list. A private lesson can use the same list on your chart, or review trades you already take. The written version of a private coaching plan is <Link href="/blog-personal-forex-coaching-uae">personal forex coaching in the UAE</Link>. What to write down after a trade is <Link href="/blog-forex-trading-plan-uae">a trading plan and journal</Link>. Neither document replaces the live class. To start on MetaTrader 5 you still need the platform and an account with a trusted broker such as{" "}
+              <a href={STARTRADER_LIVE_URL} target="_blank" rel="sponsored noopener noreferrer">
+                StarTrader
+              </a>
+              . Practical sessions at the academy use that broker, which is regulated by the UAE Securities and Commodities Authority. The course fee and the broker balance are separate.
             </p>
           </div>
         </section>

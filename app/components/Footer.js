@@ -99,6 +99,8 @@ export default function Footer() {
             <div className="footer-col">
               <h3>Learn</h3>
               <Link href="/blog">Blog</Link>
+              <Link href="/blog-personal-forex-coaching-uae">Personal Coaching Plan</Link>
+              <Link href="/blog-forex-trading-plan-uae">Trading Plan and Journal</Link>
               <Link href="/blog-forex-classes-working-professionals-dubai">Classes for Professionals</Link>
               <Link href="/blog-demo-vs-live-mt5-uae">Demo vs Live on MT5</Link>
               <Link href="/blog-smart-money-concepts">Smart Money Concepts</Link>

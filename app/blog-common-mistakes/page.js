@@ -89,7 +89,10 @@ export default function BlogCommonMistakesPage() {
               </p>
 
               <h2>7. Not keeping a trading journal</h2>
-              <p>Without a record of what you traded, why, and what happened, the same mistakes repeat invisibly. A journal is what turns experience into actual improvement.</p>
+              <p>
+                Without a record of what you traded, why, and what happened, the same mistakes repeat invisibly. A journal is what turns experience into actual improvement. A simple page for UAE learners, with the rules written before the session, is in{" "}
+                <Link href="/blog-forex-trading-plan-uae">how to write a trading plan and journal</Link>.
+              </p>
 
               <h2>The pattern behind all seven</h2>
               <p>

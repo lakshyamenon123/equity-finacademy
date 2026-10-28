@@ -115,7 +115,9 @@ export default function OneToOneForexClassesPost() {
 
               <h2>What to do in the twenty minutes after</h2>
               <p>
-                Write down the correction in your own words before you close the platform. One note is enough: what you marked, what was changed, and where the risk sits if you take the idea. A private lesson that is not written down becomes a feeling that you understood it. The next class then starts from zero.
+                Write down the correction in your own words before you close the platform. One note is enough: what you marked, what was changed, and where the risk sits if you take the idea. A private lesson that is not written down becomes a feeling that you understood it. The next class then starts from zero. If you want a full page rather than one note, use{" "}
+                <Link href="/blog-forex-trading-plan-uae">the trading plan and journal</Link>. A plan that covers several weeks, rather than a single hour, is{" "}
+                <Link href="/blog-personal-forex-coaching-uae">personal forex coaching in the UAE</Link>.
               </p>
               <p>
                 If the hour showed that you do not yet have the base vocabulary, that is a useful result. Book the group track instead of buying another private hour to hear candles and structure for the first time. The sequence is in{" "}

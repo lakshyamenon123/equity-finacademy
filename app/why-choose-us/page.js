@@ -136,6 +136,20 @@ export default function WhyChooseUsPage() {
 
         <section>
           <div className="container prose-block">
+            <h2>Three pages, three questions</h2>
+            <p>
+              <Link href="/about">About</Link> answers who teaches. It is Gopi Chandran&apos;s profile: the MBA, the Equity Global channels, and the fact that he is in the lesson. It is not a syllabus and it is not a fee.
+            </p>
+            <p>
+              This page answers what you can verify before you pay. The six checks and the two topic lists are here so a decision does not depend on a brochure. If you only remember one difference: About is the person, and this page is the paperwork you can open yourself.
+            </p>
+            <p>
+              The <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link> page answers what a school day is: the room in Dubai, the live session, and the online seat across the UAE. It is the offer written as a place. It does not repeat this checklist, and this checklist does not try to be the school-day page. Students outside Dubai should use the <Link href="/forex-training-academy-uae">UAE page</Link> and, if they live in the capital, the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>, which is about the drive versus studying online.
+            </p>
+            <p>
+              Two articles help before you enquire. <Link href="/blog-personal-forex-coaching-uae">Personal forex coaching in the UAE</Link> shows what a written coaching plan contains. <Link href="/blog-forex-trading-plan-uae">A trading plan and journal</Link> shows what to bring back after you practise. Neither one is a substitute for the checks above.
+            </p>
+
             <h2>Where each check is spelled out</h2>
             <p>
               The instructor profile, including the MBA and the move into full-time forex teaching, stays on{" "}

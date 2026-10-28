@@ -6,10 +6,11 @@ import { pageMetadata } from "../lib/seo";
 import { breadcrumbSchema, faqPageSchema } from "../lib/schema";
 
 export const metadata = pageMetadata({
-  title: "Student Reviews — Equity Fin Academy Dubai",
+  title: "Forex Academy Reviews in Dubai | Equity Fin Academy",
   description:
-    "Read Equity Fin Academy's Google reviews from Dubai, UAE. Rated 5.0 from 30+ reviews. This page does not publish written testimonials.",
-  keywords: "Equity Fin Academy reviews, forex academy reviews Dubai, forex course reviews UAE, is Equity Fin Academy legit",
+    "How to read Equity Fin Academy's Google reviews in Dubai. Rated 5.0 from 30+ reviews. This page does not publish written testimonials.",
+  keywords:
+    "Equity Fin Academy reviews, forex academy reviews Dubai, forex course reviews UAE, forex training Dubai reviews",
   path: "/success-stories",
 });
 
@@ -103,6 +104,24 @@ export default function SuccessStoriesPage() {
             </p>
             <p>
               People comparing schools can also use <Link href="/why-choose-us">the enrolment checks</Link> and <Link href="/blog-choose-forex-academy-uae">how to choose a forex academy in the UAE</Link>. Those pages describe the class. This page is the route to third-party feedback.
+            </p>
+
+            <h2>Five things worth noticing in a review</h2>
+            <p>
+              A star on its own is a thin fact. These are the checks that make the Google listing useful when you are comparing forex training in Dubai.
+            </p>
+            <ul className="guide-list">
+              <li>The review names a format: a group cohort, a private lesson, or an online seat. A line that could describe any school is harder to use.</li>
+              <li>It names what was studied, such as structure or a beginner track, rather than a profit figure.</li>
+              <li>It is written in the reviewer&apos;s words. This website does not supply the sentence.</li>
+              <li>A review that promises every student makes money is a reason to slow down, not a reason to enrol faster.</li>
+              <li>Thirty-plus is a lower bound on the count. The page you are reading will not turn that into an exact total.</li>
+            </ul>
+            <p>
+              YouTube is a separate pile. The Equity Global channels carry 200+ reviews and comments. That is not a star rating, and it is not the Google listing. Watch a lesson if you want to hear how a topic is explained. Read Google if you want comments from people who dealt with the academy.
+            </p>
+            <p>
+              After the listing, the class itself is on <Link href="/courses">forex trading courses</Link>. If you want something written before you enquire, use <Link href="/blog-forex-trading-plan-uae">a trading plan and journal</Link> or <Link href="/blog-personal-forex-coaching-uae">a coaching plan</Link>. Then <Link href="/contact">contact the academy</Link> with the track and the city. Abu Dhabi readers should use the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> for the drive-or-online choice, which is not a review.
             </p>
           </div>
         </section>

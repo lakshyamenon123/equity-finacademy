@@ -1,17 +1,21 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AcademyLinks from "../components/AcademyLinks";
+import YouTubeSection from "../components/YouTubeSection";
 import Link from "next/link";
 import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
+import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
+
+const mt5English = ENGLISH_VIDEOS.find((video) => video.id === "ssUPlUHnDLo");
 
 const headline = "Smart Money Concepts (SMC) Explained for Beginners in Dubai";
 
 export const metadata = pageMetadata({
-  title: "Smart Money Concepts in Dubai | Equity Fin Academy",
+  title: "Smart Money Concepts Explained | Equity Fin Academy Dubai",
   description:
-    "Smart money concepts (SMC) for beginners in Dubai and online across the UAE: liquidity, imbalance, order blocks, and how SMC builds on market structure.",
+    "Smart money concepts for beginners in Dubai and the UAE: liquidity, imbalance, and order blocks, and why each one depends on market structure.",
   keywords:
     "smart money concepts Dubai, what is SMC trading UAE, liquidity forex trading, order block trading Dubai, imbalance in forex market, SMC for beginners UAE",
   path: "/blog-smart-money-concepts",
@@ -23,7 +27,7 @@ const postSchema = articleSchema({
   description:
     "Liquidity, imbalance, and order blocks for beginners in Dubai, and why each one depends on market structure.",
   path: "/blog-smart-money-concepts",
-  dateModified: "2026-10-27",
+  dateModified: "2026-10-28",
 });
 
 export default function BlogSmartMoneyConceptsPage() {
@@ -122,6 +126,14 @@ export default function BlogSmartMoneyConceptsPage() {
                 <Link href="/blog-forex-classes-working-professionals-dubai">forex classes for working professionals in Dubai</Link>.
               </p>
 
+              <h2>This article and the course page do different jobs</h2>
+              <p>
+                You are on the definition. The <Link href="/smc-ict-trading-course-dubai">SMC and ICT course page</Link> is the enrolment: which track the words sit on, and how to ask for a seat in Dubai or online. If the two pages feel similar, use this one to learn the five terms, and that one to book. The topic lists themselves are on <Link href="/courses">courses</Link>.
+              </p>
+              <p>
+                Once you can point at one sweep, write the rule in a sentence before you take it. That sentence belongs in a <Link href="/blog-forex-trading-plan-uae">trading plan</Link>, not in a folder of unmarked screenshots. A private hour can then review the sentence. What that plan looks like across several weeks is in <Link href="/blog-personal-forex-coaching-uae">personal forex coaching in the UAE</Link>.
+              </p>
+
               <h2>What the live class adds</h2>
               <p>
                 This article names the shapes. It does not watch your chart. In a group cohort or a private lesson,
@@ -153,6 +165,13 @@ export default function BlogSmartMoneyConceptsPage() {
             </div>
           </div>
         </section>
+
+        <YouTubeSection
+          videos={[VIDEOS.metatrader]}
+          englishVideos={[mt5English]}
+          title="Mark the swings on MetaTrader 5"
+          intro="The English lesson, from Equity Global English, shows how to open a broker account and use MetaTrader 5, which is the chart you would mark. It is not an SMC lecture. The Malayalam tab is the Equity Global MT5 tutorial. Watch either before a class in Dubai so the hour is spent on the swing, not the download."
+        />
 
         <section className="tight soft">
           <div className="container">

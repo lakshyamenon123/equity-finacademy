@@ -6,17 +6,38 @@ import Link from "next/link";
 import OpenChatLink from "../components/OpenChatLink";
 import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
-import { breadcrumbSchema } from "../lib/schema";
-import { VIDEOS } from "../lib/videos";
+import { breadcrumbSchema, faqPageSchema } from "../lib/schema";
+import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 
 export const metadata = pageMetadata({
-  title: "Forex Academy in Dubai | Equity Fin Academy",
+  title: "Forex Training in Dubai | Trading Classes | Equity Fin Academy",
   description:
-    "Forex academy in Dubai for beginners and advanced traders. Live classes on Gulf Standard Time, in Dubai and online across the UAE.",
+    "Forex trading classes in Dubai, UAE, in person or online. A forex academy for beginners and experienced traders. Rated 5.0 from 30+ Google reviews.",
   keywords:
-    "best forex academy in dubai, forex academy in dubai, forex trading in dubai, forex classes in dubai, forex classes near me Dubai, forex for beginners UAE, learn forex Dubai, forex course dubai, forex training dubai, forex school dubai, group forex training classes Dubai",
+    "forex academy in Dubai, forex training Dubai, trading classes in Dubai, forex trading classes near me, forex education UAE, forex classes in Dubai",
   path: "/forex-academy-in-dubai",
 });
+
+const mt5English = ENGLISH_VIDEOS.find((video) => video.id === "ssUPlUHnDLo");
+
+const pageFaq = [
+  {
+    q: "Is there a forex academy in Dubai for complete beginners?",
+    text: "Look for a structured curriculum and an instructor you can name. Equity Fin Academy's Basic to Intermediate course is built for traders with no prior experience, taught in Dubai and online across the UAE.",
+  },
+  {
+    q: "Can I learn forex trading in Dubai in person, not just online?",
+    text: "Yes. Equity Fin Academy runs live, in-person classes in Dubai, UAE, and you can also learn online across the UAE.",
+  },
+  {
+    q: "Do I need a UAE-regulated broker to trade forex in Dubai?",
+    text: "You should trade through a broker regulated by a recognised financial authority. Practical sessions run through StarTrader, regulated by the UAE Securities and Commodities Authority (SCA).",
+  },
+  {
+    q: "What should a complete beginner learn first?",
+    text: "Learn the vocabulary and chart reading first, then market structure, then risk management, in that order. The blog walks through those topics before you enrol.",
+  },
+];
 
 const pairs = ["EUR/USD", "GBP/USD", "XAU/USD", "USD/JPY", "AUD/USD", "USD/CHF", "USD/CAD", "NZD/USD"];
 
@@ -75,6 +96,7 @@ export default function ForexAcademyDubaiPage() {
           { name: "Forex Academy in Dubai", path: "/forex-academy-in-dubai" },
         ])}
       />
+      <JsonLd data={faqPageSchema(pageFaq)} />
       <Header active="forex-dubai" />
 
       <main>
@@ -338,12 +360,25 @@ export default function ForexAcademyDubaiPage() {
               Classes are held in Dubai, UAE, and online across the UAE. The academy is open 24/7. Classes run as group
               cohorts, and private one-to-one lessons are available as well, including live trading sessions and
               training. <Link href="/private-group-forex-training-dubai">Private and group forex training</Link>{" "}
-              compares the two. The syllabus is on <Link href="/courses">Courses</Link>.
+              compares the two. The syllabus is on <Link href="/courses">Courses</Link>. Fees are quoted in AED on the{" "}
+              <Link href="/pricing">pricing page</Link>. To ask for a seat, use the <Link href="/contact">contact page</Link> or WhatsApp +971 55 904 7030.
+            </p>
+            <p>
+              If you live in Abu Dhabi, the classroom is a drive away, so read the{" "}
+              <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> before you assume you must commute. Sharjah is a shorter trip and has its own note. People searching for trading classes nearby still use the same two tracks. The written lessons are on the <Link href="/blog">blog</Link>, including{" "}
+              <Link href="/blog-smart-money-concepts">smart money concepts</Link>,{" "}
+              <Link href="/blog-personal-forex-coaching-uae">a personal coaching plan</Link>, and{" "}
+              <Link href="/blog-forex-trading-plan-uae">a trading plan and journal</Link>. Google reviews stay on Google. The <Link href="/success-stories">reviews page</Link> explains how to read the listing.
             </p>
           </div>
         </section>
 
-        <YouTubeSection videos={[VIDEOS.howToStart, VIDEOS.whatIsForex]} title="Lessons from the Equity Global channel" />
+        <YouTubeSection
+          videos={[VIDEOS.howToStart, VIDEOS.whatIsForex]}
+          englishVideos={[mt5English]}
+          title="Lessons from the Equity Global channels"
+          intro="The English recording, from Equity Global English, walks through opening a broker account and using MetaTrader 5. The Malayalam tab has introductory lessons from Equity Global. They are a preview of how topics are taught, not a substitute for a class in Dubai, UAE."
+        />
 
         <section className="tight">
           <div className="container">
@@ -352,33 +387,15 @@ export default function ForexAcademyDubaiPage() {
               <h2>Forex in Dubai — frequently asked</h2>
             </div>
             <div className="faq-list reveal">
-              <details>
-                <summary>
-                  Is there a good forex academy in Dubai for complete beginners?<span className="plus">+</span>
-                </summary>
-                <p>Yes — look for one with a structured (not random) curriculum and an instructor with a verifiable background. Our Basic to Intermediate course is built specifically for traders with no prior experience.</p>
-              </details>
-              <details>
-                <summary>
-                  Can I learn forex trading in Dubai in person, not just online?<span className="plus">+</span>
-                </summary>
-                <p>Yes. Equity Fin Academy runs live, in-person classes in Dubai, UAE, and you can also learn online across the UAE.</p>
-              </details>
-              <details>
-                <summary>
-                  Do I need a UAE-regulated broker to trade forex in Dubai?<span className="plus">+</span>
-                </summary>
-                <p>You should always trade through a broker regulated by a recognised financial authority. Our practical sessions run through Star Trader, regulated by the UAE Securities and Commodities Authority (SCA).</p>
-              </details>
-              <details>
-                <summary>
-                  What&apos;s the best way to learn forex as a complete beginner?<span className="plus">+</span>
-                </summary>
-                <p>
-                  Learn the vocabulary and chart reading first, then market structure, then risk management — in that
-                  order. See our <Link href="/blog">blog</Link> for the full walkthrough.
-                </p>
-              </details>
+              {pageFaq.map((item) => (
+                <details key={item.q}>
+                  <summary>
+                    {item.q}
+                    <span className="plus">+</span>
+                  </summary>
+                  <p>{item.text}</p>
+                </details>
+              ))}
             </div>
             <p style={{ marginTop: 24 }}>
               <Link href="/faq" className="btn btn-outline">

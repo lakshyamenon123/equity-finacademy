@@ -139,7 +139,9 @@ export default function ForexMentorshipDubaiPage() {
 
             <h2>Who should ask for a coach, and who should start in the group</h2>
             <p>
-              Ask for a private mentoring hour if you already take trades and you want them reviewed, or if you know you will stay quiet in a group. Ask for the group if you are new and you want candles, structure, and the rest of the first track in order. Plenty of students do the group first and book a private hour later, once they have a journal worth looking at. That sequence is allowed. You do not have to pretend you are advanced to get a coach&apos;s attention.
+              Ask for a private mentoring hour if you already take trades and you want them reviewed, or if you know you will stay quiet in a group. Ask for the group if you are new and you want candles, structure, and the rest of the first track in order. Plenty of students do the group first and book a private hour later, once they have a journal worth looking at. That sequence is allowed. You do not have to pretend you are advanced to get a coach&apos;s attention. What to write on the plan itself is in{" "}
+              <Link href="/blog-personal-forex-coaching-uae">personal forex coaching in the UAE</Link>. The journal those later hours review is in{" "}
+              <Link href="/blog-forex-trading-plan-uae">the trading plan and journal guide</Link>.
             </p>
             <p>
               Ask for the advanced track, and the WhatsApp that comes with it, if structure is already familiar and you want market profile, volume with smart money concepts, Fibonacci, and someone you can still message after the last class. The concepts themselves are introduced in{" "}

@@ -7,16 +7,18 @@ import Link from "next/link";
 import OpenChatLink from "../components/OpenChatLink";
 import { pageMetadata } from "../lib/seo";
 import { breadcrumbSchema, faqPageSchema } from "../lib/schema";
-import { VIDEOS } from "../lib/videos";
+import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
+import { STARTRADER_LIVE_URL } from "../lib/whatsapp";
 
 const path = "/forex-course-abu-dhabi";
+const mt5English = ENGLISH_VIDEOS.find((video) => video.id === "ssUPlUHnDLo");
 
 export const metadata = pageMetadata({
-  title: "Forex Course in Abu Dhabi | Equity Fin Academy",
+  title: "Forex Course for Abu Dhabi Students | Equity Fin Academy",
   description:
-    "Forex course for Abu Dhabi students: classes in Dubai or online on Gulf Standard Time. What you study, and how to choose.",
+    "Forex course options for Abu Dhabi residents: study online on Gulf Standard Time, or attend class in Dubai. How that choice differs from Sharjah.",
   keywords:
-    "forex course Abu Dhabi, forex training Abu Dhabi, forex classes for Abu Dhabi residents, learn forex trading Abu Dhabi, forex academy near Abu Dhabi",
+    "forex course Abu Dhabi, forex training Abu Dhabi, online forex course Abu Dhabi, forex classes Abu Dhabi to Dubai, learn forex trading Abu Dhabi",
   path,
 });
 
@@ -32,6 +34,14 @@ const pageFaq = [
   {
     q: "Can I start learning before I make the trip?",
     text: "Yes. Read the blog and watch the Equity Global lessons, then call so the visit is booked around a real conversation about which track fits.",
+  },
+  {
+    q: "Should I drive from Abu Dhabi every week?",
+    text: "Only if that drive is already a normal part of your week. Many Abu Dhabi students take the same syllabus online on Gulf Standard Time, or visit Dubai once and then continue on a screen. The course does not change. The journey does.",
+  },
+  {
+    q: "Is the online course a different syllabus from the Dubai classroom?",
+    text: "No. Basic to Intermediate and Advanced Institutional Strategies are the same two tracks. Online study is the same instructor and the same topic order, without the drive from Abu Dhabi.",
   },
 ];
 
@@ -128,6 +138,45 @@ export default function ForexCourseAbuDhabiPage() {
               The written version of the advanced topic most people ask about is <Link href="/blog-smart-money-concepts">smart money concepts</Link>. It is an explanation, not the class. Reviews of the academy are on Google, linked from the <Link href="/success-stories">reviews page</Link>. This page does not add quotes. The Dubai school, written as the in-person offer, is the <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link> page. The wider UAE page is <Link href="/forex-training-academy-uae">forex training academy UAE</Link>.
             </p>
 
+            <h2>Three ways people in Abu Dhabi actually study</h2>
+            <p>
+              The syllabus is not the decision. The journey is. Abu Dhabi students tend to use one of three patterns, and it helps to name yours before you enquire.
+            </p>
+            <ul className="guide-list">
+              <li>
+                <strong>Online every week.</strong> You stay in Abu Dhabi. The class is on Gulf Standard Time, the same clock as Dubai. This is the usual choice when an evening drive would replace the study itself.
+              </li>
+              <li>
+                <strong>One visit, then online.</strong> You come to Dubai once, see how a live hour works, agree the track, and continue on a screen. The visit is for the conversation, not for a different course.
+              </li>
+              <li>
+                <strong>A regular drive.</strong> You already travel between the two cities, so an in-person seat in Dubai is realistic. Say so. The academy will not guess your commute.
+              </li>
+            </ul>
+            <p>
+              The <Link href="/forex-course-sharjah">Sharjah course page</Link> is a different decision because the trip is short and the question is usually whether to cross over for class. Living in Dubai is different again: the classroom is in the same city, and the{" "}
+              <Link href="/forex-academy-in-dubai">forex academy in Dubai</Link> page describes that school day. This page does not repeat either of those. It is the capital-to-Dubai choice.
+            </p>
+
+            <h2>What an Abu Dhabi week looks like</h2>
+            <p>
+              Many private-sector jobs in the UAE run Sunday to Thursday. An evening class on one of those days can be online at 7pm Gulf Standard Time without adding a drive on top of the office. If you would rather travel when the roads are quieter, a Saturday or Sunday session is possible, with one limit: from Saturday morning until Monday morning, UAE time, the forex market is shut. A weekend hour can still review a chart. It will not show a new London candle. That arrangement is described on{" "}
+              <Link href="/weekend-forex-classes-dubai">weekend forex classes</Link>.
+            </p>
+            <p>
+              Between classes, mark one pair on MetaTrader 5. If the platform is not installed, the English walkthrough below shows an account opening and the MT5 layout. To start trading you need MT5 and an account with a trusted broker such as{" "}
+              <a href={STARTRADER_LIVE_URL} target="_blank" rel="sponsored noopener noreferrer">
+                StarTrader
+              </a>
+              . Practical sessions at the academy use StarTrader, which is regulated by the UAE Securities and Commodities Authority. The course fee and any broker balance are separate. Practise on a demo account until the buttons are familiar. The difference between that account and a live one is in{" "}
+              <Link href="/blog-demo-vs-live-mt5-uae">demo versus live on MT5</Link>.
+            </p>
+            <p>
+              Write the aim down before the first hour. A one-page coaching plan, and a journal you can bring back, are explained in{" "}
+              <Link href="/blog-personal-forex-coaching-uae">personal forex coaching in the UAE</Link> and{" "}
+              <Link href="/blog-forex-trading-plan-uae">how to write a trading plan</Link>. They are reading, not a seat.
+            </p>
+
             <h2>How to decide if the drive is worth it</h2>
             <ul className="guide-list">
               <li>You want live correction, not another playlist. The YouTube channel is free and useful; class is the feedback.</li>
@@ -149,7 +198,9 @@ export default function ForexCourseAbuDhabiPage() {
 
         <YouTubeSection
           videos={[VIDEOS.howToStart, VIDEOS.metatrader]}
-          title="Study the intro lessons before you drive from Abu Dhabi"
+          englishVideos={[mt5English]}
+          title="Study the platform before you drive from Abu Dhabi"
+          intro="The English lesson, from Equity Global English, shows how to open a broker account and use MetaTrader 5. Watch it in Abu Dhabi before any trip, so a visit to Dubai is not spent on a download. The Malayalam tab has an introduction and an MT5 tutorial from Equity Global. The recordings are a preview, not the live class."
         />
 
         <section className="tight">

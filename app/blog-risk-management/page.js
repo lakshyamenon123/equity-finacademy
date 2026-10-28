@@ -117,6 +117,10 @@ export default function BlogRiskManagementPage() {
                 bolted onto strategy lessons.&quot; — Gopi Chandran, Founder, Equity Fin Academy
               </blockquote>
 
+              <p>
+                Write the dirham risk into a plan you can reread when the trade is open. The page for that, including the journal you fill in afterwards, is{" "}
+                <Link href="/blog-forex-trading-plan-uae">a forex trading plan for UAE learners</Link>.
+              </p>
               <AcademyLinks lead="Risk is part of the live syllabus at the" />
               <div className="blog-cta">
                 <p>Risk management is taught as core curriculum in both of our course tracks.</p>

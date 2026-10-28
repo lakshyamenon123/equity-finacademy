@@ -40,21 +40,14 @@ export function breadcrumbSchema(items) {
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: items.map((item, index) => {
-      const url = absoluteUrl(item.path);
-      // Google reads item.id. A string URL is easy to miss; @id must be absolute.
-      return {
-        "@type": "ListItem",
-        position: index + 1,
-        name: item.name,
-        item: {
-          "@type": "WebPage",
-          "@id": url,
-          url,
-          name: item.name,
-        },
-      };
-    }),
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      // Google's breadcrumb parser reads item as a URL. A nested object makes
+      // it look for item.id and can report that id as invalid even when @id is absolute.
+      item: absoluteUrl(item.path),
+    })),
   };
 }
 

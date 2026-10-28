@@ -4,16 +4,35 @@ import Link from "next/link";
 import OpenChatLink from "../components/OpenChatLink";
 import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
-import { breadcrumbSchema } from "../lib/schema";
+import { breadcrumbSchema, faqPageSchema } from "../lib/schema";
 
 export const metadata = pageMetadata({
-  title: "Forex Course Fees in AED | Equity Fin Academy Dubai",
+  title: "Forex Course Fees in Dubai (AED) | Equity Fin Academy",
   description:
-    "What's included in each Equity Fin Academy forex course track in Dubai, UAE. Fees are quoted in AED. Call or message us for the current figure.",
+    "Forex trading course fees in Dubai, quoted in AED. See what group classes and private lessons include, then call or WhatsApp for the current figure.",
   keywords:
-    "forex course price Dubai AED, forex trading course cost UAE, Equity Fin Academy fees, how much does a forex course cost in dirhams",
+    "forex course fees Dubai, forex trading courses in Dubai cost, forex course price AED, trading classes in Dubai fees",
   path: "/pricing",
 });
+
+const pricingFaq = [
+  {
+    q: "Why don't you list a price on the website?",
+    text: "Fees can change between cohorts and depend on current enrolment. Rather than publish a number that might be outdated by the time you read it, we quote the current fee in AED when you enquire.",
+  },
+  {
+    q: "Is broker account funding included in the course fee?",
+    text: "The course fee covers instruction and practical sessions. Funding your own trading account is separate. We walk through that when you enquire.",
+  },
+  {
+    q: "Do you offer payment plans?",
+    text: "Call or message us to discuss what is currently available. Options can vary by cohort.",
+  },
+  {
+    q: "Is there a difference in price between the two tracks?",
+    text: "Yes. The Advanced Institutional Strategies track covers more of the curriculum and includes lifetime WhatsApp support, which is reflected in its fee. Call for the current AED quote on both.",
+  },
+];
 
 const Check = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -30,6 +49,7 @@ export default function PricingPage() {
           { name: "Pricing", path: "/pricing" },
         ])}
       />
+      <JsonLd data={faqPageSchema(pricingFaq)} />
       <Header active="pricing" />
 
       <main>
@@ -49,7 +69,8 @@ export default function PricingPage() {
               Here&apos;s exactly what each track includes — call or message us for the current dirham figure. Private
               one-to-one lessons, including live trading sessions, are available too. That fee is also quoted when you
               enquire and is not listed here. What changes a 2026 quote, track by track, is written on the{" "}
-              <Link href="/forex-course-fees-dubai">forex course fees in Dubai</Link> page. That page does not add a price either.
+              <Link href="/forex-course-fees-dubai">forex course fees in Dubai</Link> page. That page does not add a price either. The two syllabuses are on{" "}
+              <Link href="/courses">forex trading courses</Link>. To ask for the figure, use the <Link href="/contact">contact page</Link> or WhatsApp +971 55 904 7030.
             </p>
           </div>
         </section>
@@ -98,30 +119,15 @@ export default function PricingPage() {
               <h2>Common questions about fees</h2>
             </div>
             <div className="faq-list reveal">
-              <details>
-                <summary>
-                  Why don&apos;t you list a price on the website?<span className="plus">+</span>
-                </summary>
-                <p>Fees can change between cohorts and depend on current enrolment. Rather than publish a number that might be outdated by the time you read it, we quote the current fee in AED when you enquire.</p>
-              </details>
-              <details>
-                <summary>
-                  Is broker account funding included in the course fee?<span className="plus">+</span>
-                </summary>
-                <p>The course fee covers instruction and practical sessions. Funding your own trading account is separate — we&apos;ll walk you through this when you enquire.</p>
-              </details>
-              <details>
-                <summary>
-                  Do you offer payment plans?<span className="plus">+</span>
-                </summary>
-                <p>Call or message us to discuss what&apos;s currently available — options can vary by cohort.</p>
-              </details>
-              <details>
-                <summary>
-                  Is there a difference in price between the two tracks?<span className="plus">+</span>
-                </summary>
-                <p>Yes, the Advanced Institutional Strategies track covers substantially more curriculum and includes lifetime WhatsApp support, which is reflected in its fee. Call for the current AED quote on both.</p>
-              </details>
+              {pricingFaq.map((item) => (
+                <details key={item.q}>
+                  <summary>
+                    {item.q}
+                    <span className="plus">+</span>
+                  </summary>
+                  <p>{item.text}</p>
+                </details>
+              ))}
             </div>
           </div>
         </section>

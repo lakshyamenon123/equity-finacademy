@@ -7,15 +7,41 @@ import { breadcrumbSchema } from "../lib/schema";
 import { absoluteUrl } from "../lib/site";
 
 export const metadata = pageMetadata({
-  title: "Forex Trading Blog | Equity Fin Academy Dubai",
+  title: "Forex Education Articles for the UAE | Equity Fin Academy",
   description:
-    "Forex articles from Equity Fin Academy in Dubai: course syllabuses, one-to-one class prep, UAE market hours, and risk in AED.",
+    "Forex education for Dubai and the UAE: trading classes, coaching plans, a trading journal, MT5 practice, and how a course is taught.",
   keywords:
-    "forex trading blog Dubai, forex education articles UAE, forex market hours Dubai, support and resistance forex, learn forex trading online UAE",
+    "forex education UAE, forex trading blog Dubai, forex trading classes Dubai, forex coaching plan UAE, trading journal forex",
   path: "/blog",
 });
 
 const posts = [
+  {
+    href: "/blog-personal-forex-coaching-uae",
+    icon: (
+      <>
+        <circle cx="12" cy="8" r="3" />
+        <path d="M6 19c.8-2.6 2.8-4 6-4s5.2 1.4 6 4" />
+      </>
+    ),
+    cat: "Coaching",
+    title: "Personal Forex Coaching in the UAE: What a Coaching Plan Looks Like",
+    desc: "The one-page plan a private coaching hour is built around, and how it differs from a group syllabus.",
+    time: "8 min read",
+  },
+  {
+    href: "/blog-forex-trading-plan-uae",
+    icon: (
+      <>
+        <path d="M6 3h9l3 3v15H6z" />
+        <path d="M9 11h6M9 15h4" />
+      </>
+    ),
+    cat: "Trading Plan",
+    title: "How to Write a Forex Trading Plan and Journal in the UAE",
+    desc: "Rules to write before the session, and the notes to write after, on Gulf Standard Time.",
+    time: "8 min read",
+  },
   {
     href: "/blog-forex-classes-working-professionals-dubai",
     icon: (
@@ -248,7 +274,14 @@ export default function BlogIndexPage() {
               If you have a day job in Dubai, read <Link href="/blog-forex-classes-working-professionals-dubai">forex classes for working professionals</Link> before you assume the class has to be at noon. If you are about to fund a broker account, read <Link href="/blog-demo-vs-live-mt5-uae">demo versus live on MT5</Link> first, then <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>. The chart lessons sit underneath both: <Link href="/blog-candlestick-patterns">candlesticks</Link>, <Link href="/blog-market-structure">market structure</Link>, and <Link href="/blog-smart-money-concepts">smart money concepts</Link>.
             </p>
             <p>
+              If you want a private hour with a written aim, start with <Link href="/blog-personal-forex-coaching-uae">what a coaching plan looks like</Link>. If you want something to fill in after each trade, start with <Link href="/blog-forex-trading-plan-uae">a trading plan and journal</Link>. The live versions of those ideas are the <Link href="/courses">two course tracks</Link> and <Link href="/forex-mentorship-dubai">forex mentorship in Dubai</Link>.
+            </p>
+            <p>
               People comparing a classroom in Dubai with a screen at home should use the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> if that is the emirate, or <Link href="/online-forex-course-uae">online study across the UAE</Link>. Reviews stay on Google. The <Link href="/success-stories">reviews page</Link> explains why this site does not paste testimonials. To ask about a seat, use <Link href="/contact">contact</Link> or WhatsApp +971 55 904 7030. Say group or private, and Dubai or online.
+            </p>
+            <h2>Pick a path, then one article</h2>
+            <p>
+              New to charts: <Link href="/blog-forex-course-dubai-beginners">what a beginner course covers</Link>, then <Link href="/blog-candlestick-patterns">candlesticks</Link>. You already take trades and want them reviewed: the coaching plan, then <Link href="/blog-one-to-one-forex-classes-dubai">how to prepare for a one-to-one class</Link>. You are choosing between a room and a cohort: <Link href="/blog-private-vs-group-forex-classes-dubai">private versus group</Link>. You want the vocabulary of liquidity and order blocks: <Link href="/blog-smart-money-concepts">smart money concepts</Link>, which is an explanation, not the enrolment page.
             </p>
           </div>
         </section>

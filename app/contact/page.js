@@ -10,11 +10,11 @@ import { absoluteUrl, SITE } from "../lib/site";
 import { whatsappHref } from "../lib/whatsapp";
 
 export const metadata = pageMetadata({
-  title: "Contact Us — Equity Fin Academy, Dubai, UAE",
+  title: "Contact Equity Fin Academy | Forex Classes in Dubai",
   description:
-    "Contact Equity Fin Academy in Dubai, UAE, or call +971 55 904 7030. In-person classes in Dubai, online across every emirate. Fees quoted in AED.",
+    "Book forex trading classes in Dubai or online across the UAE. WhatsApp +971 55 904 7030. Say group or private, and whether you will be in Dubai or online.",
   keywords:
-    "forex trading academy Dubai, forex course near me Dubai, Equity Fin Academy contact, trading academy phone number Dubai, book forex course Dubai, forex classes Dubai UAE",
+    "contact forex academy Dubai, forex classes Dubai phone, book forex course Dubai, forex trading classes near me, Equity Fin Academy WhatsApp",
   path: "/contact",
 });
 
@@ -190,6 +190,17 @@ export default function ContactPage() {
             </p>
             <p>
               WhatsApp is the fastest path: <a href="https://wa.me/971559047030" target="_blank" rel="noopener noreferrer">wa.me/971559047030</a>. You can also call <a href="tel:+971559047030">{SITE.telephoneDisplay}</a> or use the form above. The chat button on this site opens the same enquiry.
+            </p>
+
+            <h2>What the reply contains</h2>
+            <p>
+              A useful reply names the track, the format, the next time that fits Gulf Standard Time, and the fee in AED. It does not include a trade to copy, and it does not ask for a broker password. If your message says only &quot;price&quot; or only &quot;classes near me&quot;, the academy will ask the missing pieces before it quotes. You can save that round by sending them first.
+            </p>
+            <p>
+              In person means the classroom in Dubai, UAE. The map on this page is Dubai. It does not print a floor or a building name. If you are driving in, ask for directions on WhatsApp after the time is agreed. Online means the same instructor on a screen, from Abu Dhabi, Sharjah, or anywhere else in the UAE. Both are live. Neither is a recording you start when you are free.
+            </p>
+            <p>
+              If you want to arrive with a page already written, read <Link href="/blog-personal-forex-coaching-uae">what a coaching plan looks like</Link> or <Link href="/blog-forex-trading-plan-uae">how to keep a trading plan and journal</Link>. Then send the plan&apos;s first line in the message: the track, the city, and the hour you can keep. The <Link href="/blog">blog index</Link> lists the rest of the articles if you want the syllabus explained before you book.
             </p>
           </div>
         </section>

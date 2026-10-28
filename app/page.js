@@ -13,9 +13,9 @@ import { VIDEOS } from "./lib/videos";
 export const metadata = pageMetadata({
   title: "Forex Training Academy in Dubai & UAE | Equity Fin Academy",
   description:
-    "Forex Training Academy in Dubai & UAE. Private one-to-one lessons, group classes, and live trading. Rated 5.0 from 30+ Google reviews. 2,000+ students.",
+    "Forex trading courses and classes in Dubai, UAE. Private one-to-one and group lessons, in the room or online. Rated 5.0 from 30+ Google reviews.",
   keywords:
-    "forex trading course Dubai, learn forex trading UAE, how to start forex trading, forex trading for beginners, smart money concepts course, market structure trading, candlestick pattern course, institutional trading strategies, SCA regulated broker training, technical analysis course Dubai, risk management trading course, forex mentor Dubai, best forex course in Dubai, group forex training classes Dubai, private forex training Dubai, one to one forex classes Dubai, forex classes near me Dubai, stock market course dubai, forex course fees dubai, forex mentorship dubai, weekend forex classes dubai, forex institute dubai",
+    "forex training academy Dubai, forex training academy UAE, forex trading courses in Dubai, forex training Dubai, trading classes in Dubai, forex education UAE",
   path: "/",
 });
 
@@ -123,7 +123,7 @@ export default function HomePage() {
             </div>
             <div className="stat-block reveal">
               <span className="value" data-counter="1" data-suffix="">1</span>
-              <span className="label">Market. Fully Mastered.</span>
+              <span className="label">Market taught: forex</span>
             </div>
           </div>
         </div>
@@ -355,8 +355,10 @@ export default function HomePage() {
               Google reviews are linked from <Link href="/success-stories">Reviews</Link>. To ask about a seat, use the{" "}
               <Link href="/contact">contact page</Link>. The <Link href="/blog">blog</Link> includes{" "}
               <Link href="/blog-smart-money-concepts">smart money concepts</Link>,{" "}
-              <Link href="/blog-forex-classes-working-professionals-dubai">classes for working professionals</Link>, and{" "}
-              <Link href="/blog-demo-vs-live-mt5-uae">demo versus live accounts on MT5</Link>.
+              <Link href="/blog-forex-classes-working-professionals-dubai">classes for working professionals</Link>,{" "}
+              <Link href="/blog-demo-vs-live-mt5-uae">demo versus live accounts on MT5</Link>,{" "}
+              <Link href="/blog-personal-forex-coaching-uae">what a personal coaching plan looks like</Link>, and{" "}
+              <Link href="/blog-forex-trading-plan-uae">how to write a trading plan and journal</Link>.
             </p>
           </div>
         </section>
