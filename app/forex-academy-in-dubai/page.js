@@ -10,11 +10,11 @@ import { breadcrumbSchema, faqPageSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 
 export const metadata = pageMetadata({
-  title: "Forex Training in Dubai | Trading Classes | Equity Fin Academy",
+  title: "Forex Courses in Dubai | Training Academy | Equity Fin",
   description:
-    "Forex trading classes in Dubai, UAE, in person or online. A forex academy for beginners and experienced traders. Rated 5.0 from 30+ Google reviews.",
+    "Forex courses and trading classes in Dubai, UAE. Private one-to-one lessons or a group class, in the room or online. Rated 5.0 from 30+ Google reviews.",
   keywords:
-    "forex academy in Dubai, forex training Dubai, trading classes in Dubai, forex trading classes near me, forex education UAE, forex classes in Dubai",
+    "forex course Dubai, forex courses in Dubai, forex training academy Dubai, trading classes in Dubai, forex classes near me Dubai, forex academy in Dubai",
   path: "/forex-academy-in-dubai",
 });
 
@@ -106,21 +106,23 @@ export default function ForexAcademyDubaiPage() {
               <div className="hero-copy">
                 <span className="eyebrow">AL QUSAIS · DUBAI · FOREX ACADEMY</span>
                 <h1 className="hero-display">
-                  Learn{" "}
+                  Forex{" "}
                   <span className="inline-pill">
-                    <span className="dot-live"></span>forex
+                    <span className="dot-live"></span>courses
                   </span>{" "}
                   in Dubai, from complete beginner onward.
                 </h1>
                 <p className="hero-sub" style={{ marginTop: 22 }}>
-                  Equity Fin Academy is a forex academy in Dubai, UAE, running structured forex classes for
-                  beginners and advanced traders alike. If you&apos;re comparing forex training in Dubai, here&apos;s
-                  exactly what we teach, who teaches it, and how it works.
+                  Equity Fin Academy runs forex courses in Dubai, UAE: private one-to-one lessons and group trading
+                  classes, in the room or online from any emirate. If you are comparing a forex training academy in
+                  Dubai, this page is what is taught, who teaches it, and how a class is booked.
                 </p>
                 <p className="hero-sub" style={{ marginTop: 14 }}>
-                  This page is the city overview. The training offer, with private lessons and group classes, is the{" "}
+                  The training offer, with both formats, is the{" "}
                   <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link> page. Students outside Dubai should use the{" "}
-                  <Link href="/forex-training-academy-uae">forex training academy UAE</Link> page. Each URL keeps its own canonical.
+                  <Link href="/forex-training-academy-uae">forex training academy UAE</Link> page. A map search has its own checklist:{" "}
+                  <Link href="/blog-forex-classes-near-me-dubai">forex classes near me in Dubai</Link>. The study order, if you are not ready to book, is{" "}
+                  <Link href="/blog-forex-education-uae">forex education in the UAE</Link>.
                 </p>
                 <div className="cta-row">
                   <a href="tel:+971559047030" className="btn btn-outline">
@@ -365,7 +367,7 @@ export default function ForexAcademyDubaiPage() {
             </p>
             <p>
               If you live in Abu Dhabi, the classroom is a drive away, so read the{" "}
-              <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> before you assume you must commute. Sharjah is a shorter trip and has its own note. People searching for trading classes nearby still use the same two tracks. The written lessons are on the <Link href="/blog">blog</Link>, including{" "}
+              <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> before you assume you must commute. Sharjah is a shorter trip and has its own note. People searching for trading classes nearby still use the same two tracks. How to read that search is in <Link href="/blog-forex-classes-near-me-dubai">forex classes near me in Dubai</Link>. The written lessons are on the <Link href="/blog">blog</Link>, including <Link href="/blog-forex-education-uae">forex education in the UAE</Link>,{" "}
               <Link href="/blog-smart-money-concepts">smart money concepts</Link>,{" "}
               <Link href="/blog-personal-forex-coaching-uae">a personal coaching plan</Link>, and{" "}
               <Link href="/blog-forex-trading-plan-uae">a trading plan and journal</Link>. Google reviews stay on Google. The <Link href="/success-stories">reviews page</Link> explains how to read the listing.
@@ -399,7 +401,7 @@ export default function ForexAcademyDubaiPage() {
             </div>
             <p style={{ marginTop: 24 }}>
               <Link href="/faq" className="btn btn-outline">
-                See All 35+ FAQs
+                See All 30+ FAQs
               </Link>
             </p>
           </div>

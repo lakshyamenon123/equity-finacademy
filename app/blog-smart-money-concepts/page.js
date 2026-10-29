@@ -128,7 +128,7 @@ export default function BlogSmartMoneyConceptsPage() {
 
               <h2>This article and the course page do different jobs</h2>
               <p>
-                You are on the definition. The <Link href="/smc-ict-trading-course-dubai">SMC and ICT course page</Link> is the enrolment: which track the words sit on, and how to ask for a seat in Dubai or online. If the two pages feel similar, use this one to learn the five terms, and that one to book. The topic lists themselves are on <Link href="/courses">courses</Link>.
+                You are on the definition. The <Link href="/smc-ict-trading-course-dubai">SMC and ICT course page</Link> is the enrolment: which track the words sit on, and how to ask for a seat in Dubai or online. If the two pages feel similar, use this one to learn the five terms, and that one to book. The topic lists themselves are on <Link href="/courses">courses</Link>. Where this topic sits in a study order is <Link href="/blog-forex-education-uae">forex education in the UAE</Link>. Whether to come to the room is a separate decision, covered in <Link href="/blog-forex-classes-near-me-dubai">forex classes near me in Dubai</Link>.
               </p>
               <p>
                 Once you can point at one sweep, write the rule in a sentence before you take it. That sentence belongs in a <Link href="/blog-forex-trading-plan-uae">trading plan</Link>, not in a folder of unmarked screenshots. A private hour can then review the sentence. What that plan looks like across several weeks is in <Link href="/blog-personal-forex-coaching-uae">personal forex coaching in the UAE</Link>.

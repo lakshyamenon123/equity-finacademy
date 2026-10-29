@@ -25,6 +25,8 @@ const LINKS = [
   { href: "/blog-forex-classes-working-professionals-dubai", label: "Classes for working professionals" },
   { href: "/blog-demo-vs-live-mt5-uae", label: "Demo vs live on MT5" },
   { href: "/blog-smart-money-concepts", label: "Smart money concepts" },
+  { href: "/blog-forex-classes-near-me-dubai", label: "Forex classes near me in Dubai" },
+  { href: "/blog-forex-education-uae", label: "Forex education in the UAE" },
   { href: "/blog-personal-forex-coaching-uae", label: "Personal coaching plan" },
   { href: "/blog-forex-trading-plan-uae", label: "Trading plan and journal" },
   { href: "/success-stories", label: "Student reviews" },
