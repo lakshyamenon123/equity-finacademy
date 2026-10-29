@@ -14,13 +14,14 @@ const nextConfig = {
   // Pages stay statically generated. Those routes no-op to WhatsApp when
   // GEMINI_API_KEY, OPENAI_API_KEY, and LEAD_WEBHOOK_URL are unset.
   trailingSlash: false,
-  // The built-in slash redirect runs before these rules, so /home/ would stop
-  // at /home. Own the slash redirect and list the old URLs first so each is one hop.
+  // Leave slash handling to middleware.js. Next's built-in slash redirect
+  // would send /home/ to /home before these rules, which is a second hop.
   skipTrailingSlashRedirect: true,
   images: { unoptimized: true },
   async redirects() {
-    // permanent: true is a 308. List the legacy URL before its trailing-slash
-    // twin so each request is one hop, then strip any other trailing slash.
+    // permanent: true is a 308. Trailing-slash requests, including /home/ and
+    // /about-us/, are one hop in middleware.js. A catch-all slash rule here
+    // was matching first and sending /home/ to /home.
     const pairs = [
       ["/home", "/"],
       ["/index.html", "/"],
@@ -49,11 +50,7 @@ const nextConfig = {
       ["/terms.html", "/terms"],
       ["/privacy.html", "/privacy"],
     ];
-    const legacy = pairs.flatMap(([source, destination]) => [
-      { source, destination, permanent: true },
-      { source: `${source}/`, destination, permanent: true },
-    ]);
-    return [...legacy, { source: "/:path+/", destination: "/:path+", permanent: true }];
+    return pairs.map(([source, destination]) => ({ source, destination, permanent: true }));
   },
   async headers() {
     return [

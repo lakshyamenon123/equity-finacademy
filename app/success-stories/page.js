@@ -92,7 +92,7 @@ export default function SuccessStoriesPage() {
               A useful review names what the person studied: a group cohort or a private lesson, in Dubai or online. It does not need to claim a profit. If a review promises that every student makes money, treat that line with the same caution you would give any trading advert. The academy will not add that kind of sentence here.
             </p>
             <p>
-              The instructor those students are writing about is <Link href="/about">Gopi Chandran</Link>. The two tracks they sat are on the <Link href="/courses">courses page</Link>. Students coming from Abu Dhabi can read the <Link href="/forex-course-abu-dhabi">Abu Dhabi course note</Link> before they compare the Google comments with the trip. The written lessons, which are separate from reviews, start on the <Link href="/blog">blog</Link>, including <Link href="/blog-smart-money-concepts">smart money concepts</Link>.
+              The instructor those students are writing about is <Link href="/about">Gopi Chandran</Link>. The two tracks they sat are on the <Link href="/courses">courses page</Link>. Students coming from Abu Dhabi can read the <Link href="/forex-course-abu-dhabi">Abu Dhabi course note</Link> before they compare the Google comments with the trip. The written lessons, which are separate from reviews, start on the <Link href="/blog">blog</Link>, including <Link href="/blog-forex-education-uae">forex education in the UAE</Link>, <Link href="/blog-forex-classes-near-me-dubai">forex classes near me in Dubai</Link>, and <Link href="/blog-smart-money-concepts">smart money concepts</Link>.
             </p>
 
             <h2>What a published story on this site would include</h2>

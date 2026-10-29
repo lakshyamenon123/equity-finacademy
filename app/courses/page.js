@@ -83,7 +83,11 @@ export default function CoursesPage() {
               <Link href="/stock-market-course-dubai">stock market course</Link> page. Smart money concepts are on the{" "}
               <Link href="/smc-ict-trading-course-dubai">SMC and ICT course</Link> page. To judge a syllabus before you enquire, read{" "}
               <Link href="/blog-forex-trading-courses-dubai">how to read a forex course syllabus</Link>. New to the platform? Read{" "}
-              <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>.
+              <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>. If you are still deciding what to study first, read{" "}
+              <Link href="/blog-forex-education-uae">forex education in the UAE</Link>. If you searched for a class nearby, read{" "}
+              <Link href="/blog-forex-classes-near-me-dubai">forex classes near me in Dubai</Link>. Abu Dhabi students should use the{" "}
+              <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> for the drive-or-online choice. Reviews are linked from{" "}
+              <Link href="/success-stories">the reviews page</Link>, and a seat is booked on <Link href="/contact">contact</Link>.
             </p>
             <div className="cta-row">
               <a href="https://wa.me/971559047030" className="btn btn-primary" target="_blank" rel="noopener noreferrer">

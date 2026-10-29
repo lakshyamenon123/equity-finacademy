@@ -11,9 +11,9 @@ import { SITE } from "./lib/site";
 import { VIDEOS } from "./lib/videos";
 
 export const metadata = pageMetadata({
-  title: "Forex Training Academy in Dubai & UAE | Equity Fin Academy",
+  title: "Forex Training Academy in Dubai, UAE | Equity Fin Academy",
   description:
-    "Forex trading courses and classes in Dubai, UAE. Private one-to-one and group lessons, in the room or online. Rated 5.0 from 30+ Google reviews.",
+    "Forex courses in Dubai with private one-to-one lessons and group classes. Train in person or online across the UAE. Open 24/7. Rated 5.0 from 30+ Google reviews.",
   keywords:
     "forex training academy Dubai, forex training academy UAE, forex trading courses in Dubai, forex training Dubai, trading classes in Dubai, forex education UAE",
   path: "/",
@@ -353,7 +353,9 @@ export default function HomePage() {
               <Link href="/forex-course-fees-dubai">forex course fees in Dubai</Link>. Students in Abu Dhabi should read the{" "}
               <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> before they decide between the drive and an online seat.
               Google reviews are linked from <Link href="/success-stories">Reviews</Link>. To ask about a seat, use the{" "}
-              <Link href="/contact">contact page</Link>. The <Link href="/blog">blog</Link> includes{" "}
+              <Link href="/contact">contact page</Link>. The city overview is the <Link href="/forex-academy-in-dubai">forex academy in Dubai</Link> page. The <Link href="/blog">blog</Link> includes{" "}
+              <Link href="/blog-forex-classes-near-me-dubai">forex classes near me in Dubai</Link>,{" "}
+              <Link href="/blog-forex-education-uae">forex education in the UAE</Link>,{" "}
               <Link href="/blog-smart-money-concepts">smart money concepts</Link>,{" "}
               <Link href="/blog-forex-classes-working-professionals-dubai">classes for working professionals</Link>,{" "}
               <Link href="/blog-demo-vs-live-mt5-uae">demo versus live accounts on MT5</Link>,{" "}

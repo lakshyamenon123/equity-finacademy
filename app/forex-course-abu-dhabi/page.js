@@ -155,7 +155,7 @@ export default function ForexCourseAbuDhabiPage() {
             </ul>
             <p>
               The <Link href="/forex-course-sharjah">Sharjah course page</Link> is a different decision because the trip is short and the question is usually whether to cross over for class. Living in Dubai is different again: the classroom is in the same city, and the{" "}
-              <Link href="/forex-academy-in-dubai">forex academy in Dubai</Link> page describes that school day. This page does not repeat either of those. It is the capital-to-Dubai choice.
+              <Link href="/forex-academy-in-dubai">forex academy in Dubai</Link> page describes that school day. This page does not repeat either of those. It is the capital-to-Dubai choice. People already in Dubai who searched for a class nearby want <Link href="/blog-forex-classes-near-me-dubai">what that search can and cannot tell you</Link>. The study order, before either city books a seat, is <Link href="/blog-forex-education-uae">forex education in the UAE</Link>.
             </p>
 
             <h2>What an Abu Dhabi week looks like</h2>

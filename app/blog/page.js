@@ -17,6 +17,32 @@ export const metadata = pageMetadata({
 
 const posts = [
   {
+    href: "/blog-forex-classes-near-me-dubai",
+    icon: (
+      <>
+        <path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z" />
+        <circle cx="12" cy="10" r="2.2" />
+      </>
+    ),
+    cat: "Trading Classes",
+    title: "Forex Classes Near Me in Dubai: What to Check Before You Visit",
+    desc: "What a map search can decide, and the questions to ask before you book a group class or a private lesson.",
+    time: "8 min read",
+  },
+  {
+    href: "/blog-forex-education-uae",
+    icon: (
+      <>
+        <path d="M4 19.5A2.5 2.5 0 016.5 17H20" />
+        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z" />
+      </>
+    ),
+    cat: "Forex Education",
+    title: "Forex Education in the UAE: What to Study Before You Book a Class",
+    desc: "The study order that makes a trading class in Dubai useful, and when it is time to enrol.",
+    time: "8 min read",
+  },
+  {
     href: "/blog-personal-forex-coaching-uae",
     icon: (
       <>
@@ -274,7 +300,7 @@ export default function BlogIndexPage() {
               If you have a day job in Dubai, read <Link href="/blog-forex-classes-working-professionals-dubai">forex classes for working professionals</Link> before you assume the class has to be at noon. If you are about to fund a broker account, read <Link href="/blog-demo-vs-live-mt5-uae">demo versus live on MT5</Link> first, then <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>. The chart lessons sit underneath both: <Link href="/blog-candlestick-patterns">candlesticks</Link>, <Link href="/blog-market-structure">market structure</Link>, and <Link href="/blog-smart-money-concepts">smart money concepts</Link>.
             </p>
             <p>
-              If you want a private hour with a written aim, start with <Link href="/blog-personal-forex-coaching-uae">what a coaching plan looks like</Link>. If you want something to fill in after each trade, start with <Link href="/blog-forex-trading-plan-uae">a trading plan and journal</Link>. The live versions of those ideas are the <Link href="/courses">two course tracks</Link> and <Link href="/forex-mentorship-dubai">forex mentorship in Dubai</Link>.
+              If a map search is how you arrived, start with <Link href="/blog-forex-classes-near-me-dubai">forex classes near me in Dubai</Link>. If you are not sure what to study first, start with <Link href="/blog-forex-education-uae">forex education in the UAE</Link>. If you want a private hour with a written aim, start with <Link href="/blog-personal-forex-coaching-uae">what a coaching plan looks like</Link>. If you want something to fill in after each trade, start with <Link href="/blog-forex-trading-plan-uae">a trading plan and journal</Link>. The live versions of those ideas are the <Link href="/courses">two course tracks</Link> and <Link href="/forex-mentorship-dubai">forex mentorship in Dubai</Link>.
             </p>
             <p>
               People comparing a classroom in Dubai with a screen at home should use the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> if that is the emirate, or <Link href="/online-forex-course-uae">online study across the UAE</Link>. Reviews stay on Google. The <Link href="/success-stories">reviews page</Link> explains why this site does not paste testimonials. To ask about a seat, use <Link href="/contact">contact</Link> or WhatsApp +971 55 904 7030. Say group or private, and Dubai or online.
