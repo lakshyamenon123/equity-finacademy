@@ -27,7 +27,7 @@ const postSchema = articleSchema({
   description:
     "Liquidity, imbalance, and order blocks for beginners in Dubai, and why each one depends on market structure.",
   path: "/blog-smart-money-concepts",
-  dateModified: "2026-10-28",
+  dateModified: "2026-10-30",
 });
 
 export default function BlogSmartMoneyConceptsPage() {
@@ -125,6 +125,9 @@ export default function BlogSmartMoneyConceptsPage() {
                 around an office job can read{" "}
                 <Link href="/blog-forex-classes-working-professionals-dubai">forex classes for working professionals in Dubai</Link>.
               </p>
+              <p>
+                Pick the pair before you hunt for a sweep. <Link href="/blog-currency-pairs-uae">Currency pairs for UAE learners</Link> is the quote: one major, base and second currency, on one chart. A fast candle at a scheduled release is often the number, not a liquidity run. Check <Link href="/blog-forex-economic-calendar-dubai">the economic calendar in Dubai time</Link> before you rename that wick. The in-person class that reviews the mark is the <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link>. The same hour online, from any emirate, is the <Link href="/forex-training-academy-uae">forex training academy UAE</Link>.
+              </p>
 
               <h2>This article and the course page do different jobs</h2>
               <p>
@@ -139,7 +142,11 @@ export default function BlogSmartMoneyConceptsPage() {
                 This article names the shapes. It does not watch your chart. In a group cohort or a private lesson,
                 the instructor stops you when the swing you marked is the wrong one. Both formats run in Dubai, UAE,
                 and online across the UAE, with live trading sessions. The fee is quoted in AED when you{" "}
-                <Link href="/contact">enquire</Link>. Private and group seats are compared on{" "}
+                <Link href="/contact">enquire</Link> or message{" "}
+                <a href="https://wa.me/971559047030" target="_blank" rel="noopener noreferrer">
+                  WhatsApp
+                </a>
+                . Private and group seats are compared on{" "}
                 <Link href="/private-group-forex-training-dubai">private and group training</Link>. The topic sits on
                 the advanced track after structure, which is listed on the <Link href="/courses">courses page</Link>.
               </p>

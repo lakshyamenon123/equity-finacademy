@@ -4,7 +4,7 @@ import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
 import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
-import { breadcrumbSchema } from "../lib/schema";
+import { articleSchema, breadcrumbSchema } from "../lib/schema";
 
 const headline = "Forex Risk Management in the UAE: How Much to Risk Per Trade";
 
@@ -18,23 +18,16 @@ export const metadata = pageMetadata({
   type: "article",
 });
 
-const postSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
+const postSchema = articleSchema({
   headline,
-  author: { "@type": "Person", "@id": "https://www.equityfinacademy.com/#gopi", name: "Gopi Chandran", url: "https://www.equityfinacademy.com/about" },
-  publisher: { "@type": "EducationalOrganization", "@id": "https://www.equityfinacademy.com/#organization", name: "Equity Fin Academy", url: "https://www.equityfinacademy.com/" },
-  mainEntityOfPage: "https://www.equityfinacademy.com/blog-risk-management",
-  image: ["https://www.equityfinacademy.com/og-image.png"],
-  inLanguage: "en-AE",
-  // TODO(owner): add datePublished. This article did not record one, so it is omitted.
   description: "Position sizing in AED, stop-losses, and why risk management matters more than entries for UAE traders.",
-};
+  path: "/blog-risk-management",
+});
 
 export default function BlogRiskManagementPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(postSchema) }} />
+      <JsonLd data={postSchema} />
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", path: "/" },

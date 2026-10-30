@@ -356,6 +356,8 @@ export default function HomePage() {
               <Link href="/contact">contact page</Link>. The city overview is the <Link href="/forex-academy-in-dubai">forex academy in Dubai</Link> page. The <Link href="/blog">blog</Link> includes{" "}
               <Link href="/blog-forex-classes-near-me-dubai">forex classes near me in Dubai</Link>,{" "}
               <Link href="/blog-forex-education-uae">forex education in the UAE</Link>,{" "}
+              <Link href="/blog-currency-pairs-uae">currency pairs</Link>,{" "}
+              <Link href="/blog-forex-economic-calendar-dubai">the economic calendar in Dubai</Link>,{" "}
               <Link href="/blog-smart-money-concepts">smart money concepts</Link>,{" "}
               <Link href="/blog-forex-classes-working-professionals-dubai">classes for working professionals</Link>,{" "}
               <Link href="/blog-demo-vs-live-mt5-uae">demo versus live accounts on MT5</Link>,{" "}
@@ -379,8 +381,8 @@ export default function HomePage() {
                   How do I start learning forex trading?<span className="plus">+</span>
                 </summary>
                 <p>
-                  Start with the fundamentals — currency pairs, candlestick patterns and market structure — before
-                  risking any capital. Our <Link href="/blog">blog</Link> walks through this step by step, and the Basic
+                  Start with the fundamentals — <Link href="/blog-currency-pairs-uae">currency pairs</Link>, candlestick patterns and market structure — before
+                  trading live. Our <Link href="/blog">blog</Link> walks through this step by step, and the Basic
                   to Intermediate course builds on it with live instruction.
                 </p>
               </details>
@@ -426,6 +428,8 @@ export default function HomePage() {
               <Link href="/blog-forex-course-dubai-beginners" className="topic-chip">Beginner Course: What to Expect</Link>
               <Link href="/blog-private-vs-group-forex-classes-dubai" className="topic-chip">Private vs Group Classes</Link>
               <Link href="/blog-start-forex-trading-uae-mt5" className="topic-chip">Start Forex with MT5</Link>
+              <Link href="/blog-currency-pairs-uae" className="topic-chip">Currency Pairs</Link>
+              <Link href="/blog-forex-economic-calendar-dubai" className="topic-chip">Economic Calendar in Dubai</Link>
               <Link href="/blog-smart-money-concepts" className="topic-chip">Smart Money Concepts</Link>
               <Link href="/blog-market-structure" className="topic-chip">Market Structure</Link>
               <Link href="/blog-candlestick-patterns" className="topic-chip">Candlestick Patterns</Link>
