@@ -15,6 +15,8 @@ const LINKS = [
   { href: "/online-forex-course-uae", label: "Online forex course in the UAE" },
   { href: "/courses", label: "Course tracks" },
   { href: "/private-group-forex-training-dubai", label: "Private vs group classes" },
+  { href: "/blog-currency-pairs-uae", label: "Currency pairs for UAE learners" },
+  { href: "/blog-forex-economic-calendar-dubai", label: "Economic calendar in Dubai" },
   { href: "/blog-forex-trading-courses-dubai", label: "How to read a course syllabus" },
   { href: "/blog-one-to-one-forex-classes-dubai", label: "Prepare for a one-to-one class" },
   { href: "/blog-choose-forex-academy-uae", label: "How to choose an academy" },

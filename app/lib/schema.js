@@ -159,9 +159,8 @@ export function faqPageSchema(items) {
   };
 }
 
-function courseEntry({ id, name, description, url, topics, offerName, category, instanceName, offerDescription }) {
+function courseEntry({ id, name, description, url, topics, instanceName }) {
   return {
-    "@context": "https://schema.org",
     "@type": "Course",
     "@id": id,
     name,
@@ -179,30 +178,19 @@ function courseEntry({ id, name, description, url, topics, offerName, category, 
       areaServed,
     },
     teaches: topics,
-    // No numeric price: fees are quoted in AED on enquiry and are not published.
-    offers: {
-      "@type": "Offer",
-      name: offerName,
-      category,
-      url,
-      priceCurrency: "AED",
-      availability: "https://schema.org/LimitedAvailability",
-      description: offerDescription,
-      areaServed,
-    },
+    // Fees are quoted in AED on enquiry and are not published. An Offer without
+    // a price is invalid structured data, so the price is left off the graph.
     hasCourseInstance: {
       "@type": "CourseInstance",
       name: instanceName,
       courseMode: ["https://schema.org/Onsite", "https://schema.org/Online"],
+      inLanguage: "en-AE",
       location: place,
     },
   };
 }
 
-const groupOfferDescription =
-  "Live group class with live trading sessions and training in Dubai, UAE, and online across the UAE. The fee is quoted in AED when you enquire because it varies by cohort and is not published on the site.";
-
-export function privateCourseSchema() {
+function privateCourse() {
   const url = absoluteUrl("/private-group-forex-training-dubai");
   return courseEntry({
     id: `${url}#private-course`,
@@ -211,42 +199,54 @@ export function privateCourseSchema() {
       "Private one-to-one forex lessons in Dubai, UAE, and online across the UAE, with live trading sessions and training. The fee is quoted in AED when you enquire and is not published.",
     url,
     topics: ["Private one-to-one forex lessons", "Live trading sessions", "Forex training"],
-    offerName: "Private one-to-one lesson",
-    category: "Private one-to-one forex training",
     instanceName: "Private one-to-one lesson",
-    offerDescription:
-      "Private one-to-one forex lesson with live trading sessions and training in Dubai, UAE, and online across the UAE. No price is published; the fee is quoted in AED when you enquire.",
   });
 }
 
+export function privateCourseSchema() {
+  return {
+    "@context": "https://schema.org",
+    ...privateCourse(),
+  };
+}
+
 export function courseSchemas() {
-  return [
+  const basicUrl = `${absoluteUrl("/courses")}#basic-to-intermediate`;
+  const advancedUrl = `${absoluteUrl("/courses")}#advanced-institutional`;
+  const courses = [
     courseEntry({
-      id: `${absoluteUrl("/courses")}#basic-to-intermediate`,
+      id: basicUrl,
       name: "Basic to Intermediate Forex Course",
       description:
         "Forex fundamentals, candlestick patterns, market structure and smart money concepts for traders starting from scratch. Taught in Dubai, UAE, and online across the UAE, as a group class with live trading sessions.",
-      url: `${absoluteUrl("/courses")}#basic-to-intermediate`,
+      url: basicUrl,
       topics: basicTopics,
-      offerName: "Group class in Dubai",
-      category: "Group forex training class",
       instanceName: "Group cohort",
-      offerDescription: groupOfferDescription,
     }),
     courseEntry({
-      id: `${absoluteUrl("/courses")}#advanced-institutional`,
+      id: advancedUrl,
       name: "Advanced Institutional Strategies Forex Course",
       description:
         "Market profile, volume with smart money concepts, Fibonacci retracement and risk psychology for experienced forex traders. Taught in Dubai, UAE, and online across the UAE, as a group class with live trading sessions.",
-      url: `${absoluteUrl("/courses")}#advanced-institutional`,
+      url: advancedUrl,
       topics: advancedTopics,
-      offerName: "Group class in Dubai",
-      category: "Group forex training class",
       instanceName: "Group cohort",
-      offerDescription: groupOfferDescription,
     }),
-    privateCourseSchema(),
+    privateCourse(),
   ];
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Forex courses in Dubai and online across the UAE",
+    numberOfItems: courses.length,
+    itemListElement: courses.map((course, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      url: course.url,
+      name: course.name,
+      item: course,
+    })),
+  };
 }
 
 export function videoObjectGraph(videos, channel = EQUITY_GLOBAL) {

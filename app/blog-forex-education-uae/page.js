@@ -72,13 +72,13 @@ export default function ForexEducationUaePost() {
               <h2>Four things to learn before you pay for a seat</h2>
               <ul>
                 <li>
-                  <strong>What a quote is.</strong> EUR/USD is the dollar price of one euro. If the number rises, the euro strengthened against the dollar. You do not need a platform to learn that sentence. You do need it before a class, or the chart is a picture.
+                  <strong>What a quote is.</strong> EUR/USD is the dollar price of one euro. If the number rises, the euro strengthened against the dollar. You do not need a platform to learn that sentence. You do need it before a class, or the chart is a picture. The longer version, including which majors to open first, is <Link href="/blog-currency-pairs-uae">currency pairs for learners in the UAE</Link>.
                 </li>
                 <li>
                   <strong>What a candle is.</strong> The body is the open and the close. The wick is where price travelled and did not stay. The patterns worth learning first are in <Link href="/blog-candlestick-patterns">how to read candlestick patterns</Link>. Learn a few. A long catalogue will not help the first month.
                 </li>
                 <li>
-                  <strong>What the UAE clock does to the session.</strong> Dubai and the other emirates use Gulf Standard Time, UTC+4, all year. London and New York move their clocks. The tables are in <Link href="/blog-forex-market-hours-dubai">forex market hours in Dubai</Link>. A class timed for 7pm is 7pm in Abu Dhabi and in Dubai.
+                  <strong>What the UAE clock does to the session.</strong> Dubai and the other emirates use Gulf Standard Time, UTC+4, all year. London and New York move their clocks. The tables are in <Link href="/blog-forex-market-hours-dubai">forex market hours in Dubai</Link>. A single release, such as a US employment print, is converted the same way on <Link href="/blog-forex-economic-calendar-dubai">the economic calendar page</Link>. A class timed for 7pm is 7pm in Abu Dhabi and in Dubai.
                 </li>
                 <li>
                   <strong>What you would lose if the idea is wrong.</strong> Write it in dirhams before you care about the entry. The method is in <Link href="/blog-risk-management">how much to risk per trade</Link>. A class can check the number. It should not have to invent it for you.

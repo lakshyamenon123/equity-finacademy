@@ -173,7 +173,9 @@ export default function ForexMarketHoursPost() {
                 <Link href="/blog-risk-management">how much to risk per trade</Link> before you treat the overlap as a
                 reason to increase size. If you are marking areas to watch during that window, start with{" "}
                 <Link href="/blog-support-and-resistance-forex">support and resistance</Link>, then let the session
-                show you whether price respects them.
+                show you whether price respects them. A scheduled release inside that window is a separate clock.
+                Convert it on <Link href="/blog-forex-economic-calendar-dubai">the economic calendar in Dubai</Link>{" "}
+                rather than treating every busy hour as news.
               </p>
               <p>
                 The instructor is <Link href="/about">Gopi Chandran</Link>. More than 2,000 students have trained

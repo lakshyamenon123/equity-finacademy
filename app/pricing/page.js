@@ -7,9 +7,9 @@ import { pageMetadata } from "../lib/seo";
 import { breadcrumbSchema, faqPageSchema } from "../lib/schema";
 
 export const metadata = pageMetadata({
-  title: "Forex Course Fees in Dubai (AED) | Equity Fin Academy",
+  title: "What's Included in Dubai Forex Fees | Equity Fin Academy",
   description:
-    "Forex trading course fees in Dubai, quoted in AED. See what group classes and private lessons include, then call or WhatsApp for the current figure.",
+    "What a Dubai forex course fee includes: group classes, private lessons, and live sessions. The dirham figure is quoted when you enquire.",
   keywords:
     "forex course fees Dubai, forex trading courses in Dubai cost, forex course price AED, trading classes in Dubai fees",
   path: "/pricing",

@@ -17,6 +17,32 @@ export const metadata = pageMetadata({
 
 const posts = [
   {
+    href: "/blog-currency-pairs-uae",
+    icon: (
+      <>
+        <path d="M7 8h10M7 16h10" />
+        <path d="M14 5l3 3-3 3M10 13l-3 3 3 3" />
+      </>
+    ),
+    cat: "Forex Basics",
+    title: "Currency Pairs for Forex Learners in Dubai and the UAE",
+    desc: "How a quote is built, which majors to open first, and why the dirham's dollar peg makes USD pairs familiar.",
+    time: "8 min read",
+  },
+  {
+    href: "/blog-forex-economic-calendar-dubai",
+    icon: (
+      <>
+        <rect x="4" y="5" width="16" height="15" rx="2" />
+        <path d="M8 3v4M16 3v4M4 10h16" />
+      </>
+    ),
+    cat: "Market Calendar",
+    title: "How to Read a Forex Economic Calendar in Dubai",
+    desc: "How to turn a data release into Gulf Standard Time, and what a Dubai class expects you to notice.",
+    time: "8 min read",
+  },
+  {
     href: "/blog-forex-classes-near-me-dubai",
     icon: (
       <>
@@ -252,12 +278,18 @@ const blogListingSchema = {
     "Forex articles from Equity Fin Academy in Dubai: class formats, MetaTrader 5 practice, session times, and chart reading.",
   inLanguage: "en-AE",
   publisher: { "@id": "https://www.equityfinacademy.com/#organization" },
-  blogPost: posts.map((post) => ({
-    "@type": "BlogPosting",
-    headline: post.title,
-    description: post.desc,
+};
+
+const blogListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Forex articles for Dubai and the UAE",
+  numberOfItems: posts.length,
+  itemListElement: posts.map((post, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    name: post.title,
     url: absoluteUrl(post.href),
-    mainEntityOfPage: absoluteUrl(post.href),
   })),
 };
 
@@ -271,6 +303,7 @@ export default function BlogIndexPage() {
         ])}
       />
       <JsonLd data={blogListingSchema} />
+      <JsonLd data={blogListSchema} />
       <Header active="blog" />
 
       <main>
@@ -297,7 +330,7 @@ export default function BlogIndexPage() {
           <div className="container prose-block">
             <h2>Start with the question you actually have</h2>
             <p>
-              If you have a day job in Dubai, read <Link href="/blog-forex-classes-working-professionals-dubai">forex classes for working professionals</Link> before you assume the class has to be at noon. If you are about to fund a broker account, read <Link href="/blog-demo-vs-live-mt5-uae">demo versus live on MT5</Link> first, then <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>. The chart lessons sit underneath both: <Link href="/blog-candlestick-patterns">candlesticks</Link>, <Link href="/blog-market-structure">market structure</Link>, and <Link href="/blog-smart-money-concepts">smart money concepts</Link>.
+              If you have a day job in Dubai, read <Link href="/blog-forex-classes-working-professionals-dubai">forex classes for working professionals</Link> before you assume the class has to be at noon. If the chart still looks like a code, start with <Link href="/blog-currency-pairs-uae">how currency pairs are quoted</Link>, then <Link href="/blog-candlestick-patterns">candlesticks</Link>. If you are about to fund a broker account, read <Link href="/blog-demo-vs-live-mt5-uae">demo versus live on MT5</Link> first, then <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>. The chart lessons sit underneath both: <Link href="/blog-market-structure">market structure</Link> and <Link href="/blog-smart-money-concepts">smart money concepts</Link>. A data release is a separate clock from the session: <Link href="/blog-forex-economic-calendar-dubai">how to read the economic calendar in Dubai</Link>.
             </p>
             <p>
               If a map search is how you arrived, start with <Link href="/blog-forex-classes-near-me-dubai">forex classes near me in Dubai</Link>. If you are not sure what to study first, start with <Link href="/blog-forex-education-uae">forex education in the UAE</Link>. If you want a private hour with a written aim, start with <Link href="/blog-personal-forex-coaching-uae">what a coaching plan looks like</Link>. If you want something to fill in after each trade, start with <Link href="/blog-forex-trading-plan-uae">a trading plan and journal</Link>. The live versions of those ideas are the <Link href="/courses">two course tracks</Link> and <Link href="/forex-mentorship-dubai">forex mentorship in Dubai</Link>.

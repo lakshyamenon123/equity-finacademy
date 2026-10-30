@@ -4,7 +4,7 @@ import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
 import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
-import { breadcrumbSchema } from "../lib/schema";
+import { articleSchema, breadcrumbSchema } from "../lib/schema";
 
 const headline = "How to Read Candlestick Patterns: A Beginner's Guide for Dubai";
 
@@ -18,24 +18,17 @@ export const metadata = pageMetadata({
   type: "article",
 });
 
-const postSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
+const postSchema = articleSchema({
   headline,
-  author: { "@type": "Person", "@id": "https://www.equityfinacademy.com/#gopi", name: "Gopi Chandran", url: "https://www.equityfinacademy.com/about" },
-  publisher: { "@type": "EducationalOrganization", "@id": "https://www.equityfinacademy.com/#organization", name: "Equity Fin Academy", url: "https://www.equityfinacademy.com/" },
-  mainEntityOfPage: "https://www.equityfinacademy.com/blog-candlestick-patterns",
-  image: ["https://www.equityfinacademy.com/og-image.png"],
-  inLanguage: "en-AE",
-  // TODO(owner): add datePublished. This article did not record one, so it is omitted.
   description:
     "What a candle represents for beginners in Dubai and across the UAE, and the patterns worth learning first.",
-};
+  path: "/blog-candlestick-patterns",
+});
 
 export default function BlogCandlestickPatternsPage() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(postSchema) }} />
+      <JsonLd data={postSchema} />
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", path: "/" },

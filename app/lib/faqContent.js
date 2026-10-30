@@ -178,7 +178,9 @@ export const faqCategories = [
       {
         q: "What is a currency pair?",
         parts: [
-          'Two currencies quoted against each other, such as EUR/USD. The first is the "base" currency; the second is the "quote" currency.',
+          'Two currencies quoted against each other, such as EUR/USD. The first is the "base" currency; the second is the "quote" currency. The full note for learners in Dubai and the UAE is the ',
+          link("/blog-currency-pairs-uae", "currency pairs article"),
+          ".",
         ],
       },
       {
