@@ -6,7 +6,7 @@ Next.js site for the forex academy in Al Qusais, Dubai.
 
 A floating chat and a green WhatsApp button are on every page. Chat calls `POST /api/chat`.
 
-Early in the chat the assistant asks for a name and a UAE mobile (`+971` followed by 9 digits, or a number starting with `05`). The widget shows: “We'll only use your number to contact you about courses.” A valid pair is saved with `POST /api/lead` (name, phone, Asia/Dubai timestamp, page, interest, and a short summary). The same store receives the contact form via `POST /api/leads`.
+The chat opens with “Hi” and buttons for a free demo class, a free one-to-one meeting with Gopi Chandran, or a question. Choosing an offer asks for a name, a UAE WhatsApp number (`+9715…`, `05…`, or `5…`), and a preferred time (morning, afternoon, evening, or weekend). The widget shows: “We'll only use your number to contact you about courses.” A valid pair is saved with `POST /api/lead` (name, phone, preferred `time`, Asia/Dubai `createdAt`, page, interest, and a short summary). Interest is `Free demo class` or `1-to-1 mentor meeting` for those offers. The same store receives the contact form via `POST /api/leads`. A phone number typed anywhere in the chat is saved too.
 
 Copy `.env.example` to `.env.local` for local development. Set the same variables in the Vercel project. Do not commit real keys.
 
@@ -45,7 +45,7 @@ curl -H "Authorization: Bearer $LEADS_TOKEN" \
   "https://www.equityfinacademy.com/api/leads?since=2026-10-23T00:00:00%2B04:00"
 ```
 
-`x-leads-token` is also accepted. If `since` is omitted, the response starts at the current Dubai day. Each lead has `name`, `phone`, `interest`, `summary`, `page`, and `createdAt` (`+04:00`).
+`x-leads-token` is also accepted. If `since` is omitted, the response starts at the current Dubai day. Each lead has `name`, `phone`, `time` (preferred slot, or an empty string), `interest`, `summary`, `page`, and `createdAt` (`+04:00`).
 
 `LEAD_WEBHOOK_URL` and `LEAD_WEBHOOK_SECRET` are optional and used only when Redis and Postgres are both unset. A webhook does not power the daily export.
 

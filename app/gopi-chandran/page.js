@@ -57,6 +57,9 @@ export default function GopiChandranPage() {
               Dhabi, Sharjah, and the UAE.
             </p>
             <div className="cta-row" style={{ marginTop: 22 }}>
+              <OpenChatLink className="btn btn-primary" intent="demo">
+                Free demo class
+              </OpenChatLink>
               <a href="https://wa.me/971559047030" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
                 WhatsApp +971 55 904 7030
               </a>

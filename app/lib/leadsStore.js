@@ -1,4 +1,5 @@
 import { createHash, timingSafeEqual } from "crypto";
+import { cleanSlot, UNNAMED_VISITOR } from "./booking";
 import { findUaeMobile } from "./phone";
 import { cleanVisitorName, chatSummary } from "./leadCapture";
 
@@ -64,18 +65,30 @@ function cleanPage(value) {
   return page.split("?")[0];
 }
 
+function sameLeadRefresh(prior, lead) {
+  if (!prior) return false;
+  if (lead.time && lead.time !== (prior.time || "")) return true;
+  if (lead.interest && lead.interest !== (prior.interest || "")) return true;
+  if (prior.name === UNNAMED_VISITOR && lead.name && lead.name !== UNNAMED_VISITOR) return true;
+  return false;
+}
+
 export function prepareLead(input) {
   const name = cleanVisitorName(input?.name);
   const phone = findUaeMobile(input?.phone);
   if (!name) return { error: "Please send your name." };
   if (!phone) return { error: "Please send a UAE mobile as +971 followed by 9 digits, or a number starting with 05." };
+  const time = cleanSlot(input?.time);
+  let summary = chatSummary(input?.summary || input?.message || "");
+  if (time && !/preferred time:/i.test(summary)) summary = chatSummary(`Preferred time: ${time}. ${summary}`);
   return {
     lead: {
       id: crypto.randomUUID(),
       name,
       phone,
+      time,
       interest: clip(input?.interest, 80) || "Course enquiry",
-      summary: chatSummary(input?.summary || input?.message || ""),
+      summary,
       page: cleanPage(input?.page),
       createdAt: dubaiTimestamp(),
     },
@@ -97,18 +110,23 @@ async function redisCommand(command) {
   return data.result;
 }
 
-async function recentRedisLeads(minScore) {
+async function recentRedisEntries(minScore) {
   const rows = await redisCommand(["ZRANGEBYSCORE", REDIS_KEY, String(minScore), "+inf"]);
   if (!Array.isArray(rows)) return [];
   return rows
-    .map((row) => {
+    .map((raw) => {
       try {
-        return JSON.parse(row);
+        return { raw: String(raw), lead: JSON.parse(raw) };
       } catch {
         return null;
       }
     })
-    .filter(Boolean);
+    .filter((item) => item?.lead);
+}
+
+async function recentRedisLeads(minScore) {
+  const entries = await recentRedisEntries(minScore);
+  return entries.map((item) => item.lead);
 }
 
 let postgresReady = null;
@@ -117,17 +135,21 @@ async function postgresSql() {
   const { neon } = await import("@neondatabase/serverless");
   const sql = neon(postgresUrl());
   if (!postgresReady) {
-    postgresReady = sql`
-      CREATE TABLE IF NOT EXISTS leads (
-        id text PRIMARY KEY,
-        name text NOT NULL,
-        phone text NOT NULL,
-        interest text,
-        summary text,
-        page text,
-        created_at timestamptz NOT NULL
-      )
-    `.catch((error) => {
+    postgresReady = (async () => {
+      await sql`
+        CREATE TABLE IF NOT EXISTS leads (
+          id text PRIMARY KEY,
+          name text NOT NULL,
+          phone text NOT NULL,
+          interest text,
+          summary text,
+          page text,
+          created_at timestamptz NOT NULL,
+          preferred_time text
+        )
+      `;
+      await sql`ALTER TABLE leads ADD COLUMN IF NOT EXISTS preferred_time text`;
+    })().catch((error) => {
       postgresReady = null;
       throw error;
     });
@@ -155,25 +177,57 @@ export async function saveLead(input) {
   try {
     if (kind === "redis") {
       const since = Date.now() - 12 * 60 * 60 * 1000;
-      const recent = await recentRedisLeads(since);
-      if (recent.some((item) => item.phone === lead.phone && item.name === lead.name)) {
+      const recent = await recentRedisEntries(since);
+      const phoneRows = recent.filter((item) => item.lead.phone === lead.phone);
+      const match =
+        phoneRows.find((item) => item.lead.name === lead.name) ||
+        phoneRows.find((item) => item.lead.name === UNNAMED_VISITOR);
+      if (match && !sameLeadRefresh(match.lead, lead)) {
         return { ok: true, duplicate: true, storage: "redis" };
       }
+      if (match) {
+        lead.id = match.lead.id || lead.id;
+        lead.createdAt = match.lead.createdAt || lead.createdAt;
+        await redisCommand(["ZREM", REDIS_KEY, match.raw]);
+      }
       await redisCommand(["ZADD", REDIS_KEY, String(Date.parse(lead.createdAt)), JSON.stringify(lead)]);
-      return { ok: true, storage: "redis" };
+      return { ok: true, storage: "redis", ...(match ? { updated: true } : {}) };
     }
 
     if (kind === "postgres") {
       const sql = await postgresSql();
       const existing = await sql`
-        SELECT id FROM leads
-        WHERE phone = ${lead.phone} AND name = ${lead.name} AND created_at > NOW() - INTERVAL '12 hours'
+        SELECT id, name, phone, interest, preferred_time
+        FROM leads
+        WHERE phone = ${lead.phone}
+          AND created_at > NOW() - INTERVAL '12 hours'
+          AND (name = ${lead.name} OR name = ${UNNAMED_VISITOR})
+        ORDER BY created_at DESC
         LIMIT 1
       `;
-      if (existing.length) return { ok: true, duplicate: true, storage: "postgres" };
+      const prior = existing[0]
+        ? {
+            name: existing[0].name,
+            phone: existing[0].phone,
+            interest: existing[0].interest,
+            time: existing[0].preferred_time || "",
+          }
+        : null;
+      if (prior && !sameLeadRefresh(prior, lead)) return { ok: true, duplicate: true, storage: "postgres" };
+      if (prior) {
+        await sql`
+          UPDATE leads
+          SET name = ${lead.name},
+              interest = ${lead.interest},
+              summary = ${lead.summary},
+              preferred_time = ${lead.time}
+          WHERE id = ${existing[0].id}
+        `;
+        return { ok: true, storage: "postgres", updated: true };
+      }
       await sql`
-        INSERT INTO leads (id, name, phone, interest, summary, page, created_at)
-        VALUES (${lead.id}, ${lead.name}, ${lead.phone}, ${lead.interest}, ${lead.summary}, ${lead.page}, ${lead.createdAt})
+        INSERT INTO leads (id, name, phone, interest, summary, page, created_at, preferred_time)
+        VALUES (${lead.id}, ${lead.name}, ${lead.phone}, ${lead.interest}, ${lead.summary}, ${lead.page}, ${lead.createdAt}, ${lead.time})
       `;
       return { ok: true, storage: "postgres" };
     }
@@ -225,7 +279,7 @@ export async function listLeads(sinceMs) {
     const sql = await postgresSql();
     const since = new Date(sinceMs).toISOString();
     const result = await sql`
-      SELECT id, name, phone, interest, summary, page, created_at
+      SELECT id, name, phone, interest, summary, page, created_at, preferred_time
       FROM leads
       WHERE created_at >= ${since}
       ORDER BY created_at ASC
@@ -235,6 +289,7 @@ export async function listLeads(sinceMs) {
       publicLead({
         name: row.name,
         phone: row.phone,
+        time: row.preferred_time || "",
         interest: row.interest,
         summary: row.summary,
         page: row.page,
@@ -249,6 +304,7 @@ function publicLead(lead) {
   return {
     name: lead.name,
     phone: lead.phone,
+    time: lead.time || "",
     interest: lead.interest || "",
     summary: lead.summary || "",
     page: lead.page || "/",
