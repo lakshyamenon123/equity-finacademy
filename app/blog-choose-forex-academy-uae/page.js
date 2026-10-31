@@ -4,6 +4,7 @@ import JsonLd from "../components/JsonLd";
 import YouTubeSection from "../components/YouTubeSection";
 import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
+import AuthorByline from "../components/AuthorByline";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { SITE } from "../lib/site";
@@ -57,7 +58,7 @@ export default function ChooseAcademyPost() {
             <div className="blog-article">
               <span className="eyebrow">CHOOSING A SCHOOL</span>
               <h1>How to Choose a Forex Training Academy in the UAE</h1>
-              <div className="meta">By Gopi Chandran · Equity Fin Academy · 23 Oct 2026 · 8 min read</div>
+              <AuthorByline detail="23 Oct 2026 · 8 min read" />
 
               <p>
                 The UAE has no shortage of people selling forex education. Some of it is a real classroom. Some of it is

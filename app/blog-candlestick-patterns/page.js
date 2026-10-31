@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
+import AuthorByline from "../components/AuthorByline";
 import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
@@ -52,7 +53,7 @@ export default function BlogCandlestickPatternsPage() {
             <div className="blog-article">
               <span className="eyebrow">CHART READING</span>
               <h1>How to Read Candlestick Patterns: A Beginner&apos;s Guide for Dubai</h1>
-              <div className="meta">By Gopi Chandran · Equity Fin Academy · 8 min read</div>
+              <AuthorByline detail="8 min read" />
 
               <p>
                 Candlestick charts are the most common way to visualise price movement in forex trading. Before

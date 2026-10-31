@@ -4,6 +4,7 @@ import JsonLd from "../components/JsonLd";
 import YouTubeSection from "../components/YouTubeSection";
 import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
+import AuthorByline from "../components/AuthorByline";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
@@ -59,7 +60,7 @@ export default function GoldXauusdCourseDubaiPost() {
             <div className="blog-article">
               <span className="eyebrow">GOLD · DUBAI, UAE</span>
               <h1>{headline}</h1>
-              <div className="meta">By Gopi Chandran · Equity Fin Academy · 31 Oct 2026 · 9 min read</div>
+              <AuthorByline detail="31 Oct 2026 · 9 min read" />
 
               <p>
                 People in Dubai ask for a gold course because XAUUSD is the chart already on their screen. Equity Fin Academy does not run a separate gold diploma beside the forex tracks. Gold is taught with the same chart tools, on MetaTrader 5, in the classroom in Dubai, UAE, and online across the United Arab Emirates. This note is what that means before you enquire, and what to say so the first hour is about your gold chart.

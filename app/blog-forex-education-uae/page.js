@@ -4,6 +4,7 @@ import JsonLd from "../components/JsonLd";
 import YouTubeSection from "../components/YouTubeSection";
 import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
+import AuthorByline from "../components/AuthorByline";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
@@ -60,7 +61,7 @@ export default function ForexEducationUaePost() {
             <div className="blog-article">
               <span className="eyebrow">STUDY ORDER</span>
               <h1>Forex Education in the UAE: What to Study Before You Book a Class</h1>
-              <div className="meta">By Gopi Chandran · Equity Fin Academy · 29 Oct 2026 · 8 min read</div>
+              <AuthorByline detail="29 Oct 2026 · 8 min read" />
 
               <p>
                 Forex education in the UAE is a sequence, not a pile of videos with similar titles. Learn four things in order, on your own, and a trading class in Dubai has something to correct. Skip the order, and the hour is spent defining a candle. This page is that sequence, and the point at which a teacher starts to earn the fee.

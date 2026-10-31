@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
+import AuthorByline from "../components/AuthorByline";
 import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
@@ -51,7 +52,7 @@ export default function BlogMarketStructurePage() {
             <div className="blog-article">
               <span className="eyebrow">MARKET STRUCTURE</span>
               <h1>What Is Market Structure in Forex? A Guide for UAE Traders</h1>
-              <div className="meta">By Gopi Chandran · Equity Fin Academy · 7 min read</div>
+              <AuthorByline detail="7 min read" />
 
               <p>
                 Market structure is how price organises itself over time — the pattern formed by a market&apos;s

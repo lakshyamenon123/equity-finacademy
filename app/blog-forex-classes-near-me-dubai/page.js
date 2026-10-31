@@ -4,6 +4,7 @@ import JsonLd from "../components/JsonLd";
 import YouTubeSection from "../components/YouTubeSection";
 import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
+import AuthorByline from "../components/AuthorByline";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
@@ -60,7 +61,7 @@ export default function ForexClassesNearMeDubaiPost() {
             <div className="blog-article">
               <span className="eyebrow">TRADING CLASSES</span>
               <h1>Forex Classes Near Me in Dubai: What to Check Before You Visit</h1>
-              <div className="meta">By Gopi Chandran · Equity Fin Academy · 29 Oct 2026 · 8 min read</div>
+              <AuthorByline detail="29 Oct 2026 · 8 min read" />
 
               <p>
                 A phone in Dubai that searches for forex classes near me gets a map. The pin tells you a place is in the city. It does not tell you who teaches, whether the hour is a group class or a private lesson, or whether you will open a chart. Use the map for the trip. Use the questions below for the class.

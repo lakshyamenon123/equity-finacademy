@@ -419,7 +419,7 @@ export default function BlogIndexPage() {
                     <span className="cat">{post.cat}</span>
                     <h3>{post.title}</h3>
                     <p>{post.desc}</p>
-                    <span className="meta">{post.time}</span>
+                    <span className="meta">By Gopi Chandran, Forex Mentor, Dubai · {post.time}</span>
                   </div>
                 </a>
               ))}

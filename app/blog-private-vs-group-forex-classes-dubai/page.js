@@ -4,6 +4,7 @@ import JsonLd from "../components/JsonLd";
 import YouTubeSection from "../components/YouTubeSection";
 import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
+import AuthorByline from "../components/AuthorByline";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { VIDEOS } from "../lib/videos";
@@ -57,7 +58,7 @@ export default function PrivateVsGroupPost() {
             <div className="blog-article">
               <span className="eyebrow">CLASS FORMAT</span>
               <h1>Private vs Group Forex Classes in Dubai</h1>
-              <div className="meta">By Gopi Chandran · Equity Fin Academy · 24 Oct 2026 · 6 min read</div>
+              <AuthorByline detail="24 Oct 2026 · 6 min read" />
 
               <p>
                 A search for forex classes in Dubai usually turns up two formats that share a syllabus and feel

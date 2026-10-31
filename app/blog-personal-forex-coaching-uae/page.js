@@ -4,6 +4,7 @@ import JsonLd from "../components/JsonLd";
 import YouTubeSection from "../components/YouTubeSection";
 import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
+import AuthorByline from "../components/AuthorByline";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
@@ -62,7 +63,7 @@ export default function PersonalForexCoachingPost() {
             <div className="blog-article">
               <span className="eyebrow">COACHING</span>
               <h1>{headline}</h1>
-              <div className="meta">By Gopi Chandran · Equity Fin Academy · 28 Oct 2026 · 8 min read</div>
+              <AuthorByline detail="28 Oct 2026 · 8 min read" />
 
               <p>
                 A personal coaching plan is a page you can reread. It says what the next few weeks of forex study are for, which chart you will use, and which hour you can keep. It is not a list of trades. Equity Fin Academy teaches in Dubai, UAE, and online across the UAE. This article is the document. The seat itself, a private hour, a group cohort, or WhatsApp after the advanced track, is described on the{" "}

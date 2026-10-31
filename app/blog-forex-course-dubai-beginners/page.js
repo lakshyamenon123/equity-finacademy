@@ -4,6 +4,7 @@ import JsonLd from "../components/JsonLd";
 import YouTubeSection from "../components/YouTubeSection";
 import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
+import AuthorByline from "../components/AuthorByline";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { VIDEOS } from "../lib/videos";
@@ -56,7 +57,7 @@ export default function BeginnersCoursePost() {
             <div className="blog-article">
               <span className="eyebrow">BEGINNERS</span>
               <h1>Forex Course in Dubai for Beginners: What to Expect</h1>
-              <div className="meta">By Gopi Chandran · Equity Fin Academy · 23 Oct 2026 · 8 min read</div>
+              <AuthorByline detail="23 Oct 2026 · 8 min read" />
 
               <p>
                 A beginner forex course should feel slower than the ads. You are learning a market that can lose money,

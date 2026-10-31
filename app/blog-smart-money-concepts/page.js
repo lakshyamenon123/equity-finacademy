@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import AcademyLinks from "../components/AcademyLinks";
 import YouTubeSection from "../components/YouTubeSection";
 import Link from "next/link";
+import AuthorByline from "../components/AuthorByline";
 import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema, webPageSchema } from "../lib/schema";
@@ -58,7 +59,7 @@ export default function BlogSmartMoneyConceptsPage() {
             <div className="blog-article">
               <span className="eyebrow">STRATEGY</span>
               <h1>Smart Money Concepts for Beginners in Dubai: One Markup Drill</h1>
-              <div className="meta">By Gopi Chandran · Equity Fin Academy, Dubai, UAE · Updated 31 Oct 2026 · 10 min read</div>
+              <AuthorByline detail="Updated 31 Oct 2026 · 10 min read" />
 
               <p>
                 Smart money concepts (SMC) is a popular framework for analysing forex charts based on the idea of

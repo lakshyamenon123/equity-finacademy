@@ -4,6 +4,7 @@ import JsonLd from "../components/JsonLd";
 import YouTubeSection from "../components/YouTubeSection";
 import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
+import AuthorByline from "../components/AuthorByline";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
@@ -60,7 +61,7 @@ export default function CurrencyPairsUaePost() {
             <div className="blog-article">
               <span className="eyebrow">FOREX BASICS</span>
               <h1>Currency Pairs for Forex Learners in Dubai and the UAE</h1>
-              <div className="meta">By Gopi Chandran · Equity Fin Academy · 30 Oct 2026 · 8 min read</div>
+              <AuthorByline detail="30 Oct 2026 · 8 min read" />
 
               <p>
                 A forex chart is a price for one currency measured in another. That price is the currency pair. Until

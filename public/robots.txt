@@ -1,3 +1,47 @@
+# Equity Fin Academy — public pages are open to search engines and AI assistants.
+# https://www.equityfinacademy.com/llms.txt
+# https://www.equityfinacademy.com/llms-full.txt
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# xAI / Grok crawlers
+User-agent: GrokBot
+Allow: /
+
+User-agent: xAI-Grok
+Allow: /
+
+User-agent: xAI-SearchBot
+Allow: /
+
+User-agent: Grok-DeepSearch
+Allow: /
+
 User-agent: *
 Allow: /
 

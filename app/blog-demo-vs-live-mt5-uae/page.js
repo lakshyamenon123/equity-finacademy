@@ -4,6 +4,7 @@ import JsonLd from "../components/JsonLd";
 import YouTubeSection from "../components/YouTubeSection";
 import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
+import AuthorByline from "../components/AuthorByline";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
@@ -63,7 +64,7 @@ export default function DemoVsLiveMt5Post() {
             <div className="blog-article">
               <span className="eyebrow">PRACTICE</span>
               <h1>{headline}</h1>
-              <div className="meta">By Gopi Chandran · Equity Fin Academy · 27 Oct 2026 · 8 min read</div>
+              <AuthorByline detail="27 Oct 2026 · 8 min read" />
 
               <p>
                 A MetaTrader 5 demo account and a live account share the same screen. They do not share the same

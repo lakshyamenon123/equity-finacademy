@@ -39,6 +39,9 @@ export default function Header({ active }) {
               <Link href="/about" aria-current={current(active, "about")}>
                 About Us
               </Link>
+              <Link href="/gopi-chandran" aria-current={current(active, "gopi")}>
+                Gopi Chandran
+              </Link>
               <Link href="/why-choose-us" aria-current={current(active, "why-choose-us")}>
                 Why Choose Us
               </Link>
@@ -140,6 +143,9 @@ export default function Header({ active }) {
           <div className="nav-mobile-label">About</div>
           <Link href="/about" aria-current={current(active, "about")}>
             About Us
+          </Link>
+          <Link href="/gopi-chandran" aria-current={current(active, "gopi")}>
+            Gopi Chandran
           </Link>
           <Link href="/why-choose-us" aria-current={current(active, "why-choose-us")}>
             Why Choose Us

@@ -4,6 +4,7 @@ import JsonLd from "../components/JsonLd";
 import YouTubeSection from "../components/YouTubeSection";
 import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
+import AuthorByline from "../components/AuthorByline";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
@@ -58,7 +59,7 @@ export default function OneToOneForexClassesPost() {
             <div className="blog-article">
               <span className="eyebrow">PRIVATE LESSONS</span>
               <h1>How to Prepare for One-to-One Forex Classes in Dubai</h1>
-              <div className="meta">By Gopi Chandran · Equity Fin Academy · 26 Oct 2026 · 7 min read</div>
+              <AuthorByline detail="26 Oct 2026 · 7 min read" />
 
               <p>
                 A one-to-one forex class is a poor use of the hour if it is spent installing a platform or deciding which pair to open. This is the preparation that keeps the lesson on your chart. It assumes you have already chosen a private lesson rather than a group cohort. If you have not, start with{" "}

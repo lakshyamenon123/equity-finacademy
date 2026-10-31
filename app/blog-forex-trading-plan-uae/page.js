@@ -4,6 +4,7 @@ import JsonLd from "../components/JsonLd";
 import YouTubeSection from "../components/YouTubeSection";
 import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
+import AuthorByline from "../components/AuthorByline";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
@@ -62,7 +63,7 @@ export default function ForexTradingPlanPost() {
             <div className="blog-article">
               <span className="eyebrow">TRADING PLAN</span>
               <h1>{headline}</h1>
-              <div className="meta">By Gopi Chandran · Equity Fin Academy · 28 Oct 2026 · 8 min read</div>
+              <AuthorByline detail="28 Oct 2026 · 8 min read" />
 
               <p>
                 A trading plan is what you write before the session. A journal is what you write after the trade. Learners in Dubai and the rest of the UAE can use the same page, because the country keeps one clock: Gulf Standard Time, UTC+4, all year. This guide is the blank page. It is not a strategy, and it does not tell you which pair will move tomorrow.

@@ -4,6 +4,7 @@ import JsonLd from "../components/JsonLd";
 import YouTubeSection from "../components/YouTubeSection";
 import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
+import AuthorByline from "../components/AuthorByline";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
@@ -60,7 +61,7 @@ export default function ForexEconomicCalendarDubaiPost() {
             <div className="blog-article">
               <span className="eyebrow">MARKET CALENDAR</span>
               <h1>How to Read a Forex Economic Calendar in Dubai</h1>
-              <div className="meta">By Gopi Chandran · Equity Fin Academy · 30 Oct 2026 · 8 min read</div>
+              <AuthorByline detail="30 Oct 2026 · 8 min read" />
 
               <p>
                 A forex economic calendar is a timetable of scheduled numbers: employment, inflation, interest-rate

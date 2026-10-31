@@ -153,13 +153,29 @@ export function organizationSchema() {
     ],
     sameAs: SITE.sameAs,
     availableLanguage: ["en-AE"],
+    // Same @id as personSchema(), so the founder is the mentor page's Person node.
     founder: {
       "@type": "Person",
       "@id": `${SITE.url}/#gopi`,
-      name: "Gopi Chandran",
-      url: `${SITE.url}/about`,
     },
     areaServed,
+  };
+}
+
+export function mentorProfileSchema() {
+  const url = absoluteUrl("/gopi-chandran");
+  return {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": `${url}#profile`,
+    url,
+    name: "Gopi Chandran, Forex Mentor in Dubai",
+    description:
+      "Profile of Gopi Chandran, founder and lead forex mentor of Equity Fin Academy in Dubai.",
+    inLanguage: "en-AE",
+    isPartOf: { "@id": `${SITE.url}/#website` },
+    mainEntity: { "@id": `${SITE.url}/#gopi` },
+    about: { "@id": `${SITE.url}/#gopi` },
   };
 }
 
@@ -169,19 +185,24 @@ export function personSchema() {
     "@type": "Person",
     "@id": `${SITE.url}/#gopi`,
     name: "Gopi Chandran",
-    jobTitle: "Founder and Lead Instructor",
-    url: `${SITE.url}/about`,
+    alternateName: "Gopichandran",
+    jobTitle: "Forex Mentor & Founder",
+    url: absoluteUrl("/gopi-chandran"),
     image: `${SITE.url}/mentor.jpg`,
     description:
-      "Founder of Equity Fin Academy in Dubai, UAE, and of the Equity Global YouTube channel.",
+      "Gopi Chandran is the founder and lead forex mentor of Equity Fin Academy, the forex training academy in Dubai. He teaches one-to-one private lessons, live trading and training, and group classes on MetaTrader 5.",
     worksFor: {
       "@type": "EducationalOrganization",
       "@id": `${SITE.url}/#organization`,
       name: SITE.name,
       url: absoluteUrl("/"),
     },
-    sameAs: SITE.sameAs,
-    knowsAbout: ["Forex trading", "Market structure", "Risk management"],
+    sameAs: [
+      "https://www.youtube.com/@equityglobalenglish9299",
+      "https://www.youtube.com/channel/UCTjkKXSStHPPA64qCCSPTOg",
+      "https://www.instagram.com/equity_global/",
+    ],
+    knowsAbout: ["forex", "XAUUSD", "MT5"],
   };
 }
 
@@ -202,7 +223,7 @@ export function articleSchema({ headline, description, path, datePublished, date
       "@type": "Person",
       "@id": `${SITE.url}/#gopi`,
       name: "Gopi Chandran",
-      url: `${SITE.url}/about`,
+      url: absoluteUrl("/gopi-chandran"),
     },
     publisher: {
       "@type": "EducationalOrganization",
