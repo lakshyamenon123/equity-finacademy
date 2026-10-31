@@ -164,3 +164,5 @@ body.assist-chat-open{overflow:hidden}
   .assist-log,.assist-chips,.assist-head{max-width:100%}
 }
 .text-link{color:var(--green-dark);text-decoration:underline;text-underline-offset:3px}
+
+.blog-article .meta a{color:var(--green-dark);font-weight:600;text-decoration:underline;text-underline-offset:2px}.blog-article .meta a:hover{color:var(--green)}

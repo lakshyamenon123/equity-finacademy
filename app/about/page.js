@@ -4,12 +4,14 @@ import JsonLd from "../components/JsonLd";
 import Link from "next/link";
 import Image from "next/image";
 import { pageMetadata } from "../lib/seo";
-import { breadcrumbSchema, personSchema } from "../lib/schema";
+import FaqList from "../components/FaqList";
+import { mentorFaq } from "../lib/mentorFaq";
+import { breadcrumbSchema, faqPageSchema, personSchema } from "../lib/schema";
 
 export const metadata = pageMetadata({
   title: "About Us — Gopi Chandran, Founder | Equity Fin Academy Dubai",
   description:
-    "Gopi Chandran is the founder of Equity Fin Academy in Dubai, UAE. He built the Equity Global YouTube channel and has trained 2,000+ students.",
+    "Equity Fin Academy, forex training academy in Dubai, led by mentor Gopi Chandran. Founder profile, private lessons, and group classes. Open 24/7.",
   keywords:
     "Gopi Chandran trader Dubai, Equity Global YouTube, forex trading mentor Dubai, forex trading instructor UAE, trading academy founder Dubai, about equity fin academy",
   path: "/about",
@@ -25,6 +27,7 @@ export default function AboutPage() {
         ])}
       />
       <JsonLd data={personSchema()} />
+      <JsonLd data={faqPageSchema(mentorFaq)} />
       <Header active="about" />
 
       <main>
@@ -39,6 +42,11 @@ export default function AboutPage() {
             <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,3rem)" }}>
               A forex trading education built on a desk, not a webinar funnel.
             </h1>
+            <p className="hero-sub" style={{ marginTop: 18, maxWidth: "68ch" }}>
+              Equity Fin Academy, forex training academy in Dubai, led by mentor Gopi Chandran, teaches private
+              one-to-one lessons, live trading, and group classes for Dubai, Abu Dhabi, Sharjah, and the UAE.{" "}
+              <Link href="/gopi-chandran">Gopi Chandran, Forex Mentor, Dubai</Link>.
+            </p>
           </div>
         </section>
 
@@ -56,7 +64,10 @@ export default function AboutPage() {
               </div>
               <span className="role">FOUNDER &amp; LEAD INSTRUCTOR</span>
               <h2>Gopi Chandran</h2>
-              <p>Founder of Equity Fin Academy and the Equity Global YouTube channel. More than 2,000 students trained.</p>
+              <p>Founder and lead forex mentor of Equity Fin Academy. More than 2,000 students trained.</p>
+              <p>
+                <Link href="/gopi-chandran">Read the mentor profile</Link>
+              </p>
             </div>
 
             <div className="reveal">
@@ -180,6 +191,16 @@ export default function AboutPage() {
               </p>
               <cite>— Gopi Chandran, Founder, Equity Fin Academy</cite>
             </blockquote>
+          </div>
+        </section>
+
+        <section className="tight soft">
+          <div className="container">
+            <div className="section-head reveal">
+              <span className="eyebrow">COMMON QUESTIONS</span>
+              <h2>The mentor and the academy</h2>
+            </div>
+            <FaqList items={mentorFaq} />
           </div>
         </section>
 

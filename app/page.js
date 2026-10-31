@@ -5,7 +5,9 @@ import YouTubeSection from "./components/YouTubeSection";
 import Link from "next/link";
 import OpenChatLink from "./components/OpenChatLink";
 import { pageMetadata } from "./lib/seo";
-import { faqPageSchema, organizationSchema } from "./lib/schema";
+import FaqList from "./components/FaqList";
+import { faqPageSchema, organizationSchema, personSchema } from "./lib/schema";
+import { mentorFaq } from "./lib/mentorFaq";
 import { homeFaq } from "./lib/homeFaq";
 import { SITE } from "./lib/site";
 import { VIDEOS } from "./lib/videos";
@@ -13,7 +15,7 @@ import { VIDEOS } from "./lib/videos";
 export const metadata = pageMetadata({
   title: "Forex Training Academy in Dubai, UAE | Equity Fin Academy",
   description:
-    "Forex courses in Dubai with private one-to-one lessons and group classes. Train in person or online across the UAE. Open 24/7. Rated 5.0 from 30+ Google reviews.",
+    "Equity Fin Academy, forex training academy in Dubai, led by mentor Gopi Chandran. Private lessons, group classes, and live trading across the UAE. Open 24/7. Rated 5.0 from 30+ Google reviews.",
   keywords:
     "forex training academy Dubai, forex training academy UAE, forex trading courses in Dubai, forex training Dubai, trading classes in Dubai, forex education UAE",
   path: "/",
@@ -29,6 +31,7 @@ export default function HomePage() {
         <meta property="og:url" content={`${SITE.url}/`} />
       </head>
       <JsonLd data={organizationSchema()} />
+      <JsonLd data={personSchema()} />
       <JsonLd data={faqPageSchema(homeFaq)} />
       <Header active="home" />
 
@@ -39,7 +42,8 @@ export default function HomePage() {
               <span className="eyebrow">Dubai, UAE · Open 24/7</span>
               <h1 className="hero-display">Forex Training Academy in Dubai</h1>
               <p className="hero-sub">
-                Equity Fin Academy is a Forex Training Academy in Dubai &amp; UAE. Take private one-to-one lessons or join a group class, in the room in Dubai or online from any emirate, with live trading sessions either way. More than 2,000 students have trained here. The academy is open 24/7 and rated 5.0 on Google from 30+ reviews, with 200+ YouTube reviews and comments on the Equity Global channels.
+                Equity Fin Academy, forex training academy in Dubai, led by mentor Gopi Chandran, is where students in Dubai and across the UAE take private one-to-one lessons, live trading, and group classes. Train in the room in Dubai or online from any emirate, on MetaTrader 5. More than 2,000 students have trained here. The academy is open 24/7 and rated 5.0 on Google from 30+ reviews, with 200+ YouTube reviews and comments on the Equity Global channels.{" "}
+                <Link href="/gopi-chandran">Meet Gopi Chandran</Link>.
               </p>
               <div className="trust-row">
                 <a className="trust-badge" href={SITE.mapsUrl} target="_blank" rel="noopener noreferrer">
@@ -315,11 +319,11 @@ export default function HomePage() {
         <section className="tight">
           <div className="container">
             <div className="teaser-row">
-              <Link href="/about" className="teaser reveal">
-                <span className="eyebrow mt-0">THE FOUNDER</span>
+              <Link href="/gopi-chandran" className="teaser reveal">
+                <span className="eyebrow mt-0">THE MENTOR</span>
                 <h3>Meet Gopi Chandran</h3>
-                <p>Founder of Equity Fin Academy and Equity Global, teaching private lessons, group classes, and live trading sessions.</p>
-                <span className="arrow">Read the full profile →</span>
+                <p>Founder and lead forex mentor of Equity Fin Academy in Dubai. Private lessons, group classes, and live trading.</p>
+                <span className="arrow">Read the mentor profile →</span>
               </Link>
               <Link href="/courses" className="teaser reveal">
                 <span className="eyebrow mt-0">CURRICULUM</span>
@@ -377,6 +381,7 @@ export default function HomePage() {
               <span className="eyebrow">COMMON QUESTIONS</span>
               <h2>Frequently asked questions</h2>
             </div>
+            <FaqList items={mentorFaq} />
             <div className="faq-list reveal">
               <details>
                 <summary>
@@ -446,6 +451,7 @@ export default function HomePage() {
               <Link href="/blog" className="topic-chip">Forex class notes</Link>
               <Link href="/forex-course-abu-dhabi" className="topic-chip">Forex course for Abu Dhabi</Link>
               <Link href="/success-stories" className="topic-chip">Google reviews</Link>
+              <Link href="/gopi-chandran" className="topic-chip">Gopi Chandran</Link>
               <Link href="/contact" className="topic-chip">Book a class in Dubai</Link>
               <Link href="/blog-gold-xauusd-course-dubai" className="topic-chip">Gold (XAUUSD) course</Link>
               <Link href="/blog-group-forex-classes-friends-dubai" className="topic-chip">Group classes for friends</Link>

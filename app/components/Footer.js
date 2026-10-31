@@ -79,6 +79,7 @@ export default function Footer() {
               <h3>Explore</h3>
               <Link href="/">Home</Link>
               <Link href="/about">About Us</Link>
+              <Link href="/gopi-chandran">Gopi Chandran</Link>
               <Link href="/why-choose-us">Why Choose Us</Link>
               <Link href="/courses">Forex Courses</Link>
               <Link href="/pricing">Pricing</Link>

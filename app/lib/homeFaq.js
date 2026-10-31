@@ -1,4 +1,7 @@
+import { mentorFaq } from "./mentorFaq";
+
 export const homeFaq = [
+  ...mentorFaq,
   {
     q: "How do I start learning forex trading?",
     text: "Start with the fundamentals — currency pairs, candlestick patterns and market structure — before trading live. The blog walks through this in UAE time, and the Basic to Intermediate course builds on it with live instruction in Dubai or online from any emirate. Fees are quoted in AED when you enquire.",
