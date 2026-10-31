@@ -16,6 +16,7 @@ export async function POST(request) {
     const { status, ...payload } = await saveLead({
       name: body.name,
       phone: body.phone,
+      time: body.time,
       interest: body.interest,
       summary: body.message || body.summary,
       page: body.page,

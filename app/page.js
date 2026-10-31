@@ -54,6 +54,9 @@ export default function HomePage() {
                 </span>
               </div>
               <div className="cta-row">
+                <OpenChatLink className="btn btn-light" intent="demo">
+                  Free demo class
+                </OpenChatLink>
                 <a href="https://wa.me/971559047030" className="btn btn-light" target="_blank" rel="noopener noreferrer">
                   WhatsApp
                 </a>

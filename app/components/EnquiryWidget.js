@@ -2,12 +2,32 @@
 
 import { useEffect, useRef, useState } from "react";
 import { flushSync } from "react-dom";
-import { draftFromMessages } from "../lib/leadCapture";
+import {
+  ASK_ANYTHING,
+  GREETING,
+  INTEREST_DEMO,
+  OFFER_ASK,
+  OFFER_DEMO,
+  OFFER_FOLLOWUP,
+  OFFER_MENTOR,
+  TIME_SLOTS,
+  bookingNote,
+  bookingWhatsappHref,
+  confirmPrompt,
+  interestForOffer,
+  invalidPhonePrompt,
+  invalidTimePrompt,
+  mentionsBookingOffer,
+  namePrompt,
+  offerLabel,
+  phonePrompt,
+  parseSlot,
+  timePrompt,
+} from "../lib/booking";
+import { draftFromMessages, visitorNameFromText } from "../lib/leadCapture";
 import { OPEN_CHAT_EVENT } from "../lib/openChat";
+import { findUaeMobile } from "../lib/phone";
 import { COURSE_WHATSAPP_TEXT, SLOW_CHAT_REPLY, WHATSAPP_URL, whatsappHref } from "../lib/whatsapp";
-
-const GREETING =
-  "👋 Hi! Welcome to Equity Fin Academy. Looking to learn forex? I can help you choose private one-to-one or group classes. May I know your name?";
 
 const STARTER = {
   role: "assistant",
@@ -17,13 +37,26 @@ const STARTER = {
 const DISMISS_KEY = "efa-chat-dismissed";
 const MOBILE_QUERY = "(max-width: 860px)";
 
-const QUICK_REPLIES = [
+const OFFER_CHIPS = [
+  { label: OFFER_DEMO, text: OFFER_DEMO },
+  { label: OFFER_MENTOR, text: OFFER_MENTOR },
+  { label: OFFER_ASK, text: OFFER_ASK },
+];
+
+const BOOK_CHIPS = [
+  { label: OFFER_DEMO, text: OFFER_DEMO },
+  { label: OFFER_MENTOR, text: OFFER_MENTOR },
+];
+
+const TOPIC_CHIPS = [
   { label: "Private classes", text: "Private classes" },
   { label: "Group classes", text: "Group classes" },
   { label: "Fees", text: "Fees" },
   { label: "Open StarTrader account", text: "Open StarTrader account" },
   { label: "Download MT5", text: "Download MT5" },
 ];
+
+const TIME_CHIPS = TIME_SLOTS.map((slot) => ({ label: slot.label, text: slot.label }));
 
 const WHATSAPP_LINK = whatsappHref(COURSE_WHATSAPP_TEXT);
 
@@ -71,6 +104,10 @@ function linkify(text) {
   return nodes;
 }
 
+function bubble(role, content, extra) {
+  return { role, content, at: Date.now(), ...extra };
+}
+
 export default function EnquiryWidget() {
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState([STARTER]);
@@ -79,16 +116,41 @@ export default function EnquiryWidget() {
   const [typing, setTyping] = useState(false);
   const [greet, setGreet] = useState(false);
   const [nudged, setNudged] = useState(false);
+  const [step, setStep] = useState("offer");
+  const [showOffers, setShowOffers] = useState(false);
   const logRef = useRef(null);
   const panelRef = useRef(null);
   const savedPhone = useRef("");
   const engaged = useRef(false);
   const leadWarned = useRef(false);
   const pendingRef = useRef(false);
+  const stepRef = useRef("offer");
+  const lastReplyRef = useRef("");
+  const saveChain = useRef(Promise.resolve());
+  const flowRef = useRef({
+    mode: "greet",
+    interest: "",
+    name: "",
+    phone: "",
+    time: "",
+    aiReplies: 0,
+    offeredText: false,
+    booked: false,
+    startedAt: 0,
+  });
 
   function scrollLog() {
     const log = logRef.current;
     if (log) log.scrollTop = log.scrollHeight;
+  }
+
+  function go(next) {
+    stepRef.current = next;
+    setStep(next);
+  }
+
+  function pushMessages(items) {
+    setMessages((current) => [...current, ...items]);
   }
 
   useEffect(() => {
@@ -150,7 +212,7 @@ export default function EnquiryWidget() {
 
   useEffect(() => {
     scrollLog();
-  }, [messages, open, typing]);
+  }, [messages, open, typing, step, showOffers]);
 
   function rememberDismiss() {
     engaged.current = true;
@@ -173,9 +235,47 @@ export default function EnquiryWidget() {
     document.getElementById("assist-draft")?.focus();
   }
 
+  function beginBook(kind) {
+    const interest = interestForOffer(kind);
+    const now = Date.now();
+    if (now - flowRef.current.startedAt < 500 && flowRef.current.interest === interest && stepRef.current === "name") return;
+    flowRef.current = {
+      ...flowRef.current,
+      mode: "book",
+      interest,
+      name: "",
+      time: "",
+      booked: false,
+      startedAt: now,
+    };
+    setShowOffers(false);
+    openChatPanel();
+    go("name");
+    pushMessages([
+      bubble("user", offerLabel(kind)),
+      bubble("assistant", namePrompt()),
+    ]);
+  }
+
+  function beginFree() {
+    if (stepRef.current === "topics") return;
+    flowRef.current.mode = "free";
+    setShowOffers(false);
+    openChatPanel();
+    go("topics");
+    pushMessages([bubble("user", OFFER_ASK), bubble("assistant", ASK_ANYTHING)]);
+  }
+
+  const actionsRef = useRef({});
+  actionsRef.current = { openChatPanel, beginBook };
+
   useEffect(() => {
-    function open() {
-      openChatPanel();
+    function openFrom(detail) {
+      actionsRef.current.openChatPanel();
+      if (detail?.intent === "demo" || detail?.intent === "mentor") actionsRef.current.beginBook(detail.intent);
+    }
+    function onEvent(event) {
+      openFrom(event?.detail);
     }
     function onClick(event) {
       const target = event.target;
@@ -183,15 +283,16 @@ export default function EnquiryWidget() {
       const link = target.closest("a[data-open-chat], a[href='#chat'], a[href='#enquiry']");
       if (!link) return;
       event.preventDefault();
-      open();
+      const intent = link.getAttribute("data-chat-intent");
+      openFrom(intent === "demo" || intent === "mentor" ? { intent } : undefined);
     }
-    window.openChat = open;
-    window.addEventListener(OPEN_CHAT_EVENT, open);
+    window.openChat = (detail) => openFrom(detail);
+    window.addEventListener(OPEN_CHAT_EVENT, onEvent);
     document.addEventListener("click", onClick, true);
     return () => {
-      window.removeEventListener(OPEN_CHAT_EVENT, open);
+      window.removeEventListener(OPEN_CHAT_EVENT, onEvent);
       document.removeEventListener("click", onClick, true);
-      if (window.openChat === open) delete window.openChat;
+      if (window.openChat) delete window.openChat;
     };
   }, []);
 
@@ -204,50 +305,190 @@ export default function EnquiryWidget() {
     openChatPanel();
   }
 
-  function captureLead(nextMessages) {
-    const draftLead = draftFromMessages(nextMessages, window.location.pathname);
-    if (!draftLead || savedPhone.current === draftLead.phone) return;
-    fetch("/api/lead", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify(draftLead),
-    })
-      .then((response) => response.json().then((data) => ({ response, data })).catch(() => ({ response, data: {} })))
-      .then(({ response, data }) => {
-        if (data.ok) {
-          savedPhone.current = draftLead.phone;
-          return;
-        }
-        if (response.status === 400 || leadWarned.current) return;
-        leadWarned.current = true;
-        setMessages((current) => [
-          ...current,
-          {
-            role: "assistant",
-            content: `I couldn't store that number on the site. You can message us on WhatsApp: ${WHATSAPP_URL}`,
-            at: Date.now(),
-          },
-        ]);
-      })
-      .catch(() => {
-        if (leadWarned.current) return;
-        leadWarned.current = true;
-        setMessages((current) => [
-          ...current,
-          {
-            role: "assistant",
-            content: `I couldn't store that number on the site. You can message us on WhatsApp: ${WHATSAPP_URL}`,
-            at: Date.now(),
-          },
-        ]);
-      });
+  function warnLeadStore() {
+    if (leadWarned.current) return;
+    leadWarned.current = true;
+    pushMessages([
+      bubble("assistant", `I couldn't store that number on the site. You can message us on WhatsApp: ${WHATSAPP_URL}`),
+    ]);
   }
 
-  async function sendText(raw) {
+  function postLead(payload, { warn = true } = {}) {
+    const run = () =>
+      fetch("/api/lead", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify(payload),
+      })
+        .then((response) => response.json().then((data) => ({ response, data })).catch(() => ({ response, data: {} })))
+        .then(({ response, data }) => {
+          if (data.ok) {
+            savedPhone.current = payload.phone;
+            flowRef.current.phone = payload.phone;
+            return true;
+          }
+          if (warn && response.status !== 400) warnLeadStore();
+          return false;
+        })
+        .catch(() => {
+          if (warn) warnLeadStore();
+          return false;
+        });
+    const next = saveChain.current.then(run, run);
+    saveChain.current = next.then(
+      () => undefined,
+      () => undefined
+    );
+    return next;
+  }
+
+  function captureLead(nextMessages) {
+    const draftLead = draftFromMessages(nextMessages, window.location.pathname);
+    if (!draftLead) return;
+    if (savedPhone.current === draftLead.phone && !draftLead.time) return;
+    const interest = flowRef.current.interest || draftLead.interest;
+    const time = flowRef.current.time || draftLead.time || "";
+    const summary = time ? `Preferred time: ${time}. ${draftLead.summary}` : draftLead.summary;
+    postLead({
+      ...draftLead,
+      interest,
+      time,
+      summary,
+    });
+  }
+
+  async function finishBooking(name, phone, time) {
+    const interest = flowRef.current.interest || INTEREST_DEMO;
+    flowRef.current = { ...flowRef.current, name, phone, time, booked: true, mode: "free" };
+    setShowOffers(false);
+    pendingRef.current = true;
+    setPending(true);
+    setTyping(true);
+    const saved = await postLead(
+      {
+        name,
+        phone,
+        time,
+        interest,
+        page: window.location.pathname,
+        summary: bookingNote(interest, time),
+      },
+      { warn: false }
+    );
+    const href = bookingWhatsappHref({ name, interest, time });
+    go("chat");
+    pendingRef.current = false;
+    setPending(false);
+    setTyping(false);
+    if (saved) {
+      pushMessages([bubble("assistant", confirmPrompt(name), { whatsapp: href })]);
+      return;
+    }
+    pushMessages([
+      bubble("assistant", `I couldn't store that number on the site. You can still WhatsApp Gopi Chandran's team to confirm your slot.`, {
+        whatsapp: href,
+      }),
+    ]);
+  }
+
+  function handleName(content) {
+    const phone = findUaeMobile(content);
+    const name = visitorNameFromText(phone ? content.replace(phone, " ") : content);
+    if (!name) {
+      if (/[?]/.test(content) || content.split(/\s+/).length > 6) {
+        flowRef.current.mode = "free";
+        go("chat");
+        askAi(content);
+        return;
+      }
+      pushMessages([
+        bubble("user", content),
+        bubble("assistant", "Please send your name so Gopi Chandran's team knows who to ask for."),
+      ]);
+      return;
+    }
+    flowRef.current.name = name;
+    pushMessages([bubble("user", content)]);
+    if (phone) {
+      flowRef.current.phone = phone;
+      go("time");
+      pushMessages([bubble("assistant", `Thanks ${name}. ${timePrompt()}`)]);
+      postLead(
+        {
+          name,
+          phone,
+          interest: flowRef.current.interest || INTEREST_DEMO,
+          page: window.location.pathname,
+          summary: bookingNote(flowRef.current.interest, ""),
+        },
+        { warn: false }
+      );
+      return;
+    }
+    go("phone");
+    pushMessages([bubble("assistant", phonePrompt(name))]);
+  }
+
+  function handlePhone(content) {
+    const phone = findUaeMobile(content);
+    const name = flowRef.current.name;
+    pushMessages([bubble("user", content)]);
+    if (!phone) {
+      pushMessages([bubble("assistant", invalidPhonePrompt())]);
+      return;
+    }
+    flowRef.current.phone = phone;
+    go("time");
+    pushMessages([bubble("assistant", `Thanks ${name}. ${timePrompt()}`)]);
+    postLead(
+      {
+        name,
+        phone,
+        interest: flowRef.current.interest || INTEREST_DEMO,
+        page: window.location.pathname,
+        summary: bookingNote(flowRef.current.interest, ""),
+      },
+      { warn: false }
+    );
+  }
+
+  function handleTime(content) {
+    const time = parseSlot(content);
+    pushMessages([bubble("user", content)]);
+    if (!time) {
+      pushMessages([bubble("assistant", invalidTimePrompt())]);
+      return;
+    }
+    finishBooking(flowRef.current.name, flowRef.current.phone, time);
+  }
+
+  function maybeOfferFollowup() {
+    const flow = flowRef.current;
+    flow.aiReplies += 1;
+    if (flow.booked || flow.phone || stepRef.current !== "chat") return;
+    if (flow.aiReplies === 1 || flow.aiReplies === 2) setShowOffers(true);
+    if (flow.offeredText || flow.aiReplies > 2) return;
+    if (mentionsBookingOffer(lastReplyRef.current)) {
+      flow.offeredText = true;
+      return;
+    }
+    if (flow.aiReplies === 1 || flow.aiReplies === 2) {
+      flow.offeredText = true;
+      pushMessages([bubble("assistant", OFFER_FOLLOWUP)]);
+    }
+  }
+
+  async function askAi(raw) {
     const content = String(raw || "").trim();
     if (!content || pendingRef.current) return;
-    const next = [...messages, { role: "user", content, at: Date.now() }];
+    const phone = findUaeMobile(content);
+    if (phone) {
+      flowRef.current.phone = phone;
+      setShowOffers(false);
+    }
+    const next = [...messages, bubble("user", content)];
     pendingRef.current = true;
+    go("chat");
     setMessages(next);
     setDraft("");
     setPending(true);
@@ -261,12 +502,14 @@ export default function EnquiryWidget() {
       setTyping(false);
       setPending(false);
       pendingRef.current = false;
-      setMessages((current) => [...current, { role: "assistant", content: SLOW_CHAT_REPLY, at: Date.now() }]);
+      lastReplyRef.current = SLOW_CHAT_REPLY;
+      setMessages((current) => [...current, bubble("assistant", SLOW_CHAT_REPLY)]);
     };
     const slowTimer = setTimeout(showSlowReply, 26_000);
     const rememberReply = (text) => {
       const clean = withoutRiskDisclaimer(text);
       if (!clean) return;
+      lastReplyRef.current = clean;
       setMessages((current) => {
         const copy = current.slice();
         const last = copy[copy.length - 1];
@@ -291,7 +534,8 @@ export default function EnquiryWidget() {
         clearTimeout(slowTimer);
         setTyping(false);
         const reply = withoutRiskDisclaimer(data.reply || SLOW_CHAT_REPLY) || SLOW_CHAT_REPLY;
-        setMessages((current) => [...current, { role: "assistant", content: reply, at: Date.now() }]);
+        lastReplyRef.current = reply;
+        setMessages((current) => [...current, bubble("assistant", reply)]);
         return;
       }
 
@@ -320,7 +564,8 @@ export default function EnquiryWidget() {
             clearTimeout(slowTimer);
             setTyping(false);
             const reply = withoutRiskDisclaimer(payload.reply || SLOW_CHAT_REPLY) || SLOW_CHAT_REPLY;
-            setMessages((current) => [...current, { role: "assistant", content: reply, at: Date.now() }]);
+            lastReplyRef.current = reply;
+            setMessages((current) => [...current, bubble("assistant", reply)]);
           }
         }
       }
@@ -331,14 +576,47 @@ export default function EnquiryWidget() {
         closed = true;
         clearTimeout(slowTimer);
         setTyping(false);
-        setMessages((current) => [...current, { role: "assistant", content: SLOW_CHAT_REPLY, at: Date.now() }]);
+        lastReplyRef.current = SLOW_CHAT_REPLY;
+        setMessages((current) => [...current, bubble("assistant", SLOW_CHAT_REPLY)]);
       }
     } finally {
       clearTimeout(slowTimer);
       setTyping(false);
       setPending(false);
       pendingRef.current = false;
+      maybeOfferFollowup();
     }
+  }
+
+  function sendText(raw) {
+    const content = String(raw || "").trim();
+    if (!content || pendingRef.current) return;
+    setDraft("");
+    if (content === OFFER_DEMO) {
+      beginBook("demo");
+      return;
+    }
+    if (content === OFFER_MENTOR) {
+      beginBook("mentor");
+      return;
+    }
+    if (content === OFFER_ASK && stepRef.current !== "name" && stepRef.current !== "phone" && stepRef.current !== "time") {
+      beginFree();
+      return;
+    }
+    if (stepRef.current === "name") {
+      handleName(content);
+      return;
+    }
+    if (stepRef.current === "phone") {
+      handlePhone(content);
+      return;
+    }
+    if (stepRef.current === "time") {
+      handleTime(content);
+      return;
+    }
+    askAi(content);
   }
 
   function onAsk(event) {
@@ -346,7 +624,11 @@ export default function EnquiryWidget() {
     sendText(draft);
   }
 
-  const showQuick = !messages.some((item) => item.role === "user");
+  const chips =
+    step === "offer" ? OFFER_CHIPS : step === "topics" ? TOPIC_CHIPS : step === "time" ? TIME_CHIPS : showOffers ? BOOK_CHIPS : null;
+  const stacked = step === "offer" || (step === "chat" && showOffers);
+  const placeholder =
+    step === "name" ? "Your name" : step === "phone" ? "WhatsApp number" : step === "time" ? "Morning, afternoon, evening, or weekend" : "Type a message";
 
   return (
     <div className={`assist-dock${open ? " is-open" : ""}`}>
@@ -354,10 +636,13 @@ export default function EnquiryWidget() {
         <section className="assist-panel" aria-label="Academy chat" ref={panelRef}>
           <header className="assist-head">
             <span className="assist-online" aria-hidden="true" />
-            <div>
+            <div className="assist-id">
               <h2>Equity Fin Academy</h2>
               <p className="assist-status">Online</p>
             </div>
+            <button type="button" className="assist-demo" onClick={() => beginBook("demo")}>
+              Free demo class
+            </button>
             <button type="button" className="assist-close" onClick={toggleChat} aria-label="Close chat">
               ×
             </button>
@@ -365,7 +650,14 @@ export default function EnquiryWidget() {
           <div className="assist-log" ref={logRef}>
             {messages.map((message, index) => (
               <div key={`${message.role}-${index}`} className={message.role === "user" ? "assist-row is-user" : "assist-row is-bot"}>
-                <div className={message.role === "user" ? "assist-user" : "assist-bot"}>{linkify(message.content)}</div>
+                <div className={message.role === "user" ? "assist-user" : "assist-bot"}>
+                  {linkify(message.content)}
+                  {message.whatsapp ? (
+                    <a className="assist-wa-btn" href={message.whatsapp} target="_blank" rel="noopener noreferrer">
+                      WhatsApp
+                    </a>
+                  ) : null}
+                </div>
                 {message.at ? (
                   <time className="assist-time" dateTime={new Date(message.at).toISOString()}>
                     {clock(message.at)}
@@ -383,9 +675,9 @@ export default function EnquiryWidget() {
               </div>
             ) : null}
           </div>
-          {showQuick ? (
-            <div className="assist-chips" role="group" aria-label="Quick replies">
-              {QUICK_REPLIES.map((item) => (
+          {chips ? (
+            <div className={stacked ? "assist-chips is-stack" : "assist-chips"} role="group" aria-label="Quick replies">
+              {chips.map((item) => (
                 <button key={item.label} type="button" onClick={() => sendText(item.text)} disabled={pending}>
                   {item.label}
                 </button>
@@ -402,8 +694,9 @@ export default function EnquiryWidget() {
               maxLength={500}
               enterKeyHint="send"
               onChange={(event) => setDraft(event.target.value)}
-              placeholder="Type a message"
-              autoComplete="off"
+              placeholder={placeholder}
+              inputMode={step === "phone" ? "tel" : "text"}
+              autoComplete={step === "phone" ? "tel" : step === "name" ? "name" : "off"}
             />
             <button className="btn btn-primary" type="submit" disabled={pending || !draft.trim()}>
               Send
@@ -424,6 +717,13 @@ export default function EnquiryWidget() {
               <button type="button" className="assist-greet-open" onClick={openChatPanel}>
                 {GREETING}
               </button>
+              <div className="assist-greet-offers" role="group" aria-label="Ways to start">
+                {OFFER_CHIPS.map((item) => (
+                  <button key={item.label} type="button" onClick={() => sendText(item.text)}>
+                    {item.label}
+                  </button>
+                ))}
+              </div>
             </div>
           ) : null}
           <button

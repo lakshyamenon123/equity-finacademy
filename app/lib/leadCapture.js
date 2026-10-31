@@ -1,3 +1,4 @@
+import { cleanSlot, INTEREST_DEMO, INTEREST_MENTOR, parseSlot, UNNAMED_VISITOR } from "./booking";
 import { findUaeMobile } from "./phone";
 
 const NAME_CUES = [/\bmy name is\s+(.+)/i, /\bname\s*[:\-]\s*(.+)/i, /\b(?:i am|i'm|im)\s+(.+)/i];
@@ -61,6 +62,25 @@ const NOT_NAMES = new Set([
   "please",
   "yes",
   "no",
+  "fees",
+  "demo",
+  "morning",
+  "afternoon",
+  "evening",
+  "weekend",
+  "whatsapp",
+  "book",
+  "free",
+  "question",
+  "mentor",
+  "class",
+  "private",
+  "group",
+  "startrader",
+  "download",
+  "open",
+  "just",
+  "ask",
 ]);
 
 function cleanName(value) {
@@ -111,6 +131,16 @@ export function cleanVisitorName(value) {
 
 export function inferInterest(text) {
   const value = String(text || "").toLowerCase();
+  if (value.includes("free demo") || value.includes("demo class") || value.includes("demo training")) return INTEREST_DEMO;
+  if (
+    value.includes("1-to-1") ||
+    value.includes("one-to-one meeting") ||
+    value.includes("one to one meeting") ||
+    value.includes("mentor meeting") ||
+    value.includes("meeting with mentor")
+  ) {
+    return INTEREST_MENTOR;
+  }
   if (value.includes("one-to-one") || value.includes("one to one") || value.includes("private")) return "Private one-to-one";
   if (value.includes("group")) return "Group cohort";
   if (value.includes("live")) return "Live trading sessions";
@@ -124,6 +154,26 @@ export function chatSummary(text) {
     .slice(0, 280);
 }
 
+function nameFromPlain(text) {
+  if (/[?\d]/.test(text)) return "";
+  const name = takeNameWords(text);
+  if (!name) return "";
+  const leftover = String(text || "")
+    .replace(name, "")
+    .trim();
+  if (leftover) return "";
+  return name;
+}
+
+export function visitorNameFromText(text) {
+  const cued = nameFromCue(text);
+  if (cued) return cued;
+  const plain = nameFromPlain(text);
+  if (plain) return plain;
+  if (findUaeMobile(text)) return nameBesidePhone(text);
+  return "";
+}
+
 export function draftFromMessages(messages, page) {
   const userTexts = (Array.isArray(messages) ? messages : [])
     .filter((item) => item?.role === "user")
@@ -132,7 +182,7 @@ export function draftFromMessages(messages, page) {
   const phone = findUaeMobile(joined);
   let name = "";
   for (const text of userTexts) {
-    name = nameFromCue(text);
+    name = nameFromCue(text) || nameFromPlain(text);
     if (name) break;
   }
   if (!name) {
@@ -142,12 +192,23 @@ export function draftFromMessages(messages, page) {
       if (name) break;
     }
   }
-  if (!name || !phone) return null;
+  if (!phone) return null;
+  let time = "";
+  for (const text of userTexts) {
+    const exact = String(text || "")
+      .trim()
+      .toLowerCase();
+    if (/^(morning|afternoon|evening|weekend)s?$/.test(exact)) {
+      time = cleanSlot(parseSlot(exact));
+      if (time) break;
+    }
+  }
   return {
-    name,
+    name: name || UNNAMED_VISITOR,
     phone,
     page: page || "/",
     interest: inferInterest(joined),
+    time,
     summary: chatSummary(joined),
   };
 }
