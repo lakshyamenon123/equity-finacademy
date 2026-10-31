@@ -36,18 +36,90 @@ const place = {
   address: postalAddress,
 };
 
+function breadcrumbItemUrl(path) {
+  const url = absoluteUrl(path);
+  const parsed = new URL(url);
+  if (parsed.protocol !== "https:" || parsed.hostname !== "www.equityfinacademy.com") {
+    throw new Error(`Breadcrumb item must be an absolute https://www.equityfinacademy.com URL: ${url}`);
+  }
+  if (parsed.username || parsed.password || parsed.search || parsed.hash) {
+    throw new Error(`Breadcrumb item must be a clean page URL: ${url}`);
+  }
+  return parsed.href;
+}
+
 export function breadcrumbSchema(items) {
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: items.map((item, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
-      name: item.name,
-      // Google's breadcrumb parser reads item as a URL. A nested object makes
-      // it look for item.id and can report that id as invalid even when @id is absolute.
-      item: absoluteUrl(item.path),
-    })),
+    itemListElement: items.map((item, index) => {
+      const pageUrl = breadcrumbItemUrl(item.path);
+      return {
+        "@type": "ListItem",
+        position: index + 1,
+        name: item.name,
+        // Google's breadcrumb report validates item.id. A nested object that
+        // sets only @id can be reported as an invalid id, so id, @id, and url
+        // are the same absolute https://www.equityfinacademy.com URL.
+        item: {
+          "@type": "WebPage",
+          "@id": pageUrl,
+          id: pageUrl,
+          url: pageUrl,
+          name: item.name,
+        },
+      };
+    }),
+  };
+}
+
+export function webPageSchema({ name, description, path }) {
+  const url = absoluteUrl(path);
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": url,
+    url,
+    name,
+    description,
+    inLanguage: "en-AE",
+    isPartOf: {
+      "@type": "WebSite",
+      "@id": `${SITE.url}/#website`,
+      name: SITE.name,
+      url: absoluteUrl("/"),
+      inLanguage: "en-AE",
+    },
+    about: { "@id": `${SITE.url}/#organization` },
+    publisher: { "@id": `${SITE.url}/#organization` },
+    contentLocation: {
+      "@type": "Place",
+      name: "Dubai, United Arab Emirates",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Dubai",
+        addressRegion: "Dubai",
+        addressCountry: "AE",
+      },
+    },
+  };
+}
+
+export function websiteSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${SITE.url}/#website`,
+    url: absoluteUrl("/"),
+    name: SITE.name,
+    description: SITE.description,
+    inLanguage: "en-AE",
+    publisher: { "@id": `${SITE.url}/#organization` },
+    about: {
+      "@type": "EducationalOrganization",
+      name: SITE.name,
+      areaServed: { "@type": "Country", name: "United Arab Emirates" },
+    },
   };
 }
 
@@ -80,6 +152,7 @@ export function organizationSchema() {
       },
     ],
     sameAs: SITE.sameAs,
+    availableLanguage: ["en-AE"],
     founder: {
       "@type": "Person",
       "@id": `${SITE.url}/#gopi`,

@@ -1,7 +1,9 @@
 import { NextResponse } from "next/server";
 
+const CANONICAL_ORIGIN = "https://www.equityfinacademy.com";
+
 // Legacy paths that Search Console still requests. Match with or without a
-// trailing slash so each URL reaches its canonical page in one 308.
+// trailing slash so each URL reaches its canonical page in one 301.
 const LEGACY = {
   "/home": "/",
   "/index.html": "/",
@@ -37,12 +39,12 @@ export function middleware(request) {
   const destination = LEGACY[stripped];
   const target = destination || (stripped !== pathname ? stripped : null);
   if (!target) return NextResponse.next();
-  // Use a standard URL. NextURL copies the request's trailing slash onto the
-  // redirect and would send /blog/ back to /blog/.
-  const url = new URL(request.url);
-  url.pathname = target;
+  // Absolute https://www URL so the Location header is the canonical page.
+  // NextURL copies the request's trailing slash onto the redirect and would
+  // send /blog/ back to /blog/.
+  const url = new URL(target, CANONICAL_ORIGIN);
   url.search = search;
-  return NextResponse.redirect(url, 308);
+  return NextResponse.redirect(url, 301);
 }
 
 export const config = {

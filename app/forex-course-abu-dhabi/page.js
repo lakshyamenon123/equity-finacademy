@@ -6,19 +6,22 @@ import YouTubeSection from "../components/YouTubeSection";
 import Link from "next/link";
 import OpenChatLink from "../components/OpenChatLink";
 import { pageMetadata } from "../lib/seo";
-import { breadcrumbSchema, faqPageSchema } from "../lib/schema";
+import { breadcrumbSchema, faqPageSchema, webPageSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { STARTRADER_LIVE_URL } from "../lib/whatsapp";
 
 const path = "/forex-course-abu-dhabi";
 const mt5English = ENGLISH_VIDEOS.find((video) => video.id === "ssUPlUHnDLo");
 
+const pageTitle = "Forex Course for Abu Dhabi: Dubai Classroom or Online";
+const pageDescription =
+  "Abu Dhabi residents can take the Dubai forex course online on Gulf Standard Time, or attend class in Dubai, UAE. What to send when you enquire.";
+
 export const metadata = pageMetadata({
-  title: "Forex Course for Abu Dhabi Students | Equity Fin Academy",
-  description:
-    "Forex course options for Abu Dhabi residents: study online on Gulf Standard Time, or attend class in Dubai. How that choice differs from Sharjah.",
+  title: `${pageTitle} | Equity Fin Academy`,
+  description: pageDescription,
   keywords:
-    "forex course Abu Dhabi, forex training Abu Dhabi, online forex course Abu Dhabi, forex classes Abu Dhabi to Dubai, learn forex trading Abu Dhabi",
+    "forex course Abu Dhabi, forex training Abu Dhabi, online forex course Abu Dhabi, forex classes Abu Dhabi to Dubai, learn forex trading Abu Dhabi, United Arab Emirates",
   path,
 });
 
@@ -48,6 +51,7 @@ const pageFaq = [
 export default function ForexCourseAbuDhabiPage() {
   return (
     <>
+      <JsonLd data={webPageSchema({ name: pageTitle, description: pageDescription, path })} />
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", path: "/" },
@@ -67,7 +71,7 @@ export default function ForexCourseAbuDhabiPage() {
             </nav>
             <span className="eyebrow">ABU DHABI STUDENTS · CLASSROOM IN DUBAI</span>
             <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,3.1rem)", maxWidth: "18ch" }}>
-              A forex course Abu Dhabi residents can attend in Dubai.
+              A forex course for Abu Dhabi: study online, or come to Dubai.
             </h1>
             <p className="hero-sub" style={{ marginTop: 18, maxWidth: "64ch" }}>
               Equity Fin Academy does not run a classroom in Abu Dhabi. Classes are in person in Dubai, UAE, and online across the UAE. This page is for people comparing forex training from Abu Dhabi: what the
@@ -175,6 +179,20 @@ export default function ForexCourseAbuDhabiPage() {
               Write the aim down before the first hour. A one-page coaching plan, and a journal you can bring back, are explained in{" "}
               <Link href="/blog-personal-forex-coaching-uae">personal forex coaching in the UAE</Link> and{" "}
               <Link href="/blog-forex-trading-plan-uae">how to write a trading plan</Link>. They are reading, not a seat.
+            </p>
+
+            <h2>A first month from Abu Dhabi, without inventing a result</h2>
+            <p>
+              This is a study order for someone who lives in Abu Dhabi and has not booked yet. It is not a promise about profits, and it is not a timetable the academy prints, because dates move. The United Arab Emirates uses one clock, so every step below is Gulf Standard Time.
+            </p>
+            <ol className="guide-list">
+              <li>Read <Link href="/blog-currency-pairs-uae">how a currency pair is quoted</Link> and one chart note, such as <Link href="/blog-candlestick-patterns">candlesticks</Link>, before you travel or join a screen.</li>
+              <li>Install MetaTrader 5 and open a demo. The difference between that and a live account is on <Link href="/blog-demo-vs-live-mt5-uae">demo versus live</Link>. Practical sessions at the academy use StarTrader.</li>
+              <li>Message from the <Link href="/contact">contact page</Link> with four facts: Abu Dhabi, online or a visit to Dubai, group or private, and the hours you can keep. Ask for the fee in AED.</li>
+              <li>Use the first live hour to have one chart corrected. If the word you wanted was liquidity or an order block, read <Link href="/blog-smart-money-concepts">smart money concepts</Link> first so you ask for the track that actually teaches it. The topic lists are on <Link href="/courses">courses</Link>.</li>
+            </ol>
+            <p>
+              The <Link href="/blog">blog index</Link> is the longer reading list. Reviews of the academy are on Google, via the <Link href="/success-stories">reviews page</Link>, not as quotes written for Abu Dhabi. If friends in the capital want to start together, read <Link href="/blog-group-forex-classes-friends-dubai">group forex classes for friends and colleagues</Link> and send one enquiry for the group. If the chart you care about is gold, read <Link href="/blog-gold-xauusd-course-dubai">the XAUUSD class note</Link> and name that symbol.
             </p>
 
             <h2>How to decide if the drive is worth it</h2>

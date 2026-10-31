@@ -3,14 +3,18 @@ import Footer from "../components/Footer";
 import Link from "next/link";
 import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
-import { breadcrumbSchema, faqPageSchema } from "../lib/schema";
+import RelatedTraining from "../components/RelatedTraining";
+import { breadcrumbSchema, faqPageSchema, webPageSchema } from "../lib/schema";
+
+const reviewsTitle = "How to Read Equity Fin Academy’s Google Reviews in Dubai";
+const reviewsDescription =
+  "How to use Equity Fin Academy’s 5.0 Google listing in Dubai before you enrol. This page does not publish written testimonials.";
 
 export const metadata = pageMetadata({
-  title: "Forex Academy Reviews in Dubai | Equity Fin Academy",
-  description:
-    "How to read Equity Fin Academy's Google reviews in Dubai. Rated 5.0 from 30+ reviews. This page does not publish written testimonials.",
+  title: `${reviewsTitle} | Equity Fin Academy`,
+  description: reviewsDescription,
   keywords:
-    "Equity Fin Academy reviews, forex academy reviews Dubai, forex course reviews UAE, forex training Dubai reviews",
+    "Equity Fin Academy reviews, forex academy reviews Dubai, forex course reviews UAE, forex training Dubai Google reviews, United Arab Emirates",
   path: "/success-stories",
 });
 
@@ -32,6 +36,7 @@ const reviewFaq = [
 export default function SuccessStoriesPage() {
   return (
     <>
+      <JsonLd data={webPageSchema({ name: reviewsTitle, description: reviewsDescription, path: "/success-stories" })} />
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", path: "/" },
@@ -51,7 +56,7 @@ export default function SuccessStoriesPage() {
             </nav>
             <span className="eyebrow">STUDENT REVIEWS</span>
             <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,3rem)", maxWidth: "22ch" }}>
-              What students actually say.
+              How to read our Google reviews in Dubai, UAE.
             </h1>
             <p style={{ maxWidth: "60ch", marginTop: 18 }}>
               We&apos;re not going to put invented quotes on this page. Here&apos;s how to see real feedback instead.
@@ -104,6 +109,17 @@ export default function SuccessStoriesPage() {
             </p>
             <p>
               People comparing schools can also use <Link href="/why-choose-us">the enrolment checks</Link> and <Link href="/blog-choose-forex-academy-uae">how to choose a forex academy in the UAE</Link>. Those pages describe the class. This page is the route to third-party feedback.
+            </p>
+
+            <h2>Use the listing from anywhere in the United Arab Emirates</h2>
+            <p>
+              Equity Fin Academy teaches in Dubai, UAE, and online on Gulf Standard Time for students in every emirate. The Google listing is one public page for that academy. It is not a set of reviews sorted by city, and this website will not invent a split that Google does not show.
+            </p>
+            <p>
+              Open the map link above and read several reviews, not the star on its own. A useful review names a format, a group class or a private lesson, and whether the person was in Dubai or online. A review that could describe any school in the world is harder to use. A review that promises profits is a reason to slow down. Thirty-plus is a lower bound on the count. It is not an exact total, and it is not a trading result.
+            </p>
+            <p>
+              After the listing, read the class you would actually book. The two tracks are on <Link href="/courses">forex course tracks</Link>. Abu Dhabi readers should use the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> for the drive or the online seat, which is not a review. Definitions such as <Link href="/blog-smart-money-concepts">smart money concepts</Link> live on the <Link href="/blog">blog</Link>. When you are ready to ask for a seat, use <Link href="/contact">contact</Link> and say your emirate. WhatsApp is +971 55 904 7030.
             </p>
 
             <h2>Five things worth noticing in a review</h2>
@@ -190,6 +206,12 @@ export default function SuccessStoriesPage() {
                 <p>Until then, Google Maps reviews are the most reliable place to see honest, third-party feedback.</p>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section className="tight">
+          <div className="container">
+            <RelatedTraining current="/success-stories" />
           </div>
         </section>
 

@@ -5,16 +5,19 @@ import LeadForm from "../components/LeadForm";
 import RelatedTraining from "../components/RelatedTraining";
 import Link from "next/link";
 import { pageMetadata } from "../lib/seo";
-import { breadcrumbSchema, faqPageSchema } from "../lib/schema";
+import { breadcrumbSchema, faqPageSchema, webPageSchema } from "../lib/schema";
 import { absoluteUrl, SITE } from "../lib/site";
 import { whatsappHref } from "../lib/whatsapp";
 
+const contactTitle = "Book a Forex Class in Dubai, United Arab Emirates";
+const contactDescription =
+  "Contact Equity Fin Academy in Dubai, UAE. WhatsApp +971 55 904 7030. Say your emirate, group or private, and whether you will study in Dubai or online.";
+
 export const metadata = pageMetadata({
-  title: "Contact Equity Fin Academy | Forex Classes in Dubai",
-  description:
-    "Book forex trading classes in Dubai or online across the UAE. WhatsApp +971 55 904 7030. Say group or private, and whether you will be in Dubai or online.",
+  title: `${contactTitle} | Equity Fin Academy`,
+  description: contactDescription,
   keywords:
-    "contact forex academy Dubai, forex classes Dubai phone, book forex course Dubai, forex trading classes near me, Equity Fin Academy WhatsApp",
+    "contact forex academy Dubai, forex classes Dubai phone, book forex course UAE, forex trading classes Dubai WhatsApp, Equity Fin Academy United Arab Emirates",
   path: "/contact",
 });
 
@@ -42,17 +45,23 @@ const contactSchema = {
   "@type": "ContactPage",
   "@id": `${absoluteUrl("/contact")}#contact`,
   url: absoluteUrl("/contact"),
-  name: "Contact Equity Fin Academy",
-  description: "Contact the forex training academy in Dubai, UAE, by phone or WhatsApp.",
+  name: contactTitle,
+  description: contactDescription,
   inLanguage: "en-AE",
   mainEntity: {
     "@id": `${SITE.url}/#organization`,
+  },
+  about: {
+    "@type": "EducationalOrganization",
+    name: SITE.name,
+    areaServed: { "@type": "Country", name: "United Arab Emirates" },
   },
 };
 
 export default function ContactPage() {
   return (
     <>
+      <JsonLd data={webPageSchema({ name: contactTitle, description: contactDescription, path: "/contact" })} />
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", path: "/" },
@@ -73,7 +82,7 @@ export default function ContactPage() {
             </nav>
             <span className="eyebrow">CONTACT</span>
             <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,2.8rem)", maxWidth: "20ch" }}>
-              Visit our forex trading academy in Dubai, or send an enquiry.
+              Book a forex class in Dubai, United Arab Emirates.
             </h1>
           </div>
         </section>
@@ -178,6 +187,19 @@ export default function ContactPage() {
 
         <section>
           <div className="container prose-block">
+            <h2>Messages that get a useful reply, by emirate</h2>
+            <p>
+              Equity Fin Academy teaches in person in Dubai, UAE, and online across the United Arab Emirates. The classroom is not listed with a street, a building, or a floor. The map on this page is Dubai. Online students in Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah, and Umm Al Quwain use the same Gulf Standard Time as Dubai. Say which of those you mean in the first message.
+            </p>
+            <ul className="guide-list">
+              <li>Dubai, in the room: “Basic to Intermediate, group class, in Dubai, after 7pm Gulf Standard Time. Please quote the fee in AED.”</li>
+              <li>Abu Dhabi, online: “I live in Abu Dhabi and want the same course online. Beginner. Please quote the fee in AED.” The longer note on that choice is the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>.</li>
+              <li>Colleagues together: “Three of us want the group cohort. Mixed experience. Weekday evening, Dubai or online. Please say whether one cohort can take us, and quote the fee in AED.” Read <Link href="/blog-group-forex-classes-friends-dubai">group classes for friends and colleagues</Link> before you send that.</li>
+            </ul>
+            <p>
+              The topic lists you are choosing between are on <Link href="/courses">the course tracks</Link>. If the word in your message is an order block or a liquidity sweep, read <Link href="/blog-smart-money-concepts">smart money concepts</Link> first so you name the advanced track on purpose. Study notes are indexed on the <Link href="/blog">blog</Link>. The public Google listing is explained on the <Link href="/success-stories">reviews page</Link>. If the symbol you want marked is gold, say XAUUSD. That chart is described in <Link href="/blog-gold-xauusd-course-dubai">the gold class note</Link>.
+            </p>
+
             <h2>What to put in the first message</h2>
             <p>
               A useful enquiry is short. Name the track, Basic to Intermediate or Advanced Institutional Strategies. Name the format, a group class or a private one-to-one lesson. Name the place, the room in Dubai or online. If you work days, say the hours you can keep. Fees are quoted in AED in the reply. They are not printed on the <Link href="/courses">courses page</Link> or the <Link href="/forex-course-fees-dubai">fees page</Link>.

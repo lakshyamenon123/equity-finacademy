@@ -7,14 +7,17 @@ import OpenChatLink from "../components/OpenChatLink";
 import { advancedTopics, basicTopics } from "../lib/curriculum";
 import { pageMetadata } from "../lib/seo";
 import RelatedTraining from "../components/RelatedTraining";
-import { breadcrumbSchema, courseSchemas, faqPageSchema } from "../lib/schema";
+import { breadcrumbSchema, courseSchemas, faqPageSchema, webPageSchema } from "../lib/schema";
 import { VIDEOS } from "../lib/videos";
 import { STARTRADER_LIVE_URL } from "../lib/whatsapp";
 
+const coursesTitle = "Forex Course Tracks Taught in Dubai, UAE";
+const coursesDescription =
+  "The two forex course tracks at Equity Fin Academy: topic order, group or private, in Dubai or online across the United Arab Emirates. Fees are quoted in AED.";
+
 export const metadata = pageMetadata({
-  title: "Forex Trading Courses in Dubai | Equity Fin Academy",
-  description:
-    "Forex trading courses in Dubai and forex education across the UAE. Two live tracks, group classes, and private lessons. Fees quoted in AED when you enquire.",
+  title: `${coursesTitle} | Equity Fin Academy`,
+  description: coursesDescription,
   keywords:
     "forex trading courses in Dubai, forex course Dubai, forex education UAE, trading classes in Dubai, private forex classes Dubai, group forex classes Dubai",
   path: "/courses",
@@ -52,6 +55,7 @@ const Check = () => (
 export default function CoursesPage() {
   return (
     <>
+      <JsonLd data={webPageSchema({ name: coursesTitle, description: coursesDescription, path: "/courses" })} />
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", path: "/" },
@@ -72,7 +76,7 @@ export default function CoursesPage() {
             </nav>
             <span className="eyebrow">CURRICULUM</span>
             <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,3rem)", maxWidth: "18ch" }}>
-              Forex trading courses in Dubai
+              Forex course tracks taught in Dubai, UAE
             </h1>
             <p style={{ maxWidth: "66ch", marginTop: 18 }}>
               Two tracks, taught live. Start at whichever level matches your experience. Both run as group classes in Dubai, UAE, and online across the UAE,
@@ -293,7 +297,7 @@ export default function CoursesPage() {
               Basic to Intermediate is the forex education most people in the UAE need first. You can be new to charts. You do not need a broker account on day one. The hour is spent on how pairs are quoted, how a candle is read, and how swing highs and lows describe structure. Smart money ideas appear on this track only after that base, as orders and imbalance, not as a separate product.
             </p>
             <p>
-              Advanced Institutional Strategies assumes you can already point at a swing. It adds fundamental analysis, market profile, volume with smart money concepts, Fibonacci, risk and psychology, and bot-trading concepts. Lifetime WhatsApp with the instructor after the course belongs to this track only. If the swing is still unclear, booking the advanced track to save time usually means paying to hear the beginner lessons inside an advanced hour.
+              Advanced Institutional Strategies assumes you can already point at a swing. It adds fundamental analysis, market profile, volume with smart money concepts, Fibonacci, risk and psychology, and bot-trading concepts. Lifetime WhatsApp with the instructor after the course belongs to this track. If the swing is still unclear, booking the advanced track to save time usually means paying to hear the beginner lessons inside an advanced hour.
             </p>
             <p>
               A group class follows that shared list. A private lesson can use the same list on your chart, or review trades you already take. The written version of a private coaching plan is <Link href="/blog-personal-forex-coaching-uae">personal forex coaching in the UAE</Link>. What to write down after a trade is <Link href="/blog-forex-trading-plan-uae">a trading plan and journal</Link>. Neither document replaces the live class. To start on MetaTrader 5 you still need the platform and an account with a trusted broker such as{" "}
@@ -301,6 +305,14 @@ export default function CoursesPage() {
                 StarTrader
               </a>
               . Practical sessions at the academy use that broker, which is regulated by the UAE Securities and Commodities Authority. The course fee and the broker balance are separate.
+            </p>
+
+            <h2>A class week in Dubai and the United Arab Emirates</h2>
+            <p>
+              The UAE work week for many private-sector jobs runs Sunday to Thursday. A group cohort uses one shared time on Gulf Standard Time, UTC+4, which does not change in summer. A private lesson can use an hour you can keep. Neither format is a recording. If you live in Dubai, the room is in Dubai, UAE. If you live in another emirate, the same tracks are taught online. Abu Dhabi students should read the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> before they assume the drive is required.
+            </p>
+            <p>
+              Read one article before the first hour so the class is not spent on a definition. The <Link href="/blog">forex blog</Link> is the index. <Link href="/blog-smart-money-concepts">Smart money concepts</Link> belongs after structure, which is why it sits on the advanced track. <Link href="/blog-gold-xauusd-course-dubai">How gold (XAUUSD) is taught</Link> explains that metal charts use the same tools, not a third syllabus. <Link href="/blog-group-forex-classes-friends-dubai">Group classes for friends and colleagues</Link> is for people who want to start together. Google reviews stay on Google. The <Link href="/success-stories">reviews page</Link> says how to read the 5.0 listing. To book, use <Link href="/contact">contact</Link> or WhatsApp +971 55 904 7030, and name the track, the format, and Dubai or online.
             </p>
           </div>
         </section>

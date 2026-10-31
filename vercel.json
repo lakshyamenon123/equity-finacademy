@@ -1,0 +1,24 @@
+{
+  "redirects": [
+    {
+      "source": "/home",
+      "destination": "https://www.equityfinacademy.com/",
+      "statusCode": 301
+    },
+    {
+      "source": "/home/",
+      "destination": "https://www.equityfinacademy.com/",
+      "statusCode": 301
+    },
+    {
+      "source": "/about-us",
+      "destination": "https://www.equityfinacademy.com/about",
+      "statusCode": 301
+    },
+    {
+      "source": "/about-us/",
+      "destination": "https://www.equityfinacademy.com/about",
+      "statusCode": 301
+    }
+  ]
+}

@@ -5,34 +5,35 @@ import YouTubeSection from "../components/YouTubeSection";
 import Link from "next/link";
 import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
-import { articleSchema, breadcrumbSchema } from "../lib/schema";
+import { articleSchema, breadcrumbSchema, webPageSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 
 const mt5English = ENGLISH_VIDEOS.find((video) => video.id === "ssUPlUHnDLo");
 
-const headline = "Smart Money Concepts (SMC) Explained for Beginners in Dubai";
+const headline = "Smart Money Concepts for Beginners in Dubai: One Markup Drill";
+const description =
+  "A Dubai beginner’s drill for smart money concepts: mark one swing on Gulf Standard Time, then see where the live SMC class sits in the UAE course.";
 
 export const metadata = pageMetadata({
-  title: "Smart Money Concepts Explained | Equity Fin Academy Dubai",
-  description:
-    "Smart money concepts for beginners in Dubai and the UAE: liquidity, imbalance, and order blocks, and why each one depends on market structure.",
+  title: "Smart Money Concepts Drill for Dubai Beginners | Equity Fin Academy",
+  description,
   keywords:
-    "smart money concepts Dubai, what is SMC trading UAE, liquidity forex trading, order block trading Dubai, imbalance in forex market, SMC for beginners UAE",
+    "smart money concepts Dubai, what is SMC trading UAE, liquidity forex trading, order block trading Dubai, imbalance in forex market, SMC for beginners United Arab Emirates",
   path: "/blog-smart-money-concepts",
   type: "article",
 });
 
 const postSchema = articleSchema({
   headline,
-  description:
-    "Liquidity, imbalance, and order blocks for beginners in Dubai, and why each one depends on market structure.",
+  description,
   path: "/blog-smart-money-concepts",
-  dateModified: "2026-10-30",
+  dateModified: "2026-10-31",
 });
 
 export default function BlogSmartMoneyConceptsPage() {
   return (
     <>
+      <JsonLd data={webPageSchema({ name: headline, description, path: "/blog-smart-money-concepts" })} />
       <JsonLd data={postSchema} />
       <JsonLd
         data={breadcrumbSchema([
@@ -56,8 +57,8 @@ export default function BlogSmartMoneyConceptsPage() {
 
             <div className="blog-article">
               <span className="eyebrow">STRATEGY</span>
-              <h1>Smart Money Concepts (SMC) Explained for Beginners in Dubai</h1>
-              <div className="meta">By Gopi Chandran · Equity Fin Academy · 9 min read</div>
+              <h1>Smart Money Concepts for Beginners in Dubai: One Markup Drill</h1>
+              <div className="meta">By Gopi Chandran · Equity Fin Academy, Dubai, UAE · Updated 31 Oct 2026 · 10 min read</div>
 
               <p>
                 Smart money concepts (SMC) is a popular framework for analysing forex charts based on the idea of
@@ -127,6 +128,21 @@ export default function BlogSmartMoneyConceptsPage() {
               </p>
               <p>
                 Pick the pair before you hunt for a sweep. <Link href="/blog-currency-pairs-uae">Currency pairs for UAE learners</Link> is the quote: one major, base and second currency, on one chart. A fast candle at a scheduled release is often the number, not a liquidity run. Check <Link href="/blog-forex-economic-calendar-dubai">the economic calendar in Dubai time</Link> before you rename that wick. The in-person class that reviews the mark is the <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link>. The same hour online, from any emirate, is the <Link href="/forex-training-academy-uae">forex training academy UAE</Link>.
+              </p>
+
+              <h2>A twenty-minute markup after work in the UAE</h2>
+              <p>
+                Do this once, on a demo chart, before you book the advanced class in Dubai. Gulf Standard Time does not change through the year, so an evening after a Sunday-to-Thursday job is still the same clock as the London afternoon.
+              </p>
+              <ol className="guide-list">
+                <li>Open one symbol. EUR/USD on the one-hour chart is enough. If you trade gold, use XAUUSD and say so when you enquire. Do not mark five pairs.</li>
+                <li>Mark the last two swing highs and the last two swing lows. That is the structure. If you cannot point at them, stop. The vocabulary below will not help yet. Read <Link href="/blog-market-structure">market structure</Link> first.</li>
+                <li>Find one idea, not all five. A sweep is a wick through one of those swings that closes back inside. An imbalance is a fast move that leaves a gap between candle wicks. An order block is the last opposing candle before that move.</li>
+                <li>Write one sentence: what you marked, and where you would be wrong. That sentence is what a class in Dubai can correct. A screenshot with no sentence cannot.</li>
+                <li>If the fast candle landed on a scheduled release, check <Link href="/blog-forex-economic-calendar-dubai">the economic calendar in Dubai time</Link> before you call the wick a liquidity run.</li>
+              </ol>
+              <p>
+                The drill is reading. The correction happens in a group cohort or a private lesson, in Dubai, UAE, or online across the United Arab Emirates. The <Link href="/courses">course tracks</Link> show where these words sit. The <Link href="/smc-ict-trading-course-dubai">SMC and ICT course page</Link> is the enrolment. Abu Dhabi students use the same drill and the same clock. The journey note is the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>. Read Google reviews from the <Link href="/success-stories">reviews page</Link>, then send the sentence through <Link href="/contact">contact</Link> or WhatsApp +971 55 904 7030. The rest of the notes are on the <Link href="/blog">blog</Link>.
               </p>
 
               <h2>This article and the course page do different jobs</h2>

@@ -86,9 +86,10 @@ export default function PrivateVsGroupPost() {
               <p>
                 Group forex classes in Dubai follow a written sequence. If you have never placed a trade, Basic to
                 Intermediate is the first track: pairs, candlesticks, market structure, then risk. If you already read
-                structure, Advanced Institutional Strategies is the second track. The value of the group is the order
+                structure, Advanced Institutional Strategies is the second track.                 The value of the group is the order
                 of those topics, plus the question someone else asks that you would have skipped. Hearing it answered
-                still teaches you.
+                still teaches you. If the other people are friends or colleagues you already know, the practical steps
+                are in <Link href="/blog-group-forex-classes-friends-dubai">group forex classes for friends and colleagues</Link>.
               </p>
               <p>
                 The topic list sits on the <Link href="/courses">courses page</Link>.{" "}

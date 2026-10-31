@@ -4,21 +4,23 @@ import JsonLd from "../components/JsonLd";
 import RelatedTraining from "../components/RelatedTraining";
 import Link from "next/link";
 import OpenChatLink from "../components/OpenChatLink";
-import { advancedTopics, basicTopics } from "../lib/curriculum";
 import { pageMetadata } from "../lib/seo";
-import { breadcrumbSchema } from "../lib/schema";
+import { breadcrumbSchema, webPageSchema } from "../lib/schema";
 import { SITE } from "../lib/site";
 import { EQUITY_GLOBAL, EQUITY_GLOBAL_ENGLISH } from "../lib/videos";
 import { STARTRADER_LIVE_URL, whatsappHref } from "../lib/whatsapp";
 
 const path = "/why-choose-us";
 
+const title = "Enrolment Checklist for Equity Fin Academy in Dubai";
+const description =
+  "Six checks before you pay Equity Fin Academy in Dubai, UAE: the teacher, where the syllabus lives, the class format, the broker, the reviews, and the AED quote.";
+
 export const metadata = pageMetadata({
-  title: "Why Choose Equity Fin Academy in Dubai | Enrolment Checks",
-  description:
-    "Six enrolment checks for Equity Fin Academy in Dubai: named teacher, published syllabuses, Dubai or online. Fees quoted in AED.",
+  title: `${title} | Why Choose Us`,
+  description,
   keywords:
-    "why choose equity fin academy, equity fin academy enrolment, forex course checklist Dubai, Gopi Chandran forex course, basic to intermediate forex Dubai, advanced institutional strategies Dubai",
+    "why choose equity fin academy, equity fin academy enrolment checklist Dubai, forex course checklist UAE, Gopi Chandran forex course Dubai",
   path,
 });
 
@@ -29,7 +31,7 @@ const checks = [
   },
   {
     title: "Both syllabuses are public",
-    body: "Basic to Intermediate and Advanced Institutional Strategies are written out below, in the order they are taught. Lifetime WhatsApp with the instructor after the course is the last item on the advanced track only. It is not added to the beginner seat.",
+    body: "Basic to Intermediate and Advanced Institutional Strategies are written on the courses page, in the order they are taught. This page links there. It does not paste the same list a second time. Lifetime WhatsApp with the instructor after the course is the last item on the advanced track. It is not added to the beginner seat.",
   },
   {
     title: "The room is a choice",
@@ -52,6 +54,7 @@ const checks = [
 export default function WhyChooseUsPage() {
   return (
     <>
+      <JsonLd data={webPageSchema({ name: title, description, path })} />
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", path: "/" },
@@ -70,7 +73,7 @@ export default function WhyChooseUsPage() {
             </nav>
             <span className="eyebrow">ENROLMENT CHECKS</span>
             <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,3rem)", maxWidth: "20ch" }}>
-              Why students choose Equity Fin Academy
+              An enrolment checklist for Equity Fin Academy in Dubai
             </h1>
             <p className="hero-sub" style={{ marginTop: 18, maxWidth: "66ch" }}>
               Use this page when you are deciding. The homepage introduces the academy. The{" "}
@@ -104,31 +107,30 @@ export default function WhyChooseUsPage() {
         <section className="tight soft">
           <div className="container">
             <div className="section-head reveal">
-              <span className="eyebrow">THE TWO TRACKS</span>
-              <h2>The syllabuses, in teaching order</h2>
+              <span className="eyebrow">WHERE THE SYLLABUS LIVES</span>
+              <h2>This page does not copy the course list</h2>
               <p>
-                The <Link href="/courses">courses page</Link> is where these lists sit next to the class format. They are
-                repeated here because a public topic list is one of the reasons to choose the academy.
+                The full topic order is on the <Link href="/courses">forex course tracks</Link> page. Pasting it here
+                made two URLs look like the same document. Use the notes below to decide which track to ask about, then
+                open that page for the lines themselves.
               </p>
             </div>
             <div className="course-grid">
               <div className="card reveal">
-                <h3>Basic to Intermediate</h3>
-                <p>For people who are new to forex, or who want the topics in order before the advanced class.</p>
-                <ol className="guide-list">
-                  {basicTopics.map((topic) => (
-                    <li key={topic}>{topic}</li>
-                  ))}
-                </ol>
+                <h3>Ask for Basic to Intermediate if</h3>
+                <p>
+                  You cannot yet explain a candle, a currency pair, or a swing high in your own words. The first track
+                  in Dubai, and the same track online across the United Arab Emirates, starts there. The written order
+                  is on the courses page, not here.
+                </p>
               </div>
               <div className="card reveal">
-                <h3>Advanced Institutional Strategies</h3>
-                <p>For people who already have the beginner base. WhatsApp after the course belongs to this track only.</p>
-                <ol className="guide-list">
-                  {advancedTopics.map((topic) => (
-                    <li key={`adv-${topic}`}>{topic}</li>
-                  ))}
-                </ol>
+                <h3>Ask for Advanced Institutional Strategies if</h3>
+                <p>
+                  You can already point at a swing and you want the later topics, including market profile and smart
+                  money concepts. WhatsApp with the instructor after the course belongs to this track. It is not added
+                  to the beginner seat. Confirm the list on the courses page before you pay.
+                </p>
               </div>
             </div>
           </div>
@@ -195,6 +197,29 @@ export default function WhyChooseUsPage() {
               printed. Coaching after a syllabus hour, as distinct from the advanced-track WhatsApp line, is{" "}
               <Link href="/forex-mentorship-dubai">forex mentorship in Dubai</Link>. Say which of those you mean in the
               first message.
+            </p>
+
+            <h2>Write six lines before you pay</h2>
+            <p>
+              This is the worksheet for Equity Fin Academy in Dubai, UAE. It is not the general article on{" "}
+              <Link href="/blog-choose-forex-academy-uae">how to choose any forex academy in the UAE</Link>, and it is
+              not the biography on <Link href="/about">About</Link>. Fill the lines, then send them.
+            </p>
+            <ol className="guide-list">
+              <li>Teacher: Gopi Chandran. Confirm the profile on the About page before you treat a brochure as the biography.</li>
+              <li>Track: Basic to Intermediate, or Advanced Institutional Strategies. The topic order is on the courses page.</li>
+              <li>Format: a group cohort, or a private one-to-one lesson. Say which.</li>
+              <li>Place: the classroom in Dubai, or online. Name your emirate if you will not be in the room.</li>
+              <li>Broker: you open your own StarTrader account for practical sessions. The course fee and the account balance are separate.</li>
+              <li>Reviews: read the Google listing from the <Link href="/success-stories">reviews page</Link>. Do not expect quotes pasted on this site.</li>
+            </ol>
+            <p>
+              Then ask for the fee in AED and the next time on Gulf Standard Time. Students comparing a drive from the
+              capital should read the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> before they
+              fill in the place line. The <Link href="/blog">blog</Link> is for study. The{" "}
+              <Link href="/contact">contact page</Link> is where the six lines go. If the advanced topic you want named
+              first is liquidity and order blocks, read <Link href="/blog-smart-money-concepts">smart money concepts</Link>{" "}
+              so the track you write down matches the vocabulary you meant.
             </p>
 
             <h2>What to send when you enquire</h2>

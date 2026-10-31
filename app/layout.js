@@ -1,8 +1,10 @@
 import { Spectral, IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import EnquiryWidget from "./components/EnquiryWidget";
+import JsonLd from "./components/JsonLd";
 import MobileCta from "./components/MobileCta";
 import PageEffects from "./components/PageEffects";
+import { websiteSchema } from "./lib/schema";
 import "./globals.css";
 
 const spectral = Spectral({
@@ -34,7 +36,9 @@ export const metadata = {
   },
   other: {
     "geo.region": "AE-DU",
-    "geo.placename": "Dubai",
+    "geo.placename": "Dubai, United Arab Emirates",
+    "geo.position": "25.264256;55.38529",
+    "ICBM": "25.264256, 55.38529",
   },
   openGraph: {
     siteName: "Equity Fin Academy",
@@ -66,6 +70,7 @@ export default function RootLayout({ children }) {
         <link rel="dns-prefetch" href="https://i.ytimg.com" />
       </head>
       <body>
+        <JsonLd data={websiteSchema()} />
         {children}
         <EnquiryWidget />
         <MobileCta />

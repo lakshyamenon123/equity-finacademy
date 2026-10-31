@@ -362,7 +362,9 @@ export default function HomePage() {
               <Link href="/blog-forex-classes-working-professionals-dubai">classes for working professionals</Link>,{" "}
               <Link href="/blog-demo-vs-live-mt5-uae">demo versus live accounts on MT5</Link>,{" "}
               <Link href="/blog-personal-forex-coaching-uae">what a personal coaching plan looks like</Link>, and{" "}
-              <Link href="/blog-forex-trading-plan-uae">how to write a trading plan and journal</Link>.
+              <Link href="/blog-forex-trading-plan-uae">how to write a trading plan and journal</Link>. Newer notes cover{" "}
+              <Link href="/blog-gold-xauusd-course-dubai">gold (XAUUSD) in a Dubai class</Link> and{" "}
+              <Link href="/blog-group-forex-classes-friends-dubai">group classes for friends and colleagues</Link>.
             </p>
           </div>
         </section>
@@ -441,6 +443,12 @@ export default function HomePage() {
               <Link href="/forex-mentorship-dubai" className="topic-chip">Forex Mentorship Dubai</Link>
               <Link href="/smc-ict-trading-course-dubai" className="topic-chip">SMC and ICT Course</Link>
               <Link href="/weekend-forex-classes-dubai" className="topic-chip">Weekend Forex Classes</Link>
+              <Link href="/blog" className="topic-chip">Forex class notes</Link>
+              <Link href="/forex-course-abu-dhabi" className="topic-chip">Forex course for Abu Dhabi</Link>
+              <Link href="/success-stories" className="topic-chip">Google reviews</Link>
+              <Link href="/contact" className="topic-chip">Book a class in Dubai</Link>
+              <Link href="/blog-gold-xauusd-course-dubai" className="topic-chip">Gold (XAUUSD) course</Link>
+              <Link href="/blog-group-forex-classes-friends-dubai" className="topic-chip">Group classes for friends</Link>
             </div>
           </div>
         </section>

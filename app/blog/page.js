@@ -3,19 +3,50 @@ import Footer from "../components/Footer";
 import JsonLd from "../components/JsonLd";
 import Link from "next/link";
 import { pageMetadata } from "../lib/seo";
-import { breadcrumbSchema } from "../lib/schema";
+import { breadcrumbSchema, webPageSchema } from "../lib/schema";
 import { absoluteUrl } from "../lib/site";
 
+const blogTitle = "Forex Class Notes for Dubai and the United Arab Emirates";
+const blogDescription =
+  "Study notes from Equity Fin Academy in Dubai: which article to read first, then how to book a group class or a private lesson across the UAE.";
+
 export const metadata = pageMetadata({
-  title: "Forex Education Articles for the UAE | Equity Fin Academy",
-  description:
-    "Forex education for Dubai and the UAE: trading classes, coaching plans, a trading journal, MT5 practice, and how a course is taught.",
+  title: `${blogTitle} | Equity Fin Academy`,
+  description: blogDescription,
   keywords:
-    "forex education UAE, forex trading blog Dubai, forex trading classes Dubai, forex coaching plan UAE, trading journal forex",
+    "forex blog Dubai, forex class notes UAE, forex trading articles Dubai, forex education United Arab Emirates, forex course Dubai",
   path: "/blog",
 });
 
 const posts = [
+  {
+    href: "/blog-gold-xauusd-course-dubai",
+    icon: (
+      <>
+        <circle cx="12" cy="12" r="7" />
+        <path d="M12 8v8M9.5 10.5h4a1.8 1.8 0 010 3.6H10" />
+      </>
+    ),
+    cat: "Gold",
+    title: "Gold (XAUUSD) Trading Course in Dubai: What the Class Teaches",
+    desc: "How a Dubai forex class marks XAUUSD, and why gold is not a separate syllabus from the two tracks.",
+    time: "9 min read",
+  },
+  {
+    href: "/blog-group-forex-classes-friends-dubai",
+    icon: (
+      <>
+        <circle cx="8" cy="9" r="2" />
+        <circle cx="16" cy="9" r="2" />
+        <path d="M4.5 18c.6-2.2 2-3.2 3.5-3.2s2.9 1 3.5 3.2" />
+        <path d="M12.5 18c.6-2.2 2-3.2 3.5-3.2s2.9 1 3.5 3.2" />
+      </>
+    ),
+    cat: "Group Classes",
+    title: "Group Forex Classes in Dubai for Friends and Colleagues",
+    desc: "What to agree before colleagues enquire together, and how a shared cohort differs from a private hour.",
+    time: "8 min read",
+  },
   {
     href: "/blog-currency-pairs-uae",
     icon: (
@@ -296,6 +327,7 @@ const blogListSchema = {
 export default function BlogIndexPage() {
   return (
     <>
+      <JsonLd data={webPageSchema({ name: blogTitle, description: blogDescription, path: "/blog" })} />
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", path: "/" },
@@ -316,7 +348,7 @@ export default function BlogIndexPage() {
             </nav>
             <span className="eyebrow">FOREX EDUCATION BLOG</span>
             <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,3rem)", maxWidth: "20ch" }}>
-              Forex articles for Dubai and the UAE.
+              Forex class notes for Dubai and the United Arab Emirates.
             </h1>
             <p style={{ maxWidth: "66ch", marginTop: 18 }}>
               Plain-language explanations of the concepts that matter, from session times in the UAE to the areas where price has stalled. The live classes are the{" "}
@@ -337,6 +369,30 @@ export default function BlogIndexPage() {
             </p>
             <p>
               People comparing a classroom in Dubai with a screen at home should use the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> if that is the emirate, or <Link href="/online-forex-course-uae">online study across the UAE</Link>. Reviews stay on Google. The <Link href="/success-stories">reviews page</Link> explains why this site does not paste testimonials. To ask about a seat, use <Link href="/contact">contact</Link> or WhatsApp +971 55 904 7030. Say group or private, and Dubai or online.
+            </p>
+            <h2>Pages to open when you are ready to book in the UAE</h2>
+            <p>
+              The notes above are study. These pages are how a seat is chosen in Dubai and across the United Arab Emirates. The classroom is in Dubai, UAE. Online classes use the same Gulf Standard Time in every emirate.
+            </p>
+            <ul className="guide-list">
+              <li>
+                <Link href="/courses">Forex course tracks</Link> lists Basic to Intermediate and Advanced Institutional Strategies in teaching order.
+              </li>
+              <li>
+                <Link href="/forex-course-abu-dhabi">Forex course for Abu Dhabi</Link> is the drive-or-online choice for people in the capital. It is not a second campus.
+              </li>
+              <li>
+                <Link href="/blog-smart-money-concepts">Smart money concepts</Link> defines liquidity, imbalance, and order blocks before you ask for the advanced track.
+              </li>
+              <li>
+                <Link href="/success-stories">Google reviews</Link> explains how to read the 5.0 listing. This site does not paste testimonials.
+              </li>
+              <li>
+                <Link href="/contact">Contact</Link> is where you send the track, the format, and your emirate. WhatsApp is +971 55 904 7030.
+              </li>
+            </ul>
+            <p>
+              Two newer notes sit at the top of the list below. <Link href="/blog-gold-xauusd-course-dubai">Gold (XAUUSD) in a Dubai class</Link> is for people whose chart is the metal, not EUR/USD. <Link href="/blog-group-forex-classes-friends-dubai">Group forex classes for friends and colleagues</Link> is for people who want to enquire together.
             </p>
             <h2>Pick a path, then one article</h2>
             <p>

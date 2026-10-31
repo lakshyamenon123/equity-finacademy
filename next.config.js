@@ -19,9 +19,10 @@ const nextConfig = {
   skipTrailingSlashRedirect: true,
   images: { unoptimized: true },
   async redirects() {
-    // permanent: true is a 308. Trailing-slash requests, including /home/ and
-    // /about-us/, are one hop in middleware.js. A catch-all slash rule here
-    // was matching first and sending /home/ to /home.
+    // statusCode 301 is a permanent redirect. permanent: true would be a 308.
+    // Trailing-slash requests, including /home/ and /about-us/, are one hop
+    // in middleware.js. A catch-all slash rule here was matching first and
+    // sending /home/ to /home.
     const pairs = [
       ["/home", "/"],
       ["/index.html", "/"],
@@ -50,7 +51,7 @@ const nextConfig = {
       ["/terms.html", "/terms"],
       ["/privacy.html", "/privacy"],
     ];
-    return pairs.map(([source, destination]) => ({ source, destination, permanent: true }));
+    return pairs.map(([source, destination]) => ({ source, destination, statusCode: 301 }));
   },
   async headers() {
     return [

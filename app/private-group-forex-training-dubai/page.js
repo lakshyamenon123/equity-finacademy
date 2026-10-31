@@ -17,7 +17,7 @@ export const metadata = pageMetadata({
   description:
     "Private one-to-one forex training in Dubai, and group classes on a shared syllabus. Personal coaching across the UAE, with live trading. Fees on enquiry.",
   keywords:
-    "private forex training Dubai, one to one forex classes Dubai, personal forex coaching UAE, group forex training classes Dubai, live trading sessions Dubai, forex classes near me Dubai, forex cohort Al Qusais",
+    "private forex training Dubai, one to one forex classes Dubai, personal forex coaching UAE, group forex training classes Dubai, live trading sessions Dubai, forex classes near me Dubai",
   path,
 });
 
@@ -61,7 +61,7 @@ export default function PrivateGroupForexTrainingPage() {
               <span className="sep">/</span>
               <span className="current">Private and Group Training</span>
             </nav>
-            <span className="eyebrow">CLASS FORMAT · AL QUSAIS, DUBAI</span>
+            <span className="eyebrow">CLASS FORMAT · DUBAI, UAE</span>
             <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,3.1rem)", maxWidth: "16ch" }}>
               Private one-to-one lessons and group forex classes in Dubai.
             </h1>
@@ -136,7 +136,8 @@ export default function PrivateGroupForexTrainingPage() {
               <Link href="/blog-forex-course-dubai-beginners">What beginners should expect</Link> describes the first
               track in more detail.{" "}
               <Link href="/blog-private-vs-group-forex-classes-dubai">Private coaching versus a group class</Link>{" "}
-              is the longer look at which format suits a working week, a first course, or a chart you already trade. If the private hour is already the choice, read{" "}
+              is the longer look at which format suits a working week, a first course, or a chart you already trade. If several friends or colleagues want the same cohort, read{" "}
+              <Link href="/blog-group-forex-classes-friends-dubai">group forex classes for friends and colleagues</Link> before you send one enquiry for the group. If the private hour is already the choice, read{" "}
               <Link href="/blog-one-to-one-forex-classes-dubai">how to prepare for a one-to-one class</Link>.{" "}
               <Link href="/blog-choose-forex-academy-uae">How to choose an academy in the UAE</Link>{" "}
               is the checklist if you are still comparing schools.
