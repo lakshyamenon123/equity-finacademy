@@ -4,6 +4,7 @@ import JsonLd from "../components/JsonLd";
 import YouTubeSection from "../components/YouTubeSection";
 import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
+import AuthorByline from "../components/AuthorByline";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
@@ -60,7 +61,7 @@ export default function SupportResistancePost() {
             <div className="blog-article">
               <span className="eyebrow">CHART READING</span>
               <h1>Support and Resistance in Forex: A Beginner&apos;s Guide for Dubai</h1>
-              <div className="meta">By Gopi Chandran · Equity Fin Academy · 25 Oct 2026 · 8 min read</div>
+              <AuthorByline detail="25 Oct 2026 · 8 min read" />
 
               <p>
                 Support and resistance are the areas on a forex chart where a move has stalled before. Support is

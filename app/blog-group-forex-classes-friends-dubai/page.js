@@ -4,6 +4,7 @@ import JsonLd from "../components/JsonLd";
 import YouTubeSection from "../components/YouTubeSection";
 import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
+import AuthorByline from "../components/AuthorByline";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
@@ -59,7 +60,7 @@ export default function GroupForexClassesFriendsPost() {
             <div className="blog-article">
               <span className="eyebrow">GROUP CLASSES · DUBAI, UAE</span>
               <h1>{headline}</h1>
-              <div className="meta">By Gopi Chandran · Equity Fin Academy · 31 Oct 2026 · 8 min read</div>
+              <AuthorByline detail="31 Oct 2026 · 8 min read" />
 
               <p>
                 A group forex class in Dubai is easier to keep when someone you already know is in the same room. Colleagues finish work on the same clock. Friends can hold each other to the hour. Equity Fin Academy runs group cohorts on a shared syllabus, in person in Dubai, UAE, and online across the United Arab Emirates. This page is how to enquire together without pretending that three people are one student.

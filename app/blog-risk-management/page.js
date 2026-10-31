@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
+import AuthorByline from "../components/AuthorByline";
 import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
@@ -51,7 +52,7 @@ export default function BlogRiskManagementPage() {
             <div className="blog-article">
               <span className="eyebrow">RISK MANAGEMENT</span>
               <h1>Forex Risk Management in the UAE: How Much to Risk Per Trade</h1>
-              <div className="meta">By Gopi Chandran · Equity Fin Academy · 6 min read</div>
+              <AuthorByline detail="6 min read" />
 
               <p>
                 Ask most beginner traders what strategy they use, and they&apos;ll have an answer. Ask how they size

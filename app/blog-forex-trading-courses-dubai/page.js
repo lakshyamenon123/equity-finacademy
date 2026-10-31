@@ -4,6 +4,7 @@ import JsonLd from "../components/JsonLd";
 import YouTubeSection from "../components/YouTubeSection";
 import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
+import AuthorByline from "../components/AuthorByline";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
@@ -58,7 +59,7 @@ export default function ForexTradingCoursesDubaiPost() {
             <div className="blog-article">
               <span className="eyebrow">COURSES</span>
               <h1>How to Read a Forex Trading Course Syllabus in Dubai</h1>
-              <div className="meta">By Gopi Chandran · Equity Fin Academy · 26 Oct 2026 · 8 min read</div>
+              <AuthorByline detail="26 Oct 2026 · 8 min read" />
 
               <p>
                 A headline that says &quot;forex course&quot; is not a syllabus. Before you pay an academy in Dubai, you should be able to point at the topics, the order, who is in the room, and what the fee is supposed to cover. This is a way to read that page, using the published tracks at Equity Fin Academy as the worked example.

@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
+import AuthorByline from "../components/AuthorByline";
 import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
@@ -51,7 +52,7 @@ export default function BlogCommonMistakesPage() {
             <div className="blog-article">
               <span className="eyebrow">BEGINNER MISTAKES</span>
               <h1>7 Common Mistakes Beginner Forex Traders Make in the UAE</h1>
-              <div className="meta">By Gopi Chandran · Equity Fin Academy · 7 min read</div>
+              <AuthorByline detail="7 min read" />
 
               <p>
                 Most beginner trading losses aren&apos;t caused by a single bad decision — they&apos;re caused by a handful of repeating patterns. The list below is the one we see from students in Dubai and from people studying online in Abu Dhabi, Sharjah, and the other emirates. Recognising them in your own trading is the fastest way to stop them.

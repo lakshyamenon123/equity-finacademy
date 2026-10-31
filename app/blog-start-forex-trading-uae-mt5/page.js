@@ -4,6 +4,7 @@ import JsonLd from "../components/JsonLd";
 import YouTubeSection from "../components/YouTubeSection";
 import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
+import AuthorByline from "../components/AuthorByline";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { VIDEOS } from "../lib/videos";
@@ -57,7 +58,7 @@ export default function StartForexMt5Post() {
             <div className="blog-article">
               <span className="eyebrow">GETTING STARTED</span>
               <h1>How to Start Forex Trading in the UAE with MT5</h1>
-              <div className="meta">By Gopi Chandran · Equity Fin Academy · 24 Oct 2026 · 6 min read</div>
+              <AuthorByline detail="24 Oct 2026 · 6 min read" />
 
               <p>
                 If you want to know how to start forex trading in the UAE, the work is a short sequence, not a stack
