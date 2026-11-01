@@ -6,9 +6,9 @@ import { pageMetadata } from "../lib/seo";
 import { breadcrumbSchema, webPageSchema } from "../lib/schema";
 import { absoluteUrl } from "../lib/site";
 
-const blogTitle = "Forex Class Notes for Dubai and the United Arab Emirates";
+const blogTitle = "Forex Class Notes for a Course in Dubai and the UAE";
 const blogDescription =
-  "Study notes from Equity Fin Academy in Dubai: which article to read first, then how to book a group class or a private lesson across the UAE.";
+  "Forex class notes from Equity Fin Academy in Dubai: a reading order for the course, then how to book a group class or a private lesson across the UAE.";
 
 export const metadata = pageMetadata({
   title: `${blogTitle} | Equity Fin Academy`,
@@ -19,6 +19,34 @@ export const metadata = pageMetadata({
 });
 
 const posts = [
+  {
+    href: "/blog-forex-spreads-swaps-pip-value-uae",
+    icon: (
+      <>
+        <path d="M4 8h16M4 12h10M4 16h13" />
+        <path d="M16 14l3 2-3 2" />
+      </>
+    ),
+    cat: "Trade Costs",
+    title: "Forex Spreads, Swaps, and Pip Value for Traders in the UAE",
+    desc: "How to read the spread on MT5, what a pip is worth in dirhams, and where the overnight swap is listed.",
+    time: "9 min read",
+  },
+  {
+    href: "/blog-prepare-group-forex-class-dubai",
+    icon: (
+      <>
+        <circle cx="8" cy="9" r="2" />
+        <circle cx="16" cy="9" r="2" />
+        <path d="M4 18c.7-2.4 2.2-3.5 4-3.5s3.3 1.1 4 3.5" />
+        <path d="M12 18c.7-2.4 2.2-3.5 4-3.5s3.3 1.1 4 3.5" />
+      </>
+    ),
+    cat: "Group Classes",
+    title: "How to Prepare for a Group Forex Class in Dubai",
+    desc: "The topic, the question, and the chart to have ready so a shared hour stays on the cohort.",
+    time: "8 min read",
+  },
   {
     href: "/blog-gold-xauusd-course-dubai",
     icon: (
@@ -348,7 +376,7 @@ export default function BlogIndexPage() {
             </nav>
             <span className="eyebrow">FOREX EDUCATION BLOG</span>
             <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,3rem)", maxWidth: "20ch" }}>
-              Forex class notes for Dubai and the United Arab Emirates.
+              Forex class notes for a course in Dubai and the UAE.
             </h1>
             <p style={{ maxWidth: "66ch", marginTop: 18 }}>
               Plain-language explanations of the concepts that matter, from session times in the UAE to the areas where price has stalled. The live classes are the{" "}
@@ -390,9 +418,12 @@ export default function BlogIndexPage() {
               <li>
                 <Link href="/contact">Contact</Link> is where you send the track, the format, and your emirate. WhatsApp is +971 55 904 7030.
               </li>
+              <li>
+                <Link href="/why-choose-us">The enrolment checklist</Link> is six lines about this academy: the teacher, the track, the room, the broker, the reviews, and the AED quote.
+              </li>
             </ul>
             <p>
-              Two newer notes sit at the top of the list below. <Link href="/blog-gold-xauusd-course-dubai">Gold (XAUUSD) in a Dubai class</Link> is for people whose chart is the metal, not EUR/USD. <Link href="/blog-group-forex-classes-friends-dubai">Group forex classes for friends and colleagues</Link> is for people who want to enquire together.
+              Two notes added on 1 November sit at the top of the list. <Link href="/blog-forex-spreads-swaps-pip-value-uae">Spreads, swaps, and pip value</Link> is the cost of a trade in dollars and dirhams. <Link href="/blog-prepare-group-forex-class-dubai">How to prepare for a group forex class in Dubai</Link> is the homework for a shared hour. <Link href="/blog-gold-xauusd-course-dubai">Gold (XAUUSD) in a Dubai class</Link> is for people whose chart is the metal. <Link href="/blog-group-forex-classes-friends-dubai">Group forex classes for friends and colleagues</Link> is for people who want to enquire together. Before you pay, fill in <Link href="/why-choose-us">the enrolment checklist</Link>.
             </p>
             <h2>Pick a path, then one article</h2>
             <p>

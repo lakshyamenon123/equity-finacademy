@@ -28,7 +28,7 @@ const postSchema = articleSchema({
   headline,
   description,
   path: "/blog-smart-money-concepts",
-  dateModified: "2026-10-31",
+  dateModified: "2026-11-01",
 });
 
 export default function BlogSmartMoneyConceptsPage() {
@@ -59,7 +59,7 @@ export default function BlogSmartMoneyConceptsPage() {
             <div className="blog-article">
               <span className="eyebrow">STRATEGY</span>
               <h1>Smart Money Concepts for Beginners in Dubai: One Markup Drill</h1>
-              <AuthorByline detail="Updated 31 Oct 2026 · 10 min read" />
+              <AuthorByline detail="Updated 1 Nov 2026 · 10 min read" />
 
               <p>
                 Smart money concepts (SMC) is a popular framework for analysing forex charts based on the idea of
@@ -144,6 +144,14 @@ export default function BlogSmartMoneyConceptsPage() {
               </ol>
               <p>
                 The drill is reading. The correction happens in a group cohort or a private lesson, in Dubai, UAE, or online across the United Arab Emirates. The <Link href="/courses">course tracks</Link> show where these words sit. The <Link href="/smc-ict-trading-course-dubai">SMC and ICT course page</Link> is the enrolment. Abu Dhabi students use the same drill and the same clock. The journey note is the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>. Read Google reviews from the <Link href="/success-stories">reviews page</Link>, then send the sentence through <Link href="/contact">contact</Link> or WhatsApp +971 55 904 7030. The rest of the notes are on the <Link href="/blog">blog</Link>.
+              </p>
+
+              <h2>One shape, written as an illustration</h2>
+              <p>
+                Picture a one-hour EUR/USD chart with two swing highs. Price wicks through the later high and closes back inside the prior range. That wick is the shape this page calls a sweep. It is a drawing of the shape so you can recognise it. It is not a trade that was taken, and it is not a result. If you cannot point at the two highs first, the wick has nothing to sweep. That is why the drill above starts with structure, and why the live version sits on the advanced track after the beginner hours.
+              </p>
+              <p>
+                The cost of acting on that shape, the spread and the pip value in dirhams, is a different note: <Link href="/blog-forex-spreads-swaps-pip-value-uae">spreads, swaps, and pip value</Link>. If you will study the shape in a group, prepare the shared hour with <Link href="/blog-prepare-group-forex-class-dubai">the group class checklist</Link>. Abu Dhabi students use the same drawing on the same clock. The journey is the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>.
               </p>
 
               <h2>This article and the course page do different jobs</h2>

@@ -369,9 +369,11 @@ export default function HomePage() {
               <Link href="/blog-forex-classes-working-professionals-dubai">classes for working professionals</Link>,{" "}
               <Link href="/blog-demo-vs-live-mt5-uae">demo versus live accounts on MT5</Link>,{" "}
               <Link href="/blog-personal-forex-coaching-uae">what a personal coaching plan looks like</Link>, and{" "}
-              <Link href="/blog-forex-trading-plan-uae">how to write a trading plan and journal</Link>. Newer notes cover{" "}
-              <Link href="/blog-gold-xauusd-course-dubai">gold (XAUUSD) in a Dubai class</Link> and{" "}
-              <Link href="/blog-group-forex-classes-friends-dubai">group classes for friends and colleagues</Link>.
+              <Link href="/blog-forex-trading-plan-uae">how to write a trading plan and journal</Link>.               Newer notes cover{" "}
+              <Link href="/blog-gold-xauusd-course-dubai">gold (XAUUSD) in a Dubai class</Link>,{" "}
+              <Link href="/blog-group-forex-classes-friends-dubai">group classes for friends and colleagues</Link>,{" "}
+              <Link href="/blog-forex-spreads-swaps-pip-value-uae">spreads, swaps, and pip value</Link>, and{" "}
+              <Link href="/blog-prepare-group-forex-class-dubai">how to prepare for a group forex class in Dubai</Link>.
             </p>
           </div>
         </section>
@@ -458,6 +460,8 @@ export default function HomePage() {
               <Link href="/contact" className="topic-chip">Book a class in Dubai</Link>
               <Link href="/blog-gold-xauusd-course-dubai" className="topic-chip">Gold (XAUUSD) course</Link>
               <Link href="/blog-group-forex-classes-friends-dubai" className="topic-chip">Group classes for friends</Link>
+              <Link href="/blog-forex-spreads-swaps-pip-value-uae" className="topic-chip">Spreads, swaps, and pip value</Link>
+              <Link href="/blog-prepare-group-forex-class-dubai" className="topic-chip">Prepare for a group class</Link>
             </div>
           </div>
         </section>

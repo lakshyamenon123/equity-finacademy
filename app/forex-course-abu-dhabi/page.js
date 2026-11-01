@@ -13,9 +13,9 @@ import { STARTRADER_LIVE_URL } from "../lib/whatsapp";
 const path = "/forex-course-abu-dhabi";
 const mt5English = ENGLISH_VIDEOS.find((video) => video.id === "ssUPlUHnDLo");
 
-const pageTitle = "Forex Course for Abu Dhabi: Dubai Classroom or Online";
+const pageTitle = "Forex Course Abu Dhabi: Online or the Dubai Classroom";
 const pageDescription =
-  "Abu Dhabi residents can take the Dubai forex course online on Gulf Standard Time, or attend class in Dubai, UAE. What to send when you enquire.";
+  "Forex course for Abu Dhabi students at Equity Fin Academy: the same Dubai syllabus online on Gulf Standard Time, or a visit to the classroom in Dubai, UAE.";
 
 export const metadata = pageMetadata({
   title: `${pageTitle} | Equity Fin Academy`,
@@ -193,6 +193,20 @@ export default function ForexCourseAbuDhabiPage() {
             </ol>
             <p>
               The <Link href="/blog">blog index</Link> is the longer reading list. Reviews of the academy are on Google, via the <Link href="/success-stories">reviews page</Link>, not as quotes written for Abu Dhabi. If friends in the capital want to start together, read <Link href="/blog-group-forex-classes-friends-dubai">group forex classes for friends and colleagues</Link> and send one enquiry for the group. If the chart you care about is gold, read <Link href="/blog-gold-xauusd-course-dubai">the XAUUSD class note</Link> and name that symbol.
+            </p>
+
+            <h2>What to have ready for an online hour in Abu Dhabi</h2>
+            <p>
+              An online seat from Abu Dhabi uses the same instructor and the same two tracks as the room in Dubai. The kit is small, and it is worth setting up the day before so the hour is the chart.
+            </p>
+            <ul className="guide-list">
+              <li>MetaTrader 5 logged in, with one symbol on the screen. The install note is <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>.</li>
+              <li>A quiet place and a headset. Gulf Standard Time is the same in Abu Dhabi and Dubai, so a 7pm class is 7pm at your desk.</li>
+              <li>One written question about the topic the cohort is on. Group homework is in <Link href="/blog-prepare-group-forex-class-dubai">how to prepare for a group class</Link>. A private hour can stay on your chart. Say which you booked.</li>
+              <li>If you will size a trade after the class, read <Link href="/blog-forex-spreads-swaps-pip-value-uae">what a pip is worth in dirhams</Link> first. The course fee is a separate quote, asked for on the <Link href="/contact">contact page</Link>.</li>
+            </ul>
+            <p>
+              The definitions, including <Link href="/blog-smart-money-concepts">smart money concepts</Link>, stay on the <Link href="/blog">blog</Link>. The Google listing is explained on the <Link href="/success-stories">reviews page</Link>. Six checks before you pay are on <Link href="/why-choose-us">the enrolment checklist</Link>.
             </p>
 
             <h2>How to decide if the drive is worth it</h2>

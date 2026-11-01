@@ -122,6 +122,21 @@ export default function SuccessStoriesPage() {
               After the listing, read the class you would actually book. The two tracks are on <Link href="/courses">forex course tracks</Link>. Abu Dhabi readers should use the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> for the drive or the online seat, which is not a review. Definitions such as <Link href="/blog-smart-money-concepts">smart money concepts</Link> live on the <Link href="/blog">blog</Link>. When you are ready to ask for a seat, use <Link href="/contact">contact</Link> and say your emirate. WhatsApp is +971 55 904 7030.
             </p>
 
+            <h2>Turn a review into a question for the academy</h2>
+            <p>
+              A review is useful when it changes the message you send. Read several comments on the Google listing, then write one line that the academy can answer. These are the translations that keep the enquiry specific.
+            </p>
+            <ul className="guide-list">
+              <li>The comment mentions a group class. Ask which track that cohort was on, and read <Link href="/blog-prepare-group-forex-class-dubai">how to prepare for a group forex class in Dubai</Link> before you book the same format.</li>
+              <li>The comment mentions a private hour. Read <Link href="/blog-one-to-one-forex-classes-dubai">how to prepare for a one-to-one class</Link> and say the symbol you want on the chart.</li>
+              <li>The comment mentions studying online. Name your emirate. Abu Dhabi readers should use the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> for the screen or the drive.</li>
+              <li>The comment mentions a topic you do not know, such as liquidity. Read <Link href="/blog-smart-money-concepts">the smart money concepts drill</Link> so you can say whether you want that lesson or the beginner track on <Link href="/courses">the course page</Link>.</li>
+              <li>You want the cost of trading, not the course fee. Those are different numbers. The course fee is quoted in AED when you <Link href="/contact">enquire</Link>. The trade&apos;s spread and pip value are explained in <Link href="/blog-forex-spreads-swaps-pip-value-uae">spreads, swaps, and pip value</Link>.</li>
+            </ul>
+            <p>
+              Then send the line. The <Link href="/blog">blog</Link> is the reading. The <Link href="/why-choose-us">enrolment checklist</Link> is the six facts to confirm about this academy. WhatsApp is +971 55 904 7030.
+            </p>
+
             <h2>Five things worth noticing in a review</h2>
             <p>
               A star on its own is a thin fact. These are the checks that make the Google listing useful when you are comparing forex training in Dubai.

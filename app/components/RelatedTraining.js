@@ -16,6 +16,8 @@ const LINKS = [
   { href: "/courses", label: "Course tracks" },
   { href: "/private-group-forex-training-dubai", label: "Private vs group classes" },
   { href: "/blog", label: "Forex class notes" },
+  { href: "/blog-forex-spreads-swaps-pip-value-uae", label: "Spreads, swaps, and pip value" },
+  { href: "/blog-prepare-group-forex-class-dubai", label: "Prepare for a group class" },
   { href: "/blog-gold-xauusd-course-dubai", label: "Gold (XAUUSD) course in Dubai" },
   { href: "/blog-group-forex-classes-friends-dubai", label: "Group classes for friends" },
   { href: "/why-choose-us", label: "Enrolment checklist" },

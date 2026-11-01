@@ -11,9 +11,9 @@ import { breadcrumbSchema, courseSchemas, faqPageSchema, webPageSchema } from ".
 import { VIDEOS } from "../lib/videos";
 import { STARTRADER_LIVE_URL } from "../lib/whatsapp";
 
-const coursesTitle = "Forex Course Tracks Taught in Dubai, UAE";
+const coursesTitle = "Forex Course in Dubai: Two Live Tracks";
 const coursesDescription =
-  "The two forex course tracks at Equity Fin Academy: topic order, group or private, in Dubai or online across the United Arab Emirates. Fees are quoted in AED.";
+  "Forex course in Dubai at Equity Fin Academy. Basic to Intermediate and Advanced tracks, as a group class or a private lesson, in Dubai or online across the UAE. Fees quoted in AED.";
 
 export const metadata = pageMetadata({
   title: `${coursesTitle} | Equity Fin Academy`,
@@ -29,8 +29,8 @@ const courseFaq = [
     text: "If you're new to trading, start with Basic to Intermediate — it covers forex fundamentals, candlestick patterns and market structure. If you already understand these, Advanced Institutional Strategies goes straight into institutional tools.",
   },
   {
-    q: "Is this course only about forex?",
-    text: "Yes. Both tracks focus on forex, taught as one market-structure framework rather than spread thin across other asset classes. Practical sessions use MetaTrader 5, so the same chart work also covers gold, indices, and stocks the broker lists, alongside forex.",
+    q: "Does the syllabus cover other markets?",
+    text: "Both tracks are forex courses, taught as one market-structure framework. Practical sessions use MetaTrader 5, so the same chart work also covers gold, indices, and stocks the broker lists, alongside forex.",
   },
   {
     q: "What is Lifetime Support via WhatsApp?",
@@ -76,7 +76,7 @@ export default function CoursesPage() {
             </nav>
             <span className="eyebrow">CURRICULUM</span>
             <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,3rem)", maxWidth: "18ch" }}>
-              Forex course tracks taught in Dubai, UAE
+              Forex course in Dubai: two live tracks
             </h1>
             <p style={{ maxWidth: "66ch", marginTop: 18 }}>
               Two tracks, taught live. Start at whichever level matches your experience. Both run as group classes in Dubai, UAE, and online across the UAE,
@@ -236,12 +236,12 @@ export default function CoursesPage() {
               </details>
               <details>
                 <summary>
-                  Is this course only about forex?<span className="plus">+</span>
+                  Does the syllabus cover other markets?<span className="plus">+</span>
                 </summary>
                 <p>
-                  Yes. Both tracks focus on forex, taught as one market-structure framework rather than spread thin
-                  across other asset classes. Practical sessions use MetaTrader 5, so the same chart work also covers
-                  gold, indices, and stocks the broker lists, alongside forex.
+                  Both tracks are forex courses, taught as one market-structure framework. Practical sessions use
+                  MetaTrader 5, so the same chart work also covers gold, indices, and stocks the broker lists,
+                  alongside forex.
                 </p>
               </details>
               <details>
@@ -312,7 +312,7 @@ export default function CoursesPage() {
               The UAE work week for many private-sector jobs runs Sunday to Thursday. A group cohort uses one shared time on Gulf Standard Time, UTC+4, which does not change in summer. A private lesson can use an hour you can keep. Neither format is a recording. If you live in Dubai, the room is in Dubai, UAE. If you live in another emirate, the same tracks are taught online. Abu Dhabi students should read the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> before they assume the drive is required.
             </p>
             <p>
-              Read one article before the first hour so the class is not spent on a definition. The <Link href="/blog">forex blog</Link> is the index. <Link href="/blog-smart-money-concepts">Smart money concepts</Link> belongs after structure, which is why it sits on the advanced track. <Link href="/blog-gold-xauusd-course-dubai">How gold (XAUUSD) is taught</Link> explains that metal charts use the same tools, not a third syllabus. <Link href="/blog-group-forex-classes-friends-dubai">Group classes for friends and colleagues</Link> is for people who want to start together. Google reviews stay on Google. The <Link href="/success-stories">reviews page</Link> says how to read the 5.0 listing. To book, use <Link href="/contact">contact</Link> or WhatsApp +971 55 904 7030, and name the track, the format, and Dubai or online.
+              Read one article before the first hour so the class is spent on your chart. The <Link href="/blog">forex blog</Link> is the index. <Link href="/blog-smart-money-concepts">Smart money concepts</Link> belongs after structure, which is why it sits on the advanced track. <Link href="/blog-gold-xauusd-course-dubai">How gold (XAUUSD) is taught</Link> explains that metal charts use the same tools. <Link href="/blog-group-forex-classes-friends-dubai">Group classes for friends and colleagues</Link> is for people who want to start together. <Link href="/blog-prepare-group-forex-class-dubai">How to prepare for a group class</Link> is the homework for that shared hour. <Link href="/blog-forex-spreads-swaps-pip-value-uae">Spreads, swaps, and pip value</Link> is the cost of a trade before you size it. Google reviews stay on Google. The <Link href="/success-stories">reviews page</Link> says how to read the 5.0 listing. To book, use <Link href="/contact">contact</Link> or WhatsApp +971 55 904 7030, and name the track, the format, and Dubai or online. The six lines to fill in before you pay are on <Link href="/why-choose-us">the enrolment checklist</Link>.
             </p>
           </div>
         </section>

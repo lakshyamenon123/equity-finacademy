@@ -141,7 +141,9 @@ export default function PrivateVsGroupPost() {
               </ul>
               <p>
                 The <Link href="/faq">FAQ</Link> answers the enrolment questions that usually come next: what the first
-                track assumes, and how fees are quoted.
+                track assumes, and how fees are quoted. If you have chosen the group, the homework is{" "}
+                <Link href="/blog-prepare-group-forex-class-dubai">how to prepare for a group forex class in Dubai</Link>.
+                The private-hour version is <Link href="/blog-one-to-one-forex-classes-dubai">one-to-one class prep</Link>.
               </p>
 
               <h2>What you still need in order to trade</h2>

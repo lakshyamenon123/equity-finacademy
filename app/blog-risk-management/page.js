@@ -113,7 +113,8 @@ export default function BlogRiskManagementPage() {
 
               <p>
                 Write the dirham risk into a plan you can reread when the trade is open. The page for that, including the journal you fill in afterwards, is{" "}
-                <Link href="/blog-forex-trading-plan-uae">a forex trading plan for UAE learners</Link>.
+                <Link href="/blog-forex-trading-plan-uae">a forex trading plan for UAE learners</Link>. The unit that turns a pip into dirhams, before you pick the percentage, is{" "}
+                <Link href="/blog-forex-spreads-swaps-pip-value-uae">spreads, swaps, and pip value</Link>.
               </p>
               <AcademyLinks lead="Risk is part of the live syllabus at the" />
               <div className="blog-cta">

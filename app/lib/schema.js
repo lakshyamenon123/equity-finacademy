@@ -52,24 +52,15 @@ export function breadcrumbSchema(items) {
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: items.map((item, index) => {
-      const pageUrl = breadcrumbItemUrl(item.path);
-      return {
-        "@type": "ListItem",
-        position: index + 1,
-        name: item.name,
-        // Google's breadcrumb report validates item.id. A nested object that
-        // sets only @id can be reported as an invalid id, so id, @id, and url
-        // are the same absolute https://www.equityfinacademy.com URL.
-        item: {
-          "@type": "WebPage",
-          "@id": pageUrl,
-          id: pageUrl,
-          url: pageUrl,
-          name: item.name,
-        },
-      };
-    }),
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      // Google's breadcrumb docs want item to be the page URL. A nested
+      // object makes the report read item.id. A literal id property, or an
+      // @id with a #fragment, is reported as "Invalid URL in field id".
+      item: breadcrumbItemUrl(item.path),
+    })),
   };
 }
 
@@ -305,41 +296,33 @@ export function privateCourseSchema() {
 }
 
 export function courseSchemas() {
-  const basicUrl = `${absoluteUrl("/courses")}#basic-to-intermediate`;
-  const advancedUrl = `${absoluteUrl("/courses")}#advanced-institutional`;
+  const coursesPage = absoluteUrl("/courses");
   const courses = [
     courseEntry({
-      id: basicUrl,
+      id: `${coursesPage}#basic-to-intermediate`,
       name: "Basic to Intermediate Forex Course",
       description:
         "Forex fundamentals, candlestick patterns, market structure and smart money concepts for traders starting from scratch. Taught in Dubai, UAE, and online across the UAE, as a group class with live trading sessions.",
-      url: basicUrl,
+      url: coursesPage,
       topics: basicTopics,
       instanceName: "Group cohort",
     }),
     courseEntry({
-      id: advancedUrl,
+      id: `${coursesPage}#advanced-institutional`,
       name: "Advanced Institutional Strategies Forex Course",
       description:
         "Market profile, volume with smart money concepts, Fibonacci retracement and risk psychology for experienced forex traders. Taught in Dubai, UAE, and online across the UAE, as a group class with live trading sessions.",
-      url: advancedUrl,
+      url: coursesPage,
       topics: advancedTopics,
       instanceName: "Group cohort",
     }),
     privateCourse(),
   ];
+  // A @graph, not an ItemList. Wrapping these courses in ListItem.item put
+  // three fragment @id values where Google's breadcrumb report reads id.
   return {
     "@context": "https://schema.org",
-    "@type": "ItemList",
-    name: "Forex courses in Dubai and online across the UAE",
-    numberOfItems: courses.length,
-    itemListElement: courses.map((course, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
-      url: course.url,
-      name: course.name,
-      item: course,
-    })),
+    "@graph": courses,
   };
 }
 

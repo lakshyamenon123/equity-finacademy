@@ -121,7 +121,8 @@ export default function OneToOneForexClassesPost() {
                 <Link href="/blog-personal-forex-coaching-uae">personal forex coaching in the UAE</Link>.
               </p>
               <p>
-                If the hour showed that you do not yet have the base vocabulary, that is a useful result. Book the group track instead of buying another private hour to hear candles and structure for the first time. The sequence is in{" "}
+                If the hour showed that you do not yet have the base vocabulary, that is a useful result. Book the group track instead of buying another private hour to hear candles and structure for the first time. What to bring to that shared hour is in{" "}
+                <Link href="/blog-prepare-group-forex-class-dubai">how to prepare for a group forex class in Dubai</Link>. The sequence is in{" "}
                 <Link href="/blog-forex-trading-courses-dubai">how to read a forex course syllabus</Link> and on the{" "}
                 <Link href="/courses">courses page</Link>.
               </p>

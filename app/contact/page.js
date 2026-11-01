@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import JsonLd from "../components/JsonLd";
+import DubaiMap from "../components/DubaiMap";
 import LeadForm from "../components/LeadForm";
 import RelatedTraining from "../components/RelatedTraining";
 import Link from "next/link";
@@ -149,14 +150,7 @@ export default function ContactPage() {
               <LeadForm id="contact-lead-form" />
             </div>
 
-            <div className="map-frame reveal">
-              <iframe
-                src="https://www.google.com/maps?q=Equity+Fin+Academy+Dubai+UAE&output=embed"
-                title="Map showing Dubai, UAE"
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
+            <DubaiMap />
           </div>
         </section>
 
@@ -198,6 +192,20 @@ export default function ContactPage() {
             </ul>
             <p>
               The topic lists you are choosing between are on <Link href="/courses">the course tracks</Link>. If the word in your message is an order block or a liquidity sweep, read <Link href="/blog-smart-money-concepts">smart money concepts</Link> first so you name the advanced track on purpose. Study notes are indexed on the <Link href="/blog">blog</Link>. The public Google listing is explained on the <Link href="/success-stories">reviews page</Link>. If the symbol you want marked is gold, say XAUUSD. That chart is described in <Link href="/blog-gold-xauusd-course-dubai">the gold class note</Link>.
+            </p>
+
+            <h2>Four facts that make the reply specific</h2>
+            <p>
+              The form, the phone call, and WhatsApp all land in the same place. Send these four facts and the answer can name a time and a fee in AED.
+            </p>
+            <ul className="guide-list">
+              <li>Emirate, and whether you will be in the Dubai classroom or online. Abu Dhabi readers can check the <Link href="/forex-course-abu-dhabi">drive-or-online note</Link> first.</li>
+              <li>Group cohort or private lesson. The shared-hour homework is <Link href="/blog-prepare-group-forex-class-dubai">how to prepare for a group class</Link>.</li>
+              <li>Track: Basic to Intermediate, or Advanced. The lists are on <Link href="/courses">the forex course page</Link>. If the word you want taught is an order block, read <Link href="/blog-smart-money-concepts">smart money concepts</Link> before you name the advanced track.</li>
+              <li>The hours you can keep on Gulf Standard Time, and whether MetaTrader 5 is already installed.</li>
+            </ul>
+            <p>
+              Fees stay off this page because a printed number goes stale. What changes a quote is on the <Link href="/forex-course-fees-dubai">fees page</Link>. The cost of a trade, which is separate from the course fee, is in <Link href="/blog-forex-spreads-swaps-pip-value-uae">spreads, swaps, and pip value</Link>. Read Google comments from the <Link href="/success-stories">reviews page</Link> if you want third-party notes before you write. The study index is the <Link href="/blog">blog</Link>.
             </p>
 
             <h2>What to put in the first message</h2>

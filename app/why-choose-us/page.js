@@ -14,7 +14,7 @@ const path = "/why-choose-us";
 
 const title = "Enrolment Checklist for Equity Fin Academy in Dubai";
 const description =
-  "Six checks before you pay Equity Fin Academy in Dubai, UAE: the teacher, where the syllabus lives, the class format, the broker, the reviews, and the AED quote.";
+  "Enrolment checklist for Equity Fin Academy in Dubai, UAE: the teacher, the syllabus, group or private, the broker, Google reviews, and the fee quoted in AED.";
 
 export const metadata = pageMetadata({
   title: `${title} | Why Choose Us`,
@@ -222,6 +222,28 @@ export default function WhyChooseUsPage() {
               so the track you write down matches the vocabulary you meant.
             </p>
 
+            <h2>Read the longer page, then come back to the six lines</h2>
+            <p>
+              This checklist stays short on purpose. The pages below are where each line is explained. Fill the line here, and open the longer page when a line is still vague.
+            </p>
+            <ul className="guide-list">
+              <li>
+                Syllabus: the <Link href="/courses">forex course in Dubai</Link> lists both tracks in teaching order.
+              </li>
+              <li>
+                Abu Dhabi and the drive: the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>.
+              </li>
+              <li>
+                A shared hour: <Link href="/blog-prepare-group-forex-class-dubai">how to prepare for a group class</Link>. The definitions, including <Link href="/blog-smart-money-concepts">smart money concepts</Link>, are on the <Link href="/blog">blog</Link>.
+              </li>
+              <li>
+                The cost of a trade, separate from the course fee: <Link href="/blog-forex-spreads-swaps-pip-value-uae">spreads, swaps, and pip value</Link>.
+              </li>
+              <li>
+                Reviews: the <Link href="/success-stories">Google reviews page</Link>. The message itself goes to <Link href="/contact">contact</Link>.
+              </li>
+            </ul>
+
             <h2>What to send when you enquire</h2>
             <p>
               Name the track, Basic to Intermediate or Advanced Institutional Strategies. Name the format, private or
@@ -241,7 +263,7 @@ export default function WhyChooseUsPage() {
               <Link href="/blog-forex-course-dubai-beginners">what a beginner forex course in Dubai covers</Link>. People
               comparing a private hour with a cohort can read{" "}
               <Link href="/blog-private-vs-group-forex-classes-dubai">private versus group classes</Link>. People who
-              want a checklist they could apply to any school, not only this one, should use the{" "}
+              want a checklist they could apply to any school should use the{" "}
               <Link href="/blog-choose-forex-academy-uae">UAE academy article</Link> and then come back here for this
               academy&apos;s answers.
             </p>

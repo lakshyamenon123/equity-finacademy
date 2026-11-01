@@ -44,7 +44,10 @@ export function middleware(request) {
   // send /blog/ back to /blog/.
   const url = new URL(target, CANONICAL_ORIGIN);
   url.search = search;
-  return NextResponse.redirect(url, 301);
+  const location = url.toString();
+  const response = NextResponse.redirect(location, 301);
+  response.headers.set("Location", location);
+  return response;
 }
 
 export const config = {
