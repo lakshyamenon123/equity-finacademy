@@ -5,7 +5,7 @@ import RelatedTraining from "../components/RelatedTraining";
 import Link from "next/link";
 import OpenChatLink from "../components/OpenChatLink";
 import { pageMetadata } from "../lib/seo";
-import { breadcrumbSchema, webPageSchema } from "../lib/schema";
+import { breadcrumbSchema, faqPageSchema, webPageSchema } from "../lib/schema";
 import { SITE } from "../lib/site";
 import { EQUITY_GLOBAL, EQUITY_GLOBAL_ENGLISH } from "../lib/videos";
 import { STARTRADER_LIVE_URL, whatsappHref } from "../lib/whatsapp";
@@ -23,6 +23,21 @@ export const metadata = pageMetadata({
     "why choose equity fin academy, equity fin academy enrolment checklist Dubai, forex course checklist UAE, Gopi Chandran forex course Dubai",
   path,
 });
+
+const whyFaq = [
+  {
+    q: "Is this page the same as About?",
+    text: "About is Gopi Chandran’s profile: the MBA, the Equity Global channels, and the fact that he teaches the lesson. This page is the six checks you can open before you pay, and a message you can send. The syllabuses themselves stay on the courses page.",
+  },
+  {
+    q: "Does the checklist replace the course page?",
+    text: "The checklist tells you which track to ask about. The courses page is where the topic order is written out. Pasting that list here made the two URLs look like one document, so this page links there instead.",
+  },
+  {
+    q: "What should the first message contain?",
+    text: "Track, format, place, and the hours you can keep on Gulf Standard Time. Ask for the fee in AED. An example is on this page. Change every line so it is true for you, then send it from the contact page or WhatsApp +971 55 904 7030.",
+  },
+];
 
 const checks = [
   {
@@ -61,6 +76,7 @@ export default function WhyChooseUsPage() {
           { name: "Why Choose Us", path },
         ])}
       />
+      <JsonLd data={faqPageSchema(whyFaq)} />
       <Header active="why-choose-us" />
 
       <main>
@@ -198,6 +214,36 @@ export default function WhyChooseUsPage() {
               <Link href="/forex-mentorship-dubai">forex mentorship in Dubai</Link>. Say which of those you mean in the
               first message.
             </p>
+
+            <h2>An example message, for shape rather than for copying</h2>
+            <p>
+              This is a sample so you can see how specific the first message needs to be. It is an illustration. Change the track, the city, and the hour so they are true.
+            </p>
+            <ul className="guide-list">
+              <li>Teacher: I have read the About page for Gopi Chandran.</li>
+              <li>Track: Basic to Intermediate. I cannot yet mark a swing high on my own chart.</li>
+              <li>Format: group class.</li>
+              <li>Place: online from Abu Dhabi. I will not drive on a weekday evening.</li>
+              <li>Broker: I will open my own account for practical sessions. Please keep the course fee separate from that balance.</li>
+              <li>Reviews: I will read the Google listing from the reviews page before I pay.</li>
+              <li>Ask: please quote the fee in AED and the next time after 7pm Gulf Standard Time.</li>
+            </ul>
+            <p>
+              Someone in Dubai who already marks swings would rewrite the track as Advanced Institutional Strategies, the format as a private lesson, and the place as the classroom. The <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> is where the drive-or-online choice is explained at length. This sample stays short on purpose. Send the rewritten lines from <Link href="/contact">contact</Link>.
+            </p>
+
+            <h2>Questions this checklist is here to answer</h2>
+            <div className="faq-list">
+              {whyFaq.map((item) => (
+                <details key={item.q}>
+                  <summary>
+                    {item.q}
+                    <span className="plus">+</span>
+                  </summary>
+                  <p>{item.text}</p>
+                </details>
+              ))}
+            </div>
 
             <h2>Write six lines before you pay</h2>
             <p>

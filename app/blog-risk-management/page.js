@@ -75,7 +75,7 @@ export default function BlogRiskManagementPage() {
               <p>
                 Position size should be calculated from three things: your account size, the percentage you&apos;re
                 willing to risk, and the distance (in pips) between your entry and your stop-loss. A wider stop-loss
-                means a smaller position size to keep the dirham risk constant — not the other way around. Deciding
+                means a smaller position size to keep the dirham risk constant — not the other way around. The cash MT5 sets aside, which is margin, is a different figure. How to read it is in <Link href="/blog-forex-leverage-margin-mt5-uae">leverage and margin on MT5</Link>. Deciding
                 &quot;I&apos;ll trade one lot&quot; without doing this calculation means your actual risk changes
                 randomly from trade to trade.
               </p>

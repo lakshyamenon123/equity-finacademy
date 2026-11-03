@@ -158,8 +158,39 @@ export default function ForexCourseAbuDhabiPage() {
               </li>
             </ul>
             <p>
-              The <Link href="/forex-course-sharjah">Sharjah course page</Link> is a different decision because the trip is short and the question is usually whether to cross over for class. Living in Dubai is different again: the classroom is in the same city, and the{" "}
-              <Link href="/forex-academy-in-dubai">forex academy in Dubai</Link> page describes that school day. This page does not repeat either of those. It is the capital-to-Dubai choice. People already in Dubai who searched for a class nearby want <Link href="/blog-forex-classes-near-me-dubai">what that search can and cannot tell you</Link>. The study order, before either city books a seat, is <Link href="/blog-forex-education-uae">forex education in the UAE</Link>. Start that order with <Link href="/blog-currency-pairs-uae">how a currency pair is quoted</Link>. If the question is a scheduled release rather than the drive, read <Link href="/blog-forex-economic-calendar-dubai">the economic calendar in Gulf Standard Time</Link> before you assume you must be in the room for it. The school those pages point at is the <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link>, and the wider offer is <Link href="/forex-training-academy-uae">forex training academy UAE</Link>.
+              Sharjah is a shorter trip, and that decision has its own page: <Link href="/forex-course-sharjah">forex course in Sharjah</Link>. Living in Dubai is the <Link href="/forex-academy-in-dubai">forex academy in Dubai</Link> page. This page is the capital-to-Dubai choice.
+            </p>
+            <div className="table-wrap">
+              <table>
+                <caption className="sr-only">How Abu Dhabi students study with Equity Fin Academy</caption>
+                <thead>
+                  <tr>
+                    <th>Pattern</th>
+                    <th>When it fits</th>
+                    <th>What to put in the message</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Online every week</td>
+                    <td>An evening drive from Abu Dhabi would replace the study. The class is 7pm Gulf Standard Time in both cities.</td>
+                    <td>Abu Dhabi, online, group or private, and the hour you can keep. Ask for the fee in AED.</td>
+                  </tr>
+                  <tr>
+                    <td>One visit, then online</td>
+                    <td>You want to see how a live hour works, then continue on a screen. The visit is the same course.</td>
+                    <td>Abu Dhabi, one visit to the Dubai classroom, then online. Name the track.</td>
+                  </tr>
+                  <tr>
+                    <td>A regular drive</td>
+                    <td>You already travel between Abu Dhabi and Dubai, so the room is realistic.</td>
+                    <td>Abu Dhabi, in person in Dubai, and the day you can travel. The academy will not guess the commute.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>
+              The study order, before any of those messages, is <Link href="/blog-forex-education-uae">forex education in the UAE</Link>, starting with <Link href="/blog-currency-pairs-uae">how a currency pair is quoted</Link>. People already in Dubai who searched for a class nearby want <Link href="/blog-forex-classes-near-me-dubai">the forex visit checklist</Link>. The school is the <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link>, and the wider offer is <Link href="/forex-training-academy-uae">forex training academy UAE</Link>. The topic lists are on <Link href="/courses">courses</Link>. Reviews are on the <Link href="/success-stories">reviews page</Link>. The message itself goes to <Link href="/contact">contact</Link>.
             </p>
 
             <h2>What an Abu Dhabi week looks like</h2>

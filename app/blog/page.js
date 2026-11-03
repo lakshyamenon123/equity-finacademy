@@ -3,12 +3,12 @@ import Footer from "../components/Footer";
 import JsonLd from "../components/JsonLd";
 import Link from "next/link";
 import { pageMetadata } from "../lib/seo";
-import { breadcrumbSchema, webPageSchema } from "../lib/schema";
+import { absoluteListItem, breadcrumbSchema, faqPageSchema, webPageSchema } from "../lib/schema";
 import { absoluteUrl } from "../lib/site";
 
-const blogTitle = "Forex Class Notes for a Course in Dubai and the UAE";
+const blogTitle = "Forex Education Notes for Dubai and the UAE";
 const blogDescription =
-  "Forex class notes from Equity Fin Academy in Dubai: a reading order for the course, then how to book a group class or a private lesson across the UAE.";
+  "Forex education notes from Equity Fin Academy in Dubai: a reading order for the course, then how to book a group class or a private lesson across the UAE.";
 
 export const metadata = pageMetadata({
   title: `${blogTitle} | Equity Fin Academy`,
@@ -19,6 +19,32 @@ export const metadata = pageMetadata({
 });
 
 const posts = [
+  {
+    href: "/blog-investing-classes-near-me-dubai",
+    icon: (
+      <>
+        <path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z" />
+        <circle cx="12" cy="10" r="2.2" />
+      </>
+    ),
+    cat: "Investing Classes",
+    title: "Investing Classes Near Me in Dubai: How to Sort the Map",
+    desc: "What a near-me search mixes together, and how to tell a forex class from a stock class before you travel.",
+    time: "8 min read",
+  },
+  {
+    href: "/blog-forex-leverage-margin-mt5-uae",
+    icon: (
+      <>
+        <path d="M4 18V6M4 18h16" />
+        <path d="M8 18V11M12 18V8M16 18v-4" />
+      </>
+    ),
+    cat: "MT5",
+    title: "Forex Leverage and Margin on MT5 for Traders in the UAE",
+    desc: "How to read the margin line in MetaTrader 5, and what a leverage setting changes before a class in Dubai.",
+    time: "8 min read",
+  },
   {
     href: "/blog-forex-spreads-swaps-pip-value-uae",
     icon: (
@@ -339,17 +365,27 @@ const blogListingSchema = {
   publisher: { "@id": "https://www.equityfinacademy.com/#organization" },
 };
 
+const blogFaq = [
+  {
+    q: "Where should a beginner in Dubai start on this blog?",
+    text: "Start with how a currency pair is quoted, then candlesticks, then market structure. The card list on this page is in that spirit: costs and class prep first, chart reading further down. The live version of the same order is the Basic to Intermediate track on the courses page.",
+  },
+  {
+    q: "Are these articles the forex course?",
+    text: "These are class notes you can read before you enrol. The course is a live group class or a private lesson in Dubai, UAE, or online across the UAE. The topic lists are on the courses page. Fees are quoted in AED when you enquire.",
+  },
+  {
+    q: "I searched for investing classes near me. Which note is that?",
+    text: "Use Investing Classes Near Me in Dubai. It sorts a map result into forex, stocks, and gold. The forex visit checklist is a separate article, Forex Classes Near Me in Dubai.",
+  },
+];
+
 const blogListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
   name: "Forex articles for Dubai and the UAE",
   numberOfItems: posts.length,
-  itemListElement: posts.map((post, index) => ({
-    "@type": "ListItem",
-    position: index + 1,
-    name: post.title,
-    url: absoluteUrl(post.href),
-  })),
+  itemListElement: posts.map((post, index) => absoluteListItem(index + 1, post.title, post.href)),
 };
 
 export default function BlogIndexPage() {
@@ -364,6 +400,7 @@ export default function BlogIndexPage() {
       />
       <JsonLd data={blogListingSchema} />
       <JsonLd data={blogListSchema} />
+      <JsonLd data={faqPageSchema(blogFaq)} />
       <Header active="blog" />
 
       <main>
@@ -376,59 +413,45 @@ export default function BlogIndexPage() {
             </nav>
             <span className="eyebrow">FOREX EDUCATION BLOG</span>
             <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,3rem)", maxWidth: "20ch" }}>
-              Forex class notes for a course in Dubai and the UAE.
+              Forex education notes for Dubai and the UAE.
             </h1>
             <p style={{ maxWidth: "66ch", marginTop: 18 }}>
-              Plain-language explanations of the concepts that matter, from session times in the UAE to the areas where price has stalled. The live classes are the{" "}
-              <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link> page and the{" "}
-              <Link href="/forex-training-academy-uae">forex training academy UAE</Link> page. The two tracks those pages point at are on <Link href="/courses">Courses</Link>.
+              Read the note that matches the question you have, then book the live class if you want the chart corrected. The two tracks are on <Link href="/courses">forex courses</Link>. The school pages are the{" "}
+              <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link> and the{" "}
+              <Link href="/forex-training-academy-uae">forex training academy UAE</Link>.
             </p>
           </div>
         </section>
 
         <section>
           <div className="container prose-block">
-            <h2>Start with the question you actually have</h2>
+            <h2>A reading order, then the page that books the seat</h2>
             <p>
-              If you have a day job in Dubai, read <Link href="/blog-forex-classes-working-professionals-dubai">forex classes for working professionals</Link> before you assume the class has to be at noon. If the chart still looks like a code, start with <Link href="/blog-currency-pairs-uae">how currency pairs are quoted</Link>, then <Link href="/blog-candlestick-patterns">candlesticks</Link>. If you are about to fund a broker account, read <Link href="/blog-demo-vs-live-mt5-uae">demo versus live on MT5</Link> first, then <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>. The chart lessons sit underneath both: <Link href="/blog-market-structure">market structure</Link> and <Link href="/blog-smart-money-concepts">smart money concepts</Link>. A data release is a separate clock from the session: <Link href="/blog-forex-economic-calendar-dubai">how to read the economic calendar in Dubai</Link>.
+              New to charts: <Link href="/blog-currency-pairs-uae">how a pair is quoted</Link>, then <Link href="/blog-candlestick-patterns">candlesticks</Link>, then <Link href="/blog-market-structure">market structure</Link>. About to fund an account: <Link href="/blog-demo-vs-live-mt5-uae">demo versus live on MT5</Link>, then <Link href="/blog-forex-leverage-margin-mt5-uae">leverage and margin</Link>, then <Link href="/blog-forex-spreads-swaps-pip-value-uae">what a pip is worth</Link>. The advanced vocabulary, after you can point at a swing, is <Link href="/blog-smart-money-concepts">smart money concepts</Link>.
             </p>
             <p>
-              If a map search is how you arrived, start with <Link href="/blog-forex-classes-near-me-dubai">forex classes near me in Dubai</Link>. If you are not sure what to study first, start with <Link href="/blog-forex-education-uae">forex education in the UAE</Link>. If you want a private hour with a written aim, start with <Link href="/blog-personal-forex-coaching-uae">what a coaching plan looks like</Link>. If you want something to fill in after each trade, start with <Link href="/blog-forex-trading-plan-uae">a trading plan and journal</Link>. The live versions of those ideas are the <Link href="/courses">two course tracks</Link> and <Link href="/forex-mentorship-dubai">forex mentorship in Dubai</Link>.
+              A map search has two notes. <Link href="/blog-investing-classes-near-me-dubai">Investing classes near me in Dubai</Link> sorts forex, stocks, and gold. <Link href="/blog-forex-classes-near-me-dubai">Forex classes near me in Dubai</Link> is the visit checklist once you already know you want forex. What to study before either booking is <Link href="/blog-forex-education-uae">forex education in the UAE</Link>. A day job changes the hour, which is <Link href="/blog-forex-classes-working-professionals-dubai">classes for working professionals</Link>.
             </p>
             <p>
-              People comparing a classroom in Dubai with a screen at home should use the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> if that is the emirate, or <Link href="/online-forex-course-uae">online study across the UAE</Link>. Reviews stay on Google. The <Link href="/success-stories">reviews page</Link> explains why this site does not paste testimonials. To ask about a seat, use <Link href="/contact">contact</Link> or WhatsApp +971 55 904 7030. Say group or private, and Dubai or online.
-            </p>
-            <h2>Pages to open when you are ready to book in the UAE</h2>
-            <p>
-              The notes above are study. These pages are how a seat is chosen in Dubai and across the United Arab Emirates. The classroom is in Dubai, UAE. Online classes use the same Gulf Standard Time in every emirate.
+              These pages are the seat, once the reading has done its job. The classroom is in Dubai, UAE. Online classes use Gulf Standard Time in every emirate.
             </p>
             <ul className="guide-list">
               <li>
                 <Link href="/courses">Forex course tracks</Link> lists Basic to Intermediate and Advanced Institutional Strategies in teaching order.
               </li>
               <li>
-                <Link href="/forex-course-abu-dhabi">Forex course for Abu Dhabi</Link> is the drive-or-online choice for people in the capital. It is not a second campus.
+                <Link href="/forex-course-abu-dhabi">Forex course for Abu Dhabi</Link> is the drive-or-online choice for people in the capital. The classroom stays in Dubai.
               </li>
               <li>
-                <Link href="/blog-smart-money-concepts">Smart money concepts</Link> defines liquidity, imbalance, and order blocks before you ask for the advanced track.
+                <Link href="/why-choose-us">The enrolment checklist</Link> is six lines: the teacher, the track, the room, the broker, the reviews, and the AED quote.
               </li>
               <li>
-                <Link href="/success-stories">Google reviews</Link> explains how to read the 5.0 listing. This site does not paste testimonials.
+                <Link href="/success-stories">Google reviews</Link> explains how to read the 5.0 listing. Quotes stay on Google.
               </li>
               <li>
                 <Link href="/contact">Contact</Link> is where you send the track, the format, and your emirate. WhatsApp is +971 55 904 7030.
               </li>
-              <li>
-                <Link href="/why-choose-us">The enrolment checklist</Link> is six lines about this academy: the teacher, the track, the room, the broker, the reviews, and the AED quote.
-              </li>
             </ul>
-            <p>
-              Two notes added on 1 November sit at the top of the list. <Link href="/blog-forex-spreads-swaps-pip-value-uae">Spreads, swaps, and pip value</Link> is the cost of a trade in dollars and dirhams. <Link href="/blog-prepare-group-forex-class-dubai">How to prepare for a group forex class in Dubai</Link> is the homework for a shared hour. <Link href="/blog-gold-xauusd-course-dubai">Gold (XAUUSD) in a Dubai class</Link> is for people whose chart is the metal. <Link href="/blog-group-forex-classes-friends-dubai">Group forex classes for friends and colleagues</Link> is for people who want to enquire together. Before you pay, fill in <Link href="/why-choose-us">the enrolment checklist</Link>.
-            </p>
-            <h2>Pick a path, then one article</h2>
-            <p>
-              New to charts: <Link href="/blog-forex-course-dubai-beginners">what a beginner course covers</Link>, then <Link href="/blog-candlestick-patterns">candlesticks</Link>. You already take trades and want them reviewed: the coaching plan, then <Link href="/blog-one-to-one-forex-classes-dubai">how to prepare for a one-to-one class</Link>. You are choosing between a room and a cohort: <Link href="/blog-private-vs-group-forex-classes-dubai">private versus group</Link>. You want the vocabulary of liquidity and order blocks: <Link href="/blog-smart-money-concepts">smart money concepts</Link>, which is an explanation, not the enrolment page.
-            </p>
           </div>
         </section>
 
@@ -458,11 +481,31 @@ export default function BlogIndexPage() {
           </div>
         </section>
 
+        <section className="tight">
+          <div className="container">
+            <div className="section-head reveal">
+              <span className="eyebrow">BEFORE YOU PICK A CARD</span>
+              <h2>Questions about these notes</h2>
+            </div>
+            <div className="faq-list reveal">
+              {blogFaq.map((item) => (
+                <details key={item.q}>
+                  <summary>
+                    {item.q}
+                    <span className="plus">+</span>
+                  </summary>
+                  <p>{item.text}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section className="tight soft">
           <div className="container">
             <div className="cta-banner reveal">
               <div>
-                <h2>Want this taught live, not just read?</h2>
+                <h2>Want this taught live, with your chart on the screen?</h2>
                 <p>The Dubai courses, and the same classes online across the UAE, cover these topics with practical sessions on an SCA-regulated broker. Fees are quoted in AED.</p>
               </div>
               <Link href="/courses" className="btn btn-primary">

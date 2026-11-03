@@ -11,9 +11,9 @@ import { breadcrumbSchema, courseSchemas, faqPageSchema, webPageSchema } from ".
 import { VIDEOS } from "../lib/videos";
 import { STARTRADER_LIVE_URL } from "../lib/whatsapp";
 
-const coursesTitle = "Forex Course in Dubai: Two Live Tracks";
+const coursesTitle = "Forex Trading Courses in Dubai";
 const coursesDescription =
-  "Forex course in Dubai at Equity Fin Academy. Basic to Intermediate and Advanced tracks, as a group class or a private lesson, in Dubai or online across the UAE. Fees quoted in AED.";
+  "Forex trading courses in Dubai: a group class or a private lesson, in the room or online across the UAE. Two live tracks. Rated 5.0 on Google. Fees quoted in AED.";
 
 export const metadata = pageMetadata({
   title: `${coursesTitle} | Equity Fin Academy`,
@@ -76,22 +76,13 @@ export default function CoursesPage() {
             </nav>
             <span className="eyebrow">CURRICULUM</span>
             <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,3rem)", maxWidth: "18ch" }}>
-              Forex course in Dubai: two live tracks
+              Forex trading courses in Dubai
             </h1>
             <p style={{ maxWidth: "66ch", marginTop: 18 }}>
-              Two tracks, taught live. Start at whichever level matches your experience. Both run as group classes in Dubai, UAE, and online across the UAE,
-              with live trading sessions on a regulated broker. Private one-to-one lessons are also available, with
-              the same live trading sessions and training — see{" "}
-              <Link href="/private-group-forex-training-dubai">private and group forex training</Link>. The academy is
-              open 24/7 and rated 5.0 on Google from 30+ reviews. The same MetaTrader 5 work covers gold, indices, and stocks alongside forex on the{" "}
-              <Link href="/stock-market-course-dubai">stock market course</Link> page. Smart money concepts are on the{" "}
-              <Link href="/smc-ict-trading-course-dubai">SMC and ICT course</Link> page. To judge a syllabus before you enquire, read{" "}
-              <Link href="/blog-forex-trading-courses-dubai">how to read a forex course syllabus</Link>. New to the platform? Read{" "}
-              <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>. If you are still deciding what to study first, read{" "}
-              <Link href="/blog-forex-education-uae">forex education in the UAE</Link>. If you searched for a class nearby, read{" "}
-              <Link href="/blog-forex-classes-near-me-dubai">forex classes near me in Dubai</Link>. Abu Dhabi students should use the{" "}
-              <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> for the drive-or-online choice. Reviews are linked from{" "}
-              <Link href="/success-stories">the reviews page</Link>, and a seat is booked on <Link href="/contact">contact</Link>.
+              Two live tracks for a group class or a private lesson, in Dubai, UAE, and online across the UAE. Start at the level that matches the chart you can already read. Practical sessions run on a regulated broker. The academy is open 24/7 and rated 5.0 on Google from 30+ reviews. Compare the rooms on{" "}
+              <Link href="/private-group-forex-training-dubai">private and group forex training</Link>. Gold, indices, and stocks on the same platform are the{" "}
+              <Link href="/stock-market-course-dubai">stock market course</Link>. A map search that mixes those subjects is explained in{" "}
+              <Link href="/blog-investing-classes-near-me-dubai">investing classes near me in Dubai</Link>.
             </p>
             <div className="cta-row">
               <a href="https://wa.me/971559047030" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
@@ -292,6 +283,57 @@ export default function CoursesPage() {
               Abu Dhabi students use the same two tracks. The drive, and the online alternative, are on the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>. Google reviews stay on Google. The <Link href="/success-stories">reviews page</Link> says how to read them, and it does not invent quotes. The in-person school page is <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link>. Study from another emirate is <Link href="/forex-training-academy-uae">forex training academy UAE</Link>.
             </p>
 
+            <h2>What the basic track is teaching, line by line</h2>
+            <p>
+              The cards above are the order. This is what each basic line is for, so you can tell whether you already have it. The advanced list assumes these lines are familiar.
+            </p>
+            <div className="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Line on the track</th>
+                    <th>What you should be able to do</th>
+                    <th>Read this first</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Basics of forex</td>
+                    <td>Explain a pair, a pip, and why the dirham&apos;s dollar peg makes USD pairs familiar.</td>
+                    <td><Link href="/blog-currency-pairs-uae">Currency pairs</Link></td>
+                  </tr>
+                  <tr>
+                    <td>Candlestick patterns</td>
+                    <td>Say what one candle did: open, high, low, close, and whether the body or the wick matters.</td>
+                    <td><Link href="/blog-candlestick-patterns">Candlesticks</Link></td>
+                  </tr>
+                  <tr>
+                    <td>HA pattern strategy</td>
+                    <td>Use Heikin Ashi as a smoother view of the same price, after you can read a normal candle.</td>
+                    <td><Link href="/blog-forex-course-dubai-beginners">Beginner course guide</Link></td>
+                  </tr>
+                  <tr>
+                    <td>Market structure</td>
+                    <td>Point at the last two swing highs and the last two swing lows, and say whether that is a trend or a range.</td>
+                    <td><Link href="/blog-market-structure">Market structure</Link></td>
+                  </tr>
+                  <tr>
+                    <td>Orders placed by smart money, and imbalance</td>
+                    <td>Mark one swing first. Then look for one sweep or one gap. The vocabulary comes after the swing.</td>
+                    <td><Link href="/blog-smart-money-concepts">Smart money concepts</Link></td>
+                  </tr>
+                  <tr>
+                    <td>Indicators, and the G.C. strategy</td>
+                    <td>Treat an indicator as a second look at the structure, taught on the chart in class. The public notes do not reprint the method as a formula.</td>
+                    <td><Link href="/blog-forex-trading-courses-dubai">How to read a syllabus</Link></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>
+              The cost of acting on any of those marks, the spread and the pip value in dirhams, is <Link href="/blog-forex-spreads-swaps-pip-value-uae">spreads, swaps, and pip value</Link>. The margin the platform holds back is <Link href="/blog-forex-leverage-margin-mt5-uae">leverage and margin on MT5</Link>. How much of the account to risk is <Link href="/blog-risk-management">risk per trade</Link>.
+            </p>
+
             <h2>Who should start on which track</h2>
             <p>
               Basic to Intermediate is the forex education most people in the UAE need first. You can be new to charts. You do not need a broker account on day one. The hour is spent on how pairs are quoted, how a candle is read, and how swing highs and lows describe structure. Smart money ideas appear on this track only after that base, as orders and imbalance, not as a separate product.
@@ -312,7 +354,7 @@ export default function CoursesPage() {
               The UAE work week for many private-sector jobs runs Sunday to Thursday. A group cohort uses one shared time on Gulf Standard Time, UTC+4, which does not change in summer. A private lesson can use an hour you can keep. Neither format is a recording. If you live in Dubai, the room is in Dubai, UAE. If you live in another emirate, the same tracks are taught online. Abu Dhabi students should read the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> before they assume the drive is required.
             </p>
             <p>
-              Read one article before the first hour so the class is spent on your chart. The <Link href="/blog">forex blog</Link> is the index. <Link href="/blog-smart-money-concepts">Smart money concepts</Link> belongs after structure, which is why it sits on the advanced track. <Link href="/blog-gold-xauusd-course-dubai">How gold (XAUUSD) is taught</Link> explains that metal charts use the same tools. <Link href="/blog-group-forex-classes-friends-dubai">Group classes for friends and colleagues</Link> is for people who want to start together. <Link href="/blog-prepare-group-forex-class-dubai">How to prepare for a group class</Link> is the homework for that shared hour. <Link href="/blog-forex-spreads-swaps-pip-value-uae">Spreads, swaps, and pip value</Link> is the cost of a trade before you size it. Google reviews stay on Google. The <Link href="/success-stories">reviews page</Link> says how to read the 5.0 listing. To book, use <Link href="/contact">contact</Link> or WhatsApp +971 55 904 7030, and name the track, the format, and Dubai or online. The six lines to fill in before you pay are on <Link href="/why-choose-us">the enrolment checklist</Link>.
+              Read one article before the first hour so the class is spent on your chart. The <Link href="/blog">forex blog</Link> is the index. <Link href="/blog-prepare-group-forex-class-dubai">How to prepare for a group class</Link> is the homework for a shared hour. Google reviews stay on Google. The <Link href="/success-stories">reviews page</Link> says how to read the 5.0 listing. To book, use <Link href="/contact">contact</Link> or WhatsApp +971 55 904 7030, and name the track, the format, and Dubai or online. The six lines to fill in before you pay are on <Link href="/why-choose-us">the enrolment checklist</Link>. Abu Dhabi students should use the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> for the drive or the online seat.
             </p>
           </div>
         </section>
