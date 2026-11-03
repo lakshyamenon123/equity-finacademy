@@ -64,7 +64,7 @@ export default function ForexClassesNearMeDubaiPost() {
               <AuthorByline detail="29 Oct 2026 · 8 min read" />
 
               <p>
-                A phone in Dubai that searches for forex classes near me gets a map. The pin tells you a place is in the city. It does not tell you who teaches, whether the hour is a group class or a private lesson, or whether you will open a chart. Use the map for the trip. Use the questions below for the class.
+                A phone in Dubai that searches for forex classes near me gets a map. The pin tells you a place is in the city. It does not tell you who teaches, whether the hour is a group class or a private lesson, or whether you will open a chart. Use the map for the trip. Use the questions below for the class. If the search was broader, and mixed stocks or gold with forex, start with <Link href="/blog-investing-classes-near-me-dubai">investing classes near me in Dubai</Link> and come back here once the subject is currencies.
               </p>
               <p>
                 Equity Fin Academy teaches in person in Dubai, UAE, and online across the UAE. Once a time is agreed, ask on WhatsApp and you will be told where to come. This article is the checklist for that search. It is not the syllabus, which lives on the <Link href="/courses">forex trading courses</Link> page.

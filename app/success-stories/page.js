@@ -6,9 +6,9 @@ import { pageMetadata } from "../lib/seo";
 import RelatedTraining from "../components/RelatedTraining";
 import { breadcrumbSchema, faqPageSchema, webPageSchema } from "../lib/schema";
 
-const reviewsTitle = "How to Read Equity Fin Academy’s Google Reviews in Dubai";
+const reviewsTitle = "Equity Fin Academy Reviews: How to Read the Google Listing";
 const reviewsDescription =
-  "How to use Equity Fin Academy’s 5.0 Google listing in Dubai before you enrol. This page does not publish written testimonials.";
+  "How to read Equity Fin Academy’s 5.0 Google listing in Dubai before you enrol: what a useful review names, and what this page will not invent.";
 
 export const metadata = pageMetadata({
   title: `${reviewsTitle} | Equity Fin Academy`,
@@ -56,7 +56,7 @@ export default function SuccessStoriesPage() {
             </nav>
             <span className="eyebrow">STUDENT REVIEWS</span>
             <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,3rem)", maxWidth: "22ch" }}>
-              How to read our Google reviews in Dubai, UAE.
+              How to read Equity Fin Academy reviews in Dubai.
             </h1>
             <p style={{ maxWidth: "60ch", marginTop: 18 }}>
               We&apos;re not going to put invented quotes on this page. Here&apos;s how to see real feedback instead.
@@ -135,6 +135,47 @@ export default function SuccessStoriesPage() {
             </ul>
             <p>
               Then send the line. The <Link href="/blog">blog</Link> is the reading. The <Link href="/why-choose-us">enrolment checklist</Link> is the six facts to confirm about this academy. WhatsApp is +971 55 904 7030.
+            </p>
+
+            <h2>A short scorecard before you enquire</h2>
+            <p>
+              Use this on the Google listing, one review at a time. It is a way to read. It is a blank form, and this website does not fill it with someone else&apos;s words.
+            </p>
+            <div className="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Check</th>
+                    <th>Useful when the review…</th>
+                    <th>Pause when the review…</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Format</td>
+                    <td>Names a group class, a private lesson, or an online seat.</td>
+                    <td>Could describe any school in any city.</td>
+                  </tr>
+                  <tr>
+                    <td>Subject</td>
+                    <td>Names structure, a beginner track, or a chart that was corrected.</td>
+                    <td>Leads with a profit figure or a promised return.</td>
+                  </tr>
+                  <tr>
+                    <td>Place</td>
+                    <td>Says Dubai, or online from another emirate, in the reviewer&apos;s words.</td>
+                    <td>Assumes a campus this academy does not run.</td>
+                  </tr>
+                  <tr>
+                    <td>Count</td>
+                    <td>Treats 5.0 from 30+ reviews as a public rating and a lower bound.</td>
+                    <td>Turns 30+ into an exact total, or into a trading result.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>
+              After the listing, the class is on <Link href="/courses">forex trading courses</Link>. Abu Dhabi readers use the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> for the drive or the screen. The vocabulary a review might mention, such as a liquidity sweep, is explained in <Link href="/blog-smart-money-concepts">smart money concepts</Link>. Send what you noticed through <Link href="/contact">contact</Link>.
             </p>
 
             <h2>Five things worth noticing in a review</h2>

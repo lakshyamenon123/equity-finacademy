@@ -15,9 +15,9 @@ import { VIDEOS } from "./lib/videos";
 export const metadata = pageMetadata({
   title: "Forex Training Academy in Dubai, UAE | Equity Fin Academy",
   description:
-    "Equity Fin Academy, forex training academy in Dubai, led by mentor Gopi Chandran. Private lessons, group classes, and live trading across the UAE. Open 24/7. Rated 5.0 from 30+ Google reviews.",
+    "Forex training academy in Dubai for private lessons and group classes. Forex and investing classes across the UAE. Rated 5.0 on Google. Open 24/7.",
   keywords:
-    "forex training academy Dubai, forex training academy UAE, forex trading courses in Dubai, forex training Dubai, trading classes in Dubai, forex education UAE",
+    "forex training academy Dubai, forex training academy UAE, forex trading courses in Dubai, forex courses in Dubai, investing classes near me Dubai, dubai trading courses, forex education UAE",
   path: "/",
 });
 
@@ -346,35 +346,37 @@ export default function HomePage() {
 
         <section className="tight">
           <div className="container prose-block">
-            <span className="eyebrow">HOW CLASSES RUN</span>
-            <h2>Group classes, private lessons, and live trading sessions.</h2>
+            <span className="eyebrow">COURSES AND CLASSES</span>
+            <h2>Forex courses and investing classes in Dubai.</h2>
             <p>
-              Training is taught in person in Dubai, UAE, and online across the UAE. You can join a group class on a shared syllabus, or book a private one-to-one lesson.
-              Both include live trading sessions and training. The academy is open 24/7, including weekends. It is rated 5.0 on Google from
-              30+ reviews, and the Equity Global channel has 200+ YouTube reviews and comments. Read the{" "}
-              <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link> page for the in-person offer, or the{" "}
-              <Link href="/forex-training-academy-uae">forex training academy UAE</Link> page if you will study from another emirate.
-              Formats are spelled out on <Link href="/private-group-forex-training-dubai">private one-to-one and group classes</Link>, coaching is on{" "}
-              <Link href="/forex-mentorship-dubai">forex mentorship in Dubai</Link>, and the
-              tracks are on <Link href="/courses">Courses</Link>. Fees are explained, without a printed price, on{" "}
-              <Link href="/forex-course-fees-dubai">forex course fees in Dubai</Link>. Students in Abu Dhabi should read the{" "}
-              <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> before they decide between the drive and an online seat.
-              Google reviews are linked from <Link href="/success-stories">Reviews</Link>. To ask about a seat, use the{" "}
-              <Link href="/contact">contact page</Link>. The city overview is the <Link href="/forex-academy-in-dubai">forex academy in Dubai</Link> page. The <Link href="/blog">blog</Link> includes{" "}
-              <Link href="/blog-forex-classes-near-me-dubai">forex classes near me in Dubai</Link>,{" "}
-              <Link href="/blog-forex-education-uae">forex education in the UAE</Link>,{" "}
-              <Link href="/blog-currency-pairs-uae">currency pairs</Link>,{" "}
-              <Link href="/blog-forex-economic-calendar-dubai">the economic calendar in Dubai</Link>,{" "}
-              <Link href="/blog-smart-money-concepts">smart money concepts</Link>,{" "}
-              <Link href="/blog-forex-classes-working-professionals-dubai">classes for working professionals</Link>,{" "}
-              <Link href="/blog-demo-vs-live-mt5-uae">demo versus live accounts on MT5</Link>,{" "}
-              <Link href="/blog-personal-forex-coaching-uae">what a personal coaching plan looks like</Link>, and{" "}
-              <Link href="/blog-forex-trading-plan-uae">how to write a trading plan and journal</Link>.               Newer notes cover{" "}
-              <Link href="/blog-gold-xauusd-course-dubai">gold (XAUUSD) in a Dubai class</Link>,{" "}
-              <Link href="/blog-group-forex-classes-friends-dubai">group classes for friends and colleagues</Link>,{" "}
-              <Link href="/blog-forex-spreads-swaps-pip-value-uae">spreads, swaps, and pip value</Link>, and{" "}
-              <Link href="/blog-prepare-group-forex-class-dubai">how to prepare for a group forex class in Dubai</Link>.
+              Training is in person in Dubai, UAE, and online across the UAE. Join a group class on a shared syllabus, or book a private one-to-one lesson. Both include live trading sessions. The academy is open 24/7, including weekends, and rated 5.0 on Google from 30+ reviews. The Equity Global channels carry 200+ YouTube reviews and comments.
             </p>
+            <p>
+              Two searches land here. One is a forex training academy in Dubai or the UAE. The other is investing classes nearby: stocks, gold, and forex mixed on a map. Forex is the course. The same MetaTrader 5 work covers gold, indices, and stocks when that is the symbol you bring.
+            </p>
+            <ul className="guide-list">
+              <li>
+                <Link href="/courses">Forex trading courses</Link> lists the two tracks in teaching order.
+              </li>
+              <li>
+                <Link href="/blog-investing-classes-near-me-dubai">Investing classes near me in Dubai</Link> sorts a map search into forex, stocks, and gold.
+              </li>
+              <li>
+                <Link href="/blog-forex-classes-near-me-dubai">Forex classes near me in Dubai</Link> is the visit checklist once you know you want forex.
+              </li>
+              <li>
+                <Link href="/private-group-forex-training-dubai">Private and group classes</Link> compares a one-to-one hour with a cohort.
+              </li>
+              <li>
+                <Link href="/forex-course-abu-dhabi">Abu Dhabi</Link> is the drive-or-online choice. The classroom is in Dubai.
+              </li>
+              <li>
+                <Link href="/blog-forex-education-uae">Forex education in the UAE</Link> is what to study before you pay. <Link href="/blog-smart-money-concepts">Smart money concepts</Link> comes after structure.
+              </li>
+              <li>
+                <Link href="/why-choose-us">The enrolment checklist</Link>, the <Link href="/success-stories">Google reviews guide</Link>, and <Link href="/contact">contact</Link> are the steps after the reading. The school pages are <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link> and <Link href="/forex-training-academy-uae">forex training academy UAE</Link>.
+              </li>
+            </ul>
           </div>
         </section>
 

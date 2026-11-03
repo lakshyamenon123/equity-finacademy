@@ -52,15 +52,31 @@ export function breadcrumbSchema(items) {
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: items.map((item, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
-      name: item.name,
-      // Google's breadcrumb docs want item to be the page URL. A nested
-      // object makes the report read item.id. A literal id property, or an
-      // @id with a #fragment, is reported as "Invalid URL in field id".
-      item: breadcrumbItemUrl(item.path),
-    })),
+    itemListElement: items.map((item, index) => {
+      const pageUrl = breadcrumbItemUrl(item.path);
+      return {
+        "@type": "ListItem",
+        position: index + 1,
+        name: item.name,
+        // Google reads itemListElement.item as the id. It must be the full
+        // page URL string. A nested object, a literal id field, or a #fragment
+        // is reported as "Invalid URL in field id".
+        item: pageUrl,
+      };
+    }),
+  };
+}
+
+// ItemList rows use the same absolute page URL in item and url, so a list
+// cannot be read as a breadcrumb with a missing or relative id.
+export function absoluteListItem(position, name, path) {
+  const pageUrl = breadcrumbItemUrl(path);
+  return {
+    "@type": "ListItem",
+    position,
+    name,
+    item: pageUrl,
+    url: pageUrl,
   };
 }
 

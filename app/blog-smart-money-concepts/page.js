@@ -28,7 +28,7 @@ const postSchema = articleSchema({
   headline,
   description,
   path: "/blog-smart-money-concepts",
-  dateModified: "2026-11-01",
+  dateModified: "2026-11-03",
 });
 
 export default function BlogSmartMoneyConceptsPage() {
@@ -59,7 +59,7 @@ export default function BlogSmartMoneyConceptsPage() {
             <div className="blog-article">
               <span className="eyebrow">STRATEGY</span>
               <h1>Smart Money Concepts for Beginners in Dubai: One Markup Drill</h1>
-              <AuthorByline detail="Updated 1 Nov 2026 · 10 min read" />
+              <AuthorByline detail="Updated 3 Nov 2026 · 10 min read" />
 
               <p>
                 Smart money concepts (SMC) is a popular framework for analysing forex charts based on the idea of
@@ -86,11 +86,57 @@ export default function BlogSmartMoneyConceptsPage() {
                 <li><strong>Change of character (CHoCH)</strong> — an early signal that the current trend may be shifting, based on a break in the established sequence of highs and lows.</li>
               </ul>
 
-              <h2>Why SMC only makes sense after structure</h2>
+              <h2>One row per idea</h2>
+              <p>
+                Mark the structure first. Then use one row. Five ideas on one screenshot is how the vocabulary gets ahead of the chart.
+              </p>
+              <div className="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Term</th>
+                      <th>What you mark</th>
+                      <th>A common mix-up</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Liquidity</td>
+                      <td>A cluster of likely stops just beyond an obvious swing high or low.</td>
+                      <td>Calling every high a pool, before you have marked the swing.</td>
+                    </tr>
+                    <tr>
+                      <td>Sweep</td>
+                      <td>A wick through that swing that closes back inside the prior range.</td>
+                      <td>A candle that closes outside and keeps going. That is a break, and it needs the structure article first.</td>
+                    </tr>
+                    <tr>
+                      <td>Imbalance</td>
+                      <td>A fast move that leaves a gap between candle wicks.</td>
+                      <td>Any large candle, including one that printed on a scheduled news release.</td>
+                    </tr>
+                    <tr>
+                      <td>Order block</td>
+                      <td>The last opposing candle before that strong move.</td>
+                      <td>The candle you wish were the entry, with no move after it.</td>
+                    </tr>
+                    <tr>
+                      <td>Change of character</td>
+                      <td>A break in the sequence of swing highs and swing lows.</td>
+                      <td>A single wick with the sequence still intact.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>
+                The live correction of a mark you made sits on the advanced track, after structure. The enrolment page is the <Link href="/smc-ict-trading-course-dubai">SMC and ICT course</Link>. The topic order for both tracks is on <Link href="/courses">courses</Link>. This article is the definition.
+              </p>
+
+              <h2>Why the terms wait until structure is clear</h2>
               <p>
                 Every one of these concepts is defined relative to market structure — you can&apos;t identify a
                 liquidity sweep without first knowing where the relevant swing high or low is. This is why our{" "}
-                <Link href="/courses">Advanced Institutional Strategies course</Link> only introduces SMC after
+                <Link href="/courses">Advanced Institutional Strategies course</Link> introduces SMC after
                 market-structure fundamentals are already solid. Learning SMC terminology without that
                 foundation tends to produce pattern-matching without real understanding.
               </p>
