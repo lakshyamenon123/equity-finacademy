@@ -58,10 +58,14 @@ export function breadcrumbSchema(items) {
         "@type": "ListItem",
         position: index + 1,
         name: item.name,
-        // Google reads itemListElement.item as the id. It must be the full
-        // page URL string. A nested object, a literal id field, or a #fragment
-        // is reported as "Invalid URL in field id".
-        item: pageUrl,
+        // Google reads itemListElement.item.id. @id must be the absolute page
+        // URL. A relative path, a literal id field, or a #fragment is reported
+        // as "Invalid URL in field id" (in itemListElement.item).
+        item: {
+          "@type": "WebPage",
+          "@id": pageUrl,
+          url: pageUrl,
+        },
       };
     }),
   };

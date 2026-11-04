@@ -441,6 +441,8 @@ export default function HomePage() {
               <Link href="/private-group-forex-training-dubai" className="topic-chip">Private and Group Classes</Link>
               <Link href="/blog-forex-course-dubai-beginners" className="topic-chip">Beginner Course: What to Expect</Link>
               <Link href="/blog-private-vs-group-forex-classes-dubai" className="topic-chip">Private vs Group Classes</Link>
+              <Link href="/blog-how-to-start-forex-trading-dubai" className="topic-chip">How to start forex trading in Dubai</Link>
+              <Link href="/blog-stock-market-course-dubai-first-weeks" className="topic-chip">Stock course: first weeks</Link>
               <Link href="/blog-start-forex-trading-uae-mt5" className="topic-chip">Start Forex with MT5</Link>
               <Link href="/blog-currency-pairs-uae" className="topic-chip">Currency Pairs</Link>
               <Link href="/blog-forex-economic-calendar-dubai" className="topic-chip">Economic Calendar in Dubai</Link>

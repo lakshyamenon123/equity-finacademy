@@ -13,7 +13,7 @@ import { STARTRADER_LIVE_URL } from "../lib/whatsapp";
 
 const coursesTitle = "Forex Trading Courses in Dubai";
 const coursesDescription =
-  "Forex trading courses in Dubai: a group class or a private lesson, in the room or online across the UAE. Two live tracks. Rated 5.0 on Google. Fees quoted in AED.";
+  "Forex trading courses in Dubai: a group class or a private lesson, in the room or online across the UAE. Two live tracks. Fees quoted in AED.";
 
 export const metadata = pageMetadata({
   title: `${coursesTitle} | Equity Fin Academy`,
@@ -83,6 +83,12 @@ export default function CoursesPage() {
               <Link href="/private-group-forex-training-dubai">private and group forex training</Link>. Gold, indices, and stocks on the same platform are the{" "}
               <Link href="/stock-market-course-dubai">stock market course</Link>. A map search that mixes those subjects is explained in{" "}
               <Link href="/blog-investing-classes-near-me-dubai">investing classes near me in Dubai</Link>.
+            </p>
+            <p style={{ maxWidth: "66ch" }}>
+              If you searched for forex trading courses in Dubai, or a forex course in Dubai, this page is the topic order. The first month in the city is{" "}
+              <Link href="/blog-how-to-start-forex-trading-dubai">how to start forex trading in Dubai</Link>. What the fee includes, still without a printed price, is on{" "}
+              <Link href="/pricing">pricing</Link>. The city page is{" "}
+              <Link href="/forex-academy-in-dubai">forex courses in Dubai</Link>.
             </p>
             <div className="cta-row">
               <a href="https://wa.me/971559047030" className="btn btn-primary" target="_blank" rel="noopener noreferrer">

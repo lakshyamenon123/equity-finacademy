@@ -6,16 +6,20 @@ import Link from "next/link";
 import OpenChatLink from "../components/OpenChatLink";
 import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
-import { breadcrumbSchema, faqPageSchema } from "../lib/schema";
+import { breadcrumbSchema, faqPageSchema, webPageSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 
+const path = "/forex-academy-in-dubai";
+const pageTitle = "Forex Courses in Dubai";
+const pageDescription =
+  "Forex courses and trading classes in Dubai, UAE. Private one-to-one lessons or a group class, in the room or online. Rated 5.0 from 30+ Google reviews.";
+
 export const metadata = pageMetadata({
-  title: "Forex Courses in Dubai | Training Academy | Equity Fin",
-  description:
-    "Forex courses and trading classes in Dubai, UAE. Private one-to-one lessons or a group class, in the room or online. Rated 5.0 from 30+ Google reviews.",
+  title: `${pageTitle} | Training Academy | Equity Fin`,
+  description: pageDescription,
   keywords:
     "forex course Dubai, forex courses in Dubai, forex training academy Dubai, trading classes in Dubai, forex classes near me Dubai, forex academy in Dubai",
-  path: "/forex-academy-in-dubai",
+  path,
 });
 
 const mt5English = ENGLISH_VIDEOS.find((video) => video.id === "ssUPlUHnDLo");
@@ -90,10 +94,11 @@ const whyDubai = [
 export default function ForexAcademyDubaiPage() {
   return (
     <>
+      <JsonLd data={webPageSchema({ name: pageTitle, description: pageDescription, path })} />
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", path: "/" },
-          { name: "Forex Academy in Dubai", path: "/forex-academy-in-dubai" },
+          { name: "Forex Academy in Dubai", path },
         ])}
       />
       <JsonLd data={faqPageSchema(pageFaq)} />
@@ -102,9 +107,14 @@ export default function ForexAcademyDubaiPage() {
       <main>
         <section className="hero bg-glow">
           <div className="container">
+            <nav className="breadcrumb" aria-label="Breadcrumb">
+              <Link href="/">Home</Link>
+              <span className="sep">/</span>
+              <span className="current">Forex Academy in Dubai</span>
+            </nav>
             <div className="hero-top">
               <div className="hero-copy">
-                <span className="eyebrow">AL QUSAIS · DUBAI · FOREX ACADEMY</span>
+                <span className="eyebrow">DUBAI, UAE · FOREX ACADEMY</span>
                 <h1 className="hero-display">
                   Forex{" "}
                   <span className="inline-pill">
@@ -122,7 +132,8 @@ export default function ForexAcademyDubaiPage() {
                   <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link> page. Students outside Dubai should use the{" "}
                   <Link href="/forex-training-academy-uae">forex training academy UAE</Link> page. A map search has its own checklist:{" "}
                   <Link href="/blog-forex-classes-near-me-dubai">forex classes near me in Dubai</Link>. The study order, if you are not ready to book, is{" "}
-                  <Link href="/blog-forex-education-uae">forex education in the UAE</Link>.
+                  <Link href="/blog-forex-education-uae">forex education in the UAE</Link>. The first month in the city, before the install steps, is{" "}
+                  <Link href="/blog-how-to-start-forex-trading-dubai">how to start forex trading in Dubai</Link>.
                 </p>
                 <div className="cta-row">
                   <a href="tel:+971559047030" className="btn btn-outline">

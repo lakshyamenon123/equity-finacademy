@@ -82,7 +82,10 @@ export default function InvestingClassesNearMePost() {
                     <tr>
                       <td>Investing classes, stocks, or US shares from the UAE</td>
                       <td>Reading a share or an index on a chart: open, high, low, close, and the swing around it.</td>
-                      <td><Link href="/stock-market-course-dubai">Stock market course in Dubai</Link></td>
+                      <td>
+                        <Link href="/stock-market-course-dubai">Stock market course in Dubai</Link>. The first weeks of study are in{" "}
+                        <Link href="/blog-stock-market-course-dubai-first-weeks">what to cover first</Link>.
+                      </td>
                     </tr>
                     <tr>
                       <td>Forex course, forex classes, or currency trading</td>

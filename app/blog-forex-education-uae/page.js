@@ -67,7 +67,7 @@ export default function ForexEducationUaePost() {
                 Forex education in the UAE is a sequence, not a pile of videos with similar titles. Learn four things in order, on your own, and a trading class in Dubai has something to correct. Skip the order, and the hour is spent defining a candle. This page is that sequence, and the point at which a teacher starts to earn the fee.
               </p>
               <p>
-                It is not the checklist for comparing schools. That is <Link href="/blog-choose-forex-academy-uae">how to choose a forex academy in the UAE</Link>. It is not the topic list of the beginner track. That is <Link href="/blog-forex-course-dubai-beginners">what a forex course in Dubai covers for beginners</Link>. Use those when the question is the school or the syllabus. Use this when the question is what to study this week.
+                It is not the checklist for comparing schools. That is <Link href="/blog-choose-forex-academy-uae">how to choose a forex academy in the UAE</Link>. It is not the topic list of the beginner track. That is <Link href="/blog-forex-course-dubai-beginners">what a forex course in Dubai covers for beginners</Link>. Use those when the question is the school or the syllabus. Use this when the question is what to study this week. If you already live in Dubai and the question is the first month in the city, use <Link href="/blog-how-to-start-forex-trading-dubai">how to start forex trading in Dubai</Link>.
               </p>
 
               <h2>Four things to learn before you pay for a seat</h2>

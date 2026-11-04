@@ -7,7 +7,8 @@ const securityHeaders = [
   { key: "Content-Security-Policy", value: "frame-ancestors 'none'" },
 ];
 
-const WHY_CHOOSE_US = "https://www.equityfinacademy.com/why-choose-us";
+const CANONICAL_ORIGIN = "https://www.equityfinacademy.com";
+const WHY_CHOOSE_US = `${CANONICAL_ORIGIN}/why-choose-us`;
 
 const nextConfig = {
   // Standard Next.js output so /api/chat and /api/leads can run on Vercel.
@@ -24,32 +25,32 @@ const nextConfig = {
     // in middleware.js. A catch-all slash rule here was matching first and
     // sending /home/ to /home.
     const pairs = [
-      ["/home", "/"],
-      ["/index.html", "/"],
-      ["/index.htm", "/"],
-      ["/index.php", "/"],
-      ["/default.html", "/"],
-      ["/about-us", "/about"],
-      ["/aboutus", "/about"],
-      ["/about.html", "/about"],
-      ["/about.php", "/about"],
-      ["/contact-us", "/contact"],
-      ["/contactus", "/contact"],
-      ["/contact.html", "/contact"],
-      ["/contact.php", "/contact"],
-      ["/courses.html", "/courses"],
-      ["/courses.php", "/courses"],
-      ["/pricing.html", "/pricing"],
-      ["/why-choose-us.html", "/why-choose-us"],
-      ["/forex-academy-in-dubai.html", "/forex-academy-in-dubai"],
-      ["/success-stories.html", "/success-stories"],
-      ["/faq.html", "/faq"],
-      ["/blog.html", "/blog"],
-      ["/resources.html", "/blog"],
-      ["/beginners-guide.html", "/blog-forex-course-dubai-beginners"],
-      ["/trading-strategies.html", "/courses"],
-      ["/terms.html", "/terms"],
-      ["/privacy.html", "/privacy"],
+      ["/home", `${CANONICAL_ORIGIN}/`],
+      ["/index.html", `${CANONICAL_ORIGIN}/`],
+      ["/index.htm", `${CANONICAL_ORIGIN}/`],
+      ["/index.php", `${CANONICAL_ORIGIN}/`],
+      ["/default.html", `${CANONICAL_ORIGIN}/`],
+      ["/about-us", `${CANONICAL_ORIGIN}/about`],
+      ["/aboutus", `${CANONICAL_ORIGIN}/about`],
+      ["/about.html", `${CANONICAL_ORIGIN}/about`],
+      ["/about.php", `${CANONICAL_ORIGIN}/about`],
+      ["/contact-us", `${CANONICAL_ORIGIN}/contact`],
+      ["/contactus", `${CANONICAL_ORIGIN}/contact`],
+      ["/contact.html", `${CANONICAL_ORIGIN}/contact`],
+      ["/contact.php", `${CANONICAL_ORIGIN}/contact`],
+      ["/courses.html", `${CANONICAL_ORIGIN}/courses`],
+      ["/courses.php", `${CANONICAL_ORIGIN}/courses`],
+      ["/pricing.html", `${CANONICAL_ORIGIN}/pricing`],
+      ["/why-choose-us.html", `${CANONICAL_ORIGIN}/why-choose-us`],
+      ["/forex-academy-in-dubai.html", `${CANONICAL_ORIGIN}/forex-academy-in-dubai`],
+      ["/success-stories.html", `${CANONICAL_ORIGIN}/success-stories`],
+      ["/faq.html", `${CANONICAL_ORIGIN}/faq`],
+      ["/blog.html", `${CANONICAL_ORIGIN}/blog`],
+      ["/resources.html", `${CANONICAL_ORIGIN}/blog`],
+      ["/beginners-guide.html", `${CANONICAL_ORIGIN}/blog-forex-course-dubai-beginners`],
+      ["/trading-strategies.html", `${CANONICAL_ORIGIN}/courses`],
+      ["/terms.html", `${CANONICAL_ORIGIN}/terms`],
+      ["/privacy.html", `${CANONICAL_ORIGIN}/privacy`],
     ];
     return pairs.map(([source, destination]) => ({ source, destination, statusCode: 301 }));
   },

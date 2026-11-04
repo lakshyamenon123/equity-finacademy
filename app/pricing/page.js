@@ -4,15 +4,19 @@ import Link from "next/link";
 import OpenChatLink from "../components/OpenChatLink";
 import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
-import { breadcrumbSchema, faqPageSchema } from "../lib/schema";
+import { breadcrumbSchema, faqPageSchema, webPageSchema } from "../lib/schema";
+
+const path = "/pricing";
+const pageTitle = "What's Included in Dubai Forex Fees";
+const pageDescription =
+  "What a Dubai forex course fee includes: group classes, private lessons, and live sessions. The dirham figure is quoted when you enquire.";
 
 export const metadata = pageMetadata({
-  title: "What's Included in Dubai Forex Fees | Equity Fin Academy",
-  description:
-    "What a Dubai forex course fee includes: group classes, private lessons, and live sessions. The dirham figure is quoted when you enquire.",
+  title: `${pageTitle} | Equity Fin Academy`,
+  description: pageDescription,
   keywords:
     "forex course fees Dubai, forex trading courses in Dubai cost, forex course price AED, trading classes in Dubai fees",
-  path: "/pricing",
+  path,
 });
 
 const pricingFaq = [
@@ -43,10 +47,11 @@ const Check = () => (
 export default function PricingPage() {
   return (
     <>
+      <JsonLd data={webPageSchema({ name: pageTitle, description: pageDescription, path })} />
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", path: "/" },
-          { name: "Pricing", path: "/pricing" },
+          { name: "Pricing", path },
         ])}
       />
       <JsonLd data={faqPageSchema(pricingFaq)} />
@@ -68,9 +73,10 @@ export default function PricingPage() {
               Course fees are quoted in AED. They vary by cohort and enrolment timing, so we don&apos;t publish a number that goes stale.
               Here&apos;s exactly what each track includes — call or message us for the current dirham figure. Private
               one-to-one lessons, including live trading sessions, are available too. That fee is also quoted when you
-              enquire and is not listed here. What changes a 2026 quote, track by track, is written on the{" "}
+              enquire and is not listed here. This URL is the inclusion list. What changes a 2026 quote, track by track, is written on the{" "}
               <Link href="/forex-course-fees-dubai">forex course fees in Dubai</Link> page. That page does not add a price either. The two syllabuses are on{" "}
-              <Link href="/courses">forex trading courses</Link>. To ask for the figure, use the <Link href="/contact">contact page</Link> or WhatsApp +971 55 904 7030.
+              <Link href="/courses">forex trading courses in Dubai</Link>. The first month, before you ask for a number, is{" "}
+              <Link href="/blog-how-to-start-forex-trading-dubai">how to start forex trading in Dubai</Link>. To ask for the figure, use the <Link href="/contact">contact page</Link> or WhatsApp +971 55 904 7030.
             </p>
           </div>
         </section>

@@ -70,7 +70,8 @@ export default function StockMarketCourseDubaiPage() {
               Stock Market Course in Dubai
             </h1>
             <p className="hero-sub" style={{ marginTop: 18, maxWidth: "68ch" }}>
-              A stock market course in Dubai should name the chart you will mark and the person who will correct it. Equity Fin Academy teaches that chart work in person in Dubai and online across the UAE. A stock trading course in Dubai here means stocks, indices, and gold on MetaTrader 5, alongside forex, with live trading sessions.
+              A stock market course in Dubai should name the chart you will mark and the person who will correct it. Equity Fin Academy teaches that chart work in person in Dubai and online across the UAE. A stock trading course in Dubai here means stocks, indices, and gold on MetaTrader 5, alongside forex, with live trading sessions. The first weeks of study, before you enquire, are written in{" "}
+              <Link href="/blog-stock-market-course-dubai-first-weeks">what a stock market course in Dubai should cover first</Link>.
             </p>
             <div className="topics-row" style={{ marginTop: 22 }}>
               <a className="topic-chip" href={SITE.mapsUrl} target="_blank" rel="noopener noreferrer">

@@ -19,6 +19,16 @@
       "source": "/about-us/",
       "destination": "https://www.equityfinacademy.com/about",
       "statusCode": 301
+    },
+    {
+      "source": "/pricing/",
+      "destination": "https://www.equityfinacademy.com/pricing",
+      "statusCode": 301
+    },
+    {
+      "source": "/forex-academy-in-dubai/",
+      "destination": "https://www.equityfinacademy.com/forex-academy-in-dubai",
+      "statusCode": 301
     }
   ]
 }

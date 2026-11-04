@@ -63,7 +63,8 @@ export default function StartForexMt5Post() {
               <p>
                 If you want to know how to start forex trading in the UAE, the work is a short sequence, not a stack
                 of indicators. You learn what a pair and a candle are, you install MetaTrader 5, and you open an
-                account with a broker you can name. Understand the chart before you touch New Order.
+                account with a broker you can name. Understand the chart before you touch New Order. If the question is the first month in the city, rather than the download, read{" "}
+                <Link href="/blog-how-to-start-forex-trading-dubai">how to start forex trading in Dubai</Link>.
               </p>
 
               <h2>Learn the words before you fund an account</h2>
@@ -166,7 +167,7 @@ export default function StartForexMt5Post() {
               <p>
                 Equity Fin Academy is rated 5.0 on Google from 30+ reviews. The Equity Global channel has 200+ YouTube
                 reviews and comments. More than 2,000 students have been trained through that channel and live
-                mentorship.                 Those figures are reach and a public rating. They are not a promise about your trades.
+                mentorship. Those figures are reach and a public rating. They are not a promise about your trades.
               </p>
               <AcademyLinks lead="When the platform is installed, the class itself is the" />
             </div>
