@@ -133,7 +133,9 @@ export default function ForexAcademyDubaiPage() {
                   <Link href="/forex-training-academy-uae">forex training academy UAE</Link> page. A map search has its own checklist:{" "}
                   <Link href="/blog-forex-classes-near-me-dubai">forex classes near me in Dubai</Link>. The study order, if you are not ready to book, is{" "}
                   <Link href="/blog-forex-education-uae">forex education in the UAE</Link>. The first month in the city, before the install steps, is{" "}
-                  <Link href="/blog-how-to-start-forex-trading-dubai">how to start forex trading in Dubai</Link>.
+                  <Link href="/blog-how-to-start-forex-trading-dubai">how to start forex trading in Dubai</Link>. What the booked hour contains is{" "}
+                  <Link href="/blog-live-forex-trading-session-dubai">a live forex session in Dubai</Link>. The two tracks and the fee quote sit on{" "}
+                  <Link href="/courses">courses</Link> and <Link href="/pricing">pricing</Link>.
                 </p>
                 <div className="cta-row">
                   <a href="tel:+971559047030" className="btn btn-outline">

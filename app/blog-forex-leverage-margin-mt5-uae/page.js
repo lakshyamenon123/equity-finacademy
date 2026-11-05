@@ -13,12 +13,12 @@ import { STARTRADER_LIVE_URL } from "../lib/whatsapp";
 const path = "/blog-forex-leverage-margin-mt5-uae";
 const headline = "Forex Leverage and Margin on MT5 for Traders in the UAE";
 const description =
-  "How to read leverage and the margin line on MetaTrader 5 before a forex class in Dubai, with a worked illustration and the pages that cover pip value and risk.";
+  "How to read leverage and the margin line on MetaTrader 5 before a forex class in Dubai, with a worked illustration.";
 
 const mt5English = ENGLISH_VIDEOS.find((video) => video.id === "ssUPlUHnDLo");
 
 export const metadata = pageMetadata({
-  title: "Forex Leverage and Margin on MT5 in the UAE | Equity Fin Academy",
+  title: "Forex Leverage and Margin on MT5 | Equity Fin Academy",
   description,
   keywords:
     "forex leverage UAE, MT5 margin Dubai, lot size MetaTrader 5, forex course Dubai beginners, forex education UAE",

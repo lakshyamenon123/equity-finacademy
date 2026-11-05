@@ -10,7 +10,7 @@ import { breadcrumbSchema, faqPageSchema, webPageSchema } from "../lib/schema";
 import { absoluteUrl, SITE } from "../lib/site";
 import { whatsappHref } from "../lib/whatsapp";
 
-const contactTitle = "Book a Forex Class in Dubai, United Arab Emirates";
+const contactTitle = "Book a Forex Class in Dubai, UAE";
 const contactDescription =
   "Contact Equity Fin Academy in Dubai, UAE. WhatsApp +971 55 904 7030. Say your emirate, group or private, and whether you will study in Dubai or online.";
 
@@ -183,7 +183,7 @@ export default function ContactPage() {
           <div className="container prose-block">
             <h2>Messages that get a useful reply, by emirate</h2>
             <p>
-              Equity Fin Academy teaches in person in Dubai, UAE, and online across the United Arab Emirates. The classroom is not listed with a street, a building, or a floor. The map on this page is Dubai. Online students in Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah, and Umm Al Quwain use the same Gulf Standard Time as Dubai. Say which of those you mean in the first message.
+              Equity Fin Academy teaches in person in Dubai, UAE, and online across the United Arab Emirates. The public location is Dubai, UAE. Online students in Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Fujairah, and Umm Al Quwain use the same Gulf Standard Time as Dubai. Say which of those you mean in the first message. Students outside Dubai can read <Link href="/blog-forex-classes-ajman-ras-al-khaimah">forex classes in Ajman and the northern emirates</Link> before they write.
             </p>
             <ul className="guide-list">
               <li>Dubai, in the room: “Basic to Intermediate, group class, in Dubai, after 7pm Gulf Standard Time. Please quote the fee in AED.”</li>
@@ -233,7 +233,7 @@ export default function ContactPage() {
               A useful reply names the track, the format, the next time that fits Gulf Standard Time, and the fee in AED. It does not include a trade to copy, and it does not ask for a broker password. If your message says only &quot;price&quot; or only &quot;classes near me&quot;, the academy will ask the missing pieces before it quotes. You can save that round by sending them first.
             </p>
             <p>
-              In person means the classroom in Dubai, UAE. The map on this page is Dubai. It does not print a floor or a building name. If you are driving in, ask for directions on WhatsApp after the time is agreed. Online means the same instructor on a screen, from Abu Dhabi, Sharjah, or anywhere else in the UAE. Both are live. Neither is a recording you start when you are free.
+              In person means the classroom in Dubai, UAE. The map on this page is Dubai. If you are driving in, ask for directions on WhatsApp after the time is agreed. Online means the same instructor on a screen, from Abu Dhabi, Sharjah, or anywhere else in the UAE. Both are live. What that hour contains is in <Link href="/blog-live-forex-trading-session-dubai">what a live forex session in Dubai includes</Link>. Neither format is a recording you start when you are free.
             </p>
             <p>
               If you want to arrive with a page already written, read <Link href="/blog-personal-forex-coaching-uae">what a coaching plan looks like</Link> or <Link href="/blog-forex-trading-plan-uae">how to keep a trading plan and journal</Link>. Then send the plan&apos;s first line in the message: the track, the city, and the hour you can keep. The <Link href="/blog">blog index</Link> lists the rest of the articles if you want the syllabus explained before you book.

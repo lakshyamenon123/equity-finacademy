@@ -6,7 +6,7 @@ import { pageMetadata } from "../lib/seo";
 import RelatedTraining from "../components/RelatedTraining";
 import { breadcrumbSchema, faqPageSchema, webPageSchema } from "../lib/schema";
 
-const reviewsTitle = "Equity Fin Academy Reviews: How to Read the Google Listing";
+const reviewsTitle = "How to Read Our Google Reviews";
 const reviewsDescription =
   "How to read Equity Fin Academy’s 5.0 Google listing in Dubai before you enrol: what a useful review names, and what this page will not invent.";
 

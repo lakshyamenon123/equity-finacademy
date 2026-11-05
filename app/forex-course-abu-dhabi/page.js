@@ -13,7 +13,7 @@ import { STARTRADER_LIVE_URL } from "../lib/whatsapp";
 const path = "/forex-course-abu-dhabi";
 const mt5English = ENGLISH_VIDEOS.find((video) => video.id === "ssUPlUHnDLo");
 
-const pageTitle = "Forex Course Abu Dhabi: Online or the Dubai Classroom";
+const pageTitle = "Forex Course for Abu Dhabi";
 const pageDescription =
   "Forex course for Abu Dhabi students at Equity Fin Academy: the same Dubai syllabus online on Gulf Standard Time, or a visit to the classroom in Dubai, UAE.";
 

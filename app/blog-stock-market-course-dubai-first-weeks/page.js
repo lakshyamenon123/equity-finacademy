@@ -6,13 +6,13 @@ import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
 import AuthorByline from "../components/AuthorByline";
 import { pageMetadata } from "../lib/seo";
-import { articleSchema, breadcrumbSchema } from "../lib/schema";
+import { articleSchema, breadcrumbSchema, faqPageSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 
 const path = "/blog-stock-market-course-dubai-first-weeks";
 const headline = "What the First Weeks of a Stock Market Course in Dubai Should Cover";
 const description =
-  "What to study in the first weeks of a stock market course in Dubai: a share, an index, and gold on MT5, and when a group class or private coaching fits.";
+  "A three-week study plan for a stock market course in Dubai: one share or index on MT5, the session clock in Gulf time, and when to book a class.";
 
 const stocksEnglish = ENGLISH_VIDEOS.find((video) => video.id === "bC097etTQeI");
 
@@ -30,12 +30,30 @@ const postSchema = articleSchema({
   description,
   path,
   datePublished: "2026-11-04",
+  dateModified: "2026-11-05",
+  type: "BlogPosting",
 });
+
+const stockFaq = [
+  {
+    q: "Is a stock market course in Dubai a separate diploma from the forex tracks?",
+    text: "Equity Fin Academy publishes two forex tracks. Practical sessions use MetaTrader 5, so the same chart work can be pointed at a share, an index, gold, or a forex pair. You name the symbol when you enquire. The reply tells you the next time and the fee in AED.",
+  },
+  {
+    q: "Can I study a US share in the evening from Dubai?",
+    text: "Sometimes. A US share follows the session of the market that lists it, and that session moves when the United States changes clocks. A forex pair is quoted through the weekday. Open the symbol specification in MetaTrader 5 and read the session that platform shows. Do not assume a share is moving at noon Gulf Standard Time because EUR/USD is.",
+  },
+  {
+    q: "Should the first weeks be a group class or a private lesson?",
+    text: "A group class is the right start when the candle shape is new, even if the symbol you care about is a share. A private hour keeps the time on the ticker you brought. Both include live trading sessions. The fee is quoted in AED when you enquire.",
+  },
+];
 
 export default function StockMarketCourseFirstWeeksPost() {
   return (
     <>
       <JsonLd data={postSchema} />
+      <JsonLd data={faqPageSchema(stockFaq)} />
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", path: "/" },
@@ -140,6 +158,35 @@ export default function StockMarketCourseFirstWeeksPost() {
                 <Link href="/blog-forex-education-uae">forex education in the UAE</Link>.
               </p>
 
+              <h2>Three weeks, written so a class can correct them</h2>
+              <p>
+                One evening proves you can open a chart. It does not prove you can keep the habit. Use three weeks. Each week has one job. If the job is not done, do not add a second symbol to hide it.
+              </p>
+              <h2>Week 1: one symbol and its session</h2>
+              <p>
+                Pick the share, the index, or XAUUSD. On MetaTrader 5, open the symbol specification and write down the session hours the platform shows. Then, at one fixed time you can keep on Gulf Standard Time, record four numbers from the latest closed one-hour candle: open, high, low, close. Do that on five days you are actually free. A weekend gap on a share is not a forex gap. If the candle did not print because the listing was closed, write &quot;closed&quot; instead of inventing a range.
+              </p>
+              <p>
+                The same clock on a currency pair is a different market. EUR/USD is quoted through the weekday. The overlap of London and New York, in UAE time, is in{" "}
+                <Link href="/blog-forex-market-hours-dubai">forex market hours in Dubai</Link>. Use that page to see why a noon candle in Dubai can be busy on a pair and quiet on a US share. Do not copy the pair&apos;s hours onto the share.
+              </p>
+              <h2>Week 2: two swings and one sentence</h2>
+              <p>
+                On the one-hour chart, mark the last two swing highs and the last two swing lows. Then write one sentence: what you marked, and the price area that would show the mark was wrong. A screenshot with no sentence cannot be corrected in class. If you cannot point at the swings, stop and read{" "}
+                <Link href="/blog-market-structure">market structure</Link> before you add indicators. How the body and the wick are built is in{" "}
+                <Link href="/blog-candlestick-patterns">candlestick patterns</Link>.
+              </p>
+              <p>
+                Risk stays a separate page. If you are sizing a practice position in dirhams, use{" "}
+                <Link href="/blog-risk-management">how much to risk per trade</Link>. This stock note does not replace that arithmetic, and it does not give you a position size.
+              </p>
+              <h2>Week 3: bring the page, not a new watchlist</h2>
+              <p>
+                Take the symbol, the five session notes, the two swings, and the sentence to a person who will mark what you missed. That is the point of a course. The enrolment page for how this academy handles a share, an index, or gold is still the{" "}
+                <Link href="/stock-market-course-dubai">stock market course in Dubai</Link>. The reading list for the rest of the site is the <Link href="/blog">blog</Link>. Reviews of the academy stay on Google. How to read that 5.0 listing, without invented quotes, is the{" "}
+                <Link href="/success-stories">reviews page</Link>.
+              </p>
+
               <h2>A group class, or private coaching on your symbol</h2>
               <p>
                 Group forex classes in Dubai follow a shared list: candles, then structure, then the later topics. That shared hour is the right start when the chart shape is new, even if the symbol you care about is a share. Say the ticker so the example can be yours when the topic allows it.
@@ -167,6 +214,19 @@ export default function StockMarketCourseFirstWeeksPost() {
                 Classes are in Dubai, UAE, and online on Gulf Standard Time. If you live in Abu Dhabi, the drive-or-online choice is the{" "}
                 <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>. The notes index is the <Link href="/blog">blog</Link>. Send the symbol, group or private, and the hours you can keep.
               </p>
+
+              <h2>Questions before you compare schools</h2>
+              <div className="faq-list">
+                {stockFaq.map((item) => (
+                  <details key={item.q}>
+                    <summary>
+                      {item.q}
+                      <span className="plus">+</span>
+                    </summary>
+                    <p>{item.text}</p>
+                  </details>
+                ))}
+              </div>
 
               <AcademyLinks lead="When the symbol is chosen, the live class is the" />
               <div className="blog-cta">
