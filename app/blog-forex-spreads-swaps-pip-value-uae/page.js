@@ -18,7 +18,7 @@ const description =
 const mt5English = ENGLISH_VIDEOS.find((video) => video.id === "ssUPlUHnDLo");
 
 export const metadata = pageMetadata({
-  title: "Forex Spreads, Swaps, and Pip Value in the UAE | Equity Fin Academy",
+  title: "Forex Spreads and Pip Value in the UAE | Equity Fin Academy",
   description,
   keywords:
     "forex spread UAE, pip value AED, forex swap Dubai, MetaTrader 5 spread, forex course Dubai costs, forex training academy UAE",

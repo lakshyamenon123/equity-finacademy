@@ -20,6 +20,32 @@ export const metadata = pageMetadata({
 
 const posts = [
   {
+    href: "/blog-live-forex-trading-session-dubai",
+    icon: (
+      <>
+        <rect x="3" y="5" width="18" height="14" rx="2" />
+        <path d="M10 9.5v5l5-2.5-5-2.5z" />
+      </>
+    ),
+    cat: "Live Sessions",
+    title: "What a Live Forex Trading Session in Dubai Includes",
+    desc: "One chart, a mark you made earlier, a practice order, and the note you keep for the next class.",
+    time: "8 min read",
+  },
+  {
+    href: "/blog-forex-classes-ajman-ras-al-khaimah",
+    icon: (
+      <>
+        <path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z" />
+        <circle cx="12" cy="10" r="2.2" />
+      </>
+    ),
+    cat: "Northern Emirates",
+    title: "Forex Classes in Ajman and the Northern Emirates",
+    desc: "Ajman, Ras Al Khaimah, Fujairah, and Umm Al Quwain: online on Gulf Standard Time, or a visit to Dubai.",
+    time: "9 min read",
+  },
+  {
     href: "/blog-how-to-start-forex-trading-dubai",
     icon: (
       <>
@@ -456,7 +482,7 @@ export default function BlogIndexPage() {
               New to charts, and already in Dubai: <Link href="/blog-how-to-start-forex-trading-dubai">how to start forex trading in Dubai</Link> is the first month. The install steps stay in <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>. A stock or an index, rather than a currency pair, starts with <Link href="/blog-stock-market-course-dubai-first-weeks">the first weeks of a stock market course in Dubai</Link>. Then <Link href="/blog-currency-pairs-uae">how a pair is quoted</Link>, then <Link href="/blog-candlestick-patterns">candlesticks</Link>, then <Link href="/blog-market-structure">market structure</Link>. About to fund an account: <Link href="/blog-demo-vs-live-mt5-uae">demo versus live on MT5</Link>, then <Link href="/blog-forex-leverage-margin-mt5-uae">leverage and margin</Link>, then <Link href="/blog-forex-spreads-swaps-pip-value-uae">what a pip is worth</Link>. The advanced vocabulary, after you can point at a swing, is <Link href="/blog-smart-money-concepts">smart money concepts</Link>.
             </p>
             <p>
-              A map search has two notes. <Link href="/blog-investing-classes-near-me-dubai">Investing classes near me in Dubai</Link> sorts forex, stocks, and gold. <Link href="/blog-forex-classes-near-me-dubai">Forex classes near me in Dubai</Link> is the visit checklist once you already know you want forex. What to study before either booking is <Link href="/blog-forex-education-uae">forex education in the UAE</Link>. A day job changes the hour, which is <Link href="/blog-forex-classes-working-professionals-dubai">classes for working professionals</Link>.
+              A map search has two notes. <Link href="/blog-investing-classes-near-me-dubai">Investing classes near me in Dubai</Link> sorts forex, stocks, and gold. <Link href="/blog-forex-classes-near-me-dubai">Forex classes near me in Dubai</Link> is the visit checklist once you already know you want forex. Ajman, Ras Al Khaimah, Fujairah, and Umm Al Quwain are in <Link href="/blog-forex-classes-ajman-ras-al-khaimah">forex classes in the northern emirates</Link>. What the booked hour contains is <Link href="/blog-live-forex-trading-session-dubai">a live forex session in Dubai</Link>. What to study before either booking is <Link href="/blog-forex-education-uae">forex education in the UAE</Link>. A day job changes the hour, which is <Link href="/blog-forex-classes-working-professionals-dubai">classes for working professionals</Link>.
             </p>
             <p>
               These pages are the seat, once the reading has done its job. The classroom is in Dubai, UAE. Online classes use Gulf Standard Time in every emirate.

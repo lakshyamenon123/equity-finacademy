@@ -14,7 +14,7 @@ import { EQUITY_GLOBAL, EQUITY_GLOBAL_ENGLISH } from "../lib/videos";
 const path = "/gopi-chandran";
 const title = "Gopi Chandran, Forex Mentor in Dubai";
 const description =
-  "Gopi Chandran (Gopichandran) is the founder and lead forex mentor of Equity Fin Academy in Dubai. Private lessons, live trading, group classes, and MetaTrader 5. Open 24/7.";
+  "Gopi Chandran (Gopichandran) is the founder and forex mentor of Equity Fin Academy in Dubai. Private lessons, group classes, and MetaTrader 5.";
 
 export const metadata = pageMetadata({
   title: `${title} | Equity Fin Academy`,

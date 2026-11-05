@@ -78,7 +78,8 @@ export default function OnlineForexCourseUaePage() {
             </p>
             <p>
               People in <Link href="/forex-course-sharjah">Sharjah</Link> are close to the classroom. People in{" "}
-              <Link href="/forex-course-abu-dhabi">Abu Dhabi</Link> are a longer drive. Both still use the same course. The national offer is the{" "}
+              <Link href="/forex-course-abu-dhabi">Abu Dhabi</Link> are a longer drive. Ajman, Ras Al Khaimah, Fujairah, and Umm Al Quwain are covered in{" "}
+              <Link href="/blog-forex-classes-ajman-ras-al-khaimah">forex classes in the northern emirates</Link>. All of them still use the same course. The national offer is the{" "}
               <Link href="/forex-training-academy-uae">forex training academy UAE</Link> page, which is the forex course UAE students book when they want a live seat rather than a reading list.
             </p>
 

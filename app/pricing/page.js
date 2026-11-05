@@ -4,6 +4,7 @@ import Link from "next/link";
 import OpenChatLink from "../components/OpenChatLink";
 import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
+import { advancedTopics, basicTopics } from "../lib/curriculum";
 import { breadcrumbSchema, faqPageSchema, webPageSchema } from "../lib/schema";
 
 const path = "/pricing";
@@ -115,6 +116,59 @@ export default function PricingPage() {
                 <OpenChatLink className="btn btn-primary btn-block">Enquire About Pricing</OpenChatLink>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section>
+          <div className="container prose-block">
+            <h2>What the quote is paying for</h2>
+            <p>
+              A fee quoted in AED covers instruction for one track, or a private hour, plus the live trading sessions that belong to that booking. It does not fund a broker account. You open that account yourself. Practical sessions use StarTrader, regulated by the UAE Securities and Commodities Authority, on MetaTrader 5. The two amounts stay separate so a course invoice is not confused with trading capital.
+            </p>
+            <div className="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Booking</th>
+                    <th>What the AED quote includes</th>
+                    <th>Where the list is written</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Basic to Intermediate, group</td>
+                    <td>{basicTopics.join(", ")}.</td>
+                    <td><Link href="/courses">Course tracks</Link></td>
+                  </tr>
+                  <tr>
+                    <td>Advanced Institutional Strategies, group</td>
+                    <td>{advancedTopics.join(", ")}. Lifetime WhatsApp with the instructor is the last line, and it is not added to the beginner seat.</td>
+                    <td><Link href="/courses">Course tracks</Link></td>
+                  </tr>
+                  <tr>
+                    <td>Private one-to-one</td>
+                    <td>Your chart, your questions, and live trading sessions. The length and the track change the quote. There is no hourly rate printed here.</td>
+                    <td><Link href="/private-group-forex-training-dubai">Private and group training</Link></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>
+              What changes the number between cohorts is written on the <Link href="/forex-course-fees-dubai">forex course fees in Dubai</Link> page. That page still does not print a dirham figure. Students comparing schools can use the <Link href="/why-choose-us">enrolment checklist</Link> before they ask. Google comments stay on Google. The <Link href="/success-stories">reviews page</Link> explains how to read the 5.0 listing and does not invent quotes.
+            </p>
+            <h2>How to ask so the reply can name a figure</h2>
+            <p>
+              Send four facts: the track, group or private, Dubai or online, and the hours you can keep on Gulf Standard Time. The <Link href="/contact">contact page</Link> is the form, the phone number, and WhatsApp +971 55 904 7030. A message that only says &quot;price&quot; gets a question back, because the figure depends on those facts.
+            </p>
+            <ul className="guide-list">
+              <li>In Dubai, in the room: name the track and whether you want the group cohort or a private hour.</li>
+              <li>In Abu Dhabi: the same syllabus is online on Gulf Standard Time, or you can travel to the classroom in Dubai. The choice is on the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>.</li>
+              <li>If the topic you want is an order block or a liquidity sweep, read <Link href="/blog-smart-money-concepts">smart money concepts</Link> first so you name the advanced track on purpose.</li>
+              <li>Study notes, including the first month before you ask for a number, are on the <Link href="/blog">blog</Link>.</li>
+            </ul>
+            <p>
+              The school pages, if you are still choosing the format, are the <Link href="/forex-training-academy-dubai">forex training academy in Dubai</Link> and the <Link href="/forex-training-academy-uae">forex training academy in the UAE</Link>. What the live hour itself contains, once the seat is booked, is <Link href="/blog-live-forex-trading-session-dubai">a live forex session in Dubai</Link>.
+            </p>
           </div>
         </section>
 

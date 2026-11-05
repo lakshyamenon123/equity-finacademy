@@ -16,7 +16,7 @@ const description =
   "A Dubai beginner’s drill for smart money concepts: mark one swing on Gulf Standard Time, then see where the live SMC class sits in the UAE course.";
 
 export const metadata = pageMetadata({
-  title: "Smart Money Concepts Drill for Dubai Beginners | Equity Fin Academy",
+  title: "Smart Money Concepts for Dubai | Equity Fin Academy",
   description,
   keywords:
     "smart money concepts Dubai, what is SMC trading UAE, liquidity forex trading, order block trading Dubai, imbalance in forex market, SMC for beginners United Arab Emirates",

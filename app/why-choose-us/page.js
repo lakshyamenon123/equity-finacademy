@@ -14,10 +14,10 @@ const path = "/why-choose-us";
 
 const title = "Enrolment Checklist for Equity Fin Academy in Dubai";
 const description =
-  "Enrolment checklist for Equity Fin Academy in Dubai, UAE: the teacher, the syllabus, group or private, the broker, Google reviews, and the fee quoted in AED.";
+  "Enrolment checklist for Equity Fin Academy in Dubai: the teacher, the syllabus, group or private, the broker, Google reviews, and the fee quoted in AED.";
 
 export const metadata = pageMetadata({
-  title: `${title} | Why Choose Us`,
+  title: "Dubai Forex Enrolment Checklist | Equity Fin Academy",
   description,
   keywords:
     "why choose equity fin academy, equity fin academy enrolment checklist Dubai, forex course checklist UAE, Gopi Chandran forex course Dubai",
