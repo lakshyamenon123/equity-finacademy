@@ -13,10 +13,10 @@ const mt5English = ENGLISH_VIDEOS.find((video) => video.id === "ssUPlUHnDLo");
 
 const headline = "Smart Money Concepts for Beginners in Dubai: One Markup Drill";
 const description =
-  "A Dubai beginner’s drill for smart money concepts: mark one swing on Gulf Standard Time, then see where the live SMC class sits in the UAE course.";
+  "A Dubai beginner’s drill for smart money concepts: mark one swing on Gulf Standard Time, ask five questions in class, and see where the live SMC lesson sits.";
 
 export const metadata = pageMetadata({
-  title: "Smart Money Concepts for Dubai | Equity Fin Academy",
+  title: "Smart Money Concepts for Beginners in Dubai | Equity Fin Academy",
   description,
   keywords:
     "smart money concepts Dubai, what is SMC trading UAE, liquidity forex trading, order block trading Dubai, imbalance in forex market, SMC for beginners United Arab Emirates",
@@ -28,7 +28,7 @@ const postSchema = articleSchema({
   headline,
   description,
   path: "/blog-smart-money-concepts",
-  dateModified: "2026-11-03",
+  dateModified: "2026-11-06",
 });
 
 export default function BlogSmartMoneyConceptsPage() {
@@ -59,14 +59,13 @@ export default function BlogSmartMoneyConceptsPage() {
             <div className="blog-article">
               <span className="eyebrow">STRATEGY</span>
               <h1>Smart Money Concepts for Beginners in Dubai: One Markup Drill</h1>
-              <AuthorByline detail="Updated 3 Nov 2026 · 10 min read" />
+              <AuthorByline detail="Updated 6 Nov 2026 · 11 min read" />
 
               <p>
-                Smart money concepts (SMC) is a popular framework for analysing forex charts based on the idea of
-                reading where larger market participants — banks, institutions, large funds — may be positioned,
-                using liquidity and price imbalance rather than lagging indicators. It&apos;s an extension of market
-                structure, not a replacement for it. The live class is taught in Dubai and online across the UAE,
-                on Gulf Standard Time, after the structure lessons are already in place.
+                Smart money concepts (SMC) is a way of reading a forex chart for liquidity and for a fast move that left a gap, after you can already point at a swing high and a swing low. This page is one markup drill for a beginner in Dubai, or online anywhere in the UAE, on Gulf Standard Time. It names five ideas, shows one shape, and lists five questions to take into the live class. It does not replace market structure, and it does not sit in front of the beginner hours.
+              </p>
+              <p>
+                The live class is taught in Dubai and online across the UAE after the structure lessons are already in place. If you cannot mark the last two swing highs, stop here and read <Link href="/blog-market-structure">market structure</Link> first. The enrolment page, once the drill makes sense, is the <Link href="/smc-ict-trading-course-dubai">SMC and ICT course</Link>. The topic order for both tracks is on <Link href="/courses">courses</Link>.
               </p>
 
               <h2>Why &quot;smart money&quot;?</h2>
@@ -130,6 +129,21 @@ export default function BlogSmartMoneyConceptsPage() {
               </div>
               <p>
                 The live correction of a mark you made sits on the advanced track, after structure. The enrolment page is the <Link href="/smc-ict-trading-course-dubai">SMC and ICT course</Link>. The topic order for both tracks is on <Link href="/courses">courses</Link>. This article is the definition.
+              </p>
+
+              <h2>Five questions for the first SMC class</h2>
+              <p>
+                Take these into a group cohort or a private lesson in Dubai once you have marked one swing. Ask them about the chart you brought. A class can correct a mark. It cannot answer all five in the abstract.
+              </p>
+              <ol className="guide-list">
+                <li>Which of these two highs is the swing the class wants marked?</li>
+                <li>Is this wick a sweep that closed back inside, or a break that kept going?</li>
+                <li>Did this fast candle land on a scheduled release? If it did, the calendar comes before the label.</li>
+                <li>Which opposing candle is the order block, and what move comes after it?</li>
+                <li>Does this idea belong on the advanced track, or do I still need the structure hours on <Link href="/courses">the course page</Link>?</li>
+              </ol>
+              <p>
+                Write the answer you heard in one sentence before you leave. An evening group, if that is when you can attend, is <Link href="/blog-evening-group-forex-classes-dubai">evening group classes on Gulf Standard Time</Link>. A private hour for the mark on your own symbol is <Link href="/blog-first-private-forex-lesson-dubai">the first private lesson</Link>. What that live hour contains is <Link href="/blog-live-forex-trading-session-dubai">a live forex session in Dubai</Link>. Abu Dhabi students use the same drill on the same clock. The journey is the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>. Read the Google listing from the <Link href="/success-stories">reviews page</Link>, then send the sentence through <Link href="/contact">contact</Link>. The rest of the notes are on the <Link href="/blog">blog</Link>.
               </p>
 
               <h2>Why the terms wait until structure is clear</h2>

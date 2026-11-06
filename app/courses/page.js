@@ -90,6 +90,13 @@ export default function CoursesPage() {
               <Link href="/pricing">pricing</Link>. The city page is{" "}
               <Link href="/forex-academy-in-dubai">forex courses in Dubai</Link>.
             </p>
+            <p style={{ maxWidth: "66ch" }}>
+              Choose the first hour before you ask for a price. A shared evening after a UAE workday is{" "}
+              <Link href="/blog-evening-group-forex-classes-dubai">evening group classes on Gulf Standard Time</Link>. A private hour on your own chart is{" "}
+              <Link href="/blog-first-private-forex-lesson-dubai">what to bring and ask in a first private lesson</Link>. The catalogue of notes is the <Link href="/blog">blog</Link>. Abu Dhabi students start with the{" "}
+              <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>. The advanced vocabulary, after you can mark a swing, is{" "}
+              <Link href="/blog-smart-money-concepts">smart money concepts</Link>. Google reviews stay on Google. The <Link href="/success-stories">reviews page</Link> explains the 5.0 listing. The message itself is <Link href="/contact">contact</Link>.
+            </p>
             <div className="cta-row">
               <a href="https://wa.me/971559047030" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
                 WhatsApp

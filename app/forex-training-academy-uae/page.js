@@ -167,7 +167,10 @@ export default function ForexTrainingAcademyUaePage() {
 
             <h2>Book the UAE seat</h2>
             <p>
-              Send your emirate, the format you want, and whether you are new to charts. The reply quotes the fee and the next time a class runs. The academy is open 24/7. Call {SITE.telephoneDisplay} if you would rather talk. The chat on this page opens in place and does not send you to another site.
+              Send your emirate, the format you want, and whether you are new to charts. The reply quotes the fee and the next time a class runs. The academy is open 24/7. Call {SITE.telephoneDisplay} if you would rather talk. The chat on this page opens in place and does not send you to another site. The form, with the same questions, is on the <Link href="/contact">contact page</Link>.
+            </p>
+            <p>
+              Read the track before you send the message. The lists are on <Link href="/courses">forex courses</Link>. The notes are the <Link href="/blog">blog</Link>. If the word you want is a liquidity sweep, start with <Link href="/blog-smart-money-concepts">smart money concepts</Link>. Abu Dhabi students use the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> for the drive or the screen. The Google listing is explained on the <Link href="/success-stories">reviews page</Link>.
             </p>
             <div className="cta-row">
               <a href={whatsapp} className="btn btn-primary" target="_blank" rel="noopener noreferrer">

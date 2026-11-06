@@ -85,6 +85,12 @@ export default function ContactPage() {
             <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,2.8rem)", maxWidth: "20ch" }}>
               Book a forex class in Dubai, United Arab Emirates.
             </h1>
+            <p style={{ maxWidth: "66ch", marginTop: 18 }}>
+              This page is the message. Equity Fin Academy teaches in person in Dubai, UAE, and online across the UAE on Gulf Standard Time. A useful enquiry names your emirate, a group class or a private lesson, the track, and the hours you can keep. The reply quotes the next time and the fee in AED. WhatsApp and the phone are +971 55 904 7030.
+            </p>
+            <p style={{ maxWidth: "66ch" }}>
+              If you have not chosen a track, open <Link href="/courses">forex trading courses</Link> first. If you want a note before you write, start at the <Link href="/blog">blog</Link>: a first private hour is <Link href="/blog-first-private-forex-lesson-dubai">what to bring and ask</Link>, and a shared evening is <Link href="/blog-evening-group-forex-classes-dubai">evening group classes</Link>. Abu Dhabi students should read the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> before they assume the drive is required. Google comments stay on Google. The <Link href="/success-stories">reviews page</Link> explains how to read the 5.0 listing.
+            </p>
           </div>
         </section>
 

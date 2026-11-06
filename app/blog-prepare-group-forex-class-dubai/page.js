@@ -112,7 +112,7 @@ export default function PrepareGroupForexClassPost() {
                 The instructor is <Link href="/gopi-chandran">Gopi Chandran</Link>. The in-person school page is <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link>. Study from another emirate is <Link href="/forex-training-academy-uae">forex training academy UAE</Link>. Formats are also on <Link href="/private-group-forex-training-dubai">private and group forex training</Link>. The academy is rated 5.0 on Google from 30+ reviews. Read the listing from the <Link href="/success-stories">reviews page</Link> rather than a quote written for this article. The <Link href="/blog">blog</Link> holds the rest of the notes.
               </p>
               <p>
-                To book the cohort, use the <Link href="/contact">contact page</Link> or WhatsApp +971 55 904 7030. Say group, the track, Dubai or online, and the hours you can keep. Ask for the fee in AED. It is quoted in the reply.
+                To book the cohort, use the <Link href="/contact">contact page</Link> or WhatsApp +971 55 904 7030. Say group, the track, Dubai or online, and the hours you can keep. Ask for the fee in AED. It is quoted in the reply. An evening on Gulf Standard Time is <Link href="/blog-evening-group-forex-classes-dubai">evening group classes in Dubai</Link>. What the hour contains once you are in the room is <Link href="/blog-live-forex-trading-session-dubai">a live forex session in Dubai</Link>.
               </p>
               <AcademyLinks lead="The live group classes these notes prepare you for are the" />
               <div className="blog-cta">

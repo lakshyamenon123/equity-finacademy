@@ -170,7 +170,7 @@ export default function BestForexCourseDubaiPage() {
               <div className="card reveal">
                 <div className="num">04</div>
                 <h3>One classroom, in Dubai</h3>
-                <p>There is no second campus. Abu Dhabi and Sharjah students attend the same Dubai address, or start with the free lessons.</p>
+                <p>There is no second campus. Abu Dhabi and Sharjah students come to the same classroom in Dubai, UAE, or start with the free lessons.</p>
               </div>
             </div>
             <div className="prose-block" style={{ marginTop: 36 }}>
@@ -178,7 +178,11 @@ export default function BestForexCourseDubaiPage() {
                 We do not claim to be the only forex course in Dubai, and we do not claim a result no course can promise.
                 Compare the curriculum, the instructor and the broker access, then decide. If you want the short version
                 of how the academy is built, read <Link href="/why-choose-us">Why Choose Us</Link> and the{" "}
-                <Link href="/forex-academy-in-dubai">forex academy in Dubai</Link> page.
+                <Link href="/forex-academy-in-dubai">forex academy in Dubai</Link> page. The topic order is{" "}
+                <Link href="/courses">forex courses</Link>. Class notes are on the <Link href="/blog">blog</Link>, including{" "}
+                <Link href="/blog-smart-money-concepts">smart money concepts</Link>. Abu Dhabi is the{" "}
+                <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>. The Google listing is the{" "}
+                <Link href="/success-stories">reviews page</Link>. To ask for a seat, use <Link href="/contact">contact</Link>.
               </p>
             </div>
           </div>

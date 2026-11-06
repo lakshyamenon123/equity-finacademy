@@ -374,6 +374,9 @@ export default function HomePage() {
                 <Link href="/blog-forex-education-uae">Forex education in the UAE</Link> is what to study before you pay. <Link href="/blog-smart-money-concepts">Smart money concepts</Link> comes after structure.
               </li>
               <li>
+                <Link href="/blog-first-private-forex-lesson-dubai">A first private lesson in Dubai</Link> is what to bring and what to ask. <Link href="/blog-evening-group-forex-classes-dubai">Evening group classes</Link> are the shared hour after work on Gulf Standard Time.
+              </li>
+              <li>
                 <Link href="/why-choose-us">The enrolment checklist</Link>, the <Link href="/success-stories">Google reviews guide</Link>, and <Link href="/contact">contact</Link> are the steps after the reading. The school pages are <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link> and <Link href="/forex-training-academy-uae">forex training academy UAE</Link>.
               </li>
             </ul>
@@ -458,6 +461,8 @@ export default function HomePage() {
               <Link href="/smc-ict-trading-course-dubai" className="topic-chip">SMC and ICT Course</Link>
               <Link href="/weekend-forex-classes-dubai" className="topic-chip">Weekend Forex Classes</Link>
               <Link href="/blog" className="topic-chip">Forex class notes</Link>
+              <Link href="/blog-first-private-forex-lesson-dubai" className="topic-chip">First private lesson in Dubai</Link>
+              <Link href="/blog-evening-group-forex-classes-dubai" className="topic-chip">Evening group classes</Link>
               <Link href="/forex-course-abu-dhabi" className="topic-chip">Forex course for Abu Dhabi</Link>
               <Link href="/success-stories" className="topic-chip">Google reviews</Link>
               <Link href="/gopi-chandran" className="topic-chip">Gopi Chandran</Link>

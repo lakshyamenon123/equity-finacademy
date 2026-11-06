@@ -159,7 +159,9 @@ export default function ForexMarketHoursPost() {
                 <Link href="/blog-private-vs-group-forex-classes-dubai">private versus group forex classes</Link>, and
                 the offer is on the{" "}
                 <Link href="/private-group-forex-training-dubai">private and group training page</Link>. The two tracks
-                are on the <Link href="/courses">courses page</Link>.
+                are on the <Link href="/courses">courses page</Link>. An evening group seat, and how it sits next to
+                these tables, is <Link href="/blog-evening-group-forex-classes-dubai">evening group classes in Dubai</Link>.
+                What the booked hour contains is <Link href="/blog-live-forex-trading-session-dubai">a live forex session in Dubai</Link>.
               </p>
               <p>
                 <Link href="/online-forex-course-uae">Online study</Link> from another emirate is the same market day,

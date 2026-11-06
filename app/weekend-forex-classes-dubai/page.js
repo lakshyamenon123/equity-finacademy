@@ -113,7 +113,7 @@ export default function WeekendForexClassesDubaiPage() {
               <Link href="/blog-forex-market-hours-dubai">forex market hours in Dubai</Link>. Read them before you ask for a &quot;live&quot; Saturday. The academy would rather move you to an hour when the market is open than pretend Saturday is New York.
             </p>
             <p>
-              Sunday in the UAE is still inside that shut window until Monday morning. If the session you care about is the weekly open, say so, and ask for an hour that matches the clock rather than the word weekend. Students who work a normal daytime can often keep a weekday evening for the London and New York overlap, which in summer is about 16:00 to 20:00 Gulf Standard Time and in winter about 17:00 to 21:00. Weekend forex classes in Dubai are the alternative when those evenings are already gone.
+              Sunday in the UAE is still inside that shut window until Monday morning. If the session you care about is the weekly open, say so, and ask for an hour that matches the clock rather than the word weekend. Students who work a normal daytime can often keep a weekday evening for the London and New York overlap, which in summer is about 16:00 to 20:00 Gulf Standard Time and in winter about 17:00 to 21:00. That booking is <Link href="/blog-evening-group-forex-classes-dubai">evening group classes in Dubai</Link>. Weekend forex classes in Dubai are the alternative when those evenings are already gone. What the hour contains once it is booked is <Link href="/blog-live-forex-trading-session-dubai">a live forex session in Dubai</Link>.
             </p>
 
             <h2>The same two tracks, taught when you can attend</h2>

@@ -211,6 +211,9 @@ export default function ForexTrainingAcademyDubaiPage() {
               <Link href="/blog-choose-forex-academy-uae">how to choose a forex academy in the UAE</Link> on this academy and on any other name you are holding. The{" "}
               <Link href="/best-forex-course-dubai">notes on judging a Dubai course</Link> put the 5.0 rating and the 2,000+ students figure next to the questions worth asking. Then decide.
             </p>
+            <p>
+              The pages that answer the next question, after this offer, are separate on purpose. The topic order is <Link href="/courses">forex courses</Link>. The catalogue of notes is the <Link href="/blog">blog</Link>, including <Link href="/blog-smart-money-concepts">smart money concepts</Link>. Abu Dhabi is the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>. How to read the Google listing is the <Link href="/success-stories">reviews page</Link>. The message is the <Link href="/contact">contact page</Link>.
+            </p>
             <div className="cta-row">
               <a href={whatsapp} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
                 WhatsApp +971 55 904 7030
