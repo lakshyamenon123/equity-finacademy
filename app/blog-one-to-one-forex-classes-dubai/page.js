@@ -137,6 +137,8 @@ export default function OneToOneForexClassesPost() {
               </p>
               <p>
                 Book from the <Link href="/contact">contact page</Link> or call <a href="tel:+971559047030">+971 55 904 7030</a>.
+                If this is the first private hour, use <Link href="/blog-first-private-forex-lesson-dubai">what to bring and ask</Link>.
+                What the live hour contains, once you are in it, is <Link href="/blog-live-forex-trading-session-dubai">a live forex session in Dubai</Link>.
               </p>
               <AcademyLinks lead="The booking pages are the" />
             </div>

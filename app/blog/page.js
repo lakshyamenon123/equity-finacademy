@@ -6,9 +6,9 @@ import { pageMetadata } from "../lib/seo";
 import { absoluteListItem, breadcrumbSchema, faqPageSchema, webPageSchema } from "../lib/schema";
 import { absoluteUrl } from "../lib/site";
 
-const blogTitle = "Forex Education Notes for Dubai and the UAE";
+const blogTitle = "Forex Class Notes for Dubai and the UAE";
 const blogDescription =
-  "Forex education notes from Equity Fin Academy in Dubai: a reading order for the course, then how to book a group class or a private lesson across the UAE.";
+  "Forex class notes from Equity Fin Academy in Dubai: which article answers which question, then how to book a group class or a private lesson across the UAE.";
 
 export const metadata = pageMetadata({
   title: `${blogTitle} | Equity Fin Academy`,
@@ -19,6 +19,32 @@ export const metadata = pageMetadata({
 });
 
 const posts = [
+  {
+    href: "/blog-first-private-forex-lesson-dubai",
+    icon: (
+      <>
+        <circle cx="12" cy="8" r="3" />
+        <path d="M6 19c.8-2.6 2.8-4 6-4s5.2 1.4 6 4" />
+      </>
+    ),
+    cat: "Private Lessons",
+    title: "Your First Private Forex Lesson in Dubai: What to Bring and Ask",
+    desc: "One chart, one sentence, and the questions that belong in the first one-to-one hour.",
+    time: "9 min read",
+  },
+  {
+    href: "/blog-evening-group-forex-classes-dubai",
+    icon: (
+      <>
+        <circle cx="12" cy="12" r="8" />
+        <path d="M12 8v4l3 2" />
+      </>
+    ),
+    cat: "Group Classes",
+    title: "Evening Group Forex Classes in Dubai on Gulf Standard Time",
+    desc: "How a shared hour after work sits on UAE time, next to the London and New York overlap.",
+    time: "9 min read",
+  },
   {
     href: "/blog-live-forex-trading-session-dubai",
     icon: (
@@ -399,9 +425,9 @@ const posts = [
       </>
     ),
     cat: "Strategy",
-    title: "Smart Money Concepts (SMC) Explained for Beginners in Dubai",
-    desc: "Liquidity, imbalance and order blocks, in plain language.",
-    time: "9 min read",
+    title: "Smart Money Concepts for Beginners in Dubai: One Markup Drill",
+    desc: "Mark one swing on Gulf Standard Time, then see where the live class sits.",
+    time: "10 min read",
   },
 ];
 
@@ -465,12 +491,12 @@ export default function BlogIndexPage() {
             </nav>
             <span className="eyebrow">FOREX EDUCATION BLOG</span>
             <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,3rem)", maxWidth: "20ch" }}>
-              Forex education notes for Dubai and the UAE.
+              Forex class notes for Dubai and the UAE.
             </h1>
             <p style={{ maxWidth: "66ch", marginTop: 18 }}>
-              Read the note that matches the question you have, then book the live class if you want the chart corrected. The two tracks are on <Link href="/courses">forex courses</Link>. The school pages are the{" "}
+              This page is the catalogue. Each article below is one question, written so you can read it before a live class in Dubai, UAE, or online across the UAE. The two tracks are on <Link href="/courses">forex courses</Link>. The school pages are the{" "}
               <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link> and the{" "}
-              <Link href="/forex-training-academy-uae">forex training academy UAE</Link>.
+              <Link href="/forex-training-academy-uae">forex training academy UAE</Link>. When the reading is done, the message goes to <Link href="/contact">contact</Link>.
             </p>
           </div>
         </section>
@@ -482,8 +508,56 @@ export default function BlogIndexPage() {
               New to charts, and already in Dubai: <Link href="/blog-how-to-start-forex-trading-dubai">how to start forex trading in Dubai</Link> is the first month. The install steps stay in <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>. A stock or an index, rather than a currency pair, starts with <Link href="/blog-stock-market-course-dubai-first-weeks">the first weeks of a stock market course in Dubai</Link>. Then <Link href="/blog-currency-pairs-uae">how a pair is quoted</Link>, then <Link href="/blog-candlestick-patterns">candlesticks</Link>, then <Link href="/blog-market-structure">market structure</Link>. About to fund an account: <Link href="/blog-demo-vs-live-mt5-uae">demo versus live on MT5</Link>, then <Link href="/blog-forex-leverage-margin-mt5-uae">leverage and margin</Link>, then <Link href="/blog-forex-spreads-swaps-pip-value-uae">what a pip is worth</Link>. The advanced vocabulary, after you can point at a swing, is <Link href="/blog-smart-money-concepts">smart money concepts</Link>.
             </p>
             <p>
-              A map search has two notes. <Link href="/blog-investing-classes-near-me-dubai">Investing classes near me in Dubai</Link> sorts forex, stocks, and gold. <Link href="/blog-forex-classes-near-me-dubai">Forex classes near me in Dubai</Link> is the visit checklist once you already know you want forex. Ajman, Ras Al Khaimah, Fujairah, and Umm Al Quwain are in <Link href="/blog-forex-classes-ajman-ras-al-khaimah">forex classes in the northern emirates</Link>. What the booked hour contains is <Link href="/blog-live-forex-trading-session-dubai">a live forex session in Dubai</Link>. What to study before either booking is <Link href="/blog-forex-education-uae">forex education in the UAE</Link>. A day job changes the hour, which is <Link href="/blog-forex-classes-working-professionals-dubai">classes for working professionals</Link>.
+              A map search has two notes. <Link href="/blog-investing-classes-near-me-dubai">Investing classes near me in Dubai</Link> sorts forex, stocks, and gold. <Link href="/blog-forex-classes-near-me-dubai">Forex classes near me in Dubai</Link> is the visit checklist once you already know you want forex. Ajman, Ras Al Khaimah, Fujairah, and Umm Al Quwain are in <Link href="/blog-forex-classes-ajman-ras-al-khaimah">forex classes in the northern emirates</Link>. What the booked hour contains is <Link href="/blog-live-forex-trading-session-dubai">a live forex session in Dubai</Link>. What to study before either booking is <Link href="/blog-forex-education-uae">forex education in the UAE</Link>. A day job changes the hour, which is <Link href="/blog-forex-classes-working-professionals-dubai">classes for working professionals</Link>. The shared hour after that job is <Link href="/blog-evening-group-forex-classes-dubai">evening group classes on Gulf Standard Time</Link>. The first one-to-one sitting is <Link href="/blog-first-private-forex-lesson-dubai">what to bring and ask in a first private lesson</Link>.
             </p>
+            <h2>Which note answers which question</h2>
+            <p>
+              Use this table when you know the question and you do not want to scroll the cards. The article is the reading. The other links are the pages that book or explain the school.
+            </p>
+            <div className="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>You are trying to decide</th>
+                    <th>Open this</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>What to carry into a first private hour, and what to ask</td>
+                    <td><Link href="/blog-first-private-forex-lesson-dubai">First private lesson in Dubai</Link></td>
+                  </tr>
+                  <tr>
+                    <td>Whether a group class can sit after work on UAE time</td>
+                    <td><Link href="/blog-evening-group-forex-classes-dubai">Evening group classes</Link></td>
+                  </tr>
+                  <tr>
+                    <td>What actually happens once the hour is booked</td>
+                    <td><Link href="/blog-live-forex-trading-session-dubai">A live forex session in Dubai</Link></td>
+                  </tr>
+                  <tr>
+                    <td>Which track, in teaching order</td>
+                    <td><Link href="/courses">Forex course tracks</Link></td>
+                  </tr>
+                  <tr>
+                    <td>Drive from Abu Dhabi, or take the same course online</td>
+                    <td><Link href="/forex-course-abu-dhabi">Forex course for Abu Dhabi</Link></td>
+                  </tr>
+                  <tr>
+                    <td>What a liquidity sweep or an order block means, before the advanced class</td>
+                    <td><Link href="/blog-smart-money-concepts">Smart money concepts</Link></td>
+                  </tr>
+                  <tr>
+                    <td>How to read the 5.0 Google listing without a quote written here</td>
+                    <td><Link href="/success-stories">Reviews</Link></td>
+                  </tr>
+                  <tr>
+                    <td>The message that gets a time and a fee in AED</td>
+                    <td><Link href="/contact">Contact</Link></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <p>
               These pages are the seat, once the reading has done its job. The classroom is in Dubai, UAE. Online classes use Gulf Standard Time in every emirate.
             </p>

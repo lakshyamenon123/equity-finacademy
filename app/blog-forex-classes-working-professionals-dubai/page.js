@@ -93,7 +93,8 @@ export default function ProfessionalsForexClassesPost() {
 
               <h2>Evening seat or weekend seat</h2>
               <p>
-                Use this page if the constraint is a weekday job. Use{" "}
+                Use this page if the constraint is a weekday job. The shared hour after that job, on Gulf Standard Time, is{" "}
+                <Link href="/blog-evening-group-forex-classes-dubai">evening group classes in Dubai</Link>. Use{" "}
                 <Link href="/weekend-forex-classes-dubai">weekend forex classes in Dubai</Link> if Saturday or Sunday
                 is the day you can actually attend. From Saturday morning until Monday morning, UAE time, the forex
                 market is shut. A weekend class can still meet. The chart will not be printing new candles. Say which

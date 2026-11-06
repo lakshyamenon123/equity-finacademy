@@ -240,6 +240,17 @@ export default function ForexCourseAbuDhabiPage() {
               The definitions, including <Link href="/blog-smart-money-concepts">smart money concepts</Link>, stay on the <Link href="/blog">blog</Link>. The Google listing is explained on the <Link href="/success-stories">reviews page</Link>. Six checks before you pay are on <Link href="/why-choose-us">the enrolment checklist</Link>.
             </p>
 
+            <h2>An evening from Abu Dhabi, on the same clock as Dubai</h2>
+            <p>
+              A 7pm class is 7pm in Abu Dhabi and in Dubai. Gulf Standard Time does not change between the two cities, and it does not change in summer. The drive is the part that changes. An evening trip from the capital often replaces the study, so many students take the same group hour online and stay at the desk.
+            </p>
+            <p>
+              The longer note on that shared hour, including where London and New York fall in UAE time, is <Link href="/blog-evening-group-forex-classes-dubai">evening group forex classes in Dubai</Link>. If you would rather spend the hour on your own chart, the packing list is <Link href="/blog-first-private-forex-lesson-dubai">what to bring and ask in a first private lesson</Link>. What the booked hour contains, once you have chosen, is <Link href="/blog-live-forex-trading-session-dubai">a live forex session in Dubai</Link>.
+            </p>
+            <p>
+              The afternoon before an online evening, log in to MetaTrader 5, leave one symbol on the screen, and test the audio. Write one question about the topic the cohort is on. Then send Abu Dhabi, online or a visit, group or private, and the hour you can keep. The form is on the <Link href="/contact">contact page</Link>. The topic lists are on <Link href="/courses">courses</Link>. If the word you want taught is a liquidity sweep, read <Link href="/blog-smart-money-concepts">smart money concepts</Link> first so you name the advanced track on purpose.
+            </p>
+
             <h2>How to decide if the drive is worth it</h2>
             <ul className="guide-list">
               <li>You want live correction, not another playlist. The YouTube channel is free and useful; class is the feedback.</li>

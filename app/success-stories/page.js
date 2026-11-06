@@ -6,9 +6,9 @@ import { pageMetadata } from "../lib/seo";
 import RelatedTraining from "../components/RelatedTraining";
 import { breadcrumbSchema, faqPageSchema, webPageSchema } from "../lib/schema";
 
-const reviewsTitle = "How to Read Our Google Reviews";
+const reviewsTitle = "How to Read Equity Fin Academy’s Google Reviews";
 const reviewsDescription =
-  "How to read Equity Fin Academy’s 5.0 Google listing in Dubai before you enrol: what a useful review names, and what this page will not invent.";
+  "How to read Equity Fin Academy’s 5.0 Google listing in Dubai before you enrol: what a useful review names, and the blank note you fill in yourself.";
 
 export const metadata = pageMetadata({
   title: `${reviewsTitle} | Equity Fin Academy`,
@@ -58,8 +58,11 @@ export default function SuccessStoriesPage() {
             <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,3rem)", maxWidth: "22ch" }}>
               How to read Equity Fin Academy reviews in Dubai.
             </h1>
-            <p style={{ maxWidth: "60ch", marginTop: 18 }}>
-              We&apos;re not going to put invented quotes on this page. Here&apos;s how to see real feedback instead.
+            <p style={{ maxWidth: "66ch", marginTop: 18 }}>
+              Equity Fin Academy is rated 5.0 on Google from 30+ reviews. Thirty is a lower bound on the count, not an exact total, and it is not a trading result. This page shows how to read that listing and how to turn a comment into a question for the academy. It does not reprint student quotes, and it does not invent them.
+            </p>
+            <p style={{ maxWidth: "66ch" }}>
+              The class those reviews describe is on <Link href="/courses">forex trading courses</Link>. The written notes are on the <Link href="/blog">blog</Link>, including <Link href="/blog-smart-money-concepts">smart money concepts</Link>. Abu Dhabi readers use the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> for the drive or the screen. When you are ready to ask, use <Link href="/contact">contact</Link>.
             </p>
           </div>
         </section>
@@ -135,6 +138,20 @@ export default function SuccessStoriesPage() {
             </ul>
             <p>
               Then send the line. The <Link href="/blog">blog</Link> is the reading. The <Link href="/why-choose-us">enrolment checklist</Link> is the six facts to confirm about this academy. WhatsApp is +971 55 904 7030.
+            </p>
+
+            <h2>A blank note you fill in from the listing</h2>
+            <p>
+              Copy these lines into your own notes while the Google page is open. Leave a line blank when the review does not say. This website does not supply the missing words.
+            </p>
+            <ul className="guide-list">
+              <li>Format the reviewer named: group class, private lesson, or online.</li>
+              <li>Subject they named: a beginner track, structure, or a chart that was corrected.</li>
+              <li>Place they named: Dubai, or online from another emirate.</li>
+              <li>One question that comment raises for your own booking.</li>
+            </ul>
+            <p>
+              Bring that question to the academy. If it is about a first private hour, read <Link href="/blog-first-private-forex-lesson-dubai">what to bring and ask</Link>. If it is about a weekday evening, read <Link href="/blog-evening-group-forex-classes-dubai">evening group classes on Gulf Standard Time</Link>. If it is about what the hour contains once you are in the room, read <Link href="/blog-live-forex-trading-session-dubai">a live forex session in Dubai</Link>.
             </p>
 
             <h2>A short scorecard before you enquire</h2>

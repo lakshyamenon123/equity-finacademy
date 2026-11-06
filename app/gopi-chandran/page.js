@@ -194,7 +194,11 @@ export default function GopiChandranPage() {
                 +971 55 904 7030
               </a>
               . Classes are in person in Dubai and online for Abu Dhabi, Sharjah, and the rest of the UAE. The{" "}
-              <Link href="/contact">contact page</Link> has the map. Fees are quoted when you enquire.
+              <Link href="/contact">contact page</Link> has the map. Fees are quoted when you enquire. The syllabuses are on{" "}
+              <Link href="/courses">forex courses</Link>. Notes from the lessons are on the <Link href="/blog">blog</Link>, including{" "}
+              <Link href="/blog-smart-money-concepts">smart money concepts</Link>. Abu Dhabi students can read the{" "}
+              <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>. The public Google listing is explained on the{" "}
+              <Link href="/success-stories">reviews page</Link>.
             </p>
           </div>
         </section>
