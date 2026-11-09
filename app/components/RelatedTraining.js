@@ -1,6 +1,8 @@
 import Link from "next/link";
 
 const LINKS = [
+  { href: "/blog-forex-chart-timeframes-dubai", label: "Chart timeframes for a Dubai class" },
+  { href: "/blog-mt5-order-ticket-dubai", label: "The MT5 order ticket" },
   { href: "/blog-live-forex-trading-session-dubai", label: "Live forex session in Dubai" },
   { href: "/blog-forex-classes-ajman-ras-al-khaimah", label: "Forex classes in the northern emirates" },
   { href: "/blog-how-to-start-forex-trading-dubai", label: "How to start forex trading in Dubai" },

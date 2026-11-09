@@ -20,6 +20,32 @@ export const metadata = pageMetadata({
 
 const posts = [
   {
+    href: "/blog-forex-chart-timeframes-dubai",
+    icon: (
+      <>
+        <rect x="4" y="5" width="16" height="14" rx="2" />
+        <path d="M8 15V9M12 15V7M16 15v-3" />
+      </>
+    ),
+    cat: "Chart Reading",
+    title: "Which Forex Chart Timeframe to Open Before a Class in Dubai",
+    desc: "One button on MetaTrader 5, a sentence about what survived on the slower chart, and what to send when you book.",
+    time: "9 min read",
+  },
+  {
+    href: "/blog-mt5-order-ticket-dubai",
+    icon: (
+      <>
+        <rect x="4" y="4" width="16" height="16" rx="2" />
+        <path d="M8 9h8M8 12h5M8 15h6" />
+      </>
+    ),
+    cat: "MT5",
+    title: "How to Read the MetaTrader 5 Order Ticket Before a Class in Dubai",
+    desc: "Symbol, volume, stop loss, and take profit, so the live hour starts on the level rather than the window.",
+    time: "9 min read",
+  },
+  {
     href: "/blog-first-private-forex-lesson-dubai",
     icon: (
       <>
@@ -505,7 +531,7 @@ export default function BlogIndexPage() {
           <div className="container prose-block">
             <h2>A reading order, then the page that books the seat</h2>
             <p>
-              New to charts, and already in Dubai: <Link href="/blog-how-to-start-forex-trading-dubai">how to start forex trading in Dubai</Link> is the first month. The install steps stay in <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>. A stock or an index, rather than a currency pair, starts with <Link href="/blog-stock-market-course-dubai-first-weeks">the first weeks of a stock market course in Dubai</Link>. Then <Link href="/blog-currency-pairs-uae">how a pair is quoted</Link>, then <Link href="/blog-candlestick-patterns">candlesticks</Link>, then <Link href="/blog-market-structure">market structure</Link>. About to fund an account: <Link href="/blog-demo-vs-live-mt5-uae">demo versus live on MT5</Link>, then <Link href="/blog-forex-leverage-margin-mt5-uae">leverage and margin</Link>, then <Link href="/blog-forex-spreads-swaps-pip-value-uae">what a pip is worth</Link>. The advanced vocabulary, after you can point at a swing, is <Link href="/blog-smart-money-concepts">smart money concepts</Link>.
+              New to charts, and already in Dubai: <Link href="/blog-how-to-start-forex-trading-dubai">how to start forex trading in Dubai</Link> is the first month. The install steps stay in <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>. Which button to press on that chart is <Link href="/blog-forex-chart-timeframes-dubai">which timeframe to open before a class</Link>. The window you will be asked to read is <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>. A stock or an index, rather than a currency pair, starts with <Link href="/blog-stock-market-course-dubai-first-weeks">the first weeks of a stock market course in Dubai</Link>. Then <Link href="/blog-currency-pairs-uae">how a pair is quoted</Link>, then <Link href="/blog-candlestick-patterns">candlesticks</Link>, then <Link href="/blog-market-structure">market structure</Link>. About to fund an account: <Link href="/blog-demo-vs-live-mt5-uae">demo versus live on MT5</Link>, then <Link href="/blog-forex-leverage-margin-mt5-uae">leverage and margin</Link>, then <Link href="/blog-forex-spreads-swaps-pip-value-uae">what a pip is worth</Link>. The advanced vocabulary, after you can point at a swing, is <Link href="/blog-smart-money-concepts">smart money concepts</Link>.
             </p>
             <p>
               A map search has two notes. <Link href="/blog-investing-classes-near-me-dubai">Investing classes near me in Dubai</Link> sorts forex, stocks, and gold. <Link href="/blog-forex-classes-near-me-dubai">Forex classes near me in Dubai</Link> is the visit checklist once you already know you want forex. Ajman, Ras Al Khaimah, Fujairah, and Umm Al Quwain are in <Link href="/blog-forex-classes-ajman-ras-al-khaimah">forex classes in the northern emirates</Link>. What the booked hour contains is <Link href="/blog-live-forex-trading-session-dubai">a live forex session in Dubai</Link>. What to study before either booking is <Link href="/blog-forex-education-uae">forex education in the UAE</Link>. A day job changes the hour, which is <Link href="/blog-forex-classes-working-professionals-dubai">classes for working professionals</Link>. The shared hour after that job is <Link href="/blog-evening-group-forex-classes-dubai">evening group classes on Gulf Standard Time</Link>. The first one-to-one sitting is <Link href="/blog-first-private-forex-lesson-dubai">what to bring and ask in a first private lesson</Link>.
@@ -523,6 +549,14 @@ export default function BlogIndexPage() {
                   </tr>
                 </thead>
                 <tbody>
+                  <tr>
+                    <td>Which chart button to have open before the hour</td>
+                    <td><Link href="/blog-forex-chart-timeframes-dubai">Chart timeframes for a Dubai class</Link></td>
+                  </tr>
+                  <tr>
+                    <td>What the order window is asking for</td>
+                    <td><Link href="/blog-mt5-order-ticket-dubai">The MT5 order ticket</Link></td>
+                  </tr>
                   <tr>
                     <td>What to carry into a first private hour, and what to ask</td>
                     <td><Link href="/blog-first-private-forex-lesson-dubai">First private lesson in Dubai</Link></td>

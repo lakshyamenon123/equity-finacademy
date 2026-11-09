@@ -223,6 +223,7 @@ export function articleSchema({ headline, description, path, datePublished, date
     headline,
     description,
     inLanguage: "en-AE",
+    url: pageUrl,
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": pageUrl,

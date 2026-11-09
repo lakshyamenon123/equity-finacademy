@@ -124,7 +124,7 @@ export default function ForexCourseAbuDhabiPage() {
 
             <h2>Abu Dhabi is on the same clock as Dubai</h2>
             <p>
-              The UAE does not split time zones. Abu Dhabi and Dubai both use Gulf Standard Time, UTC+4, all year. A class timed for 7pm is 7pm in both cities. You do not add or subtract an hour because you live in the capital. What changes is the journey, not the session. London and New York hours, converted to that clock, are on the{" "}
+              The UAE does not split time zones. Abu Dhabi and Dubai both use Gulf Standard Time, UTC+4, all year. A class timed for 7pm is 7pm in both cities. You do not add or subtract an hour because you live in the capital. What changes is the journey, not the session. The chart button to have open is in <Link href="/blog-forex-chart-timeframes-dubai">which timeframe to open before a class</Link>. The order window is in <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>. London and New York hours, converted to that clock, are on the{" "}
               <Link href="/blog-forex-market-hours-dubai">Dubai market-hours page</Link>.
             </p>
             <p>

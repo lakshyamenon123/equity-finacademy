@@ -239,12 +239,9 @@ export default function SuccessStoriesPage() {
           <div className="container">
             <div className="section-head reveal">
               <span className="eyebrow">STUDIED, NOT SOLD</span>
-              <h2>Real case studies, coming as students share them</h2>
+              <h2>This page does not host the quotes</h2>
               <p style={{ maxWidth: "70ch" }}>
-                Rather than publish generic success quotes, we&apos;re building this section out with real,
-                permissioned stories from students who complete a course and choose to share their experience —
-                including the honest parts. If you&apos;re a past or current student who&apos;d like to share your
-                story, <Link href="/contact">get in touch</Link>.
+                The reviews live on Google. This website explains how to read them and how to turn one comment into a question for the academy. A story appears here when a student asks for it to be published in their name. The academy does not draft that paragraph. If you studied here and you want a story published, <Link href="/contact">write with the track you took</Link>.
               </p>
             </div>
             <div className="grid-4">
@@ -255,8 +252,8 @@ export default function SuccessStoriesPage() {
                     <circle cx="12" cy="12" r="9" />
                   </svg>
                 </div>
-                <h3>Verified, not written by us</h3>
-                <p>Every quote we eventually publish here will be attributed and permissioned by the student, not written on their behalf.</p>
+                <h3>Read them on Google</h3>
+                <p>The 5.0 listing from 30+ reviews is collected by Google. Thirty is a lower bound, not an exact total, and it is not a trading result.</p>
               </div>
               <div className="card reveal">
                 <div className="icon-badge">
@@ -265,8 +262,8 @@ export default function SuccessStoriesPage() {
                     <circle cx="12" cy="12" r="9" />
                   </svg>
                 </div>
-                <h3>No results promises</h3>
-                <p>We won&apos;t publish quotes implying guaranteed trading profits — that&apos;s not a real outcome we or anyone can promise.</p>
+                <h3>No results written here</h3>
+                <p>A useful review names a group class, a private lesson, or an online seat. A line that promises profits is a reason to slow down.</p>
               </div>
               <div className="card reveal">
                 <div className="icon-badge">
@@ -275,8 +272,12 @@ export default function SuccessStoriesPage() {
                     <circle cx="12" cy="12" r="9" />
                   </svg>
                 </div>
-                <h3>Google reviews in the meantime</h3>
-                <p>Until then, Google Maps reviews are the most reliable place to see honest, third-party feedback.</p>
+                <h3>Then read the class</h3>
+                <p>
+                  The tracks are on the <Link href="/courses">courses page</Link>. A chart question starts with{" "}
+                  <Link href="/blog-forex-chart-timeframes-dubai">timeframes</Link> or the{" "}
+                  <Link href="/blog-mt5-order-ticket-dubai">order ticket</Link>.
+                </p>
               </div>
             </div>
           </div>
@@ -292,7 +293,7 @@ export default function SuccessStoriesPage() {
           <div className="container">
             <div className="cta-banner reveal">
               <div>
-                <h2>See the curriculum these students studied.</h2>
+                <h2>See the curriculum the reviews describe.</h2>
                 <p>Compare the two course tracks and find the one that fits your experience.</p>
               </div>
               <Link href="/courses" className="btn btn-primary">

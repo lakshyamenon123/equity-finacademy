@@ -1,11 +1,15 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AcademyLinks from "../components/AcademyLinks";
+import YouTubeSection from "../components/YouTubeSection";
 import Link from "next/link";
 import AuthorByline from "../components/AuthorByline";
 import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
+import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
+
+const mt5English = ENGLISH_VIDEOS.find((video) => video.id === "ssUPlUHnDLo");
 
 const headline = "How to Read Candlestick Patterns: A Beginner's Guide for Dubai";
 
@@ -24,6 +28,9 @@ const postSchema = articleSchema({
   description:
     "What a candle represents for beginners in Dubai and across the UAE, and the patterns worth learning first.",
   path: "/blog-candlestick-patterns",
+  datePublished: "2026-07-25",
+  dateModified: "2026-11-09",
+  type: "BlogPosting",
 });
 
 export default function BlogCandlestickPatternsPage() {
@@ -53,7 +60,7 @@ export default function BlogCandlestickPatternsPage() {
             <div className="blog-article">
               <span className="eyebrow">CHART READING</span>
               <h1>How to Read Candlestick Patterns: A Beginner&apos;s Guide for Dubai</h1>
-              <AuthorByline detail="8 min read" />
+              <AuthorByline detail="Updated 9 Nov 2026 · 9 min read" />
 
               <p>
                 Candlestick charts are the most common way to visualise price movement in forex trading. Before
@@ -107,6 +114,27 @@ export default function BlogCandlestickPatternsPage() {
                 patterns alongside market structure from day one, rather than as an isolated topic.
               </p>
 
+              <h2>Mark one candle before you name a pattern</h2>
+              <p>
+                Open one chart on a demo. Stay on the one-hour button. Pick the most recent closed candle, not the one that is still forming. Write four prices: open, high, low, close. Then write one plain sentence: did it close above or below its open, and which wick is longer. That is the whole drill. A named pattern is optional. If you cannot fill the four prices, a hammer label will not help you in class.
+              </p>
+              <p>
+                The button you pressed is part of the note. The same shape on a one-minute chart and on a four-hour chart is not the same event. Which button to use before a lesson in Dubai is in{" "}
+                <Link href="/blog-forex-chart-timeframes-dubai">which chart timeframe to open</Link>. The clock printed on the candle may be the broker’s server time rather than Gulf Standard Time. Convert it with the{" "}
+                <Link href="/blog-forex-market-hours-dubai">Dubai market-hours page</Link>, and write both the timeframe and the clock next to the four prices.
+              </p>
+              <p>
+                Bring that scrap of paper to a group class or a private lesson. In the group, the cohort looks at one shared candle so the room agrees on the open and the close. In private, the candle can be yours. What to have ready for the shared hour is in{" "}
+                <Link href="/blog-prepare-group-forex-class-dubai">how to prepare for a group class</Link>. A first private sitting is in{" "}
+                <Link href="/blog-first-private-forex-lesson-dubai">your first private forex lesson</Link>. If the next question is where to put a stop once the candle is clear, the window is the{" "}
+                <Link href="/blog-mt5-order-ticket-dubai">MT5 order ticket</Link>, and the dirham amount is the{" "}
+                <Link href="/blog-risk-management">risk note</Link>.
+              </p>
+              <p>
+                Classes are in person in Dubai, UAE, and online across the UAE. Abu Dhabi students are on the same hour. The drive-or-screen choice is the{" "}
+                <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>. The tracks are on <Link href="/courses">forex trading courses</Link>. Send the symbol and the timeframe through <Link href="/contact">contact</Link>. More notes are on the <Link href="/blog">blog</Link>. The 5.0 Google listing is explained on the <Link href="/success-stories">reviews page</Link>. It is not a claim about a candle pattern.
+              </p>
+
               <h2>Next step</h2>
               <p>
                 Once candlestick reading feels comfortable, the natural next topic is market structure —
@@ -124,6 +152,13 @@ export default function BlogCandlestickPatternsPage() {
             </div>
           </div>
         </section>
+
+        <YouTubeSection
+          videos={[VIDEOS.metatrader]}
+          englishVideos={mt5English ? [mt5English] : []}
+          title="Open a chart in MetaTrader 5 first"
+          intro="The English lesson, from Equity Global English, shows how to use MetaTrader 5, which is the chart a candlestick lesson in Dubai starts from. The Malayalam tab is the Equity Global MT5 tutorial. The recordings are a platform preview, not a pattern list."
+        />
 
         <section className="tight soft">
           <div className="container">

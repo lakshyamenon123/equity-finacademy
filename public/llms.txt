@@ -43,4 +43,6 @@ Dubai, Abu Dhabi, Sharjah, and the United Arab Emirates. In person in Dubai. Onl
 - [First private forex lesson in Dubai](https://www.equityfinacademy.com/blog-first-private-forex-lesson-dubai): What to bring and ask in the first one-to-one hour.
 - [Evening group forex classes in Dubai](https://www.equityfinacademy.com/blog-evening-group-forex-classes-dubai): A shared hour after work on Gulf Standard Time.
 - [Forex classes in the northern emirates](https://www.equityfinacademy.com/blog-forex-classes-ajman-ras-al-khaimah): Ajman, Ras Al Khaimah, Fujairah, and Umm Al Quwain.
+- [Chart timeframes before a Dubai class](https://www.equityfinacademy.com/blog-forex-chart-timeframes-dubai): Which MetaTrader 5 button to open, and the sentence to bring.
+- [The MT5 order ticket](https://www.equityfinacademy.com/blog-mt5-order-ticket-dubai): Symbol, volume, stop loss, and take profit, before a live hour.
 - [Full brief for assistants](https://www.equityfinacademy.com/llms-full.txt): Longer factual summary.

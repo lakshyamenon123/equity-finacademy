@@ -436,6 +436,8 @@ export default function HomePage() {
         <section className="tight">
           <div className="container">
             <div className="topics-row reveal">
+              <Link href="/blog-forex-chart-timeframes-dubai" className="topic-chip">Chart timeframes for class</Link>
+              <Link href="/blog-mt5-order-ticket-dubai" className="topic-chip">MT5 order ticket</Link>
               <Link href="/forex-training-academy-dubai" className="topic-chip">forex academy Dubai</Link>
               <Link href="/courses" className="topic-chip">forex trading courses in Dubai</Link>
               <Link href="/forex-training-academy-uae" className="topic-chip">forex course UAE</Link>

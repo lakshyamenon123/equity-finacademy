@@ -126,11 +126,13 @@ export default function StartForexMt5Post() {
                 <li>
                   <strong>The chart</strong> is the candlesticks from the reading above. Change the timeframe from the
                   toolbar. A higher timeframe is calmer while you are learning structure. The class does not start you
-                  on a one-minute chart.
+                  on a one-minute chart. How to choose the button is in{" "}
+                  <Link href="/blog-forex-chart-timeframes-dubai">chart timeframes for a Dubai class</Link>.
                 </li>
                 <li>
                   <strong>New Order</strong> is the ticket: symbol, volume, and an optional stop loss and take profit.
-                  Volume is the size of the trade. If you cannot yet say how that size relates to the stop, leave the
+                  Volume is the size of the trade. The fields are named in{" "}
+                  <Link href="/blog-mt5-order-ticket-dubai">how to read the MT5 order ticket</Link>. If you cannot yet say how that size relates to the stop, leave the
                   ticket and read the <Link href="/blog-risk-management">risk guide</Link> before you send it.
                 </li>
                 <li>

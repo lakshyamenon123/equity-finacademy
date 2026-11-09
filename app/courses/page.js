@@ -91,7 +91,7 @@ export default function CoursesPage() {
               <Link href="/forex-academy-in-dubai">forex courses in Dubai</Link>.
             </p>
             <p style={{ maxWidth: "66ch" }}>
-              Choose the first hour before you ask for a price. A shared evening after a UAE workday is{" "}
+              Two notes help before you choose the hour. <Link href="/blog-forex-chart-timeframes-dubai">Which chart timeframe to open</Link> is the button to have ready. <Link href="/blog-mt5-order-ticket-dubai">The MT5 order ticket</Link> names the fields a live hour will point at. Choose the first hour before you ask for a price. A shared evening after a UAE workday is{" "}
               <Link href="/blog-evening-group-forex-classes-dubai">evening group classes on Gulf Standard Time</Link>. A private hour on your own chart is{" "}
               <Link href="/blog-first-private-forex-lesson-dubai">what to bring and ask in a first private lesson</Link>. The catalogue of notes is the <Link href="/blog">blog</Link>. Abu Dhabi students start with the{" "}
               <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>. The advanced vocabulary, after you can mark a swing, is{" "}

@@ -135,7 +135,8 @@ export default function ForexMarketHoursPost() {
               <h2>The time on a candle is often not UAE time</h2>
               <p>
                 MetaTrader 5 stamps each candle in the broker&apos;s server time. That server is often on a European
-                offset, not on Gulf Standard Time. Practical sessions at Equity Fin Academy use{" "}
+                offset, not on Gulf Standard Time. Which button you pressed, H1 or H4, is a separate choice, covered in{" "}
+                <Link href="/blog-forex-chart-timeframes-dubai">which chart timeframe to open before a class</Link>. Practical sessions at Equity Fin Academy use{" "}
                 <a href={STARTRADER_LIVE_URL} target="_blank" rel="sponsored noopener noreferrer">
                   StarTrader
                 </a>

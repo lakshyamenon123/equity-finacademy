@@ -1,11 +1,15 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AcademyLinks from "../components/AcademyLinks";
+import YouTubeSection from "../components/YouTubeSection";
 import Link from "next/link";
 import AuthorByline from "../components/AuthorByline";
 import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
+import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
+
+const mt5English = ENGLISH_VIDEOS.find((video) => video.id === "ssUPlUHnDLo");
 
 const headline = "What Is Market Structure in Forex? A Guide for UAE Traders";
 
@@ -23,6 +27,9 @@ const postSchema = articleSchema({
   headline,
   description: "Swing highs, swing lows, and how to tell a trend from a range.",
   path: "/blog-market-structure",
+  datePublished: "2026-07-25",
+  dateModified: "2026-11-09",
+  type: "BlogPosting",
 });
 
 export default function BlogMarketStructurePage() {
@@ -52,7 +59,7 @@ export default function BlogMarketStructurePage() {
             <div className="blog-article">
               <span className="eyebrow">MARKET STRUCTURE</span>
               <h1>What Is Market Structure in Forex? A Guide for UAE Traders</h1>
-              <AuthorByline detail="7 min read" />
+              <AuthorByline detail="Updated 9 Nov 2026 · 9 min read" />
 
               <p>
                 Market structure is how price organises itself over time — the pattern formed by a market&apos;s
@@ -103,11 +110,37 @@ export default function BlogMarketStructurePage() {
                 first, since individual candles are the building blocks that form these swing points.
               </p>
 
+              <h2>A three-swing drill on one symbol</h2>
+              <p>
+                Stay on one symbol and one timeframe. The one-hour chart is a calm place to start. Mark the last two swing highs and the last swing low you can defend without zooming in until the candles become stripes. Write which sequence you see: higher highs and higher lows, lower highs and lower lows, or a range that keeps returning to the same area. If you need a new high every three candles, you are marking noise. Step back to the four-hour chart and see which of those marks survive. That comparison is the drill in{" "}
+                <Link href="/blog-forex-chart-timeframes-dubai">which chart timeframe to open before a class</Link>.
+              </p>
+              <p>
+                A wrong swing is usually one of three things. You marked a wick that did not turn the move. You marked it on a candle that has not closed. Or you changed timeframe halfway through and kept the old labels. Fix the note before you ask for an advanced reading. The candles that build the swing are in{" "}
+                <Link href="/blog-candlestick-patterns">candlestick patterns</Link>. The areas that often sit on the swings are in{" "}
+                <Link href="/blog-support-and-resistance-forex">support and resistance</Link>.
+              </p>
+              <p>
+                Bring the marked chart to Dubai, or to an online class on Gulf Standard Time. A group cohort uses one shared structure so the room can agree on the last high. A private lesson can stay on the swing you got wrong. Preparation for the shared hour is in{" "}
+                <Link href="/blog-prepare-group-forex-class-dubai">how to prepare for a group class</Link>. The first private hour is in{" "}
+                <Link href="/blog-first-private-forex-lesson-dubai">what to bring and ask</Link>. Evening timing is in{" "}
+                <Link href="/blog-evening-group-forex-classes-dubai">evening group classes</Link>. Once the swing is obvious, the next vocabulary is{" "}
+                <Link href="/blog-smart-money-concepts">smart money concepts</Link>, not a smaller chart.
+              </p>
+              <p>
+                The classroom is in Dubai, UAE. Abu Dhabi students choose the screen or the drive on the{" "}
+                <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>. The two tracks are on <Link href="/courses">forex trading courses</Link>. Ask for a seat, and the fee in AED, through <Link href="/contact">contact</Link>. The rest of the notes are on the <Link href="/blog">blog</Link>. How to read the 5.0 Google listing, without treating it as a result on your chart, is on the{" "}
+                <Link href="/success-stories">reviews page</Link>.
+              </p>
+
               <h2>A word of caution</h2>
               <p>
                 Market structure tells you context, not certainty. No structural read guarantees where price goes
                 next — it narrows the probabilities and gives you a framework for risk management, which is why
                 structure and risk management are taught together, never in isolation.
+              </p>
+              <p>
+                After the drill, keep the note. The next class should be able to see the same highs you circled, on the same timeframe, without you redrawing them from memory. If the marks moved because you changed your mind overnight, write that down too. A changed mind is a better brief than a tidy chart you cannot explain. The dirham side of the same decision, once the swing is marked, stays in the risk note rather than inside the arrows.
               </p>
 
               <AcademyLinks lead="Structure is taught live at the" />
@@ -120,6 +153,13 @@ export default function BlogMarketStructurePage() {
             </div>
           </div>
         </section>
+
+        <YouTubeSection
+          videos={[VIDEOS.metatrader]}
+          englishVideos={mt5English ? [mt5English] : []}
+          title="Open the chart you will mark"
+          intro="The English lesson, from Equity Global English, shows MetaTrader 5, which is where you mark a swing before a class in Dubai. The Malayalam tab is the Equity Global MT5 tutorial. The recordings are a preview of the platform, not a structure lecture."
+        />
 
         <section className="tight soft">
           <div className="container">

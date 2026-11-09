@@ -1,11 +1,15 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import AcademyLinks from "../components/AcademyLinks";
+import YouTubeSection from "../components/YouTubeSection";
 import Link from "next/link";
 import AuthorByline from "../components/AuthorByline";
 import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
+import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
+
+const brokerEnglish = ENGLISH_VIDEOS.find((video) => video.id === "bC097etTQeI");
 
 const headline = "7 Common Mistakes Beginner Forex Traders Make in the UAE";
 
@@ -23,6 +27,9 @@ const postSchema = articleSchema({
   headline,
   description: "The most common mistakes beginner forex traders make, and how to avoid them.",
   path: "/blog-common-mistakes",
+  datePublished: "2026-07-25",
+  dateModified: "2026-11-09",
+  type: "BlogPosting",
 });
 
 export default function BlogCommonMistakesPage() {
@@ -52,7 +59,7 @@ export default function BlogCommonMistakesPage() {
             <div className="blog-article">
               <span className="eyebrow">BEGINNER MISTAKES</span>
               <h1>7 Common Mistakes Beginner Forex Traders Make in the UAE</h1>
-              <AuthorByline detail="7 min read" />
+              <AuthorByline detail="Updated 9 Nov 2026 · 9 min read" />
 
               <p>
                 Most beginner trading losses aren&apos;t caused by a single bad decision — they&apos;re caused by a handful of repeating patterns. The list below is the one we see from students in Dubai and from people studying online in Abu Dhabi, Sharjah, and the other emirates. Recognising them in your own trading is the fastest way to stop them.
@@ -88,6 +95,67 @@ export default function BlogCommonMistakesPage() {
                 <Link href="/blog-forex-trading-plan-uae">how to write a trading plan and journal</Link>.
               </p>
 
+              <h2>What to do with each mistake before a class</h2>
+              <p>
+                A list is useful when each line points at a page you can finish, and at a sentence you can send. Use this as the homework, not as a score.
+              </p>
+              <div className="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Mistake</th>
+                      <th>Do this before you book</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Size chosen by conviction</td>
+                      <td>Write the dirham amount, then read the <Link href="/blog-risk-management">risk note</Link> and the <Link href="/blog-mt5-order-ticket-dubai">order ticket</Link>.</td>
+                    </tr>
+                    <tr>
+                      <td>A rule you cannot explain</td>
+                      <td>Mark one swing on one timeframe. The drill is in <Link href="/blog-forex-chart-timeframes-dubai">chart timeframes</Link> and <Link href="/blog-market-structure">market structure</Link>.</td>
+                    </tr>
+                    <tr>
+                      <td>Live money on the first click</td>
+                      <td>Keep the ticket on a demo. The difference is in <Link href="/blog-demo-vs-live-mt5-uae">demo versus live</Link>.</td>
+                    </tr>
+                    <tr>
+                      <td>A larger size after a loss</td>
+                      <td>Close the platform and write the trade in the <Link href="/blog-forex-trading-plan-uae">journal</Link> before you open another ticket.</td>
+                    </tr>
+                    <tr>
+                      <td>Leverage you have not read</td>
+                      <td>Find the margin line first. The map is <Link href="/blog-forex-leverage-margin-mt5-uae">leverage and margin on MT5</Link>.</td>
+                    </tr>
+                    <tr>
+                      <td>A broker chosen from an advert</td>
+                      <td>Check the regulator yourself. Practical sessions at the academy use an SCA-regulated broker. The course fee stays separate.</td>
+                    </tr>
+                    <tr>
+                      <td>No record of the trade</td>
+                      <td>One line: symbol, timeframe, stop, and what you thought. Then stop for the day.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <h2>How this shows up in a Dubai class</h2>
+              <p>
+                Bring one of the seven, not all of them. “I sized the last demo trade from a feeling, and I want to redo it with a dirham amount” is a complete brief for a private hour. A group class will already have a topic for the sitting, so your mistake becomes the question you ask when that topic reaches risk or the ticket, not a request to redesign the cohort. What the shared hour expects is in{" "}
+                <Link href="/blog-prepare-group-forex-class-dubai">how to prepare for a group forex class</Link>. What a first private hour expects is in{" "}
+                <Link href="/blog-first-private-forex-lesson-dubai">your first private lesson</Link>. An evening seat after work is{" "}
+                <Link href="/blog-evening-group-forex-classes-dubai">evening group classes on Gulf Standard Time</Link>.
+              </p>
+              <p>
+                The classroom is in Dubai, UAE. Online study uses the same two tracks on Gulf Standard Time. Abu Dhabi students choose the screen or the drive on the{" "}
+                <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>. The topic order is on <Link href="/courses">forex trading courses</Link>. Send the mistake you want corrected, and your emirate, through <Link href="/contact">contact</Link>. The other notes are on the <Link href="/blog">blog</Link>.
+              </p>
+              <p>
+                If the chart language is the part you cannot explain, stay with candles and structure before the advanced names. The later drill is{" "}
+                <Link href="/blog-smart-money-concepts">smart money concepts</Link>. A 5.0 Google rating from 30+ reviews describes the academy. It does not mean these seven mistakes stop happening on their own. How to read the listing is on the <Link href="/success-stories">reviews page</Link>.
+              </p>
+
               <h2>The pattern behind all seven</h2>
               <p>
                 Every mistake on this list comes back to the same root cause: skipping structure and risk management
@@ -106,6 +174,13 @@ export default function BlogCommonMistakesPage() {
             </div>
           </div>
         </section>
+
+        <YouTubeSection
+          videos={[VIDEOS.whatIsForex]}
+          englishVideos={brokerEnglish ? [brokerEnglish] : []}
+          title="Questions to ask before you fund an account"
+          intro="The English lesson, from Equity Global English, covers questions to ask when choosing a forex broker in the UAE. The Malayalam tab is an Equity Global introduction to forex. Use them as a preview before a class in Dubai. They are not a substitute for the risk work on this page."
+        />
 
         <section className="tight soft">
           <div className="container">

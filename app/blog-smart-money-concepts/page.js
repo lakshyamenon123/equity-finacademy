@@ -28,7 +28,9 @@ const postSchema = articleSchema({
   headline,
   description,
   path: "/blog-smart-money-concepts",
-  dateModified: "2026-11-06",
+  datePublished: "2026-07-25",
+  dateModified: "2026-11-09",
+  type: "BlogPosting",
 });
 
 export default function BlogSmartMoneyConceptsPage() {
@@ -59,13 +61,13 @@ export default function BlogSmartMoneyConceptsPage() {
             <div className="blog-article">
               <span className="eyebrow">STRATEGY</span>
               <h1>Smart Money Concepts for Beginners in Dubai: One Markup Drill</h1>
-              <AuthorByline detail="Updated 6 Nov 2026 · 11 min read" />
+              <AuthorByline detail="Updated 9 Nov 2026 · 11 min read" />
 
               <p>
                 Smart money concepts (SMC) is a way of reading a forex chart for liquidity and for a fast move that left a gap, after you can already point at a swing high and a swing low. This page is one markup drill for a beginner in Dubai, or online anywhere in the UAE, on Gulf Standard Time. It names five ideas, shows one shape, and lists five questions to take into the live class. It does not replace market structure, and it does not sit in front of the beginner hours.
               </p>
               <p>
-                The live class is taught in Dubai and online across the UAE after the structure lessons are already in place. If you cannot mark the last two swing highs, stop here and read <Link href="/blog-market-structure">market structure</Link> first. The enrolment page, once the drill makes sense, is the <Link href="/smc-ict-trading-course-dubai">SMC and ICT course</Link>. The topic order for both tracks is on <Link href="/courses">courses</Link>.
+                The live class is taught in Dubai and online across the UAE after the structure lessons are already in place. If you cannot mark the last two swing highs, stop here and read <Link href="/blog-market-structure">market structure</Link> first. Do that on one button, which is explained in <Link href="/blog-forex-chart-timeframes-dubai">which chart timeframe to open before a class</Link>. The enrolment page, once the drill makes sense, is the <Link href="/smc-ict-trading-course-dubai">SMC and ICT course</Link>. The topic order for both tracks is on <Link href="/courses">courses</Link>. Abu Dhabi readers comparing the drive and the screen should use the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>. The message itself is <Link href="/contact">contact</Link>. The catalogue is the <Link href="/blog">blog</Link>.
               </p>
 
               <h2>Why &quot;smart money&quot;?</h2>
