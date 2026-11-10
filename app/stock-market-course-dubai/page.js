@@ -17,7 +17,7 @@ const whatsapp = whatsappHref("Hi, I'm interested in the stock market course in 
 export const metadata = pageMetadata({
   title: "Stock Market Course in Dubai | Equity Fin Academy",
   description:
-    "Stock market course in Dubai and stock trading course in Dubai. Practise stocks, indices, and gold on MT5 alongside forex, in person or online across the UAE.",
+    "Stock market course in Dubai for a stock trading class nearby. Practise shares, indices, and gold on MT5 in a live class, in Dubai, UAE, or online across the UAE.",
   keywords:
     "stock market course dubai, stock trading course dubai, stock market classes Dubai, learn stocks Dubai, gold trading course Dubai, indices trading course UAE, MT5 stock trading Dubai",
   path,

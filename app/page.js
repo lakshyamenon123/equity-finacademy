@@ -15,7 +15,7 @@ import { VIDEOS } from "./lib/videos";
 export const metadata = pageMetadata({
   title: "Forex Training Academy in Dubai, UAE | Equity Fin Academy",
   description:
-    "Forex training academy in Dubai for private lessons and group classes. Forex and investing classes across the UAE. Rated 5.0 on Google. Open 24/7.",
+    "Forex training academy in Dubai for private one-to-one lessons and group classes. Investing classes near you, sorted into forex, stocks, and gold. Rated 5.0 on Google. Open 24/7.",
   keywords:
     "forex training academy Dubai, forex training academy UAE, forex trading courses in Dubai, forex courses in Dubai, investing classes near me Dubai, dubai trading courses, forex education UAE",
   path: "/",
@@ -362,7 +362,16 @@ export default function HomePage() {
                 <Link href="/blog-investing-classes-near-me-dubai">Investing classes near me in Dubai</Link> sorts a map search into forex, stocks, and gold.
               </li>
               <li>
+                <Link href="/blog-personal-finance-classes-near-me-dubai">Personal finance classes near me in Dubai</Link> is the budget-class search. A chart class is a different room.
+              </li>
+              <li>
                 <Link href="/blog-forex-classes-near-me-dubai">Forex classes near me in Dubai</Link> is the visit checklist once you know you want forex.
+              </li>
+              <li>
+                <Link href="/blog-private-and-group-forex-classes-dubai">Private and group classes used together</Link> is a month that includes both. <Link href="/blog-private-vs-group-forex-classes-dubai">Private versus group</Link> is the choice between them.
+              </li>
+              <li>
+                <Link href="/blog-currency-pairs-uae">Currency pairs</Link>, <Link href="/blog-forex-leverage-margin-mt5-uae">leverage and margin on MT5</Link>, and <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link> are the notes to read before the first ticket.
               </li>
               <li>
                 <Link href="/private-group-forex-training-dubai">Private and group classes</Link> compares a one-to-one hour with a cohort.
@@ -469,6 +478,10 @@ export default function HomePage() {
               <Link href="/success-stories" className="topic-chip">Google reviews</Link>
               <Link href="/gopi-chandran" className="topic-chip">Gopi Chandran</Link>
               <Link href="/contact" className="topic-chip">Book a class in Dubai</Link>
+              <Link href="/blog-personal-finance-classes-near-me-dubai" className="topic-chip">Personal finance classes near me</Link>
+              <Link href="/blog-private-and-group-forex-classes-dubai" className="topic-chip">Private and group classes together</Link>
+              <Link href="/blog-forex-leverage-margin-mt5-uae" className="topic-chip">Leverage and margin on MT5</Link>
+              <Link href="/blog-investing-classes-near-me-dubai" className="topic-chip">Investing classes near me</Link>
               <Link href="/blog-gold-xauusd-course-dubai" className="topic-chip">Gold (XAUUSD) course</Link>
               <Link href="/blog-group-forex-classes-friends-dubai" className="topic-chip">Group classes for friends</Link>
               <Link href="/blog-forex-spreads-swaps-pip-value-uae" className="topic-chip">Spreads, swaps, and pip value</Link>

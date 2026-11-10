@@ -12,10 +12,10 @@ import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 const path = "/forex-academy-in-dubai";
 const pageTitle = "Forex Courses in Dubai";
 const pageDescription =
-  "Forex courses and trading classes in Dubai, UAE. Private one-to-one lessons or a group class, in the room or online. Rated 5.0 from 30+ Google reviews.";
+  "Forex course in Dubai with a private one-to-one lesson or a group class. Live trading in the room or online across the UAE. Rated 5.0 on Google from 30+ reviews.";
 
 export const metadata = pageMetadata({
-  title: `${pageTitle} | Training Academy | Equity Fin`,
+  title: "Forex Course in Dubai | Equity Fin Academy",
   description: pageDescription,
   keywords:
     "forex course Dubai, forex courses in Dubai, forex training academy Dubai, trading classes in Dubai, forex classes near me Dubai, forex academy in Dubai",

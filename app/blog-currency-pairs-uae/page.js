@@ -32,6 +32,7 @@ const postSchema = articleSchema({
   description,
   path,
   datePublished: "2026-10-30",
+  dateModified: "2026-11-10",
 });
 
 export default function CurrencyPairsUaePost() {
@@ -124,6 +125,47 @@ export default function CurrencyPairsUaePost() {
                 tour, and the hour ends before anyone has corrected a level. If you already watch one of these at
                 work or on a phone, bring that one. The preparation note is{" "}
                 <Link href="/blog-one-to-one-forex-classes-dubai">how to prepare for a one-to-one class</Link>.
+              </p>
+
+              <h2>What to type in Market Watch</h2>
+              <p>
+                MetaTrader 5 does not show the slash. You type the two codes together. Say the base and the quote out loud once, then type the symbol the platform lists. If the symbol is missing, it is not on that broker&apos;s list. Do not invent a spelling.
+              </p>
+              <div className="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>You say</th>
+                      <th>You type</th>
+                      <th>Base, then quote</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Euro-dollar</td>
+                      <td>EURUSD</td>
+                      <td>Euro priced in US dollars</td>
+                    </tr>
+                    <tr>
+                      <td>Pound-dollar</td>
+                      <td>GBPUSD</td>
+                      <td>Pound priced in US dollars</td>
+                    </tr>
+                    <tr>
+                      <td>Dollar-yen</td>
+                      <td>USDJPY</td>
+                      <td>Dollar priced in yen. One pip is 0.01</td>
+                    </tr>
+                    <tr>
+                      <td>Gold</td>
+                      <td>XAUUSD</td>
+                      <td>One troy ounce priced in US dollars. Not a currency pair</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>
+                The cash that symbol would set aside for a small volume is a different screen. Read it in <Link href="/blog-forex-leverage-margin-mt5-uae">leverage and margin on MT5</Link> after the name is clear. The install, if Market Watch is not open yet, is <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>.
               </p>
 
               <h2>Why the dirham makes the dollar familiar</h2>

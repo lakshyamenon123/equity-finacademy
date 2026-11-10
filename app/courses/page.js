@@ -13,7 +13,7 @@ import { STARTRADER_LIVE_URL } from "../lib/whatsapp";
 
 const coursesTitle = "Forex Trading Courses in Dubai";
 const coursesDescription =
-  "Forex trading courses in Dubai: a group class or a private lesson, in the room or online across the UAE. Two live tracks. Fees quoted in AED.";
+  "Forex trading courses in Dubai: two live tracks, as a group class or a private one-to-one lesson, in the room or online across the UAE. Fees quoted in AED.";
 
 export const metadata = pageMetadata({
   title: `${coursesTitle} | Equity Fin Academy`,
@@ -85,7 +85,7 @@ export default function CoursesPage() {
               <Link href="/blog-investing-classes-near-me-dubai">investing classes near me in Dubai</Link>.
             </p>
             <p style={{ maxWidth: "66ch" }}>
-              If you searched for forex trading courses in Dubai, or a forex course in Dubai, this page is the topic order. The first month in the city is{" "}
+              If you searched for forex trading courses in Dubai, or a forex trading course in Dubai, this page is the topic order. Read <Link href="/blog-currency-pairs-uae">how a pair is quoted</Link>, <Link href="/blog-forex-leverage-margin-mt5-uae">leverage and margin on MT5</Link>, and <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link> before the first ticket. A month that books a private hour and a group seat is <Link href="/blog-private-and-group-forex-classes-dubai">how to use both</Link>. The choice between them is <Link href="/blog-private-vs-group-forex-classes-dubai">private versus group</Link>. The first month in the city is{" "}
               <Link href="/blog-how-to-start-forex-trading-dubai">how to start forex trading in Dubai</Link>. What the fee includes, still without a printed price, is on{" "}
               <Link href="/pricing">pricing</Link>. The city page is{" "}
               <Link href="/forex-academy-in-dubai">forex courses in Dubai</Link>.

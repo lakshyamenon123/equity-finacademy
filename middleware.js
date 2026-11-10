@@ -36,6 +36,23 @@ const LEGACY = {
 export function middleware(request) {
   const { pathname, search } = request.nextUrl;
   const stripped = pathname.length > 1 && pathname.endsWith("/") ? pathname.slice(0, -1) : pathname;
+
+  // /contact?course=... was an old enquiry link. The form ignores it, so it is
+  // the same document as /contact. Send one 301 to the canonical URL and drop
+  // the parameter. Do not forward it, or the redirect loops. Other query
+  // parameters on the same request are kept.
+  if (stripped === "/contact" && request.nextUrl.searchParams.has("course")) {
+    const url = new URL("/contact", CANONICAL_ORIGIN);
+    const params = new URLSearchParams(request.nextUrl.searchParams);
+    params.delete("course");
+    const rest = params.toString();
+    if (rest) url.search = rest;
+    const location = url.toString();
+    const response = NextResponse.redirect(location, 301);
+    response.headers.set("Location", location);
+    return response;
+  }
+
   const destination = LEGACY[stripped];
   const target = destination || (stripped !== pathname ? stripped : null);
   if (!target) return NextResponse.next();

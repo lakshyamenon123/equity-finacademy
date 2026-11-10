@@ -29,6 +29,7 @@ const postSchema = articleSchema({
     "A step-by-step way to start forex trading in the UAE: learn the basics, install MetaTrader 5, and open a StarTrader account.",
   path,
   datePublished: "2026-10-24",
+  dateModified: "2026-11-10",
 });
 
 export default function StartForexMt5Post() {
@@ -69,7 +70,7 @@ export default function StartForexMt5Post() {
 
               <h2>Learn the words before you fund an account</h2>
               <p>
-                You can study before you deposit. A{" "}
+                You can study before you deposit. The quote itself is <Link href="/blog-currency-pairs-uae">currency pairs for learners in the UAE</Link>. The cash a ticket sets aside is <Link href="/blog-forex-leverage-margin-mt5-uae">leverage and margin on MT5</Link>. A{" "}
                 <Link href="/blog-forex-course-dubai-beginners">beginner forex course in Dubai</Link> covers pairs,
                 pips, lots, candlesticks, market structure, and risk, in that order. Read{" "}
                 <Link href="/blog-candlestick-patterns">how a candle is built</Link>, then{" "}

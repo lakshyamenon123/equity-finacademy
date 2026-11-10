@@ -109,6 +109,8 @@ export default function Footer() {
               <Link href="/blog-how-to-start-forex-trading-dubai">Start Forex Trading in Dubai</Link>
               <Link href="/blog-stock-market-course-dubai-first-weeks">Stock Course: First Weeks</Link>
               <Link href="/blog-investing-classes-near-me-dubai">Investing Classes Near Me</Link>
+              <Link href="/blog-personal-finance-classes-near-me-dubai">Personal Finance Classes Near Me</Link>
+              <Link href="/blog-private-and-group-forex-classes-dubai">Private and Group Classes Together</Link>
               <Link href="/blog-forex-leverage-margin-mt5-uae">Leverage and Margin on MT5</Link>
               <Link href="/blog-forex-spreads-swaps-pip-value-uae">Spreads, Swaps, and Pip Value</Link>
               <Link href="/blog-prepare-group-forex-class-dubai">Prepare for a Group Class</Link>

@@ -20,6 +20,34 @@ export const metadata = pageMetadata({
 
 const posts = [
   {
+    href: "/blog-personal-finance-classes-near-me-dubai",
+    icon: (
+      <>
+        <path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z" />
+        <circle cx="12" cy="10" r="2.2" />
+      </>
+    ),
+    cat: "Classes Near Me",
+    title: "Personal Finance Classes Near Me in Dubai: Budget Class or Market Class?",
+    desc: "A budget hour and a chart hour show up in the same search. Here is how to tell them apart before you travel.",
+    time: "9 min read",
+  },
+  {
+    href: "/blog-private-and-group-forex-classes-dubai",
+    icon: (
+      <>
+        <circle cx="8" cy="9" r="2" />
+        <circle cx="16" cy="9" r="2" />
+        <path d="M4 18c.7-2.4 2.2-3.5 4-3.5s3.3 1.1 4 3.5" />
+        <path d="M12 18c.7-2.4 2.2-3.5 4-3.5s3.3 1.1 4 3.5" />
+      </>
+    ),
+    cat: "Private and Group",
+    title: "Private One-to-One and Group Forex Classes in Dubai: How to Use Both",
+    desc: "What the group hour is for, what the private hour is for, and how to book both in the same month.",
+    time: "9 min read",
+  },
+  {
     href: "/blog-forex-chart-timeframes-dubai",
     icon: (
       <>
@@ -480,7 +508,7 @@ const blogFaq = [
   },
   {
     q: "I searched for investing classes near me. Which note is that?",
-    text: "Use Investing Classes Near Me in Dubai. It sorts a map result into forex, stocks, and gold. The forex visit checklist is a separate article, Forex Classes Near Me in Dubai.",
+    text: "Use Investing Classes Near Me in Dubai. It sorts a map result into forex, stocks, and gold. The forex visit checklist is Forex Classes Near Me in Dubai. A search for personal finance classes near me is a third note, because that search is usually a budget class rather than a chart class.",
   },
 ];
 
@@ -534,7 +562,7 @@ export default function BlogIndexPage() {
               New to charts, and already in Dubai: <Link href="/blog-how-to-start-forex-trading-dubai">how to start forex trading in Dubai</Link> is the first month. The install steps stay in <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>. Which button to press on that chart is <Link href="/blog-forex-chart-timeframes-dubai">which timeframe to open before a class</Link>. The window you will be asked to read is <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>. A stock or an index, rather than a currency pair, starts with <Link href="/blog-stock-market-course-dubai-first-weeks">the first weeks of a stock market course in Dubai</Link>. Then <Link href="/blog-currency-pairs-uae">how a pair is quoted</Link>, then <Link href="/blog-candlestick-patterns">candlesticks</Link>, then <Link href="/blog-market-structure">market structure</Link>. About to fund an account: <Link href="/blog-demo-vs-live-mt5-uae">demo versus live on MT5</Link>, then <Link href="/blog-forex-leverage-margin-mt5-uae">leverage and margin</Link>, then <Link href="/blog-forex-spreads-swaps-pip-value-uae">what a pip is worth</Link>. The advanced vocabulary, after you can point at a swing, is <Link href="/blog-smart-money-concepts">smart money concepts</Link>.
             </p>
             <p>
-              A map search has two notes. <Link href="/blog-investing-classes-near-me-dubai">Investing classes near me in Dubai</Link> sorts forex, stocks, and gold. <Link href="/blog-forex-classes-near-me-dubai">Forex classes near me in Dubai</Link> is the visit checklist once you already know you want forex. Ajman, Ras Al Khaimah, Fujairah, and Umm Al Quwain are in <Link href="/blog-forex-classes-ajman-ras-al-khaimah">forex classes in the northern emirates</Link>. What the booked hour contains is <Link href="/blog-live-forex-trading-session-dubai">a live forex session in Dubai</Link>. What to study before either booking is <Link href="/blog-forex-education-uae">forex education in the UAE</Link>. A day job changes the hour, which is <Link href="/blog-forex-classes-working-professionals-dubai">classes for working professionals</Link>. The shared hour after that job is <Link href="/blog-evening-group-forex-classes-dubai">evening group classes on Gulf Standard Time</Link>. The first one-to-one sitting is <Link href="/blog-first-private-forex-lesson-dubai">what to bring and ask in a first private lesson</Link>.
+              A map search has three notes. <Link href="/blog-investing-classes-near-me-dubai">Investing classes near me in Dubai</Link> sorts forex, stocks, and gold. <Link href="/blog-personal-finance-classes-near-me-dubai">Personal finance classes near me in Dubai</Link> is the budget-class search. <Link href="/blog-forex-classes-near-me-dubai">Forex classes near me in Dubai</Link> is the visit checklist once you already know you want forex. <Link href="/blog-private-and-group-forex-classes-dubai">Using a private hour and a group class in the same month</Link> is the split of work if you want both. The choice between them stays in <Link href="/blog-private-vs-group-forex-classes-dubai">private versus group</Link>. <Link href="/blog-currency-pairs-uae">Currency pairs</Link>, <Link href="/blog-forex-leverage-margin-mt5-uae">leverage and margin</Link>, and <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link> are the notes before the first ticket. Ajman, Ras Al Khaimah, Fujairah, and Umm Al Quwain are in <Link href="/blog-forex-classes-ajman-ras-al-khaimah">forex classes in the northern emirates</Link>. What the booked hour contains is <Link href="/blog-live-forex-trading-session-dubai">a live forex session in Dubai</Link>. What to study before either booking is <Link href="/blog-forex-education-uae">forex education in the UAE</Link>. A day job changes the hour, which is <Link href="/blog-forex-classes-working-professionals-dubai">classes for working professionals</Link>. The shared hour after that job is <Link href="/blog-evening-group-forex-classes-dubai">evening group classes on Gulf Standard Time</Link>. The first one-to-one sitting is <Link href="/blog-first-private-forex-lesson-dubai">what to bring and ask in a first private lesson</Link>.
             </p>
             <h2>Which note answers which question</h2>
             <p>
@@ -549,6 +577,18 @@ export default function BlogIndexPage() {
                   </tr>
                 </thead>
                 <tbody>
+                  <tr>
+                    <td>Personal finance classes near me, or a budget class versus a chart class</td>
+                    <td><Link href="/blog-personal-finance-classes-near-me-dubai">Personal finance classes near me in Dubai</Link></td>
+                  </tr>
+                  <tr>
+                    <td>A private hour and a group class in the same month</td>
+                    <td><Link href="/blog-private-and-group-forex-classes-dubai">How to use both formats</Link></td>
+                  </tr>
+                  <tr>
+                    <td>Margin, free margin, and the leverage ratio on MT5</td>
+                    <td><Link href="/blog-forex-leverage-margin-mt5-uae">Leverage and margin</Link></td>
+                  </tr>
                   <tr>
                     <td>Which chart button to have open before the hour</td>
                     <td><Link href="/blog-forex-chart-timeframes-dubai">Chart timeframes for a Dubai class</Link></td>

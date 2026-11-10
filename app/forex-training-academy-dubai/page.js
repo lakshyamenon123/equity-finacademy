@@ -124,7 +124,11 @@ export default function ForexTrainingAcademyDubaiPage() {
             </p>
             <p>
               If you are unsure whether you want the private room, read{" "}
-              <Link href="/private-group-forex-training-dubai">private versus group classes</Link> before you message. Say which format you want in the first WhatsApp. It saves a round of questions.
+              <Link href="/private-group-forex-training-dubai">private versus group classes</Link> and the note on{" "}
+              <Link href="/blog-private-vs-group-forex-classes-dubai">which format fits</Link> before you message. A month that uses both is{" "}
+              <Link href="/blog-private-and-group-forex-classes-dubai">how to book a private hour and a group class together</Link>. The quote, if the symbol is the gap, is{" "}
+              <Link href="/blog-currency-pairs-uae">currency pairs</Link>. The margin line is{" "}
+              <Link href="/blog-forex-leverage-margin-mt5-uae">leverage and margin on MT5</Link>. Say which format you want in the first WhatsApp. It saves a round of questions.
             </p>
 
             <h2>Group classes</h2>
