@@ -234,6 +234,19 @@ export default function ContactPage() {
               WhatsApp is the fastest path: <a href="https://wa.me/971559047030" target="_blank" rel="noopener noreferrer">wa.me/971559047030</a>. You can also call <a href="tel:+971559047030">{SITE.telephoneDisplay}</a> or use the form above. The chat button on this site opens the same enquiry.
             </p>
 
+            <h2>Notes to read before the form</h2>
+            <p>
+              The form is the message. These notes are the reading that makes the message specific. They are linked here so the pages are not left without a route from this one.
+            </p>
+            <ul className="guide-list">
+              <li><Link href="/blog-currency-pairs-uae">Currency pairs</Link> if the symbol name is still unclear.</li>
+              <li><Link href="/blog-forex-leverage-margin-mt5-uae">Leverage and margin on MT5</Link> if you want the margin line checked in class.</li>
+              <li><Link href="/blog-start-forex-trading-uae-mt5">How to start with MT5</Link> if the platform is not installed yet.</li>
+              <li><Link href="/blog-private-vs-group-forex-classes-dubai">Private versus group</Link> if you have not chosen a room, and <Link href="/blog-private-and-group-forex-classes-dubai">how to use both</Link> if you want both in one month.</li>
+              <li><Link href="/blog-investing-classes-near-me-dubai">Investing classes near me</Link> and <Link href="/blog-personal-finance-classes-near-me-dubai">personal finance classes near me</Link> if the search that brought you here was a map.</li>
+              <li><Link href="/terms">Terms</Link> and the <Link href="/privacy">privacy page</Link> if you want to know what the lesson is, and what the form stores, before you send a number.</li>
+            </ul>
+
             <h2>What the reply contains</h2>
             <p>
               A useful reply names the track, the format, the next time that fits Gulf Standard Time, and the fee in AED. It does not include a trade to copy, and it does not ask for a broker password. If your message says only &quot;price&quot; or only &quot;classes near me&quot;, the academy will ask the missing pieces before it quotes. You can save that round by sending them first.

@@ -14,9 +14,9 @@ const path = "/blog-private-vs-group-forex-classes-dubai";
 const headline = "Private vs Group Forex Classes in Dubai";
 
 export const metadata = pageMetadata({
-  title: "Private vs Group Forex Classes | Equity Fin Academy",
+  title: "Private vs Group Forex Classes in Dubai | Equity Fin Academy",
   description:
-    "Private one-to-one forex coaching and group classes in Dubai suit different people. See which format fits your pace, questions, and work week.",
+    "Private one-to-one forex classes and group classes in Dubai suit different weeks. See which room fits, and when to book both.",
   keywords:
     "private forex training Dubai, one to one forex classes, group forex classes Dubai, personal forex coaching UAE, forex classes for working professionals Dubai",
   path,
@@ -29,6 +29,7 @@ const postSchema = articleSchema({
     "How to choose between a private one-to-one forex lesson and a group class in Dubai, based on pace, questions, and a working week.",
   path,
   datePublished: "2026-10-24",
+  dateModified: "2026-11-10",
 });
 
 export default function PrivateVsGroupPost() {
@@ -116,6 +117,11 @@ export default function PrivateVsGroupPost() {
                 whenever you like. Between sessions,{" "}
                 <Link href="/online-forex-course-uae">online study across the UAE</Link> and the Equity Global channel
                 are preparation. They are not the live lesson.
+              </p>
+
+              <h2>Booking both is a third choice</h2>
+              <p>
+                The list below is for people who want one room. If you want the shared syllabus and one hour on your own chart in the same month, that split of work is <Link href="/blog-private-and-group-forex-classes-dubai">how to use a private one-to-one class and a group class together</Link>. The private hour is not a replay of the group you missed. Say which job belongs in which room when you enquire, and ask for both fees in AED.
               </p>
 
               <h2>A plain way to choose</h2>

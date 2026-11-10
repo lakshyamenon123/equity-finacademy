@@ -31,6 +31,7 @@ const postSchema = articleSchema({
   description,
   path,
   datePublished: "2026-11-03",
+  dateModified: "2026-11-10",
 });
 
 export default function ForexLeverageMarginPost() {
@@ -89,6 +90,11 @@ export default function ForexLeverageMarginPost() {
               </p>
               <p>
                 A higher ratio sets aside less cash for the same position. It also means a small move is a larger percentage of the cash you did set aside. Beginners in the UAE often meet leverage as a badge on a broker page. In class it is treated as a size decision. The <Link href="/blog-common-mistakes">common mistakes note</Link> names oversized leverage as one of the patterns that drain new accounts.
+              </p>
+
+              <h2>Three words the terminal uses for the same cash</h2>
+              <p>
+                Margin is the cash set aside for the positions that are already open. Free margin is what is left for a new position. Margin level is the equity divided by the margin, shown as a percentage. A class in Dubai goes faster when those three are not treated as one number. If free margin is the line you cannot find, that is the question to bring. It is not a reason to raise the account leverage. The pair name on that same screen is in <Link href="/blog-currency-pairs-uae">currency pairs</Link>.
               </p>
 
               <h2>What to have open before a class in Dubai</h2>
