@@ -362,7 +362,10 @@ export default function HomePage() {
                 <Link href="/blog-investing-classes-near-me-dubai">Investing classes near me in Dubai</Link> sorts a map search into forex, stocks, and gold.
               </li>
               <li>
-                <Link href="/blog-personal-finance-classes-near-me-dubai">Personal finance classes near me in Dubai</Link> is the budget-class search. A chart class is a different room.
+                <Link href="/blog-stock-trading-classes-near-me-dubai">Stock trading classes near me in Dubai</Link> is the share, the index, or gold. <Link href="/stock-market-course-dubai">The stock market course</Link> is the same work written as a course page.
+              </li>
+              <li>
+                <Link href="/blog-personal-finance-classes-near-me-dubai">Personal finance classes near me in Dubai</Link> covers the budget, budgeting, and retirement searches. A chart class is a different room.
               </li>
               <li>
                 <Link href="/blog-forex-classes-near-me-dubai">Forex classes near me in Dubai</Link> is the visit checklist once you know you want forex.
@@ -386,7 +389,10 @@ export default function HomePage() {
                 <Link href="/blog-first-private-forex-lesson-dubai">A first private lesson in Dubai</Link> is what to bring and what to ask. <Link href="/blog-evening-group-forex-classes-dubai">Evening group classes</Link> are the shared hour after work on Gulf Standard Time.
               </li>
               <li>
-                <Link href="/why-choose-us">The enrolment checklist</Link>, the <Link href="/success-stories">Google reviews guide</Link>, and <Link href="/contact">contact</Link> are the steps after the reading. The school pages are <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link> and <Link href="/forex-training-academy-uae">forex training academy UAE</Link>.
+                <Link href="/blog-mt5-order-ticket-dubai">The MT5 order ticket</Link> is the window a live hour will point at. <Link href="/blog-choose-forex-mentor-dubai">Choosing a forex mentor in Dubai</Link> is the question about the teacher.
+              </li>
+              <li>
+                <Link href="/why-choose-us">The enrolment checklist</Link>, the <Link href="/success-stories">Google reviews guide</Link>, and <Link href="/contact">contact</Link> are the steps after the reading. The booking rules are on the <Link href="/terms">terms page</Link>. How an enquiry is stored is on the <Link href="/privacy">privacy page</Link>. The school pages are <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link> and <Link href="/forex-training-academy-uae">forex training academy UAE</Link>.
               </li>
             </ul>
           </div>
@@ -445,6 +451,8 @@ export default function HomePage() {
         <section className="tight">
           <div className="container">
             <div className="topics-row reveal">
+              <Link href="/blog-stock-trading-classes-near-me-dubai" className="topic-chip">Stock trading classes near me</Link>
+              <Link href="/blog-choose-forex-mentor-dubai" className="topic-chip">Choose a forex mentor</Link>
               <Link href="/blog-forex-chart-timeframes-dubai" className="topic-chip">Chart timeframes for class</Link>
               <Link href="/blog-mt5-order-ticket-dubai" className="topic-chip">MT5 order ticket</Link>
               <Link href="/forex-training-academy-dubai" className="topic-chip">forex academy Dubai</Link>

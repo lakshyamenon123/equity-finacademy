@@ -17,7 +17,7 @@ const whatsapp = whatsappHref("Hi, I'm interested in the stock market course in 
 export const metadata = pageMetadata({
   title: "Stock Market Course in Dubai | Equity Fin Academy",
   description:
-    "Stock market course in Dubai for a stock trading class nearby. Practise shares, indices, and gold on MT5 in a live class, in Dubai, UAE, or online across the UAE.",
+    "Stock market course in Dubai for shares, indices, and gold on MT5. Live group or private classes in Dubai, UAE, or online across the UAE.",
   keywords:
     "stock market course dubai, stock trading course dubai, stock market classes Dubai, learn stocks Dubai, gold trading course Dubai, indices trading course UAE, MT5 stock trading Dubai",
   path,
@@ -70,7 +70,8 @@ export default function StockMarketCourseDubaiPage() {
               Stock Market Course in Dubai
             </h1>
             <p className="hero-sub" style={{ marginTop: 18, maxWidth: "68ch" }}>
-              A stock market course in Dubai should name the chart you will mark and the person who will correct it. Equity Fin Academy teaches that chart work in person in Dubai and online across the UAE. A stock trading course in Dubai here means stocks, indices, and gold on MetaTrader 5, alongside forex, with live trading sessions. The first weeks of study, before you enquire, are written in{" "}
+              A stock market course in Dubai should name the chart you will mark and the person who will correct it. Equity Fin Academy teaches that chart work in person in Dubai, UAE, and online across the UAE. Stocks, indices, and gold are marked on MetaTrader 5, alongside forex, in a live group class or a private lesson. If the search was stock trading classes nearby, the longer note is{" "}
+              <Link href="/blog-stock-trading-classes-near-me-dubai">stock trading classes near me in Dubai</Link>. The first weeks of study, before you enquire, are in{" "}
               <Link href="/blog-stock-market-course-dubai-first-weeks">what a stock market course in Dubai should cover first</Link>.
             </p>
             <div className="topics-row" style={{ marginTop: 22 }}>

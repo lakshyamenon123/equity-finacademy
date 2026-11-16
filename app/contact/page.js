@@ -10,12 +10,12 @@ import { breadcrumbSchema, faqPageSchema, webPageSchema } from "../lib/schema";
 import { absoluteUrl, SITE } from "../lib/site";
 import { whatsappHref } from "../lib/whatsapp";
 
-const contactTitle = "Book a Forex Class in Dubai, UAE";
+const contactTitle = "Contact Equity Fin Academy in Dubai";
 const contactDescription =
-  "Contact Equity Fin Academy in Dubai, UAE. WhatsApp +971 55 904 7030. Say your emirate, group or private, and whether you will study in Dubai or online.";
+  "Contact Equity Fin Academy in Dubai, UAE. WhatsApp +971 55 904 7030. Send your emirate, group or private, the track, and the hours you can keep.";
 
 export const metadata = pageMetadata({
-  title: `${contactTitle} | Equity Fin Academy`,
+  title: "Contact Equity Fin Academy in Dubai | WhatsApp Enquiry",
   description: contactDescription,
   keywords:
     "contact forex academy Dubai, forex classes Dubai phone, book forex course UAE, forex trading classes Dubai WhatsApp, Equity Fin Academy United Arab Emirates",
@@ -82,14 +82,14 @@ export default function ContactPage() {
               <span className="current">Contact Us</span>
             </nav>
             <span className="eyebrow">CONTACT</span>
-            <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,2.8rem)", maxWidth: "20ch" }}>
-              Book a forex class in Dubai, United Arab Emirates.
+            <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,2.8rem)", maxWidth: "18ch" }}>
+              Contact Equity Fin Academy before you travel.
             </h1>
             <p style={{ maxWidth: "66ch", marginTop: 18 }}>
-              This page is the message. Equity Fin Academy teaches in person in Dubai, UAE, and online across the UAE on Gulf Standard Time. A useful enquiry names your emirate, a group class or a private lesson, the track, and the hours you can keep. The reply quotes the next time and the fee in AED. WhatsApp and the phone are +971 55 904 7030.
+              This page is the enquiry desk. It is not the syllabus, and it is not the enrolment worksheet. The topic order stays on <Link href="/courses">forex trading courses in Dubai</Link>. The six checks before you pay stay on <Link href="/why-choose-us">the enrolment checklist</Link>. Write here when you already know the seat you want, or when you want the academy to ask the missing piece. Classes are in person in Dubai, UAE, and online across the UAE on Gulf Standard Time. WhatsApp and the phone are +971 55 904 7030.
             </p>
             <p style={{ maxWidth: "66ch" }}>
-              If the chart is the part you want ready, read <Link href="/blog-forex-chart-timeframes-dubai">which timeframe to open</Link> and <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link> before you write. If you have not chosen a track, open <Link href="/courses">forex trading courses</Link> first. If you want a note before you write, start at the <Link href="/blog">blog</Link>: a first private hour is <Link href="/blog-first-private-forex-lesson-dubai">what to bring and ask</Link>, and a shared evening is <Link href="/blog-evening-group-forex-classes-dubai">evening group classes</Link>. Abu Dhabi students should read the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> before they assume the drive is required. Google comments stay on Google. The <Link href="/success-stories">reviews page</Link> explains how to read the 5.0 listing.
+              A reply can name a time and a fee in AED when the message has four facts: your emirate, a group class or a private lesson, the track, and the hours you can keep. If the chart should be ready first, read <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link> and <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>. If you have not chosen the room, read <Link href="/blog-private-vs-group-forex-classes-dubai">private versus group</Link>. What a booking covers is on the <Link href="/terms">terms page</Link>. What the form stores is on the <Link href="/privacy">privacy page</Link>.
             </p>
           </div>
         </section>

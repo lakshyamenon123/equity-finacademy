@@ -12,12 +12,12 @@ import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 const path = "/blog-investing-classes-near-me-dubai";
 const headline = "Investing Classes Near Me in Dubai: How to Sort the Map";
 const description =
-  "Investing classes near you in Dubai: tell a forex class, a stock trading class, and a gold chart apart, then book a live group or private seat in Dubai, UAE.";
+  "Investing classes near me in Dubai: tell a forex class, a stock trading class, and a gold chart apart, then book a live seat in Dubai, UAE.";
 
 const stocksEnglish = ENGLISH_VIDEOS.find((video) => video.id === "bC097etTQeI");
 
 export const metadata = pageMetadata({
-  title: "Investing Classes Near Me in Dubai | Book a Live Class",
+  title: "Investing Classes Near Me in Dubai | Equity Fin Academy",
   description,
   keywords:
     "investing classes near me Dubai, trading classes near me Dubai, dubai trading courses, forex classes Dubai, stock market course Dubai",
@@ -84,8 +84,8 @@ export default function InvestingClassesNearMePost() {
                       <td>Investing classes, stocks, or US shares from the UAE</td>
                       <td>Reading a share or an index on a chart: open, high, low, close, and the swing around it.</td>
                       <td>
-                        <Link href="/stock-market-course-dubai">Stock market course in Dubai</Link>. The first weeks of study are in{" "}
-                        <Link href="/blog-stock-market-course-dubai-first-weeks">what to cover first</Link>.
+                        <Link href="/blog-stock-trading-classes-near-me-dubai">Stock trading classes near me in Dubai</Link>. The course page is the{" "}
+                        <Link href="/stock-market-course-dubai">stock market course in Dubai</Link>.
                       </td>
                     </tr>
                     <tr>
@@ -107,7 +107,7 @@ export default function InvestingClassesNearMePost() {
 
               <h2>Personal finance and stock trading classes are different searches</h2>
               <p>
-                Two nearby phrases land on the same map and do not mean this page. Personal finance classes near me are usually a budget hour: salary, bills, and an emergency fund. Equity Fin Academy does not teach that. The split is in <Link href="/blog-personal-finance-classes-near-me-dubai">personal finance classes near me in Dubai</Link>. Stock trading classes near me are a share or an index on a chart. That seat is the <Link href="/stock-market-course-dubai">stock market course in Dubai</Link>, and the first weeks of study are in <Link href="/blog-stock-market-course-dubai-first-weeks">what to cover first</Link>. This page stays on the mixed investing search: forex, stocks, and gold, before you travel.
+                Two nearby phrases land on the same map and do not mean this page. Personal finance classes near me, including a budgeting class or a retirement planning class, are usually an hour about salary, bills, and saving. Equity Fin Academy does not teach that. The split is in <Link href="/blog-personal-finance-classes-near-me-dubai">personal finance classes near me in Dubai</Link>. Stock trading classes near me are a share or an index on a chart. That note is <Link href="/blog-stock-trading-classes-near-me-dubai">stock trading classes near me in Dubai</Link>, and the course page is the <Link href="/stock-market-course-dubai">stock market course in Dubai</Link>. This page stays on the mixed investing search: forex, stocks, and gold, before you travel.
               </p>
 
               <h2>What the map is allowed to decide</h2>
