@@ -12,7 +12,7 @@ import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 const path = "/blog-personal-finance-classes-near-me-dubai";
 const headline = "Personal Finance Classes Near Me in Dubai: Budget Class or Market Class?";
 const description =
-  "Personal finance classes near you in Dubai usually teach a budget. A forex or stock class teaches a chart. Here is how to tell them apart before you travel.";
+  "Personal finance classes near me in Dubai, including budgeting and retirement searches: see which hour is a budget class and which is a live market class.";
 
 const stocksEnglish = ENGLISH_VIDEOS.find((video) => video.id === "bC097etTQeI");
 
@@ -100,11 +100,21 @@ export default function PersonalFinanceClassesNearMePost() {
                       </td>
                     </tr>
                     <tr>
+                      <td>Budgeting classes near me</td>
+                      <td>A monthly budget: salary in, bills out, and what is left.</td>
+                      <td>Not this academy. Keep looking for a budgeting teacher.</td>
+                    </tr>
+                    <tr>
+                      <td>Retirement planning classes near me</td>
+                      <td>Long-term saving, pensions, and a plan for later life.</td>
+                      <td>Not this academy. A chart class does not build that plan.</td>
+                    </tr>
+                    <tr>
                       <td>Stock trading classes near me, or a stock market course</td>
                       <td>A share or an index on a chart, often next to gold.</td>
                       <td>
-                        <Link href="/stock-market-course-dubai">Stock market course in Dubai</Link>. The first weeks are in{" "}
-                        <Link href="/blog-stock-market-course-dubai-first-weeks">what to cover first</Link>.
+                        <Link href="/blog-stock-trading-classes-near-me-dubai">Stock trading classes near me in Dubai</Link>. The course page is the{" "}
+                        <Link href="/stock-market-course-dubai">stock market course in Dubai</Link>.
                       </td>
                     </tr>
                     <tr>
@@ -120,6 +130,14 @@ export default function PersonalFinanceClassesNearMePost() {
               </div>
               <p>
                 People often type the broadest phrase because the phone suggested it. &quot;Personal finance&quot; sounds safer than &quot;trading&quot;. The class you sit in is still the class named on the page, not the class named in the search box. If you want currencies, say forex. If you want a share, say the share. If you want help splitting a salary, say that, and do not book a chart hour to get it.
+              </p>
+
+              <h2>Budgeting classes and retirement planning classes</h2>
+              <p>
+                A search for budgeting classes near me wants an hour on the money already coming in: rent, school fees, a card balance, and what is left at the end of the month. A search for retirement planning classes near me wants a longer horizon: what to set aside, and which licensed adviser to ask about a pension. Equity Fin Academy does not teach either hour. There is no budgeting worksheet and no retirement plan on this site.
+              </p>
+              <p>
+                Those searches still land here because the words sit next to &quot;personal finance classes near me&quot; and &quot;investing classes near me&quot;. Read the topic lines before you travel. If the lines are rent, bills, and a pension, you want a different teacher. If the lines are a candle, a pair, or MetaTrader, you wanted a market class and the search wording drifted. Say which one you mean. The market version for a share is <Link href="/blog-stock-trading-classes-near-me-dubai">stock trading classes near me in Dubai</Link>. The mixed map is <Link href="/blog-investing-classes-near-me-dubai">investing classes near me in Dubai</Link>.
               </p>
 
               <h2>How to read the pin before you travel</h2>

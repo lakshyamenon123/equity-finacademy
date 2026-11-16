@@ -272,6 +272,9 @@ export default function ForexAcademyDubaiPage() {
                 <p>Call us — we&apos;ll ask a few questions about your experience and point you to the right track.</p>
               </div>
             </div>
+            <p style={{ maxWidth: "68ch", marginTop: 28 }}>
+              If the search was trading classes in Dubai, the live formats are these two tracks: a group class or a private lesson, in the room in Dubai, UAE, or online on Gulf Standard Time. The full topic order is the <Link href="/courses">forex trading courses</Link> page. The window a live hour points at is the <Link href="/blog-mt5-order-ticket-dubai">MT5 order ticket</Link>. Installing the platform is <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>. Choosing the room is <Link href="/blog-private-vs-group-forex-classes-dubai">private versus group</Link>. Booking rules are on the <Link href="/terms">terms page</Link>.
+            </p>
             <p className="text-center" style={{ marginTop: 28 }}>
               <Link href="/courses" className="btn btn-primary">
                 Compare Both Course Tracks
@@ -315,7 +318,7 @@ export default function ForexAcademyDubaiPage() {
           <div className="container">
             <div className="section-head reveal">
               <span className="eyebrow">CHOOSING AN ACADEMY</span>
-              <h2>Looking for the best forex academy in Dubai?</h2>
+              <h2>What to check before you choose a forex academy in Dubai</h2>
               <p style={{ maxWidth: "70ch" }}>
                 That&apos;s a personal fit question more than a factual one — but here&apos;s what we&apos;d suggest
                 checking for any forex academy in Dubai, including us: a verifiable instructor background, access to

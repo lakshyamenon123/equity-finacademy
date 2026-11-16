@@ -13,7 +13,7 @@ import { STARTRADER_LIVE_URL } from "../lib/whatsapp";
 
 const coursesTitle = "Forex Trading Courses in Dubai";
 const coursesDescription =
-  "Forex trading courses in Dubai: two live tracks, as a group class or a private one-to-one lesson, in the room or online across the UAE. Fees quoted in AED.";
+  "Forex trading courses in Dubai: Basic to Intermediate and Advanced tracks, as a group class or a private lesson, in Dubai, UAE, or online. Fee quoted in AED.";
 
 export const metadata = pageMetadata({
   title: `${coursesTitle} | Equity Fin Academy`,
@@ -345,6 +345,14 @@ export default function CoursesPage() {
             </div>
             <p>
               The cost of acting on any of those marks, the spread and the pip value in dirhams, is <Link href="/blog-forex-spreads-swaps-pip-value-uae">spreads, swaps, and pip value</Link>. The margin the platform holds back is <Link href="/blog-forex-leverage-margin-mt5-uae">leverage and margin on MT5</Link>. How much of the account to risk is <Link href="/blog-risk-management">risk per trade</Link>.
+            </p>
+
+            <h2>Trading classes in Dubai</h2>
+            <p>
+              A trading class here is a live hour. You sit with a group on the shared syllabus, or you book a private lesson on your own chart. The classroom is in Dubai, UAE. The same hour is taught online across the UAE on Gulf Standard Time. Forex is the course. A share, an index, or gold is marked on MetaTrader 5 when that is the symbol you bring. That version of the offer is the <Link href="/stock-market-course-dubai">stock market course in Dubai</Link>, and the near-me note is <Link href="/blog-stock-trading-classes-near-me-dubai">stock trading classes near me in Dubai</Link>.
+            </p>
+            <p>
+              Read three short notes before the first ticket. <Link href="/blog-start-forex-trading-uae-mt5">How to start with MT5</Link> is the install. <Link href="/blog-mt5-order-ticket-dubai">The MT5 order ticket</Link> is the window the hour will point at. <Link href="/blog-private-vs-group-forex-classes-dubai">Private versus group</Link> is the choice of room. The booking rules, including what a lesson is, are on the <Link href="/terms">terms page</Link>. The message itself goes to <Link href="/contact">contact</Link>.
             </p>
 
             <h2>Who should start on which track</h2>

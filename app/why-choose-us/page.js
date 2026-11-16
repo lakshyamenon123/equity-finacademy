@@ -12,12 +12,12 @@ import { STARTRADER_LIVE_URL, whatsappHref } from "../lib/whatsapp";
 
 const path = "/why-choose-us";
 
-const title = "Enrolment Checklist for Equity Fin Academy in Dubai";
+const title = "Six Checks Before You Enrol at Equity Fin Academy";
 const description =
-  "Enrolment checklist for Equity Fin Academy in Dubai: the teacher, the syllabus, group or private, the broker, Google reviews, and the fee quoted in AED.";
+  "Six checks before you enrol at Equity Fin Academy in Dubai: the teacher, the public syllabus, the room, the broker, the Google listing, and an AED quote.";
 
 export const metadata = pageMetadata({
-  title: "Dubai Forex Enrolment Checklist | Equity Fin Academy",
+  title: "Six Checks Before a Dubai Forex Class | Equity Fin Academy",
   description,
   keywords:
     "why choose equity fin academy, equity fin academy enrolment checklist Dubai, forex course checklist UAE, Gopi Chandran forex course Dubai",
@@ -88,19 +88,17 @@ export default function WhyChooseUsPage() {
               <span className="current">Why Choose Us</span>
             </nav>
             <span className="eyebrow">ENROLMENT CHECKS</span>
-            <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,3rem)", maxWidth: "20ch" }}>
-              An enrolment checklist for Equity Fin Academy in Dubai
+            <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,3rem)", maxWidth: "18ch" }}>
+              Six checks before you enrol at Equity Fin Academy
             </h1>
             <p className="hero-sub" style={{ marginTop: 18, maxWidth: "66ch" }}>
-              Use this page when you are deciding. The homepage introduces the academy. The{" "}
-              <Link href="/about">About page</Link> is Gopi Chandran&apos;s profile. The article on{" "}
-              <Link href="/blog-choose-forex-academy-uae">how to choose a forex academy in the UAE</Link> is a general
-              list for any school. Here the questions are narrower: what Equity Fin Academy publishes before you pay,
-              which syllabus you would start, and how a Dubai seat differs from an online seat.
-              Keep this page open while you work through the six checks.
+              This page is a worksheet, not a welcome. The homepage introduces the academy. The{" "}
+              <Link href="/about">About page</Link> is Gopi Chandran&apos;s profile.{" "}
+              <Link href="/blog-choose-forex-mentor-dubai">How to choose a forex mentor in Dubai</Link> is about the teacher.{" "}
+              <Link href="/blog-choose-forex-academy-uae">How to choose a forex academy in the UAE</Link> is a list you can use for any school. Stay here for the six facts this academy publishes before you pay, and for the pass-or-pause table under the cards.
             </p>
             <p className="hero-sub" style={{ marginTop: 14, maxWidth: "66ch" }}>
-              Other pages do other jobs. The topic order is <Link href="/courses">forex courses</Link>. The notes are the <Link href="/blog">blog</Link>, including <Link href="/blog-smart-money-concepts">smart money concepts</Link>, <Link href="/blog-currency-pairs-uae">currency pairs</Link>, <Link href="/blog-forex-leverage-margin-mt5-uae">leverage and margin</Link>, <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>, <Link href="/blog-first-private-forex-lesson-dubai">a first private lesson</Link>, <Link href="/blog-private-vs-group-forex-classes-dubai">private versus group</Link>, and <Link href="/blog-evening-group-forex-classes-dubai">evening group classes</Link>. Abu Dhabi is the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>. The Google listing is the <Link href="/success-stories">reviews page</Link>. The message is <Link href="/contact">contact</Link>. How the form uses a name and a mobile number is the <Link href="/privacy">privacy page</Link>.
+              Other pages do other jobs. The topic order is <Link href="/courses">forex trading courses in Dubai</Link>. The notes are the <Link href="/blog">blog</Link>, including <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>, <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>, <Link href="/blog-private-vs-group-forex-classes-dubai">private versus group</Link>, <Link href="/blog-smart-money-concepts">smart money concepts</Link>, and <Link href="/blog-evening-group-forex-classes-dubai">evening group classes</Link>. The booking rules are on the <Link href="/terms">terms page</Link>. Abu Dhabi is the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>. The Google listing is the <Link href="/success-stories">reviews page</Link>. The message is <Link href="/contact">contact</Link>. How the form uses a name and a mobile number is the <Link href="/privacy">privacy page</Link>.
             </p>
           </div>
         </section>
@@ -120,6 +118,58 @@ export default function WhyChooseUsPage() {
                   <p>{item.body}</p>
                 </article>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="tight">
+          <div className="container prose-block">
+            <h2>Pass, or pause, on each check</h2>
+            <p>
+              Use the table when a card above is still abstract. Pause means you do not have the fact yet. Continue means you can point at the page that holds it. The courses page keeps the topic lists. The contact page keeps the form. The table stays on this worksheet.
+            </p>
+            <div className="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Check</th>
+                    <th>Pause if</th>
+                    <th>Continue if</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Teacher</td>
+                    <td>The page never names who teaches the hour.</td>
+                    <td>You have opened Gopi Chandran&apos;s profile.</td>
+                  </tr>
+                  <tr>
+                    <td>Syllabus</td>
+                    <td>The topic order is not written on the site.</td>
+                    <td>You have read both tracks on the courses page.</td>
+                  </tr>
+                  <tr>
+                    <td>Room</td>
+                    <td>You have not chosen a group class or a private lesson.</td>
+                    <td>You know which hour you are asking to buy.</td>
+                  </tr>
+                  <tr>
+                    <td>Broker</td>
+                    <td>Someone asks for your broker password.</td>
+                    <td>You will open the account yourself.</td>
+                  </tr>
+                  <tr>
+                    <td>Reviews</td>
+                    <td>You have not opened a review that the school does not host.</td>
+                    <td>You opened the Google listing from the reviews page.</td>
+                  </tr>
+                  <tr>
+                    <td>Fee</td>
+                    <td>A dirham number is printed with no date.</td>
+                    <td>You will ask for a current quote in AED.</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </section>

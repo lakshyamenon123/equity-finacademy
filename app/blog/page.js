@@ -20,6 +20,32 @@ export const metadata = pageMetadata({
 
 const posts = [
   {
+    href: "/blog-stock-trading-classes-near-me-dubai",
+    icon: (
+      <>
+        <path d="M4 18V6M4 18h16" />
+        <path d="M8 18V12M12 18V8M16 18v-5" />
+      </>
+    ),
+    cat: "Stock Trading Classes",
+    title: "Stock Trading Classes Near Me in Dubai",
+    desc: "What a near-me search mixes together, and what a live class on a share, an index, or gold actually is.",
+    time: "9 min read",
+  },
+  {
+    href: "/blog-choose-forex-mentor-dubai",
+    icon: (
+      <>
+        <circle cx="12" cy="8" r="3" />
+        <path d="M6 19c.8-2.6 2.8-4 6-4s5.2 1.4 6 4" />
+      </>
+    ),
+    cat: "Choosing a Mentor",
+    title: "How to Choose a Forex Mentor in Dubai",
+    desc: "Questions to ask about the teacher, the hour, and the syllabus before you book a private lesson or a group class.",
+    time: "9 min read",
+  },
+  {
     href: "/blog-personal-finance-classes-near-me-dubai",
     icon: (
       <>
@@ -559,6 +585,9 @@ export default function BlogIndexPage() {
           <div className="container prose-block">
             <h2>A reading order, then the page that books the seat</h2>
             <p>
+              Two new notes sit at the top of the cards. <Link href="/blog-stock-trading-classes-near-me-dubai">Stock trading classes near me in Dubai</Link> is for a share, an index, or gold. <Link href="/blog-choose-forex-mentor-dubai">How to choose a forex mentor in Dubai</Link> is about the teacher, not the brochure. Before the first ticket, keep <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>, <Link href="/blog-private-vs-group-forex-classes-dubai">private versus group</Link>, and <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link> on the list. The booking rules are on the <Link href="/terms">terms page</Link>.
+            </p>
+            <p>
               New to charts, and already in Dubai: <Link href="/blog-how-to-start-forex-trading-dubai">how to start forex trading in Dubai</Link> is the first month. The install steps stay in <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>. Which button to press on that chart is <Link href="/blog-forex-chart-timeframes-dubai">which timeframe to open before a class</Link>. The window you will be asked to read is <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>. A stock or an index, rather than a currency pair, starts with <Link href="/blog-stock-market-course-dubai-first-weeks">the first weeks of a stock market course in Dubai</Link>. Then <Link href="/blog-currency-pairs-uae">how a pair is quoted</Link>, then <Link href="/blog-candlestick-patterns">candlesticks</Link>, then <Link href="/blog-market-structure">market structure</Link>. About to fund an account: <Link href="/blog-demo-vs-live-mt5-uae">demo versus live on MT5</Link>, then <Link href="/blog-forex-leverage-margin-mt5-uae">leverage and margin</Link>, then <Link href="/blog-forex-spreads-swaps-pip-value-uae">what a pip is worth</Link>. The advanced vocabulary, after you can point at a swing, is <Link href="/blog-smart-money-concepts">smart money concepts</Link>.
             </p>
             <p>
@@ -578,6 +607,26 @@ export default function BlogIndexPage() {
                 </thead>
                 <tbody>
                   <tr>
+                    <td>Stock trading classes near me, a share, or an index</td>
+                    <td><Link href="/blog-stock-trading-classes-near-me-dubai">Stock trading classes near me in Dubai</Link></td>
+                  </tr>
+                  <tr>
+                    <td>Who teaches the hour, before you pay</td>
+                    <td><Link href="/blog-choose-forex-mentor-dubai">How to choose a forex mentor in Dubai</Link></td>
+                  </tr>
+                  <tr>
+                    <td>What the order window is asking for</td>
+                    <td><Link href="/blog-mt5-order-ticket-dubai">The MT5 order ticket</Link></td>
+                  </tr>
+                  <tr>
+                    <td>Installing MetaTrader 5 before the first class</td>
+                    <td><Link href="/blog-start-forex-trading-uae-mt5">How to start with MT5</Link></td>
+                  </tr>
+                  <tr>
+                    <td>Private one-to-one or a group class</td>
+                    <td><Link href="/blog-private-vs-group-forex-classes-dubai">Private versus group</Link></td>
+                  </tr>
+                  <tr>
                     <td>Personal finance classes near me, or a budget class versus a chart class</td>
                     <td><Link href="/blog-personal-finance-classes-near-me-dubai">Personal finance classes near me in Dubai</Link></td>
                   </tr>
@@ -592,10 +641,6 @@ export default function BlogIndexPage() {
                   <tr>
                     <td>Which chart button to have open before the hour</td>
                     <td><Link href="/blog-forex-chart-timeframes-dubai">Chart timeframes for a Dubai class</Link></td>
-                  </tr>
-                  <tr>
-                    <td>What the order window is asking for</td>
-                    <td><Link href="/blog-mt5-order-ticket-dubai">The MT5 order ticket</Link></td>
                   </tr>
                   <tr>
                     <td>What to carry into a first private hour, and what to ask</td>

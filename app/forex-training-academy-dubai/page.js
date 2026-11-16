@@ -154,7 +154,9 @@ export default function ForexTrainingAcademyDubaiPage() {
             </p>
             <p>
               A live session is not a room full of trade calls. The instructor marks the level, explains why it is the level, and lets you see the order placed against a plan that was written before the click. If you want the platform installed before you arrive, the written steps are in{" "}
-              <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>. MetaTrader 5 is the platform used alongside class practice.
+              <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>. The fields on that window are in{" "}
+              <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>. Which room to book is in{" "}
+              <Link href="/blog-private-vs-group-forex-classes-dubai">private versus group classes</Link>. What a booking covers is on the <Link href="/terms">terms page</Link>. MetaTrader 5 is the platform used alongside class practice.
             </p>
 
             <h2>Who this Dubai seat is for</h2>
