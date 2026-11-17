@@ -11,7 +11,7 @@ const description =
   "Privacy policy for Equity Fin Academy in Dubai, UAE: what an enquiry stores, how visit counts work, and how to ask for a name and mobile number to be deleted.";
 
 export const metadata = pageMetadata({
-  title: "Privacy Policy | Equity Fin Academy, Dubai",
+  title: "Privacy Policy for Course Enquiries | Equity Fin Academy",
   description,
   path: "/privacy",
 });

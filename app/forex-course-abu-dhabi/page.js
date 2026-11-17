@@ -18,7 +18,7 @@ const pageDescription =
   "Forex course for Abu Dhabi students at Equity Fin Academy: the same Dubai syllabus online on Gulf Standard Time, or a visit to the classroom in Dubai, UAE.";
 
 export const metadata = pageMetadata({
-  title: `${pageTitle} | Equity Fin Academy`,
+  title: "Forex Course for Abu Dhabi, UAE | Equity Fin Academy",
   description: pageDescription,
   keywords:
     "forex course Abu Dhabi, forex training Abu Dhabi, online forex course Abu Dhabi, forex classes Abu Dhabi to Dubai, learn forex trading Abu Dhabi, United Arab Emirates",

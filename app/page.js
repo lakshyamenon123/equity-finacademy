@@ -15,7 +15,7 @@ import { VIDEOS } from "./lib/videos";
 export const metadata = pageMetadata({
   title: "Forex Training Academy in Dubai, UAE | Equity Fin Academy",
   description:
-    "Forex training academy in Dubai for private one-to-one lessons and group classes. Investing classes near you, sorted into forex, stocks, and gold. Rated 5.0 on Google. Open 24/7.",
+    "Forex training academy in Dubai for private one-to-one lessons and group classes, in the room or online across the UAE. Rated 5.0 on Google.",
   keywords:
     "forex training academy Dubai, forex training academy UAE, forex trading courses in Dubai, forex courses in Dubai, investing classes near me Dubai, dubai trading courses, forex education UAE",
   path: "/",
@@ -392,6 +392,12 @@ export default function HomePage() {
                 <Link href="/blog-mt5-order-ticket-dubai">The MT5 order ticket</Link> is the window a live hour will point at. <Link href="/blog-choose-forex-mentor-dubai">Choosing a forex mentor in Dubai</Link> is the question about the teacher.
               </li>
               <li>
+                <Link href="/blog-live-forex-trading-session-dubai">A live forex session in Dubai</Link> is what the booked hour contains. <Link href="/blog-stock-market-course-dubai-first-weeks">The first weeks of a stock market course</Link> is the drill for a share, an index, or gold.
+              </li>
+              <li>
+                <Link href="/blog-executive-forex-coaching-dubai">Executive forex coaching for business owners</Link> fits a private hour around a company week. <Link href="/blog-forex-portfolio-diversification-uae">Forex beside an existing portfolio</Link> is for investors who already hold capital.
+              </li>
+              <li>
                 <Link href="/why-choose-us">The enrolment checklist</Link>, the <Link href="/success-stories">Google reviews guide</Link>, and <Link href="/contact">contact</Link> are the steps after the reading. The booking rules are on the <Link href="/terms">terms page</Link>. How an enquiry is stored is on the <Link href="/privacy">privacy page</Link>. The school pages are <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link> and <Link href="/forex-training-academy-uae">forex training academy UAE</Link>.
               </li>
             </ul>
@@ -451,6 +457,9 @@ export default function HomePage() {
         <section className="tight">
           <div className="container">
             <div className="topics-row reveal">
+              <Link href="/blog-executive-forex-coaching-dubai" className="topic-chip">Executive forex coaching</Link>
+              <Link href="/blog-forex-portfolio-diversification-uae" className="topic-chip">Forex and a portfolio</Link>
+              <Link href="/terms" className="topic-chip">Terms of a booking</Link>
               <Link href="/blog-stock-trading-classes-near-me-dubai" className="topic-chip">Stock trading classes near me</Link>
               <Link href="/blog-choose-forex-mentor-dubai" className="topic-chip">Choose a forex mentor</Link>
               <Link href="/blog-forex-chart-timeframes-dubai" className="topic-chip">Chart timeframes for class</Link>

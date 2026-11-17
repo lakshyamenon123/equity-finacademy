@@ -93,8 +93,10 @@ export default function GopiChandranPage() {
               <p style={{ maxWidth: "62ch" }}>
                 Gopi Chandran founded Equity Fin Academy and still leads the lessons. Students sit with him for a
                 private hour, join a group class, or watch a live trading session, in Dubai or online from another
-                emirate. The academy page is <Link href="/about">About Us</Link>. The class formats are on{" "}
-                <Link href="/forex-mentorship-dubai">forex mentorship in Dubai</Link>.
+                emirate. The academy page is <Link href="/about">About Us</Link>.                 The class formats are on{" "}
+                <Link href="/forex-mentorship-dubai">forex mentorship in Dubai</Link>. Owners who need the hour to move can read{" "}
+                <Link href="/blog-executive-forex-coaching-dubai">executive forex coaching</Link>. Investors who already hold capital can read{" "}
+                <Link href="/blog-forex-portfolio-diversification-uae">forex beside a portfolio</Link>.
               </p>
               <ul className="credential-list">
                 <li>

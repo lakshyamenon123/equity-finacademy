@@ -16,7 +16,7 @@ const headline = "How to Read Candlestick Patterns: A Beginner's Guide for Dubai
 export const metadata = pageMetadata({
   title: "Candlestick Patterns in Dubai | Equity Fin Academy",
   description:
-    "How to read forex candlestick patterns in Dubai and the UAE: what one candle shows, and which patterns to learn first.",
+    "How to read forex candlestick patterns in Dubai and the UAE: what one candle shows, which patterns to learn first, and what to bring to a live class.",
   keywords:
     "how to read candlestick patterns Dubai, candlestick patterns for beginners UAE, forex candlestick guide Dubai, candlestick chart explained, doji hammer engulfing pattern",
   path: "/blog-candlestick-patterns",

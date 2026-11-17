@@ -31,6 +31,7 @@ const nextConfig = {
       ["/index.php", `${CANONICAL_ORIGIN}/`],
       ["/default.html", `${CANONICAL_ORIGIN}/`],
       ["/about-us", `${CANONICAL_ORIGIN}/about`],
+      ["/about-us.html", `${CANONICAL_ORIGIN}/about`],
       ["/aboutus", `${CANONICAL_ORIGIN}/about`],
       ["/about.html", `${CANONICAL_ORIGIN}/about`],
       ["/about.php", `${CANONICAL_ORIGIN}/about`],

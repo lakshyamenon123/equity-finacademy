@@ -15,7 +15,7 @@ const path = "/stock-market-course-dubai";
 const whatsapp = whatsappHref("Hi, I'm interested in the stock market course in Dubai");
 
 export const metadata = pageMetadata({
-  title: "Stock Market Course in Dubai | Equity Fin Academy",
+  title: "Stock Market Course in Dubai, UAE | Equity Fin Academy",
   description:
     "Stock market course in Dubai for shares, indices, and gold on MT5. Live group or private classes in Dubai, UAE, or online across the UAE.",
   keywords:

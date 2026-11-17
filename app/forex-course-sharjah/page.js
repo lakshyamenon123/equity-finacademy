@@ -12,7 +12,7 @@ import { VIDEOS } from "../lib/videos";
 const path = "/forex-course-sharjah";
 
 export const metadata = pageMetadata({
-  title: "Forex Course in Sharjah | Equity Fin Academy",
+  title: "Forex Course for Sharjah Students | Equity Fin Academy",
   description:
     "Forex course for Sharjah students at Equity Fin Academy. Live classes are in Dubai, UAE, or online across the UAE. See who should come and how to enquire.",
   keywords:

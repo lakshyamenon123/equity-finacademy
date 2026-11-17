@@ -371,6 +371,24 @@ export default function WhyChooseUsPage() {
         </section>
 
         <section className="tight">
+          <div className="container prose-block">
+            <h2>If you are an owner, or you already hold capital</h2>
+            <p>
+              The six checks do not change. Two notes answer a narrower question than which course to buy.{" "}
+              <Link href="/blog-executive-forex-coaching-dubai">Executive forex coaching in Dubai for business owners</Link> is about fitting a private hour around a company week.{" "}
+              <Link href="/blog-forex-portfolio-diversification-uae">Forex beside a portfolio</Link> is for investors who already hold capital and want to know what a currency market is, and what it is not, before they book.
+            </p>
+            <p>
+              If the platform is new, read these before the first ticket.{" "}
+              <Link href="/blog-start-forex-trading-uae-mt5">How to start with MT5</Link>,{" "}
+              <Link href="/blog-mt5-order-ticket-dubai">the order ticket</Link>, and{" "}
+              <Link href="/blog-private-vs-group-forex-classes-dubai">private versus group</Link>. The booking rules are on the{" "}
+              <Link href="/terms">terms page</Link>.
+            </p>
+          </div>
+        </section>
+
+        <section className="tight">
           <div className="container">
             <div className="cta-banner reveal">
               <div>
