@@ -11,7 +11,7 @@ const reviewsDescription =
   "How to read Equity Fin Academy’s 5.0 Google listing in Dubai before you enrol: what a useful review names, and the blank note you fill in yourself.";
 
 export const metadata = pageMetadata({
-  title: `${reviewsTitle} | Equity Fin Academy`,
+  title: "How to Read the Google Reviews | Equity Fin Academy",
   description: reviewsDescription,
   keywords:
     "Equity Fin Academy reviews, forex academy reviews Dubai, forex course reviews UAE, forex training Dubai Google reviews, United Arab Emirates",

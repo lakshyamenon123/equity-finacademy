@@ -260,6 +260,18 @@ export default function ContactPage() {
           </div>
         </section>
 
+        <section>
+          <div className="container prose-block">
+            <h2>A free demo class or a meeting with Gopi</h2>
+            <p>
+              Ask for a free demo class, or a one-to-one meeting with Gopi Chandran, in the form above, in the site chat, or on WhatsApp +971 55 904 7030. Say private or group, Dubai or online, and the hours you can keep on Gulf Standard Time. The rules of that booking are on the <Link href="/terms">terms page</Link>. If the chart should be open before you arrive, read <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>, <Link href="/blog-mt5-order-ticket-dubai">the order ticket</Link>, and <Link href="/blog-private-vs-group-forex-classes-dubai">private versus group</Link>.
+            </p>
+            <p>
+              Business owners who need the hour to move should read <Link href="/blog-executive-forex-coaching-dubai">executive forex coaching in Dubai</Link>. Investors who already hold capital should read <Link href="/blog-forex-portfolio-diversification-uae">forex beside a portfolio</Link>. What the hour contains, once it is booked, is <Link href="/blog-live-forex-trading-session-dubai">a live forex session in Dubai</Link>.
+            </p>
+          </div>
+        </section>
+
         <section className="tight">
           <div className="container">
             <RelatedTraining current="/contact" />

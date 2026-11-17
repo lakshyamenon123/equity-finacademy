@@ -11,6 +11,7 @@ const LEGACY = {
   "/index.php": "/",
   "/default.html": "/",
   "/about-us": "/about",
+  "/about-us.html": "/about",
   "/aboutus": "/about",
   "/about.html": "/about",
   "/about.php": "/about",

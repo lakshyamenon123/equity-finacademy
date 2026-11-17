@@ -9,10 +9,10 @@ import { COURSE_WHATSAPP_TEXT, whatsappHref } from "../lib/whatsapp";
 
 const title = "Terms of Use for Equity Fin Academy";
 const description =
-  "Terms for the Equity Fin Academy website and forex classes in Dubai, UAE. Lessons are education. Fees are quoted in AED when you enquire. The broker account is separate.";
+  "Terms for Equity Fin Academy in Dubai, UAE. Lessons are education. Fees are quoted in AED when you enquire. Your broker account stays separate from the fee.";
 
 export const metadata = pageMetadata({
-  title: "Terms of Use | Equity Fin Academy, Dubai",
+  title: "Terms of Use for Classes in Dubai | Equity Fin Academy",
   description,
   path: "/terms",
 });

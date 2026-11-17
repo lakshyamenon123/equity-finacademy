@@ -19,7 +19,7 @@ const description =
 const brokerEnglish = ENGLISH_VIDEOS.find((video) => video.id === "bC097etTQeI");
 
 export const metadata = pageMetadata({
-  title: "Forex Education in the UAE | Equity Fin Academy",
+  title: "Forex Education in Dubai and the UAE | Equity Fin Academy",
   description,
   keywords:
     "forex education UAE, trading classes in Dubai, forex course Dubai, personal forex coaching UAE, group forex classes Dubai",

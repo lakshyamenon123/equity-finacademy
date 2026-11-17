@@ -12,12 +12,12 @@ import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 const path = "/blog-investing-classes-near-me-dubai";
 const headline = "Investing Classes Near Me in Dubai: How to Sort the Map";
 const description =
-  "Investing classes near me in Dubai: tell a forex class, a stock trading class, and a gold chart apart, then book a live seat in Dubai, UAE.";
+  "Private one-to-one or group investing classes in Dubai for forex, stocks, and gold. Live lessons in the city or online across the UAE, with flexible timing.";
 
 const stocksEnglish = ENGLISH_VIDEOS.find((video) => video.id === "bC097etTQeI");
 
 export const metadata = pageMetadata({
-  title: "Investing Classes Near Me in Dubai | Equity Fin Academy",
+  title: "Investing Classes Near Me in Dubai | Private or Group",
   description,
   keywords:
     "investing classes near me Dubai, trading classes near me Dubai, dubai trading courses, forex classes Dubai, stock market course Dubai",
