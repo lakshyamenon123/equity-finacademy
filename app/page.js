@@ -395,7 +395,7 @@ export default function HomePage() {
                 <Link href="/blog-live-forex-trading-session-dubai">A live forex session in Dubai</Link> is what the booked hour contains. <Link href="/blog-stock-market-course-dubai-first-weeks">The first weeks of a stock market course</Link> is the drill for a share, an index, or gold.
               </li>
               <li>
-                <Link href="/blog-executive-forex-coaching-dubai">Executive forex coaching for business owners</Link> fits a private hour around a company week. <Link href="/blog-forex-portfolio-diversification-uae">Forex beside an existing portfolio</Link> is for investors who already hold capital.
+                <Link href="/blog-executive-forex-coaching-dubai">Executive forex coaching for business owners</Link> fits a private hour around a company week. <Link href="/blog-forex-portfolio-diversification-uae">Forex beside an existing portfolio</Link> is for investors who already hold capital. <Link href="/blog-private-forex-mentorship-abu-dhabi">Private forex mentorship in Abu Dhabi</Link> is the same hour for a professional week in the capital. <Link href="/blog-forex-training-doctors-engineers-bankers-uae">Forex training for doctors, engineers and bankers</Link> is for a rota rather than an office close.
               </li>
               <li>
                 <Link href="/why-choose-us">The enrolment checklist</Link>, the <Link href="/success-stories">Google reviews guide</Link>, and <Link href="/contact">contact</Link> are the steps after the reading. The booking rules are on the <Link href="/terms">terms page</Link>. How an enquiry is stored is on the <Link href="/privacy">privacy page</Link>. The school pages are <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link> and <Link href="/forex-training-academy-uae">forex training academy UAE</Link>.
@@ -457,6 +457,8 @@ export default function HomePage() {
         <section className="tight">
           <div className="container">
             <div className="topics-row reveal">
+              <Link href="/blog-private-forex-mentorship-abu-dhabi" className="topic-chip">Private mentorship in Abu Dhabi</Link>
+              <Link href="/blog-forex-training-doctors-engineers-bankers-uae" className="topic-chip">Doctors, engineers and bankers</Link>
               <Link href="/blog-executive-forex-coaching-dubai" className="topic-chip">Executive forex coaching</Link>
               <Link href="/blog-forex-portfolio-diversification-uae" className="topic-chip">Forex and a portfolio</Link>
               <Link href="/terms" className="topic-chip">Terms of a booking</Link>

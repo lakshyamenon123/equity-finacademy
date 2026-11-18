@@ -52,6 +52,9 @@ const nextConfig = {
       ["/trading-strategies.html", `${CANONICAL_ORIGIN}/courses`],
       ["/terms.html", `${CANONICAL_ORIGIN}/terms`],
       ["/privacy.html", `${CANONICAL_ORIGIN}/privacy`],
+      ["/contact-us.html", `${CANONICAL_ORIGIN}/contact`],
+      ["/mt5-order", `${CANONICAL_ORIGIN}/blog-mt5-order-ticket-dubai`],
+      ["/blog-mt5-order", `${CANONICAL_ORIGIN}/blog-mt5-order-ticket-dubai`],
     ];
     return pairs.map(([source, destination]) => ({ source, destination, statusCode: 301 }));
   },
@@ -61,6 +64,17 @@ const nextConfig = {
       {
         source: "/why-choose-us",
         headers: [{ key: "Link", value: `<${WHY_CHOOSE_US}>; rel="canonical"` }],
+      },
+      // Fonts and the favicon are files, not pages. noindex keeps them out of
+      // the index. Do not Disallow them in robots.txt: Googlebot needs the
+      // files to render the HTML.
+      {
+        source: "/favicon.ico",
+        headers: [{ key: "X-Robots-Tag", value: "noindex" }],
+      },
+      {
+        source: "/_next/static/media/:path*",
+        headers: [{ key: "X-Robots-Tag", value: "noindex" }],
       },
     ];
   },

@@ -12,12 +12,12 @@ import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 const path = "/blog-stock-trading-classes-near-me-dubai";
 const headline = "Stock Trading Classes Near Me in Dubai";
 const description =
-  "Live stock trading classes near you in Dubai. Book a private hour or a group class on a share, an index, or gold, in the classroom or online across the UAE.";
+  "Stock trading classes near me in Dubai: a live private or group hour on a share, an index, or gold, in the classroom or online across the UAE.";
 
 const stocksEnglish = ENGLISH_VIDEOS.find((video) => video.id === "bC097etTQeI");
 
 export const metadata = pageMetadata({
-  title: "Stock Trading Classes Near Me | Dubai Private and Group",
+  title: "Stock Trading Classes Near Me in Dubai | Private or Group",
   description,
   keywords:
     "stock trading classes near me, stock trading classes near me Dubai, stock market course Dubai, trading classes in Dubai, investing classes near me Dubai",
@@ -30,7 +30,7 @@ const postSchema = articleSchema({
   description,
   path,
   datePublished: "2026-11-16",
-  dateModified: "2026-11-16",
+  dateModified: "2026-11-18",
   type: "BlogPosting",
 });
 

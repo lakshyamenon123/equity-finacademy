@@ -32,6 +32,9 @@ const LEGACY = {
   "/trading-strategies.html": "/courses",
   "/terms.html": "/terms",
   "/privacy.html": "/privacy",
+  "/contact-us.html": "/contact",
+  "/mt5-order": "/blog-mt5-order-ticket-dubai",
+  "/blog-mt5-order": "/blog-mt5-order-ticket-dubai",
 };
 
 export function middleware(request) {

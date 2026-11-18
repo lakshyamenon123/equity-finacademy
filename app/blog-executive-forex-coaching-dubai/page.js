@@ -151,7 +151,7 @@ export default function ExecutiveForexCoachingPost() {
                 <a href={whatsapp} target="_blank" rel="noopener noreferrer">
                   WhatsApp +971 55 904 7030
                 </a>
-                . Students outside Dubai, including Abu Dhabi, use the same clock. The drive-or-online choice for the capital is the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>. The wider coaching relationship, across several weeks rather than one sitting, is described on <Link href="/forex-mentorship-dubai">forex mentorship in Dubai</Link>.
+                . Students outside Dubai, including Abu Dhabi, use the same clock. The drive-or-online choice for the capital is the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>. Private mentorship written for a professional week in Abu Dhabi, rather than a company diary in Dubai, is <Link href="/blog-private-forex-mentorship-abu-dhabi">private forex mentorship in Abu Dhabi</Link>. A rota, rather than a board calendar, is <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for doctors, engineers and bankers</Link>. The wider coaching relationship, across several weeks rather than one sitting, is described on <Link href="/forex-mentorship-dubai">forex mentorship in Dubai</Link>.
               </p>
               <AcademyLinks lead="The school pages, if you are still choosing the format, are the" />
               <div className="blog-cta">

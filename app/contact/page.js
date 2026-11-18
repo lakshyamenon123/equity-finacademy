@@ -12,7 +12,7 @@ import { whatsappHref } from "../lib/whatsapp";
 
 const contactTitle = "Contact Equity Fin Academy in Dubai";
 const contactDescription =
-  "Contact Equity Fin Academy in Dubai, UAE. WhatsApp +971 55 904 7030. Send your emirate, group or private, the track, and the hours you can keep.";
+  "Contact Equity Fin Academy in Dubai. Ask for a free demo class or a one-to-one meeting, or send your emirate, format, track, and the hours you can keep.";
 
 export const metadata = pageMetadata({
   title: "Contact Equity Fin Academy in Dubai | WhatsApp Enquiry",
@@ -262,12 +262,30 @@ export default function ContactPage() {
 
         <section>
           <div className="container prose-block">
-            <h2>A free demo class or a meeting with Gopi</h2>
+            <h2>A free demo class, a meeting, or a seat</h2>
             <p>
-              Ask for a free demo class, or a one-to-one meeting with Gopi Chandran, in the form above, in the site chat, or on WhatsApp +971 55 904 7030. Say private or group, Dubai or online, and the hours you can keep on Gulf Standard Time. The rules of that booking are on the <Link href="/terms">terms page</Link>. If the chart should be open before you arrive, read <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>, <Link href="/blog-mt5-order-ticket-dubai">the order ticket</Link>, and <Link href="/blog-private-vs-group-forex-classes-dubai">private versus group</Link>.
+              Three requests land in the same inbox, and they are not the same request. A free demo class is a look at how Gopi Chandran teaches. A one-to-one meeting is a conversation about which track and which hour fit your week. A seat is the class itself, group or private, once you already know. Say which of the three you want. The rules of a booking are on the <Link href="/terms">terms page</Link>. Fees are quoted in AED in the reply. A number is not printed here because it goes stale.
             </p>
             <p>
-              Business owners who need the hour to move should read <Link href="/blog-executive-forex-coaching-dubai">executive forex coaching in Dubai</Link>. Investors who already hold capital should read <Link href="/blog-forex-portfolio-diversification-uae">forex beside a portfolio</Link>. What the hour contains, once it is booked, is <Link href="/blog-live-forex-trading-session-dubai">a live forex session in Dubai</Link>.
+              Before you write, three short notes keep the first hour on your chart rather than on the software. <Link href="/blog-start-forex-trading-uae-mt5">How to start with MT5</Link> is the install. <Link href="/blog-mt5-order-ticket-dubai">The order ticket</Link> is the window. <Link href="/blog-private-vs-group-forex-classes-dubai">Private versus group</Link> is the room. You can send the message without those pages. You will spend the demo on them if you have not read them.
+            </p>
+            <h2>Three calendars, three first lines</h2>
+            <p>
+              Use the line that matches the week you actually have. Change the hour so it is true, then send it from the form, the site chat, or WhatsApp +971 55 904 7030.
+            </p>
+            <ul className="guide-list">
+              <li>
+                Abu Dhabi, professional week: &quot;Private lesson, online from Abu Dhabi after 8pm, or Saturday in Dubai. Beginner. Please quote a free demo or the fee in AED.&quot; The longer note is <Link href="/blog-private-forex-mentorship-abu-dhabi">private forex mentorship in Abu Dhabi</Link>. The drive-or-online choice is the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>.
+              </li>
+              <li>
+                Doctor, engineer, or banker: &quot;Private lesson. I am on a rota and can keep Sunday morning or after 9pm on days I am not on call. Online. Please quote the fee in AED.&quot; Read <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for doctors, engineers and bankers</Link> before you send that, so the hour you name is one you can keep.
+              </li>
+              <li>
+                Business owner: &quot;Private lesson around a company week. After 8pm or Saturday morning, Dubai or online. Please quote the fee in AED.&quot; That diary is <Link href="/blog-executive-forex-coaching-dubai">executive forex coaching in Dubai</Link>. Investors who already hold capital, and are asking a different question, should read <Link href="/blog-forex-portfolio-diversification-uae">forex beside a portfolio</Link> first.
+              </li>
+            </ul>
+            <p>
+              What the hour contains, once it is booked, is <Link href="/blog-live-forex-trading-session-dubai">a live forex session in Dubai</Link>. The six checks before you pay are on <Link href="/why-choose-us">Why Choose Us</Link>. The topic order is on <Link href="/courses">the course tracks</Link>.
             </p>
           </div>
         </section>

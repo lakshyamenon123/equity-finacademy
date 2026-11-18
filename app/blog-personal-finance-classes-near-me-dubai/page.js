@@ -12,15 +12,15 @@ import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 const path = "/blog-personal-finance-classes-near-me-dubai";
 const headline = "Personal Finance Classes Near Me in Dubai: Budget Class or Market Class?";
 const description =
-  "Personal finance classes near me in Dubai, including budgeting and retirement searches: see which hour is a budget class and which is a live market class.";
+  "Personal finance and budgeting classes near me in Dubai are a different hour from a chart class. See which room you want before you travel.";
 
 const stocksEnglish = ENGLISH_VIDEOS.find((video) => video.id === "bC097etTQeI");
 
 export const metadata = pageMetadata({
-  title: "Personal Finance Classes Near Me in Dubai | Equity Fin Academy",
+  title: "Personal Finance Classes Near Me in Dubai | Budget or Markets",
   description,
   keywords:
-    "personal finance classes near me Dubai, stock trading classes near me Dubai, investing classes near me Dubai, forex classes Dubai, forex course Dubai",
+    "personal finance classes near me Dubai, budgeting classes near me Dubai, stock trading classes near me Dubai, investing classes near me Dubai, forex classes Dubai",
   path,
   type: "article",
 });
@@ -30,6 +30,7 @@ const postSchema = articleSchema({
   description,
   path,
   datePublished: "2026-11-10",
+  dateModified: "2026-11-18",
 });
 
 export default function PersonalFinanceClassesNearMePost() {

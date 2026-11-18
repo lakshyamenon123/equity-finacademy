@@ -12,12 +12,12 @@ import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 const path = "/blog-investing-classes-near-me-dubai";
 const headline = "Investing Classes Near Me in Dubai: How to Sort the Map";
 const description =
-  "Private one-to-one or group investing classes in Dubai for forex, stocks, and gold. Live lessons in the city or online across the UAE, with flexible timing.";
+  "Investing classes near me in Dubai mix forex, stocks, and gold. Sort the map, then book a private lesson or a group class in the city or online across the UAE.";
 
 const stocksEnglish = ENGLISH_VIDEOS.find((video) => video.id === "bC097etTQeI");
 
 export const metadata = pageMetadata({
-  title: "Investing Classes Near Me in Dubai | Private or Group",
+  title: "Investing Classes Near Me in Dubai | Forex, Stocks, Gold",
   description,
   keywords:
     "investing classes near me Dubai, trading classes near me Dubai, dubai trading courses, forex classes Dubai, stock market course Dubai",
@@ -30,7 +30,7 @@ const postSchema = articleSchema({
   description,
   path,
   datePublished: "2026-11-03",
-  dateModified: "2026-11-10",
+  dateModified: "2026-11-18",
 });
 
 export default function InvestingClassesNearMePost() {

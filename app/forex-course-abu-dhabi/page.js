@@ -135,7 +135,7 @@ export default function ForexCourseAbuDhabiPage() {
 
             <h2>What to send if you are writing from Abu Dhabi</h2>
             <p>
-              Tell the academy you are in Abu Dhabi, whether you want to drive to Dubai or study online, and whether you want a group seat or a private lesson. Name the track: Basic to Intermediate, or Advanced Institutional Strategies if you already read structure. Ask for the fee in AED and the next time that fits. WhatsApp is{" "}
+              Private mentorship for a professional week in the capital, as distinct from this drive-or-online choice, is <Link href="/blog-private-forex-mentorship-abu-dhabi">private forex mentorship in Abu Dhabi</Link>. Tell the academy you are in Abu Dhabi, whether you want to drive to Dubai or study online, and whether you want a group seat or a private lesson. Name the track: Basic to Intermediate, or Advanced Institutional Strategies if you already read structure. Ask for the fee in AED and the next time that fits. WhatsApp is{" "}
               <a href="https://wa.me/971559047030" target="_blank" rel="noopener noreferrer">+971 55 904 7030</a>. The form is on the <Link href="/contact">contact page</Link>.
             </p>
             <p>
