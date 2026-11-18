@@ -37,6 +37,10 @@ const whyFaq = [
     q: "What should the first message contain?",
     text: "Track, format, place, and the hours you can keep on Gulf Standard Time. Ask for the fee in AED. An example is on this page. Change every line so it is true for you, then send it from the contact page or WhatsApp +971 55 904 7030.",
   },
+  {
+    q: "How long does the checklist take?",
+    text: "About twenty minutes: the About profile, both tracks on the courses page, the private-versus-group note, whether MetaTrader 5 is installed, and the Google listing from the reviews page. Then ask for the fee in AED. The walkthrough on this page is that order. It does not replace the courses page.",
+  },
 ];
 
 const checks = [
@@ -384,6 +388,39 @@ export default function WhyChooseUsPage() {
               <Link href="/blog-mt5-order-ticket-dubai">the order ticket</Link>, and{" "}
               <Link href="/blog-private-vs-group-forex-classes-dubai">private versus group</Link>. The booking rules are on the{" "}
               <Link href="/terms">terms page</Link>.
+            </p>
+          </div>
+        </section>
+
+        <section className="tight">
+          <div className="container prose-block">
+            <h2>Twenty minutes, in this order</h2>
+            <p>
+              Work down the list and write one line under each step. Stop when a line is still blank. That blank is the thing to ask, not a reason to enrol.
+            </p>
+            <ol className="guide-list">
+              <li>
+                Teacher. Open <Link href="/about">About</Link> and write Gopi Chandran&apos;s name in your own note. If you cannot, you have not checked who teaches.
+              </li>
+              <li>
+                Track. Open <Link href="/courses">the course tracks</Link>. Write Basic to Intermediate if you cannot yet mark a swing. Write Advanced Institutional Strategies if you can. Do not copy the topic list onto this page. The list already has a URL.
+              </li>
+              <li>
+                Room. Read <Link href="/blog-private-vs-group-forex-classes-dubai">private versus group</Link> and write one of those two words. A private hour stays on your chart. A group hour follows the shared list.
+              </li>
+              <li>
+                Platform. If MetaTrader 5 is not installed, the steps are <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>. The window a live hour will point at is <Link href="/blog-mt5-order-ticket-dubai">the order ticket</Link>. You do not need a funded account for this line. You need to know whether the platform is on the machine.
+              </li>
+              <li>
+                Reviews and fee. Open the Google listing from <Link href="/success-stories">reviews</Link>. Then ask for the fee in AED. A number printed here would go stale. What a booking covers is on the <Link href="/terms">terms page</Link>.
+              </li>
+            </ol>
+            <p>
+              A professional in DIFC who can study after 8pm, or online from Abu Dhabi on Saturday morning, uses the same five lines. The hour is what changes. <Link href="/blog-private-forex-mentorship-abu-dhabi">Private forex mentorship in Abu Dhabi</Link> is that week written out. <Link href="/blog-forex-training-doctors-engineers-bankers-uae">Forex training for doctors, engineers and bankers</Link> is the version for a rota. <Link href="/blog-executive-forex-coaching-dubai">Executive forex coaching</Link> is the version for a company diary. This checklist does not become a different product because the diary is full.
+            </p>
+            <h2>What a complete first message looks like after the checks</h2>
+            <p>
+              When the five lines are filled, the message is short. &quot;Advanced track, private lesson, online from Abu Dhabi after 8pm Gulf Standard Time. MetaTrader 5 is installed. I have read the Google listing. Please quote the fee in AED.&quot; Swap the track, the city, and the hour so they are true. Send it from <Link href="/contact">contact</Link>, from the chat on this site, or on WhatsApp +971 55 904 7030. If you want to see the teaching before you choose a track, ask for a free demo class or a one-to-one meeting with Gopi in the same message.
             </p>
           </div>
         </section>

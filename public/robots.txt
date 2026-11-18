@@ -45,4 +45,8 @@ Allow: /
 User-agent: *
 Allow: /
 
+# /favicon.ico and font files under /_next/static/media/ are not pages.
+# They are omitted from the sitemap and sent with X-Robots-Tag: noindex.
+# Do not Disallow them. Googlebot needs the files to render the HTML.
+
 Sitemap: https://www.equityfinacademy.com/sitemap.xml

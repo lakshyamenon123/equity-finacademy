@@ -39,6 +39,41 @@
       "source": "/forex-academy-in-dubai/",
       "destination": "https://www.equityfinacademy.com/forex-academy-in-dubai",
       "statusCode": 301
+    },
+    {
+      "source": "/contact-us.html",
+      "destination": "https://www.equityfinacademy.com/contact",
+      "statusCode": 301
+    },
+    {
+      "source": "/mt5-order",
+      "destination": "https://www.equityfinacademy.com/blog-mt5-order-ticket-dubai",
+      "statusCode": 301
+    },
+    {
+      "source": "/mt5-order/",
+      "destination": "https://www.equityfinacademy.com/blog-mt5-order-ticket-dubai",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog-mt5-order",
+      "destination": "https://www.equityfinacademy.com/blog-mt5-order-ticket-dubai",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog-mt5-order/",
+      "destination": "https://www.equityfinacademy.com/blog-mt5-order-ticket-dubai",
+      "statusCode": 301
+    }
+  ],
+  "headers": [
+    {
+      "source": "/favicon.ico",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }]
+    },
+    {
+      "source": "/_next/static/media/(.*)",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }]
     }
   ]
 }

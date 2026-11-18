@@ -95,7 +95,7 @@ export default function CoursesPage() {
               <Link href="/blog-evening-group-forex-classes-dubai">evening group classes on Gulf Standard Time</Link>. A private hour on your own chart is{" "}
               <Link href="/blog-first-private-forex-lesson-dubai">what to bring and ask in a first private lesson</Link>. The catalogue of notes is the <Link href="/blog">blog</Link>. Abu Dhabi students start with the{" "}
               <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>. The advanced vocabulary, after you can mark a swing, is{" "}
-              <Link href="/blog-smart-money-concepts">smart money concepts</Link>. Google reviews stay on Google. The <Link href="/success-stories">reviews page</Link> explains the 5.0 listing. The message itself is <Link href="/contact">contact</Link>.
+              <Link href="/blog-smart-money-concepts">smart money concepts</Link>. Professionals in Abu Dhabi who want a private mentor, rather than a note about the drive, can read <Link href="/blog-private-forex-mentorship-abu-dhabi">private forex mentorship in Abu Dhabi</Link>. Doctors, engineers, and bankers with a rota can read <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for those careers</Link>. Google reviews stay on Google. The <Link href="/success-stories">reviews page</Link> explains the 5.0 listing. The message itself is <Link href="/contact">contact</Link>. The booking rules are on the <Link href="/terms">terms page</Link>.
             </p>
             <div className="cta-row">
               <a href="https://wa.me/971559047030" className="btn btn-primary" target="_blank" rel="noopener noreferrer">

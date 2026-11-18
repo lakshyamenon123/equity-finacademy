@@ -20,6 +20,32 @@ export const metadata = pageMetadata({
 
 const posts = [
   {
+    href: "/blog-private-forex-mentorship-abu-dhabi",
+    icon: (
+      <>
+        <path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z" />
+        <circle cx="12" cy="10" r="2.2" />
+      </>
+    ),
+    cat: "Abu Dhabi",
+    title: "Private Forex Mentorship in Abu Dhabi for Professionals",
+    desc: "How to book a private hour from the capital around a working week, online or on a visit to Dubai.",
+    time: "10 min read",
+  },
+  {
+    href: "/blog-forex-training-doctors-engineers-bankers-uae",
+    icon: (
+      <>
+        <circle cx="12" cy="8" r="3" />
+        <path d="M6 19c.8-2.6 2.8-4 6-4s5.2 1.4 6 4" />
+      </>
+    ),
+    cat: "Careers",
+    title: "Forex Training for Doctors, Engineers and Bankers in the UAE",
+    desc: "How a rota, a site week, or a DIFC day changes the hour you can keep, and what to write down before you fund an account.",
+    time: "10 min read",
+  },
+  {
     href: "/blog-executive-forex-coaching-dubai",
     icon: (
       <>
@@ -81,7 +107,7 @@ const posts = [
     ),
     cat: "Classes Near Me",
     title: "Personal Finance Classes Near Me in Dubai: Budget Class or Market Class?",
-    desc: "A budget hour and a chart hour show up in the same search. Here is how to tell them apart before you travel.",
+    desc: "A budgeting search and a chart search show up together. Here is how to tell the rooms apart before you travel.",
     time: "9 min read",
   },
   {
@@ -624,7 +650,7 @@ export default function BlogIndexPage() {
             </p>
             <h2>A reading order, then the page that books the seat</h2>
             <p>
-              Two notes for a narrower question sit at the top of the cards. <Link href="/blog-executive-forex-coaching-dubai">Executive forex coaching in Dubai</Link> is a private hour around a company week. <Link href="/blog-forex-portfolio-diversification-uae">Forex beside a portfolio</Link> is for investors who already hold capital. <Link href="/blog-stock-trading-classes-near-me-dubai">Stock trading classes near me in Dubai</Link> is for a share, an index, or gold. <Link href="/blog-choose-forex-mentor-dubai">How to choose a forex mentor in Dubai</Link> is about the teacher, not the brochure.
+              Two notes for a narrower question sit at the top of the cards. <Link href="/blog-private-forex-mentorship-abu-dhabi">Private forex mentorship in Abu Dhabi</Link> is a one-to-one hour for a professional week in the capital. <Link href="/blog-forex-training-doctors-engineers-bankers-uae">Forex training for doctors, engineers and bankers</Link> is the same problem when the constraint is a rota. <Link href="/blog-executive-forex-coaching-dubai">Executive forex coaching in Dubai</Link> is a private hour around a company week. <Link href="/blog-forex-portfolio-diversification-uae">Forex beside a portfolio</Link> is for investors who already hold capital. <Link href="/blog-stock-trading-classes-near-me-dubai">Stock trading classes near me in Dubai</Link> is for a share, an index, or gold. <Link href="/blog-choose-forex-mentor-dubai">How to choose a forex mentor in Dubai</Link> is about the teacher, not the brochure.
             </p>
             <p>
               New to charts, and already in Dubai: <Link href="/blog-how-to-start-forex-trading-dubai">how to start forex trading in Dubai</Link> is the first month. The install steps stay in <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>. Which button to press on that chart is <Link href="/blog-forex-chart-timeframes-dubai">which timeframe to open before a class</Link>. The window you will be asked to read is <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>. A stock or an index, rather than a currency pair, starts with <Link href="/blog-stock-market-course-dubai-first-weeks">the first weeks of a stock market course in Dubai</Link>. Then <Link href="/blog-currency-pairs-uae">how a pair is quoted</Link>, then <Link href="/blog-candlestick-patterns">candlesticks</Link>, then <Link href="/blog-market-structure">market structure</Link>. About to fund an account: <Link href="/blog-demo-vs-live-mt5-uae">demo versus live on MT5</Link>, then <Link href="/blog-forex-leverage-margin-mt5-uae">leverage and margin</Link>, then <Link href="/blog-forex-spreads-swaps-pip-value-uae">what a pip is worth</Link>. The advanced vocabulary, after you can point at a swing, is <Link href="/blog-smart-money-concepts">smart money concepts</Link>.
@@ -645,6 +671,14 @@ export default function BlogIndexPage() {
                   </tr>
                 </thead>
                 <tbody>
+                  <tr>
+                    <td>Private mentorship from Abu Dhabi, around a working week</td>
+                    <td><Link href="/blog-private-forex-mentorship-abu-dhabi">Private forex mentorship in Abu Dhabi</Link></td>
+                  </tr>
+                  <tr>
+                    <td>A rota: doctor, engineer, or banker</td>
+                    <td><Link href="/blog-forex-training-doctors-engineers-bankers-uae">Forex training for doctors, engineers and bankers</Link></td>
+                  </tr>
                   <tr>
                     <td>A private hour around a company calendar</td>
                     <td><Link href="/blog-executive-forex-coaching-dubai">Executive forex coaching in Dubai</Link></td>
