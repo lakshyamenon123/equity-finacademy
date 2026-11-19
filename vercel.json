@@ -64,11 +64,6 @@
       "source": "/blog-mt5-order/",
       "destination": "https://www.equityfinacademy.com/blog-mt5-order-ticket-dubai",
       "statusCode": 301
-    },
-    {
-      "source": "/:path*/",
-      "destination": "https://www.equityfinacademy.com/:path*",
-      "statusCode": 301
     }
   ],
   "headers": [
