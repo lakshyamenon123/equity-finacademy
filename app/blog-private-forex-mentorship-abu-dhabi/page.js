@@ -102,7 +102,7 @@ export default function PrivateForexMentorshipAbuDhabiPost() {
               </p>
               <h3>Online from the capital, or one visit to Dubai</h3>
               <p>
-                Online means the same instructor on a screen, from Abu Dhabi, live, on the same clock as the classroom. A visit means the room in Dubai, UAE. People who already spend part of the week in Downtown Dubai, DIFC, or Business Bay can attach the class to a day they are in the city. Say so if that is the plan. Ask for directions after the time is agreed.
+                Online means the same instructor on a screen, from Abu Dhabi, live, on the same clock as the classroom. A visit means the room in Dubai, UAE. People who already spend part of the week in Downtown Dubai, DIFC, or Business Bay can attach the class to a day they are in the city. Say so if that is the plan. Ask for directions after the time is agreed. If the week is based in Downtown Dubai, Business Bay, DIFC, Dubai Marina, or on Palm Jumeirah, rather than in the capital, read <Link href="/blog-vip-forex-mentorship-downtown-dubai-marina">private forex mentorship for those districts</Link>.
               </p>
 
               <h2>What the first private hours cover</h2>

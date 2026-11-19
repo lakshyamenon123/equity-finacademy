@@ -2,6 +2,41 @@ import { NextResponse } from "next/server";
 
 const CANONICAL_ORIGIN = "https://www.equityfinacademy.com";
 
+// Marketing parameters create a second URL for the same document. Google
+// reports that URL as an alternate with a canonical. Drop them in one 301
+// to the clean page. Leave other parameters alone, and never touch /api.
+const TRACKING_PARAMS = new Set([
+  "utm_source",
+  "utm_medium",
+  "utm_campaign",
+  "utm_content",
+  "utm_term",
+  "utm_id",
+  "gclid",
+  "fbclid",
+  "gbraid",
+  "wbraid",
+  "gad_source",
+  "gad_campaignid",
+  "mc_cid",
+  "mc_eid",
+  "msclkid",
+  "yclid",
+  "_ga",
+  "_gl",
+]);
+
+function redirectAbsolute(pathname, params) {
+  const url = new URL(pathname, CANONICAL_ORIGIN);
+  const rest = params.toString();
+  if (rest) url.search = rest;
+  const location = url.toString();
+  return new NextResponse(null, {
+    status: 301,
+    headers: { Location: location },
+  });
+}
+
 // Legacy paths that Search Console still requests. Match with or without a
 // trailing slash so each URL reaches its canonical page in one 301.
 const LEGACY = {
@@ -38,37 +73,34 @@ const LEGACY = {
 };
 
 export function middleware(request) {
-  const { pathname, search } = request.nextUrl;
+  const { pathname } = request.nextUrl;
+  if (pathname.startsWith("/api")) return NextResponse.next();
+
   const stripped = pathname.length > 1 && pathname.endsWith("/") ? pathname.slice(0, -1) : pathname;
+  const params = new URLSearchParams(request.nextUrl.searchParams);
+  let queryChanged = false;
 
   // /contact?course=... was an old enquiry link. The form ignores it, so it is
-  // the same document as /contact. Send one 301 to the canonical URL and drop
-  // the parameter. Do not forward it, or the redirect loops. Other query
-  // parameters on the same request are kept.
-  if (stripped === "/contact" && request.nextUrl.searchParams.has("course")) {
-    const url = new URL("/contact", CANONICAL_ORIGIN);
-    const params = new URLSearchParams(request.nextUrl.searchParams);
+  // the same document as /contact. Drop the parameter. Do not forward it.
+  if (stripped === "/contact" && params.has("course")) {
     params.delete("course");
-    const rest = params.toString();
-    if (rest) url.search = rest;
-    const location = url.toString();
-    const response = NextResponse.redirect(location, 301);
-    response.headers.set("Location", location);
-    return response;
+    queryChanged = true;
+  }
+
+  for (const key of [...params.keys()]) {
+    if (TRACKING_PARAMS.has(key.toLowerCase())) {
+      params.delete(key);
+      queryChanged = true;
+    }
   }
 
   const destination = LEGACY[stripped];
   const target = destination || (stripped !== pathname ? stripped : null);
-  if (!target) return NextResponse.next();
-  // Absolute https://www URL so the Location header is the canonical page.
-  // NextURL copies the request's trailing slash onto the redirect and would
-  // send /blog/ back to /blog/.
-  const url = new URL(target, CANONICAL_ORIGIN);
-  url.search = search;
-  const location = url.toString();
-  const response = NextResponse.redirect(location, 301);
-  response.headers.set("Location", location);
-  return response;
+  if (!target && !queryChanged) return NextResponse.next();
+  // One absolute 301, including when a trailing slash and a tracking
+  // parameter arrive together. A relative Location that keeps the slash
+  // would send /blog/ back to /blog/.
+  return redirectAbsolute(target || stripped, params);
 }
 
 export const config = {
