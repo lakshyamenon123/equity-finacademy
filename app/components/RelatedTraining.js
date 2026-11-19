@@ -1,6 +1,8 @@
 import Link from "next/link";
 
 const LINKS = [
+  { href: "/blog-forex-trading-business-owners-uae", label: "Forex education for business owners" },
+  { href: "/blog-vip-forex-mentorship-downtown-dubai-marina", label: "Private mentorship in Downtown Dubai" },
   { href: "/blog-executive-forex-coaching-dubai", label: "Executive forex coaching in Dubai" },
   { href: "/blog-forex-portfolio-diversification-uae", label: "Forex beside a portfolio" },
   { href: "/terms", label: "Terms of a booking" },

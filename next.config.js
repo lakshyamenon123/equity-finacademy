@@ -73,6 +73,18 @@ const nextConfig = {
         headers: [{ key: "X-Robots-Tag", value: "noindex" }],
       },
       {
+        source: "/apple-touch-icon.png",
+        headers: [{ key: "X-Robots-Tag", value: "noindex" }],
+      },
+      {
+        source: "/og-image.png",
+        headers: [{ key: "X-Robots-Tag", value: "noindex" }],
+      },
+      {
+        source: "/mentor.jpg",
+        headers: [{ key: "X-Robots-Tag", value: "noindex" }],
+      },
+      {
         source: "/_next/static/media/:path*",
         headers: [{ key: "X-Robots-Tag", value: "noindex" }],
       },

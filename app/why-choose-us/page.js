@@ -14,7 +14,7 @@ const path = "/why-choose-us";
 
 const title = "Six Checks Before You Enrol at Equity Fin Academy";
 const description =
-  "Six checks before you enrol at Equity Fin Academy in Dubai: the teacher, the public syllabus, the room, the broker, the Google listing, and an AED quote.";
+  "Six checks before you enrol at Equity Fin Academy in Dubai, and how they apply to a private hour: teacher, syllabus, room, broker, Google listing, and an AED quote.";
 
 export const metadata = pageMetadata({
   title: "Six Checks Before a Dubai Forex Class | Equity Fin Academy",
@@ -421,6 +421,53 @@ export default function WhyChooseUsPage() {
             <h2>What a complete first message looks like after the checks</h2>
             <p>
               When the five lines are filled, the message is short. &quot;Advanced track, private lesson, online from Abu Dhabi after 8pm Gulf Standard Time. MetaTrader 5 is installed. I have read the Google listing. Please quote the fee in AED.&quot; Swap the track, the city, and the hour so they are true. Send it from <Link href="/contact">contact</Link>, from the chat on this site, or on WhatsApp +971 55 904 7030. If you want to see the teaching before you choose a track, ask for a free demo class or a one-to-one meeting with Gopi in the same message.
+            </p>
+          </div>
+        </section>
+
+        <section className="tight">
+          <div className="container prose-block">
+            <h2>Apply the six checks to a private hour</h2>
+            <p>
+              The cards above are the short form. If you already know you want one-to-one mentorship, write the answers in your own note before you pay. A private hour does not retire the checks. It makes each one more specific. There is no third room hiding behind a different name.
+            </p>
+            <ol className="guide-list">
+              <li>Teacher. The person in the hour is Gopi Chandran. If the page you are trusting never names him, you are looking at a different offer. The profile is on About.</li>
+              <li>Track. A private seat still starts where you are. If you cannot mark a swing, the hour is Basic to Intermediate. If you can, and you want the later topics, say Advanced Institutional Strategies. The lists stay on the courses page.</li>
+              <li>Room. Write private, group, or both. Both is allowed in the same month. It is still two bookings, not a blended product with its own price.</li>
+              <li>Place. Classroom in Dubai, UAE, or online on Gulf Standard Time. If you work in DIFC or live in Dubai Marina, name that so the time fits the drive. Directions come after the time is agreed.</li>
+              <li>Money. The course fee and the broker balance are separate. You open the account. A private hour does not include someone to run a company account or to choose the dirhams you can lose.</li>
+              <li>Proof and price. Open the Google listing from the reviews page. Then ask for the fee in AED. A number printed here would go stale.</li>
+            </ol>
+            <div className="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Bring to the message</th>
+                    <th>Leave out</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Track, private or group, Dubai or online, two times you can keep, and one time you cannot.</td>
+                    <td>A broker password, or a request for the academy to move company funds.</td>
+                  </tr>
+                  <tr>
+                    <td>Whether MetaTrader 5 is installed, and one sentence about the chart.</td>
+                    <td>A result you want the reply to promise. The reply names a time and a fee.</td>
+                  </tr>
+                  <tr>
+                    <td>That the trading amount, if you have named one, is separate from operating cash.</td>
+                    <td>Turnover, a shareholder list, or screenshots of a bank account.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>
+              Two longer notes sit next to this worksheet.{" "}
+              <Link href="/blog-forex-trading-business-owners-uae">Forex education for business owners in the UAE</Link> is how a founder separates company cash from a trading balance and keeps a short week.{" "}
+              <Link href="/blog-vip-forex-mentorship-downtown-dubai-marina">Private mentorship for Downtown Dubai, DIFC and the Marina</Link> is the same private hour when the week is spent in those districts, Business Bay, or on Palm Jumeirah. The booking mechanics for a company calendar stay in{" "}
+              <Link href="/blog-executive-forex-coaching-dubai">executive forex coaching</Link>. Fill the six lines here, then send them from <Link href="/contact">contact</Link>.
             </p>
           </div>
         </section>

@@ -12,7 +12,7 @@ import { whatsappHref } from "../lib/whatsapp";
 
 const contactTitle = "Contact Equity Fin Academy in Dubai";
 const contactDescription =
-  "Contact Equity Fin Academy in Dubai. Ask for a free demo class or a one-to-one meeting, or send your emirate, format, track, and the hours you can keep.";
+  "Contact Equity Fin Academy in Dubai. Send your district or emirate, private or group, the track, and the hours you can keep. Ask for a demo or a fee in AED.";
 
 export const metadata = pageMetadata({
   title: "Contact Equity Fin Academy in Dubai | WhatsApp Enquiry",
@@ -286,6 +286,29 @@ export default function ContactPage() {
             </ul>
             <p>
               What the hour contains, once it is booked, is <Link href="/blog-live-forex-trading-session-dubai">a live forex session in Dubai</Link>. The six checks before you pay are on <Link href="/why-choose-us">Why Choose Us</Link>. The topic order is on <Link href="/courses">the course tracks</Link>.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <div className="container prose-block">
+            <h2>Writing from Downtown Dubai, DIFC, Business Bay, the Marina, or Palm Jumeirah</h2>
+            <p>
+              The desk is the same wherever you are in Dubai. There is no separate number for a district, and the public location stays Dubai, UAE. What helps the reply is the district, because the drive is part of the hour you can keep. Ask for directions after a time is agreed. This page does not try to be a map of your office.
+            </p>
+            <ul className="guide-list">
+              <li>DIFC or Business Bay on a weekday: say whether the hour should sit before the first meeting, after the last one, or online between them. A gap between two meetings outside the building is rarely long enough to cross the city and sit down.</li>
+              <li>Downtown Dubai: if you are already there for work, an in-person hour can be attached to that day. Say so, and name one backup block if a dinner moves.</li>
+              <li>Dubai Marina or Palm Jumeirah: name the evening or the Saturday you can travel once, or ask for the hour online from home. The teaching is the same. The commute is yours. Do not book a time that assumes you can leave DIFC and be seated twenty minutes later.</li>
+              <li>Online from any of these places uses Gulf Standard Time. It is live, with the same instructor. It is not a recording you start when the last call ends.</li>
+            </ul>
+            <p>
+              If you leave the track, the room, or the hours out, the reply will ask for them before it quotes a fee in AED. Send them and the answer can name a time. Do not attach a broker password, a company bank screenshot, or a request for the academy to place trades in an account it does not control. A symbol and a question are enough for the first conversation.
+            </p>
+            <p>
+              The longer description of that private hour is{" "}
+              <Link href="/blog-vip-forex-mentorship-downtown-dubai-marina">private forex mentorship for Downtown Dubai, DIFC and the Marina</Link>. Founders who still need to separate company cash from a trading balance should read{" "}
+              <Link href="/blog-forex-trading-business-owners-uae">forex education for business owners in the UAE</Link> before they write. The six checks before you pay are on <Link href="/why-choose-us">Why Choose Us</Link>. WhatsApp is +971 55 904 7030.
             </p>
           </div>
         </section>

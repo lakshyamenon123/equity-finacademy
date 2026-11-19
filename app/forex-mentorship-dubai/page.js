@@ -154,7 +154,7 @@ export default function ForexMentorshipDubaiPage() {
 
             <h2>Dubai, the rest of the UAE, and the hours you can actually keep</h2>
             <p>
-              In-person mentorship is in Dubai. The pages do not print a floor or a building name. Ask on WhatsApp and you will be told where to come. Online mentorship covers Abu Dhabi, Sharjah, and the other emirates, plus anyone in Dubai who would rather stay at the desk. It is the same coach and the same two tracks. The in-person school page is{" "}
+              In-person mentorship is in Dubai. The public location is Dubai, UAE. Ask on WhatsApp and you will be told where to come. Online mentorship covers Abu Dhabi, Sharjah, and the other emirates, plus anyone in Dubai who would rather stay at the desk. Professionals in Downtown Dubai, Business Bay, DIFC, Dubai Marina, or on Palm Jumeirah can read <Link href="/blog-vip-forex-mentorship-downtown-dubai-marina">what that private hour looks like from those districts</Link>. Founders who need the trading balance kept apart from company cash should read <Link href="/blog-forex-trading-business-owners-uae">forex education for business owners</Link>. It is the same coach and the same two tracks. The in-person school page is{" "}
               <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link>. The online national page is{" "}
               <Link href="/forex-training-academy-uae">forex training academy UAE</Link>.
             </p>

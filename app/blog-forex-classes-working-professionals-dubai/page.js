@@ -160,7 +160,8 @@ export default function ProfessionalsForexClassesPost() {
               </p>
               <p>
                 If the constraint is a hospital rota, a site week, or a DIFC day, read{" "}
-                <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for doctors, engineers and bankers</Link>. If you live in Abu Dhabi and the evening drive is the hard part, study online. The{" "}
+                <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for doctors, engineers and bankers</Link>. If the week is spent between Downtown Dubai, Business Bay, DIFC, Dubai Marina, and Palm Jumeirah, the private hour for that geography is{" "}
+                <Link href="/blog-vip-forex-mentorship-downtown-dubai-marina">private forex mentorship for those districts</Link>. If you live in Abu Dhabi and the evening drive is the hard part, study online. The{" "}
                 <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> is the note for that choice. Private mentorship for that week is{" "}
                 <Link href="/blog-private-forex-mentorship-abu-dhabi">private forex mentorship in Abu Dhabi</Link>. Sharjah
                 is closer, and it has its own page: <Link href="/forex-course-sharjah">forex course in Sharjah</Link>.
