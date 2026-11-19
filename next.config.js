@@ -23,7 +23,8 @@ const nextConfig = {
     // statusCode 301 is a permanent redirect. permanent: true would be a 308.
     // Trailing-slash requests, including /home/ and /about-us/, are one hop
     // in middleware.js. A catch-all slash rule here was matching first and
-    // sending /home/ to /home.
+    // sending /home/ to /home. Do not add "/:path*/" in vercel.json either:
+    // that pattern matches "/" and 301s the homepage to itself.
     const pairs = [
       ["/home", `${CANONICAL_ORIGIN}/`],
       ["/index.html", `${CANONICAL_ORIGIN}/`],

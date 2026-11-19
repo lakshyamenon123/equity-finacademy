@@ -26,14 +26,28 @@ const TRACKING_PARAMS = new Set([
   "_gl",
 ]);
 
-function redirectAbsolute(pathname, params) {
-  const url = new URL(pathname, CANONICAL_ORIGIN);
+function canonicalUrl(pathname, params) {
+  const url = new URL(pathname || "/", CANONICAL_ORIGIN);
   const rest = params.toString();
   if (rest) url.search = rest;
-  const location = url.toString();
+  return url;
+}
+
+function samePathAndQuery(request, url) {
+  return (
+    url.pathname === request.nextUrl.pathname &&
+    url.searchParams.toString() === request.nextUrl.searchParams.toString()
+  );
+}
+
+function redirectAbsolute(pathname, params, request) {
+  const url = canonicalUrl(pathname, params);
+  // A 301 to the same path and query loops. "/" is already canonical, so a
+  // trailing-slash rule must not send it to itself.
+  if (samePathAndQuery(request, url)) return NextResponse.next();
   return new NextResponse(null, {
     status: 301,
-    headers: { Location: location },
+    headers: { Location: url.toString() },
   });
 }
 
@@ -94,13 +108,17 @@ export function middleware(request) {
     }
   }
 
+  // "/" is the canonical homepage, not a trailing-slash URL. With no tracking
+  // parameters there is nothing to change, so the request must pass through.
+  if (pathname === "/" && !queryChanged) return NextResponse.next();
+
   const destination = LEGACY[stripped];
   const target = destination || (stripped !== pathname ? stripped : null);
   if (!target && !queryChanged) return NextResponse.next();
   // One absolute 301, including when a trailing slash and a tracking
   // parameter arrive together. A relative Location that keeps the slash
   // would send /blog/ back to /blog/.
-  return redirectAbsolute(target || stripped, params);
+  return redirectAbsolute(target || stripped, params, request);
 }
 
 export const config = {
