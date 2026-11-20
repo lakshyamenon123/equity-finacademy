@@ -15,7 +15,7 @@ const path = "/best-forex-course-dubai";
 export const metadata = pageMetadata({
   title: "How to Choose a Forex Course in Dubai | Equity Fin Academy",
   description:
-    "Compare forex trading courses and classes in Dubai before you pay: syllabus, instructor, format, and reviews. Rated 5.0 from 30+ Google reviews.",
+    "How to compare a forex course in Dubai before you pay: the syllabus, the mentor, private or group, and what the 5.0 Google listing does and does not say.",
   keywords:
     "forex trading courses in Dubai, how to choose a forex course Dubai, forex training Dubai, forex education UAE, trading classes in Dubai",
   path,

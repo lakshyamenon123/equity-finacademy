@@ -16,10 +16,11 @@ const coursesDescription =
   "Forex trading courses in Dubai: Basic to Intermediate and Advanced tracks, as a group class or a private lesson, in Dubai, UAE, or online. Fee quoted in AED.";
 
 export const metadata = pageMetadata({
-  title: `${coursesTitle} | Equity Fin Academy`,
-  description: coursesDescription,
+  title: "Forex Course in Dubai | Equity Fin Academy",
+  description:
+    "Forex course in Dubai with private or group classes, in the room or online across the UAE. A share, an index, or gold can be the chart. Fee quoted in AED.",
   keywords:
-    "forex trading courses in Dubai, forex course Dubai, forex education UAE, trading classes in Dubai, private forex classes Dubai, group forex classes Dubai",
+    "forex course Dubai, forex trading courses in Dubai, forex education UAE, private forex classes Dubai, group forex classes Dubai, stock trading classes near me Dubai, investing classes near me Dubai",
   path: "/courses",
 });
 
@@ -31,6 +32,10 @@ const courseFaq = [
   {
     q: "Does the syllabus cover other markets?",
     text: "Both tracks are forex courses, taught as one market-structure framework. Practical sessions use MetaTrader 5, so the same chart work also covers gold, indices, and stocks the broker lists, alongside forex.",
+  },
+  {
+    q: "Do you offer investing or stock trading classes near me in Dubai?",
+    text: "The courses on this page are forex tracks. A live private or group hour can mark a share, an index, or gold on MetaTrader 5 when you name that symbol. Classes are in person in Dubai, UAE, or online across the UAE. This is not a budgeting or retirement class, and the academy does not publish a list of shares to buy. The fee is quoted in AED when you enquire.",
   },
   {
     q: "What is Lifetime Support via WhatsApp?",
@@ -250,6 +255,14 @@ export default function CoursesPage() {
               </details>
               <details>
                 <summary>
+                  Do you offer investing or stock trading classes near me in Dubai?<span className="plus">+</span>
+                </summary>
+                <p>
+                  The courses on this page are forex tracks. A live private or group hour can mark a share, an index, or gold on MetaTrader 5 when you name that symbol. Classes are in person in Dubai, UAE, or online across the UAE. This is not a budgeting or retirement class, and the academy does not publish a list of shares to buy. The fee is quoted in AED when you enquire.
+                </p>
+              </details>
+              <details>
+                <summary>
                   What is &quot;Lifetime Support via WhatsApp&quot;?<span className="plus">+</span>
                 </summary>
                 <p>Students on the Advanced Institutional Strategies track get ongoing access to the instructor via WhatsApp for questions after the course ends.</p>
@@ -345,6 +358,17 @@ export default function CoursesPage() {
             </div>
             <p>
               The cost of acting on any of those marks, the spread and the pip value in dirhams, is <Link href="/blog-forex-spreads-swaps-pip-value-uae">spreads, swaps, and pip value</Link>. The margin the platform holds back is <Link href="/blog-forex-leverage-margin-mt5-uae">leverage and margin on MT5</Link>. How much of the account to risk is <Link href="/blog-risk-management">risk per trade</Link>.
+            </p>
+
+            <h2>Investing and stock trading classes near me</h2>
+            <p>
+              A map search for investing classes near me, or for stock trading classes near me, often lands on a forex academy. This is what is actually taught here.
+            </p>
+            <p>
+              The published syllabus is forex: Basic to Intermediate, then Advanced Institutional Strategies. Practical sessions run on MetaTrader 5 with StarTrader, regulated by the UAE Securities and Commodities Authority. When you name a share, an index, or gold, the same live hour can be spent on that symbol. You open the broker account yourself. The course fee and the trading balance are separate. The academy does not publish a list of shares to buy, and it does not choose a ticker for you in an article.
+            </p>
+            <p>
+              Near me, for this academy, means in person in Dubai, UAE, or live online across the UAE on Gulf Standard Time. The location published on this site is Dubai, UAE. Ask for directions once a time is agreed. A class about salary, bills, or retirement saving is a different subject. That search is <Link href="/blog-personal-finance-classes-near-me-dubai">personal finance classes near me in Dubai</Link>. The chart version of a share, an index, or gold is <Link href="/blog-stock-trading-classes-near-me-dubai">stock trading classes near me in Dubai</Link> and the <Link href="/stock-market-course-dubai">stock market course</Link>. The first weeks of that work are <Link href="/blog-stock-market-course-dubai-first-weeks">the first weeks of a stock market course</Link>. <Link href="/blog-investing-classes-near-me-dubai">Investing classes near me in Dubai</Link> sorts the map result into forex, stocks, and gold before you enquire.
             </p>
 
             <h2>Trading classes in Dubai</h2>

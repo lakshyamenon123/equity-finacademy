@@ -1,6 +1,9 @@
 import Link from "next/link";
 
 const LINKS = [
+  { href: "/blog-forex-mentorship-difc-professionals", label: "Forex mentorship for DIFC professionals" },
+  { href: "/blog-forex-coaching-entrepreneurs-flexible-week", label: "Forex coaching for an irregular week" },
+  { href: "/blog-forex-training-doctors-engineers-bankers-uae", label: "Forex training for doctors, engineers and bankers" },
   { href: "/blog-forex-trading-business-owners-uae", label: "Forex education for business owners" },
   { href: "/blog-vip-forex-mentorship-downtown-dubai-marina", label: "Private mentorship in Downtown Dubai" },
   { href: "/blog-executive-forex-coaching-dubai", label: "Executive forex coaching in Dubai" },

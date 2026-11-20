@@ -3,18 +3,38 @@ import Footer from "../components/Footer";
 import JsonLd from "../components/JsonLd";
 import YouTubeSection from "../components/YouTubeSection";
 import AcademyLinks from "../components/AcademyLinks";
+import FaqList from "../components/FaqList";
 import Link from "next/link";
 import AuthorByline from "../components/AuthorByline";
 import OpenChatLink from "../components/OpenChatLink";
 import { pageMetadata } from "../lib/seo";
-import { articleSchema, breadcrumbSchema } from "../lib/schema";
+import { articleSchema, breadcrumbSchema, faqPageSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { whatsappHref } from "../lib/whatsapp";
 
 const path = "/blog-forex-training-doctors-engineers-bankers-uae";
 const headline = "Forex Training for Doctors, Engineers and Bankers in the UAE";
 const description =
-  "How doctors, engineers and bankers in the UAE fit private forex training around shifts and meetings, and how to keep risk in writing before a live class.";
+  "How doctors, engineers and bankers in the UAE fit private forex training around shifts, site travel and a banking week, and what to write down before a live class.";
+
+const careerFaq = [
+  {
+    q: "Can a doctor on shifts join a fixed group evening?",
+    text: "A group cohort needs the same hour each week. A night shift, a post-call morning, or a weekend on the rota will break that pattern. Book a private hour on the next two weeks you can actually keep, or ask for a group seat once the rota is stable. The fee is quoted in AED when you enquire.",
+  },
+  {
+    q: "Do engineers who travel between emirates have to attend in Dubai?",
+    text: "No. In-person classes are in Dubai, UAE. Live online classes use the same instructor and the same tracks on Gulf Standard Time. A travel day or a site day is a poor time for either seat. Name the evenings that are not site days.",
+  },
+  {
+    q: "I work in a bank. Can the class discuss my desk?",
+    text: "No. Bring a personal practice chart you are free to talk about. Do not bring information from work that you are not permitted to use. The hour is about how you read a symbol on your own account.",
+  },
+  {
+    q: "Is a private lesson a different syllabus for these careers?",
+    text: "No. Private and group students use the same two forex tracks. Private means the hour can move and stays on your chart. It does not skip the quote, the candle, or the swing.",
+  },
+];
 
 const brokerEnglish = ENGLISH_VIDEOS.find((video) => video.id === "bC097etTQeI");
 const whatsapp = whatsappHref(
@@ -35,7 +55,7 @@ const postSchema = articleSchema({
   description,
   path,
   datePublished: "2026-11-18",
-  dateModified: "2026-11-18",
+  dateModified: "2026-11-20",
   type: "BlogPosting",
 });
 
@@ -43,6 +63,7 @@ export default function ForexTrainingCareersPost() {
   return (
     <>
       <JsonLd data={postSchema} />
+      <JsonLd data={faqPageSchema(careerFaq)} />
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", path: "/" },
@@ -66,7 +87,7 @@ export default function ForexTrainingCareersPost() {
             <div className="blog-article">
               <span className="eyebrow">CAREERS</span>
               <h1>{headline}</h1>
-              <AuthorByline detail="18 Nov 2026 · 10 min read" />
+              <AuthorByline detail="18 Nov 2026 · Updated 20 Nov 2026 · 12 min read" />
 
               <p>
                 A registrar coming off a night shift, an engineer leaving a site meeting in Business Bay, and a banker whose afternoon belongs to DIFC do not share a diary. They do share a problem. The hour they can study is not a neat slot after a standard office close, and the income they already earn can make a trading account feel smaller than it is. This note is for those three careers. It is about fitting private forex training around the week you actually have, and about writing the risk down before the account is funded.
@@ -111,7 +132,48 @@ export default function ForexTrainingCareersPost() {
                 <Link href="/online-forex-course-uae">online forex course</Link>.
               </p>
               <p>
-                If the rota moves inside forty-eight hours, say that in the first message so the seat is a private hour that can move, not a group place someone else needed.
+                If the rota moves inside forty-eight hours, say that in the first message so the seat is a private hour that can move, not a group place someone else needed. A finance job in DIFC, written as the work rather than as the commute, is{" "}
+                <Link href="/blog-forex-mentorship-difc-professionals">forex mentorship for DIFC professionals</Link>. A founder whose week will not repeat, including study from Palm Jumeirah or Emirates Hills, is{" "}
+                <Link href="/blog-forex-coaching-entrepreneurs-flexible-week">private forex coaching for an irregular week</Link>.
+              </p>
+
+              <h2>Write the next two weeks before you ask for a seat</h2>
+              <p>
+                A career label is not a timetable. The reply can offer a time when the message contains the next two weeks you can keep, and the hours that look free but are not. Use this as a draft, then replace every line that is not true for you.
+              </p>
+              <div className="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Career</th>
+                      <th>What usually collides with a class</th>
+                      <th>What to send</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Doctor</td>
+                      <td>A night shift, the post-call morning after it, and a weekend that is still a shift.</td>
+                      <td>The next off-duty blocks, and whether the hour is online. Leave the recovery morning off the list.</td>
+                    </tr>
+                    <tr>
+                      <td>Engineer</td>
+                      <td>A site day, travel between emirates, and a report due the same night as the class.</td>
+                      <td>Which evenings are not site days, and which emirate you will actually be in.</td>
+                    </tr>
+                    <tr>
+                      <td>Banker</td>
+                      <td>A DIFC afternoon, then a client evening in Downtown Dubai or Dubai Marina.</td>
+                      <td>An hour after the desk, or a weekend morning, and the symbol on your own account.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>
+                A post-call morning looks empty on a roster and is not a study hour. Book the class on a day you are off the rota. If that morning is the gap you have, say so, and use it to review a chart you already marked. Do not make it the day of a first live ticket.
+              </p>
+              <p>
+                An engineer&apos;s travel day has the same rule. If Tuesday is a site in another emirate, do not book Tuesday. Online still needs a quiet room and the platform open before the hour. The class cannot start in a car. Bankers should keep the chart personal: a symbol and a timeframe you can discuss freely, not a position from the desk. The longer version of that boundary, for people whose job is already in finance, is the DIFC note linked above.
               </p>
 
               <h2>Income is not a reason to size up</h2>
@@ -169,6 +231,8 @@ export default function ForexTrainingCareersPost() {
                 . The same lines work in all three places. A longer coaching relationship, across several weeks, is described on{" "}
                 <Link href="/forex-mentorship-dubai">forex mentorship in Dubai</Link>.
               </p>
+              <h2>Questions from these three careers</h2>
+              <FaqList items={careerFaq} />
               <AcademyLinks lead="The school pages, once you know the format, are the" />
               <div className="blog-cta">
                 <p>Name the rota and one chart. Ask for a free demo class or a one-to-one meeting with Gopi.</p>

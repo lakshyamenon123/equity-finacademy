@@ -17,7 +17,7 @@ const whatsapp = whatsappHref(COURSE_WHATSAPP_TEXT);
 export const metadata = pageMetadata({
   title: "Forex Training Academy in Dubai | Equity Fin Academy",
   description:
-    "Forex training academy in Dubai for private one-to-one lessons and group classes with live trading. 2,000+ students. Rated 5.0 from 30+ Google reviews.",
+    "Forex training academy in Dubai for private one-to-one and group classes with live sessions. 2,000+ students. In the room or online. Open 24/7.",
   keywords:
     "forex training academy Dubai, forex academy Dubai, forex training Dubai, forex classes Dubai, private forex training Dubai, group forex classes Dubai",
   path,
@@ -155,7 +155,7 @@ export default function ForexTrainingAcademyDubaiPage() {
             <p>
               A live session is not a room full of trade calls. The instructor marks the level, explains why it is the level, and lets you see the order placed against a plan that was written before the click. If you want the platform installed before you arrive, the written steps are in{" "}
               <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>. The fields on that window are in{" "}
-              <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>. Which room to book is in{" "}
+              <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>. A rota, rather than a standard office close, is <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for doctors, engineers and bankers</Link>. Which room to book is in{" "}
               <Link href="/blog-private-vs-group-forex-classes-dubai">private versus group classes</Link>. What a booking covers is on the <Link href="/terms">terms page</Link>. MetaTrader 5 is the platform used alongside class practice.
             </p>
 

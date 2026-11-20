@@ -7,15 +7,14 @@ import OpenChatLink from "./components/OpenChatLink";
 import { pageMetadata } from "./lib/seo";
 import FaqList from "./components/FaqList";
 import { faqPageSchema, organizationSchema, personSchema } from "./lib/schema";
-import { mentorFaq } from "./lib/mentorFaq";
 import { homeFaq } from "./lib/homeFaq";
 import { SITE } from "./lib/site";
 import { VIDEOS } from "./lib/videos";
 
 export const metadata = pageMetadata({
-  title: "Forex Training Academy in Dubai, UAE | Equity Fin Academy",
+  title: "Forex Training Academy UAE | Equity Fin Academy",
   description:
-    "Forex training academy in Dubai for private one-to-one lessons and group classes, in the room or online across the UAE. Rated 5.0 on Google.",
+    "Forex training academy in the UAE: private one-to-one and group classes in Dubai, or live online. Mentor Gopi Chandran. 2,000+ students. Open 24/7.",
   keywords:
     "forex training academy Dubai, forex training academy UAE, forex trading courses in Dubai, forex courses in Dubai, investing classes near me Dubai, dubai trading courses, forex education UAE",
   path: "/",
@@ -395,7 +394,7 @@ export default function HomePage() {
                 <Link href="/blog-live-forex-trading-session-dubai">A live forex session in Dubai</Link> is what the booked hour contains. <Link href="/blog-stock-market-course-dubai-first-weeks">The first weeks of a stock market course</Link> is the drill for a share, an index, or gold.
               </li>
               <li>
-                <Link href="/blog-executive-forex-coaching-dubai">Executive forex coaching for business owners</Link> fits a private hour around a company week. <Link href="/blog-forex-portfolio-diversification-uae">Forex beside an existing portfolio</Link> is for investors who already hold capital. <Link href="/blog-private-forex-mentorship-abu-dhabi">Private forex mentorship in Abu Dhabi</Link> is the same hour for a professional week in the capital. <Link href="/blog-forex-training-doctors-engineers-bankers-uae">Forex training for doctors, engineers and bankers</Link> is for a rota rather than an office close.
+                <Link href="/blog-executive-forex-coaching-dubai">Executive forex coaching for business owners</Link> fits a private hour around a company week. <Link href="/blog-forex-coaching-entrepreneurs-flexible-week">Private forex coaching for an irregular week</Link> is for founders whose diary will not repeat, including Palm Jumeirah, Emirates Hills, and Business Bay. <Link href="/blog-forex-mentorship-difc-professionals">Forex mentorship for DIFC professionals</Link> is the hour when finance is already the job. <Link href="/blog-forex-portfolio-diversification-uae">Forex beside an existing portfolio</Link> is for investors who already hold capital. <Link href="/blog-private-forex-mentorship-abu-dhabi">Private forex mentorship in Abu Dhabi</Link> is the same hour for a professional week in the capital. <Link href="/blog-forex-training-doctors-engineers-bankers-uae">Forex training for doctors, engineers and bankers</Link> is for a rota rather than an office close.
               </li>
               <li>
                 <Link href="/why-choose-us">The enrolment checklist</Link>, the <Link href="/success-stories">Google reviews guide</Link>, and <Link href="/contact">contact</Link> are the steps after the reading. The booking rules are on the <Link href="/terms">terms page</Link>. How an enquiry is stored is on the <Link href="/privacy">privacy page</Link>. The school pages are <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link> and <Link href="/forex-training-academy-uae">forex training academy UAE</Link>.
@@ -412,40 +411,7 @@ export default function HomePage() {
               <span className="eyebrow">COMMON QUESTIONS</span>
               <h2>Frequently asked questions</h2>
             </div>
-            <FaqList items={mentorFaq} />
-            <div className="faq-list reveal">
-              <details>
-                <summary>
-                  How do I start learning forex trading?<span className="plus">+</span>
-                </summary>
-                <p>
-                  Start with the fundamentals — <Link href="/blog-currency-pairs-uae">currency pairs</Link>, candlestick patterns and market structure — before
-                  trading live. Our <Link href="/blog">blog</Link> walks through this step by step, and the Basic
-                  to Intermediate course builds on it with live instruction.
-                </p>
-              </details>
-              <details>
-                <summary>
-                  Is Equity Fin Academy good for beginners?<span className="plus">+</span>
-                </summary>
-                <p>
-                  Yes. The Basic to Intermediate track is built for traders with no prior experience, starting from
-                  forex fundamentals before moving into structure and strategy.
-                </p>
-              </details>
-              <details>
-                <summary>
-                  Do you teach anything besides forex?<span className="plus">+</span>
-                </summary>
-                <p>
-                  The published syllabus is the two forex tracks, from candlesticks through smart money concepts.
-                  Practical sessions use MetaTrader 5, so the same chart work also covers gold, indices, and stocks the
-                  broker lists, alongside forex. The{" "}
-                  <Link href="/stock-market-course-dubai">stock market course in Dubai</Link> explains that. Say which
-                  symbol you want marked when you enquire.
-                </p>
-              </details>
-            </div>
+            <FaqList items={homeFaq} />
             <p style={{ marginTop: 24 }}>
               <Link href="/faq" className="btn btn-outline">
                 See All 30+ FAQs
@@ -457,6 +423,8 @@ export default function HomePage() {
         <section className="tight">
           <div className="container">
             <div className="topics-row reveal">
+              <Link href="/blog-forex-mentorship-difc-professionals" className="topic-chip">DIFC forex mentorship</Link>
+              <Link href="/blog-forex-coaching-entrepreneurs-flexible-week" className="topic-chip">Coaching for an irregular week</Link>
               <Link href="/blog-private-forex-mentorship-abu-dhabi" className="topic-chip">Private mentorship in Abu Dhabi</Link>
               <Link href="/blog-forex-training-doctors-engineers-bankers-uae" className="topic-chip">Doctors, engineers and bankers</Link>
               <Link href="/blog-executive-forex-coaching-dubai" className="topic-chip">Executive forex coaching</Link>
