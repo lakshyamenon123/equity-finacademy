@@ -17,7 +17,7 @@ const whatsapp = whatsappHref("Hi, I'm interested in forex mentorship in Dubai")
 export const metadata = pageMetadata({
   title: "Forex Mentorship in Dubai, UAE | Equity Fin Academy",
   description:
-    "Forex mentorship in Dubai with trading coach Gopi Chandran. Private lessons, group classes, and advanced-track WhatsApp. Fees are quoted when you enquire.",
+    "Forex mentorship in Dubai with Gopi Chandran. Private one-to-one lessons and group classes, in the room or online across the UAE. Fee quoted in AED.",
   keywords:
     "forex mentorship dubai, trading coach dubai, forex coach Dubai, forex mentor UAE, live mentorship Dubai, private forex coach Dubai, Equity Fin Academy mentor",
   path,
@@ -154,7 +154,7 @@ export default function ForexMentorshipDubaiPage() {
 
             <h2>Dubai, the rest of the UAE, and the hours you can actually keep</h2>
             <p>
-              In-person mentorship is in Dubai. The public location is Dubai, UAE. Ask on WhatsApp and you will be told where to come. Online mentorship covers Abu Dhabi, Sharjah, and the other emirates, plus anyone in Dubai who would rather stay at the desk. Professionals in Downtown Dubai, Business Bay, DIFC, Dubai Marina, or on Palm Jumeirah can read <Link href="/blog-vip-forex-mentorship-downtown-dubai-marina">what that private hour looks like from those districts</Link>. Founders who need the trading balance kept apart from company cash should read <Link href="/blog-forex-trading-business-owners-uae">forex education for business owners</Link>. It is the same coach and the same two tracks. The in-person school page is{" "}
+              In-person mentorship is in Dubai. The public location is Dubai, UAE. Ask on WhatsApp and you will be told where to come. Online mentorship covers Abu Dhabi, Sharjah, and the other emirates, plus anyone in Dubai who would rather stay at the desk. Professionals in Downtown Dubai, Business Bay, DIFC, Dubai Marina, or on Palm Jumeirah can read <Link href="/blog-vip-forex-mentorship-downtown-dubai-marina">what that private hour looks like from those districts</Link>. If the job itself is in finance, read <Link href="/blog-forex-mentorship-difc-professionals">forex mentorship for DIFC professionals</Link>. Founders whose week will not repeat should read <Link href="/blog-forex-coaching-entrepreneurs-flexible-week">private forex coaching for an irregular week</Link>. Founders who need the trading balance kept apart from company cash should read <Link href="/blog-forex-trading-business-owners-uae">forex education for business owners</Link>. A rota is <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for doctors, engineers and bankers</Link>. The window you will be asked to read is <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>. It is the same coach and the same two tracks. The in-person school page is{" "}
               <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link>. The online national page is{" "}
               <Link href="/forex-training-academy-uae">forex training academy UAE</Link>.
             </p>

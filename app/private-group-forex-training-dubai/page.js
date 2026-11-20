@@ -15,7 +15,7 @@ const path = "/private-group-forex-training-dubai";
 export const metadata = pageMetadata({
   title: "Private & Group Forex Training Dubai | Equity Fin Academy",
   description:
-    "Private one-to-one forex training in Dubai, and group classes on a shared syllabus. Personal coaching across the UAE, with live trading. Fees on enquiry.",
+    "Private one-to-one forex classes and group classes in Dubai, plus live online study across the UAE. Live trading sessions. Fee quoted in AED when you enquire.",
   keywords:
     "private forex training Dubai, one to one forex classes Dubai, personal forex coaching UAE, group forex training classes Dubai, live trading sessions Dubai, forex classes near me Dubai",
   path,

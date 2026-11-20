@@ -3,16 +3,36 @@ import Footer from "../components/Footer";
 import JsonLd from "../components/JsonLd";
 import YouTubeSection from "../components/YouTubeSection";
 import AcademyLinks from "../components/AcademyLinks";
+import FaqList from "../components/FaqList";
 import Link from "next/link";
 import AuthorByline from "../components/AuthorByline";
 import { pageMetadata } from "../lib/seo";
-import { articleSchema, breadcrumbSchema } from "../lib/schema";
+import { articleSchema, breadcrumbSchema, faqPageSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 
 const path = "/blog-mt5-order-ticket-dubai";
 const headline = "How to Read the MetaTrader 5 Order Ticket Before a Class in Dubai";
 const description =
-  "The MetaTrader 5 order ticket, field by field, so a forex class in Dubai can start on your level: symbol, volume, stop loss, and take profit.";
+  "The MetaTrader 5 order ticket, field by field, for a forex class in Dubai: symbol, volume, stop loss, take profit, and a market click versus a pending price.";
+
+const ticketFaq = [
+  {
+    q: "Which fields does a first forex class in Dubai actually use?",
+    text: "Symbol, volume, stop loss, and take profit. The symbol should match the chart you opened. Volume is the size in lots. The stop is the price where the idea is no longer valid. Take profit can stay empty while you are learning the stop, as long as you can say that you left it empty.",
+  },
+  {
+    q: "Is volume the amount of dirhams I am willing to lose?",
+    text: "No. Volume is the size in lots. The dirham amount is a number you write down before you open the ticket, then you change the volume until the loss at the stop matches that amount. If you have not written the amount, the ticket is early.",
+  },
+  {
+    q: "Should I send a live order before the class?",
+    text: "No. Open the ticket on a demo, name the fields, and close the window without sending. A class in Dubai, or online across the UAE, can start on the labels once you can do that without help. The course fee and any broker balance are separate.",
+  },
+  {
+    q: "Do a market order and a pending order use the same window?",
+    text: "They appear in the same family of windows and they are not the same action. A market order asks for a fill at the price available now. A pending order waits for a price you typed, and you can delete it before the market trades there. Say which one is on your screen before anyone watches the click.",
+  },
+];
 
 const mt5English = ENGLISH_VIDEOS.find((video) => video.id === "ssUPlUHnDLo");
 
@@ -30,7 +50,7 @@ const postSchema = articleSchema({
   description,
   path,
   datePublished: "2026-11-09",
-  dateModified: "2026-11-09",
+  dateModified: "2026-11-20",
   type: "BlogPosting",
 });
 
@@ -38,6 +58,7 @@ export default function Mt5OrderTicketPost() {
   return (
     <>
       <JsonLd data={postSchema} />
+      <JsonLd data={faqPageSchema(ticketFaq)} />
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", path: "/" },
@@ -61,7 +82,7 @@ export default function Mt5OrderTicketPost() {
             <div className="blog-article">
               <span className="eyebrow">MT5</span>
               <h1>How to Read the MetaTrader 5 Order Ticket Before a Class in Dubai</h1>
-              <AuthorByline detail="9 Nov 2026 · 9 min read" />
+              <AuthorByline detail="9 Nov 2026 · Updated 20 Nov 2026 · 10 min read" />
 
               <p>
                 A live forex hour in Dubai goes slowly when the order window is new. The instructor asks for the stop, and the student is still looking for the box. This page names the fields on the MetaTrader 5 order ticket so you can point at them before anyone watches you send anything. It is a map of the window. It is not an instruction to place a trade, and it does not name a direction.
@@ -130,6 +151,14 @@ export default function Mt5OrderTicketPost() {
                 <Link href="/blog-prepare-group-forex-class-dubai">how to prepare for a group class</Link>.
               </p>
 
+              <h2>Deviation is not a field to widen on the first day</h2>
+              <p>
+                Some MetaTrader 5 tickets show a deviation, in points, next to a market order. It is how far from the price you are looking at you are still willing to be filled. Leave it on the platform default until you can explain that sentence out loud. Widening it to force a fill is how a demo journal collects prices you did not mean. A pending order does not use that idea in the same way, because it is waiting for a price you typed rather than chasing the quote.
+              </p>
+              <p>
+                If the label is not on your build of the platform, do not go looking for a setting to add. The four fields above are the class. Deviation is a label to recognise, not a lever to pull before you can point at the stop.
+              </p>
+
               <h2>What the ticket will not decide</h2>
               <p>
                 The window does not know your plan, your timeframe, or whether the swing you marked is still the swing. It will accept a stop on the wrong side of the price and complain, or it will accept a size that is larger than you meant. Those are checks for you, and for the instructor if you ask, not features that protect a blank plan.
@@ -169,8 +198,11 @@ export default function Mt5OrderTicketPost() {
               <p>
                 A 5.0 Google rating describes the academy. It is not a result that appears inside an order ticket. How to read that listing is on the <Link href="/success-stories">reviews page</Link>. If the vocabulary on the chart is still the hard part, mark a swing before you worry about the send button, and use{" "}
                 <Link href="/blog-market-structure">market structure</Link> and, later,{" "}
-                <Link href="/blog-smart-money-concepts">the smart money concepts drill</Link>.
+                <Link href="/blog-smart-money-concepts">the smart money concepts drill</Link>. Doctors, engineers, and bankers who need the hour to move around a rota can read{" "}
+                <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for those careers</Link> before they book the sitting that will use this window.
               </p>
+              <h2>Questions about the order ticket</h2>
+              <FaqList items={ticketFaq} />
               <AcademyLinks lead="Have the ticket open on a demo before you book the" />
               <div className="blog-cta">
                 <p>Point at the stop before you ask anyone to watch the click.</p>

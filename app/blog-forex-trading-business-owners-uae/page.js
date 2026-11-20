@@ -179,7 +179,7 @@ export default function ForexTradingBusinessOwnersPost() {
               <p>
                 If you want the topics in order and you can protect a shared evening, ask for the group as well. How to use both in one month is{" "}
                 <Link href="/blog-private-and-group-forex-classes-dubai">private and group classes together</Link>. If you live or work in Downtown Dubai, Business Bay, DIFC, Dubai Marina, or on Palm Jumeirah, the note on fitting a private hour to that geography is{" "}
-                <Link href="/blog-vip-forex-mentorship-downtown-dubai-marina">private forex mentorship for those districts</Link>.
+                <Link href="/blog-vip-forex-mentorship-downtown-dubai-marina">private forex mentorship for those districts</Link>. When the week itself will not repeat, including study from Palm Jumeirah, Emirates Hills, or a meeting day in Business Bay, read <Link href="/blog-forex-coaching-entrepreneurs-flexible-week">private forex coaching for an irregular week</Link>.
               </p>
 
               <h2>How to judge the mentor, then ask</h2>

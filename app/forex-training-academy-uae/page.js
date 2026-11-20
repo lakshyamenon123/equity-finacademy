@@ -17,7 +17,7 @@ const whatsapp = whatsappHref(COURSE_WHATSAPP_TEXT);
 export const metadata = pageMetadata({
   title: "Forex Training Academy in the UAE | Equity Fin Academy",
   description:
-    "Forex training academy in the UAE for online classes across the emirates and in-person classes in Dubai. Private lessons, group classes, and live trading.",
+    "Forex training academy in the UAE. Private one-to-one and group classes, in Dubai or live online from any emirate. Mentor Gopi Chandran. Open 24/7.",
   keywords:
     "forex training academy UAE, forex course UAE, forex academy UAE, online forex training UAE, forex classes Abu Dhabi, forex classes Sharjah",
   path,
@@ -170,7 +170,7 @@ export default function ForexTrainingAcademyUaePage() {
               Send your emirate, the format you want, and whether you are new to charts. The reply quotes the fee and the next time a class runs. The academy is open 24/7. Call {SITE.telephoneDisplay} if you would rather talk. The chat on this page opens in place and does not send you to another site. The form, with the same questions, is on the <Link href="/contact">contact page</Link>.
             </p>
             <p>
-              Read the track before you send the message. The lists are on <Link href="/courses">forex courses</Link>. The notes are the <Link href="/blog">blog</Link>. If the word you want is a liquidity sweep, start with <Link href="/blog-smart-money-concepts">smart money concepts</Link>. Abu Dhabi students use the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> for the drive or the screen. The Google listing is explained on the <Link href="/success-stories">reviews page</Link>.
+              Read the track before you send the message. The lists are on <Link href="/courses">forex courses</Link>. The notes are the <Link href="/blog">blog</Link>. The window a live hour points at is <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>. A rota for a doctor, an engineer, or a banker is <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for those careers</Link>. If the word you want is a liquidity sweep, start with <Link href="/blog-smart-money-concepts">smart money concepts</Link>. Abu Dhabi students use the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> for the drive or the screen. The Google listing is explained on the <Link href="/success-stories">reviews page</Link>.
             </p>
             <div className="cta-row">
               <a href={whatsapp} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
