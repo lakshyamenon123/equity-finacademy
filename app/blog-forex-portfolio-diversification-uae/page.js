@@ -145,7 +145,7 @@ export default function ForexPortfolioDiversificationPost() {
                 <a href={whatsapp} target="_blank" rel="noopener noreferrer">
                   WhatsApp +971 55 904 7030
                 </a>{" "}
-                reach the same desk. The rules of a booking are on the <Link href="/terms">terms page</Link>. Owners who need the hour to move around a company week, rather than around an existing portfolio, should read <Link href="/blog-executive-forex-coaching-dubai">executive forex coaching in Dubai for business owners</Link>. Founders who need to separate operating cash from a trading balance before they book should read <Link href="/blog-forex-trading-business-owners-uae">forex trading education for business owners in the UAE</Link>. Use the note that matches the sentence you can already say.
+                reach the same desk. The rules of a booking are on the <Link href="/terms">terms page</Link>. Owners who need the hour to move around a company week, rather than around an existing portfolio, should read <Link href="/blog-executive-forex-coaching-dubai">executive forex coaching in Dubai for business owners</Link>. Family offices and private investors writing from Abu Dhabi should read <Link href="/blog-forex-training-family-office-abu-dhabi">forex training for family offices and investors in Abu Dhabi</Link>. Founders who need to separate operating cash from a trading balance before they book should read <Link href="/blog-forex-trading-business-owners-uae">forex trading education for business owners in the UAE</Link>. Use the note that matches the sentence you can already say.
               </p>
               <AcademyLinks lead="The school pages are the" />
               <div className="blog-cta">

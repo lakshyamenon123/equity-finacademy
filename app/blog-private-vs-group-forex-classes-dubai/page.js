@@ -112,7 +112,7 @@ export default function PrivateVsGroupPost() {
                 <Link href="/blog-forex-market-hours-dubai">forex market hours in Dubai</Link>.
               </p>
               <p>
-                A private lesson is the easier format to place around a shift, because the hour is yours. A group
+                A private lesson is the easier format to place around a shift, because the hour is yours. A hospital rota, a site week, or a banking week is written out in <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for doctors, engineers and bankers</Link>. A group
                 cohort has a shared date, so you fit yourself to the class. Neither one is a recording you start
                 whenever you like. Between sessions,{" "}
                 <Link href="/online-forex-course-uae">online study across the UAE</Link> and the Equity Global channel

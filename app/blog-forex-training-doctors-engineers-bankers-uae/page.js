@@ -15,7 +15,7 @@ import { whatsappHref } from "../lib/whatsapp";
 const path = "/blog-forex-training-doctors-engineers-bankers-uae";
 const headline = "Forex Training for Doctors, Engineers and Bankers in the UAE";
 const description =
-  "How doctors, engineers and bankers in the UAE fit private forex training around shifts, site travel and a banking week, and what to write down before a live class.";
+  "How doctors, engineers and bankers in the UAE fit private forex training around shifts, site days and a banking week, and what to write before a live class.";
 
 const careerFaq = [
   {
@@ -33,6 +33,14 @@ const careerFaq = [
   {
     q: "Is a private lesson a different syllabus for these careers?",
     text: "No. Private and group students use the same two forex tracks. Private means the hour can move and stays on your chart. It does not skip the quote, the candle, or the swing.",
+  },
+  {
+    q: "I am tired after a shift. Should the class still happen?",
+    text: "A review of a chart you already marked can happen when you are tired. A first live order should not. If you would not sign a clinical note, a calculation, or a client email in that state, close the ticket and keep the hour for the mark. Say so when you book. A private hour can sit on a morning you are actually awake.",
+  },
+  {
+    q: "Can I bring a case, a project, or a client flow into the lesson?",
+    text: "No. Bring a personal practice chart you are free to discuss. Patient information, an unpublished project, and a client position from work stay out of the room. The hour is about the symbol on your own account.",
   },
 ];
 
@@ -55,7 +63,7 @@ const postSchema = articleSchema({
   description,
   path,
   datePublished: "2026-11-18",
-  dateModified: "2026-11-20",
+  dateModified: "2026-11-21",
   type: "BlogPosting",
 });
 
@@ -87,7 +95,7 @@ export default function ForexTrainingCareersPost() {
             <div className="blog-article">
               <span className="eyebrow">CAREERS</span>
               <h1>{headline}</h1>
-              <AuthorByline detail="18 Nov 2026 · Updated 20 Nov 2026 · 12 min read" />
+              <AuthorByline detail="18 Nov 2026 · Updated 21 Nov 2026 · 14 min read" />
 
               <p>
                 A registrar coming off a night shift, an engineer leaving a site meeting in Business Bay, and a banker whose afternoon belongs to DIFC do not share a diary. They do share a problem. The hour they can study is not a neat slot after a standard office close, and the income they already earn can make a trading account feel smaller than it is. This note is for those three careers. It is about fitting private forex training around the week you actually have, and about writing the risk down before the account is funded.
@@ -207,6 +215,70 @@ export default function ForexTrainingCareersPost() {
                 <Link href="/blog-how-to-start-forex-trading-dubai">how to start forex trading in Dubai</Link>. A company diary, rather than a rota, is{" "}
                 <Link href="/blog-executive-forex-coaching-dubai">executive forex coaching in Dubai</Link>. Capital you already hold is{" "}
                 <Link href="/blog-forex-portfolio-diversification-uae">forex beside a portfolio</Link>.
+              </p>
+
+              <h2>If you would not sign the work, do not send the ticket</h2>
+              <p>
+                These three jobs already have a standard for a tired decision. Use it on the platform. A doctor who would not sign a clinical note in this state should not send a live order. An engineer who would not sign a calculation should not send one. A banker who would not send a client email should not send one. The class can still review a chart you marked on a clearer day. That review is the hour. The click is not.
+              </p>
+              <p>
+                Write the rule where you will see it: &quot;No live order on a post-call morning, a travel day, or the evening of a client event.&quot; Change the examples so they are yours. The window those clicks live in is{" "}
+                <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>. Open it on a demo when you are awake, name the fields, and close it without sending. A post-call morning is a poor time to meet that window for the first time.
+              </p>
+
+              <h2>A two-week diary, written as a template</h2>
+              <p>
+                The lines below are a blank. They are not a client&apos;s week, and they are not a timetable the academy publishes. Replace every cell. If a cell is a guess, leave it blank and say so in the message. A blank is more useful than a free hour you will miss.
+              </p>
+              <div className="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Day</th>
+                      <th>Looks free</th>
+                      <th>Actually free</th>
+                      <th>What to book</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>After a night shift</td>
+                      <td>The next morning, because the roster is empty.</td>
+                      <td>Usually neither. The recovery morning is not a study hour.</td>
+                      <td>Nothing live. If you must open a chart, review marks you made earlier. Do not send.</td>
+                    </tr>
+                    <tr>
+                      <td>A site day in another emirate</td>
+                      <td>The evening, online, from wherever the day ended.</td>
+                      <td>A quiet room with the platform open before the hour. A car is not that room.</td>
+                      <td>Move the class. Name the evenings that are not site days.</td>
+                    </tr>
+                    <tr>
+                      <td>A DIFC day, then a client evening</td>
+                      <td>7pm, because the desk calendar ends.</td>
+                      <td>The hour after you are home, or a weekend morning you have protected.</td>
+                      <td>A private lesson at the later hour. Do not promise the London overlap if you are still at the desk.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>
+                Send two weeks, not a personality. &quot;I can keep Sunday 22nd in the morning, online, and Thursday 27th after 9pm if I am not on call. The other evenings are shifts.&quot; That message can be answered with a time. &quot;I am a doctor and I want to learn forex&quot; cannot.
+              </p>
+
+              <h2>Write a handover before you close the chart</h2>
+              <p>
+                A class that is not written down disappears under the next shift, the next site report, or the next client call. Before you close the platform, write four lines the way you would write a handover for a colleague who has not seen the patient, the drawing, or the file.
+              </p>
+              <ul>
+                <li>The symbol and the timeframe.</li>
+                <li>The mark you arrived with, and what changed.</li>
+                <li>Whether a practice order was placed on a demo, or whether you closed the window without sending.</li>
+                <li>The single question for the next hour, in one sentence.</li>
+              </ul>
+              <p>
+                Leave the profit and loss figure off that page. Leave patient details, project names, and client names off it too. Those four lines are what you bring next time, including when the next sitting is ten days later because of a rota. They belong with{" "}
+                <Link href="/blog-forex-trading-plan-uae">a trading plan and journal</Link>. If the next two weeks have no honest hour, send that fact and pause. A paused fortnight is a plan. A ticket sent from a call room is not.
               </p>
 
               <h2>How to judge the seat before you pay</h2>

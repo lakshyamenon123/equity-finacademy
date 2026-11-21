@@ -161,7 +161,9 @@ export default function ProfessionalsForexClassesPost() {
               <p>
                 If the constraint is a hospital rota, a site week, or a DIFC day, read{" "}
                 <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for doctors, engineers and bankers</Link>. If the week is spent between Downtown Dubai, Business Bay, DIFC, Dubai Marina, and Palm Jumeirah, the private hour for that geography is{" "}
-                <Link href="/blog-vip-forex-mentorship-downtown-dubai-marina">private forex mentorship for those districts</Link>. If you live in Abu Dhabi and the evening drive is the hard part, study online. The{" "}
+                <Link href="/blog-vip-forex-mentorship-downtown-dubai-marina">private forex mentorship for those districts</Link>. Home on Palm Jumeirah or in Emirates Hills, or a desk in Business Bay, is{" "}
+                <Link href="/blog-forex-classes-palm-emirates-hills-business-bay">forex classes for those neighbourhoods</Link>. If you live in Abu Dhabi and the evening drive is the hard part, study online. Investors in Abu Dhabi who already manage their own capital should read{" "}
+                <Link href="/blog-forex-training-family-office-abu-dhabi">forex training for family offices and investors in Abu Dhabi</Link>. The{" "}
                 <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> is the note for that choice. Private mentorship for that week is{" "}
                 <Link href="/blog-private-forex-mentorship-abu-dhabi">private forex mentorship in Abu Dhabi</Link>. Sharjah
                 is closer, and it has its own page: <Link href="/forex-course-sharjah">forex course in Sharjah</Link>.
@@ -183,7 +185,7 @@ export default function ProfessionalsForexClassesPost() {
                 <a href={whatsapp} target="_blank" rel="noopener noreferrer">
                   WhatsApp
                 </a>
-                , or use the <Link href="/contact">contact form</Link>. The academy is open 24/7.
+                , or use the <Link href="/contact">contact form</Link>. The academy is open 24/7. If the order window is still new, read <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link> before the first hour.
               </p>
               <AcademyLinks lead="The live class, once the hour is agreed, is the" />
             </div>

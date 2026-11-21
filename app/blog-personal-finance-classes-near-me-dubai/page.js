@@ -17,7 +17,7 @@ const description =
 const stocksEnglish = ENGLISH_VIDEOS.find((video) => video.id === "bC097etTQeI");
 
 export const metadata = pageMetadata({
-  title: "Personal Finance Classes Near Me in Dubai | Budget or Markets",
+  title: "Personal Finance Classes Near Me, Dubai | Budget or Markets",
   description,
   keywords:
     "personal finance classes near me Dubai, budgeting classes near me Dubai, stock trading classes near me Dubai, investing classes near me Dubai, forex classes Dubai",

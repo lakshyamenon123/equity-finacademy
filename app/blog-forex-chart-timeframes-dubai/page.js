@@ -17,7 +17,7 @@ const description =
 const mt5English = ENGLISH_VIDEOS.find((video) => video.id === "ssUPlUHnDLo");
 
 export const metadata = pageMetadata({
-  title: "Forex Chart Timeframes for a Dubai Class | Equity Fin Academy",
+  title: "Forex Chart Timeframes for a Dubai Class | Equity Fin",
   description,
   keywords:
     "forex chart timeframe Dubai, which timeframe for forex beginners UAE, MT5 chart time Dubai, forex course Dubai, private forex class Dubai, group forex class Dubai",
@@ -132,7 +132,7 @@ export default function ForexChartTimeframesPost() {
 
               <h2>What to send when you book</h2>
               <p>
-                Use the <Link href="/contact">contact page</Link> or WhatsApp +971 55 904 7030. The useful message has six pieces: the symbol, the timeframe, a group class or a private lesson, your emirate, whether you will be in Dubai or online, and the hours you can keep on Gulf Standard Time. Ask for the fee in AED. The academy is open 24/7. A message that names the button you pressed gets a clearer reply than a message that says “forex course”.
+                The order window that belongs to that same chart is <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>. Use the <Link href="/contact">contact page</Link> or WhatsApp +971 55 904 7030. The useful message has six pieces: the symbol, the timeframe, a group class or a private lesson, your emirate, whether you will be in Dubai or online, and the hours you can keep on Gulf Standard Time. Ask for the fee in AED. The academy is open 24/7. A message that names the button you pressed gets a clearer reply than a message that says “forex course”.
               </p>
               <p>
                 Abu Dhabi students are on the same clock. The journey is the part that changes, and that choice is on the{" "}

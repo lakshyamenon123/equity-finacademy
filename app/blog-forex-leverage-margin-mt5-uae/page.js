@@ -109,7 +109,7 @@ export default function ForexLeverageMarginPost() {
                 <li>A demo login, with one symbol on the chart.</li>
                 <li>The account leverage, read from the terminal, written down.</li>
                 <li>The margin MT5 shows for a small volume on that symbol, written down next to it.</li>
-                <li>One sentence on how much of the account you would be willing to lose if the idea fails. That sentence belongs with the <Link href="/blog-risk-management">risk article</Link>, and it can be rough.</li>
+                <li>One sentence on how much of the account you would be willing to lose if the idea fails. That sentence belongs with the <Link href="/blog-risk-management">risk article</Link>, and it can be rough. The fields that sentence has to survive are in <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>.</li>
               </ul>
               <p>
                 Gulf Standard Time is the clock for a class in Dubai and for an online seat from any other emirate. People fitting the hour around a job can read <Link href="/blog-forex-classes-working-professionals-dubai">forex classes for working professionals</Link>. The two tracks that teach this in person are on <Link href="/courses">forex trading courses</Link>. Basic to Intermediate is the right start when the margin line is still new.

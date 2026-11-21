@@ -14,7 +14,7 @@ const path = "/why-choose-us";
 
 const title = "Six Checks Before You Enrol at Equity Fin Academy";
 const description =
-  "Six checks before you enrol at Equity Fin Academy in Dubai, and how they apply to a private hour: teacher, syllabus, room, broker, Google listing, and an AED quote.";
+  "Six checks before you enrol at Equity Fin Academy in Dubai: the teacher, the syllabus, the room, the broker, the Google listing, and a fee quoted in AED.";
 
 export const metadata = pageMetadata({
   title: "Six Checks Before a Dubai Forex Class | Equity Fin Academy",

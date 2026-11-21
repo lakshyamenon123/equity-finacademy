@@ -104,7 +104,7 @@ export default function ForexSpreadsSwapsPipValuePost() {
                 Many brokers apply a larger swap one night mid-week so the weekend is included. Do not assume the night is free, and do not assume every broker uses the same night. Open the specification for the symbol you actually hold. A class in Dubai can explain the line. It cannot replace the number on your account.
               </p>
               <p>
-                If you are still on a demo, the swap may be shown and still feel unreal, because the balance is not yours. What a demo hides is the subject of <Link href="/blog-demo-vs-live-mt5-uae">demo versus live on MT5</Link>. Install steps, if the platform is not on the machine yet, are in <Link href="/blog-start-forex-trading-uae-mt5">how to start forex trading in the UAE with MT5</Link>.
+                If you are still on a demo, the swap may be shown and still feel unreal, because the balance is not yours. What a demo hides is the subject of <Link href="/blog-demo-vs-live-mt5-uae">demo versus live on MT5</Link>. Install steps, if the platform is not on the machine yet, are in <Link href="/blog-start-forex-trading-uae-mt5">how to start forex trading in the UAE with MT5</Link>. The window those costs are typed into is <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>.
               </p>
 
               <h2>What to check before a class in Dubai</h2>

@@ -1,6 +1,8 @@
 import Link from "next/link";
 
 const LINKS = [
+  { href: "/blog-forex-training-family-office-abu-dhabi", label: "Family office forex training in Abu Dhabi" },
+  { href: "/blog-forex-classes-palm-emirates-hills-business-bay", label: "Forex classes: Palm, Emirates Hills, Business Bay" },
   { href: "/blog-forex-mentorship-difc-professionals", label: "Forex mentorship for DIFC professionals" },
   { href: "/blog-forex-coaching-entrepreneurs-flexible-week", label: "Forex coaching for an irregular week" },
   { href: "/blog-forex-training-doctors-engineers-bankers-uae", label: "Forex training for doctors, engineers and bankers" },
