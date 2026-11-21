@@ -101,7 +101,7 @@ export default function DemoVsLiveMt5Post() {
               <ul>
                 <li>Spreads and slippage on a live ticket can be worse than the demo showed, especially in a fast hour.</li>
                 <li>A demo balance that you can top up teaches a habit of adding money after a loss. A live account does not forgive that habit.</li>
-                <li>Indicators and templates carry over. Discipline does not. The ticket still needs a stop you chose first.</li>
+                <li>Indicators and templates carry over. Discipline does not. The ticket still needs a stop you chose first. The fields are named in <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>.</li>
                 <li>A demo server can differ from the live server your broker assigns. Check the server name in the login window rather than assuming they match.</li>
               </ul>
 

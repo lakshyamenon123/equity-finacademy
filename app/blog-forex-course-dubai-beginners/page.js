@@ -93,7 +93,8 @@ export default function BeginnersCoursePost() {
               <p>
                 If you want a head start, read <Link href="/blog-candlestick-patterns">candlestick patterns</Link>,{" "}
                 <Link href="/blog-risk-management">how much to risk per trade</Link>, and{" "}
-                <Link href="/blog-start-forex-trading-uae-mt5">how to start on MetaTrader 5</Link>. The class will still teach them.
+                <Link href="/blog-start-forex-trading-uae-mt5">how to start on MetaTrader 5</Link>, and{" "}
+                <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>. The class will still teach them.
                 Arriving with the words already familiar means your questions can be about your own chart.
               </p>
 

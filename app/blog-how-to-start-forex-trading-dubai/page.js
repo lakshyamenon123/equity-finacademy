@@ -138,7 +138,7 @@ export default function HowToStartForexTradingDubaiPost() {
               <p>
                 If friends want to start together, agree the track before you write. That conversation is{" "}
                 <Link href="/blog-group-forex-classes-friends-dubai">group forex classes for friends and colleagues</Link>. A day job changes the hour, not the syllabus. Read{" "}
-                <Link href="/blog-forex-classes-working-professionals-dubai">forex classes for working professionals in Dubai</Link> and name the time you can keep on Gulf Standard Time.
+                <Link href="/blog-forex-classes-working-professionals-dubai">forex classes for working professionals in Dubai</Link> and name the time you can keep on Gulf Standard Time. The window a live hour will point at is <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>.
               </p>
 
               <h2>What a Dubai week actually looks like</h2>

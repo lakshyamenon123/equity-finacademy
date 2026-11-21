@@ -150,7 +150,7 @@ export default function PersonalForexCoachingPost() {
                   StarTrader
                 </a>
                 . Practical sessions at the academy use StarTrader, which is regulated by the UAE Securities and Commodities Authority. The link is the academy&apos;s affiliate link. You open the account yourself. The course fee and the broker balance are separate. If the platform is new, read{" "}
-                <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5 in the UAE</Link> before the first coaching hour.
+                <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5 in the UAE</Link> and <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link> before the first coaching hour. A rota is <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for doctors, engineers and bankers</Link>.
               </p>
               <p>
                 Abu Dhabi students often study online because the drive is the hard part. That choice is on the{" "}

@@ -32,6 +32,10 @@ const ticketFaq = [
     q: "Do a market order and a pending order use the same window?",
     text: "They appear in the same family of windows and they are not the same action. A market order asks for a fill at the price available now. A pending order waits for a price you typed, and you can delete it before the market trades there. Say which one is on your screen before anyone watches the click.",
   },
+  {
+    q: "The platform rejected my stop. Does that mean the idea was wrong?",
+    text: "No. MetaTrader 5 rejects a stop on the wrong side of the current price. That is a form check. Read the price on the ticket, then the stop, and say which side you meant before you type it again. The rejection is not a view on the chart, and it is not a reason to delete the stop and send anyway.",
+  },
 ];
 
 const mt5English = ENGLISH_VIDEOS.find((video) => video.id === "ssUPlUHnDLo");
@@ -50,7 +54,7 @@ const postSchema = articleSchema({
   description,
   path,
   datePublished: "2026-11-09",
-  dateModified: "2026-11-20",
+  dateModified: "2026-11-21",
   type: "BlogPosting",
 });
 
@@ -82,7 +86,7 @@ export default function Mt5OrderTicketPost() {
             <div className="blog-article">
               <span className="eyebrow">MT5</span>
               <h1>How to Read the MetaTrader 5 Order Ticket Before a Class in Dubai</h1>
-              <AuthorByline detail="9 Nov 2026 · Updated 20 Nov 2026 · 10 min read" />
+              <AuthorByline detail="9 Nov 2026 · Updated 21 Nov 2026 · 12 min read" />
 
               <p>
                 A live forex hour in Dubai goes slowly when the order window is new. The instructor asks for the stop, and the student is still looking for the box. This page names the fields on the MetaTrader 5 order ticket so you can point at them before anyone watches you send anything. It is a map of the window. It is not an instruction to place a trade, and it does not name a direction.
@@ -157,6 +161,78 @@ export default function Mt5OrderTicketPost() {
               </p>
               <p>
                 If the label is not on your build of the platform, do not go looking for a setting to add. The four fields above are the class. Deviation is a label to recognise, not a lever to pull before you can point at the stop.
+              </p>
+
+              <h2>Fill a paper ticket before you open the window</h2>
+              <p>
+                A class in Dubai goes faster when the labels are already words you can say. Write this on paper, or in the note you will bring, before New Order is on the screen. If a row is blank, the window is early.
+              </p>
+              <div className="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Field</th>
+                      <th>Write this first</th>
+                      <th>Close the window if</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Symbol</td>
+                      <td>The chart you will actually ask about, including the timeframe.</td>
+                      <td>The ticket names a different symbol from the chart.</td>
+                    </tr>
+                    <tr>
+                      <td>Volume</td>
+                      <td>Leave it blank until the dirham amount and the stop distance are both written.</td>
+                      <td>You typed a lot size because it sounded familiar.</td>
+                    </tr>
+                    <tr>
+                      <td>Stop loss</td>
+                      <td>The price where the idea is no longer valid.</td>
+                      <td>The box is empty and you cannot say why you left it empty.</td>
+                    </tr>
+                    <tr>
+                      <td>Take profit</td>
+                      <td>A price, or the words &quot;left empty on purpose.&quot;</td>
+                      <td>You are not sure whether you meant to leave it empty.</td>
+                    </tr>
+                    <tr>
+                      <td>Order type</td>
+                      <td>Market, or the pending label, in your own words.</td>
+                      <td>You cannot say which control is selected.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>
+                Bring the paper into a private lesson if the ticket is the thing you want watched. A group class will usually demonstrate the same fields once on the shared chart. Either way, the paper is yours. The instructor does not need your account password to read it. Doctors, engineers, and bankers who need the hour moved away from a tired shift should read{" "}
+                <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for those careers</Link> before they book the sitting that uses this window. The first private hour, if that is the format, is{" "}
+                <Link href="/blog-first-private-forex-lesson-dubai">what to bring and ask</Link>.
+              </p>
+
+              <h2>Name the order type before anyone watches</h2>
+              <p>
+                MetaTrader 5 uses a small set of labels. You should be able to point at the one that is selected and say what it waits for. You do not need a view on direction to do that.
+              </p>
+              <ul>
+                <li>
+                  <strong>Market buy or market sell.</strong> You are asking for a fill at the price available now. The quote can move between the look and the fill.
+                </li>
+                <li>
+                  <strong>Buy limit or sell limit.</strong> The order waits for a price that is better than the current quote, in the way the platform defines that label. It does nothing until the market trades there. You can delete it before that happens.
+                </li>
+                <li>
+                  <strong>Buy stop or sell stop.</strong> The order waits for price to trade through a level you typed. It is still a waiting order. It is not a market click, and it is not the same label as a limit.
+                </li>
+              </ul>
+              <p>
+                A clear sentence in class is &quot;This is a buy limit, the stop is filled in, and I have not pressed send.&quot; An unclear sentence is &quot;I clicked the one that looked like last time.&quot; The lesson can show each label on a demo. It will not choose one for you, and it will not name a direction. If the stop is rejected, read the price and the stop again. A rejection means the stop is on the wrong side of the current price. It does not mean the idea was good or bad.
+              </p>
+              <p>
+                Professionals who live on Palm Jumeirah or in Emirates Hills, or who work in Business Bay, still use this same window. The commute is a different note:{" "}
+                <Link href="/blog-forex-classes-palm-emirates-hills-business-bay">forex classes for those neighbourhoods</Link>. Investors in Abu Dhabi who need the learning balance kept apart from capital that already has a job should read{" "}
+                <Link href="/blog-forex-training-family-office-abu-dhabi">forex training for family offices and investors in Abu Dhabi</Link>.
               </p>
 
               <h2>What the ticket will not decide</h2>

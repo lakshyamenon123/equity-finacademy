@@ -139,7 +139,7 @@ export default function LiveForexSessionPost() {
               </p>
               <p>
                 The academy is open 24/7 and rated 5.0 on Google from 30+ reviews. More than 2,000 students have trained through Equity Global and live classes. Read the listing from the{" "}
-                <Link href="/success-stories">reviews page</Link> if you want third-party comments before you book. The study index is the <Link href="/blog">blog</Link>.
+                <Link href="/success-stories">reviews page</Link> if you want third-party comments before you book. The study index is the <Link href="/blog">blog</Link>. Read <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link> if the window is still new, and <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for doctors, engineers and bankers</Link> if a rota is the constraint.
               </p>
 
               <AcademyLinks lead="Book the session through the" />

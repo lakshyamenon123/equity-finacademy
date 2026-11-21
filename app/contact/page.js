@@ -281,7 +281,7 @@ export default function ContactPage() {
                 Doctor, engineer, or banker: &quot;Private lesson. I am on a rota and can keep Sunday morning or after 9pm on days I am not on call. Online. Please quote the fee in AED.&quot; Read <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for doctors, engineers and bankers</Link> before you send that, so the hour you name is one you can keep.
               </li>
               <li>
-                Business owner: &quot;Private lesson around a company week. After 8pm or Saturday morning, Dubai or online. Please quote the fee in AED.&quot; That diary is <Link href="/blog-executive-forex-coaching-dubai">executive forex coaching in Dubai</Link>. Investors who already hold capital, and are asking a different question, should read <Link href="/blog-forex-portfolio-diversification-uae">forex beside a portfolio</Link> first.
+                Business owner: &quot;Private lesson around a company week. After 8pm or Saturday morning, Dubai or online. Please quote the fee in AED.&quot; That diary is <Link href="/blog-executive-forex-coaching-dubai">executive forex coaching in Dubai</Link>. Investors who already hold capital, and are asking a different question, should read <Link href="/blog-forex-portfolio-diversification-uae">forex beside a portfolio</Link> first. Family offices and private investors in Abu Dhabi should read <Link href="/blog-forex-training-family-office-abu-dhabi">forex training for family offices and investors in Abu Dhabi</Link>.
               </li>
             </ul>
             <p>
@@ -307,7 +307,7 @@ export default function ContactPage() {
             </p>
             <p>
               The longer description of that private hour is{" "}
-              <Link href="/blog-vip-forex-mentorship-downtown-dubai-marina">private forex mentorship for Downtown Dubai, DIFC and the Marina</Link>. Founders who still need to separate company cash from a trading balance should read{" "}
+              <Link href="/blog-vip-forex-mentorship-downtown-dubai-marina">private forex mentorship for Downtown Dubai, DIFC and the Marina</Link>. Home on Palm Jumeirah or in Emirates Hills, or a desk in Business Bay, is <Link href="/blog-forex-classes-palm-emirates-hills-business-bay">forex classes for those neighbourhoods</Link>. Founders who still need to separate company cash from a trading balance should read{" "}
               <Link href="/blog-forex-trading-business-owners-uae">forex education for business owners in the UAE</Link> before they write. The six checks before you pay are on <Link href="/why-choose-us">Why Choose Us</Link>. WhatsApp is +971 55 904 7030.
             </p>
           </div>

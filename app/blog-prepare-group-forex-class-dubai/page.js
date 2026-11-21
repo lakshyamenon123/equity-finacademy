@@ -18,7 +18,7 @@ const description =
 const mt5English = ENGLISH_VIDEOS.find((video) => video.id === "ssUPlUHnDLo");
 
 export const metadata = pageMetadata({
-  title: "Prepare for a Group Forex Class in Dubai | Equity Fin Academy",
+  title: "Prepare for a Group Forex Class, Dubai | Equity Fin Academy",
   description,
   keywords:
     "group forex class Dubai, group forex classes Dubai, prepare for forex course Dubai, forex training academy UAE, group forex training Dubai",
@@ -87,7 +87,7 @@ export default function PrepareGroupForexClassPost() {
                 Install MetaTrader 5 and log in before you travel or join the screen. Leave one symbol up, the pair or metal the class named. If nobody named one, EUR/USD on the one-hour chart is a fair default for a beginner hour. Gold traders should say XAUUSD when they enquire so the example can be the metal. The written install path is <Link href="/blog-start-forex-trading-uae-mt5">how to start forex trading in the UAE with MT5</Link>.
               </p>
               <p>
-                Practical sessions use StarTrader, regulated by the UAE Securities and Commodities Authority. You open the account yourself. The course fee and the broker balance are separate. Practise the buttons on a demo until a live login is a decision you have made on purpose. <Link href="/blog-demo-vs-live-mt5-uae">Demo versus live</Link> is that decision. The spread, the pip value, and the overnight swap are a separate homework page: <Link href="/blog-forex-spreads-swaps-pip-value-uae">spreads, swaps, and pip value in the UAE</Link>. You do not need those three memorised for a first candle class. You do need them before you size a trade.
+                Practical sessions use StarTrader, regulated by the UAE Securities and Commodities Authority. You open the account yourself. The course fee and the broker balance are separate. Practise the buttons on a demo until a live login is a decision you have made on purpose. <Link href="/blog-demo-vs-live-mt5-uae">Demo versus live</Link> is that decision. The spread, the pip value, and the overnight swap are a separate homework page: <Link href="/blog-forex-spreads-swaps-pip-value-uae">spreads, swaps, and pip value in the UAE</Link>. You do not need those three memorised for a first candle class. You do need them before you size a trade. The labels on the window are in <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>.
               </p>
               <p>
                 <a href={STARTRADER_LIVE_URL} target="_blank" rel="sponsored noopener noreferrer">

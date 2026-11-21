@@ -18,7 +18,7 @@ const description =
 const mt5English = ENGLISH_VIDEOS.find((video) => video.id === "ssUPlUHnDLo");
 
 export const metadata = pageMetadata({
-  title: "Private and Group Forex Classes in Dubai | Equity Fin Academy",
+  title: "Private and Group Forex Classes Dubai | Equity Fin Academy",
   description,
   keywords:
     "private one to one forex classes Dubai, group forex classes Dubai, forex course Dubai, forex training academy Dubai, private forex lesson and group class",

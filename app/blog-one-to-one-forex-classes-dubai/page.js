@@ -89,8 +89,8 @@ export default function OneToOneForexClassesPost() {
                 The private lesson uses the same platform as the group practical sessions. Install MetaTrader 5, log in, and leave the chart from the section above on screen. If you will join online from Abu Dhabi, Sharjah, or anywhere else in the UAE, test the screen share once so the first ten minutes are not a settings problem.
               </p>
               <p>
-                The English recording below walks through opening a broker account and using MT5. Use it as homework, then arrive with the platform already up. The written steps are in{" "}
-                <Link href="/blog-start-forex-trading-uae-mt5">how to start forex trading in the UAE with MT5</Link>. The account you open is yours. It is separate from the lesson fee.
+                The English recording below walks through opening a broker account and using MT5. Use it as homework, then arrive with the platform already up.                 The written steps are in{" "}
+                <Link href="/blog-start-forex-trading-uae-mt5">how to start forex trading in the UAE with MT5</Link>. The fields the hour will point at are in <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>. The account you open is yours. It is separate from the lesson fee.
               </p>
 
               <h2>Match the hour to the market, if you want a live candle</h2>

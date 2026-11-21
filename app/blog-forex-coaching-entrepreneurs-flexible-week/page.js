@@ -150,7 +150,7 @@ export default function EntrepreneurFlexibleWeekPost() {
               <p>
                 The office-district version of this choice, written for Downtown Dubai, DIFC, Business Bay, Dubai Marina, and Palm Jumeirah as places you pass through, is{" "}
                 <Link href="/blog-vip-forex-mentorship-downtown-dubai-marina">private mentorship for those districts</Link>. A DIFC job, rather than a founder&apos;s diary, is{" "}
-                <Link href="/blog-forex-mentorship-difc-professionals">forex mentorship for DIFC professionals</Link>.
+                <Link href="/blog-forex-mentorship-difc-professionals">forex mentorship for DIFC professionals</Link>. An employed professional whose home is Palm Jumeirah or Emirates Hills, or whose desk is Business Bay, and whose week does repeat, should read <Link href="/blog-forex-classes-palm-emirates-hills-business-bay">forex classes for those neighbourhoods</Link>.
               </p>
 
               <h2>A short week still counts</h2>
