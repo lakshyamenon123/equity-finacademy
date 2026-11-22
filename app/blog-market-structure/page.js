@@ -118,7 +118,8 @@ export default function BlogMarketStructurePage() {
               <p>
                 A wrong swing is usually one of three things. You marked a wick that did not turn the move. You marked it on a candle that has not closed. Or you changed timeframe halfway through and kept the old labels. Fix the note before you ask for an advanced reading. The candles that build the swing are in{" "}
                 <Link href="/blog-candlestick-patterns">candlestick patterns</Link>. The areas that often sit on the swings are in{" "}
-                <Link href="/blog-support-and-resistance-forex">support and resistance</Link>.
+                <Link href="/blog-support-and-resistance-forex">support and resistance</Link>. The price that means the swing idea is wrong is what you later type as a stop. The fields on that window are in{" "}
+                <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>.
               </p>
               <p>
                 Bring the marked chart to Dubai, or to an online class on Gulf Standard Time. A group cohort uses one shared structure so the room can agree on the last high. A private lesson can stay on the swing you got wrong. Preparation for the shared hour is in{" "}

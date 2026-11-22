@@ -104,7 +104,8 @@ export default function OneToOneForexClassesPost() {
 
               <h2>Dubai in the room, or online across the UAE</h2>
               <p>
-                In person, you sit with the instructor in Dubai, UAE. Online, the same private lesson is taught across the emirates. The chart work does not change. The thing that changes is whether someone can point at your screen in the room. Choose before you book, and say it in the message.
+                In person, you sit with the instructor in Dubai, UAE. Online, the same private lesson is taught across the emirates. The chart work does not change. The thing that changes is whether someone can point at your screen in the room. Choose before you book, and say it in the message. What that private programme should include, for someone living in Jumeirah or Dubai Hills, is{" "}
+                <Link href="/blog-private-forex-mentorship-jumeirah-dubai-hills">private forex mentorship in Jumeirah and Dubai Hills</Link>.
               </p>
               <p>
                 The in-person offer is the <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link> page. The online seat is the{" "}

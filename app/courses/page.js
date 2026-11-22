@@ -16,7 +16,7 @@ const coursesDescription =
   "Forex trading courses in Dubai: Basic to Intermediate and Advanced tracks, as a group class or a private lesson, in Dubai, UAE, or online. Fee quoted in AED.";
 
 export const metadata = pageMetadata({
-  title: "Forex Course in Dubai | Equity Fin Academy",
+  title: "Forex Trading Courses in Dubai | Equity Fin Academy",
   description:
     "Forex course in Dubai with private or group classes, in the room or online across the UAE. A share, an index, or gold can be the chart. Fee quoted in AED.",
   keywords:

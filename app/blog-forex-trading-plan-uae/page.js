@@ -86,7 +86,8 @@ export default function ForexTradingPlanPost() {
                 </li>
                 <li>
                   <strong>Risk in AED.</strong> The dirhams you can lose if the idea is wrong. How to arrive at a size is in{" "}
-                  <Link href="/blog-risk-management">how much to risk per trade</Link>. Write the number down. Changing it after you are in the trade is a different decision, and the journal should say that you changed it.
+                  <Link href="/blog-risk-management">how much to risk per trade</Link>. Write the number down. Changing it after you are in the trade is a different decision, and the journal should say that you changed it. The field that number has to survive is on{" "}
+                  <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>.
                 </li>
                 <li>
                   <strong>Where the idea is wrong.</strong> The price, or the swing, that means you step aside. A plan without that line is a hope with a chart attached.

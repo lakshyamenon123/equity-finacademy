@@ -142,7 +142,8 @@ export default function ForexTradingBusinessOwnersPost() {
               </p>
               <p>
                 The message that asks for a movable time, and the four lines the academy needs before it holds a seat, are on the executive coaching page linked above. This note does not repeat them. A rota, rather than a company diary, is{" "}
-                <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for doctors, engineers and bankers</Link>.
+                <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for doctors, engineers and bankers</Link>. A board calendar that needs a written learning balance, rather than a founder&apos;s split of operating cash, is{" "}
+                <Link href="/blog-forex-education-senior-executives-dubai">forex education for senior executives in Dubai</Link>.
               </p>
 
               <h2>Risk, written in dirhams before the setup</h2>

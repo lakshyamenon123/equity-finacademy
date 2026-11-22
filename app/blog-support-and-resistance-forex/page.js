@@ -113,7 +113,8 @@ export default function SupportResistancePost() {
                 private forex training the hour can stay on your pair, including the zone you keep moving because you
                 want it to be true. One-to-one forex classes and group forex classes in Dubai cover the same idea at
                 a different pace. Personal forex coaching in the UAE is that booked hour, in Dubai or online, not a
-                set of levels delivered to your phone. Read{" "}
+                set of levels delivered to your phone. The area you are willing to be wrong at is the stop you type, and the window for that stop is{" "}
+                <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>. Read{" "}
                 <Link href="/blog-private-vs-group-forex-classes-dubai">private versus group classes</Link> if you are
                 choosing the room, and the <Link href="/courses">courses page</Link> for the topic order. The booking
                 page is <Link href="/private-group-forex-training-dubai">private and group training</Link>.

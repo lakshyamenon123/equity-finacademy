@@ -15,7 +15,7 @@ const pageDescription =
   "Forex course in Dubai: a private lesson or a group class, with live trading in the room or online across the UAE. 2,000+ students. Rated 5.0 on Google.";
 
 export const metadata = pageMetadata({
-  title: "Forex Academy in Dubai | Equity Fin Academy",
+  title: "Forex Academy in Dubai and the UAE | Equity Fin Academy",
   description: pageDescription,
   keywords:
     "forex course Dubai, forex courses in Dubai, forex training academy Dubai, trading classes in Dubai, forex classes near me Dubai, forex academy in Dubai",
