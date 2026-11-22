@@ -44,10 +44,14 @@ Allow: /
 
 User-agent: *
 Allow: /
+# Font files only. CSS is served from /_next/static/css/ and JavaScript from
+# /_next/static/chunks/. Disallowing /_next/static/media/ does not block those
+# files, so Googlebot can still render the page and falls back to a system font.
+Disallow: /_next/static/media/
 
-# /favicon.ico, /apple-touch-icon.png, /og-image.png, /mentor.jpg, and font
-# files under /_next/static/media/ are files, not pages. They are omitted
-# from the sitemap and sent with X-Robots-Tag: noindex. Do not Disallow
-# them. Googlebot needs the files to render the HTML.
+# /favicon.ico, /apple-touch-icon.png, /og-image.png, and /mentor.jpg are files,
+# not pages. They stay out of the sitemap and are sent with X-Robots-Tag: noindex.
+# They are not disallowed: a disallow is not required for those images, and the
+# font path above is the only crawl block.
 
 Sitemap: https://www.equityfinacademy.com/sitemap.xml

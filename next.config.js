@@ -66,9 +66,11 @@ const nextConfig = {
         source: "/why-choose-us",
         headers: [{ key: "Link", value: `<${WHY_CHOOSE_US}>; rel="canonical"` }],
       },
-      // Fonts and the favicon are files, not pages. noindex keeps them out of
-      // the index. Do not Disallow them in robots.txt: Googlebot needs the
-      // files to render the HTML.
+      // Favicon and images are files, not pages. noindex keeps them out of the
+      // index. Font files under /_next/static/media/ are disallowed in
+      // robots.txt because that folder is woff2 only. CSS is /_next/static/css/
+      // and JavaScript is /_next/static/chunks/, so the disallow does not block
+      // rendering. noindex remains for any client that still fetches a font.
       {
         source: "/favicon.ico",
         headers: [{ key: "X-Robots-Tag", value: "noindex" }],

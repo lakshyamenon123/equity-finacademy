@@ -114,7 +114,8 @@ export default function ForexPortfolioDiversificationPost() {
 
               <h2>Private study when you already make capital decisions</h2>
               <p>
-                A currency quote, a candle, and a swing high are still new even if a term sheet is not. The beginner track exists for that gap. Skipping it wastes the private hour on vocabulary.
+                A currency quote, a candle, and a swing high are still new even if a term sheet is not. The beginner track exists for that gap. Skipping it wastes the private hour on vocabulary. A senior executive who wants that work as a weekly capital routine, with the dirhams named before the ticket, should read{" "}
+                <Link href="/blog-forex-education-senior-executives-dubai">forex education for senior executives in Dubai</Link>.
               </p>
               <p>
                 Use a group class when the topic is shared and you want the list in order. Use a private hour when the chart is yours: the pair you already watch, the US share you hold, the gold position you do not want to discuss in a room. The offer is <Link href="/private-group-forex-training-dubai">private and group training in Dubai</Link>. The choice, written as a comparison, is <Link href="/blog-private-vs-group-forex-classes-dubai">private versus group</Link>. A longer coaching relationship, rather than a single sitting, is <Link href="/forex-mentorship-dubai">forex mentorship in Dubai</Link> and <Link href="/blog-personal-forex-coaching-uae">what a personal coaching plan contains</Link>.

@@ -143,7 +143,8 @@ export default function PalmEmiratesHillsBusinessBayPost() {
                 </table>
               </div>
               <p>
-                Nearby homes follow the same rule. Jumeirah and Arabian Ranches are not a different course. If the drive is the part you cannot add, take the hour online. The classroom remains in Dubai, UAE. The marketing pages do not print a floor or a building name. Ask for directions on WhatsApp after a time is agreed.
+                Nearby homes follow the same rule for the drive. Jumeirah is not Palm Jumeirah, and Dubai Hills is not Emirates Hills. What a private programme should contain for someone who lives in Jumeirah or Dubai Hills is{" "}
+                <Link href="/blog-private-forex-mentorship-jumeirah-dubai-hills">private forex mentorship in Jumeirah and Dubai Hills</Link>. Arabian Ranches is not a different course either. If the drive is the part you cannot add, take the hour online. The classroom remains in Dubai, UAE. The marketing pages do not print a floor or a building name. Ask for directions on WhatsApp after a time is agreed.
               </p>
 
               <h2>One visit, then the screen</h2>

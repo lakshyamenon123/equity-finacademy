@@ -129,7 +129,7 @@ export default function CurrencyPairsUaePost() {
 
               <h2>What to type in Market Watch</h2>
               <p>
-                MetaTrader 5 does not show the slash. You type the two codes together. Say the base and the quote out loud once, then type the symbol the platform lists. If the symbol is missing, it is not on that broker&apos;s list. Do not invent a spelling.
+                MetaTrader 5 does not show the slash. You type the two codes together. Say the base and the quote out loud once, then type the symbol the platform lists. If the symbol is missing, it is not on that broker&apos;s list. Do not invent a spelling. That same symbol is the first field on <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>. Read the window before a live hour asks you to fill it in.
               </p>
               <div className="table-wrap">
                 <table>
