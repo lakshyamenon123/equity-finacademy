@@ -394,6 +394,9 @@ export default function HomePage() {
                 <Link href="/blog-live-forex-trading-session-dubai">A live forex session in Dubai</Link> is what the booked hour contains. <Link href="/blog-stock-market-course-dubai-first-weeks">The first weeks of a stock market course</Link> is the drill for a share, an index, or gold.
               </li>
               <li>
+                <Link href="/blog-private-one-to-one-forex-training-dubai">Private one-to-one forex training for a fortnight you can keep</Link> is for a busy professional who cannot attend every week. <Link href="/blog-premium-executive-forex-mentorship-dubai">Premium executive forex mentorship in Dubai</Link> is the brief that keeps existing wealth apart from the chart.
+              </li>
+              <li>
                 <Link href="/blog-forex-training-family-office-abu-dhabi">Forex training for family offices and investors in Abu Dhabi</Link> keeps a learning account apart from capital that already has a job. <Link href="/blog-forex-classes-palm-emirates-hills-business-bay">Forex classes for Palm Jumeirah, Emirates Hills and Business Bay</Link> is the hour when the drive is the constraint. <Link href="/blog-executive-forex-coaching-dubai">Executive forex coaching for business owners</Link> fits a private hour around a company week. <Link href="/blog-forex-coaching-entrepreneurs-flexible-week">Private forex coaching for an irregular week</Link> is for founders whose diary will not repeat, including Palm Jumeirah, Emirates Hills, and Business Bay. <Link href="/blog-forex-mentorship-difc-professionals">Forex mentorship for DIFC professionals</Link> is the hour when finance is already the job. <Link href="/blog-forex-portfolio-diversification-uae">Forex beside an existing portfolio</Link> is for investors who already hold capital. <Link href="/blog-private-forex-mentorship-abu-dhabi">Private forex mentorship in Abu Dhabi</Link> is the same hour for a professional week in the capital. <Link href="/blog-forex-training-doctors-engineers-bankers-uae">Forex training for doctors, engineers and bankers</Link> is for a rota rather than an office close.
               </li>
               <li>
@@ -423,6 +426,8 @@ export default function HomePage() {
         <section className="tight">
           <div className="container">
             <div className="topics-row reveal">
+              <Link href="/blog-private-one-to-one-forex-training-dubai" className="topic-chip">Private one-to-one forex training</Link>
+              <Link href="/blog-premium-executive-forex-mentorship-dubai" className="topic-chip">Executive mentorship brief</Link>
               <Link href="/blog-forex-mentorship-difc-professionals" className="topic-chip">DIFC forex mentorship</Link>
               <Link href="/blog-forex-coaching-entrepreneurs-flexible-week" className="topic-chip">Coaching for an irregular week</Link>
               <Link href="/blog-private-forex-mentorship-abu-dhabi" className="topic-chip">Private mentorship in Abu Dhabi</Link>
