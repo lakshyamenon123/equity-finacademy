@@ -99,7 +99,7 @@ export default function GroupForexClassesFriendsPost() {
                 <a href={STARTRADER_LIVE_URL} target="_blank" rel="sponsored noopener noreferrer">
                   StarTrader live account
                 </a>{" "}
-                is the link the academy gives for that step. The English video below shows an account opening and the MT5 layout, so each person can do it before the first class. The written version is <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5 in the UAE</Link>. Use a demo until the buttons are familiar. <Link href="/blog-demo-vs-live-mt5-uae">Demo versus live</Link> is the difference.
+                is the link the academy gives for that step. The English video below shows an account opening and the MT5 layout, so each person can do it before the first class. The written version is <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5 in the UAE</Link>. The window each person should be able to name before the first class is <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>. Use a demo until the buttons are familiar. <Link href="/blog-demo-vs-live-mt5-uae">Demo versus live</Link> is the difference.
               </p>
 
               <h2>What the first classes are actually for</h2>

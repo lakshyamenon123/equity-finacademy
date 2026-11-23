@@ -149,7 +149,7 @@ export default function DifcForexMentorshipPost() {
 
               <h2>A rota, a company, or a district</h2>
               <p>
-                This page is the finance job. Three neighbouring notes are easy to confuse with it.
+                This page is the finance job. Neighbouring notes are easy to confuse with it.
               </p>
               <ul>
                 <li>
@@ -159,7 +159,7 @@ export default function DifcForexMentorshipPost() {
                   A founder whose week will not repeat, including study from Palm Jumeirah, Emirates Hills, or a meeting day in Business Bay, should read <Link href="/blog-forex-coaching-entrepreneurs-flexible-week">private forex coaching for an irregular week</Link>.
                 </li>
                 <li>
-                  Capital you already hold, and whether a currency market belongs beside it, is <Link href="/blog-forex-portfolio-diversification-uae">forex beside a portfolio</Link>. Company cash kept apart from a trading balance is <Link href="/blog-forex-trading-business-owners-uae">forex education for business owners</Link>.
+                  Capital you already hold, and whether a currency market belongs beside it, is <Link href="/blog-forex-portfolio-diversification-uae">forex beside a portfolio</Link>. The one-page brief before you pay, so mentorship does not become a conversation about that wealth, is <Link href="/blog-premium-executive-forex-mentorship-dubai">premium executive forex mentorship in Dubai</Link>. Company cash kept apart from a trading balance is <Link href="/blog-forex-trading-business-owners-uae">forex education for business owners</Link>.
                 </li>
               </ul>
 

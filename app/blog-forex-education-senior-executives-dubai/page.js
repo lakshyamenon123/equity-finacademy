@@ -159,7 +159,9 @@ export default function SeniorExecutiveForexRoutinePost() {
               <p>
                 A family office in Abu Dhabi that is separating money set aside to learn from capital that already has a job should use{" "}
                 <Link href="/blog-forex-training-family-office-abu-dhabi">the family-office note</Link>. The arithmetic is related. The diary is not. A rota, rather than a board calendar, is{" "}
-                <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for doctors, engineers and bankers</Link>.
+                <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for doctors, engineers and bankers</Link>. One private hour every two weeks, when even this weekly shape is too much, is{" "}
+                <Link href="/blog-private-one-to-one-forex-training-dubai">private one-to-one forex training for a fortnight you can keep</Link>. The brief that keeps wealth an adviser already looks after out of the lesson is{" "}
+                <Link href="/blog-premium-executive-forex-mentorship-dubai">premium executive forex mentorship in Dubai</Link>.
               </p>
 
               <h2>The week, in a shape you can keep</h2>

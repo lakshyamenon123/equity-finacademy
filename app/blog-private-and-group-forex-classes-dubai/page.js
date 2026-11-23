@@ -97,7 +97,7 @@ export default function PrivateAndGroupForexClassesPost() {
               </p>
               <ol>
                 <li>Week one: the group hour on the next topic in the track. Take one note of the level the cohort marked, and the symbol.</li>
-                <li>Between classes: open that symbol on MetaTrader 5. Write one sentence: what you think happens if price returns to the level. The quote, if it is still fuzzy, is <Link href="/blog-currency-pairs-uae">currency pairs</Link>. The margin line, if the size is the worry, is <Link href="/blog-forex-leverage-margin-mt5-uae">leverage and margin</Link>.</li>
+                <li>Between classes: open that symbol on MetaTrader 5. Write one sentence: what you think happens if price returns to the level. The window, if the buttons are still new, is <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>. The quote, if it is still fuzzy, is <Link href="/blog-currency-pairs-uae">currency pairs</Link>. The margin line, if the size is the worry, is <Link href="/blog-forex-leverage-margin-mt5-uae">leverage and margin</Link>.</li>
                 <li>The private hour: bring that sentence and that chart. Ask the instructor to correct the level, not to reteach the whole group evening.</li>
                 <li>The next group: you are back on the shared symbol, with a cleaner mark, ready for the following topic.</li>
               </ol>

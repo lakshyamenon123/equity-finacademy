@@ -117,7 +117,7 @@ export default function ForexEducationUaePost() {
                 . Practical sessions at the academy use StarTrader, which is regulated by the UAE Securities and Commodities Authority. The link is the academy&apos;s affiliate link. You open the account yourself. The course fee and the broker balance are separate.
               </p>
               <p>
-                The English lesson below is about questions to ask when choosing a broker in the UAE, from the Equity Global English channel. Watch it before you fund an account. It is not the course, and it does not replace the study order above. Stay on a demo account until you can place, modify, and close a ticket without guessing which button is which. The difference between that ticket and a live one is in <Link href="/blog-demo-vs-live-mt5-uae">demo versus live on MT5</Link>.
+                The English lesson below is about questions to ask when choosing a broker in the UAE, from the Equity Global English channel. Watch it before you fund an account. It is not the course, and it does not replace the study order above. Stay on a demo account until you can place, modify, and close a ticket without guessing which button is which. The difference between that ticket and a live one is in <Link href="/blog-demo-vs-live-mt5-uae">demo versus live on MT5</Link>. The fields on the window, so you are not searching for the stop during the hour, are in <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>.
               </p>
 
               <h2>How to enrol once the order is clear</h2>

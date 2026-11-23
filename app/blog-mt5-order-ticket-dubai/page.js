@@ -54,7 +54,7 @@ const postSchema = articleSchema({
   description,
   path,
   datePublished: "2026-11-09",
-  dateModified: "2026-11-21",
+  dateModified: "2026-11-23",
   type: "BlogPosting",
 });
 
@@ -86,7 +86,7 @@ export default function Mt5OrderTicketPost() {
             <div className="blog-article">
               <span className="eyebrow">MT5</span>
               <h1>How to Read the MetaTrader 5 Order Ticket Before a Class in Dubai</h1>
-              <AuthorByline detail="9 Nov 2026 · Updated 21 Nov 2026 · 12 min read" />
+              <AuthorByline detail="9 Nov 2026 · Updated 23 Nov 2026 · 13 min read" />
 
               <p>
                 A live forex hour in Dubai goes slowly when the order window is new. The instructor asks for the stop, and the student is still looking for the box. This page names the fields on the MetaTrader 5 order ticket so you can point at them before anyone watches you send anything. It is a map of the window. It is not an instruction to place a trade, and it does not name a direction.
@@ -233,6 +233,14 @@ export default function Mt5OrderTicketPost() {
                 Professionals who live on Palm Jumeirah or in Emirates Hills, or who work in Business Bay, still use this same window. The commute is a different note:{" "}
                 <Link href="/blog-forex-classes-palm-emirates-hills-business-bay">forex classes for those neighbourhoods</Link>. Investors in Abu Dhabi who need the learning balance kept apart from capital that already has a job should read{" "}
                 <Link href="/blog-forex-training-family-office-abu-dhabi">forex training for family offices and investors in Abu Dhabi</Link>.
+              </p>
+
+              <h2>Change the stop, then remove the order</h2>
+              <p>
+                A class in Dubai will often ask for three actions on a demo, and none of them is a live send. Place a pending order away from the current price, with the stop already filled in. Modify that stop so it matches the price on your paper. Delete the pending order so nothing is left working. If you can do those three and then show an empty list, the window is no longer the lesson. The hour can move to the mark.
+              </p>
+              <p>
+                If modify is a search through menus, do it the night before. On a desktop build of MetaTrader 5, a pending order sits in the Toolbox, and a right-click offers modify and delete. You do not need a faster shortcut. You need to recognise the order you just placed, change one price, and remove it. Finish by closing the ticket. Do not end the rehearsal with a market click. Doctors, engineers, and bankers who will meet this window on a tired evening should read <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for those careers</Link> and book the rehearsal for a morning they are awake. A private hour you can keep once a fortnight, so the rehearsal is not rushed between meetings, is <Link href="/blog-private-one-to-one-forex-training-dubai">private one-to-one forex training in Dubai</Link>.
               </p>
 
               <h2>What the ticket will not decide</h2>

@@ -201,7 +201,8 @@ export default function JumeirahDubaiHillsMentorshipPost() {
               </p>
               <p>
                 A senior week that needs a written capital routine, rather than a neighbourhood plan, is{" "}
-                <Link href="/blog-forex-education-senior-executives-dubai">forex education for senior executives in Dubai</Link>. A founder whose week will not repeat is{" "}
+                <Link href="/blog-forex-education-senior-executives-dubai">forex education for senior executives in Dubai</Link>. An executive who already holds capital, and wants the brief that keeps that wealth out of the hour, should read{" "}
+                <Link href="/blog-premium-executive-forex-mentorship-dubai">premium executive forex mentorship in Dubai</Link>. A founder whose week will not repeat is{" "}
                 <Link href="/blog-forex-coaching-entrepreneurs-flexible-week">private forex coaching for an irregular week</Link>. A rota is{" "}
                 <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for doctors, engineers and bankers</Link>.
               </p>

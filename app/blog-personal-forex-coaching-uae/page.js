@@ -161,7 +161,7 @@ export default function PersonalForexCoachingPost() {
 
               <h2>How to ask for coaching</h2>
               <p>
-                Send the plan&apos;s first lines, not a paragraph about your ambitions. A complete message looks like this: &quot;Basic to Intermediate, private lesson, online from Abu Dhabi, after 7pm Gulf Standard Time. The aim this month is swing highs and lows on EUR/USD. Please quote the fee in AED.&quot; Swap the track, the emirate, and the symbol for your own.
+                Send the plan&apos;s first lines, not a paragraph about your ambitions. A complete message looks like this: &quot;Basic to Intermediate, private lesson, online from Abu Dhabi, after 7pm Gulf Standard Time. The aim this month is swing highs and lows on EUR/USD. Please quote the fee in AED.&quot; Swap the track, the emirate, and the symbol for your own. If the honest cadence is one private hour every two weeks, read <Link href="/blog-private-one-to-one-forex-training-dubai">private one-to-one forex training for a fortnight you can keep</Link> before you promise a weekly plan.
               </p>
               <p>
                 Call <a href={`tel:${SITE.telephoneTel}`}>{SITE.telephoneDisplay}</a>, message on{" "}
