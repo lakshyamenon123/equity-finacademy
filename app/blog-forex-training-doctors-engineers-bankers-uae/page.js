@@ -54,6 +54,14 @@ const careerFaq = [
     q: "A colleague wants a trade idea from the class. What should I say?",
     text: "Say that the hour was about your chart and your question, and that you are not passing on a live order. Patient details, project names, and client positions stay out of the lesson. A symbol you have not written down does not leave the room either.",
   },
+  {
+    q: "Does this class count as continuing education for my licence?",
+    text: "No. A hospital record, an engineering professional-development hour, and a bank's internal course are employment records. This lesson does not produce a credit those bodies are obliged to count. Book it as personal study on a day you are off the rota. If an employer asked for a specific certificate, ask the employer what they accept before you pay.",
+  },
+  {
+    q: "My employer restricts personal trading. Can I still book?",
+    text: "Read the rule in your own contract or compliance manual first. The class cannot interpret it. If personal trading is prohibited, do not fund an account and do not ask the hour to work around the rule. A demo chart, with no live ticket, may still be something you are allowed to study. If you are unsure, ask your own compliance contact.",
+  },
 ];
 
 const brokerEnglish = ENGLISH_VIDEOS.find((video) => video.id === "bC097etTQeI");
@@ -75,7 +83,7 @@ const postSchema = articleSchema({
   description,
   path,
   datePublished: "2026-11-18",
-  dateModified: "2026-11-22",
+  dateModified: "2026-11-23",
   type: "BlogPosting",
 });
 
@@ -107,7 +115,7 @@ export default function ForexTrainingCareersPost() {
             <div className="blog-article">
               <span className="eyebrow">CAREERS</span>
               <h1>{headline}</h1>
-              <AuthorByline detail="18 Nov 2026 · Updated 22 Nov 2026 · 18 min read" />
+              <AuthorByline detail="18 Nov 2026 · Updated 23 Nov 2026 · 20 min read" />
 
               <p>
                 A registrar coming off a night shift, an engineer leaving a site meeting in Business Bay, and a banker whose afternoon belongs to DIFC do not share a diary. They do share a problem. The hour they can study is not a neat slot after a standard office close, and the income they already earn can make a trading account feel smaller than it is. This note is for those three careers. It is about fitting private forex training around the week you actually have, and about writing the risk down before the account is funded.
@@ -384,6 +392,30 @@ export default function ForexTrainingCareersPost() {
               <p>
                 If the first answer is no, change the diary. Do not add an indicator to compensate for a class you missed. If the third answer is yes, the next month&apos;s rule is the day, not a new symbol. Keep the page with{" "}
                 <Link href="/blog-forex-trading-plan-uae">a trading plan and journal</Link>. Bring it to the next private hour, including when that hour is ten days later because of the rota.
+              </p>
+
+              <h2>This hour is not a credit on a professional licence</h2>
+              <p>
+                Doctors keep a record of continuing education. Engineers keep a record of professional development. Banks run internal courses that sit on a staff system. A forex lesson at this academy is none of those records. It does not produce a credit a hospital, a professional body, or an employer is obliged to count. Do not book the hour because a licence needs hours. Book it because you want a chart read on a day you are actually off the rota.
+              </p>
+              <p>
+                If an employer asked for a named certificate, ask the employer what they accept before you pay a course fee. The academy will tell you what the lesson contains: the quote, the candle, the swing, and the window on your own chart. It will not describe that lesson as a licence, and it will not write to a hospital or a bank to say you attended. The topic order remains the <Link href="/courses">course tracks</Link>.
+              </p>
+
+              <h2>Read the employment rule before the account exists</h2>
+              <p>
+                A hospital, a contractor, and a bank can each restrict personal trading. The restriction is in your contract or your compliance manual. It is not in this article, and the instructor cannot interpret it for you. Read it before you fund anything. If personal trading is prohibited, do not open a live account and do not ask the class to work around the rule. A demo chart, with no live ticket, may still be study you are allowed to do. If you are not sure, ask your own compliance contact.
+              </p>
+              <p>
+                Bring a symbol you are free to discuss. A level you heard in a morning meeting, a patient, and a project name stay outside the room. The same boundary is why a banker&apos;s desk and a personal practice chart are different objects. The longer version for people whose job is already in finance is <Link href="/blog-forex-mentorship-difc-professionals">forex mentorship for DIFC professionals</Link>. If the honest outcome of the policy is that you cannot study this at all, send that fact and do not book.
+              </p>
+
+              <h2>When the night before cancels the sitting</h2>
+              <p>
+                A rota changes. The useful message is short and dated. &quot;Thursday is now a night shift. I can keep Sunday morning, online, same symbol.&quot; That message can be moved. &quot;Sorry, something came up&quot; cannot. A private hour can move to the next honest block. A group seat usually cannot, which is why a moving rota starts as a private booking. If the next honest block is more than a fortnight away, pause and leave the platform closed.
+              </p>
+              <p>
+                A ticket sent so the week does not feel wasted is the outcome this page is trying to prevent. Write the cancellation on the same handover you already keep: the symbol, what you had marked, that no order was sent, and the next date that is actually free. If there is no rota and the constraint is simply that you can sit once every two weeks, use <Link href="/blog-private-one-to-one-forex-training-dubai">private one-to-one forex training for a fortnight you can keep</Link>. An executive who already holds capital, and needs the brief that keeps a mentor away from that wealth, should read <Link href="/blog-premium-executive-forex-mentorship-dubai">premium executive forex mentorship in Dubai</Link>.
               </p>
 
               <h2>How to judge the seat before you pay</h2>

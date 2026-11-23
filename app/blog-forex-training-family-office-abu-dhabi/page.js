@@ -164,7 +164,7 @@ export default function FamilyOfficeAbuDhabiPost() {
               </p>
               <p>
                 Name the weeks that are not free. A travel week, an investment meeting that runs through the evening, or a family commitment that owns Saturday is a reason to move the hour, not a reason to send an order from an airport queue. Session times on the UAE clock are in{" "}
-                <Link href="/blog-forex-market-hours-dubai">forex market hours in Dubai</Link>. A quieter hour is allowed. The private lesson can sit outside the London and New York overlap.
+                <Link href="/blog-forex-market-hours-dubai">forex market hours in Dubai</Link>. A quieter hour is allowed. The private lesson can sit outside the London and New York overlap. An executive in Dubai who already has an adviser, and wants the brief that keeps mentorship off that wealth, should read <Link href="/blog-premium-executive-forex-mentorship-dubai">premium executive forex mentorship in Dubai</Link>.
               </p>
 
               <h2>Questions worth asking before you pay</h2>

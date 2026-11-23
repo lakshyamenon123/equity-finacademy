@@ -177,7 +177,8 @@ export default function ForexEconomicCalendarDubaiPost() {
               <p>
                 Write the release in the same place you write the trade. The date, the time in Gulf Standard Time,
                 the currency, and whether you were watching or trading. That line belongs in{" "}
-                <Link href="/blog-forex-trading-plan-uae">a trading plan and journal</Link>. A private coaching hour
+                <Link href="/blog-forex-trading-plan-uae">a trading plan and journal</Link>. If the release tempts you to click, read the fields first on{" "}
+                <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link> and close the window without sending. A private coaching hour
                 can then review the line. What that hour is built around is{" "}
                 <Link href="/blog-personal-forex-coaching-uae">personal forex coaching in the UAE</Link>.
               </p>

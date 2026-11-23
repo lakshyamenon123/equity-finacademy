@@ -122,7 +122,7 @@ export default function ForexPortfolioDiversificationPost() {
               </p>
               <h3>What the lesson will not take off your desk</h3>
               <p>
-                The lesson can mark a level and show how an order is built. It will not rebalance a portfolio or tell you that a currency trade has improved your risk. You keep that decision. What the booked hour contains is <Link href="/blog-live-forex-trading-session-dubai">a live forex session in Dubai</Link>.
+                The lesson can mark a level and show how an order is built. It will not rebalance a portfolio or tell you that a currency trade has improved your risk. You keep that decision. The one-page brief for an executive who wants that boundary in writing before they pay is <Link href="/blog-premium-executive-forex-mentorship-dubai">premium executive forex mentorship in Dubai</Link>. What the booked hour contains is <Link href="/blog-live-forex-trading-session-dubai">a live forex session in Dubai</Link>.
               </p>
               <p>
                 Practical orders go through an account you open yourself at StarTrader, regulated by the UAE Securities and Commodities Authority, on MetaTrader 5. The course fee and the trading balance are separate. Install steps are <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>. The ticket you will be asked to read is <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>. The English video on this page is a preview, not advice for your account.
