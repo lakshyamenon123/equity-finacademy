@@ -282,8 +282,12 @@ function courseEntry({ id, name, description, url, topics, instanceName }) {
       areaServed,
     },
     teaches: topics,
-    // Fees are quoted in AED on enquiry and are not published. An Offer without
-    // a price is invalid structured data, so the price is left off the graph.
+    offers: {
+      "@type": "Offer",
+      price: "1500",
+      priceCurrency: "AED",
+      description: "Starting price",
+    },
     hasCourseInstance: {
       "@type": "CourseInstance",
       name: instanceName,
@@ -300,7 +304,7 @@ function privateCourse() {
     id: `${url}#private-course`,
     name: "Private One-to-One Forex Lessons",
     description:
-      "Private one-to-one forex lessons in Dubai, UAE, and online across the UAE, with live trading sessions and training. The fee is quoted in AED when you enquire and is not published.",
+      "Private one-to-one forex lessons in Dubai, UAE, and online across the UAE, with live trading sessions and training. Private and group forex training starts from AED 1,500.",
     url,
     topics: ["Private one-to-one forex lessons", "Live trading sessions", "Forex training"],
     instanceName: "Private one-to-one lesson",

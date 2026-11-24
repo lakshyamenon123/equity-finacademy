@@ -24,7 +24,7 @@ export const metadata = pageMetadata({
 const pageFaq = [
   {
     q: "Do you offer private one-to-one forex classes in Dubai?",
-    text: "Yes. Equity Fin Academy offers private one-to-one forex lessons in Dubai, UAE, including live trading sessions and training. The fee is quoted when you enquire and is not published on this site.",
+    text: "Yes. Equity Fin Academy offers private one-to-one forex lessons in Dubai, UAE, including live trading sessions and training. Private and group forex training starts from AED 1,500, with the programme tailored to your experience, schedule and goals.",
   },
   {
     q: "Are the forex classes in Dubai also taught as a group?",
