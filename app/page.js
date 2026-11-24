@@ -316,7 +316,7 @@ export default function HomePage() {
                   </svg>
                 </div>
                 <h3>Executive Market Briefing</h3>
-                <p>A monthly small-room evening in Dubai, plus an online seat. Register interest.</p>
+                <p>Next briefing: Thursday 3 December 2026, 7:30 pm Dubai time. A small room in Dubai, plus an online seat.</p>
               </Link>
               <Link href="/blog" className="card reveal">
                 <div className="icon-badge">

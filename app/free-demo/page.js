@@ -113,7 +113,8 @@ export default function FreeDemoPage() {
             <p style={{ marginTop: 24 }}>
               Compare the formats on <Link href="/private-group-forex-training-dubai">private versus group classes</Link>, read the
               tracks on <Link href="/courses">forex courses in Dubai</Link>, or take the free{" "}
-              <Link href="/free-trading-plan">executive&apos;s one-page trading plan</Link> first.
+              <Link href="/free-trading-plan">executive&apos;s one-page trading plan</Link> first. The next{" "}
+              <Link href="/executive-market-briefing">Executive Market Briefing</Link> is Thursday 3 December 2026, 7:30 pm Dubai time.
             </p>
           </div>
         </section>
