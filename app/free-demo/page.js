@@ -70,6 +70,9 @@ export default function FreeDemoPage() {
                 Choose a weekly slot, private one-to-one or small group, and confirm it on WhatsApp. The demo is a live
                 look at how Gopi Chandran teaches, in person in Dubai, UAE, or online across the UAE.
               </p>
+              <p style={{ maxWidth: "58ch" }}>
+                The demo class is free; full private and group forex training at Equity Fin Academy starts from AED 1,500, with the programme tailored to your experience, schedule and goals.
+              </p>
               <ul className="guide-list">
                 <li>Weekday evenings, Monday to Thursday, and Saturday, all on Dubai time.</li>
                 <li>Private one-to-one for executives and professionals, or a small group.</li>

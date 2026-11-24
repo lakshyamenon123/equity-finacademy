@@ -43,7 +43,7 @@ const courseFaq = [
   },
   {
     q: "Do you offer private one-to-one lessons?",
-    text: "Yes. Private one-to-one forex lessons are available in Dubai, including live trading sessions and training. Group cohorts are available too. Call for the current fee — it is not listed on this page.",
+    text: "Yes. Private one-to-one forex lessons are available in Dubai, UAE, including live trading sessions and training. Group cohorts are available too. Private and group forex training starts from AED 1,500, with the programme tailored to your experience, schedule and goals.",
   },
   {
     q: "Is broker access included in the course fee?",
@@ -84,6 +84,9 @@ export default function CoursesPage() {
               Forex trading courses in Dubai
             </h1>
             <p style={{ maxWidth: "66ch", marginTop: 18 }}>
+              Private and group forex training at Equity Fin Academy starts from AED 1,500, with the programme tailored to your experience, schedule and goals.
+            </p>
+            <p style={{ maxWidth: "66ch", marginTop: 18 }}>
               Two live tracks for a group class or a private lesson, in Dubai, UAE, and online across the UAE. Start at the level that matches the chart you can already read. Practical sessions run on a regulated broker. The academy is open 24/7 and rated 5.0 on Google from 30+ reviews. Compare the rooms on{" "}
               <Link href="/private-group-forex-training-dubai">private and group forex training</Link>. Gold, indices, and stocks on the same platform are the{" "}
               <Link href="/stock-market-course-dubai">stock market course</Link>. A map search that mixes those subjects is explained in{" "}
@@ -91,7 +94,7 @@ export default function CoursesPage() {
             </p>
             <p style={{ maxWidth: "66ch" }}>
               If you searched for forex trading courses in Dubai, or a forex trading course in Dubai, this page is the topic order. Read <Link href="/blog-currency-pairs-uae">how a pair is quoted</Link>, <Link href="/blog-forex-leverage-margin-mt5-uae">leverage and margin on MT5</Link>, and <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link> before the first ticket. A month that books a private hour and a group seat is <Link href="/blog-private-and-group-forex-classes-dubai">how to use both</Link>. The choice between them is <Link href="/blog-private-vs-group-forex-classes-dubai">private versus group</Link>. The first month in the city is{" "}
-              <Link href="/blog-how-to-start-forex-trading-dubai">how to start forex trading in Dubai</Link>. What the fee includes, still without a printed price, is on{" "}
+              <Link href="/blog-how-to-start-forex-trading-dubai">how to start forex trading in Dubai</Link>. What the fee includes is on{" "}
               <Link href="/pricing">pricing</Link>. The city page is{" "}
               <Link href="/forex-academy-in-dubai">forex courses in Dubai</Link>.
             </p>
@@ -197,8 +200,8 @@ export default function CoursesPage() {
             <h2>Private lessons and live trading sessions.</h2>
             <p>
               Alongside the two group tracks, Equity Fin Academy offers private one-to-one forex lessons in Dubai, UAE, and online across the UAE. A private lesson is your chart and your questions with the instructor, and it
-              includes live trading sessions and training. Group cohorts include live trading sessions as well. The fee
-              for either format is quoted when you enquire — it is not printed here. Lifetime WhatsApp access stays on
+              includes live trading sessions and training. Group cohorts include live trading sessions as well. Private and
+              group forex training starts from AED 1,500. Lifetime WhatsApp access stays on
               the Advanced track only and is not a booked one-to-one hour.{" "}
               <Link href="/private-group-forex-training-dubai">Private and group forex training</Link> compares the two
               rooms.

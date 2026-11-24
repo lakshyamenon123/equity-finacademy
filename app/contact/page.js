@@ -102,6 +102,9 @@ export default function ContactPage() {
             </div>
             <div className="info-card offer-card contact-quick" id="enquiry">
               <h2 style={{ fontSize: "1.3rem", marginTop: 0 }}>Ask for fees or a seat</h2>
+              <p style={{ marginTop: 0 }}>
+                Private and group forex training at Equity Fin Academy starts from AED 1,500, with the programme tailored to your experience, schedule and goals.
+              </p>
               <ShortLeadForm
                 id="contact-lead-form"
                 interest={INTEREST_FEES}
