@@ -99,6 +99,7 @@ export default function WhyChooseUsPage() {
               This page is a worksheet, not a welcome. The homepage introduces the academy. The{" "}
               <Link href="/about">About page</Link> is Gopi Chandran&apos;s profile.{" "}
               <Link href="/blog-choose-forex-mentor-dubai">How to choose a forex mentor in Dubai</Link> is about the teacher.{" "}
+              <Link href="/blog-evaluate-forex-mentor-teaching-uae">How to evaluate the teaching process</Link> is what to watch in a demo.{" "}
               <Link href="/blog-choose-forex-academy-uae">How to choose a forex academy in the UAE</Link> is a list you can use for any school. Stay here for the six facts this academy publishes before you pay, and for the pass-or-pause table under the cards.
             </p>
             <p className="hero-sub" style={{ marginTop: 14, maxWidth: "66ch" }}>
@@ -223,7 +224,7 @@ export default function WhyChooseUsPage() {
               The <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link> page answers what a school day is: the room in Dubai, the live session, and the online seat across the UAE. It is the offer written as a place. It does not repeat this checklist, and this checklist does not try to be the school-day page. Students outside Dubai should use the <Link href="/forex-training-academy-uae">UAE page</Link> and, if they live in the capital, the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>, which is about the drive versus studying online.
             </p>
             <p>
-              Two articles help before you enquire. <Link href="/blog-personal-forex-coaching-uae">Personal forex coaching in the UAE</Link> shows what a written coaching plan contains. <Link href="/blog-forex-trading-plan-uae">A trading plan and journal</Link> shows what to bring back after you practise. Neither one is a substitute for the checks above.
+              Two articles help before you enquire. <Link href="/blog-personal-forex-coaching-uae">Personal forex coaching in the UAE</Link> shows what a written coaching plan contains. <Link href="/blog-forex-trading-plan-uae">A trading plan and journal</Link> shows what to bring back after you practise. <Link href="/blog-forex-performance-review-dubai">A weekly performance review</Link> is the twenty-five minutes you spend with those rows. None of them replaces the checks above.
             </p>
 
             <h2>Where each check is spelled out</h2>

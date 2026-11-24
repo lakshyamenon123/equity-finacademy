@@ -66,11 +66,19 @@ const nextConfig = {
         source: "/why-choose-us",
         headers: [{ key: "Link", value: `<${WHY_CHOOSE_US}>; rel="canonical"` }],
       },
+      // /contact?course= and any other query string are the same document.
+      // The header does not depend on the query, so the canonical stays the
+      // clean URL when a parameter is still on the request.
+      {
+        source: "/contact",
+        headers: [{ key: "Link", value: `<${CANONICAL_ORIGIN}/contact>; rel="canonical"` }],
+      },
       // Favicon and images are files, not pages. noindex keeps them out of the
-      // index. Font files under /_next/static/media/ are disallowed in
-      // robots.txt because that folder is woff2 only. CSS is /_next/static/css/
-      // and JavaScript is /_next/static/chunks/, so the disallow does not block
-      // rendering. noindex remains for any client that still fetches a font.
+      // index. Font files live in /_next/static/media/ (woff2 from next/font).
+      // CSS is /_next/static/css/ and JavaScript is /_next/static/chunks/.
+      // Those paths are not given this header, and robots.txt does not
+      // disallow /_next/static, so Googlebot can still fetch CSS and JS.
+      // noindex on the font file tells Google the file is not a page.
       {
         source: "/favicon.ico",
         headers: [{ key: "X-Robots-Tag", value: "noindex" }],

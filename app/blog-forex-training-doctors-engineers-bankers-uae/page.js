@@ -62,6 +62,10 @@ const careerFaq = [
     q: "My employer restricts personal trading. Can I still book?",
     text: "Read the rule in your own contract or compliance manual first. The class cannot interpret it. If personal trading is prohibited, do not fund an account and do not ask the hour to work around the rule. A demo chart, with no live ticket, may still be something you are allowed to study. If you are unsure, ask your own compliance contact.",
   },
+  {
+    q: "Can I copy one of the blank weeks on this page?",
+    text: "Yes. They are templates, not diaries of real students. Replace the days with the next two weeks you actually have. If a line describes a day you cannot keep, delete the line. Do not book a seat to match the template.",
+  },
 ];
 
 const brokerEnglish = ENGLISH_VIDEOS.find((video) => video.id === "bC097etTQeI");
@@ -83,7 +87,7 @@ const postSchema = articleSchema({
   description,
   path,
   datePublished: "2026-11-18",
-  dateModified: "2026-11-23",
+  dateModified: "2026-11-24",
   type: "BlogPosting",
 });
 
@@ -115,7 +119,7 @@ export default function ForexTrainingCareersPost() {
             <div className="blog-article">
               <span className="eyebrow">CAREERS</span>
               <h1>{headline}</h1>
-              <AuthorByline detail="18 Nov 2026 · Updated 23 Nov 2026 · 20 min read" />
+              <AuthorByline detail="18 Nov 2026 · Updated 24 Nov 2026 · 22 min read" />
 
               <p>
                 A registrar coming off a night shift, an engineer leaving a site meeting in Business Bay, and a banker whose afternoon belongs to DIFC do not share a diary. They do share a problem. The hour they can study is not a neat slot after a standard office close, and the income they already earn can make a trading account feel smaller than it is. This note is for those three careers. It is about fitting private forex training around the week you actually have, and about writing the risk down before the account is funded.
@@ -416,6 +420,31 @@ export default function ForexTrainingCareersPost() {
               </p>
               <p>
                 A ticket sent so the week does not feel wasted is the outcome this page is trying to prevent. Write the cancellation on the same handover you already keep: the symbol, what you had marked, that no order was sent, and the next date that is actually free. If there is no rota and the constraint is simply that you can sit once every two weeks, use <Link href="/blog-private-one-to-one-forex-training-dubai">private one-to-one forex training for a fortnight you can keep</Link>. An executive who already holds capital, and needs the brief that keeps a mentor away from that wealth, should read <Link href="/blog-premium-executive-forex-mentorship-dubai">premium executive forex mentorship in Dubai</Link>.
+              </p>
+
+              <h2>Three blank weeks, so the diary is specific</h2>
+              <p>
+                The list of careers above is still a list. A booking needs days. These three weeks are blanks, not diaries of real students. Copy the shape that matches the job. Replace every day with the next two weeks you actually have. If a line is a day you cannot keep, delete the line rather than hoping the rota changes.
+              </p>
+              <ul>
+                <li>
+                  <strong>A doctor.</strong> Week one has two night shifts and a post-call morning. Those three blocks are closed. The private hour sits on the first morning that is not post-call, online if the commute would eat it. No ticket is planned on the night-shift day. The monthly page, not a daily journal, is the review.
+                </li>
+                <li>
+                  <strong>An engineer.</strong> Tuesday and Wednesday are site days in another emirate. Those evenings are closed. The hour sits on a Sunday or a Monday that is already in Dubai, or online on an evening that is not a travel day. The symbol is one pair, written down, so the site week does not become a search for a new chart.
+                </li>
+                <li>
+                  <strong>A banker.</strong> The London and New York overlap belongs to the desk. The personal chart waits until after that, or until a weekend morning. The level heard in a morning meeting stays at work. The practice chart is a symbol you are free to discuss. DIFC, Downtown Dubai, or the Marina changes the drive. It does not change this split.
+                </li>
+              </ul>
+              <p>
+                Put the surviving hour in the first message, with the dates. &quot;Sunday morning, online, EUR/USD, and the next date I can keep&quot; can be booked. &quot;Evenings, generally&quot; cannot. The window you will be asked to read, once that hour exists, is{" "}
+                <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>. Read it on a morning you are awake, not between a night shift and sleep.
+              </p>
+              <p>
+                If your week is an office week and you can protect about twenty-five minutes, the meeting with last week&apos;s rows is{" "}
+                <Link href="/blog-forex-performance-review-dubai">a weekly forex performance review for busy professionals in Dubai</Link>. Stay on this page when the constraint is a rota, a site, or a desk that already owns the overlap. If you are still deciding whether the hour is teaching, use{" "}
+                <Link href="/blog-evaluate-forex-mentor-teaching-uae">the checklist for a mentor&apos;s teaching process</Link> before you pay for a longer seat.
               </p>
 
               <h2>How to judge the seat before you pay</h2>

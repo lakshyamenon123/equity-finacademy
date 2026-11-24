@@ -45,9 +45,16 @@ function redirectAbsolute(pathname, params, request) {
   // A 301 to the same path and query loops. "/" is already canonical, so a
   // trailing-slash rule must not send it to itself.
   if (samePathAndQuery(request, url)) return NextResponse.next();
+  const headers = { Location: url.toString() };
+  // Query strings on /contact, including ?course=, must not become a second
+  // indexed URL. The HTML canonical is the clean page. Repeat it on the 301
+  // so the redirect and the document name the same URL.
+  if (url.pathname === "/contact") {
+    headers.Link = `<${CANONICAL_ORIGIN}/contact>; rel="canonical"`;
+  }
   return new NextResponse(null, {
     status: 301,
-    headers: { Location: url.toString() },
+    headers,
   });
 }
 
@@ -96,7 +103,9 @@ export function middleware(request) {
 
   // /contact?course=... was an old enquiry link. The form ignores it, so it is
   // the same document as /contact. Drop the parameter. Do not forward it.
-  if (stripped === "/contact" && params.has("course")) {
+  // Match the path in any case so /Contact?course= does not stay a second URL.
+  const isContact = stripped.toLowerCase() === "/contact";
+  if (isContact && params.has("course")) {
     params.delete("course");
     queryChanged = true;
   }
@@ -112,7 +121,11 @@ export function middleware(request) {
   // parameters there is nothing to change, so the request must pass through.
   if (pathname === "/" && !queryChanged) return NextResponse.next();
 
-  const destination = LEGACY[stripped];
+  // Legacy paths are stored in lowercase. /About-Us was still a 404 because the
+  // match was case-sensitive, so Google kept a second URL. Look up the lower
+  // case form and send that request to the same destination in one 301.
+  let destination = LEGACY[stripped] || LEGACY[stripped.toLowerCase()];
+  if (!destination && isContact && stripped !== "/contact") destination = "/contact";
   const target = destination || (stripped !== pathname ? stripped : null);
   if (!target && !queryChanged) return NextResponse.next();
   // One absolute 301, including when a trailing slash and a tracking

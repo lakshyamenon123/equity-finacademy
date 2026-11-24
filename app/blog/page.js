@@ -20,6 +20,32 @@ export const metadata = pageMetadata({
 
 const posts = [
   {
+    href: "/blog-forex-performance-review-dubai",
+    icon: (
+      <>
+        <path d="M8 4h8a2 2 0 012 2v14H6V6a2 2 0 012-2z" />
+        <path d="M9 9h6M9 13h6M9 17h3" />
+      </>
+    ),
+    cat: "Professionals",
+    title: "A Weekly Forex Performance Review for Busy Professionals in Dubai",
+    desc: "Twenty-five minutes with the rows you already wrote: four counts, one sentence for next week, and a pause you decide in advance.",
+    time: "14 min read",
+  },
+  {
+    href: "/blog-evaluate-forex-mentor-teaching-uae",
+    icon: (
+      <>
+        <path d="M5 7h14M5 12h14M5 17h9" />
+        <path d="M4 7h.01M4 12h.01M4 17h.01" />
+      </>
+    ),
+    cat: "Checklist",
+    title: "How to Evaluate a Forex Mentor's Teaching Process in the UAE",
+    desc: "What you can verify before you travel, what a useful demo contains, and what the second hour should change.",
+    time: "15 min read",
+  },
+  {
     href: "/blog-private-one-to-one-forex-training-dubai",
     icon: (
       <>
@@ -786,6 +812,9 @@ export default function BlogIndexPage() {
               <Link href="/blog-mt5-order-ticket-dubai">The MetaTrader 5 order ticket</Link> names the symbol, the volume, the stop loss, and the take profit. Read it so a live hour starts on your level, not on the window. If the constraint is a rota, read <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for doctors, engineers and bankers</Link> before you promise a weekly seat.
             </p>
             <p>
+              <Link href="/blog-forex-performance-review-dubai">A weekly forex performance review</Link> is the twenty-five minutes you spend with the rows you already wrote. <Link href="/blog-evaluate-forex-mentor-teaching-uae">How to evaluate a mentor&apos;s teaching process</Link> is what to watch in a demo before you pay for a longer seat. The questions to ask the person are still in <Link href="/blog-choose-forex-mentor-dubai">how to choose a forex mentor</Link>.
+            </p>
+            <p>
               <Link href="/blog-private-one-to-one-forex-training-dubai">Private one-to-one forex training for a fortnight you can keep</Link> is the card for busy professionals who cannot attend every week. <Link href="/blog-premium-executive-forex-mentorship-dubai">Premium executive forex mentorship in Dubai</Link> is the brief that keeps existing wealth, and any adviser, apart from the chart.
             </p>
             <p>
@@ -820,6 +849,14 @@ export default function BlogIndexPage() {
                   </tr>
                 </thead>
                 <tbody>
+                  <tr>
+                    <td>A twenty-five minute review of the week you already traded</td>
+                    <td><Link href="/blog-forex-performance-review-dubai">Weekly forex performance review in Dubai</Link></td>
+                  </tr>
+                  <tr>
+                    <td>What to watch in a demo before you pay for a longer seat</td>
+                    <td><Link href="/blog-evaluate-forex-mentor-teaching-uae">A mentor&apos;s teaching process</Link></td>
+                  </tr>
                   <tr>
                     <td>One private hour a fortnight, for a busy professional</td>
                     <td><Link href="/blog-private-one-to-one-forex-training-dubai">Private one-to-one forex training in Dubai</Link></td>
