@@ -117,9 +117,14 @@ export default function PrepareGroupForexClassPost() {
               <AcademyLinks lead="The live group classes these notes prepare you for are the" />
               <div className="blog-cta">
                 <p>Tell the academy which topic you have already read. The fee is quoted in AED.</p>
-                <Link href="/courses" className="btn btn-primary">
-                  View the course tracks
-                </Link>
+                <div className="cta-row">
+                  <Link href="/courses" className="btn btn-primary">
+                    View the course tracks
+                  </Link>
+                  <Link href="/free-demo" className="btn btn-outline">
+                    Book a free demo class
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

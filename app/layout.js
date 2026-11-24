@@ -1,6 +1,7 @@
 import { Spectral, IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import EnquiryWidget from "./components/EnquiryWidget";
+import ExitOffer from "./components/ExitOffer";
 import JsonLd from "./components/JsonLd";
 import MobileCta from "./components/MobileCta";
 import PageEffects from "./components/PageEffects";
@@ -74,6 +75,7 @@ export default function RootLayout({ children }) {
         {children}
         <EnquiryWidget />
         <MobileCta />
+        <ExitOffer />
         <PageEffects />
         <Analytics />
       </body>

@@ -167,9 +167,14 @@ export default function BlogCommonMistakesPage() {
               <AcademyLinks lead="If you want these mistakes corrected in class, start with the" />
               <div className="blog-cta">
                 <p>Our Basic to Intermediate course is built specifically to avoid these mistakes from day one.</p>
-                <Link href="/courses" className="btn btn-primary">
-                  See Our Forex Courses
-                </Link>
+                <div className="cta-row">
+                  <Link href="/courses" className="btn btn-primary">
+                    See Our Forex Courses
+                  </Link>
+                  <Link href="/free-demo" className="btn btn-outline">
+                    Book a free demo class
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

@@ -154,9 +154,14 @@ export default function ForexChartTimeframesPost() {
               <AcademyLinks lead="Bring one timeframe to a live class at the" />
               <div className="blog-cta">
                 <p>Name the symbol and the button. Ask for the fee in AED.</p>
-                <Link href="/contact" className="btn btn-primary">
-                  Book a class
-                </Link>
+                <div className="cta-row">
+                  <Link href="/contact" className="btn btn-primary">
+                    Book a class
+                  </Link>
+                  <Link href="/free-demo" className="btn btn-outline">
+                    Book a free demo class
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

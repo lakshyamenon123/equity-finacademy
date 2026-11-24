@@ -124,9 +124,14 @@ export default function GroupForexClassesFriendsPost() {
               <AcademyLinks lead="Book the live cohort through the" />
               <div className="blog-cta">
                 <p>One enquiry for the group. Name the track, the emirate, and the hour you share.</p>
-                <Link href="/contact" className="btn btn-primary">
-                  Contact the academy
-                </Link>
+                <div className="cta-row">
+                  <Link href="/contact" className="btn btn-primary">
+                    Contact the academy
+                  </Link>
+                  <Link href="/free-demo" className="btn btn-outline">
+                    Book a free demo class
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

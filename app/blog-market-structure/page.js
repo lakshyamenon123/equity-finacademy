@@ -147,9 +147,14 @@ export default function BlogMarketStructurePage() {
               <AcademyLinks lead="Structure is taught live at the" />
               <div className="blog-cta">
                 <p>Structure is taught from lesson one in our Basic to Intermediate course.</p>
-                <Link href="/courses" className="btn btn-primary">
-                  See Our Forex Courses
-                </Link>
+                <div className="cta-row">
+                  <Link href="/courses" className="btn btn-primary">
+                    See Our Forex Courses
+                  </Link>
+                  <Link href="/free-demo" className="btn btn-outline">
+                    Book a free demo class
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

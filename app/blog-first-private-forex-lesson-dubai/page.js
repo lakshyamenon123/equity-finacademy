@@ -207,9 +207,14 @@ export default function FirstPrivateForexLessonPost() {
               <AcademyLinks lead="Book the first private hour through the" />
               <div className="blog-cta">
                 <p>Bring one chart and one sentence. Ask for the fee in AED.</p>
-                <Link href="/contact" className="btn btn-primary">
-                  Book the first lesson
-                </Link>
+                <div className="cta-row">
+                  <Link href="/contact" className="btn btn-primary">
+                    Book the first lesson
+                  </Link>
+                  <Link href="/free-demo" className="btn btn-outline">
+                    Book a free demo class
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

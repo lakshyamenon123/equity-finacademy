@@ -315,9 +315,14 @@ export default function Mt5OrderTicketPost() {
               <AcademyLinks lead="Have the ticket open on a demo before you book the" />
               <div className="blog-cta">
                 <p>Point at the stop before you ask anyone to watch the click.</p>
-                <Link href="/contact" className="btn btn-primary">
-                  Book a class
-                </Link>
+                <div className="cta-row">
+                  <Link href="/contact" className="btn btn-primary">
+                    Book a class
+                  </Link>
+                  <Link href="/free-demo" className="btn btn-outline">
+                    Book a free demo class
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

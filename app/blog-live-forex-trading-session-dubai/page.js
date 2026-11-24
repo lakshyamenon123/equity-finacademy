@@ -145,9 +145,14 @@ export default function LiveForexSessionPost() {
               <AcademyLinks lead="Book the session through the" />
               <div className="blog-cta">
                 <p>Bring one chart and one question. Ask for the next group seat or a private hour.</p>
-                <Link href="/courses" className="btn btn-primary">
-                  See the course tracks
-                </Link>
+                <div className="cta-row">
+                  <Link href="/courses" className="btn btn-primary">
+                    See the course tracks
+                  </Link>
+                  <Link href="/free-demo" className="btn btn-outline">
+                    Book a free demo class
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

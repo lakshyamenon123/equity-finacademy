@@ -53,9 +53,9 @@ export default function HomePage() {
                 </span>
               </div>
               <div className="cta-row">
-                <OpenChatLink className="btn btn-light" intent="demo">
+                <Link href="/free-demo" className="btn btn-light">
                   Free demo class
-                </OpenChatLink>
+                </Link>
                 <a href="https://wa.me/971559047030" className="btn btn-light" target="_blank" rel="noopener noreferrer">
                   WhatsApp
                 </a>
@@ -292,9 +292,32 @@ export default function HomePage() {
             <div className="section-head reveal">
               <span className="eyebrow">NEW TO FOREX?</span>
               <h2>Start learning before you enrol.</h2>
-              <p>Free educational resources for anyone wondering how to start learning forex trading — no sign-up required.</p>
+              <p>
+                Free class notes and FAQs for anyone starting forex trading. Busy professional? Get{" "}
+                <Link href="/free-trading-plan">the executive&apos;s one-page trading plan</Link>, free, sent to your WhatsApp.
+              </p>
             </div>
             <div className="grid-4" style={{ gridTemplateColumns: "1fr 1fr" }}>
+              <Link href="/free-trading-plan" className="card reveal">
+                <div className="icon-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                    <path d="M14 3H6a2 2 0 00-2 2v14a2 2 0 002 2h12a2 2 0 002-2V9z" />
+                    <path d="M14 3v6h6M8 13h8M8 17h5" />
+                  </svg>
+                </div>
+                <h3>The executive&apos;s one-page trading plan</h3>
+                <p>Capital set aside, risk in AED, hours on Dubai time, and a weekly review. Printable.</p>
+              </Link>
+              <Link href="/executive-market-briefing" className="card reveal">
+                <div className="icon-badge">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+                    <rect x="3" y="5" width="18" height="16" rx="2" />
+                    <path d="M3 10h18M8 3v4M16 3v4" />
+                  </svg>
+                </div>
+                <h3>Executive Market Briefing</h3>
+                <p>A monthly small-room evening in Dubai, plus an online seat. Register interest.</p>
+              </Link>
               <Link href="/blog" className="card reveal">
                 <div className="icon-badge">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
@@ -495,6 +518,9 @@ export default function HomePage() {
                 </p>
               </div>
               <div className="cta-row">
+                <Link href="/free-demo" className="btn btn-light">
+                  Free demo class
+                </Link>
                 <a href="https://wa.me/971559047030" className="btn btn-light" target="_blank" rel="noopener noreferrer">
                   WhatsApp
                 </a>
