@@ -76,7 +76,9 @@ export default function AboutPage() {
                 Equity Fin Academy teaches forex in person in Dubai, UAE, and online across the UAE. Lessons are
                 private one-to-one or in a group, with live trading sessions. If you want the short version of why
                 students choose the academy, see <Link href="/why-choose-us">Why Choose Us</Link>.
-                The topic lists are on <Link href="/courses">forex courses</Link>. Class notes are on the <Link href="/blog">blog</Link>.
+                The topic lists are on <Link href="/courses">forex courses</Link>. Class notes are on the <Link href="/blog">blog</Link>, including{" "}
+                <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for doctors, engineers and bankers</Link> and{" "}
+                <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>.
                 Google reviews are explained on the <Link href="/success-stories">reviews page</Link>. To ask for a seat, use <Link href="/contact">contact</Link>.
                 Students in the capital should read the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link> before they travel.
               </p>

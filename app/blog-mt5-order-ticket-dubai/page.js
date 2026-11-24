@@ -36,6 +36,14 @@ const ticketFaq = [
     q: "The platform rejected my stop. Does that mean the idea was wrong?",
     text: "No. MetaTrader 5 rejects a stop on the wrong side of the current price. That is a form check. Read the price on the ticket, then the stop, and say which side you meant before you type it again. The rejection is not a view on the chart, and it is not a reason to delete the stop and send anyway.",
   },
+  {
+    q: "What should I be able to say after I close the ticket?",
+    text: "Five things, in order: the symbol, the order type, whether the stop is filled in, whether volume is still blank, and whether you pressed send. If one of those is a guess, open the window and read the labels again. The sentence is the rehearsal.",
+  },
+  {
+    q: "Where does the ticket show up after a demo fill?",
+    text: "MetaTrader 5 writes a row in the account history: the symbol, the volume, the prices, and the time. That row is a record, not a verdict. A weekly review starts from the row. It does not start from memory of the click.",
+  },
 ];
 
 const mt5English = ENGLISH_VIDEOS.find((video) => video.id === "ssUPlUHnDLo");
@@ -54,7 +62,7 @@ const postSchema = articleSchema({
   description,
   path,
   datePublished: "2026-11-09",
-  dateModified: "2026-11-23",
+  dateModified: "2026-11-24",
   type: "BlogPosting",
 });
 
@@ -86,7 +94,7 @@ export default function Mt5OrderTicketPost() {
             <div className="blog-article">
               <span className="eyebrow">MT5</span>
               <h1>How to Read the MetaTrader 5 Order Ticket Before a Class in Dubai</h1>
-              <AuthorByline detail="9 Nov 2026 · Updated 23 Nov 2026 · 13 min read" />
+              <AuthorByline detail="9 Nov 2026 · Updated 24 Nov 2026 · 16 min read" />
 
               <p>
                 A live forex hour in Dubai goes slowly when the order window is new. The instructor asks for the stop, and the student is still looking for the box. This page names the fields on the MetaTrader 5 order ticket so you can point at them before anyone watches you send anything. It is a map of the window. It is not an instruction to place a trade, and it does not name a direction.
@@ -255,6 +263,23 @@ export default function Mt5OrderTicketPost() {
               <p>
                 Common ways this goes wrong, including sending a size you cannot explain, are listed in{" "}
                 <Link href="/blog-common-mistakes">beginner mistakes in the UAE</Link>. None of them are fixed by a faster click.
+              </p>
+
+              <h2>Say the ticket back, then find the history row</h2>
+              <p>
+                A class in Dubai can hear whether the window is understood without watching a send. Close the ticket, look away from the screen, and say five things in order. The symbol. The order type, in your own words. Whether the stop is filled in. Whether volume is still blank. Whether you pressed send. If you cannot say them, open the window and read the labels again. The sentence is the rehearsal. The button is not.
+              </p>
+              <p>
+                Do this on a demo, with the paper ticket from the table above still in front of you. Then do it once without the paper. The second pass is the one that matters. People who can read the labels while looking at them, and cannot name them a minute later, are still learning the window. That is a fair place to be. It is a poor place to press send because a group is watching.
+              </p>
+              <p>
+                After a demo fill, MetaTrader 5 writes a row in the account history. The row is the symbol, the volume, the prices, and the time. It is not a score. It is the evidence that the click happened. A later review should start from that row, not from a memory of how the click felt. How to sit with those rows for about twenty-five minutes, when the week is already full, is in{" "}
+                <Link href="/blog-forex-performance-review-dubai">a weekly forex performance review for busy professionals in Dubai</Link>. The columns you write on the day of the trade stay in{" "}
+                <Link href="/blog-forex-trading-plan-uae">the trading plan and journal</Link>. This page stops at the window and the row it leaves behind.
+              </p>
+              <p>
+                If the history and the paper disagree, the history wins. You typed something other than the plan. That disagreement is the note to bring to the next hour. It is also the reason to delete a pending order you no longer recognise, which is the rehearsal in the section above, before any of this becomes a live account. Doctors, engineers, and bankers who will meet this window on a tired evening should still read{" "}
+                <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for those careers</Link> and put the rehearsal on a morning they are awake.
               </p>
 
               <h2>What to bring to Dubai, or to the screen</h2>

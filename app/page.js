@@ -388,7 +388,7 @@ export default function HomePage() {
                 <Link href="/blog-first-private-forex-lesson-dubai">A first private lesson in Dubai</Link> is what to bring and what to ask. <Link href="/blog-evening-group-forex-classes-dubai">Evening group classes</Link> are the shared hour after work on Gulf Standard Time.
               </li>
               <li>
-                <Link href="/blog-mt5-order-ticket-dubai">The MT5 order ticket</Link> is the window a live hour will point at. <Link href="/blog-choose-forex-mentor-dubai">Choosing a forex mentor in Dubai</Link> is the question about the teacher.
+                <Link href="/blog-mt5-order-ticket-dubai">The MT5 order ticket</Link> is the window a live hour will point at. <Link href="/blog-choose-forex-mentor-dubai">Choosing a forex mentor in Dubai</Link> is the question about the teacher. <Link href="/blog-evaluate-forex-mentor-teaching-uae">How to evaluate the teaching process</Link> is what to watch in a demo. <Link href="/blog-forex-performance-review-dubai">A weekly performance review</Link> is twenty-five minutes with the rows you already wrote.
               </li>
               <li>
                 <Link href="/blog-live-forex-trading-session-dubai">A live forex session in Dubai</Link> is what the booked hour contains. <Link href="/blog-stock-market-course-dubai-first-weeks">The first weeks of a stock market course</Link> is the drill for a share, an index, or gold.
@@ -426,6 +426,8 @@ export default function HomePage() {
         <section className="tight">
           <div className="container">
             <div className="topics-row reveal">
+              <Link href="/blog-forex-performance-review-dubai" className="topic-chip">Weekly performance review</Link>
+              <Link href="/blog-evaluate-forex-mentor-teaching-uae" className="topic-chip">Mentor teaching checklist</Link>
               <Link href="/blog-private-one-to-one-forex-training-dubai" className="topic-chip">Private one-to-one forex training</Link>
               <Link href="/blog-premium-executive-forex-mentorship-dubai" className="topic-chip">Executive mentorship brief</Link>
               <Link href="/blog-forex-mentorship-difc-professionals" className="topic-chip">DIFC forex mentorship</Link>

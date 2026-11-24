@@ -121,7 +121,7 @@ export default function ChooseForexMentorPost() {
                 <li>What will you not do? A useful teacher will tell you the hour is education. You still decide whether to place a trade, and you open your own broker account.</li>
               </ol>
               <p>
-                Write the answers down. If a line is missing, ask again before you travel. The <Link href="/about">About page</Link> is the biography for Gopi Chandran: the MBA in Finance, the Equity Global channels, and the fact that he teaches the lesson. This article does not try to be that biography. Read it, then come back to the six questions.
+                Write the answers down. If a line is missing, ask again before you travel. The <Link href="/about">About page</Link> is the biography for Gopi Chandran: the MBA in Finance, the Equity Global channels, and the fact that he teaches the lesson. What you should be able to see once you are in the hour is in <Link href="/blog-evaluate-forex-mentor-teaching-uae">how to evaluate a mentor&apos;s teaching process</Link>. This article does not try to be that biography, or that checklist. Read both, then come back to the six questions.
               </p>
 
               <h2>How a first private hour differs from a first conversation</h2>
