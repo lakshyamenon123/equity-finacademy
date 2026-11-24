@@ -252,9 +252,14 @@ export default function BlogSmartMoneyConceptsPage() {
               </p>
               <div className="blog-cta">
                 <p>SMC and market profile are covered in depth in our advanced track.</p>
-                <Link href="/smc-ict-trading-course-dubai" className="btn btn-primary">
-                  SMC and ICT Course in Dubai
-                </Link>
+                <div className="cta-row">
+                  <Link href="/smc-ict-trading-course-dubai" className="btn btn-primary">
+                    SMC and ICT Course in Dubai
+                  </Link>
+                  <Link href="/free-demo" className="btn btn-outline">
+                    Book a free demo class
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

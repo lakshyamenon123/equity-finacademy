@@ -231,9 +231,14 @@ export default function StockMarketCourseFirstWeeksPost() {
               <AcademyLinks lead="When the symbol is chosen, the live class is the" />
               <div className="blog-cta">
                 <p>Name the share, the index, or gold, and whether you want a group seat or a private hour.</p>
-                <Link href="/stock-market-course-dubai" className="btn btn-primary">
-                  Stock market course in Dubai
-                </Link>
+                <div className="cta-row">
+                  <Link href="/stock-market-course-dubai" className="btn btn-primary">
+                    Stock market course in Dubai
+                  </Link>
+                  <Link href="/free-demo" className="btn btn-outline">
+                    Book a free demo class
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

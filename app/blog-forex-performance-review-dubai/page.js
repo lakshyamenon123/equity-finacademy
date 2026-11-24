@@ -254,9 +254,14 @@ export default function ForexPerformanceReviewPost() {
               <AcademyLinks lead="The class that can read the page with you is the" />
               <div className="blog-cta">
                 <p>Count the week you had. Then write one sentence for the next one.</p>
-                <Link href="/contact" className="btn btn-primary">
-                  Book a class
-                </Link>
+                <div className="cta-row">
+                  <Link href="/contact" className="btn btn-primary">
+                    Book a class
+                  </Link>
+                  <Link href="/free-demo" className="btn btn-outline">
+                    Book a free demo class
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

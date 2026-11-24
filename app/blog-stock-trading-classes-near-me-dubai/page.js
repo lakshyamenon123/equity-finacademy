@@ -204,9 +204,14 @@ export default function StockTradingClassesNearMePost() {
               <AcademyLinks lead="When the subject is a chart and you want a seat, the school pages are the" />
               <div className="blog-cta">
                 <p>Name the symbol, the format, and Dubai or online. The fee is quoted in AED.</p>
-                <Link href="/contact" className="btn btn-primary">
-                  Contact the academy
-                </Link>
+                <div className="cta-row">
+                  <Link href="/contact" className="btn btn-primary">
+                    Contact the academy
+                  </Link>
+                  <Link href="/free-demo" className="btn btn-outline">
+                    Book a free demo class
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

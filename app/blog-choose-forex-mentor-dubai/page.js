@@ -175,9 +175,14 @@ export default function ChooseForexMentorPost() {
               <AcademyLinks lead="Book the hour through the" />
               <div className="blog-cta">
                 <p>Name the track, the format, and Dubai or online. Ask for the fee in AED.</p>
-                <Link href="/contact" className="btn btn-primary">
-                  Contact the academy
-                </Link>
+                <div className="cta-row">
+                  <Link href="/contact" className="btn btn-primary">
+                    Contact the academy
+                  </Link>
+                  <Link href="/free-demo" className="btn btn-outline">
+                    Book a free demo class
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

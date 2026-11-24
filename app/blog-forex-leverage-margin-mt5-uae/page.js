@@ -126,9 +126,14 @@ export default function ForexLeverageMarginPost() {
               <AcademyLinks lead="The live class that can check the line with you is the" />
               <div className="blog-cta">
                 <p>Write down the margin figure MT5 shows, then ask for a seat. The fee is quoted in AED.</p>
-                <Link href="/courses" className="btn btn-primary">
-                  View the course tracks
-                </Link>
+                <div className="cta-row">
+                  <Link href="/courses" className="btn btn-primary">
+                    View the course tracks
+                  </Link>
+                  <Link href="/free-demo" className="btn btn-outline">
+                    Book a free demo class
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

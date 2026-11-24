@@ -155,9 +155,14 @@ export default function BlogRiskManagementPage() {
               <AcademyLinks lead="Risk is part of the live syllabus at the" />
               <div className="blog-cta">
                 <p>Risk management is taught as core curriculum in both of our course tracks.</p>
-                <Link href="/courses" className="btn btn-primary">
-                  See Our Forex Courses
-                </Link>
+                <div className="cta-row">
+                  <Link href="/courses" className="btn btn-primary">
+                    See Our Forex Courses
+                  </Link>
+                  <Link href="/free-demo" className="btn btn-outline">
+                    Book a free demo class
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

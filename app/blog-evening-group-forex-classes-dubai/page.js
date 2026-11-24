@@ -199,9 +199,14 @@ export default function EveningGroupForexClassesPost() {
               <AcademyLinks lead="Book the evening group class through the" />
               <div className="blog-cta">
                 <p>Name the evenings you can keep. The fee is quoted in AED.</p>
-                <Link href="/courses" className="btn btn-primary">
-                  See the course tracks
-                </Link>
+                <div className="cta-row">
+                  <Link href="/courses" className="btn btn-primary">
+                    See the course tracks
+                  </Link>
+                  <Link href="/free-demo" className="btn btn-outline">
+                    Book a free demo class
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

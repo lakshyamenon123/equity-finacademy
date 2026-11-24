@@ -165,9 +165,14 @@ export default function PrivateAndGroupForexClassesPost() {
               <AcademyLinks lead="The school pages for either format are the" />
               <div className="blog-cta">
                 <p>Name the group hour and the private hour. The fees are quoted in AED.</p>
-                <Link href="/contact" className="btn btn-primary">
-                  Contact the academy
-                </Link>
+                <div className="cta-row">
+                  <Link href="/contact" className="btn btn-primary">
+                    Contact the academy
+                  </Link>
+                  <Link href="/free-demo" className="btn btn-outline">
+                    Book a free demo class
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

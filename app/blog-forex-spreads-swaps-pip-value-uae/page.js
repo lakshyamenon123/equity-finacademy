@@ -136,9 +136,14 @@ export default function ForexSpreadsSwapsPipValuePost() {
               <AcademyLinks lead="The live classes that put these numbers on a chart are the" />
               <div className="blog-cta">
                 <p>Bring the spread, the lot, and the swap to the first hour. The fee is quoted in AED.</p>
-                <Link href="/courses" className="btn btn-primary">
-                  View the course tracks
-                </Link>
+                <div className="cta-row">
+                  <Link href="/courses" className="btn btn-primary">
+                    View the course tracks
+                  </Link>
+                  <Link href="/free-demo" className="btn btn-outline">
+                    Book a free demo class
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

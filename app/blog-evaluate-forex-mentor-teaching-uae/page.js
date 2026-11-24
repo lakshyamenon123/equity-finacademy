@@ -240,9 +240,14 @@ export default function EvaluateMentorTeachingPost() {
               <AcademyLinks lead="The hour you are evaluating is taught at the" />
               <div className="blog-cta">
                 <p>Write the five lines. Then decide whether the next hour is worth paying for.</p>
-                <Link href="/contact" className="btn btn-primary">
-                  Ask for a demo
-                </Link>
+                <div className="cta-row">
+                  <Link href="/contact" className="btn btn-primary">
+                    Ask for a demo
+                  </Link>
+                  <Link href="/free-demo" className="btn btn-outline">
+                    Book a free demo class
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

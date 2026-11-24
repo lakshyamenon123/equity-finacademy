@@ -178,9 +178,14 @@ export default function HowToStartForexTradingDubaiPost() {
               <AcademyLinks lead="When the month of reading is done, the live class is the" />
               <div className="blog-cta">
                 <p>Name the track, group or private, and Dubai or online. The fee is quoted in AED.</p>
-                <Link href="/courses" className="btn btn-primary">
-                  View the course tracks
-                </Link>
+                <div className="cta-row">
+                  <Link href="/courses" className="btn btn-primary">
+                    View the course tracks
+                  </Link>
+                  <Link href="/free-demo" className="btn btn-outline">
+                    Book a free demo class
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

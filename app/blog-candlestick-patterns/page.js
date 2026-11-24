@@ -145,9 +145,14 @@ export default function BlogCandlestickPatternsPage() {
               <AcademyLinks lead="When you want candles taught on a live chart, book the" />
               <div className="blog-cta">
                 <p>Want to see this applied to live charts, not just static examples?</p>
-                <Link href="/courses" className="btn btn-primary">
-                  See Our Forex Courses
-                </Link>
+                <div className="cta-row">
+                  <Link href="/courses" className="btn btn-primary">
+                    See Our Forex Courses
+                  </Link>
+                  <Link href="/free-demo" className="btn btn-outline">
+                    Book a free demo class
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

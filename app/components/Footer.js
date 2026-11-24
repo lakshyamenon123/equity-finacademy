@@ -12,6 +12,9 @@ export default function Footer() {
             <p className="footer-cta-title">Talk to the academy about a group cohort or a private lesson.</p>
           </div>
           <div className="cta-row">
+            <Link href="/free-demo" className="btn btn-light">
+              Free demo class
+            </Link>
             <a href="https://wa.me/971559047030" className="btn btn-light" target="_blank" rel="noopener noreferrer">
               WhatsApp
             </a>
@@ -78,6 +81,9 @@ export default function Footer() {
             <div className="footer-col">
               <h3>Explore</h3>
               <Link href="/">Home</Link>
+              <Link href="/free-demo">Free Demo Class</Link>
+              <Link href="/free-trading-plan">Free Trading Plan</Link>
+              <Link href="/executive-market-briefing">Executive Market Briefing</Link>
               <Link href="/about">About Us</Link>
               <Link href="/gopi-chandran">Gopi Chandran</Link>
               <Link href="/why-choose-us">Why Choose Us</Link>

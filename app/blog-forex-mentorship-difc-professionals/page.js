@@ -183,7 +183,10 @@ export default function DifcForexMentorshipPost() {
               <div className="blog-cta">
                 <p>Name the hour you can keep with the door closed. Ask for a free demo class or a one-to-one meeting with Gopi.</p>
                 <div className="cta-row">
-                  <OpenChatLink className="btn btn-primary">Open the site chat</OpenChatLink>
+                  <Link href="/free-demo" className="btn btn-primary">
+                    Book a free demo class
+                  </Link>
+                  <OpenChatLink className="btn btn-outline">Open the site chat</OpenChatLink>
                   <a href={whatsapp} className="btn btn-outline" target="_blank" rel="noopener noreferrer">
                     WhatsApp +971 55 904 7030
                   </a>

@@ -111,6 +111,9 @@ export default function Header({ active }) {
           <Link href="/faq" aria-current={current(active, "faq")}>
             FAQ
           </Link>
+          <Link href="/free-demo" className="nav-extra" aria-current={current(active, "free-demo")}>
+            Free Demo
+          </Link>
           <Link href="/contact" aria-current={current(active, "contact")}>
             Contact
           </Link>
@@ -205,6 +208,15 @@ export default function Header({ active }) {
           </Link>
           <Link href="/faq" aria-current={current(active, "faq")}>
             FAQ
+          </Link>
+          <Link href="/free-demo" aria-current={current(active, "free-demo")}>
+            Free Demo Class
+          </Link>
+          <Link href="/free-trading-plan" aria-current={current(active, "free-trading-plan")}>
+            Free Trading Plan
+          </Link>
+          <Link href="/executive-market-briefing" aria-current={current(active, "briefing")}>
+            Executive Market Briefing
           </Link>
           <Link href="/contact" aria-current={current(active, "contact")}>
             Contact

@@ -174,9 +174,14 @@ export default function NorthernEmiratesForexClassesPost() {
               <AcademyLinks lead="The live seat, online or in Dubai, is booked through the" />
               <div className="blog-cta">
                 <p>Say the emirate, online or Dubai, and the hour you can keep.</p>
-                <Link href="/online-forex-course-uae" className="btn btn-primary">
-                  Online forex course in the UAE
-                </Link>
+                <div className="cta-row">
+                  <Link href="/online-forex-course-uae" className="btn btn-primary">
+                    Online forex course in the UAE
+                  </Link>
+                  <Link href="/free-demo" className="btn btn-outline">
+                    Book a free demo class
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
