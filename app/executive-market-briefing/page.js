@@ -7,12 +7,14 @@ import Link from "next/link";
 import { pageMetadata } from "../lib/seo";
 import { breadcrumbSchema, faqPageSchema, webPageSchema } from "../lib/schema";
 import { INTEREST_BRIEFING } from "../lib/leadOffers";
+import { absoluteUrl, SITE } from "../lib/site";
 import { whatsappHref } from "../lib/whatsapp";
 
 const path = "/executive-market-briefing";
 const title = "Executive Market Briefing in Dubai";
+const nextBriefing = "Next briefing: Thursday 3 December 2026, 7:30 pm Dubai time.";
 const description =
-  "A monthly small-room evening market briefing in Dubai with mentor Gopi Chandran, for executives, founders and professionals. 10 to 12 seats plus an online seat. Register interest for the next date.";
+  "The next Executive Market Briefing is Thursday 3 December 2026 at 7:30 pm Dubai time, with mentor Gopi Chandran. A small room in Dubai, UAE, for 10 to 12 seats, plus an online seat. Register and confirm your seat on WhatsApp.";
 
 export const metadata = pageMetadata({
   title: "Executive Market Briefing, Dubai | Monthly Evening Session | Equity Fin Academy",
@@ -25,7 +27,7 @@ export const metadata = pageMetadata({
 const faq = [
   {
     q: "When is the next briefing?",
-    text: "The next session date is announced on WhatsApp. Register interest on this page and you will receive the date, the time and the venue area in Dubai before seats are confirmed.",
+    text: "The next briefing is Thursday 3 December 2026, at 7:30 pm Dubai time (GST, UTC+4), in Dubai, UAE, with an online seat as well. Register on this page. Your seat is confirmed on WhatsApp +971 55 904 7030.",
   },
   {
     q: "Who is it for?",
@@ -37,7 +39,7 @@ const faq = [
   },
   {
     q: "What does it cost?",
-    text: "Ask on WhatsApp when the date is announced. Registering interest does not commit you to anything.",
+    text: "Ask on WhatsApp +971 55 904 7030. Registering on this page does not commit you to a fee. Your seat is confirmed on WhatsApp.",
   },
 ];
 
@@ -52,6 +54,33 @@ export default function ExecutiveMarketBriefingPage() {
         ])}
       />
       <JsonLd data={faqPageSchema(faq)} />
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Event",
+          name: "Executive Market Briefing",
+          startDate: "2026-12-03T19:30:00+04:00",
+          eventAttendanceMode: "https://schema.org/MixedEventAttendanceMode",
+          eventStatus: "https://schema.org/EventScheduled",
+          description,
+          url: absoluteUrl(path),
+          inLanguage: "en-AE",
+          location: {
+            "@type": "Place",
+            name: "Dubai, UAE",
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "Dubai",
+              addressCountry: "AE",
+            },
+          },
+          organizer: {
+            "@type": "EducationalOrganization",
+            name: SITE.name,
+            url: absoluteUrl("/"),
+          },
+        }}
+      />
       <Header active="briefing" />
 
       <main>
@@ -67,28 +96,33 @@ export default function ExecutiveMarketBriefingPage() {
               <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,2.8rem)", maxWidth: "20ch" }}>
                 The Executive Market Briefing.
               </h1>
+              <p style={{ maxWidth: "58ch", marginTop: 18, fontSize: "1.15rem" }}>
+                <strong>{nextBriefing}</strong>
+              </p>
               <p style={{ maxWidth: "58ch", marginTop: 18 }}>
                 One evening a month, a small room in Dubai with mentor Gopi Chandran: the month&apos;s key levels on major currency
                 pairs and gold, the calendar events that matter, and how a professional plans trades around a full diary.
               </p>
               <ul className="guide-list">
                 <li>10 to 12 seats in the room, plus an online seat.</li>
-                <li>An evening session on Dubai time, after office hours.</li>
+                <li>Thursday 3 December 2026, 7:30 pm Dubai time.</li>
                 <li>Live charts and open questions, not a sales presentation.</li>
-                <li>Next session date announced on WhatsApp.</li>
+                <li>Your seat is confirmed on WhatsApp +971 55 904 7030.</li>
               </ul>
             </div>
             <div className="info-card offer-card">
-              <h2 style={{ fontSize: "1.3rem", marginTop: 0 }}>Register interest</h2>
-              <p style={{ marginTop: 0 }}>You will receive the next date on WhatsApp.</p>
+              <h2 style={{ fontSize: "1.3rem", marginTop: 0 }}>Register your seat</h2>
+              <p style={{ marginTop: 0 }}>
+                Thursday 3 December 2026, 7:30 pm Dubai time. Your seat is confirmed on WhatsApp +971 55 904 7030.
+              </p>
               <ShortLeadForm
                 id="briefing-form"
                 interest={INTEREST_BRIEFING}
                 options={["Seat in the room, Dubai", "Online seat"]}
                 optionLabel="Seat (optional)"
                 submitLabel="Register interest"
-                successText="Thank you. You are on the list, and the next date will come to you on WhatsApp."
-                whatsappIntro="Hi Gopi, I would like to register interest in the Executive Market Briefing."
+                successText="Thank you. The academy will confirm your seat on WhatsApp +971 55 904 7030."
+                whatsappIntro="Hi Gopi, I would like a seat at the Executive Market Briefing on Thursday 3 December 2026 at 7:30 pm Dubai time."
               />
             </div>
           </div>
