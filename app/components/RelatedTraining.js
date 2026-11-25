@@ -1,6 +1,8 @@
 import Link from "next/link";
 
 const LINKS = [
+  { href: "/blog-forex-position-sizing-high-capital-uae", label: "Position size for a large account" },
+  { href: "/blog-forex-broker-due-diligence-uae", label: "Forex broker checklist for the UAE" },
   { href: "/free-demo", label: "Book a free demo class" },
   { href: "/free-trading-plan", label: "Free executive's one-page trading plan" },
   { href: "/executive-market-briefing", label: "Executive Market Briefing, Dubai" },

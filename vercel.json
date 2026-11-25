@@ -64,6 +64,76 @@
       "source": "/blog-mt5-order/",
       "destination": "https://www.equityfinacademy.com/blog-mt5-order-ticket-dubai",
       "statusCode": 301
+    },
+    {
+      "source": "/resources",
+      "destination": "https://www.equityfinacademy.com/blog",
+      "statusCode": 301
+    },
+    {
+      "source": "/resources/",
+      "destination": "https://www.equityfinacademy.com/blog",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog-candlestick-patterns.html",
+      "destination": "https://www.equityfinacademy.com/blog-candlestick-patterns",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog-candlestick-patterns.html/",
+      "destination": "https://www.equityfinacademy.com/blog-candlestick-patterns",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog-common-mistakes.html",
+      "destination": "https://www.equityfinacademy.com/blog-common-mistakes",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog-common-mistakes.html/",
+      "destination": "https://www.equityfinacademy.com/blog-common-mistakes",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog-market-structure.html",
+      "destination": "https://www.equityfinacademy.com/blog-market-structure",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog-market-structure.html/",
+      "destination": "https://www.equityfinacademy.com/blog-market-structure",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog-risk-management.html",
+      "destination": "https://www.equityfinacademy.com/blog-risk-management",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog-risk-management.html/",
+      "destination": "https://www.equityfinacademy.com/blog-risk-management",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog-smart-money-concepts.html",
+      "destination": "https://www.equityfinacademy.com/blog-smart-money-concepts",
+      "statusCode": 301
+    },
+    {
+      "source": "/blog-smart-money-concepts.html/",
+      "destination": "https://www.equityfinacademy.com/blog-smart-money-concepts",
+      "statusCode": 301
+    },
+    {
+      "source": "/sitemap.xml/",
+      "destination": "https://www.equityfinacademy.com/sitemap.xml",
+      "statusCode": 301
+    },
+    {
+      "source": "/robots.txt/",
+      "destination": "https://www.equityfinacademy.com/robots.txt",
+      "statusCode": 301
     }
   ],
   "headers": [

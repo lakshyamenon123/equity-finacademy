@@ -86,6 +86,10 @@ export default function BlogRiskManagementPage() {
                 &quot;I&apos;ll trade one lot&quot; without doing this calculation means your actual risk changes
                 randomly from trade to trade.
               </p>
+              <p>
+                The 5,000 AED figure on this page is a beginner illustration. When the money you can reach is much larger than the account you should use to learn, write a slice first. That reading is{" "}
+                <Link href="/blog-forex-position-sizing-high-capital-uae">position sizing for a high-capital account in the UAE</Link>.
+              </p>
 
               <h2>Always use a stop-loss</h2>
               <p>

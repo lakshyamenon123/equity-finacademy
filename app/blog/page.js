@@ -20,6 +20,32 @@ export const metadata = pageMetadata({
 
 const posts = [
   {
+    href: "/blog-forex-position-sizing-high-capital-uae",
+    icon: (
+      <>
+        <path d="M4 19h16" />
+        <path d="M7 16V9M12 16V5M17 16v-4" />
+      </>
+    ),
+    cat: "High Capital",
+    title: "Position Sizing for a High-Capital Forex Account in the UAE",
+    desc: "Three dirham numbers before a lot size: money that stays off the platform, the learning slice, and the loss on one stop.",
+    time: "13 min read",
+  },
+  {
+    href: "/blog-forex-broker-due-diligence-uae",
+    icon: (
+      <>
+        <path d="M5 7h14M5 12h14M5 17h9" />
+        <path d="M4 7h.01M4 12h.01M4 17h.01" />
+      </>
+    ),
+    cat: "Broker Checklist",
+    title: "A Forex Broker Checklist for Residents of the UAE",
+    desc: "The legal name, the register you open yourself, the MT5 specification, and how a withdrawal is requested.",
+    time: "14 min read",
+  },
+  {
     href: "/blog-forex-performance-review-dubai",
     icon: (
       <>
@@ -733,6 +759,14 @@ const blogListingSchema = {
 
 const blogFaq = [
   {
+    q: "I can fund a large account. Which note is the lot size?",
+    text: "Position sizing for a high-capital forex account in the UAE is the note. It asks for a learning slice, a dirham loss, and a stop distance before anyone talks about a lot. The beginner arithmetic on a smaller illustration stays in the risk management note. Forex beside a portfolio is the wider question of money that already has a job.",
+  },
+  {
+    q: "Which note is the broker checklist?",
+    text: "A forex broker checklist for residents of the UAE is the page. It asks for the legal name, the register you opened yourself, the symbol specification, and the withdrawal path. The academy does not open the account and does not take the password. Practical sessions use StarTrader on MetaTrader 5, and that name goes through the same checks.",
+  },
+  {
     q: "Where should a beginner in Dubai start on this blog?",
     text: "Start with how a currency pair is quoted, then candlesticks, then market structure. The card list on this page is in that spirit: costs and class prep first, chart reading further down. The live version of the same order is the Basic to Intermediate track on the courses page.",
   },
@@ -809,6 +843,9 @@ export default function BlogIndexPage() {
           <div className="container prose-block">
             <h2>Open these before you enquire</h2>
             <p>
+              <Link href="/blog-forex-position-sizing-high-capital-uae">Position sizing for a high-capital account</Link> is the volume you type after a learning slice is written in dirhams. <Link href="/blog-forex-broker-due-diligence-uae">A forex broker checklist for UAE residents</Link> is what to read before that slice is deposited.
+            </p>
+            <p>
               <Link href="/blog-mt5-order-ticket-dubai">The MetaTrader 5 order ticket</Link> names the symbol, the volume, the stop loss, and the take profit. Read it so a live hour starts on your level, not on the window. If the constraint is a rota, read <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for doctors, engineers and bankers</Link> before you promise a weekly seat.
             </p>
             <p>
@@ -849,6 +886,14 @@ export default function BlogIndexPage() {
                   </tr>
                 </thead>
                 <tbody>
+                  <tr>
+                    <td>How a large balance becomes a volume on MT5</td>
+                    <td><Link href="/blog-forex-position-sizing-high-capital-uae">Position sizing for a high-capital account</Link></td>
+                  </tr>
+                  <tr>
+                    <td>What to read before you deposit at a forex broker</td>
+                    <td><Link href="/blog-forex-broker-due-diligence-uae">A forex broker checklist for UAE residents</Link></td>
+                  </tr>
                   <tr>
                     <td>A twenty-five minute review of the week you already traded</td>
                     <td><Link href="/blog-forex-performance-review-dubai">Weekly forex performance review in Dubai</Link></td>
