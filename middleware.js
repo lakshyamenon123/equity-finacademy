@@ -91,7 +91,133 @@ const LEGACY = {
   "/contact-us.html": "/contact",
   "/mt5-order": "/blog-mt5-order-ticket-dubai",
   "/blog-mt5-order": "/blog-mt5-order-ticket-dubai",
+  "/resources": "/blog",
+  "/blog-candlestick-patterns.html": "/blog-candlestick-patterns",
+  "/blog-common-mistakes.html": "/blog-common-mistakes",
+  "/blog-market-structure.html": "/blog-market-structure",
+  "/blog-risk-management.html": "/blog-risk-management",
+  "/blog-smart-money-concepts.html": "/blog-smart-money-concepts",
 };
+
+// Live paths, including public files. A different case, a .html copy, or a
+// /blog/slug form of a /blog-slug post redirects here in the same hop as a
+// trailing slash. Keep this list aligned with app routes when a page is added.
+const PAGES = new Set([
+  "/",
+  "/about",
+  "/apple-touch-icon.png",
+  "/best-forex-course-dubai",
+  "/blog",
+  "/blog-candlestick-patterns",
+  "/blog-choose-forex-academy-uae",
+  "/blog-choose-forex-mentor-dubai",
+  "/blog-common-mistakes",
+  "/blog-currency-pairs-uae",
+  "/blog-demo-vs-live-mt5-uae",
+  "/blog-evaluate-forex-mentor-teaching-uae",
+  "/blog-evening-group-forex-classes-dubai",
+  "/blog-executive-forex-coaching-dubai",
+  "/blog-first-private-forex-lesson-dubai",
+  "/blog-forex-broker-due-diligence-uae",
+  "/blog-forex-chart-timeframes-dubai",
+  "/blog-forex-classes-ajman-ras-al-khaimah",
+  "/blog-forex-classes-near-me-dubai",
+  "/blog-forex-classes-palm-emirates-hills-business-bay",
+  "/blog-forex-classes-working-professionals-dubai",
+  "/blog-forex-coaching-entrepreneurs-flexible-week",
+  "/blog-forex-course-dubai-beginners",
+  "/blog-forex-economic-calendar-dubai",
+  "/blog-forex-education-senior-executives-dubai",
+  "/blog-forex-education-uae",
+  "/blog-forex-leverage-margin-mt5-uae",
+  "/blog-forex-market-hours-dubai",
+  "/blog-forex-mentorship-difc-professionals",
+  "/blog-forex-performance-review-dubai",
+  "/blog-forex-portfolio-diversification-uae",
+  "/blog-forex-position-sizing-high-capital-uae",
+  "/blog-forex-spreads-swaps-pip-value-uae",
+  "/blog-forex-trading-business-owners-uae",
+  "/blog-forex-trading-courses-dubai",
+  "/blog-forex-trading-plan-uae",
+  "/blog-forex-training-doctors-engineers-bankers-uae",
+  "/blog-forex-training-family-office-abu-dhabi",
+  "/blog-gold-xauusd-course-dubai",
+  "/blog-group-forex-classes-friends-dubai",
+  "/blog-how-to-start-forex-trading-dubai",
+  "/blog-investing-classes-near-me-dubai",
+  "/blog-live-forex-trading-session-dubai",
+  "/blog-market-structure",
+  "/blog-mt5-order-ticket-dubai",
+  "/blog-one-to-one-forex-classes-dubai",
+  "/blog-personal-finance-classes-near-me-dubai",
+  "/blog-personal-forex-coaching-uae",
+  "/blog-premium-executive-forex-mentorship-dubai",
+  "/blog-prepare-group-forex-class-dubai",
+  "/blog-private-and-group-forex-classes-dubai",
+  "/blog-private-forex-mentorship-abu-dhabi",
+  "/blog-private-forex-mentorship-jumeirah-dubai-hills",
+  "/blog-private-one-to-one-forex-training-dubai",
+  "/blog-private-vs-group-forex-classes-dubai",
+  "/blog-risk-management",
+  "/blog-smart-money-concepts",
+  "/blog-start-forex-trading-uae-mt5",
+  "/blog-stock-market-course-dubai-first-weeks",
+  "/blog-stock-trading-classes-near-me-dubai",
+  "/blog-support-and-resistance-forex",
+  "/blog-vip-forex-mentorship-downtown-dubai-marina",
+  "/contact",
+  "/courses",
+  "/executive-market-briefing",
+  "/faq",
+  "/favicon.ico",
+  "/forex-academy-in-dubai",
+  "/forex-course-abu-dhabi",
+  "/forex-course-fees-dubai",
+  "/forex-course-sharjah",
+  "/forex-mentorship-dubai",
+  "/forex-training-academy-dubai",
+  "/forex-training-academy-uae",
+  "/free-demo",
+  "/free-trading-plan",
+  "/free-trading-plan/print",
+  "/gopi-chandran",
+  "/llms-full.txt",
+  "/llms.txt",
+  "/mentor.jpg",
+  "/og-image.png",
+  "/online-forex-course-uae",
+  "/pricing",
+  "/privacy",
+  "/private-group-forex-training-dubai",
+  "/robots.txt",
+  "/sitemap.xml",
+  "/smc-ict-trading-course-dubai",
+  "/stock-market-course-dubai",
+  "/success-stories",
+  "/terms",
+  "/weekend-forex-classes-dubai",
+  "/why-choose-us",
+]);
+
+// One alias, or null when the path is already the live spelling.
+function pageAlias(stripped) {
+  const lower = stripped.toLowerCase();
+  if (PAGES.has(lower)) return lower === stripped ? null : lower;
+  if (lower.endsWith(".html")) {
+    const stem = lower.slice(0, -".html".length);
+    if (PAGES.has(stem)) return stem;
+  }
+  if (lower.startsWith("/blog/")) {
+    const slug = lower.slice("/blog/".length);
+    if (slug && !slug.includes("/")) {
+      const flat = `/blog-${slug}`;
+      if (PAGES.has(flat)) return flat;
+      const asPost = `/${slug}`;
+      if (asPost.startsWith("/blog-") && PAGES.has(asPost)) return asPost;
+    }
+  }
+  return null;
+}
 
 export function middleware(request) {
   const { pathname } = request.nextUrl;
@@ -126,6 +252,7 @@ export function middleware(request) {
   // case form and send that request to the same destination in one 301.
   let destination = LEGACY[stripped] || LEGACY[stripped.toLowerCase()];
   if (!destination && isContact && stripped !== "/contact") destination = "/contact";
+  if (!destination) destination = pageAlias(stripped);
   const target = destination || (stripped !== pathname ? stripped : null);
   if (!target && !queryChanged) return NextResponse.next();
   // One absolute 301, including when a trailing slash and a tracking
@@ -135,5 +262,8 @@ export function middleware(request) {
 }
 
 export const config = {
-  matcher: ["/((?!_next/static|_next/image|favicon.ico|og-image.png|mentor.jpg|sitemap.xml|robots.txt).*)"],
+  // Public files stay in the matcher so /sitemap.xml/ and /robots.txt/ can
+  // lose the slash in this same function. /_next stays out: those are build
+  // assets, not addresses to canonicalise.
+  matcher: ["/((?!_next/static|_next/image).*)"],
 };

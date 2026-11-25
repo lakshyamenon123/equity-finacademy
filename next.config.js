@@ -56,6 +56,14 @@ const nextConfig = {
       ["/contact-us.html", `${CANONICAL_ORIGIN}/contact`],
       ["/mt5-order", `${CANONICAL_ORIGIN}/blog-mt5-order-ticket-dubai`],
       ["/blog-mt5-order", `${CANONICAL_ORIGIN}/blog-mt5-order-ticket-dubai`],
+      ["/resources", `${CANONICAL_ORIGIN}/blog`],
+      ["/blog-candlestick-patterns.html", `${CANONICAL_ORIGIN}/blog-candlestick-patterns`],
+      ["/blog-common-mistakes.html", `${CANONICAL_ORIGIN}/blog-common-mistakes`],
+      ["/blog-market-structure.html", `${CANONICAL_ORIGIN}/blog-market-structure`],
+      ["/blog-risk-management.html", `${CANONICAL_ORIGIN}/blog-risk-management`],
+      ["/blog-smart-money-concepts.html", `${CANONICAL_ORIGIN}/blog-smart-money-concepts`],
+      ["/sitemap.xml/", `${CANONICAL_ORIGIN}/sitemap.xml`],
+      ["/robots.txt/", `${CANONICAL_ORIGIN}/robots.txt`],
     ];
     return pairs.map(([source, destination]) => ({ source, destination, statusCode: 301 }));
   },

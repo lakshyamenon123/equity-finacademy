@@ -411,6 +411,9 @@ export default function HomePage() {
                 <Link href="/blog-first-private-forex-lesson-dubai">A first private lesson in Dubai</Link> is what to bring and what to ask. <Link href="/blog-evening-group-forex-classes-dubai">Evening group classes</Link> are the shared hour after work on Gulf Standard Time.
               </li>
               <li>
+                <Link href="/blog-forex-position-sizing-high-capital-uae">Position sizing for a high-capital account</Link> is the volume after a learning slice is written in dirhams. <Link href="/blog-forex-broker-due-diligence-uae">A forex broker checklist for UAE residents</Link> is what to read before that slice is deposited.
+              </li>
+              <li>
                 <Link href="/blog-mt5-order-ticket-dubai">The MT5 order ticket</Link> is the window a live hour will point at. <Link href="/blog-choose-forex-mentor-dubai">Choosing a forex mentor in Dubai</Link> is the question about the teacher. <Link href="/blog-evaluate-forex-mentor-teaching-uae">How to evaluate the teaching process</Link> is what to watch in a demo. <Link href="/blog-forex-performance-review-dubai">A weekly performance review</Link> is twenty-five minutes with the rows you already wrote.
               </li>
               <li>
@@ -449,6 +452,8 @@ export default function HomePage() {
         <section className="tight">
           <div className="container">
             <div className="topics-row reveal">
+              <Link href="/blog-forex-position-sizing-high-capital-uae" className="topic-chip">Position size for a large account</Link>
+              <Link href="/blog-forex-broker-due-diligence-uae" className="topic-chip">Forex broker checklist</Link>
               <Link href="/blog-forex-performance-review-dubai" className="topic-chip">Weekly performance review</Link>
               <Link href="/blog-evaluate-forex-mentor-teaching-uae" className="topic-chip">Mentor teaching checklist</Link>
               <Link href="/blog-private-one-to-one-forex-training-dubai" className="topic-chip">Private one-to-one forex training</Link>

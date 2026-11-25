@@ -120,7 +120,7 @@ export default function ForexSpreadsSwapsPipValuePost() {
                 A group class follows a shared topic, so these three are homework you can do on a demo before the hour. How to show up for that shared hour is in <Link href="/blog-prepare-group-forex-class-dubai">how to prepare for a group forex class in Dubai</Link>. A private lesson can spend the time on your own numbers. The two rooms are compared in <Link href="/blog-private-vs-group-forex-classes-dubai">private versus group classes</Link>. The topic order is on the <Link href="/courses">forex course tracks</Link>.
               </p>
               <p>
-                Practical sessions at the academy use StarTrader, a broker regulated by the UAE Securities and Commodities Authority, on MetaTrader 5. You open the account yourself. The course fee, quoted in AED when you enquire, and any balance at the broker are separate. The English recording below walks through opening an account and the MT5 layout, which is where the specification lives.
+                Practical sessions at the academy use StarTrader, a broker regulated by the UAE Securities and Commodities Authority, on MetaTrader 5. You open the account yourself. The course fee, quoted in AED when you enquire, and any balance at the broker are separate. The questions to ask of this firm, or of any other, are in <Link href="/blog-forex-broker-due-diligence-uae">a forex broker checklist for UAE residents</Link>. The English recording below walks through opening an account and the MT5 layout, which is where the specification lives.
               </p>
               <p>
                 <a href={STARTRADER_LIVE_URL} target="_blank" rel="sponsored noopener noreferrer">

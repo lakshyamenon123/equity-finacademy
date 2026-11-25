@@ -114,6 +114,12 @@ export default function WhyChooseUsPage() {
               <span className="eyebrow">BEFORE YOU ENQUIRE</span>
               <h2>Six checks you can open yourself</h2>
               <p>Each item is a fact already published on this site, with the page where you can read the longer version.</p>
+              <p>
+                The broker line is a name and a regulator. The questions to ask before a deposit are in{" "}
+                <Link href="/blog-forex-broker-due-diligence-uae">a forex broker checklist for UAE residents</Link>.
+                How a large balance becomes a volume on the ticket is in{" "}
+                <Link href="/blog-forex-position-sizing-high-capital-uae">position sizing for a high-capital account</Link>.
+              </p>
             </div>
             <div className="grid-4">
               {checks.map((item, index) => (
