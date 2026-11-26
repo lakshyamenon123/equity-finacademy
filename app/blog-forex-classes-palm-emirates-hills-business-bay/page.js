@@ -8,7 +8,7 @@ import Link from "next/link";
 import AuthorByline from "../components/AuthorByline";
 import OpenChatLink from "../components/OpenChatLink";
 import { pageMetadata } from "../lib/seo";
-import { articleSchema, breadcrumbSchema, faqPageSchema } from "../lib/schema";
+import { articleSchema, breadcrumbSchema, faqPageSchema, localAcademySchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { whatsappHref } from "../lib/whatsapp";
 
@@ -63,6 +63,7 @@ export default function PalmEmiratesHillsBusinessBayPost() {
   return (
     <>
       <JsonLd data={postSchema} />
+      <JsonLd data={localAcademySchema({ description, path })} />
       <JsonLd data={faqPageSchema(areaFaq)} />
       <JsonLd
         data={breadcrumbSchema([
@@ -106,7 +107,7 @@ export default function PalmEmiratesHillsBusinessBayPost() {
                 <Link href="/private-group-forex-training-dubai">private and group training in Dubai</Link>. The topic lists are the <Link href="/courses">course tracks</Link>.
               </p>
               <p>
-                The fee is quoted in AED when you ask. It is not printed by district. What a quote includes is on <Link href="/pricing">pricing</Link>. A busy professional week, written without these three places, is{" "}
+                Private and group training starts from AED 1,500. The programme is confirmed when you ask. It is not printed by district. What a quote includes is on <Link href="/pricing">pricing</Link>. A busy professional week, written without these three places, is{" "}
                 <Link href="/blog-forex-classes-working-professionals-dubai">forex classes for working professionals in Dubai</Link>.
               </p>
 

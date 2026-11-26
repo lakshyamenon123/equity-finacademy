@@ -7,18 +7,18 @@ import OpenChatLink from "../components/OpenChatLink";
 import { advancedTopics, basicTopics } from "../lib/curriculum";
 import { pageMetadata } from "../lib/seo";
 import RelatedTraining from "../components/RelatedTraining";
-import { breadcrumbSchema, courseSchemas, faqPageSchema, webPageSchema } from "../lib/schema";
+import FaqList from "../components/FaqList";
+import { breadcrumbSchema, courseSchemas, faqPageSchema, localAcademySchema, webPageSchema } from "../lib/schema";
 import { VIDEOS } from "../lib/videos";
 import { STARTRADER_LIVE_URL } from "../lib/whatsapp";
 
-const coursesTitle = "Forex Trading Courses in Dubai";
+const coursesTitle = "Forex trading course in Dubai";
 const coursesDescription =
-  "Forex trading courses in Dubai: Basic to Intermediate and Advanced tracks, as a group class or a private lesson, in Dubai, UAE, or online. Fee quoted in AED.";
+  "Forex trading course in Dubai, UAE. Private and group classes, in person or online across the emirates. Free demo. From AED 1,500.";
 
 export const metadata = pageMetadata({
-  title: "Forex Trading Courses in Dubai | Equity Fin Academy",
-  description:
-    "Forex course in Dubai with private or group classes, in the room or online across the UAE. A share, an index, or gold can be the chart. Fee quoted in AED.",
+  title: "Forex Trading Course in Dubai | Private & Group",
+  description: coursesDescription,
   keywords:
     "forex course Dubai, forex trading courses in Dubai, forex education UAE, private forex classes Dubai, group forex classes Dubai, stock trading classes near me Dubai, investing classes near me Dubai",
   path: "/courses",
@@ -35,7 +35,7 @@ const courseFaq = [
   },
   {
     q: "Do you offer investing or stock trading classes near me in Dubai?",
-    text: "The courses on this page are forex tracks. A live private or group hour can mark a share, an index, or gold on MetaTrader 5 when you name that symbol. Classes are in person in Dubai, UAE, or online across the UAE. This is not a budgeting or retirement class, and the academy does not publish a list of shares to buy. The fee is quoted in AED when you enquire.",
+    text: "The courses on this page are forex tracks. A live private or group hour can mark a share, an index, or gold on MetaTrader 5 when you name that symbol. Classes are in person in Dubai, UAE, or online across the UAE. This is not a budgeting or retirement class, and the academy does not publish a list of shares to buy. Private and group training starts from AED 1,500.",
   },
   {
     q: "What is Lifetime Support via WhatsApp?",
@@ -47,7 +47,19 @@ const courseFaq = [
   },
   {
     q: "Is broker access included in the course fee?",
-    text: "Practical sessions are run through Star Trader, an SCA-regulated broker. See the pricing page or call for current enrolment and account details.",
+    text: "Practical sessions are run through Star Trader, an SCA-regulated broker. The pricing page lists what a track includes. Call or WhatsApp for current enrolment and account details. The course fee and the broker balance are separate.",
+  },
+  {
+    q: "What time is the forex trading course in Dubai?",
+    text: "Classes use Gulf Standard Time, UTC+4, the same clock in every emirate. Evening group classes are often after 7pm so a Sunday-to-Thursday workday can finish first. The hour is agreed when you enquire. The academy is open 24/7. From Saturday morning until Monday morning, UAE time, the forex market is shut, so a weekend hour can review a chart.",
+  },
+  {
+    q: "Can I take the forex trading course online from Abu Dhabi or Sharjah?",
+    text: "Yes. In-person classes are in Dubai, UAE. The same private or group course is taught live online across the UAE, including Abu Dhabi and Sharjah, on Gulf Standard Time. There is no second campus.",
+  },
+  {
+    q: "Is there a free demo, and what does training start from?",
+    text: "Book a free demo class before you choose a track. Private and group forex training starts from AED 1,500. WhatsApp is +971 55 904 7030.",
   },
 ];
 
@@ -61,6 +73,7 @@ export default function CoursesPage() {
   return (
     <>
       <JsonLd data={webPageSchema({ name: coursesTitle, description: coursesDescription, path: "/courses" })} />
+      <JsonLd data={localAcademySchema({ description: coursesDescription, path: "/courses" })} />
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", path: "/" },
@@ -81,7 +94,7 @@ export default function CoursesPage() {
             </nav>
             <span className="eyebrow">CURRICULUM</span>
             <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,3rem)", maxWidth: "18ch" }}>
-              Forex trading courses in Dubai
+              Forex trading course in Dubai
             </h1>
             <p style={{ maxWidth: "66ch", marginTop: 18 }}>
               Private and group forex training at Equity Fin Academy starts from AED 1,500, with the programme tailored to your experience, schedule and goals.
@@ -106,8 +119,11 @@ export default function CoursesPage() {
               <Link href="/blog-smart-money-concepts">smart money concepts</Link>. Professionals in Abu Dhabi who want a private mentor, rather than a note about the drive, can read <Link href="/blog-private-forex-mentorship-abu-dhabi">private forex mentorship in Abu Dhabi</Link>. The exposure they may already have, before a trading account, is <Link href="/blog-currency-exposure-abu-dhabi-professionals">currency exposure for Abu Dhabi professionals</Link>. Doctors, engineers, and bankers with a rota can read <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for those careers</Link>. A private hour once a fortnight is <Link href="/blog-private-one-to-one-forex-training-dubai">private one-to-one forex training in Dubai</Link>. The agenda of one sitting is <Link href="/blog-private-forex-mentorship-hour-dubai">what a private mentorship hour contains</Link>. An executive who already holds capital should read <Link href="/blog-premium-executive-forex-mentorship-dubai">the mentorship brief</Link> before the first paid hour. Google reviews stay on Google. The <Link href="/success-stories">reviews page</Link> explains the 5.0 listing. The message itself is <Link href="/contact">contact</Link>. The booking rules are on the <Link href="/terms">terms page</Link>.
             </p>
             <div className="cta-row">
-              <a href="https://wa.me/971559047030" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                WhatsApp
+              <Link href="/free-demo" className="btn btn-primary">
+                Free demo class
+              </Link>
+              <a href="https://wa.me/971559047030" className="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                WhatsApp +971 55 904 7030
               </a>
               <a href="tel:+971559047030" className="btn btn-outline">
                 Call +971 55 904 7030
@@ -206,6 +222,16 @@ export default function CoursesPage() {
               <Link href="/private-group-forex-training-dubai">Private and group forex training</Link> compares the two
               rooms.
             </p>
+            <h2>How the forex trading course runs in the UAE</h2>
+            <p>
+              The classroom is in Dubai, UAE. Ask for directions on WhatsApp once a time is agreed. Students in Abu Dhabi, Sharjah, and the other emirates take the same private or group course live online. Dubai students can choose the room or the screen. Gulf Standard Time is UTC+4 all year, so 7pm is 7pm in every emirate.
+            </p>
+            <p>
+              Evening groups are often after 7pm Gulf Standard Time, once a Sunday-to-Thursday workday has finished. The exact hour is agreed when you enquire. The academy is open 24/7. From Saturday morning until Monday morning, UAE time, the forex market is shut, so a weekend hour can still review a chart you marked during the week. A <Link href="/free-demo">free demo class</Link> is how you see the teaching before you pick a track. Private and group training starts from AED 1,500.
+            </p>
+            <p>
+              The capital&apos;s choice, online or a visit to Dubai, is the <Link href="/forex-course-abu-dhabi">currency trading course for Abu Dhabi</Link>. Sharjah students use the <Link href="/forex-course-sharjah">forex course in Sharjah</Link>. People who live or work in Dubai Marina, DIFC, or Business Bay can read <Link href="/blog-vip-forex-mentorship-downtown-dubai-marina">how a private hour fits those districts</Link> before they book. WhatsApp is <a href="https://wa.me/971559047030" target="_blank" rel="noopener noreferrer">+971 55 904 7030</a>.
+            </p>
           </div>
         </section>
 
@@ -235,60 +261,7 @@ export default function CoursesPage() {
               <span className="eyebrow">COURSE FAQS</span>
               <h2>Questions about the curriculum</h2>
             </div>
-            <div className="faq-list reveal">
-              <details>
-                <summary>
-                  Which track should I start with?<span className="plus">+</span>
-                </summary>
-                <p>
-                  If you&apos;re new to trading, start with Basic to Intermediate — it covers forex fundamentals,
-                  candlestick patterns and market structure. If you already understand these, Advanced Institutional
-                  Strategies goes straight into institutional tools.
-                </p>
-              </details>
-              <details>
-                <summary>
-                  Does the syllabus cover other markets?<span className="plus">+</span>
-                </summary>
-                <p>
-                  Both tracks are forex courses, taught as one market-structure framework. Practical sessions use
-                  MetaTrader 5, so the same chart work also covers gold, indices, and stocks the broker lists,
-                  alongside forex.
-                </p>
-              </details>
-              <details>
-                <summary>
-                  Do you offer investing or stock trading classes near me in Dubai?<span className="plus">+</span>
-                </summary>
-                <p>
-                  The courses on this page are forex tracks. A live private or group hour can mark a share, an index, or gold on MetaTrader 5 when you name that symbol. Classes are in person in Dubai, UAE, or online across the UAE. This is not a budgeting or retirement class, and the academy does not publish a list of shares to buy. The fee is quoted in AED when you enquire.
-                </p>
-              </details>
-              <details>
-                <summary>
-                  What is &quot;Lifetime Support via WhatsApp&quot;?<span className="plus">+</span>
-                </summary>
-                <p>Students on the Advanced Institutional Strategies track get ongoing access to the instructor via WhatsApp for questions after the course ends.</p>
-              </details>
-              <details>
-                <summary>
-                  Do you offer private one-to-one lessons?<span className="plus">+</span>
-                </summary>
-                <p>
-                  Yes. Private one-to-one forex lessons are available in Dubai, including live trading sessions and
-                  training. Group cohorts are available too. Call for the current fee — it is not listed on this page.
-                </p>
-              </details>
-              <details>
-                <summary>
-                  Is broker access included in the course fee?<span className="plus">+</span>
-                </summary>
-                <p>
-                  Practical sessions are run through Star Trader, an SCA-regulated broker. See <Link href="/pricing">Pricing</Link>{" "}
-                  or call us for current enrolment and account details.
-                </p>
-              </details>
-            </div>
+            <FaqList items={courseFaq} />
             <p style={{ marginTop: 24 }}>
               <Link href="/faq" className="btn btn-outline">
                 See All 30+ FAQs
@@ -303,7 +276,7 @@ export default function CoursesPage() {
           <div className="container prose-block">
             <h2>How a Dubai class uses this syllabus</h2>
             <p>
-              The lists above are the topics, in teaching order. A class is the same list with someone watching your chart. Group cohorts share one time. A private lesson uses the hour you can keep. Both include live trading sessions, in person in Dubai, UAE, and online across the UAE. The academy is open 24/7. Fees are quoted in AED when you <Link href="/contact">enquire</Link>. They are not printed on this page.
+              The lists above are the topics, in teaching order. A class is the same list with someone watching your chart. Group cohorts share one time. A private lesson uses the hour you can keep. Both include live trading sessions, in person in Dubai, UAE, and online across the UAE. The academy is open 24/7. Private and group training starts from AED 1,500. The programme for your experience is confirmed when you <Link href="/contact">enquire</Link>.
             </p>
             <p>
               Read the concepts before you sit the hour. <Link href="/blog-currency-pairs-uae">Currency pairs</Link> is the quote the first candles sit on. <Link href="/blog-smart-money-concepts">Smart money concepts</Link> explains liquidity, imbalance, and order blocks in plain language. <Link href="/blog-forex-economic-calendar-dubai">The economic calendar in Dubai time</Link> is the diary for scheduled releases, which the advanced track picks up after structure. <Link href="/blog-forex-classes-working-professionals-dubai">Forex classes for working professionals</Link> is for people fitting that hour around a job in Dubai. <Link href="/blog-demo-vs-live-mt5-uae">Demo versus live on MT5</Link> is what to do on the platform between classes. The full article list is the <Link href="/blog">blog</Link>. What happens once you are in the hour is <Link href="/blog-live-forex-trading-session-dubai">a live forex session in Dubai</Link>. Students in Ajman, Ras Al Khaimah, Fujairah, or Umm Al Quwain can read <Link href="/blog-forex-classes-ajman-ras-al-khaimah">forex classes in the northern emirates</Link> before they choose online or a Dubai visit.

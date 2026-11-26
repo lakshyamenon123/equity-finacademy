@@ -6,7 +6,7 @@ import YouTubeSection from "../components/YouTubeSection";
 import Link from "next/link";
 import OpenChatLink from "../components/OpenChatLink";
 import { pageMetadata } from "../lib/seo";
-import { breadcrumbSchema, faqPageSchema, webPageSchema } from "../lib/schema";
+import { breadcrumbSchema, faqPageSchema, localAcademySchema, webPageSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { STARTRADER_LIVE_URL } from "../lib/whatsapp";
 
@@ -15,10 +15,10 @@ const mt5English = ENGLISH_VIDEOS.find((video) => video.id === "ssUPlUHnDLo");
 
 const pageTitle = "Forex Course for Abu Dhabi";
 const pageDescription =
-  "Forex course for Abu Dhabi students at Equity Fin Academy: the same Dubai syllabus online on Gulf Standard Time, or a visit to the classroom in Dubai, UAE.";
+  "Currency trading course for Abu Dhabi: private and group forex classes, online on Gulf Standard Time or in person in Dubai. Free demo. From AED 1,500.";
 
 export const metadata = pageMetadata({
-  title: "Forex Course for Abu Dhabi, UAE | Equity Fin Academy",
+  title: "Currency Trading Course in Abu Dhabi | Online or Dubai",
   description: pageDescription,
   keywords:
     "forex course Abu Dhabi, currency trading course Abu Dhabi, forex training Abu Dhabi, online forex course Abu Dhabi, forex classes Abu Dhabi to Dubai, learn forex trading Abu Dhabi, United Arab Emirates",
@@ -46,12 +46,17 @@ const pageFaq = [
     q: "Is the online course a different syllabus from the Dubai classroom?",
     text: "No. Basic to Intermediate and Advanced Institutional Strategies are the same two tracks. Online study is the same instructor and the same topic order, without the drive from Abu Dhabi.",
   },
+  {
+    q: "Is a currency trading course in Abu Dhabi taught in the capital?",
+    text: "In-person classes are in Dubai, UAE. From Abu Dhabi you take the same private or group forex course live online on Gulf Standard Time, or you visit the Dubai classroom. Evening classes are often after 7pm, which is 7pm in both cities. A free demo is available before you choose a track. Training starts from AED 1,500. WhatsApp is +971 55 904 7030.",
+  },
 ];
 
 export default function ForexCourseAbuDhabiPage() {
   return (
     <>
       <JsonLd data={webPageSchema({ name: pageTitle, description: pageDescription, path })} />
+      <JsonLd data={localAcademySchema({ description: pageDescription, path })} />
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", path: "/" },
@@ -79,10 +84,16 @@ export default function ForexCourseAbuDhabiPage() {
               <Link href="/blog-currency-exposure-abu-dhabi-professionals">currency exposure for Abu Dhabi professionals</Link>.
             </p>
             <div className="cta-row" style={{ marginTop: 28 }}>
+              <Link href="/free-demo" className="btn btn-primary">
+                Free demo class
+              </Link>
+              <a href="https://wa.me/971559047030" className="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                WhatsApp +971 55 904 7030
+              </a>
               <a href="tel:+971559047030" className="btn btn-outline">
                 Call +971 55 904 7030
               </a>
-              <OpenChatLink className="btn btn-primary">Book a Seat</OpenChatLink>
+              <OpenChatLink className="btn btn-outline">Book a Seat</OpenChatLink>
             </div>
           </div>
         </section>
@@ -136,7 +147,7 @@ export default function ForexCourseAbuDhabiPage() {
 
             <h2>What to send if you are writing from Abu Dhabi</h2>
             <p>
-              Private mentorship for a professional week in the capital, as distinct from this drive-or-online choice, is <Link href="/blog-private-forex-mentorship-abu-dhabi">private forex mentorship in Abu Dhabi</Link>. Family offices and investors who need a learning balance kept apart from capital that already has a job should read <Link href="/blog-forex-training-family-office-abu-dhabi">forex training for family offices and investors in Abu Dhabi</Link>. Tell the academy you are in Abu Dhabi, whether you want to drive to Dubai or study online, and whether you want a group seat or a private lesson. Name the track: Basic to Intermediate, or Advanced Institutional Strategies if you already read structure. Ask for the fee in AED and the next time that fits. WhatsApp is{" "}
+              Private mentorship for a professional week in the capital, as distinct from this drive-or-online choice, is <Link href="/blog-private-forex-mentorship-abu-dhabi">private forex mentorship in Abu Dhabi</Link>. Family offices and investors who need a learning balance kept apart from capital that already has a job should read <Link href="/blog-forex-training-family-office-abu-dhabi">forex training for family offices and investors in Abu Dhabi</Link>. Tell the academy you are in Abu Dhabi, whether you want to drive to Dubai or study online, and whether you want a group seat or a private lesson. Name the track: Basic to Intermediate, or Advanced Institutional Strategies if you already read structure. Private and group training starts from AED 1,500. A <Link href="/free-demo">free demo class</Link> shows the teaching before you choose. Ask for the next time that fits on Gulf Standard Time. Evening classes are often after 7pm, which is 7pm in Abu Dhabi as well as Dubai. WhatsApp is{" "}
               <a href="https://wa.me/971559047030" target="_blank" rel="noopener noreferrer">+971 55 904 7030</a>. The form is on the <Link href="/contact">contact page</Link>.
             </p>
             <p>

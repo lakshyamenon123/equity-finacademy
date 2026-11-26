@@ -6,16 +6,16 @@ import Link from "next/link";
 import OpenChatLink from "../components/OpenChatLink";
 import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
-import { breadcrumbSchema, faqPageSchema, webPageSchema } from "../lib/schema";
+import { breadcrumbSchema, faqPageSchema, localAcademySchema, webPageSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 
 const path = "/forex-academy-in-dubai";
 const pageTitle = "Forex Courses in Dubai";
 const pageDescription =
-  "Forex course in Dubai: a private lesson or a group class, with live trading in the room or online across the UAE. 2,000+ students. Rated 5.0 on Google.";
+  "Forex academy in Dubai, UAE: private and group classes, in person or online across the emirates. Free demo. Training from AED 1,500.";
 
 export const metadata = pageMetadata({
-  title: "Forex Academy in Dubai and the UAE | Equity Fin Academy",
+  title: "Forex Academy in Dubai, UAE | Private & Group",
   description: pageDescription,
   keywords:
     "forex course Dubai, forex courses in Dubai, forex training academy Dubai, trading classes in Dubai, forex classes near me Dubai, forex academy in Dubai",
@@ -95,6 +95,7 @@ export default function ForexAcademyDubaiPage() {
   return (
     <>
       <JsonLd data={webPageSchema({ name: pageTitle, description: pageDescription, path })} />
+      <JsonLd data={localAcademySchema({ description: pageDescription, path })} />
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", path: "/" },
@@ -134,14 +135,20 @@ export default function ForexAcademyDubaiPage() {
                   <Link href="/blog-forex-classes-near-me-dubai">forex classes near me in Dubai</Link>. The study order, if you are not ready to book, is{" "}
                   <Link href="/blog-forex-education-uae">forex education in the UAE</Link>. The first month in the city, before the install steps, is{" "}
                   <Link href="/blog-how-to-start-forex-trading-dubai">how to start forex trading in Dubai</Link>. What the booked hour contains is{" "}
-                  <Link href="/blog-live-forex-trading-session-dubai">a live forex session in Dubai</Link>. The two tracks and the fee quote sit on{" "}
-                  <Link href="/courses">courses</Link> and <Link href="/pricing">pricing</Link>.
+                  <Link href="/blog-live-forex-trading-session-dubai">a live forex session in Dubai</Link>. The two tracks are the{" "}
+                  <Link href="/courses">forex trading course in Dubai</Link>. The fee quote sits on <Link href="/pricing">pricing</Link>.
                 </p>
                 <div className="cta-row">
+                  <Link href="/free-demo" className="btn btn-primary">
+                    Free demo class
+                  </Link>
+                  <a href="https://wa.me/971559047030" className="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                    WhatsApp +971 55 904 7030
+                  </a>
                   <a href="tel:+971559047030" className="btn btn-outline">
                     Call +971 55 904 7030
                   </a>
-                  <OpenChatLink className="btn btn-primary">Book a Seat</OpenChatLink>
+                  <OpenChatLink className="btn btn-outline">Book a Seat</OpenChatLink>
                 </div>
               </div>
 

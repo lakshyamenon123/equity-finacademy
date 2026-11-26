@@ -446,8 +446,8 @@ const posts = [
       </>
     ),
     cat: "Investing Classes",
-    title: "Investing Classes Near Me in Dubai: How to Sort the Map",
-    desc: "What a near-me search mixes together, and how to tell a forex class from a stock class before you travel.",
+    title: "Investing Classes Near Me in Dubai",
+    desc: "Private and group investing classes in Dubai and the UAE. Stocks, gold, and forex. Free demo. From AED 1,500.",
     time: "8 min read",
   },
   {

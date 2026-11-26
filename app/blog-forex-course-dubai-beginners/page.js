@@ -68,7 +68,7 @@ export default function BeginnersCoursePost() {
               <h2>Who the first track is for</h2>
               <p>
                 Basic to Intermediate assumes no trading experience. If you already read market structure, look at Advanced Institutional Strategies instead. The split is on the{" "}
-                <Link href="/courses">courses page</Link>. Starting on the advanced track to “save time” usually means
+                <Link href="/courses">forex trading course in Dubai</Link>. Starting on the advanced track to “save time” usually means
                 sitting through vocabulary you do not have yet, which wastes the cohort rather than shortening it.
               </p>
               <p>

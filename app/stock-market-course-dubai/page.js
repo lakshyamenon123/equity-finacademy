@@ -6,7 +6,7 @@ import YouTubeSection from "../components/YouTubeSection";
 import Link from "next/link";
 import OpenChatLink from "../components/OpenChatLink";
 import { pageMetadata } from "../lib/seo";
-import { breadcrumbSchema, faqPageSchema } from "../lib/schema";
+import { breadcrumbSchema, faqPageSchema, localAcademySchema } from "../lib/schema";
 import { SITE } from "../lib/site";
 import { VIDEOS } from "../lib/videos";
 import { STARTRADER_LIVE_URL, whatsappHref } from "../lib/whatsapp";
@@ -14,10 +14,12 @@ import { STARTRADER_LIVE_URL, whatsappHref } from "../lib/whatsapp";
 const path = "/stock-market-course-dubai";
 const whatsapp = whatsappHref("Hi, I'm interested in the stock market course in Dubai");
 
+const pageDescription =
+  "Stock market and investing classes in Dubai, UAE. Private or group, in person or online. Shares, indices, and gold. Free demo. From AED 1,500.";
+
 export const metadata = pageMetadata({
-  title: "Stock Market Course in Dubai, UAE | Equity Fin Academy",
-  description:
-    "Stock market course in Dubai for shares, indices, and gold on MT5. Live group or private classes in Dubai, UAE, or online across the UAE.",
+  title: "Stock Market Courses in Dubai | Investing Classes",
+  description: pageDescription,
   keywords:
     "stock market course dubai, stock trading course dubai, stock market classes Dubai, learn stocks Dubai, gold trading course Dubai, indices trading course UAE, MT5 stock trading Dubai",
   path,
@@ -42,7 +44,11 @@ const pageFaq = [
   },
   {
     q: "Can I take the stock market classes online if I am outside Dubai?",
-    text: "Yes. In-person classes are in Dubai. Online study covers the rest of the UAE, and Dubai students who would rather stay at their desk. The academy is open 24/7. Dates are quoted with the fee.",
+    text: "Yes. In-person classes are in Dubai. Online study covers the rest of the UAE, and Dubai students who would rather stay at their desk. The academy is open 24/7. Classes use Gulf Standard Time. Evening hours are often after 7pm. Dates are agreed when you enquire.",
+  },
+  {
+    q: "Are these stock market and investing classes in Dubai?",
+    text: "Yes. This page is that class. Private or group, in person in Dubai, UAE, or live online across the UAE on Gulf Standard Time. Shares, indices, and gold are marked on MetaTrader 5 alongside forex. A free demo is available before you choose a track. Training starts from AED 1,500. WhatsApp is +971 55 904 7030.",
   },
 ];
 
@@ -56,6 +62,7 @@ export default function StockMarketCourseDubaiPage() {
         ])}
       />
       <JsonLd data={faqPageSchema(pageFaq)} />
+      <JsonLd data={localAcademySchema({ description: pageDescription, path })} />
       <Header active="stock-dubai" />
       <main>
         <section className="tight bg-glow" style={{ borderBottom: "1px solid var(--border)" }}>
@@ -67,10 +74,10 @@ export default function StockMarketCourseDubaiPage() {
             </nav>
             <span className="eyebrow">DUBAI · STOCKS, INDICES, GOLD, AND FOREX</span>
             <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,3.1rem)", maxWidth: "16ch" }}>
-              Stock Market Course in Dubai
+              Stock market and investing classes in Dubai
             </h1>
             <p className="hero-sub" style={{ marginTop: 18, maxWidth: "68ch" }}>
-              A stock market course in Dubai should name the chart you will mark and the person who will correct it. Searches for stock market courses in Dubai, in the plural, reach this page. There is one course to book. Equity Fin Academy teaches that chart work in person in Dubai, UAE, and online across the UAE. Stocks, indices, and gold are marked on MetaTrader 5, alongside forex, in a live group class or a private lesson. If the search was stock trading classes nearby, the longer note is{" "}
+              A stock market course in Dubai should name the chart you will mark and the person who will correct it. Searches for stock market courses in Dubai, and for investing classes in the city, reach this page. There is one course to book. Equity Fin Academy teaches that chart work in person in Dubai, UAE, and online across the UAE on Gulf Standard Time. Private and group classes start from AED 1,500. Stocks, indices, and gold are marked on MetaTrader 5, alongside forex, in a live group class or a private lesson. If the search was stock trading classes nearby, the longer note is{" "}
               <Link href="/blog-stock-trading-classes-near-me-dubai">stock trading classes near me in Dubai</Link>. The first weeks of study, before you enquire, are in{" "}
               <Link href="/blog-stock-market-course-dubai-first-weeks">what a stock market course in Dubai should cover first</Link>.
             </p>
@@ -82,7 +89,10 @@ export default function StockMarketCourseDubaiPage() {
               <span className="topic-chip">Open 24/7</span>
             </div>
             <div className="cta-row" style={{ marginTop: 22 }}>
-              <a href={whatsapp} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+              <Link href="/free-demo" className="btn btn-primary">
+                Free demo class
+              </Link>
+              <a href={whatsapp} className="btn btn-outline" target="_blank" rel="noopener noreferrer">
                 WhatsApp +971 55 904 7030
               </a>
               <a href="tel:+971559047030" className="btn btn-outline">
@@ -170,7 +180,7 @@ export default function StockMarketCourseDubaiPage() {
 
             <h2>What to send when you ask for a seat</h2>
             <p>
-              WhatsApp {SITE.telephoneDisplay} or open the chat. Say whether the first chart should be a stock, an index, gold, or a forex pair. Say private or group. Say whether you have used a chart before. The fee is quoted in the reply, because it is not printed on the site. What changes a quote is written out on the{" "}
+              WhatsApp {SITE.telephoneDisplay} or open the chat. Say whether the first chart should be a stock, an index, gold, or a forex pair. Say private or group. Say whether you have used a chart before. Private and group classes start from AED 1,500. The programme for your experience is confirmed in the reply. A <Link href="/free-demo">free demo class</Link> is available before you choose a track. What changes a quote is written out on the{" "}
               <Link href="/forex-course-fees-dubai">forex course fees in Dubai</Link> page, and what each track includes is on <Link href="/pricing">pricing</Link>.
             </p>
             <p>
