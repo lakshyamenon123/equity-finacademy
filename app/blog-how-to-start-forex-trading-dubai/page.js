@@ -69,7 +69,7 @@ export default function HowToStartForexTradingDubaiPost() {
                 This page is that month. Installing MetaTrader 5, and opening a broker account, is a different note:{" "}
                 <Link href="/blog-start-forex-trading-uae-mt5">how to start forex trading in the UAE with MT5</Link>. What to study before you pay anyone is{" "}
                 <Link href="/blog-forex-education-uae">forex education in the UAE</Link>. The topic lists, once you are ready for a seat, are the{" "}
-                <Link href="/courses">forex trading courses in Dubai</Link>.
+                <Link href="/courses">forex trading course in Dubai</Link>.
               </p>
 
               <h2>The first month, in order</h2>

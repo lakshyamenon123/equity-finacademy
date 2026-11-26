@@ -6,18 +6,18 @@ import AcademyLinks from "../components/AcademyLinks";
 import Link from "next/link";
 import AuthorByline from "../components/AuthorByline";
 import { pageMetadata } from "../lib/seo";
-import { articleSchema, breadcrumbSchema } from "../lib/schema";
+import { articleSchema, breadcrumbSchema, localAcademySchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 
 const path = "/blog-investing-classes-near-me-dubai";
-const headline = "Investing Classes Near Me in Dubai: How to Sort the Map";
+const headline = "Investing Classes Near Me in Dubai";
 const description =
-  "Investing classes near me in Dubai mix forex, stocks, and gold. Sort the map, then book a private lesson or a group class in the city or online across the UAE.";
+  "Private and group investing classes in Dubai, UAE, for stocks, gold, and forex. In person or online. Free demo. From AED 1,500.";
 
 const stocksEnglish = ENGLISH_VIDEOS.find((video) => video.id === "bC097etTQeI");
 
 export const metadata = pageMetadata({
-  title: "Investing Classes Near Me in Dubai | Forex, Stocks, Gold",
+  title: "Investing Classes Near Me in Dubai | Private & Group",
   description,
   keywords:
     "investing classes near me Dubai, trading classes near me Dubai, dubai trading courses, forex classes Dubai, stock market course Dubai",
@@ -30,13 +30,14 @@ const postSchema = articleSchema({
   description,
   path,
   datePublished: "2026-11-03",
-  dateModified: "2026-11-18",
+  dateModified: "2026-11-26",
 });
 
 export default function InvestingClassesNearMePost() {
   return (
     <>
       <JsonLd data={postSchema} />
+      <JsonLd data={localAcademySchema({ description, path })} />
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", path: "/" },
@@ -59,14 +60,14 @@ export default function InvestingClassesNearMePost() {
 
             <div className="blog-article">
               <span className="eyebrow">INVESTING CLASSES</span>
-              <h1>Investing Classes Near Me in Dubai: How to Sort the Map</h1>
+              <h1>{headline}</h1>
               <AuthorByline detail="3 Nov 2026 · 8 min read" />
 
               <p>
                 A phone in Dubai that searches for investing classes near me gets a mixed map. One pin is a stock course. Another is a forex academy. A third is a chat that posts trades. The pin can tell you the place is in the city. It cannot tell you which market the hour is about, or whether anyone will look at your chart.
               </p>
               <p>
-                Equity Fin Academy teaches in person in Dubai, UAE, and online across the UAE. The course is forex. The same MetaTrader 5 work covers gold, indices, and stocks when that is the symbol you bring. This note is how to sort the search before you travel. The forex visit checklist, once you already know you want currencies, is <Link href="/blog-forex-classes-near-me-dubai">forex classes near me in Dubai</Link>.
+                Equity Fin Academy teaches in person in Dubai, UAE, and online across the UAE. Private and group classes start from AED 1,500. A <Link href="/free-demo">free demo</Link> is the way to see the hour before you name the market. The course is forex. The same MetaTrader 5 work covers gold, indices, and stocks when that is the symbol you bring. This note is how to sort the search before you travel. The forex visit checklist, once you already know you want currencies, is <Link href="/blog-forex-classes-near-me-dubai">forex classes near me in Dubai</Link>. The seat, once you want currencies, is the <Link href="/courses">forex trading course in Dubai</Link>.
               </p>
 
               <h2>Three classes the same search blends together</h2>
@@ -91,7 +92,7 @@ export default function InvestingClassesNearMePost() {
                     <tr>
                       <td>Forex course, forex classes, or currency trading</td>
                       <td>Two live tracks, as a group class or a private lesson, on MetaTrader 5.</td>
-                      <td><Link href="/courses">Forex trading courses</Link></td>
+                      <td><Link href="/courses">Forex trading course in Dubai</Link></td>
                     </tr>
                     <tr>
                       <td>Gold, XAUUSD, or &quot;the metal&quot;</td>

@@ -7,7 +7,7 @@ import Link from "next/link";
 import AuthorByline from "../components/AuthorByline";
 import OpenChatLink from "../components/OpenChatLink";
 import { pageMetadata } from "../lib/seo";
-import { articleSchema, breadcrumbSchema } from "../lib/schema";
+import { articleSchema, breadcrumbSchema, localAcademySchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { whatsappHref } from "../lib/whatsapp";
 
@@ -43,6 +43,7 @@ export default function VipForexMentorshipDowntownPost() {
   return (
     <>
       <JsonLd data={postSchema} />
+      <JsonLd data={localAcademySchema({ description, path })} />
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", path: "/" },
@@ -73,7 +74,7 @@ export default function VipForexMentorshipDowntownPost() {
                 <Link href="/gopi-chandran">Gopi Chandran</Link>. What changes is the week: a DIFC morning that runs long, a client dinner in Downtown that was not on the calendar at breakfast, a Marina evening, a drive from the Palm that takes longer than the map suggested. This note is what that private hour looks like, how an in-person session differs from an online one, and what to expect in the first sittings.
               </p>
               <p>
-                When someone says VIP, this academy reads it as a private one-to-one hour that can be scheduled around a full professional week. There is no second syllabus under that label, and no price printed by district. The fee is quoted in AED when you ask. What a quote includes is on <Link href="/pricing">pricing</Link>. A week that starts in Abu Dhabi, rather than in these parts of Dubai, is{" "}
+                When someone says VIP, this academy reads it as a private one-to-one hour that can be scheduled around a full professional week. There is no second syllabus under that label, and no price printed by district. Private and group training starts from AED 1,500. The programme is confirmed when you ask. What a quote includes is on <Link href="/pricing">pricing</Link>. A week that starts in Abu Dhabi, rather than in these parts of Dubai, is{" "}
                 <Link href="/blog-private-forex-mentorship-abu-dhabi">private forex mentorship in Abu Dhabi</Link>. The wider coaching relationship is on{" "}
                 <Link href="/forex-mentorship-dubai">forex mentorship in Dubai</Link>.
               </p>

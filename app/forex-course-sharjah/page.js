@@ -6,15 +6,16 @@ import YouTubeSection from "../components/YouTubeSection";
 import Link from "next/link";
 import OpenChatLink from "../components/OpenChatLink";
 import { pageMetadata } from "../lib/seo";
-import { breadcrumbSchema, faqPageSchema } from "../lib/schema";
+import { breadcrumbSchema, faqPageSchema, localAcademySchema } from "../lib/schema";
 import { VIDEOS } from "../lib/videos";
 
 const path = "/forex-course-sharjah";
+const pageDescription =
+  "Forex course for Sharjah: private and group classes online on Gulf Standard Time, or in person in Dubai, UAE. Free demo. From AED 1,500.";
 
 export const metadata = pageMetadata({
-  title: "Forex Course for Sharjah Students | Equity Fin Academy",
-  description:
-    "Forex course for Sharjah students at Equity Fin Academy. Live classes are in Dubai, UAE, or online across the UAE. See who should come and how to enquire.",
+  title: "Forex Course in Sharjah | Online or Classes in Dubai",
+  description: pageDescription,
   keywords:
     "forex course Sharjah, forex training Sharjah, forex classes near Sharjah, learn forex Al Nahda, forex academy near Sharjah Dubai",
   path,
@@ -33,6 +34,10 @@ const pageFaq = [
     q: "Can I visit without an appointment?",
     text: "The academy is open 24/7. Calling ahead means someone is free to walk you through the tracks, including private one-to-one lessons, in person.",
   },
+  {
+    q: "What time are classes for someone living in Sharjah?",
+    text: "Sharjah and Dubai share Gulf Standard Time, UTC+4, all year. An evening class at 7pm is 7pm in Sharjah. Many students who already spend the day in Dubai attend in person. If that day does not include the trip, the same private or group class is live online. A free demo is available. Training starts from AED 1,500. WhatsApp is +971 55 904 7030.",
+  },
 ];
 
 export default function ForexCourseSharjahPage() {
@@ -45,6 +50,7 @@ export default function ForexCourseSharjahPage() {
         ])}
       />
       <JsonLd data={faqPageSchema(pageFaq)} />
+      <JsonLd data={localAcademySchema({ description: pageDescription, path })} />
       <Header active="sharjah" />
 
       <main>
@@ -63,10 +69,16 @@ export default function ForexCourseSharjahPage() {
               Equity Fin Academy teaches in person in Dubai, UAE, a short trip from Sharjah, and online across the UAE. There is no second campus in Sharjah.
             </p>
             <div className="cta-row" style={{ marginTop: 28 }}>
+              <Link href="/free-demo" className="btn btn-primary">
+                Free demo class
+              </Link>
+              <a href="https://wa.me/971559047030" className="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                WhatsApp +971 55 904 7030
+              </a>
               <a href="tel:+971559047030" className="btn btn-outline">
                 Call +971 55 904 7030
               </a>
-              <OpenChatLink className="btn btn-primary">Book a Seat</OpenChatLink>
+              <OpenChatLink className="btn btn-outline">Book a Seat</OpenChatLink>
             </div>
           </div>
         </section>
@@ -78,6 +90,43 @@ export default function ForexCourseSharjahPage() {
               In-person classes are in Dubai, UAE, close enough that many Sharjah students make the trip. We will not invent a door-to-door minute count.
               Directions are on the map on the <Link href="/contact">contact page</Link>. You can also learn online across the UAE. Abu Dhabi is a longer drive; that situation is described on
               the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>.
+            </p>
+
+            <h2>Private or group, on the same clock as Dubai</h2>
+            <p>
+              Sharjah does not have a second classroom. In-person classes are in Dubai, UAE. The useful question is whether you are already going to be in Dubai that day. Many Sharjah residents cross for work. An in-person hour can sit on one of those days, after the office, rather than as a separate evening trip. If the day stays in Sharjah, take the same class live online. The syllabus does not change.
+            </p>
+            <div className="table-wrap">
+              <table>
+                <caption className="sr-only">How Sharjah students take a forex class</caption>
+                <thead>
+                  <tr>
+                    <th>Format</th>
+                    <th>When it fits</th>
+                    <th>What to name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>In person in Dubai</td>
+                    <td>You are already in Dubai that day, or a Saturday visit is realistic. The academy does not publish a door-to-door minute count.</td>
+                    <td>Sharjah, in person, and the day you will already be in Dubai.</td>
+                  </tr>
+                  <tr>
+                    <td>Online from Sharjah</td>
+                    <td>The evening drive would replace the study. 7pm Gulf Standard Time is 7pm in Sharjah.</td>
+                    <td>Sharjah, online, group or private, and the hour you can keep.</td>
+                  </tr>
+                  <tr>
+                    <td>One visit, then online</td>
+                    <td>You want to meet the instructor once, then continue on a screen from Sharjah.</td>
+                    <td>Sharjah, one visit to Dubai, then online. Ask for a free demo first if you have not chosen a track.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>
+              Private one-to-one means the hour stays on your chart. A group class follows the shared list at a time you can keep. Both start from AED 1,500. Book a <Link href="/free-demo">free demo class</Link> before you decide. WhatsApp is <a href="https://wa.me/971559047030" target="_blank" rel="noopener noreferrer">+971 55 904 7030</a>. The topic order is the <Link href="/courses">forex trading course in Dubai</Link>. Abu Dhabi is a longer journey, described on the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>.
             </p>
 
             <h2>What you are travelling for</h2>

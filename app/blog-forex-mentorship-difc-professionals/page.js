@@ -8,7 +8,7 @@ import Link from "next/link";
 import AuthorByline from "../components/AuthorByline";
 import OpenChatLink from "../components/OpenChatLink";
 import { pageMetadata } from "../lib/seo";
-import { articleSchema, breadcrumbSchema, faqPageSchema } from "../lib/schema";
+import { articleSchema, breadcrumbSchema, faqPageSchema, localAcademySchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { whatsappHref } from "../lib/whatsapp";
 
@@ -63,6 +63,7 @@ export default function DifcForexMentorshipPost() {
   return (
     <>
       <JsonLd data={postSchema} />
+      <JsonLd data={localAcademySchema({ description, path })} />
       <JsonLd data={faqPageSchema(difcFaq)} />
       <JsonLd
         data={breadcrumbSchema([
@@ -94,7 +95,7 @@ export default function DifcForexMentorshipPost() {
                 <Link href="/gopi-chandran">Gopi Chandran</Link>. The classroom is in Dubai, UAE. The same hour is taught live online on Gulf Standard Time.
               </p>
               <p>
-                Premium, on this site, means a private one-to-one hour that can sit around a full professional week. It is not a second syllabus, and it is not a price printed by district. The fee is quoted in AED when you ask. What a quote includes is on <Link href="/pricing">pricing</Link>. The geography of Downtown Dubai, Business Bay, DIFC, Dubai Marina, and Palm Jumeirah, including the drive, is a different note:{" "}
+                Premium, on this site, means a private one-to-one hour that can sit around a full professional week. It is not a second syllabus, and it is not a price printed by district. Private and group training starts from AED 1,500. The programme is confirmed when you ask. What a quote includes is on <Link href="/pricing">pricing</Link>. The geography of Downtown Dubai, Business Bay, DIFC, Dubai Marina, and Palm Jumeirah, including the drive, is a different note:{" "}
                 <Link href="/blog-vip-forex-mentorship-downtown-dubai-marina">private mentorship for those districts</Link>. Stay here for the work itself.
               </p>
 

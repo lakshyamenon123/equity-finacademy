@@ -12,9 +12,9 @@ import { SITE } from "./lib/site";
 import { VIDEOS } from "./lib/videos";
 
 export const metadata = pageMetadata({
-  title: "Forex Training Academy UAE | Equity Fin Academy",
+  title: "Forex Classes in Dubai, UAE | Private & Group",
   description:
-    "Forex trading course in Dubai at Equity Fin Academy: private one-to-one and group classes, in the room or live online across the UAE. Mentor Gopi Chandran. Open 24/7.",
+    "Private and group forex classes in Dubai and across the UAE, in the room or online. Free demo. Training from AED 1,500 at Equity Fin Academy.",
   keywords:
     "forex training academy Dubai, forex training academy UAE, forex trading courses in Dubai, forex courses in Dubai, investing classes near me Dubai, dubai trading courses, forex education UAE",
   path: "/",
@@ -371,7 +371,7 @@ export default function HomePage() {
             <span className="eyebrow">COURSES AND CLASSES</span>
             <h2>Forex courses and investing classes in Dubai.</h2>
             <p>
-              Training is in person in Dubai, UAE, and online across the UAE. A forex trading course in Dubai here is a private one-to-one lesson or a group class, with live trading sessions. The academy is open 24/7, including weekends, and rated 5.0 on Google from 30+ reviews. The Equity Global channels carry 200+ YouTube reviews and comments.
+              Training is in person in Dubai, UAE, and online across the UAE. A <Link href="/courses">forex trading course in Dubai</Link> here is a private one-to-one lesson or a group class, with live trading sessions. The academy is open 24/7, including weekends, and rated 5.0 on Google from 30+ reviews. The Equity Global channels carry 200+ YouTube reviews and comments.
             </p>
             <p>
               Two searches land here. One is a forex training academy in Dubai or the UAE. The other is investing classes nearby: stocks, gold, and forex mixed on a map. Forex is the course. The same MetaTrader 5 work covers gold, indices, and stocks when that is the symbol you bring.
@@ -402,7 +402,7 @@ export default function HomePage() {
                 <Link href="/private-group-forex-training-dubai">Private and group classes</Link> compares a one-to-one hour with a cohort.
               </li>
               <li>
-                <Link href="/forex-course-abu-dhabi">Abu Dhabi</Link> is the drive-or-online choice. The classroom is in Dubai.
+                <Link href="/forex-course-abu-dhabi">Abu Dhabi</Link> is the drive-or-online choice. <Link href="/forex-course-sharjah">Sharjah</Link> is the shorter trip, online or in person in Dubai. The classroom is in Dubai.
               </li>
               <li>
                 <Link href="/blog-forex-education-uae">Forex education in the UAE</Link> is what to study before you pay. <Link href="/blog-smart-money-concepts">Smart money concepts</Link> comes after structure.

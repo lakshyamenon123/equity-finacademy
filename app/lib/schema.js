@@ -9,7 +9,12 @@ const postalAddress = {
   addressCountry: SITE.address.addressCountry,
 };
 
-const unitedArabEmirates = { "@type": "Country", name: "United Arab Emirates" };
+const unitedArabEmirates = {
+  "@type": "Country",
+  name: "United Arab Emirates",
+  alternateName: "AE",
+  identifier: "AE",
+};
 
 const EMIRATES = [
   "Dubai",
@@ -168,6 +173,33 @@ export function organizationSchema() {
       "@id": `${SITE.url}/#gopi`,
     },
     areaServed,
+  };
+}
+
+// Page-level school node for a location or course URL. The canonical
+// organization stays on the homepage @id. Address is Dubai, UAE only.
+export function localAcademySchema({ description, path }) {
+  const url = absoluteUrl(path);
+  return {
+    "@context": "https://schema.org",
+    "@type": ["EducationalOrganization", "LocalBusiness"],
+    "@id": `${url}#local`,
+    name: SITE.name,
+    description,
+    url,
+    telephone: SITE.telephoneTel,
+    image: `${SITE.url}/og-image.png`,
+    priceRange: "$$",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Dubai",
+      addressRegion: "Dubai",
+      addressCountry: "AE",
+    },
+    areaServed,
+    parentOrganization: { "@id": `${SITE.url}/#organization` },
+    currenciesAccepted: "AED",
+    inLanguage: "en-AE",
   };
 }
 
