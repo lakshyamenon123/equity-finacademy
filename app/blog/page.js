@@ -20,6 +20,32 @@ export const metadata = pageMetadata({
 
 const posts = [
   {
+    href: "/blog-currency-exposure-abu-dhabi-professionals",
+    icon: (
+      <>
+        <path d="M4 16l4-5 4 3 6-8" />
+        <path d="M4 19h16" />
+      </>
+    ),
+    cat: "Abu Dhabi",
+    title: "Currency Exposure Before a Forex Course: A Note for Abu Dhabi Professionals",
+    desc: "The currencies a professional in Abu Dhabi may already live with, and why a trading account is a separate decision.",
+    time: "12 min read",
+  },
+  {
+    href: "/blog-private-forex-mentorship-hour-dubai",
+    icon: (
+      <>
+        <circle cx="12" cy="8" r="3" />
+        <path d="M6 19c.8-2.6 2.8-4 6-4s5.2 1.4 6 4" />
+      </>
+    ),
+    cat: "Private Mentorship",
+    title: "What a Private One-to-One Forex Mentorship Hour in Dubai Contains",
+    desc: "The question you send the day before, the single chart, and the note you should be able to read the next morning.",
+    time: "12 min read",
+  },
+  {
     href: "/blog-forex-position-sizing-high-capital-uae",
     icon: (
       <>
@@ -843,10 +869,10 @@ export default function BlogIndexPage() {
           <div className="container prose-block">
             <h2>Open these before you enquire</h2>
             <p>
-              <Link href="/blog-forex-position-sizing-high-capital-uae">Position sizing for a high-capital account</Link> is the volume you type after a learning slice is written in dirhams. <Link href="/blog-forex-broker-due-diligence-uae">A forex broker checklist for UAE residents</Link> is what to read before that slice is deposited.
+              <Link href="/blog-currency-exposure-abu-dhabi-professionals">Currency exposure for Abu Dhabi professionals</Link> is the list of currencies you may already live with, before a trading account. <Link href="/blog-private-forex-mentorship-hour-dubai">What one private mentorship hour contains</Link> is the agenda after you sit down. <Link href="/blog-mt5-order-ticket-dubai">The MetaTrader 5 order ticket</Link> is the window that hour will point at. If the constraint is a rota, read <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for doctors, engineers and bankers</Link> before you promise a weekly seat.
             </p>
             <p>
-              <Link href="/blog-mt5-order-ticket-dubai">The MetaTrader 5 order ticket</Link> names the symbol, the volume, the stop loss, and the take profit. Read it so a live hour starts on your level, not on the window. If the constraint is a rota, read <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for doctors, engineers and bankers</Link> before you promise a weekly seat.
+              <Link href="/blog-forex-position-sizing-high-capital-uae">Position sizing for a high-capital account</Link> is the volume you type after a learning slice is written in dirhams. <Link href="/blog-forex-broker-due-diligence-uae">A forex broker checklist for UAE residents</Link> is what to read before that slice is deposited.
             </p>
             <p>
               <Link href="/blog-forex-performance-review-dubai">A weekly forex performance review</Link> is the twenty-five minutes you spend with the rows you already wrote. <Link href="/blog-evaluate-forex-mentor-teaching-uae">How to evaluate a mentor&apos;s teaching process</Link> is what to watch in a demo before you pay for a longer seat. The questions to ask the person are still in <Link href="/blog-choose-forex-mentor-dubai">how to choose a forex mentor</Link>.
@@ -865,7 +891,7 @@ export default function BlogIndexPage() {
             </p>
             <h2>A reading order, then the page that books the seat</h2>
             <p>
-              The notes for a narrower question sit at the top of the cards. <Link href="/blog-private-one-to-one-forex-training-dubai">Private one-to-one forex training for a fortnight you can keep</Link> is the gap between sittings. <Link href="/blog-premium-executive-forex-mentorship-dubai">Premium executive forex mentorship in Dubai</Link> is the brief before you pay, when wealth is already arranged. <Link href="/blog-forex-education-senior-executives-dubai">Forex education for senior executives in Dubai</Link> is the weekly capital routine. <Link href="/blog-private-forex-mentorship-jumeirah-dubai-hills">Private mentorship in Jumeirah and Dubai Hills</Link> is what a one-to-one programme should include. <Link href="/blog-forex-training-family-office-abu-dhabi">Forex training for family offices and investors in Abu Dhabi</Link> separates money set aside to learn from capital that already has a job. <Link href="/blog-forex-classes-palm-emirates-hills-business-bay">Forex classes for Palm Jumeirah, Emirates Hills and Business Bay</Link> is the commute, when home and desk are the question. <Link href="/blog-forex-mentorship-difc-professionals">Forex mentorship for DIFC professionals</Link> is the private hour when finance is already the job. <Link href="/blog-forex-coaching-entrepreneurs-flexible-week">Private forex coaching for an irregular week</Link> is for founders who cannot promise the same evening. <Link href="/blog-forex-trading-business-owners-uae">Forex education for business owners in the UAE</Link> is the money and the short week beside a company. <Link href="/blog-vip-forex-mentorship-downtown-dubai-marina">Private mentorship for Downtown Dubai, DIFC and the Marina</Link> is the same private hour when the week is spent in those districts. <Link href="/blog-private-forex-mentorship-abu-dhabi">Private forex mentorship in Abu Dhabi</Link> is a one-to-one hour for a professional week in the capital. <Link href="/blog-forex-training-doctors-engineers-bankers-uae">Forex training for doctors, engineers and bankers</Link> is the same problem when the constraint is a rota. <Link href="/blog-executive-forex-coaching-dubai">Executive forex coaching in Dubai</Link> is a private hour around a company week. <Link href="/blog-forex-portfolio-diversification-uae">Forex beside a portfolio</Link> is for investors who already hold capital. <Link href="/blog-stock-trading-classes-near-me-dubai">Stock trading classes near me in Dubai</Link> is for a share, an index, or gold. <Link href="/blog-choose-forex-mentor-dubai">How to choose a forex mentor in Dubai</Link> is about the teacher, not the brochure.
+              The notes for a narrower question sit at the top of the cards. <Link href="/blog-currency-exposure-abu-dhabi-professionals">Currency exposure for Abu Dhabi professionals</Link> is the list before a trading account. <Link href="/blog-private-forex-mentorship-hour-dubai">What one private mentorship hour contains</Link> is the agenda of a single sitting. <Link href="/blog-private-one-to-one-forex-training-dubai">Private one-to-one forex training for a fortnight you can keep</Link> is the gap between sittings. <Link href="/blog-premium-executive-forex-mentorship-dubai">Premium executive forex mentorship in Dubai</Link> is the brief before you pay, when wealth is already arranged. <Link href="/blog-forex-education-senior-executives-dubai">Forex education for senior executives in Dubai</Link> is the weekly capital routine. <Link href="/blog-private-forex-mentorship-jumeirah-dubai-hills">Private mentorship in Jumeirah and Dubai Hills</Link> is what a one-to-one programme should include. <Link href="/blog-forex-training-family-office-abu-dhabi">Forex training for family offices and investors in Abu Dhabi</Link> separates money set aside to learn from capital that already has a job. <Link href="/blog-forex-classes-palm-emirates-hills-business-bay">Forex classes for Palm Jumeirah, Emirates Hills and Business Bay</Link> is the commute, when home and desk are the question. <Link href="/blog-forex-mentorship-difc-professionals">Forex mentorship for DIFC professionals</Link> is the private hour when finance is already the job. <Link href="/blog-forex-coaching-entrepreneurs-flexible-week">Private forex coaching for an irregular week</Link> is for founders who cannot promise the same evening. <Link href="/blog-forex-trading-business-owners-uae">Forex education for business owners in the UAE</Link> is the money and the short week beside a company. <Link href="/blog-vip-forex-mentorship-downtown-dubai-marina">Private mentorship for Downtown Dubai, DIFC and the Marina</Link> is the same private hour when the week is spent in those districts. <Link href="/blog-private-forex-mentorship-abu-dhabi">Private forex mentorship in Abu Dhabi</Link> is a one-to-one hour for a professional week in the capital. <Link href="/blog-forex-training-doctors-engineers-bankers-uae">Forex training for doctors, engineers and bankers</Link> is the same problem when the constraint is a rota. <Link href="/blog-executive-forex-coaching-dubai">Executive forex coaching in Dubai</Link> is a private hour around a company week. <Link href="/blog-forex-portfolio-diversification-uae">Forex beside a portfolio</Link> is for investors who already hold capital. <Link href="/blog-stock-trading-classes-near-me-dubai">Stock trading classes near me in Dubai</Link> is for a share, an index, or gold. <Link href="/blog-choose-forex-mentor-dubai">How to choose a forex mentor in Dubai</Link> is about the teacher, not the brochure.
             </p>
             <p>
               New to charts, and already in Dubai: <Link href="/blog-how-to-start-forex-trading-dubai">how to start forex trading in Dubai</Link> is the first month. The install steps stay in <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>. Which button to press on that chart is <Link href="/blog-forex-chart-timeframes-dubai">which timeframe to open before a class</Link>. The window you will be asked to read is <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>. A stock or an index, rather than a currency pair, starts with <Link href="/blog-stock-market-course-dubai-first-weeks">the first weeks of a stock market course in Dubai</Link>. Then <Link href="/blog-currency-pairs-uae">how a pair is quoted</Link>, then <Link href="/blog-candlestick-patterns">candlesticks</Link>, then <Link href="/blog-market-structure">market structure</Link>. About to fund an account: <Link href="/blog-demo-vs-live-mt5-uae">demo versus live on MT5</Link>, then <Link href="/blog-forex-leverage-margin-mt5-uae">leverage and margin</Link>, then <Link href="/blog-forex-spreads-swaps-pip-value-uae">what a pip is worth</Link>. The advanced vocabulary, after you can point at a swing, is <Link href="/blog-smart-money-concepts">smart money concepts</Link>.
@@ -886,6 +912,14 @@ export default function BlogIndexPage() {
                   </tr>
                 </thead>
                 <tbody>
+                  <tr>
+                    <td>Currency exposure you may already have, before a forex account, from Abu Dhabi</td>
+                    <td><Link href="/blog-currency-exposure-abu-dhabi-professionals">Currency exposure for Abu Dhabi professionals</Link></td>
+                  </tr>
+                  <tr>
+                    <td>What happens inside one private mentorship hour</td>
+                    <td><Link href="/blog-private-forex-mentorship-hour-dubai">What one private hour contains</Link></td>
+                  </tr>
                   <tr>
                     <td>How a large balance becomes a volume on MT5</td>
                     <td><Link href="/blog-forex-position-sizing-high-capital-uae">Position sizing for a high-capital account</Link></td>

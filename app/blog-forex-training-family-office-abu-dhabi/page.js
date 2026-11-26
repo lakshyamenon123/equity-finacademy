@@ -94,7 +94,8 @@ export default function FamilyOfficeAbuDhabiPost() {
               </p>
               <p>
                 The general question, whether a currency market belongs beside capital you already hold, is{" "}
-                <Link href="/blog-forex-portfolio-diversification-uae">forex beside a portfolio</Link>. Stay here when the constraint is a family office or a personal book in the capital, rather than the definition of diversification. How a professional week in Abu Dhabi books a private hour, without this capital question, is{" "}
+                <Link href="/blog-forex-portfolio-diversification-uae">forex beside a portfolio</Link>. The Abu Dhabi note that lists exposure you may already have, before a trading account, is{" "}
+                <Link href="/blog-currency-exposure-abu-dhabi-professionals">currency exposure for professionals in the capital</Link>. Stay here when the constraint is a family office or a personal book in the capital, rather than the definition of diversification. How a professional week in Abu Dhabi books a private hour, without this capital question, is{" "}
                 <Link href="/blog-private-forex-mentorship-abu-dhabi">private forex mentorship in Abu Dhabi</Link>. The teacher is{" "}
                 <Link href="/gopi-chandran">Gopi Chandran</Link>. The classroom is in Dubai, UAE. Online study from Abu Dhabi uses the same instructor on Gulf Standard Time.
               </p>

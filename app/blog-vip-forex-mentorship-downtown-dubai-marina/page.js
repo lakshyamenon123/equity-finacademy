@@ -80,7 +80,8 @@ export default function VipForexMentorshipDowntownPost() {
 
               <h2>What you are booking</h2>
               <p>
-                A private hour stays on the chart you brought. You name the symbol, the timeframe, and the question. Gopi watches the level you marked and the practice order you are about to place. It is live, in the room or on a screen. It is not a recording you start in the car, and it is not a list of trades to copy before a meeting.
+                A private hour stays on the chart you brought. You name the symbol, the timeframe, and the question. Gopi watches the level you marked and the practice order you are about to place. It is live, in the room or on a screen. It is not a recording you start in the car, and it is not a list of trades to copy before a meeting. The order of work inside that sitting is{" "}
+                <Link href="/blog-private-forex-mentorship-hour-dubai">what one private mentorship hour contains</Link>.
               </p>
               <p>
                 A group cohort follows a shared list. That room is compared with the private hour on{" "}

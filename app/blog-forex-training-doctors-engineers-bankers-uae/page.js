@@ -63,6 +63,10 @@ const careerFaq = [
     text: "Read the rule in your own contract or compliance manual first. The class cannot interpret it. If personal trading is prohibited, do not fund an account and do not ask the hour to work around the rule. A demo chart, with no live ticket, may still be something you are allowed to study. If you are unsure, ask your own compliance contact.",
   },
   {
+    q: "Is the morning after a night shift the London session?",
+    text: "Not by the clock. A morning handover in the UAE falls in the late Asian hours. The London workday, and the overlap with New York, are later, and those times move when London and New York change their clocks. The conversion is on the market-hours page. That morning is also a poor time for a first live ticket.",
+  },
+  {
     q: "Can I copy one of the blank weeks on this page?",
     text: "Yes. They are templates, not diaries of real students. Replace the days with the next two weeks you actually have. If a line describes a day you cannot keep, delete the line. Do not book a seat to match the template.",
   },
@@ -87,7 +91,7 @@ const postSchema = articleSchema({
   description,
   path,
   datePublished: "2026-11-18",
-  dateModified: "2026-11-24",
+  dateModified: "2026-11-26",
   type: "BlogPosting",
 });
 
@@ -119,7 +123,7 @@ export default function ForexTrainingCareersPost() {
             <div className="blog-article">
               <span className="eyebrow">CAREERS</span>
               <h1>{headline}</h1>
-              <AuthorByline detail="18 Nov 2026 · Updated 24 Nov 2026 · 22 min read" />
+              <AuthorByline detail="18 Nov 2026 · Updated 26 Nov 2026 · 24 min read" />
 
               <p>
                 A registrar coming off a night shift, an engineer leaving a site meeting in Business Bay, and a banker whose afternoon belongs to DIFC do not share a diary. They do share a problem. The hour they can study is not a neat slot after a standard office close, and the income they already earn can make a trading account feel smaller than it is. This note is for those three careers. It is about fitting private forex training around the week you actually have, and about writing the risk down before the account is funded.
@@ -445,6 +449,23 @@ export default function ForexTrainingCareersPost() {
                 If your week is an office week and you can protect about twenty-five minutes, the meeting with last week&apos;s rows is{" "}
                 <Link href="/blog-forex-performance-review-dubai">a weekly forex performance review for busy professionals in Dubai</Link>. Stay on this page when the constraint is a rota, a site, or a desk that already owns the overlap. If you are still deciding whether the hour is teaching, use{" "}
                 <Link href="/blog-evaluate-forex-mentor-teaching-uae">the checklist for a mentor&apos;s teaching process</Link> before you pay for a longer seat.
+              </p>
+
+              <h2>A night shift ends in a different session from the one a class watches</h2>
+              <p>
+                Gulf Standard Time does not move. London and New York do. The tables, including the hour the two cities overlap, are on{" "}
+                <Link href="/blog-forex-market-hours-dubai">forex market hours in Dubai</Link>. Read that page for the current season before you name a session in a booking. This section is the shift, not a second copy of the table.
+              </p>
+              <p>
+                A night shift that hands over in the morning leaves you in the late Asian hours on the UAE clock. The London workday, which is the session many beginner charts are marked against, is later. The overlap with New York is later still. The morning after the shift is the wrong time to meet{" "}
+                <Link href="/blog-mt5-order-ticket-dubai">the order ticket</Link> for the first time, and it is the wrong time to call that morning the London session, because the name does not match the clock.
+              </p>
+              <p>
+                An engineer who finishes a site day at dusk can be walking into that overlap, which is when the chart is often busiest and when a first ticket is easiest to rush. A banker whose desk already owns the overlap should not book a personal hour inside it. The private sitting belongs on a block you can name: an off-duty morning that is not post-call, an evening that is not a site day, or a weekend morning after the desk. Say which session that block sits in. If you do not know, say that. The class can show you the clock. It should not be the first time you hear that your free hour and the busy hour are different.
+              </p>
+              <p>
+                Write one line under the rota: the hours after a night shift are closed for a live ticket, and they are not the London session. Change the hours so they match your roster. The market-hours page is the conversion. This page is the decision to leave the platform closed while you are still handing over. If the constraint is currency exposure you already have in Abu Dhabi, rather than the rota, read{" "}
+                <Link href="/blog-currency-exposure-abu-dhabi-professionals">currency exposure for Abu Dhabi professionals</Link> before you call a trading account diversification.
               </p>
 
               <h2>How to judge the seat before you pay</h2>

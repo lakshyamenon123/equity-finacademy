@@ -14,7 +14,7 @@ import { VIDEOS } from "./lib/videos";
 export const metadata = pageMetadata({
   title: "Forex Training Academy UAE | Equity Fin Academy",
   description:
-    "Forex training academy in the UAE: private one-to-one and group classes in Dubai, or live online. Mentor Gopi Chandran. 2,000+ students. Open 24/7.",
+    "Forex trading course in Dubai at Equity Fin Academy: private one-to-one and group classes, in the room or live online across the UAE. Mentor Gopi Chandran. Open 24/7.",
   keywords:
     "forex training academy Dubai, forex training academy UAE, forex trading courses in Dubai, forex courses in Dubai, investing classes near me Dubai, dubai trading courses, forex education UAE",
   path: "/",
@@ -371,7 +371,7 @@ export default function HomePage() {
             <span className="eyebrow">COURSES AND CLASSES</span>
             <h2>Forex courses and investing classes in Dubai.</h2>
             <p>
-              Training is in person in Dubai, UAE, and online across the UAE. Join a group class on a shared syllabus, or book a private one-to-one lesson. Both include live trading sessions. The academy is open 24/7, including weekends, and rated 5.0 on Google from 30+ reviews. The Equity Global channels carry 200+ YouTube reviews and comments.
+              Training is in person in Dubai, UAE, and online across the UAE. A forex trading course in Dubai here is a private one-to-one lesson or a group class, with live trading sessions. The academy is open 24/7, including weekends, and rated 5.0 on Google from 30+ reviews. The Equity Global channels carry 200+ YouTube reviews and comments.
             </p>
             <p>
               Two searches land here. One is a forex training academy in Dubai or the UAE. The other is investing classes nearby: stocks, gold, and forex mixed on a map. Forex is the course. The same MetaTrader 5 work covers gold, indices, and stocks when that is the symbol you bring.
@@ -423,7 +423,7 @@ export default function HomePage() {
                 <Link href="/blog-private-one-to-one-forex-training-dubai">Private one-to-one forex training for a fortnight you can keep</Link> is for a busy professional who cannot attend every week. <Link href="/blog-premium-executive-forex-mentorship-dubai">Premium executive forex mentorship in Dubai</Link> is the brief that keeps existing wealth apart from the chart.
               </li>
               <li>
-                <Link href="/blog-forex-training-family-office-abu-dhabi">Forex training for family offices and investors in Abu Dhabi</Link> keeps a learning account apart from capital that already has a job. <Link href="/blog-forex-classes-palm-emirates-hills-business-bay">Forex classes for Palm Jumeirah, Emirates Hills and Business Bay</Link> is the hour when the drive is the constraint. <Link href="/blog-executive-forex-coaching-dubai">Executive forex coaching for business owners</Link> fits a private hour around a company week. <Link href="/blog-forex-coaching-entrepreneurs-flexible-week">Private forex coaching for an irregular week</Link> is for founders whose diary will not repeat, including Palm Jumeirah, Emirates Hills, and Business Bay. <Link href="/blog-forex-mentorship-difc-professionals">Forex mentorship for DIFC professionals</Link> is the hour when finance is already the job. <Link href="/blog-forex-portfolio-diversification-uae">Forex beside an existing portfolio</Link> is for investors who already hold capital. <Link href="/blog-private-forex-mentorship-abu-dhabi">Private forex mentorship in Abu Dhabi</Link> is the same hour for a professional week in the capital. <Link href="/blog-forex-training-doctors-engineers-bankers-uae">Forex training for doctors, engineers and bankers</Link> is for a rota rather than an office close.
+                <Link href="/blog-currency-exposure-abu-dhabi-professionals">Currency exposure for Abu Dhabi professionals</Link> separates money you already live with from a forex learning account. <Link href="/blog-private-forex-mentorship-hour-dubai">What one private mentorship hour contains</Link> is the agenda after you sit down. <Link href="/blog-forex-training-family-office-abu-dhabi">Forex training for family offices and investors in Abu Dhabi</Link> keeps a learning account apart from capital that already has a job. <Link href="/blog-forex-classes-palm-emirates-hills-business-bay">Forex classes for Palm Jumeirah, Emirates Hills and Business Bay</Link> is the hour when the drive is the constraint. <Link href="/blog-executive-forex-coaching-dubai">Executive forex coaching for business owners</Link> fits a private hour around a company week. <Link href="/blog-forex-coaching-entrepreneurs-flexible-week">Private forex coaching for an irregular week</Link> is for founders whose diary will not repeat, including Palm Jumeirah, Emirates Hills, and Business Bay. <Link href="/blog-forex-mentorship-difc-professionals">Forex mentorship for DIFC professionals</Link> is the hour when finance is already the job. <Link href="/blog-forex-portfolio-diversification-uae">Forex beside an existing portfolio</Link> is for investors who already hold capital. <Link href="/blog-private-forex-mentorship-abu-dhabi">Private forex mentorship in Abu Dhabi</Link> is the same hour for a professional week in the capital. <Link href="/blog-forex-training-doctors-engineers-bankers-uae">Forex training for doctors, engineers and bankers</Link> is for a rota rather than an office close.
               </li>
               <li>
                 <Link href="/why-choose-us">The enrolment checklist</Link>, the <Link href="/success-stories">Google reviews guide</Link>, and <Link href="/contact">contact</Link> are the steps after the reading. The booking rules are on the <Link href="/terms">terms page</Link>. How an enquiry is stored is on the <Link href="/privacy">privacy page</Link>. The school pages are <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link> and <Link href="/forex-training-academy-uae">forex training academy UAE</Link>.
@@ -452,6 +452,8 @@ export default function HomePage() {
         <section className="tight">
           <div className="container">
             <div className="topics-row reveal">
+              <Link href="/blog-currency-exposure-abu-dhabi-professionals" className="topic-chip">Currency exposure in Abu Dhabi</Link>
+              <Link href="/blog-private-forex-mentorship-hour-dubai" className="topic-chip">One private mentorship hour</Link>
               <Link href="/blog-forex-position-sizing-high-capital-uae" className="topic-chip">Position size for a large account</Link>
               <Link href="/blog-forex-broker-due-diligence-uae" className="topic-chip">Forex broker checklist</Link>
               <Link href="/blog-forex-performance-review-dubai" className="topic-chip">Weekly performance review</Link>

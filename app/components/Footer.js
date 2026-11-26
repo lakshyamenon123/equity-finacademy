@@ -106,6 +106,8 @@ export default function Footer() {
             <div className="footer-col">
               <h3>Learn</h3>
               <Link href="/blog">Blog</Link>
+              <Link href="/blog-currency-exposure-abu-dhabi-professionals">Currency Exposure in Abu Dhabi</Link>
+              <Link href="/blog-private-forex-mentorship-hour-dubai">One Private Mentorship Hour</Link>
               <Link href="/blog-forex-position-sizing-high-capital-uae">Position Size for a Large Account</Link>
               <Link href="/blog-forex-broker-due-diligence-uae">Forex Broker Checklist</Link>
               <Link href="/blog-private-one-to-one-forex-training-dubai">Private One-to-One Forex Training</Link>
