@@ -21,7 +21,7 @@ export const metadata = pageMetadata({
   title: "Forex Course for Abu Dhabi, UAE | Equity Fin Academy",
   description: pageDescription,
   keywords:
-    "forex course Abu Dhabi, forex training Abu Dhabi, online forex course Abu Dhabi, forex classes Abu Dhabi to Dubai, learn forex trading Abu Dhabi, United Arab Emirates",
+    "forex course Abu Dhabi, currency trading course Abu Dhabi, forex training Abu Dhabi, online forex course Abu Dhabi, forex classes Abu Dhabi to Dubai, learn forex trading Abu Dhabi, United Arab Emirates",
   path,
 });
 
@@ -74,8 +74,9 @@ export default function ForexCourseAbuDhabiPage() {
               A forex course for Abu Dhabi: study online, or come to Dubai.
             </h1>
             <p className="hero-sub" style={{ marginTop: 18, maxWidth: "64ch" }}>
-              Equity Fin Academy does not run a classroom in Abu Dhabi. Classes are in person in Dubai, UAE, and online across the UAE. This page is for people comparing forex training from Abu Dhabi: what the
-              trip is for, what you will actually learn, and what you can study before you travel.
+              Equity Fin Academy does not run a classroom in Abu Dhabi. Classes are in person in Dubai, UAE, and online across the UAE. If you searched for a currency trading course in Abu Dhabi, the market taught is forex. There is no separate classroom in the capital. This page is for people comparing that course from Abu Dhabi: what the
+              trip is for, what you will actually learn, and what you can study before you travel. The note that separates currency exposure you may already have from a trading account is{" "}
+              <Link href="/blog-currency-exposure-abu-dhabi-professionals">currency exposure for Abu Dhabi professionals</Link>.
             </p>
             <div className="cta-row" style={{ marginTop: 28 }}>
               <a href="tel:+971559047030" className="btn btn-outline">

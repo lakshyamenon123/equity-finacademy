@@ -81,16 +81,14 @@ const nextConfig = {
         source: "/contact",
         headers: [{ key: "Link", value: `<${CANONICAL_ORIGIN}/contact>; rel="canonical"` }],
       },
-      // Favicon and images are files, not pages. noindex keeps them out of the
-      // index. Font files live in /_next/static/media/ (woff2 from next/font).
+      // Favicon is the search icon. Do not send noindex on /favicon.ico:
+      // Google has to fetch it, and a noindex header is what lists the file
+      // in the coverage report. It is not in the sitemap.
+      // Font files live in /_next/static/media/ (woff2 from next/font).
       // CSS is /_next/static/css/ and JavaScript is /_next/static/chunks/.
-      // Those paths are not given this header, and robots.txt does not
-      // disallow /_next/static, so Googlebot can still fetch CSS and JS.
-      // noindex on the font file tells Google the file is not a page.
-      {
-        source: "/favicon.ico",
-        headers: [{ key: "X-Robots-Tag", value: "noindex" }],
-      },
+      // CSS and JS are not given X-Robots-Tag, and robots.txt does not
+      // disallow /_next/static, so the page can still render.
+      // noindex on the font response tells Google the file is not a document.
       {
         source: "/apple-touch-icon.png",
         headers: [{ key: "X-Robots-Tag", value: "noindex" }],

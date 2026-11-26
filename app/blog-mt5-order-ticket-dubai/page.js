@@ -62,7 +62,7 @@ const postSchema = articleSchema({
   description,
   path,
   datePublished: "2026-11-09",
-  dateModified: "2026-11-24",
+  dateModified: "2026-11-26",
   type: "BlogPosting",
 });
 
@@ -94,7 +94,7 @@ export default function Mt5OrderTicketPost() {
             <div className="blog-article">
               <span className="eyebrow">MT5</span>
               <h1>How to Read the MetaTrader 5 Order Ticket Before a Class in Dubai</h1>
-              <AuthorByline detail="9 Nov 2026 · Updated 24 Nov 2026 · 16 min read" />
+              <AuthorByline detail="9 Nov 2026 · Updated 26 Nov 2026 · 17 min read" />
 
               <p>
                 A live forex hour in Dubai goes slowly when the order window is new. The instructor asks for the stop, and the student is still looking for the box. This page names the fields on the MetaTrader 5 order ticket so you can point at them before anyone watches you send anything. It is a map of the window. It is not an instruction to place a trade, and it does not name a direction.
@@ -280,6 +280,16 @@ export default function Mt5OrderTicketPost() {
               <p>
                 If the history and the paper disagree, the history wins. You typed something other than the plan. That disagreement is the note to bring to the next hour. It is also the reason to delete a pending order you no longer recognise, which is the rehearsal in the section above, before any of this becomes a live account. Doctors, engineers, and bankers who will meet this window on a tired evening should still read{" "}
                 <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for those careers</Link> and put the rehearsal on a morning they are awake.
+              </p>
+
+              <h2>The phone ticket and the desktop ticket use the same names</h2>
+              <p>
+                MetaTrader 5 on a phone stacks the same fields in a taller window. Symbol, volume, stop loss, and take profit are still the class. The send control sits closer to the thumb, which is how a rehearsal in a lift becomes a live order. If you will attend from a phone, do the paper ticket first, then open the phone window on a demo and close it without sending. If you will attend from a laptop, rehearse on the laptop. Do not learn the labels on one device and send on the other.
+              </p>
+              <p>
+                A private hour can watch the device you will actually use. Say which one when you book. The agenda of that sitting is{" "}
+                <Link href="/blog-private-forex-mentorship-hour-dubai">what one private mentorship hour in Dubai contains</Link>. Doctors, engineers, and bankers who will open the phone at the end of a shift should read{" "}
+                <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for those careers</Link> and put the rehearsal on a morning they are awake. The fields do not change because the screen is smaller.
               </p>
 
               <h2>What to bring to Dubai, or to the screen</h2>

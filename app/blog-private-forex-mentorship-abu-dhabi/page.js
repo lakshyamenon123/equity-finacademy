@@ -74,7 +74,8 @@ export default function PrivateForexMentorshipAbuDhabiPost() {
               </p>
               <p>
                 The classroom is in Dubai, UAE. There is no Abu Dhabi campus. The same hour is taught online on Gulf Standard Time, which Abu Dhabi and Dubai already share. The page that compares the drive with the online seat is the{" "}
-                <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>. Stay here if the question is the mentorship itself: what the private hour is for, how a busy week holds it, and what to send before anyone quotes a fee. The wider coaching relationship is described on{" "}
+                <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>. The list of currency exposure you may already have, before anyone calls a trading account diversification, is{" "}
+                <Link href="/blog-currency-exposure-abu-dhabi-professionals">currency exposure for Abu Dhabi professionals</Link>. Stay here if the question is the mentorship itself: what the private hour is for, how a busy week holds it, and what to send before anyone quotes a fee. The wider coaching relationship is described on{" "}
                 <Link href="/forex-mentorship-dubai">forex mentorship in Dubai</Link>. The{" "}
                 <Link href="/">home page</Link> is the school.
               </p>

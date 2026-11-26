@@ -46,12 +46,9 @@ function redirectAbsolute(pathname, params, request) {
   // trailing-slash rule must not send it to itself.
   if (samePathAndQuery(request, url)) return NextResponse.next();
   const headers = { Location: url.toString() };
-  // Query strings on /contact, including ?course=, must not become a second
-  // indexed URL. The HTML canonical is the clean page. Repeat it on the 301
-  // so the redirect and the document name the same URL.
-  if (url.pathname === "/contact") {
-    headers.Link = `<${CANONICAL_ORIGIN}/contact>; rel="canonical"`;
-  }
+  // Do not set Link here. next.config.js and vercel.json already send one
+  // canonical Link on /contact, including on this 301. A second Link header
+  // made /contact?course= look like two canonicals for the same redirect.
   return new NextResponse(null, {
     status: 301,
     headers,
@@ -112,6 +109,7 @@ const PAGES = new Set([
   "/blog-choose-forex-academy-uae",
   "/blog-choose-forex-mentor-dubai",
   "/blog-common-mistakes",
+  "/blog-currency-exposure-abu-dhabi-professionals",
   "/blog-currency-pairs-uae",
   "/blog-demo-vs-live-mt5-uae",
   "/blog-evaluate-forex-mentor-teaching-uae",
@@ -155,6 +153,7 @@ const PAGES = new Set([
   "/blog-prepare-group-forex-class-dubai",
   "/blog-private-and-group-forex-classes-dubai",
   "/blog-private-forex-mentorship-abu-dhabi",
+  "/blog-private-forex-mentorship-hour-dubai",
   "/blog-private-forex-mentorship-jumeirah-dubai-hills",
   "/blog-private-one-to-one-forex-training-dubai",
   "/blog-private-vs-group-forex-classes-dubai",

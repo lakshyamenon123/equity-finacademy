@@ -212,7 +212,8 @@ export default function PremiumExecutiveMentorshipPost() {
                 <Link href="/blog-market-structure">market structure</Link>. Bring one sentence. &quot;Personal chart, EUR/USD, learning balance already written, adviser handles the portfolio, Thursday after 8pm online&quot; is a booking. &quot;I want wealth growth and diversification&quot; is a sentence for a different meeting.
               </p>
               <p>
-                What to carry into the first sitting is <Link href="/blog-first-private-forex-lesson-dubai">your first private forex lesson in Dubai</Link>. What the booked hour contains is{" "}
+                What to carry into the first sitting is <Link href="/blog-first-private-forex-lesson-dubai">your first private forex lesson in Dubai</Link>. The agenda of the sitting itself, once you are in the chair, is{" "}
+                <Link href="/blog-private-forex-mentorship-hour-dubai">what one private mentorship hour contains</Link>. What the booked hour contains is{" "}
                 <Link href="/blog-live-forex-trading-session-dubai">a live forex session</Link>. The room, private or group, is{" "}
                 <Link href="/blog-private-vs-group-forex-classes-dubai">private versus group</Link>. A group seat remains the right room when you want the shared list and you can keep the same hour. Premium, in this brief, is not a reason to avoid the group if the group is the room you will actually attend.
               </p>

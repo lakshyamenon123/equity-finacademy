@@ -70,7 +70,7 @@ export default function StockMarketCourseDubaiPage() {
               Stock Market Course in Dubai
             </h1>
             <p className="hero-sub" style={{ marginTop: 18, maxWidth: "68ch" }}>
-              A stock market course in Dubai should name the chart you will mark and the person who will correct it. Equity Fin Academy teaches that chart work in person in Dubai, UAE, and online across the UAE. Stocks, indices, and gold are marked on MetaTrader 5, alongside forex, in a live group class or a private lesson. If the search was stock trading classes nearby, the longer note is{" "}
+              A stock market course in Dubai should name the chart you will mark and the person who will correct it. Searches for stock market courses in Dubai, in the plural, reach this page. There is one course to book. Equity Fin Academy teaches that chart work in person in Dubai, UAE, and online across the UAE. Stocks, indices, and gold are marked on MetaTrader 5, alongside forex, in a live group class or a private lesson. If the search was stock trading classes nearby, the longer note is{" "}
               <Link href="/blog-stock-trading-classes-near-me-dubai">stock trading classes near me in Dubai</Link>. The first weeks of study, before you enquire, are in{" "}
               <Link href="/blog-stock-market-course-dubai-first-weeks">what a stock market course in Dubai should cover first</Link>.
             </p>

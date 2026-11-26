@@ -171,7 +171,8 @@ export default function PrivateOneToOneFortnightPost() {
               </p>
               <p>
                 What the booked hour contains, once the brief is in the room, is{" "}
-                <Link href="/blog-live-forex-trading-session-dubai">a live forex session in Dubai</Link>. A longer coaching page, across several weeks rather than one fortnight, is{" "}
+                <Link href="/blog-live-forex-trading-session-dubai">a live forex session in Dubai</Link>. The order of work inside a single sitting is{" "}
+                <Link href="/blog-private-forex-mentorship-hour-dubai">what one private mentorship hour contains</Link>. A longer coaching page, across several weeks rather than one fortnight, is{" "}
                 <Link href="/blog-personal-forex-coaching-uae">what a coaching plan looks like</Link>. The school&apos;s mentorship page is{" "}
                 <Link href="/forex-mentorship-dubai">forex mentorship in Dubai</Link>.
               </p>
