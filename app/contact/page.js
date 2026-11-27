@@ -13,7 +13,7 @@ import { INTEREST_FEES } from "../lib/leadOffers";
 
 const contactTitle = "Contact Equity Fin Academy in Dubai";
 const contactDescription =
-  "Contact Equity Fin Academy in Dubai, UAE. Leave your name and WhatsApp number for fees in AED, a private one-to-one or group class, or a free demo class. Replies the same day.";
+  "Contact Equity Fin Academy in Dubai, UAE. Ask about a private or group class, a free demo, or fees in AED. Replies the same day.";
 
 export const metadata = pageMetadata({
   title: "Contact Equity Fin Academy in Dubai | WhatsApp Enquiry",

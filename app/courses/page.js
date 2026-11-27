@@ -210,6 +210,48 @@ export default function CoursesPage() {
           </div>
         </section>
 
+        <section className="tight" id="syllabus">
+          <div className="container prose-block">
+            <span className="eyebrow">SYLLABUS IN TEACHING ORDER</span>
+            <h2>What each line of the forex course is for.</h2>
+            <p>
+              The cards above are the topic names. This section is what those names mean in a live class in Dubai, UAE, or online across the UAE, so you can tell whether you already have the skill. The page is the course. It is not a brochure that sends you somewhere else for the curriculum. Private and group forex training starts from AED 1,500. A <Link href="/free-demo">free demo class</Link> is how you see the teaching before you choose a track.
+            </p>
+            <h3>Basic to Intermediate, in the order it is taught</h3>
+            <p>
+              <strong>Basics of forex.</strong> You should be able to say what a currency pair is, which currency is the base, which is the quote, and what a pip is on the pair in front of you. The dirham&apos;s link to the US dollar is why USD pairs feel familiar to many people in the UAE. That familiarity is not the same as being able to read the quote. The written version is <Link href="/blog-currency-pairs-uae">currency pairs for learners in the UAE</Link>.
+            </p>
+            <p>
+              <strong>Candlestick patterns.</strong> One candle has an open, a high, a low, and a close. The class asks you to say what that candle did before anyone names a pattern. A pattern name without that sentence is decoration. Read <Link href="/blog-candlestick-patterns">how to read candlesticks</Link> if you want the vocabulary the night before.
+            </p>
+            <p>
+              <strong>HA pattern strategy.</strong> Heikin Ashi is a smoother view of the same price, taught after you can read a normal candle. It is not a second market and it is not a shortcut past structure. If the normal candle is still unclear, this line waits.
+            </p>
+            <p>
+              <strong>Market structure.</strong> You point at the last two swing highs and the last two swing lows and say whether that sequence is a trend or a range. Everything later in the course hangs on this. The plain-language note is <Link href="/blog-market-structure">what market structure is</Link>.
+            </p>
+            <p>
+              <strong>Orders placed by smart money, and imbalance.</strong> These lines come after you can mark a swing. The class looks for one sweep or one gap on a chart you can already describe. The vocabulary is not a separate product. <Link href="/blog-smart-money-concepts">Smart money concepts for beginners</Link> is the drill: one swing, then the word.
+            </p>
+            <p>
+              <strong>Indicators, and the G.C. strategy.</strong> An indicator is a second look at structure you have already marked. The G.C. strategy is taught on the chart in class. These public notes do not reprint it as a formula you can paste into a platform. If a page offers you the formula without the swing, it has skipped the course.
+            </p>
+            <h3>Advanced Institutional Strategies, after the swing is familiar</h3>
+            <p>
+              This track assumes the basic lines are familiar. Booking it to save time, when the swing is still unclear, usually means paying to hear the beginner lessons inside an advanced hour. The advanced list adds fundamental analysis, tools used on institutional desks, market profile, volume read alongside smart money concepts, Fibonacci retracement, risk and psychology, and bot-trading concepts. Lifetime WhatsApp with the instructor after the course belongs to this track. It is not a booked one-to-one hour, and it is not included with Basic to Intermediate.
+            </p>
+            <p>
+              Fundamental analysis here means you can find a scheduled release and say what the calendar says, in Gulf Standard Time, before you decide whether your chart hour should avoid it. The diary is <Link href="/blog-forex-economic-calendar-dubai">how to read a forex economic calendar in Dubai</Link>. Market profile and volume are taught on the platform in the room, on a chart you can point at. Fibonacci is a measuring tool on that same chart, not a prediction. Risk and psychology in this track sit on top of the dirham work in <Link href="/blog-risk-management">how much to risk per trade</Link>. A business owner who needs the rules above that arithmetic should read <Link href="/blog-forex-risk-framework-business-owners-dubai">the risk framework for business owners in Dubai</Link>.
+            </p>
+            <p>
+              Bot-trading concepts are explained so you know what an automated tool is claiming to do. A concept in a lesson is not a robot included with the fee. Practical sessions still run on MetaTrader 5, through StarTrader, regulated by the UAE Securities and Commodities Authority. You open the account yourself. The course fee and the broker balance are separate. The window the hour will point at is <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>.
+            </p>
+            <p>
+              A group cohort follows this list on one shared clock. A private lesson can use the same list on your chart, or spend the hour on a question you brought. Executives who need the hour to fit a Sunday-to-Thursday week should read <Link href="/blog-executive-forex-study-schedule-dubai">how to fit forex learning around a busy executive schedule</Link> before they ask for a morning that does not exist. The message itself goes to <Link href="/contact">contact</Link>.
+            </p>
+          </div>
+        </section>
+
         <section className="tight" id="private-one-to-one">
           <div className="container prose-block">
             <span className="eyebrow">PRIVATE ONE-TO-ONE</span>

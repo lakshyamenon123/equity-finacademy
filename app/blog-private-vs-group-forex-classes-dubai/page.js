@@ -94,7 +94,7 @@ export default function PrivateVsGroupPost() {
                 are in <Link href="/blog-group-forex-classes-friends-dubai">group forex classes for friends and colleagues</Link>.
               </p>
               <p>
-                The topic list sits on the <Link href="/courses">courses page</Link>.{" "}
+                The topic list sits on the <Link href="/courses">courses page</Link>. The window both rooms will eventually point at is <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>.{" "}
                 <Link href="/blog-forex-course-dubai-beginners">What a beginner course in Dubai includes</Link> walks
                 the first track without the adjectives. Read{" "}
                 <Link href="/blog-candlestick-patterns">candlesticks</Link> and{" "}

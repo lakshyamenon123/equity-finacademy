@@ -125,6 +125,7 @@ const PAGES = new Set([
   "/blog-forex-coaching-entrepreneurs-flexible-week",
   "/blog-forex-course-dubai-beginners",
   "/blog-forex-economic-calendar-dubai",
+  "/blog-executive-forex-study-schedule-dubai",
   "/blog-forex-education-senior-executives-dubai",
   "/blog-forex-education-uae",
   "/blog-forex-leverage-margin-mt5-uae",
@@ -132,6 +133,7 @@ const PAGES = new Set([
   "/blog-forex-mentorship-difc-professionals",
   "/blog-forex-performance-review-dubai",
   "/blog-forex-portfolio-diversification-uae",
+  "/blog-forex-risk-framework-business-owners-dubai",
   "/blog-forex-position-sizing-high-capital-uae",
   "/blog-forex-spreads-swaps-pip-value-uae",
   "/blog-forex-trading-business-owners-uae",
@@ -226,14 +228,14 @@ export function middleware(request) {
   const params = new URLSearchParams(request.nextUrl.searchParams);
   let queryChanged = false;
 
-  // /contact?course=... was an old enquiry link. The form ignores it, so it is
-  // the same document as /contact. Drop the parameter. Do not forward it.
-  // Match the path in any case so /Contact?course= does not stay a second URL.
+  // /contact?course=... is an old enquiry URL for this same document. Do not
+  // redirect it. Search Console listed those URLs as "Page with redirect" and
+  // validation failed while the 301 was in place. The page returns 200. The
+  // canonical, in the HTML and the Link header, stays the clean contact URL.
+  // The form ignores the parameter. Internal links use /contact with no query.
+  // A different capitalisation, such as /Contact?course=, still goes to
+  // /contact in one hop, and keeps the query so that hop is not a loop.
   const isContact = stripped.toLowerCase() === "/contact";
-  if (isContact && params.has("course")) {
-    params.delete("course");
-    queryChanged = true;
-  }
 
   for (const key of [...params.keys()]) {
     if (TRACKING_PARAMS.has(key.toLowerCase())) {

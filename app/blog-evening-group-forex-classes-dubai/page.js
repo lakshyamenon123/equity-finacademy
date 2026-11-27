@@ -120,7 +120,7 @@ export default function EveningGroupForexClassesPost() {
 
               <h2>The class hour and the busy hour are different decisions</h2>
               <p>
-                People sometimes ask for an evening class because they want to watch the overlap, and sometimes because the overlap is when they are still at work and 8pm is the first free hour. Say which one you mean.
+                People sometimes ask for an evening class because they want to watch the overlap, and sometimes because the overlap is when they are still at work and 8pm is the first free hour. Say which one you mean. A private evening hour, or a weekend one-to-one review, is a different booking from this shared cohort. That diary is <Link href="/blog-executive-forex-study-schedule-dubai">how to fit forex learning around a busy executive schedule</Link>.
               </p>
               <ul className="guide-list">
                 <li>

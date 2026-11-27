@@ -14,10 +14,10 @@ const path = "/executive-market-briefing";
 const title = "Executive Market Briefing in Dubai";
 const nextBriefing = "Next briefing: Thursday 3 December 2026, 7:30 pm Dubai time.";
 const description =
-  "The next Executive Market Briefing is Thursday 3 December 2026 at 7:30 pm Dubai time, with mentor Gopi Chandran. A small room in Dubai, UAE, for 10 to 12 seats, plus an online seat. Register and confirm your seat on WhatsApp.";
+  "Thursday 3 December 2026, 7:30 pm Dubai time, with Gopi Chandran. A small room in Dubai, UAE, plus an online seat. Confirm on WhatsApp.";
 
 export const metadata = pageMetadata({
-  title: "Executive Market Briefing, Dubai | Monthly Evening Session | Equity Fin Academy",
+  title: "Executive Market Briefing in Dubai | Equity Fin Academy",
   description,
   keywords:
     "market briefing Dubai, forex seminar Dubai executives, trading evening Dubai, forex workshop Dubai professionals, market outlook session UAE",

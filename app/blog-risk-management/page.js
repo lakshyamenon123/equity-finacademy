@@ -88,7 +88,8 @@ export default function BlogRiskManagementPage() {
               </p>
               <p>
                 The 5,000 AED figure on this page is a beginner illustration. When the money you can reach is much larger than the account you should use to learn, write a slice first. That reading is{" "}
-                <Link href="/blog-forex-position-sizing-high-capital-uae">position sizing for a high-capital account in the UAE</Link>.
+                <Link href="/blog-forex-position-sizing-high-capital-uae">position sizing for a high-capital account in the UAE</Link>. A business owner who needs the rules around that slice, including a weekly loss line and a pause when the company is tight, should read{" "}
+                <Link href="/blog-forex-risk-framework-business-owners-dubai">a forex risk framework for business owners in Dubai</Link>.
               </p>
 
               <h2>Always use a stop-loss</h2>

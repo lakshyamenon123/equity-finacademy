@@ -11,10 +11,10 @@ import { whatsappHref } from "../lib/whatsapp";
 const path = "/free-demo";
 const title = "Book a Free Demo Forex Class in Dubai";
 const description =
-  "Book a free demo forex class with mentor Gopi Chandran in Dubai or online. Pick a weekday evening or Saturday slot, private one-to-one or small group, and confirm on WhatsApp.";
+  "Book a free demo forex class with Gopi Chandran in Dubai or online. Weekday evening or Saturday, private or small group. Confirm on WhatsApp.";
 
 export const metadata = pageMetadata({
-  title: "Free Demo Forex Class in Dubai | Book a Slot | Equity Fin Academy",
+  title: "Free Demo Forex Class in Dubai | Equity Fin Academy",
   description,
   keywords:
     "free demo forex class Dubai, free forex class UAE, private forex lesson Dubai, forex training Dubai demo, forex course Dubai trial class",

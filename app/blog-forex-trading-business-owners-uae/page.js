@@ -149,7 +149,8 @@ export default function ForexTradingBusinessOwnersPost() {
               <h2>Risk, written in dirhams before the setup</h2>
               <p>
                 Decide what one practice trade is allowed to lose, in dirhams, before you care which setup it was. Write that number where you will see it. The class can check the arithmetic. It cannot choose the number for your household or your shareholders. How the figure is built from a stop distance is{" "}
-                <Link href="/blog-risk-management">how much to risk per trade</Link>.
+                <Link href="/blog-risk-management">how much to risk per trade</Link>. The rules that sit above that figure, including a weekly loss line and what a tight company week is not allowed to change, are in{" "}
+                <Link href="/blog-forex-risk-framework-business-owners-dubai">a forex risk framework for business owners in Dubai</Link>.
               </p>
               <p>
                 Leverage lets a small balance control a larger position. That line on the platform is explained in{" "}

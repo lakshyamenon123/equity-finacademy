@@ -55,7 +55,7 @@ const postSchema = articleSchema({
   description,
   path,
   datePublished: "2026-11-21",
-  dateModified: "2026-11-21",
+  dateModified: "2026-11-27",
   type: "BlogPosting",
 });
 
@@ -87,7 +87,7 @@ export default function FamilyOfficeAbuDhabiPost() {
             <div className="blog-article">
               <span className="eyebrow">ABU DHABI</span>
               <h1>{headline}</h1>
-              <AuthorByline detail="21 Nov 2026 · 12 min read" />
+              <AuthorByline detail="Updated 27 Nov 2026 · 16 min read" />
 
               <p>
                 A principal in Abu Dhabi, a family-office staff member who already sits in allocation meetings, and a private investor who manages their own capital often ask for forex training as if the lesson were another line in the book. It is not. This note is about keeping the money you are allowed to learn with separate from capital that already has a job, and about booking a private hour that fits an Abu Dhabi week. It is not a view on what the family should hold.
@@ -166,6 +166,61 @@ export default function FamilyOfficeAbuDhabiPost() {
               <p>
                 Name the weeks that are not free. A travel week, an investment meeting that runs through the evening, or a family commitment that owns Saturday is a reason to move the hour, not a reason to send an order from an airport queue. Session times on the UAE clock are in{" "}
                 <Link href="/blog-forex-market-hours-dubai">forex market hours in Dubai</Link>. A quieter hour is allowed. The private lesson can sit outside the London and New York overlap. An executive in Dubai who already has an adviser, and wants the brief that keeps mentorship off that wealth, should read <Link href="/blog-premium-executive-forex-mentorship-dubai">premium executive forex mentorship in Dubai</Link>.
+              </p>
+
+              <h2>A sheet to fill the day before, from Abu Dhabi</h2>
+              <p>
+                The three amounts above tell you what may come into the room. They do not tell you what to do with the half-hour you actually have. A principal, and a staff member who prepares the principal, often waste that half-hour reconstructing the question. Fill this sheet the day before. Keep it to one page. If you would not say a line outside the office, leave it off the sheet.
+              </p>
+              <div className="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Line on the sheet</th>
+                      <th>A useful answer</th>
+                      <th>Leave this off</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Who is in the hour</td>
+                      <td>You, alone, or you and one colleague who already has permission to hear the chart discussion.</td>
+                      <td>A list of family members, beneficiaries, or staff who will not attend.</td>
+                    </tr>
+                    <tr>
+                      <td>Where you will be</td>
+                      <td>Online from Abu Dhabi, or in Dubai on a day you are already there. Gulf Standard Time, and the clock time.</td>
+                      <td>A request that the academy guess the week for you.</td>
+                    </tr>
+                    <tr>
+                      <td>The symbol</td>
+                      <td>One pair or gold, on a demo if you cannot yet point at a stop.</td>
+                      <td>A holding from a mandate, or a manager&apos;s book.</td>
+                    </tr>
+                    <tr>
+                      <td>The amount set aside to learn</td>
+                      <td>A dirham figure, or the sentence &quot;not chosen yet, staying on a demo.&quot;</td>
+                      <td>The family balance sheet, a property value, or a password.</td>
+                    </tr>
+                    <tr>
+                      <td>The one question</td>
+                      <td>A sentence you can read aloud in under fifteen seconds.</td>
+                      <td>A request to rebalance something the lesson will not see.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>
+                A staff member who will not be in the hour can still be useful. Their job is to protect the clock and to keep documents that do not belong in the lesson out of the lesson. They do not need a summary of the chart, and they should not be asked to place a ticket. Tell them the time, the format, and that the academy does not take a mandate. That is the whole brief.
+              </p>
+              <p>
+                If you are the person in the chair, use the thirty minutes before the call for one job. Open the symbol. Confirm you can point at the last swing, or write down that you cannot. Read the five fields on <Link href="/blog-mt5-order-ticket-dubai">the MetaTrader 5 order ticket</Link> and close the window without sending. Do not open a second platform, a news feed, and a portfolio report in the same half-hour. The hour is already short. Arriving with three screens means the instructor spends it helping you find the chart.
+              </p>
+              <p>
+                The same half-hour looks different if your constraint is a company you run in Dubai, rather than capital in Abu Dhabi. The weekly loss line and the pause for a tight business week are in <Link href="/blog-forex-risk-framework-business-owners-dubai">a forex risk framework for business owners in Dubai</Link>. How to place the sitting on a weekend review or a weekday evening, when the diary is the problem rather than the mandate, is <Link href="/blog-executive-forex-study-schedule-dubai">how to fit forex learning around a busy executive schedule</Link>. Those pages do not replace this one. A family office that copies a founder&apos;s cash split, or a founder who copies a family mandate, has mixed two decisions.
+              </p>
+              <p>
+                After the hour, write four lines before you go back to the office: the symbol, whether you could point at the swing, whether a practice order was placed, and the next question. Leave the family&apos;s other assets off that note. A colleague who asks &quot;what did we decide to buy&quot; should hear that the hour does not decide that. The topic order, if the swing is still new, remains the <Link href="/courses">Basic to Intermediate track</Link>. A <Link href="/free-demo">free demo class</Link> is the right first sitting when you want to see the teaching before a longer booking.
               </p>
 
               <h2>Questions worth asking before you pay</h2>
