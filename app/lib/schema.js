@@ -64,10 +64,10 @@ export function breadcrumbSchema(items) {
         position: index + 1,
         name: item.name,
         // Google's breadcrumb report labels this value "id" (the item id).
-        // It must be the absolute page URL as a string. A nested WebPage,
-        // a literal id field, or an @id with a #fragment is reported as
-        // "Invalid URL in field id" — including on /pricing and
-        // /forex-academy-in-dubai after the object form was published.
+        // It must be the absolute page URL as a string: item, name, and
+        // position, with no nested object, no literal id field, and no
+        // @id fragment. An object here was reported as "Invalid URL in
+        // field id" on /pricing and /forex-academy-in-dubai.
         item: pageUrl,
       };
     }),

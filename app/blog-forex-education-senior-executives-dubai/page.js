@@ -178,8 +178,9 @@ export default function SeniorExecutiveForexRoutinePost() {
               </p>
               <p>
                 Those four lines belong with <Link href="/blog-forex-trading-plan-uae">a trading plan and journal</Link>. Session times on the UAE clock, if you want the London and New York overlap and you are still in a meeting then, are in{" "}
-                <Link href="/blog-forex-market-hours-dubai">forex market hours in Dubai</Link>. A private hour can sit outside that overlap. Weekend review, when the market is shut from Saturday morning until Monday morning UAE time, is a normal request. See{" "}
-                <Link href="/weekend-forex-classes-dubai">weekend forex classes in Dubai</Link>.
+                <Link href="/blog-forex-market-hours-dubai">forex market hours in Dubai</Link>. A private hour can sit outside that overlap.                 Weekend review, when the market is shut from Saturday morning until Monday morning UAE time, is a normal request. See{" "}
+                <Link href="/weekend-forex-classes-dubai">weekend forex classes in Dubai</Link>. How to choose that review against a weekday evening one-to-one hour is{" "}
+                <Link href="/blog-executive-forex-study-schedule-dubai">how to fit forex learning around a busy executive schedule</Link>.
               </p>
 
               <h2>What the private hour is allowed to decide</h2>

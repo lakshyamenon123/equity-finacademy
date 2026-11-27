@@ -44,19 +44,20 @@ Allow: /
 
 User-agent: *
 Allow: /
-# Do not disallow /_next/static. Googlebot needs the CSS in /_next/static/css/
-# and the JavaScript in /_next/static/chunks/ to render the page. Font files in
-# /_next/static/media/ are woff2. They are allowed so the page can render, and
-# the response carries X-Robots-Tag: noindex so the file is not a document.
-# CSS and JavaScript are not given that header.
+# Do not disallow /_next/static as a whole. Googlebot needs the CSS in
+# /_next/static/css/ and the JavaScript in /_next/static/chunks/ to render
+# the page. Font files in /_next/static/media/ are woff2. Crawlers are asked
+# not to fetch them. Browsers still can. A font response also carries
+# X-Robots-Tag: noindex. CSS and JavaScript are not given that header.
 Allow: /_next/static/css/
 Allow: /_next/static/chunks/
-Allow: /_next/static/media/
+Disallow: /_next/static/media/
 
-# /favicon.ico is the icon Google shows beside results. It is allowed, it is
-# not in the sitemap, and it is not sent with noindex. It should return 200
-# as an icon file. /apple-touch-icon.png, /og-image.png, and /mentor.jpg are
-# images, not pages. They stay out of the sitemap and are sent with noindex.
+# /favicon.ico is the icon beside results. It is allowed, it returns 200 as
+# an icon file, it is not in the sitemap, and the response sends
+# X-Robots-Tag: noindex so the file URL is not treated as a page.
+# /apple-touch-icon.png, /og-image.png, and /mentor.jpg are images, not pages.
+# They stay out of the sitemap and are sent with noindex.
 Allow: /favicon.ico
 
 Sitemap: https://www.equityfinacademy.com/sitemap.xml

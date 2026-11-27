@@ -11,10 +11,10 @@ import { breadcrumbSchema, webPageSchema } from "../lib/schema";
 const path = "/free-trading-plan";
 const title = "Free Executive's One-Page Trading Plan";
 const description =
-  "A free one-page forex trading plan for busy UAE executives and professionals: capital set aside, risk per trade in AED, hours on Dubai time, setup, and a weekly review. Printable, with a WhatsApp follow-up.";
+  "A free one-page forex plan for executives in Dubai: capital set aside, risk in AED, hours on UAE time, and a weekly review.";
 
 export const metadata = pageMetadata({
-  title: "Free One-Page Forex Trading Plan for Executives | Equity Fin Academy",
+  title: "Free Forex Trading Plan for Executives | Dubai",
   description,
   keywords:
     "forex trading plan template, one page trading plan, trading plan for executives UAE, forex trading plan Dubai, free forex resource UAE",

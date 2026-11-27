@@ -120,7 +120,7 @@ export default function PositionSizingHighCapitalPost() {
                 Investors who already hold capital, and need that boundary in writing, should read{" "}
                 <Link href="/blog-forex-portfolio-diversification-uae">forex beside a portfolio</Link> and{" "}
                 <Link href="/blog-forex-training-family-office-abu-dhabi">forex training for family offices and investors in Abu Dhabi</Link>. A founder separating company cash from a learning balance should read{" "}
-                <Link href="/blog-forex-trading-business-owners-uae">forex education for business owners</Link>. A weekly routine for the slice, once it exists, is in{" "}
+                <Link href="/blog-forex-trading-business-owners-uae">forex education for business owners</Link>. The weekly loss line that sits above the size, and the pause when the company is tight, are in <Link href="/blog-forex-risk-framework-business-owners-dubai">a forex risk framework for business owners in Dubai</Link>. A weekly routine for the slice, once it exists, is in{" "}
                 <Link href="/blog-forex-education-senior-executives-dubai">forex education for senior executives in Dubai</Link>.
               </p>
 

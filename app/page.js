@@ -164,6 +164,34 @@ export default function HomePage() {
           </div>
         </section>
 
+        <section className="tight">
+          <div className="container prose-block">
+            <span className="eyebrow">WHO THE HOUR IS FOR</span>
+            <h2>A private hour for people whose week is already full.</h2>
+            <p>
+              Equity Fin Academy teaches forex in Dubai, UAE, and live online across the UAE. The people who write in are often not looking for a morning classroom. They run a company, sit in DIFC or Business Bay through the afternoon, live in Dubai Marina, Downtown Dubai, or on Palm Jumeirah, or manage their own capital from Abu Dhabi. The course is the same two tracks. What changes is the hour you can keep, and which money is allowed to be used for study.
+            </p>
+            <p>
+              If you already hold capital, start with the boundary, not with a platform tour.{" "}
+              <Link href="/blog-forex-training-family-office-abu-dhabi">Forex training for family offices and investors in Abu Dhabi</Link>{" "}
+              is how a learning amount stays apart from money that already has a job.{" "}
+              <Link href="/blog-forex-risk-framework-business-owners-dubai">A forex risk framework for business owners in Dubai</Link>{" "}
+              is the page a founder writes before the chart is discussed: a weekly loss line on the learning balance, and a rule for weeks when the company is tight. The arithmetic for one trade, once that line exists, is{" "}
+              <Link href="/blog-risk-management">how much to risk per trade</Link>.
+            </p>
+            <p>
+              If the constraint is the diary, read{" "}
+              <Link href="/blog-executive-forex-study-schedule-dubai">how to fit forex learning around a busy executive schedule</Link>.
+              It compares a weekend one-to-one review, while the forex market is shut from Saturday morning until Monday morning UAE time, with a weekday evening one-to-one hour after the office. A shared evening cohort is a different booking:{" "}
+              <Link href="/blog-evening-group-forex-classes-dubai">evening group classes</Link>. The window that hour will point at, on a demo, is{" "}
+              <Link href="/blog-mt5-order-ticket-dubai">the MetaTrader 5 order ticket</Link>.
+            </p>
+            <p>
+              The topic order is on <Link href="/courses">the courses page</Link>. A <Link href="/free-demo">free demo class</Link> is how you see the teaching before you choose a track. Private and group training starts from AED 1,500. The fee for your format is quoted when you ask, on <Link href="/contact">the contact page</Link>.
+            </p>
+          </div>
+        </section>
+
         <section>
           <div className="container">
             <div className="section-head reveal">

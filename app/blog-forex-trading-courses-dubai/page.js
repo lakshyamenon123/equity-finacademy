@@ -89,7 +89,7 @@ export default function ForexTradingCoursesDubaiPost() {
               </p>
               <p>
                 Practical sessions use MetaTrader 5. The English recording below is a walkthrough of the platform and of opening a broker account. Watch it so the buttons are familiar. It does not replace the cohort. The install steps are in{" "}
-                <Link href="/blog-start-forex-trading-uae-mt5">how to start forex trading in the UAE with MT5</Link>.
+                <Link href="/blog-start-forex-trading-uae-mt5">how to start forex trading in the UAE with MT5</Link>. The fields a live hour will point at, symbol, volume, stop loss, and take profit, are in <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>.
               </p>
 
               <h2>Group and private should be named separately</h2>

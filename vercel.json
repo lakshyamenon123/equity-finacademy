@@ -142,6 +142,10 @@
       "headers": [{ "key": "Link", "value": "<https://www.equityfinacademy.com/contact>; rel=\"canonical\"" }]
     },
     {
+      "source": "/favicon.ico",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }]
+    },
+    {
       "source": "/apple-touch-icon.png",
       "headers": [{ "key": "X-Robots-Tag", "value": "noindex" }]
     },

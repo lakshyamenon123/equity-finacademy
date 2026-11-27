@@ -134,7 +134,7 @@ export default function StockMarketCourseFirstWeeksPost() {
                 <Link href="/blog-forex-spreads-swaps-pip-value-uae">spreads, swaps, and pip value</Link>, written for forex and still the right habit on any symbol: read the figure on your terminal, do not invent today&apos;s gap from a blog.
               </p>
               <p>
-                The clock is not the same. A forex pair is quoted through the weekday. A share follows the session of the market that lists it. Do not assume a US share is moving at noon Gulf Standard Time just because EUR/USD is. Open the symbol specification in MetaTrader 5 and read the session that platform shows. The English lesson below, from Equity Global English, discusses choosing a broker in the UAE and investing in US stocks from the UAE. It is a preview of the questions, not a list of hours to memorise.
+                The clock is not the same. A forex pair is quoted through the weekday. A share follows the session of the market that lists it. Do not assume a US share is moving at noon Gulf Standard Time just because EUR/USD is. Open the symbol specification in MetaTrader 5 and read the session that platform shows. The labels on the order window, for a share or for a pair, are in <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>. The English lesson below, from Equity Global English, discusses choosing a broker in the UAE and investing in US stocks from the UAE. It is a preview of the questions, not a list of hours to memorise.
               </p>
               <p>
                 If the platform is not installed, the written steps are in{" "}
