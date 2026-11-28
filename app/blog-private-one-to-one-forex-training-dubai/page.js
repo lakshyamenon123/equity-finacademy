@@ -11,6 +11,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema, faqPageSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { whatsappHref } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-private-one-to-one-forex-training-dubai";
 const headline = "Private One-to-One Forex Training in Dubai for a Fortnight You Can Keep";
@@ -197,6 +198,7 @@ export default function PrivateOneToOneFortnightPost() {
                 <Link href="/weekend-forex-classes-dubai">weekend forex classes in Dubai</Link>.
               </p>
 
+              <PostCta path="/blog-private-one-to-one-forex-training-dubai" placement="mid" />
               <h2>The brief you send the day before</h2>
               <p>
                 Four lines. They replace a long message about how busy the fortnight was.
@@ -256,18 +258,7 @@ export default function PrivateOneToOneFortnightPost() {
               <h2>Questions from a fortnight calendar</h2>
               <FaqList items={fortnightFaq} />
               <AcademyLinks lead="The school pages, once the cadence is honest, are the" />
-              <div className="blog-cta">
-                <p>Name the next hour you can keep, and one symbol. Ask for a free demo class or a one-to-one meeting with Gopi.</p>
-                <div className="cta-row">
-                  <Link href="/free-demo" className="btn btn-primary">
-                    Book a free demo class
-                  </Link>
-                  <OpenChatLink className="btn btn-outline">Open the site chat</OpenChatLink>
-                  <a href={whatsapp} className="btn btn-outline" target="_blank" rel="noopener noreferrer">
-                    WhatsApp +971 55 904 7030
-                  </a>
-                </div>
-              </div>
+              <PostCta path="/blog-private-one-to-one-forex-training-dubai" />
             </div>
           </div>
         </section>

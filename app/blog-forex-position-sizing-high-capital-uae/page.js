@@ -10,6 +10,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema, faqPageSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { whatsappHref } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-forex-position-sizing-high-capital-uae";
 const headline = "Position Sizing for a High-Capital Forex Account in the UAE";
@@ -192,6 +193,7 @@ export default function PositionSizingHighCapitalPost() {
                 </li>
               </ul>
 
+              <PostCta path="/blog-forex-position-sizing-high-capital-uae" placement="mid" />
               <h2>Keep the size inside the plan you can reread</h2>
               <p>
                 The three numbers belong on the same page as the symbol, the session you are allowed to trade, and the time you stop. That page is{" "}
@@ -226,17 +228,7 @@ export default function PositionSizingHighCapitalPost() {
               <h2>Questions about size on a large account</h2>
               <FaqList items={sizingFaq} />
               <AcademyLinks lead="The class that can watch the three numbers with you is the" />
-              <div className="blog-cta">
-                <p>Write the slice first. The lot is what remains after the stop has a dirham cost.</p>
-                <div className="cta-row">
-                  <Link href="/contact" className="btn btn-primary">
-                    Book a class
-                  </Link>
-                  <Link href="/free-demo" className="btn btn-outline">
-                    Book a free demo class
-                  </Link>
-                </div>
-              </div>
+              <PostCta path="/blog-forex-position-sizing-high-capital-uae" />
             </div>
           </div>
         </section>

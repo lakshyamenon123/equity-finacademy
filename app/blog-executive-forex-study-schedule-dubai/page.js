@@ -11,6 +11,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema, faqPageSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { whatsappHref } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-executive-forex-study-schedule-dubai";
 const headline = "How to Fit Forex Learning Around a Busy Executive Schedule in Dubai";
@@ -163,6 +164,7 @@ export default function ExecutiveForexStudySchedulePost() {
                 The first sitting, and what to carry into it, is <Link href="/blog-first-private-forex-lesson-dubai">your first private forex lesson in Dubai</Link>. What the booked hour contains once you are in it is <Link href="/blog-live-forex-trading-session-dubai">a live forex session</Link>. If you can keep a private hour every two weeks and not every week, the work between sittings is <Link href="/blog-private-one-to-one-forex-training-dubai">private one-to-one training for a fortnight you can keep</Link>. The agenda of a single sitting, written as the contents rather than the calendar, is <Link href="/blog-private-forex-mentorship-hour-dubai">what one private mentorship hour contains</Link>.
               </p>
 
+              <PostCta path="/blog-executive-forex-study-schedule-dubai" placement="mid" />
               <h2>Abu Dhabi, and a week you are not in Dubai</h2>
               <p>
                 Gulf Standard Time is the same in Abu Dhabi and Dubai. A class at 8pm is 8pm in both cities. You do not need to drive for every hour. Use the room in Dubai when you are already in the city, and take the other hours online. A principal or a family-office colleague who is separating money set aside to learn from capital that already has a job should read <Link href="/blog-forex-training-family-office-abu-dhabi">forex training for family offices and investors in Abu Dhabi</Link> before they treat this schedule as a mandate review. The schedule does not decide which dirhams may be used. That decision is a different page. A founder separating company cash uses <Link href="/blog-forex-risk-framework-business-owners-dubai">a risk framework for business owners in Dubai</Link>.
@@ -199,21 +201,7 @@ export default function ExecutiveForexStudySchedulePost() {
               <h2>Questions about the hour</h2>
               <FaqList items={scheduleFaq} />
               <AcademyLinks lead="The school pages, once the hour is chosen, are the" />
-              <div className="blog-cta">
-                <p>Name a weekend review or a weekday evening. Ask for a free demo class or a one-to-one meeting with Gopi.</p>
-                <div className="cta-row">
-                  <Link href="/free-demo" className="btn btn-primary">
-                    Book a free demo class
-                  </Link>
-                  <Link href="/courses" className="btn btn-outline">
-                    View the course tracks
-                  </Link>
-                  <OpenChatLink className="btn btn-outline">Open the site chat</OpenChatLink>
-                  <a href={whatsapp} className="btn btn-outline" target="_blank" rel="noopener noreferrer">
-                    WhatsApp +971 55 904 7030
-                  </a>
-                </div>
-              </div>
+              <PostCta path="/blog-executive-forex-study-schedule-dubai" />
             </div>
           </div>
         </section>

@@ -10,6 +10,7 @@ import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { SITE } from "../lib/site";
 import { STARTRADER_LIVE_URL } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-forex-education-uae";
 const headline = "Forex Education in the UAE: What to Study Before You Book a Class";
@@ -97,6 +98,7 @@ export default function ForexEducationUaePost() {
                 If you want the order handed to you, book the group. Basic to Intermediate is the beginner track. Advanced Institutional Strategies is for people who already read structure. The lists are on the <Link href="/courses">forex trading courses</Link> page. If you want one chart reviewed, book the private hour, and bring the aim written down. What that page should contain is <Link href="/blog-personal-forex-coaching-uae">personal forex coaching in the UAE</Link>. How to choose between the two formats is <Link href="/blog-private-vs-group-forex-classes-dubai">private versus group classes</Link>.
               </p>
 
+              <PostCta path="/blog-forex-education-uae" placement="mid" />
               <h2>When a trading class in Dubai is the next step</h2>
               <p>
                 Book when the four points above are familiar and you are repeating the same mistake on a chart. That is a teaching problem. Booking earlier is also reasonable if you would rather hear the definitions once, in order, instead of assembling them from search. Say which of those you are when you enquire, so you are not put on the advanced track to hear what a candle is.
@@ -132,6 +134,7 @@ export default function ForexEducationUaePost() {
                 , or use the <Link href="/contact">contact page</Link>. The academy is open 24/7 and rated 5.0 on Google from 30+ reviews. More than 2,000 students have trained through Equity Global and live classes. Read the listing on the <Link href="/success-stories">reviews page</Link> rather than a quote written for this article. The instructor is <Link href="/about">Gopi Chandran</Link>.
               </p>
               <AcademyLinks lead="When you are ready to enrol, the class is taught through the" />
+              <PostCta path="/blog-forex-education-uae" />
             </div>
           </div>
         </section>

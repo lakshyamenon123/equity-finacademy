@@ -8,6 +8,7 @@ import AuthorByline from "../components/AuthorByline";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { VIDEOS } from "../lib/videos";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-forex-course-dubai-beginners";
 const headline = "Forex Course in Dubai for Beginners: What to Expect";
@@ -98,6 +99,7 @@ export default function BeginnersCoursePost() {
                 Arriving with the words already familiar means your questions can be about your own chart.
               </p>
 
+              <PostCta path="/blog-forex-course-dubai-beginners" placement="mid" />
               <h2>What you actually study</h2>
               <p>The beginner track, in the order it is taught, covers:</p>
               <ul>
@@ -165,6 +167,7 @@ export default function BeginnersCoursePost() {
                 <a href="tel:+971559047030">+971 55 904 7030</a>.
               </p>
               <AcademyLinks lead="The enrolment pages are the" />
+              <PostCta path="/blog-forex-course-dubai-beginners" />
             </div>
           </div>
         </section>

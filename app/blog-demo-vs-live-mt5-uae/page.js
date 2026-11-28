@@ -10,6 +10,7 @@ import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { SITE } from "../lib/site";
 import { MT5_URL, STARTRADER_LIVE_URL, whatsappHref } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-demo-vs-live-mt5-uae";
 const headline = "Demo versus live: practising on MT5 before you trade in the UAE";
@@ -121,6 +122,7 @@ export default function DemoVsLiveMt5Post() {
                 your rent.
               </p>
 
+              <PostCta path="/blog-demo-vs-live-mt5-uae" placement="mid" />
               <h2>Which live account the classes use</h2>
               <p>
                 Practical sessions at Equity Fin Academy use{" "}
@@ -180,6 +182,7 @@ export default function DemoVsLiveMt5Post() {
                 . The <Link href="/contact">contact page</Link> has the same enquiry. The academy is open 24/7.
               </p>
               <AcademyLinks lead="When you want that practice corrected live, the class is the" />
+              <PostCta path="/blog-demo-vs-live-mt5-uae" />
             </div>
           </div>
         </section>

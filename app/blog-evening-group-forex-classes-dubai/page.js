@@ -9,6 +9,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { STARTRADER_LIVE_URL } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-evening-group-forex-classes-dubai";
 const headline = "Evening Group Forex Classes in Dubai on Gulf Standard Time";
@@ -148,6 +149,7 @@ export default function EveningGroupForexClassesPost() {
                 If the evening needs to stay on your own trades, book private instead. The packing list for that first sitting is <Link href="/blog-first-private-forex-lesson-dubai">what to bring and ask in a first private lesson</Link>. The format comparison is <Link href="/blog-private-vs-group-forex-classes-dubai">private versus group</Link> and the offer page is <Link href="/private-group-forex-training-dubai">private and group training</Link>. Colleagues who want the same evening together should agree the level first. That conversation is in <Link href="/blog-group-forex-classes-friends-dubai">group classes for friends and colleagues</Link>.
               </p>
 
+              <PostCta path="/blog-evening-group-forex-classes-dubai" placement="mid" />
               <h2>What to have ready by the time you leave the office</h2>
               <p>
                 An evening class fails in a familiar way: the platform is still installing at 7:10pm, the symbol is the wrong one, and the question is “what are we doing tonight?” Set this up before you commute or before you open the laptop at home.
@@ -197,17 +199,7 @@ export default function EveningGroupForexClassesPost() {
                 If the search that brought you here mixed stocks, gold, and forex, sort it with <Link href="/blog-investing-classes-near-me-dubai">investing classes near me in Dubai</Link> before you book the wrong chart. A forex visit checklist, once you know the subject, is <Link href="/blog-forex-classes-near-me-dubai">forex classes near me</Link>. The study order before either booking is <Link href="/blog-forex-education-uae">forex education in the UAE</Link>. The <Link href="/blog">blog</Link> holds the rest of the notes.
               </p>
               <AcademyLinks lead="Book the evening group class through the" />
-              <div className="blog-cta">
-                <p>Name the evenings you can keep. The fee is quoted in AED.</p>
-                <div className="cta-row">
-                  <Link href="/courses" className="btn btn-primary">
-                    See the course tracks
-                  </Link>
-                  <Link href="/free-demo" className="btn btn-outline">
-                    Book a free demo class
-                  </Link>
-                </div>
-              </div>
+              <PostCta path="/blog-evening-group-forex-classes-dubai" />
             </div>
           </div>
         </section>

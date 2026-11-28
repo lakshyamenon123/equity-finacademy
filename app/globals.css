@@ -85,16 +85,31 @@ a.topic-chip:hover{background:var(--bg);border-color:var(--green)}
 .footer-links{display:grid;grid-template-columns:1.4fr .9fr .7fr 1fr;gap:28px 32px;flex:1}
 .site-footer{padding-top:40px}
 .mobile-cta{display:none}
+.hero-premium a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+.hero-enquiry{background:#fff;color:var(--ink);border-radius:28px;padding:22px 20px 18px;box-shadow:var(--shadow-lg)}
+.hero-enquiry h2{font-size:1.45rem;margin:0 0 4px;color:var(--ink)}
+.hero-enquiry .lead-form{margin-top:12px}
+.hero-enquiry .btn,.offer-card .short-lead-form .btn,.offer-success .btn{width:100%}
+.hero-with-form .hero-top{grid-template-columns:minmax(0,1.05fr) minmax(280px,.95fr);align-items:start}
+.hero-with-form .hero-stats-wrap{margin-top:8px}
+.post-cta{margin:2.2em 0;padding:22px 22px 18px;background:var(--green-tint);border:1px solid var(--border);border-radius:var(--radius);text-align:left}
+.blog-article .post-cta h2{margin-top:0;font-size:1.35rem}
+.post-cta p{margin-bottom:12px}
+.post-cta-kicker{font-family:var(--font-mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--green-dark);margin:0 0 6px}
+.post-cta .cta-row{justify-content:flex-start}
 @media (max-width:980px){
   .hero-layout,.format-grid{grid-template-columns:1fr}
   .footer-links{grid-template-columns:1fr 1fr}
   .hero-premium{padding:48px 0}
   .hero-premium .hero-display{max-width:16ch}
+  .hero-with-form .hero-top{grid-template-columns:1fr}
 }
 @media (max-width:860px){
-  .mobile-cta{display:grid;grid-template-columns:1.1fr .8fr .9fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:200;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--border);box-shadow:0 -10px 30px rgba(10,61,38,.12)}
-  .mobile-cta .btn{width:100%;padding:12px 8px;font-size:.7rem}
-  body{padding-bottom:74px}
+  .mobile-cta{display:flex;position:fixed;left:max(12px, env(safe-area-inset-left));bottom:calc(12px + env(safe-area-inset-bottom));z-index:190;width:auto;padding:0;background:transparent;border:0;box-shadow:none}
+  .mobile-cta .btn{width:auto;min-height:48px;padding:12px 16px;font-size:.78rem;box-shadow:var(--shadow)}
+  .assist-wa{display:none}
+  body{padding-bottom:72px}
+  body.assist-chat-open .mobile-cta{visibility:hidden;pointer-events:none}
   .nav-mobile{padding-bottom:24px}
 }
 @media (max-width:600px){
@@ -167,7 +182,7 @@ a.topic-chip:hover{background:var(--bg);border-color:var(--green)}
 .lead-form-compact{margin-top:0}
 body.assist-chat-open{overflow:hidden}
 @media (max-width:860px){
-  .assist-dock{bottom:calc(78px + env(safe-area-inset-bottom));right:max(12px, env(safe-area-inset-right));max-width:calc(100vw - 16px)}
+  .assist-dock{bottom:calc(12px + env(safe-area-inset-bottom));right:max(12px, env(safe-area-inset-right));max-width:calc(100vw - 16px)}
   .assist-dock.is-open .assist-actions{visibility:hidden;pointer-events:none}
   .assist-panel{position:fixed;left:0;right:0;width:100%;max-width:100%;border:0;border-radius:0;z-index:400;padding-top:env(safe-area-inset-top);box-shadow:none}
   .assist-compose{padding-bottom:calc(12px + env(safe-area-inset-bottom))}
@@ -194,7 +209,7 @@ body.assist-chat-open{overflow:hidden}
 .offer-success{margin-top:14px}
 .offer-success .cta-row{margin-top:12px}
 .exit-offer-backdrop{position:fixed;inset:0;z-index:1000;background:rgba(10,61,38,.45);display:flex;align-items:center;justify-content:center;padding:20px}
-.exit-offer{position:relative;background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-lg);max-width:480px;width:100%;padding:34px 30px 24px}
+.exit-offer{position:relative;background:#fff;border-radius:var(--radius);box-shadow:var(--shadow-lg);max-width:480px;width:100%;max-height:min(90dvh,640px);overflow:auto;padding:34px 30px 24px}
 .exit-offer h2{font-size:1.6rem}
 .exit-offer .cta-row{margin-top:8px}
 .exit-offer-close{position:absolute;top:12px;right:14px;border:none;background:transparent;font-size:1.6rem;line-height:1;color:var(--text-muted);padding:6px}

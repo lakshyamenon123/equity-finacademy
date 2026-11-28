@@ -11,6 +11,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema, faqPageSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { whatsappHref } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-forex-coaching-entrepreneurs-flexible-week";
 const headline = "Private Forex Coaching for UAE Entrepreneurs With an Irregular Week";
@@ -167,6 +168,7 @@ export default function EntrepreneurFlexibleWeekPost() {
                 <Link href="/blog-first-private-forex-lesson-dubai">your first private forex lesson</Link>.
               </p>
 
+              <PostCta path="/blog-forex-coaching-entrepreneurs-flexible-week" placement="mid" />
               <h2>Travel, including weeks outside the UAE</h2>
               <p>
                 Abu Dhabi and Dubai use Gulf Standard Time all year. A class at 8pm is 8pm in both cities. The drive-or-online choice for the capital is the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>. Professionals who want that hour written for a capital week, rather than for a founder who travels, can read{" "}
@@ -194,18 +196,7 @@ export default function EntrepreneurFlexibleWeekPost() {
               <h2>Questions from an irregular week</h2>
               <FaqList items={founderFaq} />
               <AcademyLinks lead="The school pages, once you know the format, are the" />
-              <div className="blog-cta">
-                <p>Send the windows you can keep. Ask for a free demo class or a one-to-one meeting with Gopi.</p>
-                <div className="cta-row">
-                  <Link href="/free-demo" className="btn btn-primary">
-                    Book a free demo class
-                  </Link>
-                  <OpenChatLink className="btn btn-outline">Open the site chat</OpenChatLink>
-                  <a href={whatsapp} className="btn btn-outline" target="_blank" rel="noopener noreferrer">
-                    WhatsApp +971 55 904 7030
-                  </a>
-                </div>
-              </div>
+              <PostCta path="/blog-forex-coaching-entrepreneurs-flexible-week" />
             </div>
           </div>
         </section>

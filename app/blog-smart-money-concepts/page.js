@@ -8,6 +8,7 @@ import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema, webPageSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
+import PostCta from "../components/PostCta";
 
 const mt5English = ENGLISH_VIDEOS.find((video) => video.id === "ssUPlUHnDLo");
 
@@ -157,6 +158,7 @@ export default function BlogSmartMoneyConceptsPage() {
                 foundation tends to produce pattern-matching without real understanding.
               </p>
 
+              <PostCta path="/blog-smart-money-concepts" placement="mid" />
               <h2>A common misconception</h2>
               <p>
                 SMC is sometimes marketed as a way to &quot;trade like a bank&quot; or predict institutional
@@ -250,17 +252,7 @@ export default function BlogSmartMoneyConceptsPage() {
                 <Link href="/smc-ict-trading-course-dubai">SMC and ICT trading course in Dubai</Link>. It places these
                 ideas on the two published tracks and links back here for the definitions.
               </p>
-              <div className="blog-cta">
-                <p>SMC and market profile are covered in depth in our advanced track.</p>
-                <div className="cta-row">
-                  <Link href="/smc-ict-trading-course-dubai" className="btn btn-primary">
-                    SMC and ICT Course in Dubai
-                  </Link>
-                  <Link href="/free-demo" className="btn btn-outline">
-                    Book a free demo class
-                  </Link>
-                </div>
-              </div>
+              <PostCta path="/blog-smart-money-concepts" />
             </div>
           </div>
         </section>

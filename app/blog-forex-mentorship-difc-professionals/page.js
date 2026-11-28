@@ -11,6 +11,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema, faqPageSchema, localAcademySchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { whatsappHref } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-forex-mentorship-difc-professionals";
 const headline = "Forex Mentorship for DIFC Professionals in Dubai";
@@ -135,6 +136,7 @@ export default function DifcForexMentorshipPost() {
                 The academy is open 24/7. That is the desk you can message. It is not a promise that a private hour appears at the minute a meeting overruns. If you cancel the same block twice, the block is wrong. Move it.
               </p>
 
+              <PostCta path="/blog-forex-mentorship-difc-professionals" placement="mid" />
               <h2>What the first sittings cover</h2>
               <p>
                 One chart. One mark. One window you can already name. If MetaTrader 5 is not installed, do that before you sit down. The steps are <Link href="/blog-start-forex-trading-uae-mt5">how to start forex trading in the UAE with MT5</Link>. What to carry, and what to ask once you are in the chair, is in{" "}
@@ -181,18 +183,7 @@ export default function DifcForexMentorshipPost() {
               <h2>Questions from DIFC</h2>
               <FaqList items={difcFaq} />
               <AcademyLinks lead="The school pages, once the format is clear, are the" />
-              <div className="blog-cta">
-                <p>Name the hour you can keep with the door closed. Ask for a free demo class or a one-to-one meeting with Gopi.</p>
-                <div className="cta-row">
-                  <Link href="/free-demo" className="btn btn-primary">
-                    Book a free demo class
-                  </Link>
-                  <OpenChatLink className="btn btn-outline">Open the site chat</OpenChatLink>
-                  <a href={whatsapp} className="btn btn-outline" target="_blank" rel="noopener noreferrer">
-                    WhatsApp +971 55 904 7030
-                  </a>
-                </div>
-              </div>
+              <PostCta path="/blog-forex-mentorship-difc-professionals" />
             </div>
           </div>
         </section>

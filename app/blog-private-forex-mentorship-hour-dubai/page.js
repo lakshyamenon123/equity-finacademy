@@ -11,6 +11,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema, faqPageSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { whatsappHref } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-private-forex-mentorship-hour-dubai";
 const headline = "What a Private One-to-One Forex Mentorship Hour in Dubai Contains";
@@ -194,6 +195,7 @@ export default function PrivateMentorshipHourPost() {
                 <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>. Practical sessions use an account you open yourself. The course fee and any broker balance are separate. The fee is quoted in AED when you ask. A figure is not printed on this page.
               </p>
 
+              <PostCta path="/blog-private-forex-mentorship-hour-dubai" placement="mid" />
               <h2>How to tell the hour was teaching</h2>
               <p>
                 You should be able to repeat the correction without the mentor in the room. If the sentence you leave with is &quot;he said the market will rise&quot;, the hour was not the hour on this page. If the sentence is &quot;the stop I typed was on the wrong side of the price, and I closed the ticket without sending&quot;, you have something you can check on the next chart.
@@ -229,18 +231,7 @@ export default function PrivateMentorshipHourPost() {
               <h2>Questions about one private hour</h2>
               <FaqList items={hourFaq} />
               <AcademyLinks lead="The school pages, once the agenda is clear, are the" />
-              <div className="blog-cta">
-                <p>Send the question before you ask anyone to hold the hour.</p>
-                <div className="cta-row">
-                  <Link href="/free-demo" className="btn btn-primary">
-                    Book a free demo class
-                  </Link>
-                  <OpenChatLink className="btn btn-outline">Open the site chat</OpenChatLink>
-                  <Link href="/contact" className="btn btn-outline">
-                    Contact the academy
-                  </Link>
-                </div>
-              </div>
+              <PostCta path="/blog-private-forex-mentorship-hour-dubai" />
             </div>
           </div>
         </section>

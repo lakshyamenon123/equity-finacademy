@@ -9,6 +9,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { STARTRADER_LIVE_URL } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-support-and-resistance-forex";
 const headline = "Support and Resistance in Forex: A Beginner's Guide for Dubai";
@@ -100,6 +101,7 @@ export default function SupportResistancePost() {
                 page. A tidy candle with no location is just a tidy candle.
               </p>
 
+              <PostCta path="/blog-support-and-resistance-forex" placement="mid" />
               <h2>How this shows up in a Dubai class</h2>
               <p>
                 The Basic to Intermediate track teaches candlesticks, then market structure. Support and resistance
@@ -166,6 +168,7 @@ export default function SupportResistancePost() {
                 or call <a href="tel:+971559047030">+971 55 904 7030</a>.
               </p>
               <AcademyLinks lead="The live lessons are the" />
+              <PostCta path="/blog-support-and-resistance-forex" />
             </div>
           </div>
         </section>

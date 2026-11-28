@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import JsonLd from "../components/JsonLd";
-import FreeDemoBooking from "../components/FreeDemoBooking";
+import DemoEnquiry from "../components/DemoEnquiry";
 import RelatedTraining from "../components/RelatedTraining";
 import Link from "next/link";
 import { pageMetadata } from "../lib/seo";
@@ -67,8 +67,8 @@ export default function FreeDemoPage() {
                 Book a free demo forex class in Dubai.
               </h1>
               <p style={{ maxWidth: "58ch", marginTop: 18 }}>
-                Choose a weekly slot, private one-to-one or small group, and confirm it on WhatsApp. The demo is a live
-                look at how Gopi Chandran teaches, in person in Dubai, UAE, or online across the UAE.
+                Leave your name, mobile and a preferred time. Private one-to-one or small group. The academy confirms on
+                WhatsApp. The demo is a live look at how Gopi Chandran teaches, in person in Dubai, UAE, or online.
               </p>
               <p style={{ maxWidth: "58ch" }}>
                 The demo class is free; full private and group forex training at Equity Fin Academy starts from AED 1,500, with the programme tailored to your experience, schedule and goals.
@@ -87,8 +87,8 @@ export default function FreeDemoPage() {
               </p>
             </div>
             <div className="info-card offer-card">
-              <h2 style={{ fontSize: "1.3rem", marginTop: 0 }}>Pick your slot</h2>
-              <FreeDemoBooking />
+              <h2 style={{ fontSize: "1.3rem", marginTop: 0 }}>Request a free demo</h2>
+              <DemoEnquiry id="free-demo-form" />
             </div>
           </div>
         </section>

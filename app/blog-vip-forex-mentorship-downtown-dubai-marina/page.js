@@ -10,6 +10,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema, localAcademySchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { whatsappHref } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-vip-forex-mentorship-downtown-dubai-marina";
 const headline = "Private Forex Mentorship for Downtown Dubai, DIFC and the Marina";
@@ -129,6 +130,7 @@ export default function VipForexMentorshipDowntownPost() {
                 <Link href="/blog-forex-market-hours-dubai">forex market hours in Dubai</Link>.
               </p>
 
+              <PostCta path="/blog-vip-forex-mentorship-downtown-dubai-marina" placement="mid" />
               <h2>Scheduling the hour without losing the week</h2>
               <p>
                 Treat the lesson the way you treat a client meeting: a start, a finish, and a question written down before you arrive. Flexible scheduling means the academy can look for another Gulf Standard Time you have already named. It does not mean a mentor is free at the minute a meeting overruns. The academy is open 24/7. That is the desk. It is not a promise that a private hour can be invented at 9:40 for a 10:00 start.
@@ -184,18 +186,7 @@ export default function VipForexMentorshipDowntownPost() {
                 . The rules of a booking are on the <Link href="/terms">terms page</Link>. The English video on this page is a platform walkthrough so the first hour does not start on the login.
               </p>
               <AcademyLinks lead="The school pages, if you are still choosing the format, are the" />
-              <div className="blog-cta">
-                <p>Name the district and the hour you can keep. Ask for a free demo class or a one-to-one meeting with Gopi.</p>
-                <div className="cta-row">
-                  <Link href="/free-demo" className="btn btn-primary">
-                    Book a free demo class
-                  </Link>
-                  <OpenChatLink className="btn btn-outline">Open the site chat</OpenChatLink>
-                  <a href={whatsapp} className="btn btn-outline" target="_blank" rel="noopener noreferrer">
-                    WhatsApp +971 55 904 7030
-                  </a>
-                </div>
-              </div>
+              <PostCta path="/blog-vip-forex-mentorship-downtown-dubai-marina" />
             </div>
           </div>
         </section>

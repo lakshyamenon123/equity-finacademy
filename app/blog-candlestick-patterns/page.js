@@ -8,6 +8,7 @@ import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
+import PostCta from "../components/PostCta";
 
 const mt5English = ENGLISH_VIDEOS.find((video) => video.id === "ssUPlUHnDLo");
 
@@ -101,6 +102,7 @@ export default function BlogCandlestickPatternsPage() {
                 <li><strong>Pin bar</strong> — a candle with a small body and a long wick showing strong rejection of a price level.</li>
               </ul>
 
+              <PostCta path="/blog-candlestick-patterns" placement="mid" />
               <h2>The mistake most beginners make</h2>
               <p>
                 Treating a candlestick pattern as a standalone signal — &quot;I saw a hammer, so I should buy&quot;
@@ -143,17 +145,7 @@ export default function BlogCandlestickPatternsPage() {
               </p>
 
               <AcademyLinks lead="When you want candles taught on a live chart, book the" />
-              <div className="blog-cta">
-                <p>Want to see this applied to live charts, not just static examples?</p>
-                <div className="cta-row">
-                  <Link href="/courses" className="btn btn-primary">
-                    See Our Forex Courses
-                  </Link>
-                  <Link href="/free-demo" className="btn btn-outline">
-                    Book a free demo class
-                  </Link>
-                </div>
-              </div>
+              <PostCta path="/blog-candlestick-patterns" />
             </div>
           </div>
         </section>

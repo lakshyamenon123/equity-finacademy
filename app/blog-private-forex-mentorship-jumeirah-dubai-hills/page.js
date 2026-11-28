@@ -11,6 +11,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema, faqPageSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { whatsappHref } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-private-forex-mentorship-jumeirah-dubai-hills";
 const headline =
@@ -207,6 +208,7 @@ export default function JumeirahDubaiHillsMentorshipPost() {
                 <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for doctors, engineers and bankers</Link>.
               </p>
 
+              <PostCta path="/blog-private-forex-mentorship-jumeirah-dubai-hills" placement="mid" />
               <h2>Read the window before the hour is spent finding it</h2>
               <p>
                 Install MetaTrader 5 the day before. The written steps are{" "}
@@ -249,18 +251,7 @@ export default function JumeirahDubaiHillsMentorshipPost() {
               <h2>Questions from Jumeirah and Dubai Hills</h2>
               <FaqList items={areaFaq} />
               <AcademyLinks lead="The school pages, once you know which piece you are booking, are the" />
-              <div className="blog-cta">
-                <p>Name the neighbourhood, one chart, and the hour you can keep. Ask for a free demo class or a one-to-one meeting with Gopi.</p>
-                <div className="cta-row">
-                  <Link href="/free-demo" className="btn btn-primary">
-                    Book a free demo class
-                  </Link>
-                  <OpenChatLink className="btn btn-outline">Open the site chat</OpenChatLink>
-                  <a href={whatsapp} className="btn btn-outline" target="_blank" rel="noopener noreferrer">
-                    WhatsApp +971 55 904 7030
-                  </a>
-                </div>
-              </div>
+              <PostCta path="/blog-private-forex-mentorship-jumeirah-dubai-hills" />
             </div>
           </div>
         </section>

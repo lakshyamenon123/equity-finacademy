@@ -8,6 +8,7 @@ import AuthorByline from "../components/AuthorByline";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema, faqPageSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-stock-market-course-dubai-first-weeks";
 const headline = "What the First Weeks of a Stock Market Course in Dubai Should Cover";
@@ -170,6 +171,7 @@ export default function StockMarketCourseFirstWeeksPost() {
                 The same clock on a currency pair is a different market. EUR/USD is quoted through the weekday. The overlap of London and New York, in UAE time, is in{" "}
                 <Link href="/blog-forex-market-hours-dubai">forex market hours in Dubai</Link>. Use that page to see why a noon candle in Dubai can be busy on a pair and quiet on a US share. Do not copy the pair&apos;s hours onto the share.
               </p>
+              <PostCta path="/blog-stock-market-course-dubai-first-weeks" placement="mid" />
               <h2>Week 2: two swings and one sentence</h2>
               <p>
                 On the one-hour chart, mark the last two swing highs and the last two swing lows. Then write one sentence: what you marked, and the price area that would show the mark was wrong. A screenshot with no sentence cannot be corrected in class. If you cannot point at the swings, stop and read{" "}
@@ -229,17 +231,7 @@ export default function StockMarketCourseFirstWeeksPost() {
               </div>
 
               <AcademyLinks lead="When the symbol is chosen, the live class is the" />
-              <div className="blog-cta">
-                <p>Name the share, the index, or gold, and whether you want a group seat or a private hour.</p>
-                <div className="cta-row">
-                  <Link href="/stock-market-course-dubai" className="btn btn-primary">
-                    Stock market course in Dubai
-                  </Link>
-                  <Link href="/free-demo" className="btn btn-outline">
-                    Book a free demo class
-                  </Link>
-                </div>
-              </div>
+              <PostCta path="/blog-stock-market-course-dubai-first-weeks" />
             </div>
           </div>
         </section>

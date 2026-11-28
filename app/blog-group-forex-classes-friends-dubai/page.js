@@ -9,6 +9,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { STARTRADER_LIVE_URL } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-group-forex-classes-friends-dubai";
 const headline = "Group Forex Classes in Dubai for Friends and Colleagues";
@@ -102,6 +103,7 @@ export default function GroupForexClassesFriendsPost() {
                 is the link the academy gives for that step. The English video below shows an account opening and the MT5 layout, so each person can do it before the first class. The written version is <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5 in the UAE</Link>. The window each person should be able to name before the first class is <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>. Use a demo until the buttons are familiar. <Link href="/blog-demo-vs-live-mt5-uae">Demo versus live</Link> is the difference.
               </p>
 
+              <PostCta path="/blog-group-forex-classes-friends-dubai" placement="mid" />
               <h2>What the first classes are actually for</h2>
               <p>
                 If the group is new, the early hours are vocabulary: how a pair is quoted, how a candle is read, how a swing describes structure. That is useful even if one friend wanted to start on gold or on a strategy name. Gold is marked with the same tools, which is the subject of <Link href="/blog-gold-xauusd-course-dubai">the XAUUSD class note</Link>. Strategy names such as liquidity come after structure. Read <Link href="/blog-forex-education-uae">forex education in the UAE</Link> if the group cannot agree what “beginner” means.
@@ -122,17 +124,7 @@ export default function GroupForexClassesFriendsPost() {
                 The reply should name the track, whether a shared cohort is available for that time, and the fee. It should not ask for a broker password. Read how students talk about the academy on Google via the <Link href="/success-stories">reviews page</Link> if the group wants third-party comments first. The academy is rated 5.0 on Google from 30+ reviews. The in-person school is the <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link> page. Study from another emirate is the <Link href="/forex-training-academy-uae">forex training academy UAE</Link> page. The <Link href="/blog">blog</Link> is the reading list if someone in the group wants a week of notes before you write.
               </p>
               <AcademyLinks lead="Book the live cohort through the" />
-              <div className="blog-cta">
-                <p>One enquiry for the group. Name the track, the emirate, and the hour you share.</p>
-                <div className="cta-row">
-                  <Link href="/contact" className="btn btn-primary">
-                    Contact the academy
-                  </Link>
-                  <Link href="/free-demo" className="btn btn-outline">
-                    Book a free demo class
-                  </Link>
-                </div>
-              </div>
+              <PostCta path="/blog-group-forex-classes-friends-dubai" />
             </div>
           </div>
         </section>

@@ -8,6 +8,7 @@ import AuthorByline from "../components/AuthorByline";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-forex-chart-timeframes-dubai";
 const headline = "Which Forex Chart Timeframe to Open Before a Class in Dubai";
@@ -107,6 +108,7 @@ export default function ForexChartTimeframesPost() {
                 <Link href="/private-group-forex-training-dubai">private and group training</Link>.
               </p>
 
+              <PostCta path="/blog-forex-chart-timeframes-dubai" placement="mid" />
               <h2>A drill you can finish before you enquire</h2>
               <p>
                 Use a demo account, or a chart with no order attached. Pick one symbol you will actually ask about. EURUSD is a fine default if you do not have one. Gold is fine too, if gold is the chart you care about. Open the one-hour chart. Find the last two highs and the last two lows you can see without squinting. Mark them. Do not add indicators for this drill.
@@ -152,17 +154,7 @@ export default function ForexChartTimeframesPost() {
                 When you can mark the same swing on the hourly chart and on the four-hour chart, and say which marks survived, you are ready for the next layer the course actually teaches. That might be a level, a risk line in dirhams, or, later, the smart-money drill. It is not a smaller timeframe for its own sake. Students who jump to the one-minute chart to feel busy usually return to the hourly chart once someone watches them mark a high. Book the hour for that correction, with the sentence from the drill already written.
               </p>
               <AcademyLinks lead="Bring one timeframe to a live class at the" />
-              <div className="blog-cta">
-                <p>Name the symbol and the button. Ask for the fee in AED.</p>
-                <div className="cta-row">
-                  <Link href="/contact" className="btn btn-primary">
-                    Book a class
-                  </Link>
-                  <Link href="/free-demo" className="btn btn-outline">
-                    Book a free demo class
-                  </Link>
-                </div>
-              </div>
+              <PostCta path="/blog-forex-chart-timeframes-dubai" />
             </div>
           </div>
         </section>

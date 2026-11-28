@@ -10,6 +10,7 @@ import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { SITE } from "../lib/site";
 import { STARTRADER_LIVE_URL } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-forex-economic-calendar-dubai";
 const headline = "How to Read a Forex Economic Calendar in Dubai";
@@ -104,6 +105,7 @@ export default function ForexEconomicCalendarDubaiPost() {
                 use the two examples below and add or subtract the hour when the other country is on standard time.
               </p>
 
+              <PostCta path="/blog-forex-economic-calendar-dubai" placement="mid" />
               <h2>Two conversions learners in Dubai actually need</h2>
               <p>
                 Many US releases, including non-farm payrolls, are scheduled for 8:30 in the morning in New York.
@@ -197,6 +199,7 @@ export default function ForexEconomicCalendarDubaiPost() {
                 <Link href="/contact">contact page</Link>. Say the pair you watch and the hour you can keep.
               </p>
               <AcademyLinks lead="The live class is taught through the" />
+              <PostCta path="/blog-forex-economic-calendar-dubai" />
             </div>
           </div>
         </section>

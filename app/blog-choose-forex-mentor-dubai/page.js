@@ -8,6 +8,7 @@ import AuthorByline from "../components/AuthorByline";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema, faqPageSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-choose-forex-mentor-dubai";
 const headline = "How to Choose a Forex Mentor in Dubai";
@@ -135,6 +136,7 @@ export default function ChooseForexMentorPost() {
                 A group class is the better first booking when you cannot yet explain a candle in your own words. You will hear the explanation once, with other students, in the order the syllabus sets. Choosing a mentor does not mean you must buy a private hour to hear the basics. Many students use the group for the list and a private hour later for their own chart. That split is in <Link href="/blog-private-vs-group-forex-classes-dubai">private versus group classes</Link> and on <Link href="/private-group-forex-training-dubai">private and group training</Link>.
               </p>
 
+              <PostCta path="/blog-choose-forex-mentor-dubai" placement="mid" />
               <h2>The hour has to fit a Dubai week</h2>
               <p>
                 A mentor you cannot meet is a name on a page. The UAE work week for many jobs runs Sunday to Thursday. Gulf Standard Time does not change in summer. If your day already owns the evening, say so. Evening group classes are described in <Link href="/blog-evening-group-forex-classes-dubai">evening group forex classes in Dubai</Link>. A Saturday or Sunday request is a normal booking because the academy is open 24/7, and it is explained on <Link href="/weekend-forex-classes-dubai">weekend forex classes in Dubai</Link>. The forex market itself is shut from Saturday morning until Monday morning, UAE time, so a weekend class can still teach and will not show new candles.
@@ -173,17 +175,7 @@ export default function ChooseForexMentorPost() {
               </div>
 
               <AcademyLinks lead="Book the hour through the" />
-              <div className="blog-cta">
-                <p>Name the track, the format, and Dubai or online. Ask for the fee in AED.</p>
-                <div className="cta-row">
-                  <Link href="/contact" className="btn btn-primary">
-                    Contact the academy
-                  </Link>
-                  <Link href="/free-demo" className="btn btn-outline">
-                    Book a free demo class
-                  </Link>
-                </div>
-              </div>
+              <PostCta path="/blog-choose-forex-mentor-dubai" />
             </div>
           </div>
         </section>

@@ -9,6 +9,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { STARTRADER_LIVE_URL } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-gold-xauusd-course-dubai";
 const headline = "Gold (XAUUSD) Trading Course in Dubai: What the Class Teaches";
@@ -90,6 +91,7 @@ export default function GoldXauusdCourseDubaiPost() {
                 A Saturday class can still review last week’s gold chart. It will not show a new London candle, because the forex market is shut from Saturday morning until Monday morning, UAE time. If that is the hour your week allows, read <Link href="/weekend-forex-classes-dubai">weekend forex classes in Dubai</Link> and say so when you book. People fitting study around a job should read <Link href="/blog-forex-classes-working-professionals-dubai">forex classes for working professionals</Link>.
               </p>
 
+              <PostCta path="/blog-gold-xauusd-course-dubai" placement="mid" />
               <h2>How a class uses your gold chart</h2>
               <p>
                 Bring one symbol and one question. “XAUUSD, one-hour chart, I do not know if this swing is still the move” is a complete brief. Five metals and three timeframes is a tour. In a group cohort the syllabus is shared, so gold appears when the topic is structure, levels, or the later advanced tools, and you can ask for the symbol to be the example. In a private lesson the hour can stay on your gold chart from the start. The difference is described in <Link href="/blog-private-vs-group-forex-classes-dubai">private versus group classes</Link> and on <Link href="/private-group-forex-training-dubai">private and group training</Link>. What to have open before a private hour is in <Link href="/blog-one-to-one-forex-classes-dubai">how to prepare for a one-to-one class</Link>.
@@ -121,17 +123,7 @@ export default function GoldXauusdCourseDubaiPost() {
                 . Name XAUUSD, the track, group or private, and Dubai or online. Read how the Google listing works on the <Link href="/success-stories">reviews page</Link> if you want third-party comments before you write. The academy is rated 5.0 on Google from 30+ reviews. More than 2,000 students have trained through Equity Global and live classes. Those figures are not a gold result.
               </p>
               <AcademyLinks lead="The live classes that cover this chart work are the" />
-              <div className="blog-cta">
-                <p>Tell the academy you want XAUUSD on the chart. The fee is quoted in AED.</p>
-                <div className="cta-row">
-                  <Link href="/courses" className="btn btn-primary">
-                    View the course tracks
-                  </Link>
-                  <Link href="/free-demo" className="btn btn-outline">
-                    Book a free demo class
-                  </Link>
-                </div>
-              </div>
+              <PostCta path="/blog-gold-xauusd-course-dubai" />
             </div>
           </div>
         </section>

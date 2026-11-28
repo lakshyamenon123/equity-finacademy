@@ -10,6 +10,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema, faqPageSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { whatsappHref } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-forex-broker-due-diligence-uae";
 const headline = "A Forex Broker Checklist for Residents of the UAE";
@@ -149,6 +150,7 @@ export default function BrokerDueDiligencePost() {
                 <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>. Nobody in the lesson needs the login.
               </p>
 
+              <PostCta path="/blog-forex-broker-due-diligence-uae" placement="mid" />
               <h2>A blank you can fill in before you deposit</h2>
               <p>Leave the right-hand column empty until you have opened the document it names. A filled example from someone else&apos;s account does not count.</p>
               <div className="table-wrap">
@@ -219,17 +221,7 @@ export default function BrokerDueDiligencePost() {
               <h2>Questions about the broker checklist</h2>
               <FaqList items={brokerFaq} />
               <AcademyLinks lead="The class that can read the specification with you is the" />
-              <div className="blog-cta">
-                <p>Name the firm from the agreement. Then open the register yourself.</p>
-                <div className="cta-row">
-                  <Link href="/contact" className="btn btn-primary">
-                    Book a class
-                  </Link>
-                  <Link href="/free-demo" className="btn btn-outline">
-                    Book a free demo class
-                  </Link>
-                </div>
-              </div>
+              <PostCta path="/blog-forex-broker-due-diligence-uae" />
             </div>
           </div>
         </section>

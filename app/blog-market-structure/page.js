@@ -8,6 +8,7 @@ import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
+import PostCta from "../components/PostCta";
 
 const mt5English = ENGLISH_VIDEOS.find((video) => video.id === "ssUPlUHnDLo");
 
@@ -101,6 +102,7 @@ export default function BlogMarketStructurePage() {
                 decision-maker.
               </p>
 
+              <PostCta path="/blog-market-structure" placement="mid" />
               <h2>How structure connects to smart money concepts</h2>
               <p>
                 Once you understand basic structure, more advanced frameworks like smart money concepts (SMC)
@@ -145,17 +147,7 @@ export default function BlogMarketStructurePage() {
               </p>
 
               <AcademyLinks lead="Structure is taught live at the" />
-              <div className="blog-cta">
-                <p>Structure is taught from lesson one in our Basic to Intermediate course.</p>
-                <div className="cta-row">
-                  <Link href="/courses" className="btn btn-primary">
-                    See Our Forex Courses
-                  </Link>
-                  <Link href="/free-demo" className="btn btn-outline">
-                    Book a free demo class
-                  </Link>
-                </div>
-              </div>
+              <PostCta path="/blog-market-structure" />
             </div>
           </div>
         </section>

@@ -9,6 +9,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { STARTRADER_LIVE_URL } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-forex-leverage-margin-mt5-uae";
 const headline = "Forex Leverage and Margin on MT5 for Traders in the UAE";
@@ -92,6 +93,7 @@ export default function ForexLeverageMarginPost() {
                 A higher ratio sets aside less cash for the same position. It also means a small move is a larger percentage of the cash you did set aside. Beginners in the UAE often meet leverage as a badge on a broker page. In class it is treated as a size decision. The <Link href="/blog-common-mistakes">common mistakes note</Link> names oversized leverage as one of the patterns that drain new accounts.
               </p>
 
+              <PostCta path="/blog-forex-leverage-margin-mt5-uae" placement="mid" />
               <h2>Three words the terminal uses for the same cash</h2>
               <p>
                 Margin is the cash set aside for the positions that are already open. Free margin is what is left for a new position. Margin level is the equity divided by the margin, shown as a percentage. A class in Dubai goes faster when those three are not treated as one number. If free margin is the line you cannot find, that is the question to bring. It is not a reason to raise the account leverage. The pair name on that same screen is in <Link href="/blog-currency-pairs-uae">currency pairs</Link>.
@@ -124,17 +126,7 @@ export default function ForexLeverageMarginPost() {
               </p>
 
               <AcademyLinks lead="The live class that can check the line with you is the" />
-              <div className="blog-cta">
-                <p>Write down the margin figure MT5 shows, then ask for a seat. The fee is quoted in AED.</p>
-                <div className="cta-row">
-                  <Link href="/courses" className="btn btn-primary">
-                    View the course tracks
-                  </Link>
-                  <Link href="/free-demo" className="btn btn-outline">
-                    Book a free demo class
-                  </Link>
-                </div>
-              </div>
+              <PostCta path="/blog-forex-leverage-margin-mt5-uae" />
             </div>
           </div>
         </section>

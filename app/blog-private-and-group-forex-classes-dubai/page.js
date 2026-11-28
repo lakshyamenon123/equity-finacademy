@@ -9,6 +9,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { STARTRADER_LIVE_URL } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-private-and-group-forex-classes-dubai";
 const headline = "Private One-to-One and Group Forex Classes in Dubai: How to Use Both";
@@ -91,6 +92,7 @@ export default function PrivateAndGroupForexClassesPost() {
                 The private hour is not a replay of a group class you missed. If you missed the cohort, say so and ask for the next group time. Using a private booking to hear the whole beginner list, alone, at private pace, is a different request. Say that plainly if it is what you want. Do not expect the instructor to guess it from the word &quot;both&quot;.
               </p>
 
+              <PostCta path="/blog-private-and-group-forex-classes-dubai" placement="mid" />
               <h2>A month that uses both, on Gulf Standard Time</h2>
               <p>
                 There is no printed weekly timetable. Dates move, and the academy is open 24/7. A workable month still has a shape you can write down before you enquire.
@@ -163,17 +165,7 @@ export default function PrivateAndGroupForexClassesPost() {
                 Send the message from the <Link href="/contact">contact page</Link> or WhatsApp +971 55 904 7030. The wider notes are on the <Link href="/blog">blog</Link>.
               </p>
               <AcademyLinks lead="The school pages for either format are the" />
-              <div className="blog-cta">
-                <p>Name the group hour and the private hour. The fees are quoted in AED.</p>
-                <div className="cta-row">
-                  <Link href="/contact" className="btn btn-primary">
-                    Contact the academy
-                  </Link>
-                  <Link href="/free-demo" className="btn btn-outline">
-                    Book a free demo class
-                  </Link>
-                </div>
-              </div>
+              <PostCta path="/blog-private-and-group-forex-classes-dubai" />
             </div>
           </div>
         </section>

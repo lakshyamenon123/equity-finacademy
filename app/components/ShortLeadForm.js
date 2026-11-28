@@ -23,6 +23,7 @@ export default function ShortLeadForm({
   const [choice, setChoice] = useState("");
   const [status, setStatus] = useState("");
   const [fallbackHref, setFallbackHref] = useState("");
+  const [thanksHref, setThanksHref] = useState("");
   const [pending, setPending] = useState(false);
   const [done, setDone] = useState(false);
 
@@ -39,23 +40,34 @@ export default function ShortLeadForm({
     const message = choice ? `Preference: ${choice}` : "";
     const result = await submitLead({ name, phone: phoneValue, interest, message });
     setPending(false);
+    const href = whatsappHref(
+      whatsappIntro
+        ? [whatsappIntro, `Name: ${name}`, message].filter(Boolean).join("\n")
+        : enquiryText({ name, phone: phoneValue, interest, message })
+    );
     if (result.ok) {
+      setThanksHref(href);
       setDone(true);
       setStatus(successText);
       if (onSuccess) onSuccess({ name: name.trim(), phone: phoneValue, choice });
       return;
     }
-    setFallbackHref(
-      whatsappHref(
-        whatsappIntro
-          ? [whatsappIntro, `Name: ${name}`, message].filter(Boolean).join("\n")
-          : enquiryText({ name, phone: phoneValue, interest, message })
-      )
-    );
+    setFallbackHref(href);
     setStatus(result.error || "The form could not be sent just now. Send the same details on WhatsApp instead.");
   }
 
   if (done && children) return children;
+
+  if (done) {
+    return (
+      <div className="offer-success" role="status">
+        <p>{successText}</p>
+        <a className="btn btn-primary" href={thanksHref} target="_blank" rel="noopener noreferrer">
+          Continue on WhatsApp
+        </a>
+      </div>
+    );
+  }
 
   return (
     <form className="lead-form lead-form-compact short-lead-form" id={id} onSubmit={onSubmit}>

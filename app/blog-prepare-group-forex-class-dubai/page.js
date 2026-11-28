@@ -9,6 +9,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { STARTRADER_LIVE_URL } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-prepare-group-forex-class-dubai";
 const headline = "How to Prepare for a Group Forex Class in Dubai";
@@ -82,6 +83,7 @@ export default function PrepareGroupForexClassPost() {
                 Write one question about that topic in a sentence. &quot;I can see the swing high, and I do not know which of the two highs the class wants marked&quot; is a question the room can answer. &quot;Can you look at all of my trades&quot; is a request for a private lesson. Bring the sentence on paper or in a note. A screenshot with no sentence is hard to use when several people are waiting.
               </p>
 
+              <PostCta path="/blog-prepare-group-forex-class-dubai" placement="mid" />
               <h2>Have the platform open on the cohort&apos;s symbol</h2>
               <p>
                 Install MetaTrader 5 and log in before you travel or join the screen. Leave one symbol up, the pair or metal the class named. If nobody named one, EUR/USD on the one-hour chart is a fair default for a beginner hour. Gold traders should say XAUUSD when they enquire so the example can be the metal. The written install path is <Link href="/blog-start-forex-trading-uae-mt5">how to start forex trading in the UAE with MT5</Link>.
@@ -115,17 +117,7 @@ export default function PrepareGroupForexClassPost() {
                 To book the cohort, use the <Link href="/contact">contact page</Link> or WhatsApp +971 55 904 7030. Say group, the track, Dubai or online, and the hours you can keep. Ask for the fee in AED. It is quoted in the reply. An evening on Gulf Standard Time is <Link href="/blog-evening-group-forex-classes-dubai">evening group classes in Dubai</Link>. What the hour contains once you are in the room is <Link href="/blog-live-forex-trading-session-dubai">a live forex session in Dubai</Link>.
               </p>
               <AcademyLinks lead="The live group classes these notes prepare you for are the" />
-              <div className="blog-cta">
-                <p>Tell the academy which topic you have already read. The fee is quoted in AED.</p>
-                <div className="cta-row">
-                  <Link href="/courses" className="btn btn-primary">
-                    View the course tracks
-                  </Link>
-                  <Link href="/free-demo" className="btn btn-outline">
-                    Book a free demo class
-                  </Link>
-                </div>
-              </div>
+              <PostCta path="/blog-prepare-group-forex-class-dubai" />
             </div>
           </div>
         </section>

@@ -10,6 +10,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema, faqPageSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { whatsappHref } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-forex-performance-review-dubai";
 const headline = "A Weekly Forex Performance Review for Busy Professionals in Dubai";
@@ -197,6 +198,7 @@ export default function ForexPerformanceReviewPost() {
                 An example of the last line, written as words rather than a result: &quot;Next week the stop stays where the plan put it, and I stop after the second attempt.&quot; There is no profit in that sentence on purpose. If you cannot write the sentence without a forecast, the review is not finished. It has turned into a wish.
               </p>
 
+              <PostCta path="/blog-forex-performance-review-dubai" placement="mid" />
               <h2>What the meeting is allowed to change</h2>
               <p>
                 One sentence for the next week is the whole output. Keep the stop where it was written. Stay on a demo until the journal rows exist. Skip the London and New York overlap if you cannot be at the screen, and study at the hour you can keep. The clock for those sessions is in{" "}
@@ -253,17 +255,7 @@ export default function ForexPerformanceReviewPost() {
               <h2>Questions about the weekly review</h2>
               <FaqList items={reviewFaq} />
               <AcademyLinks lead="The class that can read the page with you is the" />
-              <div className="blog-cta">
-                <p>Count the week you had. Then write one sentence for the next one.</p>
-                <div className="cta-row">
-                  <Link href="/contact" className="btn btn-primary">
-                    Book a class
-                  </Link>
-                  <Link href="/free-demo" className="btn btn-outline">
-                    Book a free demo class
-                  </Link>
-                </div>
-              </div>
+              <PostCta path="/blog-forex-performance-review-dubai" />
             </div>
           </div>
         </section>

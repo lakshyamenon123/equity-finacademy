@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import JsonLd from "../components/JsonLd";
 import YouTubeSection from "../components/YouTubeSection";
 import Link from "next/link";
+import DemoEnquiry from "../components/DemoEnquiry";
 import OpenChatLink from "../components/OpenChatLink";
 import { advancedTopics, basicTopics } from "../lib/curriculum";
 import { pageMetadata } from "../lib/seo";
@@ -10,7 +11,7 @@ import RelatedTraining from "../components/RelatedTraining";
 import FaqList from "../components/FaqList";
 import { breadcrumbSchema, courseSchemas, faqPageSchema, localAcademySchema, webPageSchema } from "../lib/schema";
 import { VIDEOS } from "../lib/videos";
-import { STARTRADER_LIVE_URL } from "../lib/whatsapp";
+import { STARTRADER_LIVE_URL, whatsappHref } from "../lib/whatsapp";
 
 const coursesTitle = "Forex trading course in Dubai";
 const coursesDescription =
@@ -86,20 +87,37 @@ export default function CoursesPage() {
 
       <main>
         <section className="tight page-intro">
+          <div className="container offer-grid">
+            <div>
+              <nav className="breadcrumb" aria-label="Breadcrumb">
+                <Link href="/">Home</Link>
+                <span className="sep">/</span>
+                <span className="current">Forex Courses</span>
+              </nav>
+              <span className="eyebrow">CURRICULUM</span>
+              <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,3rem)", maxWidth: "18ch" }}>
+                Forex trading course in Dubai
+              </h1>
+              <p style={{ maxWidth: "46ch", marginTop: 18 }}>
+                Book a free demo class. Private one-to-one or small group classes, in Dubai or online. Courses from AED 1,500, with the programme tailored to your experience, schedule and goals.
+              </p>
+              <p style={{ maxWidth: "46ch" }}>
+                The Executive Market Briefing is on Thursday 3 December 2026 at 7:30 pm Dubai time.{" "}
+                <Link href="/executive-market-briefing">See the briefing</Link>. WhatsApp or call{" "}
+                <a href="tel:+971559047030">+971 55 904 7030</a>.
+              </p>
+            </div>
+            <div className="info-card offer-card">
+              <h2 style={{ fontSize: "1.35rem", marginTop: 0 }}>Book a free demo class</h2>
+              <p style={{ marginTop: 0 }}>Name, mobile, and a time. A private or group preference is optional.</p>
+              <DemoEnquiry id="courses-demo" />
+            </div>
+          </div>
+        </section>
+
+        <section className="tight">
           <div className="container">
-            <nav className="breadcrumb" aria-label="Breadcrumb">
-              <Link href="/">Home</Link>
-              <span className="sep">/</span>
-              <span className="current">Forex Courses</span>
-            </nav>
-            <span className="eyebrow">CURRICULUM</span>
-            <h1 className="hero-display" style={{ fontSize: "clamp(1.8rem,5vw,3rem)", maxWidth: "18ch" }}>
-              Forex trading course in Dubai
-            </h1>
-            <p style={{ maxWidth: "66ch", marginTop: 18 }}>
-              Private and group forex training at Equity Fin Academy starts from AED 1,500, with the programme tailored to your experience, schedule and goals.
-            </p>
-            <p style={{ maxWidth: "66ch", marginTop: 18 }}>
+            <p style={{ maxWidth: "66ch", marginTop: 0 }}>
               Two live tracks for a group class or a private lesson, in Dubai, UAE, and online across the UAE. Start at the level that matches the chart you can already read. Practical sessions run on a regulated broker. The academy is open 24/7 and rated 5.0 on Google from 30+ reviews. Compare the rooms on{" "}
               <Link href="/private-group-forex-training-dubai">private and group forex training</Link>. Gold, indices, and stocks on the same platform are the{" "}
               <Link href="/stock-market-course-dubai">stock market course</Link>. A map search that mixes those subjects is explained in{" "}
@@ -122,7 +140,7 @@ export default function CoursesPage() {
               <Link href="/free-demo" className="btn btn-primary">
                 Free demo class
               </Link>
-              <a href="https://wa.me/971559047030" className="btn btn-outline" target="_blank" rel="noopener noreferrer">
+              <a href={whatsappHref("Hi, I was on the courses page (/courses) at Equity Fin Academy and would like to book a free demo class.")} className="btn btn-outline" target="_blank" rel="noopener noreferrer">
                 WhatsApp +971 55 904 7030
               </a>
               <a href="tel:+971559047030" className="btn btn-outline">

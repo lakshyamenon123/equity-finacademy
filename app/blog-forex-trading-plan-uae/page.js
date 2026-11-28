@@ -10,6 +10,7 @@ import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { SITE } from "../lib/site";
 import { STARTRADER_LIVE_URL, whatsappHref } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-forex-trading-plan-uae";
 const headline = "How to Write a Forex Trading Plan and Journal in the UAE";
@@ -129,6 +130,7 @@ export default function ForexTradingPlanPost() {
                 <Link href="/blog-smart-money-concepts">smart money concepts</Link> first and make sure the swing is marked. A label without the swing is not a plan.
               </p>
 
+              <PostCta path="/blog-forex-trading-plan-uae" placement="mid" />
               <h2>Demo first, then a live account</h2>
               <p>
                 Keep the same columns on a demo account. The journal is more useful there if you still mark whether you followed the plan, because a demo result is easy to ignore. What a demo hides, and when a live account is the next step, is in{" "}
@@ -167,6 +169,7 @@ export default function ForexTradingPlanPost() {
                 , or use the <Link href="/contact">contact form</Link>.
               </p>
               <AcademyLinks lead="The class that can review the plan is the" />
+              <PostCta path="/blog-forex-trading-plan-uae" />
             </div>
           </div>
         </section>

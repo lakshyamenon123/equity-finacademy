@@ -10,6 +10,7 @@ import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { SITE } from "../lib/site";
 import { STARTRADER_LIVE_URL, whatsappHref } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-personal-forex-coaching-uae";
 const headline = "Personal Forex Coaching in the UAE: What a Coaching Plan Looks Like";
@@ -134,6 +135,7 @@ export default function PersonalForexCoachingPost() {
                 A group cohort does not follow your personal page. It follows the shared syllabus. You can still keep a coaching plan beside it, so the review day has something to read. If you want the cohort first and a private hour later, say that. Both formats include live trading sessions, in Dubai and online across the UAE.
               </p>
 
+              <PostCta path="/blog-personal-forex-coaching-uae" placement="mid" />
               <h2>What the plan leaves out</h2>
               <p>
                 It does not name a trade for tomorrow morning. It does not ask the academy for your broker password. It does not treat a YouTube comment as a result. The academy is rated 5.0 on Google from 30+ reviews, and more than 2,000 students have trained through Equity Global and live classes. Those figures describe reach and a public rating. They do not belong on your plan as a target.
@@ -171,6 +173,7 @@ export default function PersonalForexCoachingPost() {
                 , or use the <Link href="/contact">contact form</Link>. The academy is open 24/7. Fees are quoted when you ask. They are not printed here. Google reviews are linked from the <Link href="/success-stories">reviews page</Link>.
               </p>
               <AcademyLinks lead="The live coaching seat, once the hour is agreed, is taught through the" />
+              <PostCta path="/blog-personal-forex-coaching-uae" />
             </div>
           </div>
         </section>
