@@ -187,6 +187,13 @@ export default function HomePage() {
               <Link href="/blog-mt5-order-ticket-dubai">the MetaTrader 5 order ticket</Link>.
             </p>
             <p>
+              Two files sit beside that hour, and they are not the same file.{" "}
+              <Link href="/blog-trading-journal-system-dubai">A trading journal system for busy professionals in Dubai</Link>{" "}
+              is the note a short evening can finish.{" "}
+              <Link href="/blog-forex-tax-record-keeping-uae">Forex record-keeping habits for UAE traders</Link>{" "}
+              is the folder of broker statements you could hand an adviser. The second page is education. It is not tax advice, and neither page picks a trade.
+            </p>
+            <p>
               The topic order is on <Link href="/courses">the courses page</Link>. A <Link href="/free-demo">free demo class</Link> is how you see the teaching before you choose a track. Private and group training starts from AED 1,500. The fee for your format is quoted when you ask, on <Link href="/contact">the contact page</Link>.
             </p>
           </div>

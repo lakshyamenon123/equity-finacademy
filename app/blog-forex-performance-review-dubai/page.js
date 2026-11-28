@@ -106,7 +106,8 @@ export default function ForexPerformanceReviewPost() {
                 The journal answers one trade. Date, symbol, demo or live, whether you followed the plan, and one sentence on what you would repeat. That page is allowed to be short. The review answers the week. It does not retell every candle. It counts. If you copy the journal into a longer document and call it a review, you have done the same work twice and learned nothing the second time.
               </p>
               <p>
-                Keep the two pages apart on purpose. The journal can live in a note on your phone, written the same day in Gulf Standard Time. The review is one page, paper or a single note, with the week written at the top. When the review starts to collect screenshots, close it. A folder of pictures without a count is how a professional avoids the sentence they do not want to write.
+                Keep the two pages apart on purpose. The journal can live in a note on your phone, written the same day in Gulf Standard Time. Where that note should live so a short evening can finish it is{" "}
+                <Link href="/blog-trading-journal-system-dubai">a trading journal system for busy professionals in Dubai</Link>. The review is one page, paper or a single note, with the week written at the top. When the review starts to collect screenshots, close it. A folder of pictures without a count is how a professional avoids the sentence they do not want to write.
               </p>
 
               <h2>Put the meeting where the week can keep it</h2>
