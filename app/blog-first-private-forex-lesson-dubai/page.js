@@ -9,6 +9,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { STARTRADER_LIVE_URL } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-first-private-forex-lesson-dubai";
 const headline = "Your First Private Forex Lesson in Dubai: What to Bring and Ask";
@@ -163,6 +164,7 @@ export default function FirstPrivateForexLessonPost() {
                 A request for a guaranteed result, a win rate, or a timeline to consistency is outside what a class can answer. Forex can lose money. If you need a promised return, this is the wrong hour and the wrong market. The academy is rated 5.0 on Google from 30+ reviews, and more than 2,000 students have trained through Equity Global and live classes. Those figures describe the school. They are not a result on your account. Read the listing from the <Link href="/success-stories">reviews page</Link>.
               </p>
 
+              <PostCta path="/blog-first-private-forex-lesson-dubai" placement="mid" />
               <h2>How a first private hour differs from a first group class</h2>
               <p>
                 In a group, the topic is shared. You arrive able to follow it, with one question the room can use. In private, the topic is the chart you brought. Other students’ questions are absent, which is the point when you already have a specific mistake, and a loss when you do not yet know what to ask. If you are new to candles and structure, a group seat on Basic to Intermediate is often the better first booking. Read <Link href="/blog-forex-course-dubai-beginners">what a beginner forex course in Dubai covers</Link> before you pay for a private hour to hear that sequence alone.
@@ -205,17 +207,7 @@ export default function FirstPrivateForexLessonPost() {
                 If you searched for a class nearby and you are still sorting forex from stocks and gold, read <Link href="/blog-investing-classes-near-me-dubai">investing classes near me in Dubai</Link> and <Link href="/blog-forex-classes-near-me-dubai">forex classes near me</Link> before you travel. The first month in the city, if you have not started at all, is <Link href="/blog-how-to-start-forex-trading-dubai">how to start forex trading in Dubai</Link>.
               </p>
               <AcademyLinks lead="Book the first private hour through the" />
-              <div className="blog-cta">
-                <p>Bring one chart and one sentence. Ask for the fee in AED.</p>
-                <div className="cta-row">
-                  <Link href="/contact" className="btn btn-primary">
-                    Book the first lesson
-                  </Link>
-                  <Link href="/free-demo" className="btn btn-outline">
-                    Book a free demo class
-                  </Link>
-                </div>
-              </div>
+              <PostCta path="/blog-first-private-forex-lesson-dubai" />
             </div>
           </div>
         </section>

@@ -11,6 +11,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema, faqPageSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { whatsappHref } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-premium-executive-forex-mentorship-dubai";
 const headline = "Premium Executive Forex Mentorship in Dubai: A Brief Before You Pay";
@@ -204,6 +205,7 @@ export default function PremiumExecutiveMentorshipPost() {
                 The dirham figure, once you can point at a stop, is <Link href="/blog-risk-management">how much to risk per trade</Link>. If you cannot point at the stop, you do not have a size. Keep the learning balance in cash until the stop is a price you can say aloud.
               </p>
 
+              <PostCta path="/blog-premium-executive-forex-mentorship-dubai" placement="mid" />
               <h2>The hour still starts at the beginning of the list</h2>
               <p>
                 A board seat, a fund, or a set of properties does not teach you how a pair is quoted or how a candle closes. Those pages come first. The path is{" "}
@@ -255,18 +257,7 @@ export default function PremiumExecutiveMentorshipPost() {
               <h2>Questions before the brief is sent</h2>
               <FaqList items={briefFaq} />
               <AcademyLinks lead="The school pages, once the columns are filled, are the" />
-              <div className="blog-cta">
-                <p>Write who owns the wealth, and name one symbol. Ask for a free demo class or a one-to-one meeting with Gopi.</p>
-                <div className="cta-row">
-                  <Link href="/free-demo" className="btn btn-primary">
-                    Book a free demo class
-                  </Link>
-                  <OpenChatLink className="btn btn-outline">Open the site chat</OpenChatLink>
-                  <a href={whatsapp} className="btn btn-outline" target="_blank" rel="noopener noreferrer">
-                    WhatsApp +971 55 904 7030
-                  </a>
-                </div>
-              </div>
+              <PostCta path="/blog-premium-executive-forex-mentorship-dubai" />
             </div>
           </div>
         </section>

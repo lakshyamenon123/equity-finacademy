@@ -10,6 +10,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { whatsappHref } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-forex-trading-business-owners-uae";
 const headline = "Forex Trading Education for Business Owners in the UAE";
@@ -146,6 +147,7 @@ export default function ForexTradingBusinessOwnersPost() {
                 <Link href="/blog-forex-education-senior-executives-dubai">forex education for senior executives in Dubai</Link>.
               </p>
 
+              <PostCta path="/blog-forex-trading-business-owners-uae" placement="mid" />
               <h2>Risk, written in dirhams before the setup</h2>
               <p>
                 Decide what one practice trade is allowed to lose, in dirhams, before you care which setup it was. Write that number where you will see it. The class can check the arithmetic. It cannot choose the number for your household or your shareholders. How the figure is built from a stop distance is{" "}
@@ -199,18 +201,7 @@ export default function ForexTradingBusinessOwnersPost() {
                 . The rules of a booking are on the <Link href="/terms">terms page</Link>.
               </p>
               <AcademyLinks lead="The school pages, if you are still choosing the format, are the" />
-              <div className="blog-cta">
-                <p>Name the trading amount as separate from the company. Ask for a free demo class or a one-to-one meeting with Gopi.</p>
-                <div className="cta-row">
-                  <Link href="/free-demo" className="btn btn-primary">
-                    Book a free demo class
-                  </Link>
-                  <OpenChatLink className="btn btn-outline">Open the site chat</OpenChatLink>
-                  <a href={whatsapp} className="btn btn-outline" target="_blank" rel="noopener noreferrer">
-                    WhatsApp +971 55 904 7030
-                  </a>
-                </div>
-              </div>
+              <PostCta path="/blog-forex-trading-business-owners-uae" />
             </div>
           </div>
         </section>

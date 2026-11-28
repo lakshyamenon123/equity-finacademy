@@ -11,6 +11,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema, faqPageSchema, localAcademySchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { whatsappHref } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-forex-classes-palm-emirates-hills-business-bay";
 const headline = "Forex Classes for Palm Jumeirah, Emirates Hills and Business Bay";
@@ -161,6 +162,7 @@ export default function PalmEmiratesHillsBusinessBayPost() {
                 <Link href="/blog-forex-market-hours-dubai">forex market hours in Dubai</Link>. A private hour can sit outside that overlap. Say if you are unreachable then.
               </p>
 
+              <PostCta path="/blog-forex-classes-palm-emirates-hills-business-bay" placement="mid" />
               <h2>What to prepare so the hour is not spent on the login</h2>
               <p>
                 The commute is your problem. The window on the screen should not be. Install MetaTrader 5 before you sit down. The steps are{" "}
@@ -207,18 +209,7 @@ export default function PalmEmiratesHillsBusinessBayPost() {
               <h2>Questions from these neighbourhoods</h2>
               <FaqList items={areaFaq} />
               <AcademyLinks lead="The school pages, once you know home and desk, are the" />
-              <div className="blog-cta">
-                <p>Name the place you will actually be. Ask for a free demo class or a one-to-one meeting with Gopi.</p>
-                <div className="cta-row">
-                  <Link href="/free-demo" className="btn btn-primary">
-                    Book a free demo class
-                  </Link>
-                  <OpenChatLink className="btn btn-outline">Open the site chat</OpenChatLink>
-                  <a href={whatsapp} className="btn btn-outline" target="_blank" rel="noopener noreferrer">
-                    WhatsApp +971 55 904 7030
-                  </a>
-                </div>
-              </div>
+              <PostCta path="/blog-forex-classes-palm-emirates-hills-business-bay" />
             </div>
           </div>
         </section>

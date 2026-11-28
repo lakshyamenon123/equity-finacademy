@@ -8,6 +8,7 @@ import AuthorByline from "../components/AuthorByline";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema, faqPageSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-stock-trading-classes-near-me-dubai";
 const headline = "Stock Trading Classes Near Me in Dubai";
@@ -157,6 +158,7 @@ export default function StockTradingClassesNearMePost() {
                 People type the broadest phrase because the phone suggested it. &quot;Investing&quot; and &quot;personal finance&quot; sound calmer than &quot;stock trading&quot;. The class you sit in is the class named on the page, not the class named in the search box. If you want a share, say the share. If you want help with a household budget or a retirement plan, keep looking. A chart hour will not build that plan, and this academy does not pretend to.
               </p>
 
+              <PostCta path="/blog-stock-trading-classes-near-me-dubai" placement="mid" />
               <h2>A group shares the list. A private hour stays on your symbol.</h2>
               <p>
                 In a group cohort the syllabus is shared, so the chart should be shared too. The instructor picks a symbol that matches the topic of that sitting. Your share can be the example when the topic allows it, and you can ask for that in the first message. You will also hear questions about a currency pair. That is the point of a cohort: one explanation, several charts, the same method.
@@ -202,17 +204,7 @@ export default function StockTradingClassesNearMePost() {
               </div>
 
               <AcademyLinks lead="When the subject is a chart and you want a seat, the school pages are the" />
-              <div className="blog-cta">
-                <p>Name the symbol, the format, and Dubai or online. The fee is quoted in AED.</p>
-                <div className="cta-row">
-                  <Link href="/contact" className="btn btn-primary">
-                    Contact the academy
-                  </Link>
-                  <Link href="/free-demo" className="btn btn-outline">
-                    Book a free demo class
-                  </Link>
-                </div>
-              </div>
+              <PostCta path="/blog-stock-trading-classes-near-me-dubai" />
             </div>
           </div>
         </section>

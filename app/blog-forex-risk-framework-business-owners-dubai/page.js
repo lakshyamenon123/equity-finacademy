@@ -11,6 +11,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema, faqPageSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { whatsappHref } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-forex-risk-framework-business-owners-dubai";
 const headline = "A Forex Risk Framework for Business Owners in Dubai";
@@ -184,6 +185,7 @@ export default function ForexRiskFrameworkBusinessOwnersPost() {
                 The first month is still the beginner track if you cannot point at a swing. Running a company does not teach a currency quote or a candle. The topic order is on the <Link href="/courses">courses page</Link>. The first-month version is <Link href="/blog-how-to-start-forex-trading-dubai">how to start forex trading in Dubai</Link>. A private hour around a company calendar, as distinct from these risk lines, is <Link href="/blog-executive-forex-coaching-dubai">executive forex coaching in Dubai</Link>. How to place that hour on a weekend or a weekday evening is <Link href="/blog-executive-forex-study-schedule-dubai">a study schedule for a busy executive week</Link>.
               </p>
 
+              <PostCta path="/blog-forex-risk-framework-business-owners-dubai" placement="mid" />
               <h2>Family capital is a different page</h2>
               <p>
                 If the money you are being careful with is a family mandate, a personal portfolio, or capital you manage from Abu Dhabi, rather than operating cash in a company you run, use <Link href="/blog-forex-training-family-office-abu-dhabi">forex training for family offices and investors in Abu Dhabi</Link>. The habit is related: name the amount set aside to learn, and leave the rest out of the lesson. The diary and the stakeholders are not the same. Investors who are asking whether a currency market belongs beside capital they already hold should read <Link href="/blog-forex-portfolio-diversification-uae">forex beside a portfolio</Link> before they treat this framework as an investment policy. It is not one. It is a set of study rules.
@@ -217,21 +219,7 @@ export default function ForexRiskFrameworkBusinessOwnersPost() {
               <h2>Questions from a company week</h2>
               <FaqList items={frameworkFaq} />
               <AcademyLinks lead="The school pages, once the lines are written, are the" />
-              <div className="blog-cta">
-                <p>Write the learning balance and the weekly loss line. Ask for a free demo class or a one-to-one meeting with Gopi.</p>
-                <div className="cta-row">
-                  <Link href="/free-demo" className="btn btn-primary">
-                    Book a free demo class
-                  </Link>
-                  <Link href="/courses" className="btn btn-outline">
-                    View the course tracks
-                  </Link>
-                  <OpenChatLink className="btn btn-outline">Open the site chat</OpenChatLink>
-                  <a href={whatsapp} className="btn btn-outline" target="_blank" rel="noopener noreferrer">
-                    WhatsApp +971 55 904 7030
-                  </a>
-                </div>
-              </div>
+              <PostCta path="/blog-forex-risk-framework-business-owners-dubai" />
             </div>
           </div>
         </section>

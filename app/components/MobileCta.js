@@ -1,17 +1,21 @@
-import OpenChatLink from "./OpenChatLink";
+"use client";
 
-const whatsapp = "https://wa.me/971559047030";
+import { usePathname } from "next/navigation";
+import { pageWhatsappHref } from "../lib/whatsapp";
 
 export default function MobileCta() {
+  const pathname = usePathname() || "/";
   return (
-    <div className="mobile-cta" role="region" aria-label="Contact the academy">
-      <a href={whatsapp} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+    <div className="mobile-cta" role="region" aria-label="WhatsApp the academy">
+      <a
+        href={pageWhatsappHref(pathname)}
+        className="btn btn-primary"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="WhatsApp the academy about this page"
+      >
         WhatsApp
       </a>
-      <a href="tel:+971559047030" className="btn btn-outline">
-        Call
-      </a>
-      <OpenChatLink className="btn btn-outline">Enquire</OpenChatLink>
     </div>
   );
 }

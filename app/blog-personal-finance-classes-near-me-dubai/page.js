@@ -8,6 +8,7 @@ import AuthorByline from "../components/AuthorByline";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-personal-finance-classes-near-me-dubai";
 const headline = "Personal Finance Classes Near Me in Dubai: Budget Class or Market Class?";
@@ -141,6 +142,7 @@ export default function PersonalFinanceClassesNearMePost() {
                 Those searches still land here because the words sit next to &quot;personal finance classes near me&quot; and &quot;investing classes near me&quot;. Read the topic lines before you travel. If the lines are rent, bills, and a pension, you want a different teacher. If the lines are a candle, a pair, or MetaTrader, you wanted a market class and the search wording drifted. Say which one you mean. The market version for a share is <Link href="/blog-stock-trading-classes-near-me-dubai">stock trading classes near me in Dubai</Link>. The mixed map is <Link href="/blog-investing-classes-near-me-dubai">investing classes near me in Dubai</Link>.
               </p>
 
+              <PostCta path="/blog-personal-finance-classes-near-me-dubai" placement="mid" />
               <h2>How to read the pin before you travel</h2>
               <p>
                 Distance is the job the map does well. A pin in Dubai tells you the room is in the city. It does not tell you the teacher&apos;s name, the topic order, or whether you will open a chart. Equity Fin Academy names the instructor, <Link href="/gopi-chandran">Gopi Chandran</Link>, and publishes both forex tracks. The in-person school is described on the <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link> page. Online study from another emirate is the <Link href="/forex-training-academy-uae">forex training academy UAE</Link> page.
@@ -172,17 +174,7 @@ export default function PersonalFinanceClassesNearMePost() {
                 Send it from the <Link href="/contact">contact page</Link> or WhatsApp +971 55 904 7030. The academy is open 24/7 and is rated 5.0 on Google from 30+ reviews. More than 2,000 students have trained through Equity Global and live classes. Those figures are about the school. Your result is not one of them.
               </p>
               <AcademyLinks lead="When the subject is a chart and you want a seat, the school pages are the" />
-              <div className="blog-cta">
-                <p>Name the market, the format, and Dubai or online. The fee is quoted in AED.</p>
-                <div className="cta-row">
-                  <Link href="/contact" className="btn btn-primary">
-                    Contact the academy
-                  </Link>
-                  <Link href="/free-demo" className="btn btn-outline">
-                    Book a free demo class
-                  </Link>
-                </div>
-              </div>
+              <PostCta path="/blog-personal-finance-classes-near-me-dubai" />
             </div>
           </div>
         </section>

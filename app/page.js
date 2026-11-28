@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import JsonLd from "./components/JsonLd";
 import YouTubeSection from "./components/YouTubeSection";
+import DemoEnquiry from "./components/DemoEnquiry";
 import Link from "next/link";
 import OpenChatLink from "./components/OpenChatLink";
 import { pageMetadata } from "./lib/seo";
@@ -38,56 +39,26 @@ export default function HomePage() {
         <section className="hero hero-premium">
           <div className="container hero-layout">
             <div className="hero-copy">
-              <span className="eyebrow">Dubai, UAE · Open 24/7</span>
+              <span className="eyebrow">Private mentorship · Dubai, UAE</span>
               <h1 className="hero-display">Forex Training Academy in Dubai</h1>
               <p className="hero-sub">
-                Equity Fin Academy, forex training academy in Dubai, led by mentor Gopi Chandran, is where students in Dubai and across the UAE take private one-to-one lessons, live trading, and group classes. Train in the room in Dubai or online from any emirate, on MetaTrader 5. More than 2,000 students have trained here. The academy is open 24/7 and rated 5.0 on Google from 30+ reviews, with 200+ YouTube reviews and comments on the Equity Global channels.{" "}
+                Book a free demo class with mentor Gopi Chandran. Private one-to-one or small group classes, in Dubai or
+                online. Courses from AED 1,500.
+              </p>
+              <p className="hero-sub">
+                The Executive Market Briefing is on Thursday 3 December 2026 at 7:30 pm Dubai time.{" "}
+                <Link href="/executive-market-briefing">See the briefing</Link>.{" "}
                 <Link href="/gopi-chandran">Meet Gopi Chandran</Link>.
               </p>
-              <div className="trust-row">
-                <a className="trust-badge" href={SITE.mapsUrl} target="_blank" rel="noopener noreferrer">
-                  <strong>5.0</strong> on Google from 30+ reviews
-                </a>
-                <span className="trust-badge">
-                  <strong>2,000+</strong> students trained
-                </span>
-              </div>
-              <div className="cta-row">
-                <Link href="/free-demo" className="btn btn-light">
-                  Free demo class
-                </Link>
-                <a href="https://wa.me/971559047030" className="btn btn-light" target="_blank" rel="noopener noreferrer">
-                  WhatsApp
-                </a>
-                <a href="tel:+971559047030" className="btn btn-ghost">
-                  Call +971 55 904 7030
-                </a>
-                <OpenChatLink className="btn btn-ghost">Enquire</OpenChatLink>
-              </div>
+              <p className="hero-sub">
+                WhatsApp or call <a href="tel:+971559047030">+971 55 904 7030</a>.
+              </p>
             </div>
 
-            <aside className="hero-panel" aria-label="Training formats">
-              <p className="hero-panel-kicker">Dubai, UAE</p>
-              <ul className="hero-panel-list">
-                <li>
-                  <span>Private one-to-one</span>
-                  <strong>Your chart, your pace</strong>
-                </li>
-                <li>
-                  <span>Group cohorts</span>
-                  <strong>Two forex tracks</strong>
-                </li>
-                <li>
-                  <span>Live trading sessions</span>
-                  <strong>On an SCA-regulated broker</strong>
-                </li>
-              </ul>
-              <p className="hero-panel-note">
-                <span className="big" data-counter="2000" data-suffix="+">
-                  2000+
-                </span>
-                students trained through Equity Global and live mentorship.
-              </p>
+            <aside className="hero-enquiry" aria-label="Book a free demo class">
+              <h2>Book a free demo class</h2>
+              <p>Name, mobile, and a time. A private or group preference is optional.</p>
+              <DemoEnquiry id="home-demo" />
             </aside>
           </div>
         </section>

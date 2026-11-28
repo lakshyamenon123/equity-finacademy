@@ -10,6 +10,7 @@ import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { SITE } from "../lib/site";
 import { STARTRADER_LIVE_URL } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-currency-pairs-uae";
 const headline = "Currency Pairs for Forex Learners in Dubai and the UAE";
@@ -168,6 +169,7 @@ export default function CurrencyPairsUaePost() {
                 The cash that symbol would set aside for a small volume is a different screen. Read it in <Link href="/blog-forex-leverage-margin-mt5-uae">leverage and margin on MT5</Link> after the name is clear. The install, if Market Watch is not open yet, is <Link href="/blog-start-forex-trading-uae-mt5">how to start with MT5</Link>.
               </p>
 
+              <PostCta path="/blog-currency-pairs-uae" placement="mid" />
               <h2>Why the dirham makes the dollar familiar</h2>
               <p>
                 The UAE dirham is pegged to the US dollar, at about 3.67 dirhams per dollar. Salaries, rent, and
@@ -258,6 +260,7 @@ export default function CurrencyPairsUaePost() {
                 <a href={`tel:${SITE.telephoneTel}`}>{SITE.telephoneDisplay}</a> if you would rather speak.
               </p>
               <AcademyLinks lead="The live lessons are the" />
+              <PostCta path="/blog-currency-pairs-uae" />
             </div>
           </div>
         </section>

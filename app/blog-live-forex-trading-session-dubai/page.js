@@ -8,6 +8,7 @@ import AuthorByline from "../components/AuthorByline";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-live-forex-trading-session-dubai";
 const headline = "What a Live Forex Trading Session in Dubai Includes";
@@ -101,6 +102,7 @@ export default function LiveForexSessionPost() {
                 <Link href="/blog-forex-trading-plan-uae">the trading plan and journal</Link>.
               </p>
 
+              <PostCta path="/blog-live-forex-trading-session-dubai" placement="mid" />
               <h2>A group hour and a private hour use the same screen differently</h2>
               <p>
                 In a group session the symbol and the topic are shared, so your question has to be about that chart. Prepare for that constraint with{" "}
@@ -143,17 +145,7 @@ export default function LiveForexSessionPost() {
               </p>
 
               <AcademyLinks lead="Book the session through the" />
-              <div className="blog-cta">
-                <p>Bring one chart and one question. Ask for the next group seat or a private hour.</p>
-                <div className="cta-row">
-                  <Link href="/courses" className="btn btn-primary">
-                    See the course tracks
-                  </Link>
-                  <Link href="/free-demo" className="btn btn-outline">
-                    Book a free demo class
-                  </Link>
-                </div>
-              </div>
+              <PostCta path="/blog-live-forex-trading-session-dubai" />
             </div>
           </div>
         </section>

@@ -10,6 +10,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema, faqPageSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { whatsappHref } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-trading-journal-system-dubai";
 const headline = "A Trading Journal System for Busy Professionals in Dubai";
@@ -164,6 +165,7 @@ export default function TradingJournalSystemPost() {
                 <Link href="/blog-forex-coaching-entrepreneurs-flexible-week">private forex coaching for an irregular week</Link>. The system does not invent an hour you do not have. It records the hour you did, or the fact that you had none.
               </p>
 
+              <PostCta path="/blog-trading-journal-system-dubai" placement="mid" />
               <h2>Keep demo and live in separate sections</h2>
               <p>
                 Use the same five columns on a demo. Give the demo its own heading, or its own note. A live ticket does not get filed under practice because the week was embarrassing, and a demo ticket does not get filed as live because the result looked serious. What the demo will not show you, and when a live account is a separate decision, is in{" "}
@@ -200,17 +202,7 @@ export default function TradingJournalSystemPost() {
               <h2>Questions about the journal system</h2>
               <FaqList items={journalFaq} />
               <AcademyLinks lead="The class that can read the file with you is the" />
-              <div className="blog-cta">
-                <p>One file. Five columns. The row on the day, or the word missing.</p>
-                <div className="cta-row">
-                  <Link href="/contact" className="btn btn-primary">
-                    Book a class
-                  </Link>
-                  <Link href="/free-demo" className="btn btn-outline">
-                    Book a free demo class
-                  </Link>
-                </div>
-              </div>
+              <PostCta path="/blog-trading-journal-system-dubai" />
             </div>
           </div>
         </section>

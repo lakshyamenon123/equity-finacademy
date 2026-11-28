@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import RelatedTraining from "../components/RelatedTraining";
 import YouTubeSection from "../components/YouTubeSection";
 import Link from "next/link";
+import DemoEnquiry from "../components/DemoEnquiry";
 import OpenChatLink from "../components/OpenChatLink";
 import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
@@ -106,15 +107,15 @@ export default function ForexAcademyDubaiPage() {
       <Header active="forex-dubai" />
 
       <main>
-        <section className="hero bg-glow">
+        <section className="hero hero-with-form bg-glow">
           <div className="container">
-            <nav className="breadcrumb" aria-label="Breadcrumb">
-              <Link href="/">Home</Link>
-              <span className="sep">/</span>
-              <span className="current">Forex Academy in Dubai</span>
-            </nav>
             <div className="hero-top">
               <div className="hero-copy">
+                <nav className="breadcrumb" aria-label="Breadcrumb">
+                  <Link href="/">Home</Link>
+                  <span className="sep">/</span>
+                  <span className="current">Forex Academy in Dubai</span>
+                </nav>
                 <span className="eyebrow">DUBAI, UAE · FOREX ACADEMY</span>
                 <h1 className="hero-display">
                   Forex{" "}
@@ -124,70 +125,19 @@ export default function ForexAcademyDubaiPage() {
                   in Dubai, from complete beginner onward.
                 </h1>
                 <p className="hero-sub" style={{ marginTop: 22 }}>
-                  Equity Fin Academy runs forex courses in Dubai, UAE: private one-to-one lessons and group trading
-                  classes, in the room or online from any emirate. If you are comparing a forex training academy in
-                  Dubai, this page is what is taught, who teaches it, and how a class is booked.
+                  Book a free demo class with mentor Gopi Chandran. Private one-to-one or small group classes, in Dubai
+                  or online. Courses from AED 1,500.
                 </p>
                 <p className="hero-sub" style={{ marginTop: 14 }}>
-                  The training offer, with both formats, is the{" "}
-                  <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link> page. Students outside Dubai should use the{" "}
-                  <Link href="/forex-training-academy-uae">forex training academy UAE</Link> page. A map search has its own checklist:{" "}
-                  <Link href="/blog-forex-classes-near-me-dubai">forex classes near me in Dubai</Link>. The study order, if you are not ready to book, is{" "}
-                  <Link href="/blog-forex-education-uae">forex education in the UAE</Link>. The first month in the city, before the install steps, is{" "}
-                  <Link href="/blog-how-to-start-forex-trading-dubai">how to start forex trading in Dubai</Link>. What the booked hour contains is{" "}
-                  <Link href="/blog-live-forex-trading-session-dubai">a live forex session in Dubai</Link>. The two tracks are the{" "}
-                  <Link href="/courses">forex trading course in Dubai</Link>. The fee quote sits on <Link href="/pricing">pricing</Link>.
+                  The Executive Market Briefing is on Thursday 3 December 2026 at 7:30 pm Dubai time.{" "}
+                  <Link href="/executive-market-briefing">See the briefing</Link>. WhatsApp or call{" "}
+                  <a href="tel:+971559047030">+971 55 904 7030</a>.
                 </p>
-                <div className="cta-row">
-                  <Link href="/free-demo" className="btn btn-primary">
-                    Free demo class
-                  </Link>
-                  <a href="https://wa.me/971559047030" className="btn btn-outline" target="_blank" rel="noopener noreferrer">
-                    WhatsApp +971 55 904 7030
-                  </a>
-                  <a href="tel:+971559047030" className="btn btn-outline">
-                    Call +971 55 904 7030
-                  </a>
-                  <OpenChatLink className="btn btn-outline">Book a Seat</OpenChatLink>
-                </div>
               </div>
-
-              <div className="hero-graphic" aria-hidden="true">
-                <svg viewBox="0 0 260 220" xmlns="http://www.w3.org/2000/svg">
-                  <defs>
-                    <linearGradient id="ribbonGrad2" x1="0" y1="0" x2="1" y2="1">
-                      <stop offset="0%" stopColor="#0B5C38" />
-                      <stop offset="45%" stopColor="#0E7C4A" />
-                      <stop offset="100%" stopColor="#BDEBD1" />
-                    </linearGradient>
-                    <linearGradient id="ribbonHighlight2" x1="0" y1="0" x2="1" y2="0">
-                      <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.9" />
-                      <stop offset="100%" stopColor="#FFFFFF" stopOpacity="0" />
-                    </linearGradient>
-                  </defs>
-                  <ellipse cx="130" cy="196" rx="85" ry="12" fill="#0A3D26" opacity="0.16" style={{ filter: "blur(8px)" }} />
-                  <g className="ribbon-path">
-                    <path
-                      d="M28 150 C 28 92, 92 92, 100 132 C 108 172, 168 172, 178 112 C 186 66, 228 56, 236 30"
-                      fill="none"
-                      stroke="url(#ribbonGrad2)"
-                      strokeWidth="24"
-                      strokeLinecap="round"
-                    />
-                    <path
-                      d="M28 150 C 28 92, 92 92, 100 132 C 108 172, 168 172, 178 112 C 186 66, 228 56, 236 30"
-                      fill="none"
-                      stroke="url(#ribbonHighlight2)"
-                      strokeWidth="7"
-                      strokeLinecap="round"
-                      transform="translate(-4,-6)"
-                    />
-                  </g>
-                </svg>
-                <div className="stat-dial">
-                  <span className="big" data-counter="2000" data-suffix="+">2000+</span>
-                  <span className="cap">Students Trained</span>
-                </div>
+              <div className="info-card offer-card">
+                <h2 style={{ fontSize: "1.35rem", marginTop: 0 }}>Book a free demo class</h2>
+                <p style={{ marginTop: 0 }}>Name, mobile, and a time. A private or group preference is optional.</p>
+                <DemoEnquiry id="dubai-demo" />
               </div>
             </div>
           </div>
@@ -232,6 +182,21 @@ export default function ForexAcademyDubaiPage() {
             </div>
           </div>
         </div>
+
+        <section className="tight">
+          <div className="container prose-block">
+            <p>
+              The training offer, with both formats, is the{" "}
+              <Link href="/forex-training-academy-dubai">forex training academy Dubai</Link> page. Students outside Dubai should use the{" "}
+              <Link href="/forex-training-academy-uae">forex training academy UAE</Link> page. A map search has its own checklist:{" "}
+              <Link href="/blog-forex-classes-near-me-dubai">forex classes near me in Dubai</Link>. The study order, if you are not ready to book, is{" "}
+              <Link href="/blog-forex-education-uae">forex education in the UAE</Link>. The first month in the city, before the install steps, is{" "}
+              <Link href="/blog-how-to-start-forex-trading-dubai">how to start forex trading in Dubai</Link>. What the booked hour contains is{" "}
+              <Link href="/blog-live-forex-trading-session-dubai">a live forex session in Dubai</Link>. The two tracks are the{" "}
+              <Link href="/courses">forex trading course in Dubai</Link>. The fee quote sits on <Link href="/pricing">pricing</Link>.
+            </p>
+          </div>
+        </section>
 
         <section>
           <div className="container">

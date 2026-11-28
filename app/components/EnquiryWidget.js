@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 import { flushSync } from "react-dom";
 import {
   ASK_ANYTHING,
@@ -27,7 +28,7 @@ import {
 import { draftFromMessages, visitorNameFromText } from "../lib/leadCapture";
 import { OPEN_CHAT_EVENT } from "../lib/openChat";
 import { findUaeMobile } from "../lib/phone";
-import { COURSE_WHATSAPP_TEXT, SLOW_CHAT_REPLY, WHATSAPP_URL, whatsappHref } from "../lib/whatsapp";
+import { SLOW_CHAT_REPLY, WHATSAPP_URL, pageWhatsappHref, whatsappHref } from "../lib/whatsapp";
 
 const STARTER = {
   role: "assistant",
@@ -58,7 +59,6 @@ const TOPIC_CHIPS = [
 
 const TIME_CHIPS = TIME_SLOTS.map((slot) => ({ label: slot.label, text: slot.label }));
 
-const WHATSAPP_LINK = whatsappHref(COURSE_WHATSAPP_TEXT);
 
 const RISK_SENTENCE =
   /[^.!?\n]*(?:trading involves risk|can lose money|risk of loss|significant risk of loss|please note that trading)[^.!?\n]*[.!?]?/gi;
@@ -109,6 +109,8 @@ function bubble(role, content, extra) {
 }
 
 export default function EnquiryWidget() {
+  const pathname = usePathname() || "/";
+  const whatsappLink = pageWhatsappHref(pathname);
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState([STARTER]);
   const [draft, setDraft] = useState("");
@@ -705,7 +707,7 @@ export default function EnquiryWidget() {
         </section>
       ) : null}
       <div className="assist-actions">
-        <a className="assist-wa" href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp the academy">
+        <a className="assist-wa" href={whatsappLink} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp the academy about this page">
           WhatsApp
         </a>
         <div className="assist-launch">

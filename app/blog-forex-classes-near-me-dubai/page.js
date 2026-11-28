@@ -10,6 +10,7 @@ import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { SITE } from "../lib/site";
 import { STARTRADER_LIVE_URL } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-forex-classes-near-me-dubai";
 const headline = "Forex Classes Near Me in Dubai: What to Check Before You Visit";
@@ -106,6 +107,7 @@ export default function ForexClassesNearMeDubaiPost() {
                 People with a day job should read <Link href="/blog-forex-classes-working-professionals-dubai">forex classes for working professionals in Dubai</Link> before they agree to a time they cannot keep. The academy is open 24/7. There is no printed weekly timetable, so the hour is the one you name when you enquire.
               </p>
 
+              <PostCta path="/blog-forex-classes-near-me-dubai" placement="mid" />
               <h2>Have MetaTrader 5 open before you travel</h2>
               <p>
                 A first visit that is spent installing software is a poor use of the hour, whether you are in the room or on a screen. Install MetaTrader 5, open one symbol you actually watch, and be able to point at the last swing. If the platform is new, the English lesson below shows an account opening and the layout. The longer written version is <Link href="/blog-start-forex-trading-uae-mt5">how to start forex trading in the UAE with MT5</Link>.
@@ -138,6 +140,7 @@ export default function ForexClassesNearMeDubaiPost() {
                 , or use the <Link href="/contact">contact page</Link>. Say you want to enrol, and say which format.
               </p>
               <AcademyLinks lead="The live class, once the hour is agreed, is booked through the" />
+              <PostCta path="/blog-forex-classes-near-me-dubai" />
             </div>
           </div>
         </section>

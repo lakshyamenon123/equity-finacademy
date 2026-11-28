@@ -10,6 +10,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { whatsappHref } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-forex-portfolio-diversification-uae";
 const headline = "Forex Trading for Portfolio Diversification: A Note for UAE Investors";
@@ -112,6 +113,7 @@ export default function ForexPortfolioDiversificationPost() {
                 If the thing you actually want is help with a household budget, that is a different room from a chart class. The page that separates those searches is <Link href="/blog-personal-finance-classes-near-me-dubai">personal finance classes near me in Dubai</Link>. Read it before you book a market hour for a question about school fees.
               </p>
 
+              <PostCta path="/blog-forex-portfolio-diversification-uae" placement="mid" />
               <h2>Private study when you already make capital decisions</h2>
               <p>
                 A currency quote, a candle, and a swing high are still new even if a term sheet is not. The beginner track exists for that gap. Skipping it wastes the private hour on vocabulary. A senior executive who wants that work as a weekly capital routine, with the dirhams named before the ticket, should read{" "}
@@ -149,18 +151,7 @@ export default function ForexPortfolioDiversificationPost() {
                 reach the same desk. The rules of a booking are on the <Link href="/terms">terms page</Link>. Owners who need the hour to move around a company week, rather than around an existing portfolio, should read <Link href="/blog-executive-forex-coaching-dubai">executive forex coaching in Dubai for business owners</Link>. Family offices and private investors writing from Abu Dhabi should read <Link href="/blog-forex-training-family-office-abu-dhabi">forex training for family offices and investors in Abu Dhabi</Link>. Founders who need to separate operating cash from a trading balance before they book should read <Link href="/blog-forex-trading-business-owners-uae">forex trading education for business owners in the UAE</Link>. Use the note that matches the sentence you can already say.
               </p>
               <AcademyLinks lead="The school pages are the" />
-              <div className="blog-cta">
-                <p>Bring one symbol and the amount you are willing to study with. Ask for a free demo class or a one-to-one meeting with Gopi.</p>
-                <div className="cta-row">
-                  <Link href="/free-demo" className="btn btn-primary">
-                    Book a free demo class
-                  </Link>
-                  <OpenChatLink className="btn btn-outline">Open the site chat</OpenChatLink>
-                  <a href={whatsapp} className="btn btn-outline" target="_blank" rel="noopener noreferrer">
-                    WhatsApp +971 55 904 7030
-                  </a>
-                </div>
-              </div>
+              <PostCta path="/blog-forex-portfolio-diversification-uae" />
             </div>
           </div>
         </section>

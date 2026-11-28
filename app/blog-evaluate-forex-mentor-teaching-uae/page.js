@@ -10,6 +10,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema, faqPageSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { whatsappHref } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-evaluate-forex-mentor-teaching-uae";
 const headline = "How to Evaluate a Forex Mentor's Teaching Process in the UAE";
@@ -199,6 +200,7 @@ export default function EvaluateMentorTeachingPost() {
                 <Link href="/blog-forex-trading-plan-uae">the trading plan and journal</Link>.
               </p>
 
+              <PostCta path="/blog-evaluate-forex-mentor-teaching-uae" placement="mid" />
               <h2>Read a recording the same way you read an hour</h2>
               <p>
                 Before you travel, play five minutes of a public lesson with the sound on and a note open. Can you name the step you are on? Does the next step follow, or does the subject change? Could you repeat the click without the video in front of you? Those are the same tests as the demo. They are cheaper, and they are incomplete. A person who explains a platform clearly may still be the wrong fit for your week. A person who cannot finish a step on camera has already shown you something.
@@ -238,17 +240,7 @@ export default function EvaluateMentorTeachingPost() {
               <h2>Questions about the teaching process</h2>
               <FaqList items={teachingFaq} />
               <AcademyLinks lead="The hour you are evaluating is taught at the" />
-              <div className="blog-cta">
-                <p>Write the five lines. Then decide whether the next hour is worth paying for.</p>
-                <div className="cta-row">
-                  <Link href="/contact" className="btn btn-primary">
-                    Ask for a demo
-                  </Link>
-                  <Link href="/free-demo" className="btn btn-outline">
-                    Book a free demo class
-                  </Link>
-                </div>
-              </div>
+              <PostCta path="/blog-evaluate-forex-mentor-teaching-uae" />
             </div>
           </div>
         </section>

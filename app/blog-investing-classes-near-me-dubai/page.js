@@ -8,6 +8,7 @@ import AuthorByline from "../components/AuthorByline";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema, localAcademySchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-investing-classes-near-me-dubai";
 const headline = "Investing Classes Near Me in Dubai";
@@ -119,6 +120,7 @@ export default function InvestingClassesNearMePost() {
                 The map is silent on the teacher, the topic order, and whether you sit with a cohort or alone. Read the page behind the pin. Equity Fin Academy names the instructor, <Link href="/gopi-chandran">Gopi Chandran</Link>, and publishes both tracks on the courses page. A group hour and a private hour are compared on <Link href="/private-group-forex-training-dubai">private versus group classes</Link>.
               </p>
 
+              <PostCta path="/blog-investing-classes-near-me-dubai" placement="mid" />
               <h2>Five questions before you cross the city</h2>
               <ol>
                 <li>Which market is the hour about: currencies, a stock or index, or gold? Name one.</li>
@@ -148,17 +150,7 @@ export default function InvestingClassesNearMePost() {
               </p>
 
               <AcademyLinks lead="When the subject is forex and you are ready for a seat, the school pages are the" />
-              <div className="blog-cta">
-                <p>Name the market, the format, and Dubai or online. The fee is quoted in AED.</p>
-                <div className="cta-row">
-                  <Link href="/contact" className="btn btn-primary">
-                    Contact the academy
-                  </Link>
-                  <Link href="/free-demo" className="btn btn-outline">
-                    Book a free demo class
-                  </Link>
-                </div>
-              </div>
+              <PostCta path="/blog-investing-classes-near-me-dubai" />
             </div>
           </div>
         </section>

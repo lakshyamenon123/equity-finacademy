@@ -8,6 +8,7 @@ import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
+import PostCta from "../components/PostCta";
 
 const brokerEnglish = ENGLISH_VIDEOS.find((video) => video.id === "bC097etTQeI");
 
@@ -84,6 +85,7 @@ export default function BlogCommonMistakesPage() {
               <h2>5. Overleveraging</h2>
               <p>Leverage lets you control a larger position than your capital alone allows — but it magnifies losses just as much as gains. Beginners often use far more leverage than their risk tolerance or experience level can handle.</p>
 
+              <PostCta path="/blog-common-mistakes" placement="mid" />
               <h2>6. Trading through an unregulated broker</h2>
               <p>
                 Choosing a platform based purely on marketing, without checking whether it&apos;s regulated by a recognised financial authority, removes a layer of protection that matters — especially early on when you&apos;re least equipped to spot problems. In the UAE, look for Securities and Commodities Authority (SCA) regulation. Practical sessions at Equity Fin Academy use Star Trader, which is SCA-regulated.
@@ -165,17 +167,7 @@ export default function BlogCommonMistakesPage() {
               </p>
 
               <AcademyLinks lead="If you want these mistakes corrected in class, start with the" />
-              <div className="blog-cta">
-                <p>Our Basic to Intermediate course is built specifically to avoid these mistakes from day one.</p>
-                <div className="cta-row">
-                  <Link href="/courses" className="btn btn-primary">
-                    See Our Forex Courses
-                  </Link>
-                  <Link href="/free-demo" className="btn btn-outline">
-                    Book a free demo class
-                  </Link>
-                </div>
-              </div>
+              <PostCta path="/blog-common-mistakes" />
             </div>
           </div>
         </section>

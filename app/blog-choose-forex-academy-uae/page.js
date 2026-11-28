@@ -9,6 +9,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { SITE } from "../lib/site";
 import { VIDEOS } from "../lib/videos";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-choose-forex-academy-uae";
 const headline = "How to Choose a Forex Training Academy in the UAE";
@@ -93,6 +94,7 @@ export default function ChooseAcademyPost() {
                 as distribution, not education.
               </p>
 
+              <PostCta path="/blog-choose-forex-academy-uae" placement="mid" />
               <h2>4. You can find the room</h2>
               <p>
                 Equity Fin Academy teaches in person in Dubai, UAE, and online across the UAE. The academy is open 24/7.
@@ -143,6 +145,7 @@ export default function ChooseAcademyPost() {
                 </a>{" "}
                 or see <Link href="/faq">the FAQ</Link> if a specific objection is already answered.
               </p>
+              <PostCta path="/blog-choose-forex-academy-uae" />
             </div>
           </div>
         </section>

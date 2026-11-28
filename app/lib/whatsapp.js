@@ -14,6 +14,42 @@ export function whatsappHref(text) {
   return `${base}?text=${encodeURIComponent(message.slice(0, 1200))}`;
 }
 
+const PAGE_LABELS = {
+  "/": "the home page",
+  "/courses": "the courses page",
+  "/contact": "the contact page",
+  "/free-demo": "the free demo page",
+  "/blog": "the blog",
+  "/forex-academy-in-dubai": "the Dubai academy page",
+  "/pricing": "the pricing page",
+  "/about": "the about page",
+  "/faq": "the FAQ",
+  "/gopi-chandran": "the mentor page",
+  "/executive-market-briefing": "the Executive Market Briefing page",
+  "/private-group-forex-training-dubai": "the private and group classes page",
+  "/weekend-forex-classes-dubai": "the weekend classes page",
+  "/online-forex-course-uae": "the online course page",
+};
+
+export function pageLabel(pathname) {
+  const path = String(pathname || "/").split("?")[0] || "/";
+  if (PAGE_LABELS[path]) return `${PAGE_LABELS[path]} (${path})`;
+  if (path.startsWith("/blog-")) {
+    const title = path.slice("/blog-".length).replace(/-/g, " ");
+    return `the article ${title} (${path})`;
+  }
+  const title = path.replace(/^\//, "").replace(/-/g, " ") || "this page";
+  return `the ${title} page (${path})`;
+}
+
+export function pageWhatsappMessage(pathname) {
+  return `Hi, I was on ${pageLabel(pathname)} at Equity Fin Academy and would like to book a free demo class.`;
+}
+
+export function pageWhatsappHref(pathname) {
+  return whatsappHref(pageWhatsappMessage(pathname));
+}
+
 export function enquiryText({ name, phone, interest, message }) {
   return [
     "Hello Equity Fin Academy, I would like to enquire about training.",

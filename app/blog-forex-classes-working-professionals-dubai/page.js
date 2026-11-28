@@ -10,6 +10,7 @@ import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { SITE } from "../lib/site";
 import { whatsappHref } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-forex-classes-working-professionals-dubai";
 const headline = "Forex Classes for Working Professionals in Dubai";
@@ -124,6 +125,7 @@ export default function ProfessionalsForexClassesPost() {
                 <Link href="/blog-forex-course-dubai-beginners">what beginners should expect</Link>.
               </p>
 
+              <PostCta path="/blog-forex-classes-working-professionals-dubai" placement="mid" />
               <h2>What to prepare on a weeknight</h2>
               <p>
                 Arrive with one chart, not a folder of screenshots. Pick a pair you already watch. Mark the last two
@@ -189,6 +191,7 @@ export default function ProfessionalsForexClassesPost() {
                 , or use the <Link href="/contact">contact form</Link>. The academy is open 24/7. If the order window is still new, read <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link> before the first hour.
               </p>
               <AcademyLinks lead="The live class, once the hour is agreed, is the" />
+              <PostCta path="/blog-forex-classes-working-professionals-dubai" />
             </div>
           </div>
         </section>

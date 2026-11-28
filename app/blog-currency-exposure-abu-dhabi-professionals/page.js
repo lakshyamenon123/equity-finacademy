@@ -11,6 +11,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema, faqPageSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { whatsappHref } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-currency-exposure-abu-dhabi-professionals";
 const headline = "Currency Exposure Before a Forex Course: A Note for Abu Dhabi Professionals";
@@ -147,6 +148,7 @@ export default function CurrencyExposureAbuDhabiPost() {
                 <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for doctors, engineers and bankers</Link>.
               </p>
 
+              <PostCta path="/blog-currency-exposure-abu-dhabi-professionals" placement="mid" />
               <h2>What the lesson will look at, and what it will leave</h2>
               <p>
                 Bring one symbol and one question. A dollar pair you already meet because of the shares, or a pair you have not touched, are both allowed. Say which. Do not bring the full brokerage statement, a list of the family&apos;s holdings, or a password. The lesson can show how an order is built on a practice chart. It will not rebalance what you wrote in the list above, and it will not tell you that a currency trade has improved the risk of the home or the salary.
@@ -186,18 +188,7 @@ export default function CurrencyExposureAbuDhabiPost() {
               <h2>Questions from Abu Dhabi</h2>
               <FaqList items={exposureFaq} />
               <AcademyLinks lead="The school pages, once the list is written, are the" />
-              <div className="blog-cta">
-                <p>Write the currencies you already live with. Then ask about the course.</p>
-                <div className="cta-row">
-                  <Link href="/free-demo" className="btn btn-primary">
-                    Book a free demo class
-                  </Link>
-                  <Link href="/forex-course-abu-dhabi" className="btn btn-outline">
-                    Abu Dhabi course page
-                  </Link>
-                  <OpenChatLink className="btn btn-outline">Open the site chat</OpenChatLink>
-                </div>
-              </div>
+              <PostCta path="/blog-currency-exposure-abu-dhabi-professionals" />
             </div>
           </div>
         </section>

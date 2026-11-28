@@ -10,6 +10,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { whatsappHref } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-private-forex-mentorship-abu-dhabi";
 const headline = "Private Forex Mentorship in Abu Dhabi for Professionals";
@@ -120,6 +121,7 @@ export default function PrivateForexMentorshipAbuDhabiPost() {
                 <Link href="/blog-risk-management">how much to risk per trade</Link>.
               </p>
 
+              <PostCta path="/blog-private-forex-mentorship-abu-dhabi" placement="mid" />
               <h2>Capital you already manage is not a head start</h2>
               <p>
                 Professionals in Abu Dhabi often already hold savings, a portfolio, or a business interest. That experience does not teach you how a currency pair is quoted, or how a candle closes. Those beginner topics are on the course tracks in teaching order.{" "}
@@ -159,18 +161,7 @@ export default function PrivateForexMentorshipAbuDhabiPost() {
                 . The same four lines work in all three places. The video on this page, from Equity Global English, is a platform walkthrough so the live hour does not start on the login.
               </p>
               <AcademyLinks lead="The school pages, if you are still choosing the format, are the" />
-              <div className="blog-cta">
-                <p>Bring one chart and the hours you can keep from Abu Dhabi. Ask for a free demo class or a one-to-one meeting with Gopi.</p>
-                <div className="cta-row">
-                  <Link href="/free-demo" className="btn btn-primary">
-                    Book a free demo class
-                  </Link>
-                  <OpenChatLink className="btn btn-outline">Open the site chat</OpenChatLink>
-                  <a href={whatsapp} className="btn btn-outline" target="_blank" rel="noopener noreferrer">
-                    WhatsApp +971 55 904 7030
-                  </a>
-                </div>
-              </div>
+              <PostCta path="/blog-private-forex-mentorship-abu-dhabi" />
             </div>
           </div>
         </section>

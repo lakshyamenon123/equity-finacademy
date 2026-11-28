@@ -8,6 +8,7 @@ import AuthorByline from "../components/AuthorByline";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-how-to-start-forex-trading-dubai";
 const headline = "How to Start Forex Trading in Dubai";
@@ -141,6 +142,7 @@ export default function HowToStartForexTradingDubaiPost() {
                 <Link href="/blog-forex-classes-working-professionals-dubai">forex classes for working professionals in Dubai</Link> and name the time you can keep on Gulf Standard Time. A rota, rather than an office close, is <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for doctors, engineers and bankers</Link>. A private hour once a fortnight is <Link href="/blog-private-one-to-one-forex-training-dubai">private one-to-one forex training in Dubai</Link>. The window a live hour will point at is <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>.
               </p>
 
+              <PostCta path="/blog-how-to-start-forex-trading-dubai" placement="mid" />
               <h2>What a Dubai week actually looks like</h2>
               <p>
                 Many private-sector jobs in the UAE run Sunday to Thursday. An evening class on one of those days can be in the room in Dubai or on a screen from another emirate. The clock is Gulf Standard Time, UTC+4, all year. Abu Dhabi is the same hour. If the drive is the question, use the{" "}
@@ -176,17 +178,7 @@ export default function HowToStartForexTradingDubaiPost() {
               </p>
 
               <AcademyLinks lead="When the month of reading is done, the live class is the" />
-              <div className="blog-cta">
-                <p>Name the track, group or private, and Dubai or online. The fee is quoted in AED.</p>
-                <div className="cta-row">
-                  <Link href="/courses" className="btn btn-primary">
-                    View the course tracks
-                  </Link>
-                  <Link href="/free-demo" className="btn btn-outline">
-                    Book a free demo class
-                  </Link>
-                </div>
-              </div>
+              <PostCta path="/blog-how-to-start-forex-trading-dubai" />
             </div>
           </div>
         </section>

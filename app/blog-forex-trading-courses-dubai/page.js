@@ -8,6 +8,7 @@ import AuthorByline from "../components/AuthorByline";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-forex-trading-courses-dubai";
 const headline = "How to Read a Forex Trading Course Syllabus in Dubai";
@@ -104,6 +105,7 @@ export default function ForexTradingCoursesDubaiPost() {
                 <Link href="/forex-mentorship-dubai">forex mentorship in Dubai</Link> so it is not mixed into the syllabus by accident.
               </p>
 
+              <PostCta path="/blog-forex-trading-courses-dubai" placement="mid" />
               <h2>The fee line should say what is included</h2>
               <p>
                 Equity Fin Academy does not print a dirham figure, because the quote moves with the cohort and with whether you book a group seat or a private lesson. That is acceptable when the page still tells you what the quote is for: the track, the format, and live trading sessions. It is a poor sign when the number is hidden and the contents are hidden too.
@@ -148,6 +150,7 @@ export default function ForexTradingCoursesDubaiPost() {
                 <a href="tel:+971559047030">+971 55 904 7030</a>. Say beginner or advanced, group or private, and Dubai or online.
               </p>
               <AcademyLinks lead="The enrolment pages are the" />
+              <PostCta path="/blog-forex-trading-courses-dubai" />
             </div>
           </div>
         </section>

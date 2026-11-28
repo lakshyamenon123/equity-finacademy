@@ -9,6 +9,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { VIDEOS } from "../lib/videos";
 import { MT5_URL, STARTRADER_LIVE_URL } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-start-forex-trading-uae-mt5";
 const headline = "How to Start Forex Trading in the UAE with MT5";
@@ -110,6 +111,7 @@ export default function StartForexMt5Post() {
                 buttons you learn in Dubai match the buttons at home.
               </p>
 
+              <PostCta path="/blog-start-forex-trading-uae-mt5" placement="mid" />
               <h2>Log in with what the broker sends you</h2>
               <p>
                 StarTrader sends a server name, a login, and a password. Type those into MT5. Do not guess a server
@@ -173,6 +175,7 @@ export default function StartForexMt5Post() {
                 mentorship. Those figures are reach and a public rating. They are not a promise about your trades.
               </p>
               <AcademyLinks lead="When the platform is installed, the class itself is the" />
+              <PostCta path="/blog-start-forex-trading-uae-mt5" />
             </div>
           </div>
         </section>

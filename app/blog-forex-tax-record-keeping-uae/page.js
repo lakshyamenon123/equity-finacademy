@@ -10,6 +10,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema, faqPageSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { whatsappHref } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-forex-tax-record-keeping-uae";
 const headline = "Forex Tax and Record-Keeping Habits for UAE Traders";
@@ -168,6 +169,7 @@ export default function ForexTaxRecordKeepingPost() {
                 <Link href="/blog-mt5-order-ticket-dubai">the MetaTrader 5 order ticket</Link>. The statement is the history after that window, not a second opinion about the click.
               </p>
 
+              <PostCta path="/blog-forex-tax-record-keeping-uae" placement="mid" />
               <h2>Hand an adviser the papers, not a password</h2>
               <p>
                 When you sit with an adviser, the useful bundle is the index, the statements, and the legal name. It is not a password, not a screenshot of an open position, and not a request for the academy to explain a filing. How long to keep the folder is their question to answer for your facts. This page does not set a number of years.
@@ -204,17 +206,7 @@ export default function ForexTaxRecordKeepingPost() {
               <h2>Questions about the statement folder</h2>
               <FaqList items={recordsFaq} />
               <AcademyLinks lead="The class that stays on the chart, while the filing stays with your adviser, is the" />
-              <div className="blog-cta">
-                <p>Keep the broker&apos;s papers in one folder. Ask an adviser what they mean. Bring a chart to class.</p>
-                <div className="cta-row">
-                  <Link href="/contact" className="btn btn-primary">
-                    Book a class
-                  </Link>
-                  <Link href="/free-demo" className="btn btn-outline">
-                    Book a free demo class
-                  </Link>
-                </div>
-              </div>
+              <PostCta path="/blog-forex-tax-record-keeping-uae" />
             </div>
           </div>
         </section>

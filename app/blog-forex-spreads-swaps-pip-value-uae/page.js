@@ -9,6 +9,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { STARTRADER_LIVE_URL } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-forex-spreads-swaps-pip-value-uae";
 const headline = "Forex Spreads, Swaps, and Pip Value for Traders in the UAE";
@@ -96,6 +97,7 @@ export default function ForexSpreadsSwapsPipValuePost() {
                 This is why a stop described as &quot;20 pips&quot; is incomplete until you name the lot. Twenty pips on a micro lot and twenty pips on a standard lot are not the same dirham risk. The page that turns that gap into a percentage of the account is <Link href="/blog-risk-management">how much to risk per trade</Link>. Read the pip value first, then choose the lot so the dirham risk matches the plan.
               </p>
 
+              <PostCta path="/blog-forex-spreads-swaps-pip-value-uae" placement="mid" />
               <h2>Swap is the overnight line</h2>
               <p>
                 Swap, often called rollover, is the financing charge or credit when a position is still open at the broker&apos;s rollover time. It is separate from the spread, and it is separate from the course fee. Long and short can carry different amounts. Some nights credit the account. Some nights charge it. The symbol specification in MetaTrader 5 lists the swap for the long and the short.
@@ -134,17 +136,7 @@ export default function ForexSpreadsSwapsPipValuePost() {
                 Costs come after you can read a quote and before you size a trade. The <Link href="/blog">blog index</Link> lists that order. Abu Dhabi students use the same platform and the same dirham arithmetic. The drive-or-online choice is the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>. If the next topic you wanted was liquidity rather than the cost of a pip, read <Link href="/blog-smart-money-concepts">smart money concepts</Link> so you ask for the track that teaches it. Reviews of the academy stay on Google. The <Link href="/success-stories">reviews page</Link> explains how to read the listing. To ask for a seat, use the <Link href="/contact">contact page</Link> or WhatsApp +971 55 904 7030. Name the track, group or private, and Dubai or online.
               </p>
               <AcademyLinks lead="The live classes that put these numbers on a chart are the" />
-              <div className="blog-cta">
-                <p>Bring the spread, the lot, and the swap to the first hour. The fee is quoted in AED.</p>
-                <div className="cta-row">
-                  <Link href="/courses" className="btn btn-primary">
-                    View the course tracks
-                  </Link>
-                  <Link href="/free-demo" className="btn btn-outline">
-                    Book a free demo class
-                  </Link>
-                </div>
-              </div>
+              <PostCta path="/blog-forex-spreads-swaps-pip-value-uae" />
             </div>
           </div>
         </section>

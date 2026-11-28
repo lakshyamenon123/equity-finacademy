@@ -8,6 +8,7 @@ import JsonLd from "../components/JsonLd";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
+import PostCta from "../components/PostCta";
 
 const mt5English = ENGLISH_VIDEOS.find((video) => video.id === "ssUPlUHnDLo");
 
@@ -100,6 +101,7 @@ export default function BlogRiskManagementPage() {
                 you&apos;re comfortable losing.
               </p>
 
+              <PostCta path="/blog-risk-management" placement="mid" />
               <h2>Risk-to-reward ratio</h2>
               <p>
                 Beyond position sizing, look at the relationship between how much you&apos;re risking and how much
@@ -158,17 +160,7 @@ export default function BlogRiskManagementPage() {
                 <Link href="/blog-smart-money-concepts">the smart money concepts drill</Link> after the swing and the stop are both clear. The school pages are the place to book once the sentence exists.
               </p>
               <AcademyLinks lead="Risk is part of the live syllabus at the" />
-              <div className="blog-cta">
-                <p>Risk management is taught as core curriculum in both of our course tracks.</p>
-                <div className="cta-row">
-                  <Link href="/courses" className="btn btn-primary">
-                    See Our Forex Courses
-                  </Link>
-                  <Link href="/free-demo" className="btn btn-outline">
-                    Book a free demo class
-                  </Link>
-                </div>
-              </div>
+              <PostCta path="/blog-risk-management" />
             </div>
           </div>
         </section>

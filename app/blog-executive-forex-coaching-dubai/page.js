@@ -10,6 +10,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { whatsappHref } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-executive-forex-coaching-dubai";
 const headline = "Executive Forex Coaching in Dubai for Business Owners";
@@ -122,6 +123,7 @@ export default function ExecutiveForexCoachingPost() {
                 Those lines can live in <Link href="/blog-forex-trading-plan-uae">a trading plan and journal</Link>. How much of an account a practice trade is allowed to lose is <Link href="/blog-risk-management">how much to risk per trade</Link>. A demo account is the right place to click until the buttons are dull. What the demo will not show you is in <Link href="/blog-demo-vs-live-mt5-uae">demo versus live on MT5</Link>.
               </p>
 
+              <PostCta path="/blog-executive-forex-coaching-dubai" placement="mid" />
               <h2>Keep the company and the trading account apart</h2>
               <p>
                 Owners are used to moving money between a business and a personal account, and they sometimes treat a trading balance the same way. Do not. The course fee and the broker balance are separate payments. Practical sessions use StarTrader, regulated by the UAE Securities and Commodities Authority, on MetaTrader 5. You open that account yourself. Nobody in the lesson needs the password. If a message asks for it, stop and write to the academy on the number above.
@@ -154,18 +156,7 @@ export default function ExecutiveForexCoachingPost() {
                 . Students outside Dubai, including Abu Dhabi, use the same clock. The drive-or-online choice for the capital is the <Link href="/forex-course-abu-dhabi">Abu Dhabi course page</Link>. Private mentorship written for a professional week in Abu Dhabi, rather than a company diary in Dubai, is <Link href="/blog-private-forex-mentorship-abu-dhabi">private forex mentorship in Abu Dhabi</Link>. A rota, rather than a board calendar, is <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for doctors, engineers and bankers</Link>. The brief that keeps existing wealth apart from the hour is <Link href="/blog-premium-executive-forex-mentorship-dubai">premium executive forex mentorship in Dubai</Link>. One private hour a fortnight, when a weekly seat will not survive, is <Link href="/blog-private-one-to-one-forex-training-dubai">private one-to-one forex training for that cadence</Link>. The wider coaching relationship, across several weeks rather than one sitting, is described on <Link href="/forex-mentorship-dubai">forex mentorship in Dubai</Link>.
               </p>
               <AcademyLinks lead="The school pages, if you are still choosing the format, are the" />
-              <div className="blog-cta">
-                <p>Bring one chart and the hours you can keep. Ask for a free demo class or a one-to-one meeting with Gopi.</p>
-                <div className="cta-row">
-                  <Link href="/free-demo" className="btn btn-primary">
-                    Book a free demo class
-                  </Link>
-                  <OpenChatLink className="btn btn-outline">Open the site chat</OpenChatLink>
-                  <a href={whatsapp} className="btn btn-outline" target="_blank" rel="noopener noreferrer">
-                    WhatsApp +971 55 904 7030
-                  </a>
-                </div>
-              </div>
+              <PostCta path="/blog-executive-forex-coaching-dubai" />
             </div>
           </div>
         </section>

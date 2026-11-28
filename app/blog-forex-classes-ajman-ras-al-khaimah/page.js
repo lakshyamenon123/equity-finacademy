@@ -8,6 +8,7 @@ import AuthorByline from "../components/AuthorByline";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-forex-classes-ajman-ras-al-khaimah";
 const headline = "Forex Classes in Ajman, Ras Al Khaimah, Fujairah, and Umm Al Quwain";
@@ -140,6 +141,7 @@ export default function NorthernEmiratesForexClassesPost() {
                 Practical sessions at the academy use StarTrader, regulated by the UAE Securities and Commodities Authority. You open the account yourself. The course fee and the broker balance are separate. The fee is quoted in AED when you enquire. What the quote covers is on <Link href="/pricing">pricing</Link>.
               </p>
 
+              <PostCta path="/blog-forex-classes-ajman-ras-al-khaimah" placement="mid" />
               <h2>Group class or private hour, when you are not in the room</h2>
               <p>
                 Both formats are taught online across the UAE, including these four emirates. A group class follows a shared list: candles, then structure, then the later topics on the{" "}
@@ -172,17 +174,7 @@ export default function NorthernEmiratesForexClassesPost() {
               </p>
 
               <AcademyLinks lead="The live seat, online or in Dubai, is booked through the" />
-              <div className="blog-cta">
-                <p>Say the emirate, online or Dubai, and the hour you can keep.</p>
-                <div className="cta-row">
-                  <Link href="/online-forex-course-uae" className="btn btn-primary">
-                    Online forex course in the UAE
-                  </Link>
-                  <Link href="/free-demo" className="btn btn-outline">
-                    Book a free demo class
-                  </Link>
-                </div>
-              </div>
+              <PostCta path="/blog-forex-classes-ajman-ras-al-khaimah" />
             </div>
           </div>
         </section>

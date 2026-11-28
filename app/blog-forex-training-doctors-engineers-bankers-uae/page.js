@@ -11,6 +11,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema, faqPageSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { whatsappHref } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-forex-training-doctors-engineers-bankers-uae";
 const headline = "Forex Training for Doctors, Engineers and Bankers in the UAE";
@@ -366,6 +367,7 @@ export default function ForexTrainingCareersPost() {
                 Forex trading can lose the money in the learning balance. The class can check the arithmetic once you have a stop you can point at. It cannot choose the third line, and a good month at the hospital, on site, or at the bank is not permission to rewrite it on a Sunday night.
               </p>
 
+              <PostCta path="/blog-forex-training-doctors-engineers-bankers-uae" placement="mid" />
               <h2>Twelve minutes, then the chart closes</h2>
               <p>
                 A shift change, a site handover, and the end of a banking day are poor moments for an open-ended session. Use a short routine you can finish, or do not open the platform. Twelve minutes is enough when the chart was already marked on a clearer day.
@@ -493,18 +495,7 @@ export default function ForexTrainingCareersPost() {
               <h2>Questions from these three careers</h2>
               <FaqList items={careerFaq} />
               <AcademyLinks lead="The school pages, once you know the format, are the" />
-              <div className="blog-cta">
-                <p>Name the rota and one chart. Ask for a free demo class or a one-to-one meeting with Gopi.</p>
-                <div className="cta-row">
-                  <Link href="/free-demo" className="btn btn-primary">
-                    Book a free demo class
-                  </Link>
-                  <OpenChatLink className="btn btn-outline">Open the site chat</OpenChatLink>
-                  <a href={whatsapp} className="btn btn-outline" target="_blank" rel="noopener noreferrer">
-                    WhatsApp +971 55 904 7030
-                  </a>
-                </div>
-              </div>
+              <PostCta path="/blog-forex-training-doctors-engineers-bankers-uae" />
             </div>
           </div>
         </section>

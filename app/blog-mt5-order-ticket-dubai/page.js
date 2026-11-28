@@ -9,6 +9,7 @@ import AuthorByline from "../components/AuthorByline";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema, faqPageSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-mt5-order-ticket-dubai";
 const headline = "How to Read the MetaTrader 5 Order Ticket Before a Class in Dubai";
@@ -219,6 +220,7 @@ export default function Mt5OrderTicketPost() {
                 <Link href="/blog-first-private-forex-lesson-dubai">what to bring and ask</Link>.
               </p>
 
+              <PostCta path="/blog-mt5-order-ticket-dubai" placement="mid" />
               <h2>Name the order type before anyone watches</h2>
               <p>
                 MetaTrader 5 uses a small set of labels. You should be able to point at the one that is selected and say what it waits for. You do not need a view on direction to do that.
@@ -323,17 +325,7 @@ export default function Mt5OrderTicketPost() {
               <h2>Questions about the order ticket</h2>
               <FaqList items={ticketFaq} />
               <AcademyLinks lead="Have the ticket open on a demo before you book the" />
-              <div className="blog-cta">
-                <p>Point at the stop before you ask anyone to watch the click.</p>
-                <div className="cta-row">
-                  <Link href="/contact" className="btn btn-primary">
-                    Book a class
-                  </Link>
-                  <Link href="/free-demo" className="btn btn-outline">
-                    Book a free demo class
-                  </Link>
-                </div>
-              </div>
+              <PostCta path="/blog-mt5-order-ticket-dubai" />
             </div>
           </div>
         </section>

@@ -11,6 +11,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema, faqPageSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { whatsappHref } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-forex-education-senior-executives-dubai";
 const headline =
@@ -202,6 +203,7 @@ export default function SeniorExecutiveForexRoutinePost() {
                 <Link href="/forex-mentorship-dubai">forex mentorship in Dubai</Link>.
               </p>
 
+              <PostCta path="/blog-forex-education-senior-executives-dubai" placement="mid" />
               <h2>Where you sit in the city is a separate question</h2>
               <p>
                 Downtown Dubai, DIFC, Business Bay, Dubai Marina, and Palm Jumeirah are covered as a scheduling note in{" "}
@@ -239,18 +241,7 @@ export default function SeniorExecutiveForexRoutinePost() {
               <h2>Questions from a senior week</h2>
               <FaqList items={executiveFaq} />
               <AcademyLinks lead="The school pages, once the lines and the hour are clear, are the" />
-              <div className="blog-cta">
-                <p>Write the learning balance and one symbol. Ask for a free demo class or a one-to-one meeting with Gopi.</p>
-                <div className="cta-row">
-                  <Link href="/free-demo" className="btn btn-primary">
-                    Book a free demo class
-                  </Link>
-                  <OpenChatLink className="btn btn-outline">Open the site chat</OpenChatLink>
-                  <a href={whatsapp} className="btn btn-outline" target="_blank" rel="noopener noreferrer">
-                    WhatsApp +971 55 904 7030
-                  </a>
-                </div>
-              </div>
+              <PostCta path="/blog-forex-education-senior-executives-dubai" />
             </div>
           </div>
         </section>

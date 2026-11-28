@@ -9,6 +9,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { VIDEOS } from "../lib/videos";
 import { STARTRADER_LIVE_URL } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-private-vs-group-forex-classes-dubai";
 const headline = "Private vs Group Forex Classes in Dubai";
@@ -119,6 +120,7 @@ export default function PrivateVsGroupPost() {
                 are preparation. They are not the live lesson.
               </p>
 
+              <PostCta path="/blog-private-vs-group-forex-classes-dubai" placement="mid" />
               <h2>Booking both is a third choice</h2>
               <p>
                 The list below is for people who want one room. If you want the shared syllabus and one hour on your own chart in the same month, that split of work is <Link href="/blog-private-and-group-forex-classes-dubai">how to use a private one-to-one class and a group class together</Link>. The private hour is not a replay of the group you missed. Say which job belongs in which room when you enquire, and ask for both fees in AED.
@@ -181,6 +183,7 @@ export default function PrivateVsGroupPost() {
                 mentorship.                 Open the reviews yourself rather than taking a quote from this page.
               </p>
               <AcademyLinks lead="Book either format through the" />
+              <PostCta path="/blog-private-vs-group-forex-classes-dubai" />
             </div>
           </div>
         </section>

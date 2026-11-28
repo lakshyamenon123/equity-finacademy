@@ -8,6 +8,7 @@ import AuthorByline from "../components/AuthorByline";
 import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-one-to-one-forex-classes-dubai";
 const headline = "How to Prepare for One-to-One Forex Classes in Dubai";
@@ -93,6 +94,7 @@ export default function OneToOneForexClassesPost() {
                 <Link href="/blog-start-forex-trading-uae-mt5">how to start forex trading in the UAE with MT5</Link>. The fields the hour will point at are in <Link href="/blog-mt5-order-ticket-dubai">the MT5 order ticket</Link>. The account you open is yours. It is separate from the lesson fee.
               </p>
 
+              <PostCta path="/blog-one-to-one-forex-classes-dubai" placement="mid" />
               <h2>Match the hour to the market, if you want a live candle</h2>
               <p>
                 A private lesson can review last week with the market shut. That is a good use of a Saturday when the work is structure, a journal, or a level you misread. It is a poor use of the hour if you booked it to watch a London move, because London is not in session on Saturday morning in Gulf Standard Time.
@@ -143,6 +145,7 @@ export default function OneToOneForexClassesPost() {
                 What the live hour contains, once you are in it, is <Link href="/blog-live-forex-trading-session-dubai">a live forex session in Dubai</Link>.
               </p>
               <AcademyLinks lead="The booking pages are the" />
+              <PostCta path="/blog-one-to-one-forex-classes-dubai" />
             </div>
           </div>
         </section>

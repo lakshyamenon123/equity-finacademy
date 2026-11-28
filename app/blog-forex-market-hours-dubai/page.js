@@ -9,6 +9,7 @@ import { pageMetadata } from "../lib/seo";
 import { articleSchema, breadcrumbSchema } from "../lib/schema";
 import { ENGLISH_VIDEOS, VIDEOS } from "../lib/videos";
 import { STARTRADER_LIVE_URL } from "../lib/whatsapp";
+import PostCta from "../components/PostCta";
 
 const path = "/blog-forex-market-hours-dubai";
 const headline = "Forex Market Hours in Dubai: London and New York in UAE Time";
@@ -125,6 +126,7 @@ export default function ForexMarketHoursPost() {
                 wrong alarm in January.
               </p>
 
+              <PostCta path="/blog-forex-market-hours-dubai" placement="mid" />
               <h2>The week the two cities disagree</h2>
               <p>
                 Britain and the United States do not move their clocks on the same Sunday. For about a week in March,
@@ -192,6 +194,7 @@ export default function ForexMarketHoursPost() {
                 call <a href="tel:+971559047030">+971 55 904 7030</a>.
               </p>
               <AcademyLinks lead="Book the live class through the" />
+              <PostCta path="/blog-forex-market-hours-dubai" />
             </div>
           </div>
         </section>
