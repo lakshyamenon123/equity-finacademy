@@ -15,7 +15,7 @@ import { whatsappHref } from "../lib/whatsapp";
 const path = "/blog-private-forex-mentorship-hour-dubai";
 const headline = "What a Private One-to-One Forex Mentorship Hour in Dubai Contains";
 const description =
-  "The agenda of one private forex mentorship hour in Dubai for an executive, a founder, or a DIFC professional: the question you send, the chart, and the note you leave with.";
+  "What one private forex mentorship hour in Dubai contains: the question you send, the chart on the screen, and the note you leave with.";
 
 const hourFaq = [
   {

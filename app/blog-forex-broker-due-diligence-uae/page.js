@@ -194,7 +194,8 @@ export default function BrokerDueDiligencePost() {
 
               <h2>What the checklist is not</h2>
               <p>
-                It is not a ranking of firms, and it is not a promise that a listed firm will stay listed. It is not a reason to ignore the cost of a trade. It does not replace the decision about how much of your money is allowed to sit at a broker. Business owners who still need to separate company cash from a learning balance should read{" "}
+                It is not a ranking of firms, and it is not a promise that a listed firm will stay listed. It is not a reason to ignore the cost of a trade. It does not replace the decision about how much of your money is allowed to sit at a broker. The statements that firm sends you, kept apart from a journal, are in{" "}
+                <Link href="/blog-forex-tax-record-keeping-uae">forex record-keeping habits for UAE traders</Link>. That page is education for a later conversation with an adviser. It is not tax advice. Business owners who still need to separate company cash from a learning balance should read{" "}
                 <Link href="/blog-forex-trading-business-owners-uae">forex education for business owners in the UAE</Link>. If you are still choosing the person who will teach the platform, the questions about the teacher are in{" "}
                 <Link href="/blog-choose-forex-mentor-dubai">how to choose a forex mentor in Dubai</Link>, and what to watch in a demo of the teaching is in{" "}
                 <Link href="/blog-evaluate-forex-mentor-teaching-uae">how to evaluate a mentor&apos;s teaching process</Link>.

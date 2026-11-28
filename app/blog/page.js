@@ -20,6 +20,32 @@ export const metadata = pageMetadata({
 
 const posts = [
   {
+    href: "/blog-trading-journal-system-dubai",
+    icon: (
+      <>
+        <path d="M7 3h8l4 4v14H7z" />
+        <path d="M15 3v4h4M10 12h6M10 16h4" />
+      </>
+    ),
+    cat: "Journal",
+    title: "A Trading Journal System for Busy Professionals in Dubai",
+    desc: "One file, five columns, and a rule for a missing row, so a short evening can finish the note a weekly review will later read.",
+    time: "12 min read",
+  },
+  {
+    href: "/blog-forex-tax-record-keeping-uae",
+    icon: (
+      <>
+        <path d="M6 3h9l3 3v15H6z" />
+        <path d="M9 11h6M9 15h6" />
+      </>
+    ),
+    cat: "Record-Keeping",
+    title: "Forex Tax and Record-Keeping Habits for UAE Traders",
+    desc: "Broker statements in one folder, kept apart from the journal, so a later conversation with an adviser starts from documents. Not tax advice.",
+    time: "13 min read",
+  },
+  {
     href: "/blog-forex-risk-framework-business-owners-dubai",
     icon: (
       <>
@@ -811,6 +837,10 @@ const blogListingSchema = {
 
 const blogFaq = [
   {
+    q: "Which note is the journal, and which note is the statement folder?",
+    text: "The trading plan page is the rules and the row. A trading journal system for busy professionals in Dubai is where that row lives so a short evening can finish it. The weekly performance review is the meeting with those rows. Forex record-keeping for UAE traders is a different folder: broker statements you could hand an adviser. That page is education. It is not tax advice.",
+  },
+  {
     q: "I can fund a large account. Which note is the lot size?",
     text: "Position sizing for a high-capital forex account in the UAE is the note. It asks for a learning slice, a dirham loss, and a stop distance before anyone talks about a lot. The beginner arithmetic on a smaller illustration stays in the risk management note. Forex beside a portfolio is the wider question of money that already has a job.",
   },
@@ -895,7 +925,7 @@ export default function BlogIndexPage() {
           <div className="container prose-block">
             <h2>Open these before you enquire</h2>
             <p>
-              <Link href="/blog-forex-risk-framework-business-owners-dubai">A forex risk framework for business owners in Dubai</Link> is the weekly loss line a company week is not allowed to rewrite. <Link href="/blog-executive-forex-study-schedule-dubai">How to fit forex learning around a busy executive schedule</Link> is the choice between a weekend one-to-one review and a weekday evening hour. <Link href="/blog-forex-training-family-office-abu-dhabi">Forex training for family offices and investors in Abu Dhabi</Link> keeps a learning amount apart from capital that already has a job. <Link href="/blog-mt5-order-ticket-dubai">The MetaTrader 5 order ticket</Link> is the window to read on a demo before any of those hours.
+              <Link href="/blog-trading-journal-system-dubai">A trading journal system for busy professionals in Dubai</Link> is one file a short evening can finish. <Link href="/blog-forex-tax-record-keeping-uae">Forex record-keeping habits for UAE traders</Link> is a different folder: broker statements you could hand an adviser. That page is education. It is not tax advice. <Link href="/blog-forex-risk-framework-business-owners-dubai">A forex risk framework for business owners in Dubai</Link> is the weekly loss line a company week is not allowed to rewrite.               <Link href="/blog-executive-forex-study-schedule-dubai">How to fit forex learning around a busy executive schedule</Link> is the choice between a weekend one-to-one review and a weekday evening hour. <Link href="/blog-forex-training-family-office-abu-dhabi">Forex training for family offices and investors in Abu Dhabi</Link> keeps a learning amount apart from capital that already has a job.
             </p>
             <p>
               <Link href="/blog-currency-exposure-abu-dhabi-professionals">Currency exposure for Abu Dhabi professionals</Link> is the list of currencies you may already live with, before a trading account. <Link href="/blog-private-forex-mentorship-hour-dubai">What one private mentorship hour contains</Link> is the agenda after you sit down. <Link href="/blog-mt5-order-ticket-dubai">The MetaTrader 5 order ticket</Link> is the window that hour will point at. If the constraint is a rota, read <Link href="/blog-forex-training-doctors-engineers-bankers-uae">forex training for doctors, engineers and bankers</Link> before you promise a weekly seat.
@@ -941,6 +971,14 @@ export default function BlogIndexPage() {
                   </tr>
                 </thead>
                 <tbody>
+                  <tr>
+                    <td>One journal file a short evening in Dubai can finish</td>
+                    <td><Link href="/blog-trading-journal-system-dubai">A trading journal system for busy professionals</Link></td>
+                  </tr>
+                  <tr>
+                    <td>Broker statements to keep for an adviser, without tax advice</td>
+                    <td><Link href="/blog-forex-tax-record-keeping-uae">Forex record-keeping habits for UAE traders</Link></td>
+                  </tr>
                   <tr>
                     <td>A written risk framework for a business owner in Dubai</td>
                     <td><Link href="/blog-forex-risk-framework-business-owners-dubai">Forex risk framework for business owners</Link></td>

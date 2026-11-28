@@ -114,7 +114,9 @@ export default function ForexTradingPlanPost() {
               </p>
               <p>
                 Skipping the journal is one of the mistakes listed in{" "}
-                <Link href="/blog-common-mistakes">seven beginner mistakes</Link>. The record is how you notice that you are repeating it.
+                <Link href="/blog-common-mistakes">seven beginner mistakes</Link>. The record is how you notice that you are repeating it. Where that row should live, when the week in Dubai is already full, is{" "}
+                <Link href="/blog-trading-journal-system-dubai">a trading journal system for busy professionals</Link>. The broker&apos;s own statements stay in a different folder, described in{" "}
+                <Link href="/blog-forex-tax-record-keeping-uae">forex record-keeping habits for UAE traders</Link>. That page is not tax advice.
               </p>
 
               <h2>What to leave off the page</h2>
